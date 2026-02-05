@@ -1,4 +1,4 @@
-setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/1A analyses metabol rates regions/R/original with humans _18122025")
+setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure/R/pred_vol_primates")
 
 library(ape)
 library(nlme)  
@@ -7,8 +7,16 @@ library(tidyverse)
 library(dispRity)
 library(scales)
 library(readxl) 
-library(writexl)   # for writing Excel .xlsx files
+library(writexl)
+
 # --- SETUP ALL ---
+# --- Read Supplementary Table 1 (for correlations)
+sup_tbl_raw <- read_excel(
+  "/Users/crossmodal/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/MS Is human brain organization economical/Supplementary Figs and Tables/Sup Table 1 Regional cerebral metabolic rates and data sources using in Study 1.xlsx",
+  sheet     = 1,
+  col_names = FALSE
+)
+
 # --- Load tree and data
 tr <- read.tree("species.nwk")
 Stephan_primates <- read.csv("Stephan_primates.csv")
@@ -20,7 +28,7 @@ data_clean <- subset(Stephan_primates, select = -c(X, order))
 data <- data_clean %>%
   mutate(
     Preferred_brain_volume = coalesce(
-      Brain_volume,              # 1st choice
+      Brain_volume,           # 1st choice
       Brainvol,               # 2nd choice
       Total_brain_net_volume  # 3rd choice
     )
@@ -66,15 +74,6 @@ pretty_var <- function(x) {
   out[is.na(out)] <- x_chr[is.na(out)]
   out
 }
-
-# --- Helper function to transform VCV by Lambda
-##########
-## ------------------------------------------------------------------
-## REFACTORED: removes redundant per-structure prep + model-fitting code
-## Drop-in replacement for everything from:
-##   "# --- Helper function to transform VCV by Lambda"
-## onward (you can delete your predict_human_one_var() + Plot III/IV loops)
-## ------------------------------------------------------------------
 
 # --- Helper: transform VCV by lambda (off-diagonals scaled, diagonals fixed)
 transform_vcv_lambda <- function(tree, lambda) {
@@ -199,6 +198,7 @@ run_models_for_structure <- function(pp,
     v_full <- transform_vcv_lambda(pp$tr1, lambda_est)
     v_red  <- transform_vcv_lambda(pp$tr2, lambda_est)
 
+### CHECK THIS PART OF SCRIPT BELOW
     # Choose X for phylo correction (to preserve your original behavior)
     if (mu_source == "trait") {
       X <- log(pp$data_model[[pp$var_name]])
@@ -472,16 +472,16 @@ ggplot(df_profile, aes(x = Lambda, y = LogLik)) +
     axis.text.y = element_text(size = 7)
   )
 
-##########
-#### TABLE I
-
-# --- 1) Build core_df_out in one pipeline ---------------------------
+## -------------------------
+## TABLE I: Predicted values + CIs (one pass, with CI) and rCMRGIc
+## -------------------------
+# --- 1) Build table with predicted values + CIs (from Plot I/II code, with some extra columns for later)
 
 digits_lambda <- 3
 digits_vals   <- 5   # Predicted, CIs, Observed
 
 core_df_out <- core_df %>%
-  # 1) Column calculations
+# 1) Column calculations
   mutate(
     Variable = factor(Variable, levels = target_cols),
     VarLabel = pretty_var(Variable),
@@ -489,7 +489,7 @@ core_df_out <- core_df %>%
     Diff.pre = (Observed - Predicted) / Observed,
     Diff.max = (Observed - Upper) / Observed
     ) %>%
-  # 2) Shape table + renaming
+# 2) Shape table + renaming
   transmute(
     Structure       = VarLabel,
     Model,
@@ -503,12 +503,12 @@ core_df_out <- core_df %>%
     Diff.max,
     N
   ) %>%
-  # 3) Order rows by label order and model
+# 3) Order rows by label order and model
   mutate(
     Structure = factor(Structure, levels = pretty_var(target_cols))
   ) %>%
   arrange(Structure, Model) %>%
-  # 4) Limit significant figures & clean N
+# 4) Limit significant figures & clean N
   mutate(
     Lambda       = signif(Lambda,       digits_lambda),
     `95% CI min` = signif(`95% CI min`, digits_vals),
@@ -520,17 +520,11 @@ core_df_out <- core_df %>%
 
 # --- 2) Add rCMRGIc by matching Structure from Sup Table 1
 
-# Read Supplementary Table 1
-sup_tbl_raw <- read_excel(
-  "/Users/crossmodal/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/MS Is human brain organization economical/Supplementary Figs and Tables/Sup Table 1 Regional cerebral metabolic rates and data sources using in Study 1.xlsx",
-  sheet     = 1,
-  col_names = FALSE
-)
 
-# Use row 3 as column names
+# Use row 3 as column names; convert to character to avoid factor issues
 colnames(sup_tbl_raw) <- as.character(unlist(sup_tbl_raw[3, ]))
 
-# Drop rows 1–4 and keep only the relevant columns
+# Drop rows 1–4 and keep only the relevant columns; ensure rCMRGIc is numeric and rounded to 1 decimal place
 sup_clean <- sup_tbl_raw[-c(1:4), ] %>%
   select(
     `Volume term`,
@@ -539,6 +533,9 @@ sup_clean <- sup_tbl_raw[-c(1:4), ] %>%
   rename(
     Structure = `Volume term`,
     rCMRGIc   = `rCMRGIc (µmol/100 g/min.)`
+  ) %>%
+  mutate(
+    rCMRGIc = sprintf("%.1f", readr::parse_number(as.character(rCMRGIc)))
   )
 
 # Join rCMRGIc into the main table by Structure
@@ -548,6 +545,132 @@ core_with_rCMRGIc <- core_df_out %>%
     by = "Structure"
   )
 
-write.csv(core_with_rCMRGIc,"core_df_out_with_rCMRGIc.csv",row.names = FALSE)
-write_xlsx(core_with_rCMRGIc,"core_df_out_with_rCMRGIc.xlsx")
 
+# --- 3) Print-ready table (BM vs ML grouped columns)
+
+metric_cols <- c(
+  "Lambda", "95% CI min", "Predicted", "95% CI max",
+  "Observed", "Diff.min", "Diff.pre", "Diff.max"
+)
+
+# model-specific metrics only
+model_wide <- core_with_rCMRGIc %>%
+  mutate(
+    ModelGroup = case_when(
+      grepl("brownian|\\bbm\\b", tolower(Model)) ~ "Brownian (BM)",
+      grepl("pagel|lambda|\\bml\\b", tolower(Model)) ~ "Pagel's Lambda (ML)",
+      TRUE ~ as.character(Model)
+    ),
+    ModelGroup = factor(ModelGroup, levels = c("Brownian (BM)", "Pagel's Lambda (ML)"))
+  ) %>%
+  select(Structure, ModelGroup, all_of(metric_cols)) %>%
+  pivot_wider(
+    names_from  = ModelGroup,
+    values_from = all_of(metric_cols),
+    names_glue  = "{ModelGroup}__{.value}"
+  )
+
+# shared columns (same across BM/ML for each structure)
+shared_cols <- core_with_rCMRGIc %>%
+  group_by(Structure) %>%
+  summarise(
+    N = dplyr::first(N),
+    rCMRGIc = dplyr::first(rCMRGIc),
+    .groups = "drop"
+  )
+
+# enforce final column order
+bm_cols <- paste0("Brownian (BM)__", metric_cols)
+ml_cols <- paste0("Pagel's Lambda (ML)__", metric_cols)
+
+tbl_body <- model_wide %>%
+  left_join(shared_cols, by = "Structure") %>%
+  arrange(Structure) %>%
+  select(Structure, all_of(bm_cols), all_of(ml_cols), N, rCMRGIc)
+
+# from your existing tbl_body (Structure + BM block + ML block + N + rCMRGIc)
+
+tbl_body2 <- tbl_body %>%
+  select(-any_of(c("Model", "ModelGroup")))   # removes model column if present
+
+# row 1: show each model name only once (first column of each block)
+header_top <- c(
+  "Structure",
+  "Brownian (BM)", rep("", length(metric_cols) - 1),
+  "Pagel's Lambda (ML)", rep("", length(metric_cols) - 1),
+  "N", "rCMRGIc" 
+)
+
+# row 2: subcolumn labels
+header_sub <- c("", metric_cols, metric_cols, "", "")
+
+print_ready_df <- as.data.frame(
+  rbind(
+    header_top,
+    header_sub,
+    as.matrix(tbl_body2)
+  ),
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+names(print_ready_df) <- rep("", ncol(print_ready_df))
+
+write.table(print_ready_df, "print_ready_table.tsv",
+            sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
+write_xlsx(print_ready_df, "print_ready_table.xlsx", col_names = FALSE)
+
+## -------------------------
+## TO REPORT: Correlation analysis between rCMRGIc and prediction error (Diff.pre) across structures
+## -------------------------
+
+diff_cols <- c(
+  "Brownian (BM)__Diff.min",
+  "Brownian (BM)__Diff.pre",
+  "Brownian (BM)__Diff.max",
+  "Pagel's Lambda (ML)__Diff.min",
+  "Pagel's Lambda (ML)__Diff.pre",
+  "Pagel's Lambda (ML)__Diff.max"
+)
+
+# keep needed columns + coerce to numeric
+cor_df <- tbl_body %>%
+  transmute(
+    Structure,
+    rCMRGIc = parse_number(as.character(rCMRGIc)),
+    across(all_of(diff_cols), ~ as.numeric(as.character(.x)))
+  )
+
+# one correlation per Diff column (across Structure rows)
+cor_pearson <- map_dfr(diff_cols, function(col) {
+  x <- cor_df[[col]]
+  y <- cor_df$rCMRGIc
+  ok <- complete.cases(x, y)
+
+  ct <- cor.test(x[ok], y[ok], method = "pearson")
+
+  tibble(
+    Diff_column = col,
+    n = sum(ok),
+    r = unname(ct$estimate),
+    p_value = ct$p.value,
+    ci_low = ct$conf.int[1],
+    ci_high = ct$conf.int[2]
+  )
+})
+cor_spearman <- map_dfr(diff_cols, function(col) {
+  x <- cor_df[[col]]
+  y <- cor_df$rCMRGIc
+  ok <- complete.cases(x, y)
+
+  ct <- cor.test(x[ok], y[ok], method = "spearman")
+
+  tibble(
+    Diff_column = col,
+    n = sum(ok),
+    rho = unname(ct$estimate),
+    p_value = ct$p.value,
+    ci_low = ct$conf.int[1],
+    ci_high = ct$conf.int[2]
+  )
+})

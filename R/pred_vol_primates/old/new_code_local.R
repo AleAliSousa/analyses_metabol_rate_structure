@@ -1,4 +1,4 @@
-setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/1A analyses metabol rates regions/R/original with humans _18122025")
+setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure/R/pred_vol_primates")
 
 library(ape)
 library(nlme)  
