@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = Hippocampus ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11808 -0.03531 -0.00979  0.01239  0.06181 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.895
+   lower bound : 0.000, p = 2.3105e-05
+   upper bound : 1.000, p = 0.59906
+   95.0% CI   : (0.279, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -1.06549    0.45019 -2.3668  0.02252 *  
+Brain_weight  0.75901    0.04347 17.4604  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.04158 on 43 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared: 0.8764,	Adjusted R-squared: 0.8735 
+F-statistic: 304.9 on 1 and 43 DF,  p-value: < 2.2e-16 

@@ -1,0 +1,633 @@
+setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/1A analyses metabol rates regions/R/original with humans _18122025")
+
+library(ape)
+library(nlme)
+library(tidyverse)
+library(dispRity)
+library(scales)
+
+# --- Load tree and data
+tr <- read.tree("species.nwk")
+Stephan_primates <- read.csv("Stephan_primates.csv")
+
+# --- Clean columns
+data <- subset(Stephan_primates, select = -c(X, order))
+
+# --- Parameters
+options(scipen=999)
+
+# --- Structures list
+target_cols <- c(
+  "LGN_Sousa", "Amygdala", "Pallidum", "NeoW_Frahm", "Medulla_oblongata",
+  "Nucleus_subthalamicus", "Capsula_interna", "Striatum", "Diencephalon",
+  "ASG_Sousa", "NeoG_Frahm", "Mesencephalon", "Cerebellum", "Hippocampus",
+  "Total_insula_volume_L"
+)
+
+## Analysis A: Brain-weight predictor (BM vs Pagel ML)
+results_list <- list()
+
+# --- Helper function to transform VCV by Lambda
+# (Multiplies off-diagonals by lambda, keeps diagonal variances constant)
+transform_vcv_lambda <- function(tree, lambda) {
+  v <- vcv(tree, corr = TRUE)
+  diag_vals <- diag(v) # Save diagonal (variances)
+  v <- v * lambda      # Shrink covariances
+  diag(v) <- diag_vals # Restore diagonal
+  return(v)
+}
+#### Plot 1: raw scale
+### Prediction: Brownian Motion vs Pagel's Lambda
+
+# --- 1. SETUP ---
+# --- 2. LOOP ---
+for (var_name in target_cols) {
+  
+  if (!var_name %in% names(data)) {
+    warning(paste("Variable", var_name, "not found. Skipping."))
+    next
+  }
+  
+  # A. PREPARE DATA
+  d1 <- subset(data, select=c("Species", "Brain_weight", var_name))
+  d1 <- as.data.frame(na.omit(d1))
+  rownames(d1) <- d1$Species
+  
+  # Capture Observed Human Value
+  if ("Homo_sapiens" %in% d1$Species) {
+    obs_val <- d1[d1$Species == "Homo_sapiens", var_name]
+    xh_raw <- d1[d1$Species == "Homo_sapiens", "Brain_weight"]
+  } else {
+    next 
+  }
+  
+  clean <- clean.data(d1, tr) 
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if(!is.null(data2$Species)) rownames(data2) <- data2$Species
+  
+  # Data for model (drop human)
+  tr2 <- drop.tip(tr1, "Homo_sapiens")
+  data_model <- subset(data2, Species != "Homo_sapiens")
+  fmla <- as.formula(paste("log(", var_name, ") ~ log(Brain_weight)"))
+  
+  # Define models to run: List of (ModelName, CorrelationObject)
+  # For Pagel, we use fixed=FALSE to estimate lambda via ML
+  models_to_run <- list(
+    list(name="Brownian (BM)", cor=corBrownian(1, form=~Species, phy=tr2)),
+    list(name="Pagel's Lambda (ML)", cor=corPagel(1, form=~Species, phy=tr2, fixed=FALSE))
+  )
+  
+  for (mod in models_to_run) {
+    
+    # Try/Catch for model stability (Lambda sometimes fails to converge on small datasets)
+    fit <- tryCatch({
+      gls(fmla, correlation = mod$cor, data = data_model)
+    }, error = function(e) return(NULL))
+    
+    if(is.null(fit)) next
+    
+    # B. EXTRACT PARAMS
+    sigma <- fit$sigma
+    
+    # Determine the Lambda value used
+    # If BM, lambda is effectively 1. If Pagel, extract from modelStruct.
+    if (mod$name == "Pagel's Lambda (ML)") {
+      # Extract lambda on the natural scale
+      lambda_est <- as.numeric(coef(fit$modelStruct, unconstrained = FALSE))
+      
+      # TRANSFORM the matrices using this lambda
+      v.full <- transform_vcv_lambda(tr1, lambda_est)
+      v.reduced <- transform_vcv_lambda(tr2, lambda_est)
+      
+    } else {
+      # For Brownian, Lambda = 1, just use standard VCV
+      v.full <- vcv(tr1, corr=TRUE)
+      v.reduced <- vcv(tr2, corr=TRUE)
+    }
+    
+    # C. MATRIX ALGEBRA (PREDICTION)
+    cc <- which(rownames(v.full) == "Homo_sapiens")
+    others_names <- rownames(v.reduced)
+    Cih <- v.full[cc, others_names] # Correlations between H and others
+    
+    # Covariates
+    X <- log(data_model[[var_name]])
+    xbar <- mean(X, na.rm=TRUE)
+    
+    # Inverse of reduced VCV
+    inv_v_reduced <- solve(v.reduced)
+    
+    # Bias (mu) and Variance correction (ch)
+    mu <- Cih %*% inv_v_reduced %*% (X - xbar)
+    ch <- v.full[cc, cc] - Cih %*% inv_v_reduced %*% Cih
+    
+    # Calculate Prediction
+    xh <- log(xh_raw)
+    predicted_log <- c(1, xh) %*% coef(fit) + mu 
+    std.error <- sqrt(sigma^2 * ch)
+    
+    upper_log <- predicted_log + qnorm(0.975) * std.error
+    lower_log <- predicted_log - qnorm(0.975) * std.error
+    
+    # Store
+    results_list[[paste(var_name, mod$name)]] <- data.frame(
+      Variable = var_name,
+      Model = mod$name,
+      Observed = obs_val,
+      Predicted = exp(predicted_log),
+      Lower = exp(lower_log),
+      Upper = exp(upper_log)
+    )
+  }
+}
+
+# --- 3. PLOT ---
+final_df <- do.call(rbind, results_list)
+final_df$Variable <- factor(final_df$Variable, levels = target_cols)
+
+ggplot(final_df, aes(x = Variable)) +
+  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.2, color = "#377eb8") +
+  geom_point(aes(y = Predicted, shape = "Predicted"), color = "#377eb8", size = 2.5) +
+  geom_point(aes(y = Observed, shape = "Observed"), color = "#e41a1c", size = 2.5) +
+  scale_shape_manual(name = "Value", values = c("Predicted" = 16, "Observed" = 17)) +
+  coord_flip() +
+  facet_wrap(~Model, scales = "free_x") + # TWO PANELS comparison
+  theme_bw() +
+  labs(
+    title = "Prediction: Brownian Motion vs Pagel's Lambda",
+    y = "Volume / Value (Original Scale)",
+    x = "Brain Structure"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 11),
+    axis.text.y = element_text(size = 9)
+  )
+
+#### Plot 2: Standardized min–max scaling (0 = min in dataset for a given structure; 1 is max)
+### Standard Prediction Error (0-1 Scale)
+# --- 1. SETUP ---
+# --- 2. ANALYSIS LOOP ---
+for (var_name in target_cols) {
+  
+  if (!var_name %in% names(data)) next
+  
+  # Prepare Data
+  d1 <- subset(data, select=c("Species", "Brain_weight", var_name))
+  d1 <- as.data.frame(na.omit(d1))
+  rownames(d1) <- d1$Species
+  
+  if ("Homo_sapiens" %in% d1$Species) {
+    obs_val <- d1[d1$Species == "Homo_sapiens", var_name]
+    xh_raw <- d1[d1$Species == "Homo_sapiens", "Brain_weight"]
+  } else { next }
+
+  clean <- clean.data(d1, tr) 
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if(!is.null(data2$Species)) rownames(data2) <- data2$Species
+  
+  tr2 <- drop.tip(tr1, "Homo_sapiens")
+  data_model <- subset(data2, Species != "Homo_sapiens")
+  fmla <- as.formula(paste("log(", var_name, ") ~ log(Brain_weight)"))
+  
+  # Models to run
+  models_to_run <- list(
+    list(name="Brownian (BM)", cor=corBrownian(1, form=~Species, phy=tr2)),
+    list(name="Pagel's Lambda (ML)", cor=corPagel(1, form=~Species, phy=tr2, fixed=FALSE))
+  )
+  
+  for (mod in models_to_run) {
+    fit <- tryCatch({ gls(fmla, correlation = mod$cor, data = data_model) }, 
+                    error = function(e) return(NULL))
+    if(is.null(fit)) next
+    
+    sigma <- fit$sigma
+    
+    # Handle Lambda Transformation
+    if (mod$name == "Pagel's Lambda (ML)") {
+      lambda_est <- as.numeric(coef(fit$modelStruct, unconstrained = FALSE))
+      v.full <- transform_vcv_lambda(tr1, lambda_est)
+      v.reduced <- transform_vcv_lambda(tr2, lambda_est)
+    } else {
+      v.full <- vcv(tr1, corr=TRUE)
+      v.reduced <- vcv(tr2, corr=TRUE)
+    }
+    
+    # Prediction Math
+    cc <- which(rownames(v.full) == "Homo_sapiens")
+    others_names <- rownames(v.reduced)
+    Cih <- v.full[cc, others_names] 
+    
+    X <- log(data_model[[var_name]])
+    xbar <- mean(X, na.rm=TRUE)
+    
+    inv_v_reduced <- solve(v.reduced)
+    mu <- Cih %*% inv_v_reduced %*% (X - xbar)
+    ch <- v.full[cc, cc] - Cih %*% inv_v_reduced %*% Cih
+    
+    xh <- log(xh_raw)
+    predicted_log <- c(1, xh) %*% coef(fit) + mu 
+    std.error <- sqrt(sigma^2 * ch)
+    
+    # Store Raw Results
+    results_list[[paste(var_name, mod$name)]] <- data.frame(
+      Variable = var_name,
+      Model = mod$name,
+      Observed = obs_val,
+      Predicted = exp(predicted_log),
+      Lower = exp(predicted_log - qnorm(0.975) * std.error),
+      Upper = exp(predicted_log + qnorm(0.975) * std.error)
+    )
+  }
+}
+
+final_df <- do.call(rbind, results_list)
+
+# --- 3. NORMALIZATION (0 to 1) ---
+# Group by Variable to find the min/max range for that specific brain structure
+# across BOTH models so the comparison remains valid.
+
+final_df_norm <- final_df %>%
+  group_by(Variable) %>%
+  mutate(
+    # Find global min and max for this variable (including CIs and Observed)
+    local_min = min(c(Lower, Upper, Observed, Predicted)),
+    local_max = max(c(Lower, Upper, Observed, Predicted)),
+    
+    # Apply Min-Max Scaling
+    Predicted_Sc = (Predicted - local_min) / (local_max - local_min),
+    Observed_Sc = (Observed - local_min) / (local_max - local_min),
+    Lower_Sc = (Lower - local_min) / (local_max - local_min),
+    Upper_Sc = (Upper - local_min) / (local_max - local_min)
+  ) %>%
+  ungroup()
+# --- 4. PLOTTING ---
+# We use the _Sc (Scaled) columns now
+
+ggplot(final_df_norm, aes(x = Variable)) +
+  # Prediction Interval
+  geom_errorbar(aes(ymin = Lower_Sc, ymax = Upper_Sc), width = 0.2, color = "#377eb8") +
+  # Predicted Point
+  geom_point(aes(y = Predicted_Sc, shape = "Predicted"), color = "#377eb8", size = 2.5) +
+  # Observed Point
+  geom_point(aes(y = Observed_Sc, shape = "Observed"), color = "#e41a1c", size = 2.5) +
+  scale_shape_manual(name = "Value", values = c("Predicted" = 16, "Observed" = 17)) +
+  coord_flip() +
+  facet_wrap(~Model) + 
+  theme_bw() +
+  labs(
+    title = "Standardized Prediction Error (0-1 Scale)",
+    subtitle = "0 = Min value for structure, 1 = Max value for structure (across CI and Obs)",
+    y = "Standardized Position (0 to 1)",
+    x = "Brain Structure"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 11),
+    axis.text.y = element_text(size = 9)
+  )
+
+#### Plot 3: LAST PIECE OF THE PUZZLE
+### Human Brain Mosaicism: Ranked Deviation & Signal Strength
+
+# --- 1. SETUP & DATA COLLECTION ---
+# --- 2. MAIN LOOP ---
+for (var_name in target_cols) {
+  if (!var_name %in% names(data)) next
+  
+  d1 <- subset(data, select=c("Species", "Brain_weight", var_name))
+  d1 <- as.data.frame(na.omit(d1))
+  rownames(d1) <- d1$Species
+  
+  if ("Homo_sapiens" %in% d1$Species) {
+    obs_val <- d1[d1$Species == "Homo_sapiens", var_name]
+    xh_raw <- d1[d1$Species == "Homo_sapiens", "Brain_weight"]
+  } else { next }
+  
+  clean <- clean.data(d1, tr) 
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if(!is.null(data2$Species)) rownames(data2) <- data2$Species
+  
+  tr2 <- drop.tip(tr1, "Homo_sapiens")
+  data_model <- subset(data2, Species != "Homo_sapiens")
+  fmla <- as.formula(paste("log(", var_name, ") ~ log(Brain_weight)"))
+  
+  models_to_run <- list(
+    list(name="Brownian (BM)", cor=corBrownian(1, form=~Species, phy=tr2)),
+    list(name="Pagel's Lambda (ML)", cor=corPagel(1, form=~Species, phy=tr2, fixed=FALSE))
+  )
+  
+  for (mod in models_to_run) {
+    fit <- tryCatch({ gls(fmla, correlation = mod$cor, data = data_model) }, 
+                    error = function(e) return(NULL))
+    if(is.null(fit)) next
+    
+    sigma <- fit$sigma
+    
+    if (mod$name == "Pagel's Lambda (ML)") {
+      lambda_est <- as.numeric(coef(fit$modelStruct, unconstrained = FALSE))
+      v.full <- transform_vcv_lambda(tr1, lambda_est)
+      v.reduced <- transform_vcv_lambda(tr2, lambda_est)
+    } else {
+      lambda_est <- 1.0 
+      v.full <- vcv(tr1, corr=TRUE)
+      v.reduced <- vcv(tr2, corr=TRUE)
+    }
+    
+    cc <- which(rownames(v.full) == "Homo_sapiens")
+    others_names <- rownames(v.reduced)
+    Cih <- v.full[cc, others_names] 
+    
+    X <- log(data_model[[var_name]])
+    xbar <- mean(X, na.rm=TRUE)
+    inv_v_reduced <- solve(v.reduced)
+    mu <- Cih %*% inv_v_reduced %*% (X - xbar)
+    xh <- log(xh_raw)
+    predicted_log <- c(1, xh) %*% coef(fit) + mu 
+    
+    results_list[[paste(var_name, mod$name)]] <- data.frame(
+      Variable = var_name,
+      Model = mod$name,
+      Observed = obs_val,
+      Predicted = exp(predicted_log),
+      Lambda = lambda_est
+    )
+  }
+}
+
+final_df <- do.call(rbind, results_list)
+final_df$PropDiff <- (final_df$Observed - final_df$Predicted) / final_df$Predicted
+final_df$Direction <- ifelse(final_df$PropDiff > 0, "Larger than Predicted", "Smaller than Predicted")
+
+# --- 3. PLOT ---
+ggplot(final_df, aes(x = reorder(Variable, PropDiff), y = PropDiff, color = Direction)) +
+  
+  # Reference line
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray40") +
+  
+  # Lollipop Stick
+  geom_segment(aes(xend = reorder(Variable, PropDiff), yend = 0), size = 1.2) +
+  
+  # Lollipop Head
+  geom_point(size = 4) +
+  
+  # --- NEW: TEXT LABEL FOR LAMBDA ---
+  geom_text(aes(label = sprintf("λ=%.2f", Lambda), 
+                # Nudge the text based on direction (left or right of the dot)
+                y = PropDiff + (sign(PropDiff) * 0.15)), # 0.15 adds 15% spacing
+            size = 3.5, 
+            fontface = "italic",
+            show.legend = FALSE) +
+  
+  # Formatting
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  scale_color_manual(values = c("Larger than Predicted" = "#e41a1c", 
+                                "Smaller than Predicted" = "#377eb8")) +
+  coord_flip() +
+  facet_wrap(~Model) +
+  theme_bw() +
+  labs(
+    title = "Human Brain Mosaicism: Ranked Deviation & Signal Strength",
+    subtitle = "Prop. Diff. from prediction. λ indicates phylogenetic signal strength (0=None, 1=Strong).",
+    y = "Deviation from Prediction (%)",
+    x = "Brain Structure",
+    color = "Direction"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 11),
+    legend.position = "bottom",
+    axis.text.y = element_text(size = 10, face="bold")
+  )
+
+#### Plot 4: NEXT TO LAST PIECE OF THE PUZZLE
+### Lambda Likelihood Profiles
+
+# --- 1. SETUP ---
+profile_data <- list()
+mle_data <- list()
+
+# Define the sequence of Lambdas to test (Scan from 0 to 1)
+lambda_seq <- seq(0, 1, by = 0.05)
+
+# --- 2. MAIN LOOP ---
+for (var_name in target_cols) {
+  
+  if (!var_name %in% names(data)) next
+  
+  # A. Prepare Data (Same as before)
+  d1 <- subset(data, select=c("Species", "Brain_weight", var_name))
+  d1 <- as.data.frame(na.omit(d1))
+  rownames(d1) <- d1$Species
+  
+  clean <- clean.data(d1, tr) 
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if(!is.null(data2$Species)) rownames(data2) <- data2$Species
+  
+  # Drop human for the fitting (consistent with your prediction model)
+  tr2 <- drop.tip(tr1, "Homo_sapiens")
+  data_model <- subset(data2, Species != "Homo_sapiens")
+  
+  fmla <- as.formula(paste("log(", var_name, ") ~ log(Brain_weight)"))
+  
+  # B. Run Maximum Likelihood Estimate (Best point)
+  fit_mle <- tryCatch({
+    gls(fmla, correlation = corPagel(1, form=~Species, phy=tr2, fixed=FALSE), data = data_model)
+  }, error = function(e) NULL)
+  
+  if (!is.null(fit_mle)) {
+    best_lambda <- as.numeric(coef(fit_mle$modelStruct, unconstrained = FALSE))
+    best_loglik <- as.numeric(logLik(fit_mle))
+    
+    # Clamp visual to 0-1 range if estimation goes slightly out
+    best_lambda_plot <- pmax(0, pmin(1, best_lambda))
+    
+    mle_data[[var_name]] <- data.frame(
+      Variable = var_name,
+      Lambda = best_lambda_plot,
+      LogLik = best_loglik
+    )
+  }
+  
+  # C. Run Profile Scan (The Curve)
+  for (val in lambda_seq) {
+    fit_scan <- tryCatch({
+      gls(fmla, correlation = corPagel(val, form=~Species, phy=tr2, fixed=TRUE), data = data_model)
+    }, error = function(e) NULL)
+    
+    if (!is.null(fit_scan)) {
+      profile_data[[paste(var_name, val)]] <- data.frame(
+        Variable = var_name,
+        Lambda = val,
+        LogLik = as.numeric(logLik(fit_scan))
+      )
+    }
+  }
+}
+
+# --- 3. COMBINE DATA ---
+df_profile <- do.call(rbind, profile_data)
+df_mle <- do.call(rbind, mle_data)
+
+# --- 4. PLOT ---
+ggplot(df_profile, aes(x = Lambda, y = LogLik)) +
+  
+  # The Likelihood Curve
+  geom_line(color = "#377eb8", size = 1) +
+  
+  # The MLE Point (Red Dot)
+  geom_point(data = df_mle, aes(x = Lambda, y = LogLik), color = "red", size = 3) +
+  
+  # Vertical Line at MLE
+  geom_vline(data = df_mle, aes(xintercept = Lambda), linetype = "dashed", color = "red", alpha=0.5) +
+  
+  # Text Label for the Best Lambda
+  geom_text(data = df_mle, aes(label = sprintf("%.2f", Lambda), x = 0.1, y = LogLik), 
+            color = "red", size = 3, hjust = 0, vjust = 1) +
+  
+  # Facet Wrap creates the panel
+  facet_wrap(~Variable, scales = "free_y") +
+  theme_bw() +
+  labs(
+    title = "Lambda Likelihood Profiles",
+    subtitle = "Curve shows model fit at different Lambda values. Red dot = Maximum Likelihood Estimate.",
+    x = "Lambda (Phylogenetic Signal)",
+    y = "Log-Likelihood"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 9),
+    axis.text.y = element_text(size = 7)
+  )
+
+#### Plot 5: ANOTHER New SECTION 
+### Human Brain Mosaicism (Corrected for Part-Whole)
+
+# --- 1. SETUP ---
+#### Analysis B: Part–whole–corrected predictions (Rest_of_Brain)
+results_rob <- list()   # <-- DEFINE HERE
+
+# --- 2. MAIN LOOP ---
+for (var_name in target_cols) {
+  if (!var_name %in% names(data)) next
+  
+  # A. PREPARE DATA
+  d1 <- subset(data, select=c("Species", "Brain_weight", var_name))
+  d1 <- as.data.frame(na.omit(d1))
+
+  # --- NEW: CALCULATE REST OF BRAIN ---
+  # ROB = Total - Part
+  # Ensure units match before running this!
+  d1$Rest_of_Brain <- d1$Brain_weight - d1[[var_name]]
+  
+  # Safety check: if structure > brain (data error), ROB will be negative/zero, log will fail
+  d1 <- d1[d1$Rest_of_Brain > 0, ]
+  
+  rownames(d1) <- d1$Species
+  
+  # B. EXTRACT HUMAN VALUES
+  if ("Homo_sapiens" %in% d1$Species) {
+    obs_val <- d1[d1$Species == "Homo_sapiens", var_name]
+    
+    # The predictor for humans is now Rest-of-Brain, not Total Brain
+    xh_raw <- d1[d1$Species == "Homo_sapiens", "Rest_of_Brain"] 
+  } else { next }
+  
+  clean <- clean.data(d1, tr) 
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if(!is.null(data2$Species)) rownames(data2) <- data2$Species
+  
+  tr2 <- drop.tip(tr1, "Homo_sapiens")
+  data_model <- subset(data2, Species != "Homo_sapiens")
+  
+  # --- NEW FORMULA: Uses Rest_of_Brain ---
+  fmla <- as.formula(paste("log(", var_name, ") ~ log(Rest_of_Brain)"))
+  
+  # C. MODELS (3-Panel Setup)
+  models_to_run <- list(
+    list(name="Independence (λ=0)", cor=corPagel(0, form=~Species, phy=tr2, fixed=TRUE)),
+    list(name="Pagel's ML (Estimated)", cor=corPagel(1, form=~Species, phy=tr2, fixed=FALSE)),
+    list(name="Brownian (λ=1)", cor=corBrownian(1, form=~Species, phy=tr2))
+  )
+  
+  for (mod in models_to_run) {
+    fit <- tryCatch({ gls(fmla, correlation = mod$cor, data = data_model) }, 
+                    error = function(e) return(NULL))
+    if(is.null(fit)) next
+    
+    sigma <- fit$sigma
+    
+    if (mod$name == "Pagel's ML (Estimated)") {
+      lambda_est <- as.numeric(coef(fit$modelStruct, unconstrained = FALSE))
+    } else if (mod$name == "Independence (λ=0)") {
+      lambda_est <- 0
+    } else {
+      lambda_est <- 1.0 
+    }
+    
+    v.full <- transform_vcv_lambda(tr1, lambda_est)
+    v.reduced <- transform_vcv_lambda(tr2, lambda_est)
+    
+    cc <- which(rownames(v.full) == "Homo_sapiens")
+    others_names <- rownames(v.reduced)
+    Cih <- v.full[cc, others_names] 
+    
+    # Predictor vector X is now Log(Rest_of_Brain)
+    X <- log(data_model$Rest_of_Brain)
+    xbar <- mean(X, na.rm=TRUE)
+    
+    inv_v_reduced <- solve(v.reduced)
+    mu <- Cih %*% inv_v_reduced %*% (X - xbar)
+    
+    # xh is also Log(Rest_of_Brain) for human
+    xh <- log(xh_raw)
+    predicted_log <- c(1, xh) %*% coef(fit) + mu 
+    
+    results_rob[[paste(var_name, mod$name)]] <- data.frame(
+      Variable = var_name,
+      Model = mod$name,
+      Observed = obs_val,
+      Predicted = exp(predicted_log),
+      Lambda = lambda_est
+    )
+  }
+}
+
+final_df <- do.call(rbind, results_rob)
+final_df$PropDiff <- (final_df$Observed - final_df$Predicted) / final_df$Predicted
+final_df$Direction <- ifelse(final_df$PropDiff > 0, "Larger than Predicted", "Smaller than Predicted")
+final_df$Model <- factor(final_df$Model, levels = c("Independence (λ=0)", "Pagel's ML (Estimated)", "Brownian (λ=1)"))
+# --- 3. PLOT ---
+ggplot(final_df, aes(x = reorder(Variable, PropDiff), y = PropDiff, color = Direction)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray40") +
+  geom_segment(aes(xend = reorder(Variable, PropDiff), yend = 0), size = 1.2) +
+  geom_point(size = 4) +
+  geom_text(aes(label = ifelse(Model == "Pagel's ML (Estimated)", 
+                               sprintf("λ=%.2f", Lambda), 
+                               "")), 
+            nudge_x = -0.4, 
+            size = 3, 
+            fontface = "italic",
+            color = "black", 
+            show.legend = FALSE) +
+  
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  scale_color_manual(values = c("Larger than Predicted" = "#e41a1c", 
+                                "Smaller than Predicted" = "#377eb8")) +
+  
+  coord_flip() +
+  facet_wrap(~Model) +
+  theme_bw() +
+  labs(
+    title = "Human Brain Mosaicism (Corrected for Part-Whole)",
+    subtitle = "Predictor = Rest of Brain (Total - Structure).",
+    y = "Deviation from Prediction (%)",
+    x = "Brain Structure",
+    color = "Direction"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 10),
+    legend.position = "bottom",
+    axis.text.y = element_text(size = 9, face="bold")
+  )

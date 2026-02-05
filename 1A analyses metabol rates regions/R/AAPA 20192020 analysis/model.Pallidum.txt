@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = Pallidum ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.055411 -0.020332 -0.005901  0.017279  0.054112 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.991
+   lower bound : 0.000, p = 0.015074
+   upper bound : 1.000, p = 0.93345
+   95.0% CI   : (0.371, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -5.622205   0.350582 -16.037 2.509e-14 ***
+Brain_weight  1.056026   0.034313  30.776 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03091 on 24 degrees of freedom
+  (32 observations deleted due to missingness)
+Multiple R-squared: 0.9753,	Adjusted R-squared: 0.9743 
+F-statistic: 947.2 on 1 and 24 DF,  p-value: < 2.2e-16 

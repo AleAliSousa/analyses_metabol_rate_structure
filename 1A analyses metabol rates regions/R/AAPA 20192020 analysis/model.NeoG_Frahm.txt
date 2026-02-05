@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = NeoG_Frahm ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.021069 -0.008652  0.001077  0.006720  0.014963 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.757
+   lower bound : 0.000, p = 0.0002076
+   upper bound : 1.000, p = 0.20711
+   95.0% CI   : (0.315, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -0.752310   0.123706 -6.0814 4.917e-06 ***
+Brain_weight  0.988076   0.012104 81.6342 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.00972 on 21 degrees of freedom
+  (35 observations deleted due to missingness)
+Multiple R-squared: 0.9969,	Adjusted R-squared: 0.9967 
+F-statistic:  6664 on 1 and 21 DF,  p-value: < 2.2e-16 

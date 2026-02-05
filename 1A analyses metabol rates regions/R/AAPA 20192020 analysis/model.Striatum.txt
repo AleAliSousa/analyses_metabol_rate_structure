@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = Striatum ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.39897 -0.12329 -0.04332  0.01939  0.37655 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.000
+   lower bound : 0.000, p = 1    
+   upper bound : 1.000, p = 1.129e-07
+   95.0% CI   : (NA, 0.196)
+delta  [Fix]  : 1.000
+
+Coefficients:
+             Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -1.13610    1.60848 -0.7063    0.4838    
+Brain_weight  0.77808    0.15600  4.9877 1.054e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1677 on 43 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared: 0.3665,	Adjusted R-squared: 0.3518 
+F-statistic: 24.88 on 1 and 43 DF,  p-value: 1.054e-05 

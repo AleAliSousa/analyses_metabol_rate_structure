@@ -1,0 +1,622 @@
+---
+title: "BRAIN STRUCTURE HUMAN PREDICTIONS AND COMPARING COSTS TO ANATOMY"
+output: html_document
+---
+#Data preparation
+
+### Set working directory - home
+
+```{r}
+setwd("~/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/1A analyses metabol rates regions/R")
+```
+
+## Set working directory - office
+
+```{r}
+setwd("~/Dropbox/Projects in progress/Project Costs Brain Components/Do expensive brain regions increase less in humans/R")
+```
+
+## Load up packages
+
+```{r}
+library(ape)
+library(geiger)
+library(nlme)
+library(caper)
+library(car)
+```
+
+#PART 1: Prediction Human Brain Structure Volumes using Stephan Brain data
+
+## Preparation
+
+Import data and tree
+
+```{r}
+Data=read.csv("Stephan_NHprimates.csv", header=TRUE)
+TreePrimate=read.tree("NHP.nwk")
+row.names(Data)=Data$Species
+```
+
+ALSO SHORTER Import data and tree
+```{r}
+Data<-read.csv("Stephan_NHprimates.csv", header = TRUE)
+TreePrimate=read.tree("NHP.nwk")
+```
+
+## Test the tree and data
+
+Plot tree
+```{r}
+plot(TreePrimate)
+```
+Species in the phylogeny but not in the data?
+```{r}
+setdiff(TreePrimate$tip.label, Data$Species)
+```
+
+Species in the data but not in the phylogeny?
+```{r}
+setdiff(Data$Species, TreePrimate$tip.label)
+```
+
+## Convert into factor or numerical
+```{r}
+Data$Body_weight <- as.numeric(Data$Body_weight)
+Data$Brain_weight <- as.numeric(Data$Brain_weight)
+Data$Ventricles <- as.numeric(Data$Ventricles)
+Data$Meninges_hypophysis_nerves_etc <- as.numeric(Data$Meninges_hypophysis_nerves_etc)
+Data$Total_brain_net_volume <- as.numeric(Data$Total_brain_net_volume)
+Data$Medulla_oblongata <- as.numeric(Data$Medulla_oblongata)
+Data$Cerebellum <- as.numeric(Data$Cerebellum)
+Data$Mesencephalon <- as.numeric(Data$Mesencephalon)
+Data$Diencephalon <- as.numeric(Data$Diencephalon)
+Data$Telencephalon <- as.numeric(Data$Telencephalon)
+Data$Bulbus_olfactorius <- as.numeric(Data$Bulbus_olfactorius)
+Data$Bulbus_olfactorius_accessorius <- as.numeric(Data$Bulbus_olfactorius_accessorius)
+Data$Lobus_piriformis <- as.numeric(Data$Lobus_piriformis)
+Data$Septum <- as.numeric(Data$Septum)
+Data$Striatum <- as.numeric(Data$Striatum)
+Data$Schizocortex <- as.numeric(Data$Schizocortex)
+Data$Hippocampus <- as.numeric(Data$Hippocampus)
+Data$NeoWG <- as.numeric(Data$NeoWG)
+Data$Epithalamus <- as.numeric(Data$Epithalamus)
+Data$Thalamus <- as.numeric(Data$Thalamus)
+Data$Hypothalamus <- as.numeric(Data$Hypothalamus)
+Data$Subthalamus <- as.numeric(Data$Subthalamus)
+Data$Pallidum <- as.numeric(Data$Pallidum)
+Data$Nucleus_subthalamicus <- as.numeric(Data$Nucleus_subthalamicus)
+Data$Capsula_interna <- as.numeric(Data$Capsula_interna)
+Data$Tractus_opticus <- as.numeric(Data$Tractus_opticus)
+Data$Palaeocortex <- as.numeric(Data$Palaeocortex)
+Data$Amygdala <- as.numeric(Data$Amygdala)
+Data$Complexus_centromedialis <- as.numeric(Data$Complexus_centromedialis)
+Data$Nucleus_tractus_olfactorius <- as.numeric(Data$Nucleus_tractus_olfactorius)
+Data$Complexus_cortico_basolateralis <- as.numeric(Data$Complexus_cortico_basolateralis)
+Data$Nucleus_amygdalae_basalis_parsmagnocellularis <- as.numeric(Data$Nucleus_amygdalae_basalis_parsmagnocellularis)
+Data$Brainvol <- as.numeric(Data$Brainvol)
+Data$NeoG_Frahm <- as.numeric(Data$NeoG_Frahm)
+Data$NeoW_Frahm <- as.numeric(Data$NeoW_Frahm)
+Data$ASG_Sousa <- as.numeric(Data$ASG_Sousa)
+Data$LGN_Sousa <- as.numeric(Data$LGN_Sousa)
+Data$Pons <- as.numeric(Data$Pons)
+Data$Total_insula_volume <- as.numeric(Data$Total_insula_volume)
+Data$FI_volume <- as.numeric(Data$FI_volume)
+Data$Agranular_volume <- as.numeric(Data$Agranular_volume)
+Data$Granular_volume <- as.numeric(Data$Granular_volume)
+Data$Dysgranular_volume <- as.numeric(Data$Dysgranular_volume)
+Data$Brain_volume <- as.numeric(Data$Brain_volume)
+Data$Brain_mass <- as.numeric(Data$Brain_mass)
+Data$Body_mass <- as.numeric(Data$Body_mass)
+```
+
+Log 
+```{r}
+Data$Body_weight <- log(Data$Body_weight)
+Data$Brain_weight <- log(Data$Brain_weight)
+Data$Ventricles <- log(Data$Ventricles)
+Data$Meninges_hypophysis_nerves_etc <- log(Data$Meninges_hypophysis_nerves_etc)
+Data$Total_brain_net_volume <- log(Data$Total_brain_net_volume)
+Data$Medulla_oblongata <- log(Data$Medulla_oblongata)
+Data$Cerebellum <- log(Data$Cerebellum)
+Data$Mesencephalon <- log(Data$Mesencephalon)
+Data$Diencephalon <- log(Data$Diencephalon)
+Data$Telencephalon <- log(Data$Telencephalon)
+Data$Bulbus_olfactorius <- log(Data$Bulbus_olfactorius)
+Data$Bulbus_olfactorius_accessorius <- log(Data$Bulbus_olfactorius_accessorius)
+Data$Lobus_piriformis <- log(Data$Lobus_piriformis)
+Data$Septum <- log(Data$Septum)
+Data$Striatum <- log(Data$Striatum)
+Data$Schizocortex <- log(Data$Schizocortex)
+Data$Hippocampus <- log(Data$Hippocampus)
+Data$NeoWG <- log(Data$NeoWG)
+Data$Epithalamus <- log(Data$Epithalamus)
+Data$Thalamus <- log(Data$Thalamus)
+Data$Hypothalamus <- log(Data$Hypothalamus)
+Data$Subthalamus <- log(Data$Subthalamus)
+Data$Pallidum <- log(Data$Pallidum)
+Data$Nucleus_subthalamicus <- log(Data$Nucleus_subthalamicus)
+Data$Capsula_interna <- log(Data$Capsula_interna)
+Data$Tractus_opticus <- log(Data$Tractus_opticus)
+Data$Palaeocortex <- log(Data$Palaeocortex)
+Data$Amygdala <- log(Data$Amygdala)
+Data$Complexus_centromedialis <- log(Data$Complexus_centromedialis)
+Data$Nucleus_tractus_olfactorius <- log(Data$Nucleus_tractus_olfactorius)
+Data$Complexus_cortico_basolateralis <- log(Data$Complexus_cortico_basolateralis)
+Data$Nucleus_amygdalae_basalis_parsmagnocellularis <- log(Data$Nucleus_amygdalae_basalis_parsmagnocellularis)
+Data$Brainvol <- log(Data$Brainvol)
+Data$NeoG_Frahm <- log(Data$NeoG_Frahm)
+Data$NeoW_Frahm <- log(Data$NeoW_Frahm)
+Data$ASG_Sousa <- log(Data$ASG_Sousa)
+Data$LGN_Sousa <- log(Data$LGN_Sousa)
+Data$Pons <- log(Data$Pons)
+Data$Total_insula_volume <- log(Data$Total_insula_volume)
+Data$FI_volume <- log(Data$FI_volume)
+Data$Agranular_volume <- log(Data$Agranular_volume)
+Data$Granular_volume <- log(Data$Granular_volume)
+Data$Dysgranular_volume <- log(Data$Dysgranular_volume)
+Data$Brain_volume <- log(Data$Brain_volume)
+Data$Brain_mass <- log(Data$Brain_mass)
+Data$Body_mass <- log(Data$Body_mass)
+```
+
+
+min-max stdize (NOT NECESSARY IF ALL BRAIN COMPONENTS, SAME DIMENSIONALITY?)
+```{r}
+#min-max stdze function
+stdize = stdize = function(x, ...) {(x - min(x, ...)) / (max(x, ...) - min(x, ...))}
+
+
+Data$Body_weight <- stdize(Data$Body_weight, na.rm = T)
+Data$Brain_weight <- stdize(Data$Brain_weight, na.rm = T)
+Data$Ventricles <- stdize(Data$Ventricles, na.rm = T)
+Data$Meninges_hypophysis_nerves_etc <- stdize(Data$Meninges_hypophysis_nerves_etc, na.rm = T)
+Data$Total_brain_net_volume <- stdize(Data$Total_brain_net_volume, na.rm = T)
+Data$Medulla_oblongata <- stdize(Data$Medulla_oblongata, na.rm = T)
+Data$Cerebellum <- stdize(Data$Cerebellum, na.rm = T)
+Data$Mesencephalon <- stdize(Data$Mesencephalon, na.rm = T)
+Data$Diencephalon <- stdize(Data$Diencephalon, na.rm = T)
+Data$Telencephalon <- stdize(Data$Telencephalon, na.rm = T)
+Data$Bulbus_olfactorius <- stdize(Data$Bulbus_olfactorius, na.rm = T)
+Data$Bulbus_olfactorius_accessorius <- stdize(Data$Bulbus_olfactorius_accessorius, na.rm = T)
+Data$Lobus_piriformis <- stdize(Data$Lobus_piriformis, na.rm = T)
+Data$Septum <- stdize(Data$Septum, na.rm = T)
+Data$Striatum <- stdize(Data$Striatum, na.rm = T)
+Data$Schizocortex <- stdize(Data$Schizocortex, na.rm = T)
+Data$Hippocampus <- stdize(Data$Hippocampus, na.rm = T)
+Data$NeoWG <- stdize(Data$NeoWG, na.rm = T)
+Data$Epithalamus <- stdize(Data$Epithalamus, na.rm = T)
+Data$Thalamus <- stdize(Data$Thalamus, na.rm = T)
+Data$Hypothalamus <- stdize(Data$Hypothalamus, na.rm = T)
+Data$Subthalamus <- stdize(Data$Subthalamus, na.rm = T)
+Data$Pallidum <- stdize(Data$Pallidum, na.rm = T)
+Data$Nucleus_subthalamicus <- stdize(Data$Nucleus_subthalamicus, na.rm = T)
+Data$Capsula_interna <- stdize(Data$Capsula_interna, na.rm = T)
+Data$Tractus_opticus <- stdize(Data$Tractus_opticus, na.rm = T)
+Data$Palaeocortex <- stdize(Data$Palaeocortex, na.rm = T)
+Data$Amygdala <- stdize(Data$Amygdala, na.rm = T)
+Data$Complexus_centromedialis <- stdize(Data$Complexus_centromedialis, na.rm = T)
+Data$Nucleus_tractus_olfactorius <- stdize(Data$Nucleus_tractus_olfactorius, na.rm = T)
+Data$Complexus_cortico_basolateralis <- stdize(Data$Complexus_cortico_basolateralis, na.rm = T)
+Data$Nucleus_amygdalae_basalis_parsmagnocellularis <- stdize(Data$Nucleus_amygdalae_basalis_parsmagnocellularis, na.rm = T)
+Data$Brainvol <- stdize(Data$Brainvol, na.rm = T)
+Data$NeoG_Frahm <- stdize(Data$NeoG_Frahm, na.rm = T)
+Data$NeoW_Frahm <- stdize(Data$NeoW_Frahm, na.rm = T)
+Data$ASG_Sousa <- stdize(Data$ASG_Sousa, na.rm = T)
+Data$LGN_Sousa <- stdize(Data$LGN_Sousa, na.rm = T)
+Data$Pons <- stdize(Data$Pons, na.rm = T)
+Data$Total_insula_volume <- stdize(Data$Total_insula_volume, na.rm = T)
+Data$FI_volume <- stdize(Data$FI_volume, na.rm = T)
+Data$Agranular_volume <- stdize(Data$Agranular_volume, na.rm = T)
+Data$Granular_volume <- stdize(Data$Granular_volume, na.rm = T)
+Data$Dysgranular_volume <- stdize(Data$Dysgranular_volume, na.rm = T)
+Data$Brain_volume <- stdize(Data$Brain_volume, na.rm = T)
+Data$Brain_mass <- stdize(Data$Brain_mass, na.rm = T)
+Data$Body_mass <- stdize(Data$Body_mass, na.rm = T)
+```
+
+## PGLS Models
+
+### Create comp obj for caper
+```{r}
+primate <- comparative.data(phy = TreePrimate, data = Data, names.col = Species, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
+```
+
+### Regressions
+(should it be brain weight minus structure size?)
+```{r}
+model.NeoG_Frahm<-pgls(NeoG_Frahm ~ Brain_weight, data = primate, lambda='ML')
+sink("model.NeoG_Frahm.txt")
+options(width=10000)
+summary(model.NeoG_Frahm)
+```
+
+```{r}
+model.ASG_Sousa<-pgls(ASG_Sousa ~ Brain_weight, data = primate, lambda='ML')
+sink("model.ASG_Sousa.txt")
+options(width=10000)
+summary(model.ASG_Sousa)
+```
+
+```{r}
+model.Total_insula_volume<-pgls(Total_insula_volume ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Total_insula_volume.txt")
+options(width=10000)
+summary(model.Total_insula_volume)
+```
+
+```{r}
+model.Hippocampus<-pgls(Hippocampus ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Hippocampus.txt")
+options(width=10000)
+summary(model.Hippocampus)
+```
+
+```{r}
+model.Striatum<-pgls(Striatum ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Striatum.txt")
+options(width=10000)
+summary(model.Striatum)
+```
+
+```{r}
+model.Pallidum<-pgls(Pallidum ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Pallidum.txt")
+options(width=10000)
+summary(model.Pallidum)
+```
+
+```{r}
+model.LGN_Sousa<-pgls(LGN_Sousa ~ Brain_weight, data = primate, lambda='ML')
+sink("model.LGN_Sousa.txt")
+options(width=10000)
+summary(model.LGN_Sousa)
+```
+
+```{r}
+model.Nucleus_subthalamicus<-pgls(Nucleus_subthalamicus ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Nucleus_subthalamicus.txt")
+options(width=10000)
+summary(model.Nucleus_subthalamicus)
+```
+
+```{r}
+model.Amygdala<-pgls(Amygdala ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Amygdala.txt")
+options(width=10000)
+summary(model.Amygdala)
+```
+
+```{r}
+model.Mesencephalon<-pgls(Mesencephalon ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Mesencephalon.txt")
+options(width=10000)
+summary(model.Mesencephalon)
+```
+
+```{r}
+model.Cerebellum<-pgls(Cerebellum ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Cerebellum.txt")
+options(width=10000)
+summary(model.Cerebellum)
+```
+
+```{r}
+model.NeoW_Frahm<-pgls(NeoW_Frahm ~ Brain_weight, data = primate, lambda='ML')
+sink("model.NeoW_Frahm.txt")
+options(width=10000)
+summary(model.NeoW_Frahm)
+```
+
+```{r}
+model.Capsula_interna<-pgls(Capsula_interna ~ Brain_weight, data = primate, lambda='ML')
+sink("model.Capsula_interna.txt")
+options(width=10000)
+summary(model.Capsula_interna)
+```
+
+#PART 2: Brain Structure Metabolic Rates (rCMRGlc) compared to Anatomical Variables
+
+## Preparation
+
+### Load data
+```{r}
+MetaData<-read.csv("brain_struct_metabol_anat.csv", header = TRUE)
+```
+
+## Regressions
+
+Regression x = rCMRGlc y = slope
+```{r}
+lm.slope<-lm(slope ~ rCMRGlc, data = MetaData)
+summary(lm.slope)
+plot(rCMRGlc,slope,pch = 16, cex = 1.3, col = "blue", main = "slope as a function of rCMRGlc", xlab = "rCMRGlc", ylab = "Slope")
+abline(lm(rCMRGlc ~ slope))
+```
+
+Regression x = rCMRGlc y = lambda
+```{r}
+lm.lambda<-lm(lambda ~ rCMRGlc, data = MetaData)
+summary(lm.lambda)
+```
+
+Regression x = rCMRGlc y = OP_Diff
+```{r}
+lm.OP_Diff<-lm(OP_Diff ~ rCMRGlc, data = MetaData)
+summary(lm.OP_Diff)
+```
+
+Regression x = rCMRGlc y = aging_Beta
+```{r}
+lm.aging_Beta<-lm(aging_Beta ~ rCMRGlc, data = MetaData)
+summary(lm.aging_Beta)
+```
+
+Regression x = rCMRGlc y = aging_change
+```{r}
+lm.aging_change<-lm(aging_change ~ rCMRGlc, data = MetaData)
+summary(lm.aging_change)
+```
+
+Regression x = rCMRGlc y = development_change
+```{r}
+lm.development_change<-lm(development_change ~ rCMRGlc, data = MetaData)
+summary(lm.development_change)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = development_change
+```{r}
+crf.lm.development_change<-lm(development_change ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.development_change,type=3)
+```
+
+Regression x = rCMRGlc y = Orphan_change
+```{r}
+lm.Orphan_change<-lm(Orphan_change ~ rCMRGlc, data = MetaData)
+summary(lm.Orphan_change)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Orphan_change
+```{r}
+crf.lm.Orphan_change<-lm(Orphan_change ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Orphan_change,type=3)
+```
+
+NEW - Michael's fancy new regressions! Load data above.
+Regression x = rCMRGlc y = Volume
+```{r}
+lm.Volume<-lm(Volume ~ rCMRGlc, data = MetaData)
+summary(lm.Volume)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Volume
+```{r}
+crf.lm.Volume<-lm(Volume ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Volume,type=3)
+```
+
+Regression x = rCMRGlc y = VolumeSD
+```{r}
+lm.VolumeSD<-lm(VolumeSD ~ rCMRGlc, data = MetaData)
+summary(lm.VolumeSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = VolumeSD
+```{r}
+crf.lm.VolumeSD<-lm(VolumeSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.VolumeSD,type=3)
+```
+
+Regression x = rCMRGlc y = Neuron_N
+```{r}
+lm.Neuron_N<-lm(Neuron_N ~ rCMRGlc, data = MetaData)
+summary(lm.Neuron_N)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Neuron_N
+```{r}
+crf.lm.Neuron_N<-lm(Neuron_N ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Neuron_N,type=3)
+```
+
+
+Regression x = rCMRGlc y = NeuronSD
+```{r}
+lm.NeuronSD<-lm(NeuronSD ~ rCMRGlc, data = MetaData)
+summary(lm.NeuronSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = NeuronSD
+```{r}
+crf.lm.NeuronSD<-lm(NeuronSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.NeuronSD,type=3)
+```
+
+Regression x = rCMRGlc y = NeurDensity
+```{r}
+lm.NeurDensity<-lm(NeurDensity ~ rCMRGlc, data = MetaData)
+summary(lm.NeurDensity)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = NeurDensity
+```{r}
+crf.lm.NeurDensity<-lm(NeurDensity ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.NeurDensity,type=3)
+```
+
+Regression x = rCMRGlc y = Glia_N
+```{r}
+lm.Glia_N<-lm(Glia_N ~ rCMRGlc, data = MetaData)
+summary(lm.Glia_N)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Glia_N
+```{r}
+crf.lm.Glia_N<-lm(Glia_N ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Glia_N,type=3)
+```
+
+Regression x = rCMRGlc y = GliaSD
+```{r}
+lm.GliaSD<-lm(GliaSD ~ rCMRGlc, data = MetaData)
+summary(lm.GliaSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = GliaSD
+```{r}
+crf.lm.GliaSD<-lm(GliaSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.GliaSD,type=3)
+```
+
+Regression x = rCMRGlc y = GliaDensity
+```{r}
+lm.GliaDensity<-lm(GliaDensity ~ rCMRGlc, data = MetaData)
+summary(lm.GliaDensity)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = GliaDensity
+```{r}
+crf.lm.GliaDensity<-lm(GliaDensity ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.GliaDensity,type=3)
+```
+
+Regression x = rCMRGlc y = Astro_N
+```{r}
+lm.Astro_N<-lm(Astro_N ~ rCMRGlc, data = MetaData)
+summary(lm.Astro_N)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Astro_N
+```{r}
+crf.lm.Astro_N<-lm(Astro_N ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Astro_N,type=3)
+```
+
+Regression x = rCMRGlc y = AstroSD
+```{r}
+lm.AstroSD<-lm(AstroSD ~ rCMRGlc, data = MetaData)
+summary(lm.AstroSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = AstroSD
+```{r}
+crf.lm.AstroSD<-lm(AstroSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.AstroSD,type=3)
+```
+
+Regression x = rCMRGlc y = AstroDensity
+```{r}
+lm.AstroDensity<-lm(AstroDensity ~ rCMRGlc, data = MetaData)
+summary(lm.AstroDensity)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = AstroDensity
+```{r}
+crf.lm.AstroDensity<-lm(AstroDensity ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.AstroDensity,type=3)
+```
+
+Regression x = rCMRGlc y = Oligo_N
+```{r}
+lm.Oligo_N<-lm(Oligo_N ~ rCMRGlc, data = MetaData)
+summary(lm.Oligo_N)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Oligo_N
+```{r}
+crf.lm.Oligo_N<-lm(Oligo_N ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Oligo_N,type=3)
+```
+
+Regression x = rCMRGlc y = OligoSD
+```{r}
+lm.OligoSD<-lm(OligoSD ~ rCMRGlc, data = MetaData)
+summary(lm.OligoSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = OligoSD
+```{r}
+crf.lm.OligoSD<-lm(OligoSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.OligoSD,type=3)
+```
+
+Regression x = rCMRGlc y = OligoDensity
+```{r}
+lm.OligoDensity<-lm(OligoDensity ~ rCMRGlc, data = MetaData)
+summary(lm.OligoDensity)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = OligoDensity
+```{r}
+crf.lm.OligoDensity<-lm(OligoDensity ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.OligoDensity,type=3)
+```
+
+Regression x = rCMRGlc y = Microglia_N
+```{r}
+lm.Microglia_N<-lm(Microglia_N ~ rCMRGlc, data = MetaData)
+summary(lm.Microglia_N)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = Microglia_N
+```{r}
+crf.lm.Microglia_N<-lm(Microglia_N ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.Microglia_N,type=3)
+```
+
+Regression x = rCMRGlc y = MicroSD
+```{r}
+lm.MicroSD<-lm(MicroSD ~ rCMRGlc, data = MetaData)
+summary(lm.MicroSD)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = MicroSD
+```{r}
+crf.lm.MicroSD<-lm(MicroSD ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.MicroSD,type=3)
+```
+
+Regression x = rCMRGlc y = MicroDensity
+```{r}
+lm.MicroDensity<-lm(MicroDensity ~ rCMRGlc, data = MetaData)
+summary(lm.MicroDensity)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = MicroDensity
+```{r}
+crf.lm.MicroDensity<-lm(MicroDensity ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.MicroDensity,type=3)
+```
+
+
+Regression x = rCMRGlc y = GliaNeurDensityRatio
+```{r}
+lm.GliaNeurDensityRatio<-lm(GliaNeurDensityRatio ~ rCMRGlc, data = MetaData)
+summary(lm.GliaNeurDensityRatio)
+```
+
+SPSS style Type 3 Regression x = rCMRGlc y = GliaNeurDensityRatio
+```{r}
+crf.lm.GliaNeurDensityRatio<-lm(GliaNeurDensityRatio ~ rCMRGlc, data = MetaData)
+library(car)
+Anova(crf.lm.GliaNeurDensityRatio,type=3)
+```

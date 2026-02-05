@@ -1,0 +1,29 @@
+
+Call:
+pgls(formula = Total_insula_volume ~ Brain_weight, data = primate, 
+    lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.127129 -0.041968 -0.008717  0.025783  0.077179 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.000
+   lower bound : 0.000, p = 1    
+   upper bound : 1.000, p = 0.0001574
+   95.0% CI   : (NA, 0.511)
+delta  [Fix]  : 1.000
+
+Coefficients:
+               Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -13.511288   0.643266 -21.004 < 2.2e-16 ***
+Brain_weight   1.096933   0.058862  18.636 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.05013 on 27 degrees of freedom
+  (29 observations deleted due to missingness)
+Multiple R-squared: 0.9279,	Adjusted R-squared: 0.9252 
+F-statistic: 347.3 on 1 and 27 DF,  p-value: < 2.2e-16 

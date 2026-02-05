@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = Cerebellum ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.049050 -0.010556 -0.003421  0.015541  0.033367 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.916
+   lower bound : 0.000, p = 6.9278e-10
+   upper bound : 1.000, p = 0.26441
+   95.0% CI   : (0.649, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -2.423017   0.201589 -12.020 2.442e-15 ***
+Brain_weight  1.032644   0.019431  53.145 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01877 on 43 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared: 0.985,	Adjusted R-squared: 0.9847 
+F-statistic:  2824 on 1 and 43 DF,  p-value: < 2.2e-16 

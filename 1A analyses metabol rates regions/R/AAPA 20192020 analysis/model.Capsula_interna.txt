@@ -1,0 +1,29 @@
+
+Call:
+pgls(formula = Capsula_interna ~ Brain_weight, data = primate, 
+    lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.040131 -0.013107  0.008783  0.030904  0.057731 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.920
+   lower bound : 0.000, p = 0.0010284
+   upper bound : 1.000, p = 0.53304
+   95.0% CI   : (0.399, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -5.776059   0.369329 -15.639 9.504e-14 ***
+Brain_weight  1.077337   0.036416  29.584 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03114 on 23 degrees of freedom
+  (33 observations deleted due to missingness)
+Multiple R-squared: 0.9744,	Adjusted R-squared: 0.9733 
+F-statistic: 875.2 on 1 and 23 DF,  p-value: < 2.2e-16 

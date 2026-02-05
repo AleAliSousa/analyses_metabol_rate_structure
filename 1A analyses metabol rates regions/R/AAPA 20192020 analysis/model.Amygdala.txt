@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = Amygdala ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.026246 -0.010065  0.000675  0.010549  0.036816 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.000
+   lower bound : 0.000, p = 1    
+   upper bound : 1.000, p = 0.10271
+   95.0% CI   : (NA, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -1.715906   0.237210 -7.2337 2.908e-06 ***
+Brain_weight  0.714494   0.023983 29.7921 9.326e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01599 on 15 degrees of freedom
+  (41 observations deleted due to missingness)
+Multiple R-squared: 0.9834,	Adjusted R-squared: 0.9823 
+F-statistic: 887.6 on 1 and 15 DF,  p-value: 9.214e-15 

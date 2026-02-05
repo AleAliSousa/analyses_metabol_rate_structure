@@ -1,0 +1,28 @@
+
+Call:
+pgls(formula = LGN_Sousa ~ Brain_weight, data = primate, lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.062305 -0.025840 -0.004307  0.023311  0.067825 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.919
+   lower bound : 0.000, p = 0.00049879
+   upper bound : 1.000, p = 0.12277
+   95.0% CI   : (0.548, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -3.051096   0.369269 -8.2625 2.897e-10 ***
+Brain_weight  0.696715   0.035581 19.5810 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03456 on 41 degrees of freedom
+  (15 observations deleted due to missingness)
+Multiple R-squared: 0.9034,	Adjusted R-squared: 0.901 
+F-statistic: 383.4 on 1 and 41 DF,  p-value: < 2.2e-16 

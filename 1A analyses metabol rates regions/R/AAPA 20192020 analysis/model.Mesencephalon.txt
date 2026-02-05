@@ -1,0 +1,29 @@
+
+Call:
+pgls(formula = Mesencephalon ~ Brain_weight, data = primate, 
+    lambda = "ML")
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.029386 -0.011426 -0.001952  0.010662  0.051476 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 1.000
+   lower bound : 0.000, p = 0.015593
+   upper bound : 1.000, p = 1    
+   95.0% CI   : (0.566, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  -0.726403   0.187682 -3.8704 0.0003641 ***
+Brain_weight  0.708530   0.017917 39.5446 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01825 on 43 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared: 0.9732,	Adjusted R-squared: 0.9726 
+F-statistic:  1564 on 1 and 43 DF,  p-value: < 2.2e-16 
