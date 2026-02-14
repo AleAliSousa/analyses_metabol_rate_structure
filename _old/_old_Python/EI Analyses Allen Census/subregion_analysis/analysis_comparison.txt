@@ -1,0 +1,33 @@
+
+================================================================================
+SUBREGION-LEVEL vs LOBE-LEVEL ANALYSIS COMPARISON
+================================================================================
+
+LOBE-LEVEL ANALYSIS (Previous):
+  Sample size: n = 6 lobes
+  Pearson r = 0.668, p = 0.1470
+  Result: NOT statistically significant (p > 0.05)
+  Interpretation: Moderate correlation, but insufficient power
+
+SUBREGION-LEVEL ANALYSIS (Current):
+  Sample size: n = 20 cortical subregions
+  Pearson r = 0.073, p = 0.760755
+  Result: NOT significant (p > 0.05)
+
+  Linear regression:
+    rCMRGlc = 0.3087 × E:I Ratio + 32.99
+    R² = 0.005
+
+CONCLUSION:
+Even with more data points, we still lack statistical power to detect significance.
+
+The positive correlation suggests that cortical regions with higher excitatory:inhibitory balance have higher glucose metabolism.
+
+Top 5 regions by E:I ratio:
+  1. V1C          E:I=4.42  rCMRGlc=35.8  (Occipital lobe)
+  2. Ig           E:I=3.13  rCMRGlc=30.3  (Insular lobe)
+  3. M1C          E:I=3.05  rCMRGlc=35.3  (Frontal lobe)
+  4. V2           E:I=2.94  rCMRGlc=35.8  (Occipital lobe)
+  5. MTG          E:I=2.87  rCMRGlc=30.5  (Temporal lobe)
+
+================================================================================

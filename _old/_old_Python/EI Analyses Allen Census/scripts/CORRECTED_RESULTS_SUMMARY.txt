@@ -1,0 +1,126 @@
+================================================================================
+CORRECTED ANALYSIS SUMMARY - V1C NOW PART OF OCCIPITAL LOBE
+================================================================================
+
+ERROR CORRECTED:
+  V1C (primary visual cortex) was incorrectly treated as separate "lobe"
+  NOW CORRECTLY: V1C is part of Occipital lobe (with V2 and A19)
+
+================================================================================
+CORRECTED LOBE-LEVEL RESULTS (n=5 lobes)
+================================================================================
+
+Lobe           E:I Ratio  rCMRGlc  Regions Included
+---------------------------------------------------
+Occipital      3.18       35.8     V1C, V2, A19
+Insular        2.74       30.3     FI, SI, Ig  
+Frontal        2.54       35.3     M1C, A13, A25, A32, A44-45, A46
+Temporal       2.50       30.5     MTG, STG, ITG, A38, A1C
+Parietal       2.35       35.8     S1C, A5-A7, A40, A43
+
+STATISTICS:
+  Pearson:  r = 0.127, p = 0.838  *** NO CORRELATION ***
+  Spearman: rho = -0.103, p = 0.870
+  R-squared: 0.016 (1.6% variance)
+
+CONCLUSION: NO correlation between E:I and rCMRGlc
+
+================================================================================
+CORRECTED SUBREGION-LEVEL RESULTS (n=20 subregions)
+================================================================================
+
+All subregions now correctly labeled with their anatomical lobe:
+
+Region   Lobe        E:I   rCMRGlc
+-----------------------------------
+V1C      Occipital   4.42  35.8  <-- NOW CORRECTLY CLASSIFIED
+Ig       Insular     3.13  30.3
+M1C      Frontal     3.05  35.3
+V2       Occipital   2.94  35.8
+MTG      Temporal    2.87  30.5
+[... 15 more regions ...]
+
+STATISTICS:
+  Pearson:  r = 0.073, p = 0.761  *** NO CORRELATION ***
+  Spearman: rho = 0.063, p = 0.792
+  R-squared: 0.005 (0.5% variance)
+
+CONCLUSION: NO correlation between E:I and rCMRGlc
+
+================================================================================
+IMPACT OF CORRECTION
+================================================================================
+
+                         BEFORE           AFTER
+                         (WRONG)          (CORRECT)
+-------------------------------------------------------
+Number of lobes          6                5
+V1C classification       "Primary visual" "Occipital"
+V1C rCMRGlc             40.1             35.8
+
+LOBE-LEVEL:
+  Correlation (r)        0.668            0.127
+  P-value               0.147            0.838
+  Interpretation        "Moderate"       "None"
+
+SUBREGION-LEVEL:
+  Correlation (r)        0.313            0.073
+  P-value               0.180            0.761
+  Interpretation        "Weak"           "None"
+
+HYPOTHESIS SUPPORT:     Marginal         NONE
+
+================================================================================
+WHY THE CORRELATION DISAPPEARED
+================================================================================
+
+The original correlation was ENTIRELY DRIVEN by treating V1C as special:
+  - V1C had highest E:I (4.42) AND unique high metabolism (40.1)
+  - This single outlier created the appearance of correlation
+
+When V1C is correctly grouped with occipital lobe:
+  - V1C still has high E:I (4.42)
+  - But now shares rCMRGlc=35.8 with other occipital regions
+  - No longer acts as outlier → correlation vanishes
+
+BOTTOM LINE: The correlation was an ARTIFACT of misclassification
+
+================================================================================
+SCIENTIFIC CONCLUSION
+================================================================================
+
+HYPOTHESIS: E:I ratio correlates with glucose metabolism
+
+RESULT: **HYPOTHESIS NOT SUPPORTED**
+
+With correct anatomical classification, there is NO relationship between
+E:I ratio and rCMRGlc in human cortex.
+
+KEY OBSERVATIONS:
+  • Occipital lobe has HIGHEST E:I (3.18) but NOT highest metabolism
+  • Parietal and Occipital have SAME metabolism (35.8) but different E:I
+  • No correlation at lobe level (r=0.127, p=0.838)
+  • No correlation at subregion level (r=0.073, p=0.761)
+
+LIMITATION:
+  We assign same lobe-level rCMRGlc to all subregions within that lobe.
+  If V1C truly has higher metabolism than V2/A19 (as Heiss suggested with
+  the 40.1 value), we cannot detect this with lobe-averaged data.
+
+  To properly test this hypothesis, need SUBREGION-SPECIFIC metabolic data.
+
+================================================================================
+FILES UPDATED
+================================================================================
+
+ALL visualizations and data files have been regenerated with corrections:
+
+LOBE-LEVEL:
+  ✓ data/cortical/ei_metabolism_integrated.csv (5 lobes)
+  ✓ data/cortical/visualizations/ (all 4 plots regenerated)
+
+SUBREGION-LEVEL:
+  ✓ data/cortical/subregion_analysis/ (all files regenerated)
+  ✓ V1C now correctly shows as "Occipital lobe" with rCMRGlc=35.8
+
+================================================================================

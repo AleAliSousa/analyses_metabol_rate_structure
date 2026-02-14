@@ -1,0 +1,21 @@
+METABOLIC CLUSTERING ANALYSIS
+================================================================================
+
+OBSERVATION: Two metabolic clusters exist
+  High metabolism: rCMRGlc ~35 (Frontal, Parietal, Occipital)
+  Low metabolism: rCMRGlc ~30 (Temporal, Insular)
+
+High metabolism regions (n=13):
+  Mean E:I: 2.58 ± 0.67
+  Range: 1.48 - 4.42
+
+Low metabolism regions (n=7):
+  Mean E:I: 2.51 ± 0.45
+  Range: 1.73 - 3.13
+
+Statistical comparison:
+  T-test: p = 0.8197
+  Result: NOT significant
+
+Alternative correlation (Excitatory % vs rCMRGlc):
+  r = 0.315, p = 0.1761

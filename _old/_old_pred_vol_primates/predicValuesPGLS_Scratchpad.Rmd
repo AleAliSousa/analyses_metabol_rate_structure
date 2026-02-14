@@ -1,0 +1,74 @@
+plot_loess <- ggplot(core_with_rCMRGIc[-c(7,8),][core_with_rCMRGIc$Model=="Brownian (BM)",], aes(x = rCMRGIc, y = `Diff.pre`)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = F, color = "#377eb8", span=0.2) +
+  theme_bw() +
+  labs(
+    title = "Correlation between rCMRGIc and Prediction Error (BM)",
+    x = "rCMRGIc (µmol/100 g/min.)",
+    y = "Prediction Error (Diff.pre) under Brownian Model"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    axis.title = element_text(size = 10)
+  ) +
+  ylim(-3.5, 0.6
+  ) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE)
+
+  plot_loess
+
+## Filter first to keep only Brownian model and remove NeoW_Frahm (smallest rCMRGIc value) and Insular cortex (grey) (second smallest rCMRGIc value)
+
+# Filter
+plot_data <- core_with_rCMRGIc %>%
+  filter(Model == "Brownian (BM)") %>%
+  slice(-c(7, 8))
+
+# Then plot
+plot_loess <- ggplot(plot_data, aes(x = rCMRGIc, y = `Diff.pre`)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = FALSE, color = "#377eb8", span = 0.2) +
+  theme_bw() +
+  labs(
+    title = "Correlation between rCMRGIc and Prediction Error (BM)",
+    x = "rCMRGIc (µmol/100 g/min.)",
+    y = "Prediction Error (Diff.pre) under Brownian Model"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    axis.title = element_text(size = 10)
+  ) +
+  ylim(-3.5, 0.6) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE)
+
+plot_loess
+
+# First filter for Brownian model
+temp <- core_with_rCMRGIc[core_with_rCMRGIc$Model == "Brownian (BM)", ]
+# Then remove rows 7 and 8 from the filtered data
+temp <- temp[-c(7, 8), ]
+
+plot_loess <- ggplot(temp, aes(x = rCMRGIc, y = `Diff.pre`)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = FALSE, color = "#377eb8", span = 0.75) +
+  coord_cartesian(ylim = c(-3.5, 0.6)) +  # Use this instead of ylim()
+  theme_bw() +
+  labs(
+    title = "Correlation between rCMRGIc and Prediction Error (BM)",
+    x = "rCMRGIc (µmol/100 g/min.)",
+    y = "Prediction Error (Diff.pre) under Brownian Model"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    axis.title = element_text(size = 10)
+  ) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE)
+
+plot_loess
+
+
+
+polyfit <- poly(`Brownian (BM)__Diff.pre` ~ rCMRGIc + I(rCMRGIc^2), data = cor_df)
+  polyfit_summary <- summary(polyfit)
+  polyfit_summary
+  

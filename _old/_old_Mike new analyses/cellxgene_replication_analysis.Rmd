@@ -1,0 +1,430 @@
+---
+title: "CellxGene Replication: Cell Density vs Metabolic Rate"
+subtitle: "Validation of Hanson/Karlsen/Morgan findings using Whole Human Brain Atlas"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 10,
+  fig.height = 8
+)
+
+library(ggplot2)
+library(ggrepel)
+library(patchwork)
+library(knitr)
+library(car)
+library(dplyr)
+```
+
+# Background
+
+This analysis replicates the findings from Hanson et al. (2018), Karlsen & Pakkenberg (2011), and Morgan et al. (2014) using **NEW data from the Whole Human Brain Atlas** via CellxGene.
+
+**Original findings:**
+- Astrocyte density: r = 0.968, p = .002
+- Oligodendrocyte density: r = 0.897, p = .016
+- Microglia density: r = 0.937, p = .006
+- Total glia density: r = 0.708, p = .075 (NS)
+
+# Load CellxGene Data
+
+```{r load-data}
+# Set working directory
+setwd("C:\\Users\\michaelproulx\\Downloads\\1A analyses metabol rates regions\\1A analyses metabol rates regions\\R")
+
+# Load CellxGene data (now relative to working directory)
+cellxgene_data <- read.csv(
+  "cellxgene_integration\\ei_analysis\\data\\cortical\\followup_analyses\\subregions_with_cell_composition.csv",
+  header = TRUE
+)
+
+# Display summary
+cat("=== CELLXGENE DATA SUMMARY ===\n")
+cat("Number of cortical subregions:", nrow(cellxgene_data), "\n")
+cat("Regions:", paste(cellxgene_data$Region, collapse=", "), "\n\n")
+
+# Show first few rows
+kable(head(cellxgene_data[, c("Region", "Lobe", "rCMRGlc_Mean", "Total_Neuron",
+                               "Astrocyte", "Oligodendrocyte", "Microglia", "Total_Glia")]),
+      caption = "CellxGene Cell Composition Data (First 6 Regions)")
+```
+
+# Calculate Densities
+
+Since CellxGene provides cell counts, we need to calculate densities.
+We'll express as proportions (cells per 10,000 total cells) to match the concept of "density."
+
+```{r calculate-densities}
+# Calculate cell densities as proportions
+cellxgene_data$Total_Cells_All <- cellxgene_data$Total_Neuron + cellxgene_data$Total_Glia
+
+# Densities per 10,000 cells
+cellxgene_data$Neuron_Density <- (cellxgene_data$Total_Neuron / cellxgene_data$Total_Cells_All) * 10000
+cellxgene_data$Glia_Density <- (cellxgene_data$Total_Glia / cellxgene_data$Total_Cells_All) * 10000
+cellxgene_data$Astrocyte_Density <- (cellxgene_data$Astrocyte / cellxgene_data$Total_Cells_All) * 10000
+cellxgene_data$Oligodendrocyte_Density <- (cellxgene_data$Oligodendrocyte / cellxgene_data$Total_Cells_All) * 10000
+cellxgene_data$Microglia_Density <- (cellxgene_data$Microglia / cellxgene_data$Total_Cells_All) * 10000
+cellxgene_data$GliaNeuron_Ratio <- cellxgene_data$Glia_Density / cellxgene_data$Neuron_Density
+
+# Show calculated densities
+kable(head(cellxgene_data[, c("Region", "rCMRGlc_Mean", "Neuron_Density", "Glia_Density",
+                               "Astrocyte_Density", "Oligodendrocyte_Density", "Microglia_Density")]),
+      caption = "Calculated Cell Densities (per 10,000 cells)",
+      digits = 2)
+```
+
+# Aggregate by Lobe
+
+To better match the original analysis (which used lobes), let's aggregate to lobe level.
+
+```{r aggregate-lobes}
+library(dplyr)
+
+# Aggregate to lobe level (weighted by total cells)
+lobe_data <- cellxgene_data %>%
+  group_by(Lobe) %>%
+  summarise(
+    rCMRGlc_Mean = first(rCMRGlc_Mean),  # Same within lobe
+    n_regions = n(),
+
+    # Sum counts
+    Total_Neuron = sum(Total_Neuron),
+    Total_Glia = sum(Total_Glia),
+    Astrocyte = sum(Astrocyte),
+    Oligodendrocyte = sum(Oligodendrocyte),
+    Microglia = sum(Microglia),
+    Total_Cells = sum(Total_Cells_All),
+
+    .groups = 'drop'
+  ) %>%
+  mutate(
+    # Calculate densities per 10,000 cells
+    Neuron_Density = (Total_Neuron / Total_Cells) * 10000,
+    Glia_Density = (Total_Glia / Total_Cells) * 10000,
+    Astrocyte_Density = (Astrocyte / Total_Cells) * 10000,
+    Oligodendrocyte_Density = (Oligodendrocyte / Total_Cells) * 10000,
+    Microglia_Density = (Microglia / Total_Cells) * 10000,
+    GliaNeuron_Ratio = Glia_Density / Neuron_Density
+  )
+
+cat("\n=== LOBE-LEVEL DATA ===\n")
+print(lobe_data)
+
+kable(lobe_data[, c("Lobe", "rCMRGlc_Mean", "n_regions", "Neuron_Density", "Glia_Density",
+                    "Astrocyte_Density", "Oligodendrocyte_Density", "Microglia_Density")],
+      caption = "Lobe-Level Aggregated Densities",
+      digits = 2)
+```
+
+# Replication Analysis: Lobe Level
+
+```{r lobe-correlations}
+cat("\n=== LOBE-LEVEL CORRELATIONS WITH rCMRGlc ===\n\n")
+
+# Function to test correlation
+test_correlation <- function(data, var_name, label) {
+  valid_data <- data[!is.na(data[[var_name]]) & !is.na(data$rCMRGlc_Mean), ]
+
+  if (nrow(valid_data) >= 3) {
+    cor_test <- cor.test(valid_data$rCMRGlc_Mean, valid_data[[var_name]])
+    lm_model <- lm(as.formula(paste(var_name, "~ rCMRGlc_Mean")), data = valid_data)
+    lm_sum <- summary(lm_model)
+
+    cat(sprintf("%s:\n", label))
+    cat(sprintf("  n = %d\n", nrow(valid_data)))
+    cat(sprintf("  r = %.3f\n", cor_test$estimate))
+    cat(sprintf("  p-value = %.4f %s\n", cor_test$p.value,
+                ifelse(cor_test$p.value < 0.05, "***", "")))
+    cat(sprintf("  95%% CI: [%.3f, %.3f]\n", cor_test$conf.int[1], cor_test$conf.int[2]))
+    cat(sprintf("  R² = %.3f\n", lm_sum$r.squared))
+    cat(sprintf("  Beta = %.2e, t = %.3f\n\n", coef(lm_model)[2], lm_sum$coefficients[2, 3]))
+
+    return(list(
+      var = var_name,
+      label = label,
+      n = nrow(valid_data),
+      r = cor_test$estimate,
+      p = cor_test$p.value,
+      ci_lower = cor_test$conf.int[1],
+      ci_upper = cor_test$conf.int[2],
+      r_squared = lm_sum$r.squared,
+      beta = coef(lm_model)[2]
+    ))
+  }
+}
+
+# Test all densities
+results_lobe <- list(
+  test_correlation(lobe_data, "Neuron_Density", "Neuron Density"),
+  test_correlation(lobe_data, "Glia_Density", "Total Glia Density"),
+  test_correlation(lobe_data, "Astrocyte_Density", "Astrocyte Density"),
+  test_correlation(lobe_data, "Oligodendrocyte_Density", "Oligodendrocyte Density"),
+  test_correlation(lobe_data, "Microglia_Density", "Microglia Density"),
+  test_correlation(lobe_data, "GliaNeuron_Ratio", "Glia:Neuron Ratio")
+)
+
+# Create summary table
+results_df_lobe <- do.call(rbind, lapply(results_lobe, as.data.frame))
+results_df_lobe <- results_df_lobe[order(results_df_lobe$p), ]
+
+kable(results_df_lobe,
+      caption = "Lobe-Level Correlation Summary (sorted by p-value)",
+      digits = 4)
+```
+
+# Replication Analysis: Subregion Level
+
+```{r subregion-correlations}
+cat("\n=== SUBREGION-LEVEL CORRELATIONS WITH rCMRGlc ===\n\n")
+
+# Test all densities at subregion level
+results_subregion <- list(
+  test_correlation(cellxgene_data, "Neuron_Density", "Neuron Density"),
+  test_correlation(cellxgene_data, "Glia_Density", "Total Glia Density"),
+  test_correlation(cellxgene_data, "Astrocyte_Density", "Astrocyte Density"),
+  test_correlation(cellxgene_data, "Oligodendrocyte_Density", "Oligodendrocyte Density"),
+  test_correlation(cellxgene_data, "Microglia_Density", "Microglia Density"),
+  test_correlation(cellxgene_data, "GliaNeuron_Ratio", "Glia:Neuron Ratio")
+)
+
+# Create summary table
+results_df_subregion <- do.call(rbind, lapply(results_subregion, as.data.frame))
+results_df_subregion <- results_df_subregion[order(results_df_subregion$p), ]
+
+kable(results_df_subregion,
+      caption = "Subregion-Level Correlation Summary (sorted by p-value)",
+      digits = 4)
+```
+
+# Visualization: Glial Subtypes (Lobe Level)
+
+```{r plot-lobe-subtypes, fig.width=14, fig.height=10}
+cb_palette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442",
+                "#0072B2", "#D55E00", "#CC79A7", "#999999")
+
+# Create plots for each glial subtype
+plot_list <- list()
+
+for (i in 1:3) {
+  var_info <- list(
+    list(var = "Astrocyte_Density", label = "Astrocyte Density", color = 1),
+    list(var = "Oligodendrocyte_Density", label = "Oligodendrocyte Density", color = 2),
+    list(var = "Microglia_Density", label = "Microglia Density", color = 3)
+  )[[i]]
+
+  cor_test <- cor.test(lobe_data$rCMRGlc_Mean, lobe_data[[var_info$var]])
+
+  p <- ggplot(lobe_data, aes(x = rCMRGlc_Mean, y = .data[[var_info$var]])) +
+    geom_point(size = 4, color = cb_palette[var_info$color], alpha = 0.8) +
+    geom_smooth(method = "lm", color = cb_palette[var_info$color+1],
+                fill = cb_palette[var_info$color+1], alpha = 0.2, linewidth = 1.2) +
+    geom_text_repel(aes(label = Lobe), size = 3.5, box.padding = 0.5) +
+    labs(title = var_info$label,
+         subtitle = sprintf("r = %.3f, p = %.4f, n = %d lobes",
+                          cor_test$estimate, cor_test$p.value, nrow(lobe_data)),
+         x = "rCMRGlc (µmol/100g/min)",
+         y = paste(var_info$label, "(per 10,000 cells)")) +
+    theme_minimal(base_size = 12) +
+    theme(
+      plot.title = element_text(face = "bold", size = 14),
+      plot.subtitle = element_text(size = 11),
+      axis.title = element_text(face = "bold")
+    )
+
+  plot_list[[i]] <- p
+}
+
+# Add total glia plot
+cor_test <- cor.test(lobe_data$rCMRGlc_Mean, lobe_data$Glia_Density)
+p <- ggplot(lobe_data, aes(x = rCMRGlc_Mean, y = Glia_Density)) +
+  geom_point(size = 4, color = cb_palette[4], alpha = 0.8) +
+  geom_smooth(method = "lm", color = cb_palette[5],
+              fill = cb_palette[5], alpha = 0.2, linewidth = 1.2) +
+  geom_text_repel(aes(label = Lobe), size = 3.5, box.padding = 0.5) +
+  labs(title = "Total Glia Density",
+       subtitle = sprintf("r = %.3f, p = %.4f, n = %d lobes",
+                        cor_test$estimate, cor_test$p.value, nrow(lobe_data)),
+       x = "rCMRGlc (µmol/100g/min)",
+       y = "Total Glia Density (per 10,000 cells)") +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11),
+    axis.title = element_text(face = "bold")
+  )
+
+plot_list[[4]] <- p
+
+# Combine plots
+combined <- wrap_plots(plot_list, ncol = 2) +
+  plot_annotation(
+    title = "CellxGene Replication: Glial Cell Densities vs Metabolic Rate (Lobe Level)",
+    subtitle = "Whole Human Brain Atlas Data",
+    theme = theme(plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+                  plot.subtitle = element_text(size = 12, hjust = 0.5))
+  )
+
+print(combined)
+ggsave("CellxGene_Lobe_Glia_Replication.png", combined,
+       width = 14, height = 10, dpi = 300, bg = "white")
+```
+
+# Visualization: Glial Subtypes (Subregion Level)
+
+```{r plot-subregion-subtypes, fig.width=14, fig.height=10}
+# Create plots for each glial subtype at subregion level
+plot_list_sub <- list()
+
+for (i in 1:3) {
+  var_info <- list(
+    list(var = "Astrocyte_Density", label = "Astrocyte Density", color = 1),
+    list(var = "Oligodendrocyte_Density", label = "Oligodendrocyte Density", color = 2),
+    list(var = "Microglia_Density", label = "Microglia Density", color = 3)
+  )[[i]]
+
+  cor_test <- cor.test(cellxgene_data$rCMRGlc_Mean, cellxgene_data[[var_info$var]])
+
+  p <- ggplot(cellxgene_data, aes(x = rCMRGlc_Mean, y = .data[[var_info$var]])) +
+    geom_point(size = 3, color = cb_palette[var_info$color], alpha = 0.8) +
+    geom_smooth(method = "lm", color = cb_palette[var_info$color+1],
+                fill = cb_palette[var_info$color+1], alpha = 0.2, linewidth = 1.2) +
+    geom_text_repel(aes(label = Region), size = 2.5, box.padding = 0.3, max.overlaps = 15) +
+    labs(title = var_info$label,
+         subtitle = sprintf("r = %.3f, p = %.4f, n = %d regions",
+                          cor_test$estimate, cor_test$p.value, nrow(cellxgene_data)),
+         x = "rCMRGlc",
+         y = paste(var_info$label, "(per 10k cells)")) +
+    theme_minimal(base_size = 11) +
+    theme(
+      plot.title = element_text(face = "bold", size = 12),
+      plot.subtitle = element_text(size = 10)
+    )
+
+  plot_list_sub[[i]] <- p
+}
+
+# Add total glia plot
+cor_test <- cor.test(cellxgene_data$rCMRGlc_Mean, cellxgene_data$Glia_Density)
+p <- ggplot(cellxgene_data, aes(x = rCMRGlc_Mean, y = Glia_Density)) +
+  geom_point(size = 3, color = cb_palette[4], alpha = 0.8) +
+  geom_smooth(method = "lm", color = cb_palette[5],
+              fill = cb_palette[5], alpha = 0.2, linewidth = 1.2) +
+  geom_text_repel(aes(label = Region), size = 2.5, box.padding = 0.3, max.overlaps = 15) +
+  labs(title = "Total Glia Density",
+       subtitle = sprintf("r = %.3f, p = %.4f, n = %d regions",
+                        cor_test$estimate, cor_test$p.value, nrow(cellxgene_data)),
+       x = "rCMRGlc",
+       y = "Total Glia Density (per 10k cells)") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    plot.subtitle = element_text(size = 10)
+  )
+
+plot_list_sub[[4]] <- p
+
+# Combine plots
+combined_sub <- wrap_plots(plot_list_sub, ncol = 2) +
+  plot_annotation(
+    title = "CellxGene Replication: Glial Cell Densities vs Metabolic Rate (Subregion Level)",
+    subtitle = "Whole Human Brain Atlas Data (21 cortical regions)",
+    theme = theme(plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+                  plot.subtitle = element_text(size = 12, hjust = 0.5))
+  )
+
+print(combined_sub)
+ggsave("CellxGene_Subregion_Glia_Replication.png", combined_sub,
+       width = 14, height = 10, dpi = 300, bg = "white")
+```
+
+# Comparison with Original Results
+
+```{r comparison}
+cat("\n", strrep("=", 80), "\n")
+cat("COMPARISON: ORIGINAL vs CELLXGENE REPLICATION\n")
+cat(strrep("=", 80), "\n\n")
+
+# Original results
+original <- data.frame(
+  Variable = c("Astrocyte Density", "Oligodendrocyte Density", "Microglia Density", "Total Glia Density"),
+  Original_r = c(0.968, 0.897, 0.937, 0.708),
+  Original_p = c(0.002, 0.016, 0.006, 0.075),
+  Original_n = c(6, 6, 6, 7),
+  Source = c("Hanson/Karlsen/Morgan", "Hanson/Karlsen/Morgan", "Hanson/Karlsen/Morgan", "Hanson/Karlsen/Morgan")
+)
+
+# Get CellxGene lobe-level results
+cellxgene_lobe <- data.frame(
+  Variable = results_df_lobe$label,
+  CellxGene_Lobe_r = results_df_lobe$r,
+  CellxGene_Lobe_p = results_df_lobe$p,
+  CellxGene_Lobe_n = results_df_lobe$n
+)
+
+# Get CellxGene subregion-level results
+cellxgene_sub <- data.frame(
+  Variable = results_df_subregion$label,
+  CellxGene_Sub_r = results_df_subregion$r,
+  CellxGene_Sub_p = results_df_subregion$p,
+  CellxGene_Sub_n = results_df_subregion$n
+)
+
+# Merge for comparison
+comparison <- merge(original, cellxgene_lobe, by = "Variable", all.x = TRUE)
+comparison <- merge(comparison, cellxgene_sub, by = "Variable", all.x = TRUE)
+
+# Add significance markers
+comparison$Original_Sig <- ifelse(comparison$Original_p < 0.05, "***", "")
+comparison$Lobe_Sig <- ifelse(comparison$CellxGene_Lobe_p < 0.05, "***", "")
+comparison$Sub_Sig <- ifelse(comparison$CellxGene_Sub_p < 0.05, "***", "")
+
+kable(comparison,
+      caption = "Comparison of Original Results with CellxGene Replication",
+      digits = 4)
+
+cat("\n=== INTERPRETATION ===\n\n")
+cat("The CellxGene data provides an independent validation of the original findings:\n\n")
+
+if (any(cellxgene_lobe$CellxGene_Lobe_p[1:3] < 0.05)) {
+  cat("✓ REPLICATED: Glial subtype densities show relationships with rCMRGlc\n")
+} else {
+  cat("✗ NOT REPLICATED: Glial subtype densities do not show significant relationships\n")
+}
+
+if (cellxgene_lobe$CellxGene_Lobe_p[cellxgene_lobe$Variable == "Total Glia Density"] >= 0.05) {
+  cat("✓ CONFIRMED: Total glia density remains non-significant (consistent with original)\n")
+} else {
+  cat("✗ DIFFERENT: Total glia density IS significant in CellxGene data\n")
+}
+
+cat("\n", strrep("=", 80), "\n")
+```
+
+# Summary
+
+```{r summary}
+cat("\n=== ANALYSIS COMPLETE ===\n\n")
+
+cat("FILES CREATED:\n")
+cat("- CellxGene_Lobe_Glia_Replication.png\n")
+cat("- CellxGene_Subregion_Glia_Replication.png\n\n")
+
+cat("This analysis used single-cell RNA-seq data from the Whole Human Brain Atlas\n")
+cat("(CellxGene) to independently validate findings from traditional histology studies.\n\n")
+
+cat("Sample size comparison:\n")
+cat("- Original: 6-7 brain regions from 3 papers\n")
+cat("- CellxGene Lobe: 5 lobes\n")
+cat("- CellxGene Subregion: 21 cortical subregions\n\n")
+```
+
+# Session Info
+
+```{r}
+sessionInfo()
+```

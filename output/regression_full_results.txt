@@ -1,0 +1,546 @@
+
+--- Regression for Volume ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+      1       2       3       4       5      19 
+138.318  -2.814 -43.248  -9.359 -63.255 -19.641 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  -90.559    219.457  -0.413    0.701
+rCMRGlc        5.088      6.743   0.755    0.493
+
+Residual standard error: 79.82 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1246,	Adjusted R-squared:  -0.09425 
+F-statistic: 0.5694 on 1 and 4 DF,  p-value: 0.4925
+
+
+--- Type III ANOVA for Volume ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Volume
+             Sum Sq Df F value Pr(>F)
+(Intercept)  1084.9  1  0.1703 0.7010
+rCMRGlc      3627.5  1  0.5694 0.4925
+Residuals   25484.7  4               
+
+--- Regression for VolumeSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+      1       2       3       4       5      19 
+21.4410  0.5625 -8.5746 -0.7061 -9.3512 -3.3716 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  -18.906     34.583  -0.547    0.614
+rCMRGlc        1.009      1.063   0.949    0.396
+
+Residual standard error: 12.58 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1838,	Adjusted R-squared:  -0.02022 
+F-statistic: 0.9009 on 1 and 4 DF,  p-value: 0.3963
+
+
+--- Type III ANOVA for VolumeSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: VolumeSD
+            Sum Sq Df F value Pr(>F)
+(Intercept)  47.29  1  0.2989 0.6137
+rCMRGlc     142.54  1  0.9009 0.3963
+Residuals   632.87  4               
+
+--- Regression for Neuron_N ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+          1           2           3           4           5          19 
+11261764519 -1250248703 -3592015568  -995115365 -3953589104 -1470795780 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -8433041799 17393031111  -0.485    0.653
+rCMRGlc       446119910   534445015   0.835    0.451
+
+Residual standard error: 6326000000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1484,	Adjusted R-squared:  -0.06456 
+F-statistic: 0.6968 on 1 and 4 DF,  p-value: 0.4508
+
+
+--- Type III ANOVA for Neuron_N ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Neuron_N
+                           Sum Sq Df F value Pr(>F)
+(Intercept)   9407798070723805184  1  0.2351 0.6531
+rCMRGlc      27884777203846709248  1  0.6968 0.4508
+Residuals   160077399364485120000  4               
+
+--- Regression for NeuronSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+ 959136463 -765324045 -283320434  430959544  -39434071 -302017458 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -1095634289  1877082176  -0.584    0.591
+rCMRGlc        62957344    57678113   1.092    0.336
+
+Residual standard error: 682700000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.2295,	Adjusted R-squared:  0.03688 
+F-statistic: 1.191 on 1 and 4 DF,  p-value: 0.3364
+
+
+--- Type III ANOVA for NeuronSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: NeuronSD
+                         Sum Sq Df F value Pr(>F)
+(Intercept)  158800078360641792  1  0.3407 0.5908
+rCMRGlc      555337189756461568  1  1.1914 0.3364
+Residuals   1864429834809547264  4               
+
+--- Regression for NeurDensity ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+        1         2         3         4         5        12        19 
+ 10479255 -12780167  -4863128  24843134  39984017 -62855198   5192087 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -154796217   98948667  -1.564   0.1785  
+rCMRGlc        6739324    3043700   2.214   0.0777 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 36030000 on 5 degrees of freedom
+  (38 observations deleted due to missingness)
+Multiple R-squared:  0.4951,	Adjusted R-squared:  0.3941 
+F-statistic: 4.903 on 1 and 5 DF,  p-value: 0.07769
+
+
+--- Type III ANOVA for NeurDensity ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: NeurDensity
+                      Sum Sq Df F value  Pr(>F)  
+(Intercept) 3176907207243434  1  2.4474 0.17849  
+rCMRGlc     6364037604754574  1  4.9026 0.07769 .
+Residuals   6490434058129524  5                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+--- Regression for Glia_N ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+          1           2           3           4           5          19 
+12151341751  -452560583 -3967271326  -789845244 -5211103867 -1730560731 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -8613551451 19165879133  -0.449    0.676
+rCMRGlc       465955506   588920270   0.791    0.473
+
+Residual standard error: 6971000000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1353,	Adjusted R-squared:  -0.08085 
+F-statistic: 0.626 on 1 and 4 DF,  p-value: 0.4731
+
+
+--- Type III ANOVA for Glia_N ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Glia_N
+                           Sum Sq Df F value Pr(>F)
+(Intercept)   9814857208193810432  1   0.202 0.6764
+rCMRGlc      30419555504604741632  1   0.626 0.4731
+Residuals   194373458668312559616  4               
+
+--- Regression for GliaSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+1604600170   31444084 -826577948 -128828012 -458321090 -222317204 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -1705746422  2584684351  -0.660    0.545
+rCMRGlc        86850009    79420985   1.094    0.336
+
+Residual standard error: 940100000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.2302,	Adjusted R-squared:  0.03769 
+F-statistic: 1.196 on 1 and 4 DF,  p-value: 0.3356
+
+
+--- Type III ANOVA for GliaSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: GliaSD
+                         Sum Sq Df F value Pr(>F)
+(Intercept)  384900450032979968  1  0.4355 0.5454
+rCMRGlc     1056826527724926976  1  1.1958 0.3356
+Residuals   3535041357900057600  4               
+
+--- Regression for GliaDensity ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+        1         2         3         4         5        12        19 
+ 15687154   1987251  -2018005  34184989  13957224 -64297685    499072 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -142936794   93149661  -1.534   0.1855  
+rCMRGlc        6417747    2865320   2.240   0.0752 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 33920000 on 5 degrees of freedom
+  (38 observations deleted due to missingness)
+Multiple R-squared:  0.5008,	Adjusted R-squared:  0.401 
+F-statistic: 5.017 on 1 and 5 DF,  p-value: 0.07523
+
+
+--- Type III ANOVA for GliaDensity ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: GliaDensity
+                      Sum Sq Df F value  Pr(>F)  
+(Intercept) 2708768672812976  1  2.3546 0.18550  
+rCMRGlc     5771189288028572  1  5.0167 0.07523 .
+Residuals   5751967270680808  5                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+--- Regression for Astro_N ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+          1           2           3           4           5          19 
+ 3278025966   179850955 -1089695108  -344700997 -1596828616  -426652200 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -2702031708  5291453623  -0.511    0.636
+rCMRGlc       140932518   162593340   0.867    0.435
+
+Residual standard error: 1925000000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1581,	Adjusted R-squared:  -0.05234 
+F-statistic: 0.7513 on 1 and 4 DF,  p-value: 0.435
+
+
+--- Type III ANOVA for Astro_N ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Astro_N
+                          Sum Sq Df F value Pr(>F)
+(Intercept)   965829271339732992  1  0.2608 0.6365
+rCMRGlc      2782828178587619328  1  0.7513 0.4350
+Residuals   14815948534705317888  4               
+
+--- Regression for AstroSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+ 530283304  437409901 -316388491 -244870651 -396100085  -10333978 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) -937342988 1221552001  -0.767    0.486
+rCMRGlc       42688240   37535285   1.137    0.319
+
+Residual standard error: 444300000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.2443,	Adjusted R-squared:  0.05543 
+F-statistic: 1.293 on 1 and 4 DF,  p-value: 0.3189
+
+
+--- Type III ANOVA for AstroSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: AstroSD
+                        Sum Sq Df F value Pr(>F)
+(Intercept) 116229548565239552  1  0.5888 0.4857
+rCMRGlc     255317431460835456  1  1.2934 0.3189
+Residuals   789593185350073856  4               
+
+--- Regression for AstroDensity ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+       1        2        3        4        5       19 
+  452634  1130137 -2351395  4634941 -1941955 -1924361 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -41077616    8244598  -4.982  0.00758 **
+rCMRGlc       1937320     253336   7.647  0.00157 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2999000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.936,	Adjusted R-squared:   0.92 
+F-statistic: 58.48 on 1 and 4 DF,  p-value: 0.001571
+
+
+--- Type III ANOVA for AstroDensity ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: AstroDensity
+                     Sum Sq Df F value   Pr(>F)   
+(Intercept) 223218370978453  1  24.824 0.007585 **
+rCMRGlc     525855734359171  1  58.480 0.001571 **
+Residuals    35968175521791  4                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+--- Regression for Oligo_N ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+          1           2           3           4           5          19 
+ 6655140088  -368912064 -2249770691  -300249003 -2741278444  -994929887 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -4558220474 10476956571  -0.435    0.686
+rCMRGlc       250144482   321931076   0.777    0.481
+
+Residual standard error: 3811000000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1311,	Adjusted R-squared:  -0.08607 
+F-statistic: 0.6037 on 1 and 4 DF,  p-value: 0.4805
+
+
+--- Type III ANOVA for Oligo_N ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Oligo_N
+                          Sum Sq Df F value Pr(>F)
+(Intercept)  2748591102010023936  1  0.1893 0.6860
+rCMRGlc      8766895347058819072  1  0.6037 0.4805
+Residuals   58083096318581145600  4               
+
+--- Regression for OligoSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+1354233029   34843319 -661495016   54185328 -530344612 -251422049 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -1108619348  2225222538  -0.498    0.644
+rCMRGlc        61263371    68375609   0.896    0.421
+
+Residual standard error: 809300000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1671,	Adjusted R-squared:  -0.04106 
+F-statistic: 0.8028 on 1 and 4 DF,  p-value: 0.4209
+
+
+--- Type III ANOVA for OligoSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: OligoSD
+                         Sum Sq Df F value Pr(>F)
+(Intercept)  162586464996298240  1  0.2482 0.6445
+rCMRGlc      525854680328672256  1  0.8028 0.4209
+Residuals   2620151314162723840  4               
+
+--- Regression for OligoDensity ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+       1        2        3        4        5       19 
+ 2352887 -6717234 -9320772 14997289  4683319 -5995489 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -71864485   28184255  -2.550   0.0633 .
+rCMRGlc       3508139     866033   4.051   0.0155 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 10250000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.804,	Adjusted R-squared:  0.755 
+F-statistic: 16.41 on 1 and 4 DF,  p-value: 0.01547
+
+
+--- Type III ANOVA for OligoDensity ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: OligoDensity
+                      Sum Sq Df F value  Pr(>F)  
+(Intercept)  683200412846745  1  6.5015 0.06332 .
+rCMRGlc     1724318683416636  1 16.4091 0.01547 *
+Residuals    420332133247558  4                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+--- Regression for Microglia_N ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+1571708673   37814615 -526545726 -136570122 -732435704 -213971736 
+
+Coefficients:
+               Estimate  Std. Error t value Pr(>|t|)
+(Intercept) -1147465909  2516069746  -0.456    0.672
+rCMRGlc        61326692    77312627   0.793    0.472
+
+Residual standard error: 915100000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.1359,	Adjusted R-squared:  -0.0801 
+F-statistic: 0.6292 on 1 and 4 DF,  p-value: 0.472
+
+
+--- Type III ANOVA for Microglia_N ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: Microglia_N
+                         Sum Sq Df F value Pr(>F)
+(Intercept)  174180312030087680  1  0.2080  0.672
+rCMRGlc      526942285038771712  1  0.6292  0.472
+Residuals   3349845860897536000  4               
+
+--- Regression for MicroSD ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+         1          2          3          4          5         19 
+ 376400064  -22783843 -106737500  -24982917 -168813542  -53082262 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) -374363898  592128599  -0.632    0.562
+rCMRGlc       19254392   18194654   1.058    0.350
+
+Residual standard error: 215400000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.2187,	Adjusted R-squared:  0.02341 
+F-statistic:  1.12 on 1 and 4 DF,  p-value: 0.3496
+
+
+--- Type III ANOVA for MicroSD ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: MicroSD
+                        Sum Sq Df F value Pr(>F)
+(Intercept)  18539900611190400  1  0.3997 0.5616
+rCMRGlc      51942588642475040  1  1.1199 0.3496
+Residuals   185528890741375968  4               
+
+--- Regression for MicroDensity ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+       1        2        3        4        5       19 
+  928796   334581 -1523977  2629951 -1175067 -1194284 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -16934372    4960552  -3.414  0.02693 * 
+rCMRGlc        816850     152426   5.359  0.00585 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1804000 on 4 degrees of freedom
+  (39 observations deleted due to missingness)
+Multiple R-squared:  0.8777,	Adjusted R-squared:  0.8472 
+F-statistic: 28.72 on 1 and 4 DF,  p-value: 0.00585
+
+
+--- Type III ANOVA for MicroDensity ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: MicroDensity
+                    Sum Sq Df F value  Pr(>F)   
+(Intercept) 37936535081220  1  11.654 0.02693 * 
+rCMRGlc     93486379458150  1  28.719 0.00585 **
+Residuals   13020852165930  4                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+--- Regression for GliaNeurDensityRatio ~ rCMRGlc ---
+
+Call:
+lm(formula = formula, data = MetaData)
+
+Residuals:
+       1        2        3        4        5       12       19 
+-0.26527  0.27235  0.20279 -0.85795 -0.04021  0.42966  0.25862 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  8.74525    1.33127   6.569  0.00123 **
+rCMRGlc     -0.22089    0.04095  -5.394  0.00296 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4847 on 5 degrees of freedom
+  (38 observations deleted due to missingness)
+Multiple R-squared:  0.8534,	Adjusted R-squared:  0.824 
+F-statistic:  29.1 on 1 and 5 DF,  p-value: 0.002956
+
+
+--- Type III ANOVA for GliaNeurDensityRatio ~ rCMRGlc ---
+Anova Table (Type III tests)
+
+Response: GliaNeurDensityRatio
+             Sum Sq Df F value   Pr(>F)   
+(Intercept) 10.1398  1  43.153 0.001226 **
+rCMRGlc      6.8371  1  29.098 0.002956 **
+Residuals    1.1749  5                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

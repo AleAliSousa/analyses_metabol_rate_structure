@@ -1,0 +1,276 @@
+================================================================================
+WHOLE BRAIN E:I RATIO vs rCMRGlc ANALYSIS
+FINAL SUMMARY REPORT
+================================================================================
+Generated: 2026-02-10 21:25:42
+Analysis Directory: ei_analysis_wholebrain/
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+RESEARCH QUESTION:
+  Does the Excitatory:Inhibitory neuron ratio correlate with regional
+  cerebral metabolic rate of glucose (rCMRGlc) across the whole human brain?
+
+KEY FINDINGS:
+  1. Overall Correlation: r = 0.118, p = 0.6107
+     RESULT: NO significant overall correlation
+
+  2. Cortical vs Subcortical E:I Ratios:
+     Cortical mean: 2.95 ± 0.74
+     Subcortical mean: 3.79 ± 6.41
+     t-test: p = 0.7557 (not significant)
+
+  3. Cortical vs Subcortical Metabolism:
+     Cortical mean: 34.63 ± 3.71
+     Subcortical mean: 26.00 ± 4.73
+     t-test: p = 0.0008 ***SIGNIFICANT***
+
+INTERPRETATION:
+  E:I ratio does NOT reliably predict regional glucose metabolism across
+  the whole brain. This suggests that metabolic demand is driven by factors
+  other than simple E/I balance, such as:
+    - Functional activity patterns (sensorimotor vs associative processing)
+    - Circuit complexity and connectivity
+    - Local neuronal firing rates
+    - Glial metabolic support
+
+================================================================================
+DATASET OVERVIEW
+================================================================================
+
+DATA SOURCES:
+  1. Allen Brain Cell Atlas - Whole Human Brain (WHB-10Xv3)
+     Total cells analyzed: 108
+     Total WHB regions: 108
+     Successfully mapped regions: 76
+
+  2. Metabolic Data (brain_struct_metabol_anat.csv)
+     Total metabolic regions: 35
+     Regions with rCMRGlc: 35
+
+INTEGRATED DATASET:
+  Regions with both E:I and rCMRGlc: 21
+    - Cortical: 6
+    - Subcortical: 15
+  Total cells in integrated regions: 2,578,393.0
+  Total excitatory cells: 1,290,752.0
+  Total inhibitory cells: 552,023.0
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+E/I CLASSIFICATION:
+  Method: Neurotransmitter-based annotation from WHB taxonomy
+  Excitatory markers: VGLUT1, VGLUT2, VGLUT3
+  Inhibitory markers: GABA, GAD1, GAD2, GLY, SLC6A5
+
+REGION MAPPING:
+  WHB regions were mapped to metabolic regions using:
+    - Manual anatomical mapping
+    - Partial string matching
+    - Hierarchical aggregation (subregions -> major structures)
+
+STATISTICAL ANALYSIS:
+  - Pearson and Spearman correlations
+  - Independent t-tests (cortical vs subcortical)
+  - Linear regression
+  - Regional group comparisons
+
+================================================================================
+RESULTS BY REGION
+================================================================================
+
+Region                                   Division     E:I      rCMRGlc    Cells       
+------------------------------------------------------------------------------------------
+Primary_visual_cortex                    Cortical       4.42       40.1     33,484.0
+Thalamus                                 Subcortical    1.00       36.9    147,351.0
+Parietal_lobe                            Cortical       2.35       35.8    155,365.0
+Occipital_lobe                           Cortical       2.72       35.8     62,312.0
+Frontal_lobe                             Cortical       2.69       35.3    340,454.0
+Colliculus_inferior                      Subcortical    3.13       31.4     32,306.0
+Nucleus_ruber                            Subcortical    0.14       31.0      4,714.0
+Temporal_lobe                            Cortical       2.62       30.5    284,706.0
+Insular_lobe                             Cortical       2.93       30.3     78,633.0
+Cerebellar_cortex                        Subcortical    4.68       29.8     71,874.0
+Cerebellum                               Subcortical   24.78       29.8     28,028.0
+Hippocampus                              Subcortical    3.38       25.7    422,219.0
+Brainstem_nuclei                         Subcortical    3.72       25.3    390,406.0
+Colliculus_superior                      Subcortical    0.65       24.4     29,907.0
+Nucleus_dentatus_cerebelli               Subcortical   10.63       24.2     52,045.0
+Corpus_geniculatum_laterale              Subcortical    1.63       23.1     48,856.0
+Substantia_nigra                         Subcortical    0.80       22.8    108,615.0
+Corpus_amygdaloideum                     Subcortical    1.59       22.2    109,074.0
+Pallidum                                 Subcortical    0.09       21.9     84,798.0
+Basal_forebrain                          Subcortical    0.17       21.4     79,020.0
+Corpus_geniculatum_mediale               Subcortical    0.52       20.2     14,226.0
+
+================================================================================
+NOTABLE FINDINGS
+================================================================================
+
+HIGHEST E:I RATIOS:
+  Cerebellum: E:I = 24.78, rCMRGlc = 29.8
+  Nucleus_dentatus_cerebelli: E:I = 10.63, rCMRGlc = 24.2
+  Cerebellar_cortex: E:I = 4.68, rCMRGlc = 29.8
+
+LOWEST E:I RATIOS (Most Inhibitory):
+  Pallidum: E:I = 0.09, rCMRGlc = 21.9
+  Nucleus_ruber: E:I = 0.14, rCMRGlc = 31.0
+  Basal_forebrain: E:I = 0.17, rCMRGlc = 21.4
+
+HIGHEST METABOLISM:
+  Primary_visual_cortex: rCMRGlc = 40.1, E:I = 4.42
+  Thalamus: rCMRGlc = 36.9, E:I = 1.00
+  Parietal_lobe: rCMRGlc = 35.8, E:I = 2.35
+
+LOWEST METABOLISM:
+  Corpus_geniculatum_mediale: rCMRGlc = 20.2, E:I = 0.52
+  Basal_forebrain: rCMRGlc = 21.4, E:I = 0.17
+  Pallidum: rCMRGlc = 21.9, E:I = 0.09
+
+================================================================================
+REGIONAL INSIGHTS
+================================================================================
+
+CEREBELLUM:
+  E:I Ratio: 24.78 (EXTREMELY HIGH)
+  rCMRGlc: 29.8
+  Note: Granule cells (excitatory) vastly outnumber Purkinje cells
+
+BASAL GANGLIA:
+  Pallidum: E:I = 0.09, rCMRGlc = 21.9
+  Note: Low E:I ratios reflect inhibitory GABAergic dominance
+
+HIPPOCAMPUS:
+  E:I Ratio: 3.38
+  rCMRGlc: 25.7
+  Cells: 422,219.0 (aggregated from 17.0 subregions)
+
+PRIMARY VISUAL CORTEX:
+  E:I Ratio: 4.42
+  rCMRGlc: 40.1 (HIGHEST metabolic rate)
+  Note: High metabolism + high E:I reflects continuous sensory processing
+
+================================================================================
+COMPARISON WITH PREVIOUS CORTICAL-ONLY ANALYSIS
+================================================================================
+
+PREVIOUS (ei_analysis/):
+  - Cortical regions only
+  - 6 lobes analyzed
+  - r = 0.668, p = 0.147 (not significant)
+  - Sample size limited statistical power
+
+CURRENT (ei_analysis_wholebrain/):
+  - Whole brain (cortical + subcortical)
+  - 21 regions analyzed
+  - r = 0.118, p = 0.6107
+  - Larger sample size, greater regional diversity
+
+CONCLUSION:
+  Adding subcortical regions reveals that E:I ratio alone does not
+  reliably predict metabolism. Subcortical structures show much greater
+  variation in E:I balance (from highly inhibitory nuclei to excitatory
+  cerebellar cortex), complicating any simple relationship.
+
+================================================================================
+BIOLOGICAL INTERPRETATION
+================================================================================
+
+WHY E:I RATIO DOES NOT PREDICT METABOLISM:
+
+1. FUNCTIONAL SPECIALIZATION
+   - Regions with similar E:I can have vastly different functions
+   - Metabolic demand reflects activity patterns, not just cell counts
+   - Example: Pallidum (E:I=0.09) and Basal forebrain (E:I=0.17)
+     both inhibitory but different metabolic rates
+
+2. CIRCUIT ARCHITECTURE
+   - E/I balance is tightly regulated for network stability
+   - Metabolism driven by synaptic activity, not cell type ratios
+   - Local circuits can have high activity with balanced E/I
+
+3. REGIONAL SPECIALIZATION
+   - Cerebellum: Granule cells create extreme E:I but moderate metabolism
+   - Basal ganglia: Inhibitory nuclei with varied metabolic demands
+   - Cortex: Relatively uniform E:I but variable metabolism by function
+
+4. GLIAL CONTRIBUTION
+   - Glial cells contribute to metabolism but not E:I ratio
+   - Astrocyte metabolic support varies by region
+   - Oligodendrocytes and myelination affect energy use
+
+================================================================================
+LIMITATIONS
+================================================================================
+
+1. REGION MAPPING CHALLENGES
+   - WHB anatomical parcellation differs from metabolic atlas
+   - Some metabolic regions lack corresponding WHB data
+   - Only 76/108 WHB regions successfully mapped
+
+2. CELL SAMPLING
+   - Single-cell data may not be uniformly sampled across regions
+   - Smaller structures have fewer cells, less reliable E:I estimates
+   - Sampling may miss rare cell types
+
+3. E/I CLASSIFICATION
+   - Based on neurotransmitter markers, not functional activity
+   - Some cells may co-express markers
+   - Classification rate varied by region
+
+4. METABOLIC DATA
+   - rCMRGlc from PET imaging has limited spatial resolution
+   - Values represent averages across larger brain regions
+   - Some regions lack metabolic measurements
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+PRIMARY CONCLUSION:
+  E:I ratio does NOT significantly correlate with regional glucose
+  metabolism across the whole brain (r=0.118, p=0.6107).
+
+SECONDARY FINDINGS:
+  - No significant difference in E:I ratios between cortical and subcortical
+  - Cortical regions have significantly higher metabolism than subcortical
+  - Subcortical structures show much greater E:I variation than cortex
+  - Cerebellar structures have extremely high E:I ratios
+  - Basal ganglia nuclei are predominantly inhibitory (low E:I)
+
+IMPLICATIONS:
+  - Metabolic demand is NOT simply determined by E/I cell type ratios
+  - Functional activity patterns and circuit architecture are key
+  - Different brain regions use different computational strategies
+  - E/I balance is maintained for stability, not metabolic efficiency
+
+================================================================================
+OUTPUT FILES
+================================================================================
+
+DATA FILES:
+  - ei_ratios_wholebrain.csv              (108 WHB regions)
+  - region_mapping_improved.csv           (WHB → metabolic mapping)
+  - ei_metabolism_integrated_improved.csv (final integrated dataset)
+  - statistics_wholebrain.txt             (complete statistical analysis)
+
+VISUALIZATIONS (in visualizations/):
+  - fig1_ei_vs_rcmrglc_wholebrain.png    (main scatter plot)
+  - fig2_cortical_vs_subcortical.png     (division comparison)
+  - fig3_regional_heatmap.png            (all regions heatmap)
+  - fig4_top_bottom_regions.png          (extreme E:I regions)
+  - fig5_regional_groups.png             (group comparisons)
+  - fig6_faceted_by_division.png         (separate cortical/subcortical)
+
+LOGS:
+  - analysis_log.txt                     (processing details)
+  - FINAL_SUMMARY_REPORT.txt             (this file)
+
+================================================================================
+END OF REPORT
+================================================================================
+Generated: 2026-02-10 21:25:42

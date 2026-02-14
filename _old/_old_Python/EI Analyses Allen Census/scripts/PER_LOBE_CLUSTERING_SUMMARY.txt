@@ -1,0 +1,337 @@
+================================================================================
+PER-LOBE ANALYSIS & METABOLIC CLUSTERING - COMPREHENSIVE SUMMARY
+================================================================================
+
+PART 1: PER-LOBE E:I VARIATION
+================================================================================
+
+Each lobe shows different patterns of E:I heterogeneity across its subregions:
+
+OCCIPITAL LOBE (rCMRGlc = 35.8):
+  Regions: V1C, V2, A19 (n=3)
+  Mean E:I: 3.28 ± 0.82
+  Range: 2.50 - 4.42 (span: 1.92)
+  Coefficient of Variation: 25.0% (HIGHEST - most heterogeneous)
+
+  Interpretation: V1C (4.42) is a major outlier, much higher than V2 (2.94)
+  and A19 (2.50). This suggests primary visual cortex has unique E:I balance
+  despite sharing metabolic rate with other occipital regions.
+
+FRONTAL LOBE (rCMRGlc = 35.3):
+  Regions: M1C, A13, A25, A32, A44-45, A46 (n=6)
+  Mean E:I: 2.37 ± 0.47
+  Range: 1.48 - 3.05 (span: 1.56)
+  Coefficient of Variation: 20.0% (second most heterogeneous)
+
+  Interpretation: Wide variation from A32 (1.48) to M1C (3.05). Primary motor
+  cortex (M1C) has high E:I similar to V1C, while dorsal ACC (A32) has very
+  low E:I. Frontal lobe is functionally diverse, reflected in E:I variation.
+
+TEMPORAL LOBE (rCMRGlc = 30.5):
+  Regions: MTG, STG, ITG, A38, A1C (n=5)
+  Mean E:I: 2.41 ± 0.39
+  Range: 1.73 - 2.87 (span: 1.15)
+  Coefficient of Variation: 16.2%
+
+  Interpretation: Moderate heterogeneity. MTG (2.87) highest, ITG (1.73) lowest.
+
+INSULAR LOBE (rCMRGlc = 30.3):
+  Regions: FI, Ig (n=2)
+  Mean E:I: 2.76 ± 0.37
+  Range: 2.39 - 3.13 (span: 0.74)
+  Coefficient of Variation: 13.5%
+
+  Interpretation: Moderate variation with only 2 regions. Ig (3.13) notably
+  higher than FI (2.39).
+
+PARIETAL LOBE (rCMRGlc = 35.8):
+  Regions: S1C, A5-A7, A40, A43 (n=4)
+  Mean E:I: 2.36 ± 0.19
+  Range: 2.04 - 2.49 (span: 0.45)
+  Coefficient of Variation: 7.9% (LOWEST - most homogeneous)
+
+  Interpretation: Very consistent E:I ratios across all parietal subregions.
+  Suggests parietal cortex has more uniform E:I balance than other lobes.
+
+KEY FINDING: Occipital and Frontal lobes are most heterogeneous, Parietal
+is most homogeneous. This variation occurs WITHIN lobes sharing the same
+rCMRGlc value!
+
+================================================================================
+PART 2: METABOLIC CLUSTERING ANALYSIS
+================================================================================
+
+OBSERVATION: Two distinct metabolic clusters exist
+
+HIGH METABOLISM GROUP (rCMRGlc ~35):
+  Lobes: Frontal (35.3), Parietal (35.8), Occipital (35.8)
+  Subregions: n = 13
+  Mean E:I: 2.58 ± 0.67
+  E:I Range: 1.48 - 4.42
+  Avg cells/region: 41,120
+
+LOW METABOLISM GROUP (rCMRGlc ~30):
+  Lobes: Temporal (30.5), Insular (30.3)
+  Subregions: n = 7
+  Mean E:I: 2.51 ± 0.45
+  E:I Range: 1.73 - 3.13
+  Avg cells/region: 45,958
+
+STATISTICAL TEST - Do groups differ in E:I ratio?
+  T-test: t = 0.231, p = 0.820
+  Mann-Whitney U: p = 0.877
+
+  RESULT: NO significant difference
+
+INTERPRETATION:
+  Despite a ~17% difference in metabolism between groups (35 vs 30), there
+  is NO difference in E:I ratios. High-metabolism lobes (Frontal, Parietal,
+  Occipital) have the same E:I balance as low-metabolism lobes (Temporal,
+  Insular).
+
+  This FURTHER SUPPORTS that E:I ratio does NOT correlate with metabolism.
+
+================================================================================
+PART 3: ALTERNATIVE ANALYSES
+================================================================================
+
+ANALYSIS 1: Excitatory Percentage (instead of E:I ratio)
+
+  Rationale: E:I ratio can be heavily influenced by small changes in
+  inhibitory neurons. Excitatory percentage may be more stable.
+
+  Results:
+    Correlation with rCMRGlc: r = 0.315, p = 0.176
+
+  CONCLUSION: Still no significant correlation. Excitatory percentage
+  explains only 10% of variance (R² = 0.099), same as E:I ratio.
+
+ANALYSIS 2: Within-Lobe E:I Variability
+
+  Rationale: Maybe metabolism relates to E:I *heterogeneity* rather than
+  mean E:I?
+
+  Findings:
+    Occipital (rCMRGlc=35.8): CV = 25.0% (most variable)
+    Frontal (rCMRGlc=35.3):   CV = 20.0%
+    Temporal (rCMRGlc=30.5):  CV = 16.2%
+    Insular (rCMRGlc=30.3):   CV = 13.5%
+    Parietal (rCMRGlc=35.8):  CV = 7.9% (least variable)
+
+  OBSERVATION: No clear pattern. Parietal and Occipital both have
+  rCMRGlc=35.8 but vastly different heterogeneity (7.9% vs 25.0%).
+
+ANALYSIS 3: Cell Density
+
+  High metabolism lobes: 41,120 cells/region average
+  Low metabolism lobes:  45,958 cells/region average
+
+  FINDING: Low metabolism lobes actually have MORE cells on average!
+  This suggests metabolism is not driven by cell density.
+
+================================================================================
+ADDITIONAL ANALYSIS SUGGESTIONS
+================================================================================
+
+Given the two metabolic clusters (high ~35 vs low ~30), here are further
+analyses you could explore:
+
+1. ANATOMICAL/FUNCTIONAL GROUPING
+   --------------------------------------------------------------------
+   Instead of E:I, examine what distinguishes high vs low metabolism lobes:
+
+   HYPOTHESIS: Sensory/motor lobes (high) vs associative lobes (low)?
+
+   High metabolism (35):
+     - Frontal: Motor (M1C), premotor, prefrontal
+     - Parietal: Somatosensory (S1C), posterior parietal
+     - Occipital: Visual (V1C, V2)
+
+   Low metabolism (30):
+     - Temporal: Auditory (A1C), language, memory
+     - Insular: Interoception, emotion
+
+   TEST: Are "primary sensorimotor" regions metabolically higher than
+   "associative/limbic" regions?
+
+2. CELL SUBTYPE COMPOSITION
+   --------------------------------------------------------------------
+   Rather than just E/I ratio, examine:
+   - Parvalbumin+ (fast-spiking) interneurons
+   - Somatostatin+ interneurons
+   - VIP+ interneurons
+   - Excitatory subtypes (IT vs ET vs CT neurons)
+
+   HYPOTHESIS: Metabolic rate may relate to specific interneuron subtypes
+   (e.g., PV+ interneurons have high metabolic demand) rather than total
+   inhibitory count.
+
+3. LAYER-SPECIFIC E:I RATIOS
+   --------------------------------------------------------------------
+   Cortical layers have different E:I balances:
+   - Layer 4: High inhibition (granular layer, receives thalamic input)
+   - Layers 2/3: High excitatory (cortico-cortical connections)
+   - Layers 5/6: Mixed (output layers)
+
+   HYPOTHESIS: High-metabolism regions may have thicker layer 4 or different
+   laminar structure affecting E:I.
+
+4. NEURONAL DENSITY vs NEUROPIL
+   --------------------------------------------------------------------
+   Metabolism may reflect:
+   - Synaptic density (neuropil) rather than cell count
+   - Dendritic/axonal arborization
+   - Myelination levels
+
+   TEST: Examine genes related to synaptic density, dendritic complexity,
+   or myelin in RNA-seq data.
+
+5. METABOLIC GENE EXPRESSION
+   --------------------------------------------------------------------
+   Instead of correlating E:I with *measured* metabolism, examine metabolic
+   gene expression in the single-cell data:
+
+   Genes to examine:
+   - Glycolysis: HK1, PFKM, PKM
+   - Oxidative phosphorylation: COX genes, ATP synthase subunits
+   - Glucose transporters: SLC2A1 (GLUT1), SLC2A3 (GLUT3)
+
+   HYPOTHESIS: E:I ratio may correlate with cellular expression of metabolic
+   genes, even if not with PET-measured regional metabolism.
+
+6. EXCITATORY vs INHIBITORY METABOLIC DEMAND
+   --------------------------------------------------------------------
+   Calculate metabolic markers separately for E vs I neurons:
+   - Do excitatory neurons in high-metabolism regions express more metabolic
+     genes than those in low-metabolism regions?
+   - Are inhibitory neurons in high E:I regions more metabolically active?
+
+   TEST: Compare mean expression of metabolic genes in E vs I neurons across
+   regions.
+
+7. FIRING RATE PROXIES
+   --------------------------------------------------------------------
+   Gene expression proxies for neuronal activity:
+   - Immediate early genes: FOS, JUN, ARC, EGR1
+   - Activity-regulated genes: NPAS4, NR4A1
+
+   HYPOTHESIS: High E:I regions may have higher baseline activity (more
+   transcriptional activity markers), which could explain metabolic demand
+   independent of E:I ratio.
+
+8. NETWORK PROPERTIES
+   --------------------------------------------------------------------
+   Examine connectivity patterns:
+   - Are high-metabolism regions more densely connected?
+   - Do they have more long-range vs local connections?
+   - Connection to thalamus (high-metabolism) vs limbic (low-metabolism)?
+
+   Data source: Use structural connectivity atlases or tractography
+
+9. VASCULAR/GLIAL FACTORS
+   --------------------------------------------------------------------
+   Metabolism may be driven by non-neuronal factors:
+   - Astrocyte density (support neuronal metabolism)
+   - Microglia density (immune/maintenance)
+   - Vascular density (blood supply)
+
+   TEST: Examine non-neuronal cell proportions in WHB dataset
+
+10. DEVELOPMENTAL TRAJECTORY
+    -------------------------------------------------------------------
+    High vs low metabolism lobes may differ in:
+    - Developmental timing (early vs late maturing)
+    - Neurogenesis patterns
+    - Synaptic pruning
+
+    TEST: Examine developmental gene signatures in adult tissue
+
+11. NEUROTRANSMITTER RECEPTOR EXPRESSION
+    -------------------------------------------------------------------
+    Beyond E/I cell counts, examine receptor expression:
+    - AMPA/NMDA receptor subunits (excitatory)
+    - GABA-A receptor subunits (inhibitory)
+    - Metabotropic receptors
+
+    HYPOTHESIS: Receptor composition (fast vs slow transmission) may
+    relate to metabolic demand better than cell counts.
+
+12. CLUSTERING BY E:I RATIO INSTEAD OF METABOLISM
+    -------------------------------------------------------------------
+    Flip the analysis:
+    - Group regions by E:I (high E:I vs low E:I)
+    - Compare their metabolism, cell types, gene expression
+
+    QUESTION: What makes high E:I regions different beyond metabolism?
+
+================================================================================
+RECOMMENDED NEXT STEPS (In Priority Order)
+================================================================================
+
+IMMEDIATE (with current data):
+  1. Cell subtype analysis (PV, SST, VIP interneurons)
+  2. Layer-specific E:I if layer annotations exist
+  3. Metabolic gene expression in E vs I neurons
+
+REQUIRES ADDITIONAL DATA:
+  4. Connectivity analysis (structural/functional atlases)
+  5. Developmental gene signatures
+  6. Non-neuronal cell analysis (astrocytes, oligodendrocytes, microglia)
+
+EXPLORATORY:
+  7. Primary sensorimotor vs associative/limbic grouping
+  8. Activity marker gene expression (FOS, ARC)
+  9. Receptor expression patterns
+
+LONG-TERM:
+  10. Obtain subregion-specific PET data (if available)
+  11. Integrate with fMRI/MEG activity patterns
+  12. Multi-modal integration (metabolism + connectivity + activity)
+
+================================================================================
+WHY CURRENT ANALYSIS SHOWS NO CORRELATION
+================================================================================
+
+The lack of E:I-metabolism correlation likely reflects:
+
+1. MULTI-FACTORIAL METABOLISM:
+   Regional metabolism is determined by many factors beyond E/I:
+   - Firing rates/activity levels
+   - Synaptic density
+   - Myelination
+   - Non-neuronal cells (glia, vasculature)
+   - Metabolic efficiency
+
+2. E/I BALANCE IS TIGHTLY REGULATED:
+   All cortical regions maintain similar E:I ratios (2-3:1) for stability.
+   Evolution may favor consistent E:I despite varying metabolic demands.
+
+3. METABOLIC CLUSTERING BY FUNCTION:
+   The two metabolic groups (35 vs 30) may reflect:
+   - Sensorimotor (high) vs associative (low)
+   - Externally-driven (high) vs internally-driven (low)
+   - Not E/I ratio
+
+4. DATA GRANULARITY MISMATCH:
+   We have subregion E:I but only lobe-level metabolism, limiting
+   our ability to detect finer relationships.
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Per-lobe analysis reveals:
+  • Substantial E:I variation WITHIN lobes (CV: 7.9% - 25.0%)
+  • Occipital and Frontal most heterogeneous, Parietal most homogeneous
+  • V1C and M1C are clear outliers within their lobes
+
+Metabolic clustering analysis shows:
+  • Two groups: High metabolism (~35) vs Low metabolism (~30)
+  • NO difference in E:I between groups (p=0.820)
+  • High-metabolism = Frontal/Parietal/Occipital (sensorimotor?)
+  • Low-metabolism = Temporal/Insular (associative/limbic?)
+
+Bottom line: E:I ratio does NOT explain metabolic variation, but functional
+classification (sensorimotor vs associative) might!
+
+================================================================================

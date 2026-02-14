@@ -1,0 +1,33 @@
+
+E:I RATIO vs rCMRGlc - VISUALIZATION SUMMARY
+================================================================================
+
+Generated: 2026-02-09 08:14:49
+
+DATASETS:
+- Lobes analyzed: 5
+- Fine-grained regions: 34
+- Regions with valid E:I ratios: 20
+
+KEY STATISTICS:
+- Pearson correlation: r = 0.127, p = 0.8382
+- Linear regression: rCMRGlc = 1.14 * EI_Ratio + 30.5
+- R-squared: 0.016
+
+E:I RATIOS BY LOBE (sorted by ratio):
+
+  Occipital lobe                 E:I = 3.18  rCMRGlc = 35.8
+  Insular lobe                   E:I = 2.74  rCMRGlc = 30.3
+  Frontal lobe                   E:I = 2.54  rCMRGlc = 35.3
+  Temporal lobe                  E:I = 2.50  rCMRGlc = 30.5
+  Parietal lobe                  E:I = 2.35  rCMRGlc = 35.8
+
+VISUALIZATIONS CREATED:
+1. ei_vs_rcmrglc_scatter.png - Scatter plot with regression line
+2. ei_ratios_by_lobe.png - Bar chart of E:I ratios
+3. ei_rcmrglc_comparison.png - Dual-axis comparison
+4. ei_ratios_fine_grained_top20.png - Top 20 regions by E:I ratio
+
+All visualizations saved to: C:\Users\michaelproulx\MetabolicBrain\cellxgene_integration\ei_analysis\data\cortical\visualizations
+
+================================================================================

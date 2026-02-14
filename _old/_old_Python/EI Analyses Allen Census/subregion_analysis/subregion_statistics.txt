@@ -1,0 +1,25 @@
+SUBREGION-LEVEL E:I vs rCMRGlc STATISTICAL ANALYSIS
+================================================================================
+
+Sample size: n = 20 cortical subregions
+
+Pearson correlation:
+  r = 0.0727
+  p-value = 0.760755
+  Significant at alpha=0.05: NO
+
+Spearman correlation:
+  rho = 0.0629
+  p-value = 0.792353
+  Significant at alpha=0.05: NO
+
+Linear regression:
+  Equation: rCMRGlc = 0.3087 * E:I_Ratio + 32.99
+  R-squared = 0.0053
+  p-value = 0.760755
+  Standard error = 0.9984
+
+COMPARISON TO LOBE-LEVEL ANALYSIS:
+  Lobe-level (n=6):     r=0.668, p=0.1470 (NOT significant)
+  Subregion-level (n=20): r=0.073, p=0.7608 
+

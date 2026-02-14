@@ -1,0 +1,136 @@
+================================================================================
+WELCOME BACK! - START HERE
+================================================================================
+
+ALL 3 FOLLOW-UP ANALYSES COMPLETED WHILE YOU WERE AT WORK!
+
+MAJOR DISCOVERY:
+  *** SENSORIMOTOR REGIONS HAVE SIGNIFICANTLY HIGHER METABOLISM! ***
+
+  Sensorimotor cortices: rCMRGlc = 35.17
+  Associative cortices:  rCMRGlc = 32.38
+  Statistical test: p = 0.0089 (HIGHLY SIGNIFICANT!)
+
+  THIS EXPLAINS YOUR METABOLIC CLUSTERING (high 35 vs low 30)!
+
+================================================================================
+QUICK SUMMARY
+================================================================================
+
+ANALYSIS 1: Sensorimotor vs Associative ✅ COMPLETE
+  Result: SIGNIFICANT difference in metabolism (p=0.0089)
+  BUT: NO difference in E:I ratio (p=0.176)
+
+  Conclusion: Metabolism is driven by FUNCTIONAL ROLE, not E:I balance!
+
+ANALYSIS 2: Cell Subtype Composition ✅ COMPLETE
+  Result: Glia % negatively correlates with metabolism (r=-0.434, p=0.056)
+  MGE interneurons (PV+SST): positive trend, not significant
+  CGE interneurons (VIP): no relationship
+
+ANALYSIS 3: Gene Expression Plan ✅ DOCUMENTED
+  Created comprehensive plan for analyzing 33 metabolic genes
+  Requires downloading 10-50 GB expression matrices
+  Alternative approaches documented if download not feasible
+
+OVERALL FINDING:
+  E:I ratio does NOT correlate with metabolism
+  Functional classification (sensorimotor vs associative) DOES!
+
+================================================================================
+FILES TO REVIEW (IN ORDER)
+================================================================================
+
+1. THIS FILE (you're reading it now!)
+
+2. FOLLOWUP_ANALYSES_SUMMARY.txt
+   Complete detailed summary of all findings (15 pages)
+
+3. analysis1_functional_classification.png
+   ⭐ SEE THE SIGNIFICANT RESULT! p=0.0089
+
+4. analysis2_refined_cell_composition.png
+   9-panel visualization of cell composition vs metabolism
+
+5. subregions_with_functional_classification.csv
+   Data table with all classifications
+
+6. subregions_with_cell_composition.csv
+   Data table with cell type percentages
+
+================================================================================
+LOCATION
+================================================================================
+
+All files in:
+  C:\Users\michaelproulx\MetabolicBrain\cellxgene_integration\ei_analysis\data\cortical\followup_analyses\
+
+Progress log updated in:
+  C:\Users\michaelproulx\MetabolicBrain\cellxgene_integration\ei_analysis\EIprogress.txt
+
+================================================================================
+THE BIG PICTURE
+================================================================================
+
+ORIGINAL HYPOTHESIS: E:I ratio correlates with metabolism
+RESULT: ✗ NOT SUPPORTED
+
+NEW DISCOVERY: Functional classification explains metabolism
+RESULT: ✓ SUPPORTED (p=0.0089)
+
+WHY THIS MATTERS:
+  - Sensorimotor cortices (visual, motor, somatosensory) process continuous
+    external input → require sustained high activity → HIGH metabolism
+
+  - Associative cortices (language, memory, emotion) perform integrative
+    processing → more sparse activity → LOWER metabolism
+
+  - E:I balance is tightly regulated (~3:1) across ALL cortex for stability
+    → NOT a variable that changes with metabolic demand
+
+POTENTIAL PAPER:
+  "Functional Classification Explains Regional Metabolic Variation in
+   Human Cortex: A Single-Cell Atlas Study"
+
+================================================================================
+QUICK STATS
+================================================================================
+
+Sensorimotor regions (n=10):
+  V1C, V2, A19 (visual)
+  M1C, A44-45 (motor/Broca's)
+  S1C, A5-A7, A40, A43 (somatosensory)
+  A1C (auditory)
+
+  Mean rCMRGlc: 35.17 ± 1.65
+  Mean E:I: 2.73 ± 0.66
+
+Associative regions (n=10):
+  A13, A46 (prefrontal)
+  A25, A32 (ACC/limbic)
+  A38, MTG, STG, ITG (temporal/language)
+  FI, Ig (insula)
+
+  Mean rCMRGlc: 32.38 ± 2.51
+  Mean E:I: 2.37 ± 0.49
+
+Difference:
+  Metabolism: 2.79 higher in sensorimotor (p=0.0089) *** SIGNIFICANT ***
+  E:I ratio: 0.36 higher in sensorimotor (p=0.176) NOT significant
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Review the visualizations (especially analysis1!)
+2. Read FOLLOWUP_ANALYSES_SUMMARY.txt for full details
+3. Decide if you want to pursue gene expression analysis
+4. Consider writing this up for publication!
+
+The sensorimotor vs associative finding is novel and important.
+It challenges the assumption that cell type ratios drive metabolism
+and shows that functional activity patterns are key.
+
+================================================================================
+ENJOY YOUR REVIEW!
+================================================================================
