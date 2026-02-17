@@ -1,0 +1,959 @@
+setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
+
+library(here)
+library(ape)
+library(nlme)  
+# Mac note: ML optimizer is different in Mac than PC so extra code was added
+library(tidyverse)
+library(dispRity)
+library(scales)
+library(readxl) 
+library(writexl)
+
+# Paths relative to project root:
+r_dir      <- here("R")
+data_dir   <- here("data")
+output_dir <- here("output")
+
+# --- SETUP ALL ---
+# --- Read Supplementary Table 1 (for correlations)
+sup_tbl_raw <- read_excel(
+  "/Users/crossmodal/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/MS Is human brain organization economical/Supplementary Figs and Tables/Sup Table 1 Regional cerebral metabolic rates and data sources using in Study 1.xlsx",
+  sheet     = 1,
+  col_names = FALSE
+)
+
+# --- Load tree and data
+tr <- read.tree(here("data", "species.nwk"))
+Stephan_primates <- read.csv(here("data", "Stephan_primates.csv"))
+
+# --- Clean columns
+data_clean <- subset(Stephan_primates, select = -c(X, order))
+
+#  --- Create a unified “preferred brain volume” column
+data <- data_clean %>%
+  mutate(
+    Preferred_brain_volume = coalesce(
+      Brain_volume,           # 1st choice
+      Brainvol,               # 2nd choice
+      Total_brain_net_volume  # 3rd choice
+    )
+  )
+
+#  --- Sanity check: did everyone get a value?
+sum(is.na(data$Preferred_brain_volume))
+
+# --- Parameters
+options(scipen=999)
+
+# --- Structures list
+target_cols <- c(
+  #"Diencephalon", "Medulla_oblongata",
+  "LGN_Sousa", "Amygdala", "Pallidum", "NeoW_Frahm", "Total_insula_volume_L",
+  "Nucleus_subthalamicus", "Capsula_interna", "Striatum", 
+  "ASG_Sousa", "NeoG_Frahm", "Mesencephalon", "Cerebellum", "Hippocampus"
+)
+
+# Human-readable labels to match your figure
+label_map <- c(
+  #  "Diencephalon"          = "Diencephalon",
+  #  "Medulla_oblongata"     = "Medulla oblongata",
+  "Total_insula_volume_L" = "Insular cortex (grey)",
+  "Hippocampus"           = "Hippocampus",
+  "Cerebellum"            = "Cerebellum",
+  "Mesencephalon"         = "Mesencephalon",
+  "NeoG_Frahm"            = "Neocortex grey",
+  "ASG_Sousa"             = "Area striata grey",
+  "Striatum"              = "Striatum",
+  "Capsula_interna"       = "Capsula interna",
+  "Nucleus_subthalamicus" = "Nucleus subthalamicus Luysi",
+  "NeoW_Frahm"            = "Neocortex white",
+  "Pallidum"              = "Pallidum",
+  "Amygdala"              = "Amygdala",
+  "LGN_Sousa"             = "Corpus geniculatum laterale"
+)
+
+# --- Robust label helper to convert raw variable names → pretty names (safe with factors) ---
+pretty_var <- function(x) {
+  x_chr <- as.character(x)
+  out <- unname(label_map[x_chr])
+  out[is.na(out)] <- x_chr[is.na(out)]
+  out
+}
+
+# --- Helper: transform VCV by lambda (off-diagonals scaled, diagonals fixed)
+transform_vcv_lambda <- function(tree, lambda) {
+  v <- vcv(tree, corr = TRUE)
+  diag_vals <- diag(v)
+  v <- v * lambda
+  diag(v) <- diag_vals
+  v
+}
+
+# --- Helper: prepare one structure (data + tree alignment + drop human)
+prep_structure <- function(var_name,
+                           data,
+                           tr,
+                           human = "Homo_sapiens",
+                           predictor_col = "Preferred_brain_volume") {
+  if (!var_name %in% names(data)) return(NULL)
+  if (!predictor_col %in% names(data)) stop("predictor_col not found in data")
+
+  d1 <- data[, c("Species", predictor_col, var_name)]
+  d1 <- as.data.frame(na.omit(d1))
+
+  # Part-whole correction: Rest-of-Brain (ROB) = Total - Part
+  d1$Rest_of_Brain <- d1[[predictor_col]] - d1[[var_name]]
+  d1 <- d1[d1$Rest_of_Brain > 0, ]
+  rownames(d1) <- d1$Species
+
+  if (!human %in% d1$Species) return(NULL)
+
+  obs_val <- d1[d1$Species == human, var_name][1]
+  xh_raw  <- d1[d1$Species == human, "Rest_of_Brain"][1]
+
+  # Align to tree
+  clean <- clean.data(d1, tr)
+  tr1 <- clean$tree
+  data2 <- clean$data
+  if (!is.null(data2$Species)) rownames(data2) <- data2$Species
+
+  # Fit excluding human (consistent with your original logic)
+  tr2 <- drop.tip(tr1, human)
+  data_model <- subset(data2, Species != human)
+
+  fmla <- as.formula(paste0("log(", var_name, ") ~ log(Rest_of_Brain)"))
+
+  list(
+    var_name = var_name,
+    human = human,
+    d_full = d1,
+    tr1 = tr1,
+    tr2 = tr2,
+    data2 = data2,
+    data_model = data_model,
+    obs_val = as.numeric(obs_val),
+    xh_raw = as.numeric(xh_raw),
+    fmla = fmla
+  )
+}
+
+# --- Helper: safe GLS fit
+fit_gls_safe <- function(fmla, cor_struct, data_model) {
+  tryCatch(
+    gls(
+      fmla,
+      correlation = cor_struct,
+      data = data_model,
+      control = glsControl(opt = "optim", msMaxIter = 1000, msTol = 1e-6)
+    ),
+    error = function(e) NULL
+  )
+}
+
+# --- Helper: extract lambda for each model spec
+lambda_from_fit <- function(fit, model_type, fixed_lambda = NA_real_) {
+  if (model_type == "PagelML") {
+    as.numeric(coef(fit$modelStruct, unconstrained = FALSE))
+  } else if (model_type == "Fixed") {
+    as.numeric(fixed_lambda)
+  } else if (model_type == "BM") {
+    1.0
+  } else {
+    stop("Unknown model_type")
+  }
+}
+
+# --- Helper: phylogenetic conditional mean correction mu and conditional variance ch
+phylo_mu_ch <- function(v_full, v_reduced, human, X_vec) {
+  cc <- which(rownames(v_full) == human)
+  others <- rownames(v_reduced)
+  Cih <- v_full[cc, others, drop = FALSE]
+
+  inv_v <- solve(v_reduced)
+  xbar <- mean(X_vec, na.rm = TRUE)
+
+  mu <- Cih %*% inv_v %*% (X_vec - xbar)
+  ch <- v_full[cc, cc] - Cih %*% inv_v %*% t(Cih)
+
+  list(mu = as.numeric(mu), ch = as.numeric(ch))
+}
+
+# --- Helper: run a set of models for one structure
+# mu_source controls what you used as X in the phylo correction:
+#   "trait"     matches your Plot I/II function (X = log(trait))
+#   "predictor" matches your Plot III loop as written (X = log(ROB))
+run_models_for_structure <- function(pp,
+                                     model_specs,
+                                     want_ci = TRUE,
+                                     mu_source = c("trait", "predictor")) {
+  mu_source <- match.arg(mu_source)
+  if (is.null(pp)) return(NULL)
+
+  out <- list()
+
+  for (spec in model_specs) {
+    cor_struct <- spec$cor(pp$tr2)
+    fit <- fit_gls_safe(pp$fmla, cor_struct, pp$data_model)
+    if (is.null(fit)) next
+
+    sigma <- fit$sigma
+    lambda_est <- lambda_from_fit(fit, spec$type, spec$lambda)
+
+    # Build vcv with lambda
+    v_full <- transform_vcv_lambda(pp$tr1, lambda_est)
+    v_red  <- transform_vcv_lambda(pp$tr2, lambda_est)
+
+### CHECK THIS PART OF SCRIPT BELOW
+    # Choose X for phylo correction (to preserve your original behavior)
+    if (mu_source == "trait") {
+      X <- log(pp$data_model[[pp$var_name]])
+    } else {
+      X <- log(pp$data_model$Rest_of_Brain)
+    }
+
+    mc <- phylo_mu_ch(v_full, v_red, pp$human, X)
+    mu <- mc$mu
+    ch <- mc$ch
+
+    if (!is.finite(ch) || ch <= 0) ch <- 1  # preserve your “clamp” behavior
+
+    xh <- log(pp$xh_raw)
+    pred_log <- as.numeric(c(1, xh) %*% coef(fit) + mu)
+
+    if (want_ci) {
+      se <- sqrt(as.numeric(sigma^2 * ch))
+      upper_log <- pred_log + qnorm(0.975) * se
+      lower_log <- pred_log - qnorm(0.975) * se
+
+      out[[spec$name]] <- data.frame(
+        Variable  = pp$var_name,
+        Model     = spec$name,
+        Observed  = pp$obs_val,
+        Lower     = exp(lower_log),
+        Predicted = exp(pred_log),
+        Upper     = exp(upper_log),
+        Lambda    = lambda_est,
+        N         = nrow(pp$data_model),
+        stringsAsFactors = FALSE
+      )
+    } else {
+      out[[spec$name]] <- data.frame(
+        Variable  = pp$var_name,
+        Model     = spec$name,
+        Observed  = pp$obs_val,
+        Predicted = exp(pred_log),
+        Lambda    = lambda_est,
+        N         = nrow(pp$data_model),
+        stringsAsFactors = FALSE
+      )
+    }
+  }
+
+  if (length(out) == 0) return(NULL)
+  do.call(rbind, out)
+}
+
+## -------------------------
+## MODEL SPECIFICATIONS
+## -------------------------
+
+specs_plot12 <- list(
+  list(
+    name = "Brownian (BM)",
+    type = "BM",
+    lambda = NA_real_,
+    cor = function(tr2) corBrownian(1, form = ~Species, phy = tr2)
+  ),
+  list(
+    name = "Pagel's Lambda (ML)",
+    type = "PagelML",
+    lambda = NA_real_,
+    cor = function(tr2) corPagel(1, form = ~Species, phy = tr2, fixed = FALSE)
+  )
+)
+
+specs_plot3 <- list(
+  list(
+    name = "Independence (λ=0)",
+    type = "Fixed",
+    lambda = 0,
+    cor = function(tr2) corPagel(0, form = ~Species, phy = tr2, fixed = TRUE)
+  ),
+  list(
+    name = "Pagel's ML (Estimated)",
+    type = "PagelML",
+    lambda = NA_real_,
+    cor = function(tr2) corPagel(1, form = ~Species, phy = tr2, fixed = FALSE)
+  ),
+  list(
+    name = "Brownian (λ=1)",
+    type = "BM",
+    lambda = NA_real_,
+    cor = function(tr2) corBrownian(1, form = ~Species, phy = tr2)
+  )
+)
+
+## -------------------------
+## PLOT I + II DATA (one pass)
+## -------------------------
+
+core_df <- purrr::map_dfr(target_cols, function(vn) {
+  pp <- prep_structure(vn, data = data, tr = tr, human = "Homo_sapiens")
+  run_models_for_structure(pp, specs_plot12, want_ci = TRUE, mu_source = "trait")
+})
+
+core_df$Variable <- factor(core_df$Variable, levels = target_cols)
+core_df$VarLabel <- pretty_var(core_df$Variable)
+
+## -------------------------
+## PLOT I (unchanged plotting code)
+## -------------------------
+ggplot(core_df, aes(x = VarLabel)) +
+  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.2, color = "#377eb8") +
+  geom_point(aes(y = Predicted, shape = "Predicted"), color = "#377eb8", size = 2.5) +
+  geom_point(aes(y = Observed, shape = "Observed"), color = "#e41a1c", size = 2.5) +
+  scale_shape_manual(name = "Value", values = c("Predicted" = 16, "Observed" = 17)) +
+  coord_flip() +
+  facet_wrap(~Model, scales = "free_x") +
+  theme_bw() +
+  labs(
+    title = "Prediction: Brownian Motion vs Pagel's Lambda (Part-Whole Corrected)",
+    subtitle = "Predictor = Rest of Brain (Total - Structure)",
+    y = "Volume / Value (Original Scale)",
+    x = "Brain Structure"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 11),
+    axis.text.y = element_text(size = 9)
+  )
+
+## -------------------------
+## PLOT II (normalization + plot unchanged)
+## -------------------------
+final_df_norm <- core_df %>%
+  group_by(Variable) %>%
+  mutate(
+    local_min = min(c(Lower, Upper, Observed, Predicted)),
+    local_max = max(c(Lower, Upper, Observed, Predicted)),
+    Predicted_Sc = (Predicted - local_min) / (local_max - local_min),
+    Observed_Sc  = (Observed  - local_min) / (local_max - local_min),
+    Lower_Sc     = (Lower     - local_min) / (local_max - local_min),
+    Upper_Sc     = (Upper     - local_min) / (local_max - local_min)
+  ) %>%
+  ungroup()
+
+final_df_norm$VarLabel <- pretty_var(final_df_norm$Variable)
+
+ggplot(final_df_norm, aes(x = VarLabel)) +
+  geom_errorbar(aes(ymin = Lower_Sc, ymax = Upper_Sc), width = 0.2, color = "#377eb8") +
+  geom_point(aes(y = Predicted_Sc, shape = "Predicted"), color = "#377eb8", size = 2.5) +
+  geom_point(aes(y = Observed_Sc, shape = "Observed"), color = "#e41a1c", size = 2.5) +
+  scale_shape_manual(name = "Value", values = c("Predicted" = 16, "Observed" = 17)) +
+  coord_flip() +
+  facet_wrap(~Model) +
+  theme_bw() +
+  labs(
+    title = "Standardized Prediction Error (0-1 Scale, Part-Whole Corrected)",
+    subtitle = "0 = Min value for structure, 1 = Max value for structure (across CI and Obs). Predictor = Rest of Brain",
+    y = "Standardized Position (0 to 1)",
+    x = "Brain Structure"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 11),
+    axis.text.y = element_text(size = 9)
+  )
+
+## -------------------------
+## PLOT III DATA (one pass, no CI)
+## NOTE: mu_source = "predictor" preserves your Plot III as-written behavior.
+## -------------------------
+final_df <- purrr::map_dfr(target_cols, function(vn) {
+  pp <- prep_structure(vn, data = data, tr = tr, human = "Homo_sapiens")
+  run_models_for_structure(pp, specs_plot3, want_ci = FALSE, mu_source = "predictor")
+})
+
+final_df$PropDiff <- (final_df$Observed - final_df$Predicted) / final_df$Predicted
+final_df$Direction <- ifelse(final_df$PropDiff > 0, "Larger than Predicted", "Smaller than Predicted")
+final_df$Model <- factor(final_df$Model, levels = c("Independence (λ=0)", "Pagel's ML (Estimated)", "Brownian (λ=1)"))
+final_df$VarLabel <- pretty_var(final_df$Variable)
+
+ggplot(final_df, aes(x = reorder(VarLabel, PropDiff), y = PropDiff, color = Direction)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray40") +
+  geom_segment(aes(xend = reorder(VarLabel, PropDiff), yend = 0), size = 1.2) +
+  geom_point(size = 4) +
+  geom_text(aes(label = ifelse(Model == "Pagel's ML (Estimated)",
+                               sprintf("λ=%.2f", Lambda), "")),
+            nudge_x = -0.4,
+            size = 3,
+            fontface = "italic",
+            color = "black",
+            show.legend = FALSE) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  scale_color_manual(values = c("Larger than Predicted" = "#e41a1c",
+                                "Smaller than Predicted" = "#377eb8")) +
+  coord_flip() +
+  facet_wrap(~Model) +
+  theme_bw() +
+  labs(
+    title = "Human Brain Mosaicism (Corrected for Part-Whole)",
+    subtitle = "Predictor = Rest of Brain (Total - Structure).",
+    y = "Deviation from Prediction (%)",
+    x = "Brain Structure",
+    color = "Direction"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 10),
+    legend.position = "bottom",
+    axis.text.y = element_text(size = 9, face = "bold")
+  )
+
+## -------------------------
+## PLOT IV: Lambda likelihood profiles (uses same prep_structure)
+## -------------------------
+lambda_seq <- seq(0, 1, by = 0.05)
+
+profile_data <- purrr::map_dfr(target_cols, function(vn) {
+  pp <- prep_structure(vn, data = data, tr = tr, human = "Homo_sapiens")
+  if (is.null(pp)) return(NULL)
+
+  # MLE (estimated lambda)
+  fit_mle <- fit_gls_safe(
+    pp$fmla,
+    corPagel(1, form = ~Species, phy = pp$tr2, fixed = FALSE),
+    pp$data_model
+  )
+
+  mle_row <- NULL
+  if (!is.null(fit_mle)) {
+    best_lambda <- as.numeric(coef(fit_mle$modelStruct, unconstrained = FALSE))
+    best_loglik <- as.numeric(logLik(fit_mle))
+    best_lambda_plot <- pmax(0, pmin(1, best_lambda))
+    mle_row <- data.frame(Variable = vn, Lambda = best_lambda_plot, LogLik = best_loglik)
+  }
+
+  # Profile scan (fixed lambda)
+  scan_df <- purrr::map_dfr(lambda_seq, function(val) {
+    fit_scan <- fit_gls_safe(
+      pp$fmla,
+      corPagel(val, form = ~Species, phy = pp$tr2, fixed = TRUE),
+      pp$data_model
+    )
+    if (is.null(fit_scan)) return(NULL)
+    data.frame(Variable = vn, Lambda = val, LogLik = as.numeric(logLik(fit_scan)))
+  })
+
+  list(scan = scan_df, mle = mle_row)
+})
+
+# Separate the combined object into scan and mle frames
+df_profile <- profile_data$scan
+df_mle <- profile_data$mle
+
+# If the above list-column extraction is awkward in your R version, use this instead:
+# tmp <- purrr::map(target_cols, function(vn) { ... return(list(scan=..., mle=...)) })
+# df_profile <- dplyr::bind_rows(purrr::map(tmp, "scan"))
+# df_mle     <- dplyr::bind_rows(purrr::map(tmp, "mle"))
+
+ggplot(df_profile, aes(x = Lambda, y = LogLik)) +
+  geom_line(color = "#377eb8", size = 1) +
+  geom_point(data = df_mle, aes(x = Lambda, y = LogLik), color = "red", size = 3) +
+  geom_vline(data = df_mle, aes(xintercept = Lambda), linetype = "dashed", color = "red", alpha = 0.5) +
+  geom_text(data = df_mle, aes(label = sprintf("%.2f", Lambda), x = 0.1, y = LogLik),
+            color = "red", size = 3, hjust = 0, vjust = 1) +
+  facet_wrap(
+    ~Variable,
+    scales = "free_y",
+    labeller = labeller(Variable = function(x) pretty_var(x))
+  ) +
+  theme_bw() +
+  labs(
+    title = "Lambda Likelihood Profiles (Part-Whole Corrected)",
+    subtitle = "Predictor = Rest of Brain. Curve shows model fit at different Lambda values. Red dot = MLE.",
+    x = "Lambda (Phylogenetic Signal)",
+    y = "Log-Likelihood"
+  ) +
+  theme(
+    strip.text = element_text(face = "bold", size = 9),
+    axis.text.y = element_text(size = 7)
+  )
+
+## -------------------------
+## TABLE I: Predicted values + CIs (one pass, with CI) and rCMRGlc
+## -------------------------
+# --- 1) Build table with predicted values + CIs (from Plot I/II code, with some extra columns for later)
+
+digits_lambda <- 3
+digits_vals   <- 5   # Predicted, CIs, Observed
+
+core_df_out <- core_df %>%
+# 1) Column calculations
+  mutate(
+    Variable = factor(Variable, levels = target_cols),
+    VarLabel = pretty_var(Variable),
+    Diff.min = (Observed - Lower) / Observed,
+    Diff.pre = (Observed - Predicted) / Observed,
+    Diff.max = (Observed - Upper) / Observed
+    ) %>%
+# 2) Shape table + renaming
+  transmute(
+    Structure       = VarLabel,
+    Model,
+    Lambda,
+    `95% CI min`    = Lower,
+    Predicted,
+    `95% CI max`    = Upper,
+    Observed,
+    Diff.min,
+    Diff.pre,
+    Diff.max,
+    N
+  ) %>%
+# 3) Order rows by label order and model
+  mutate(
+    Structure = factor(Structure, levels = pretty_var(target_cols))
+  ) %>%
+  arrange(Structure, Model) %>%
+# 4) Limit significant figures & clean N
+  mutate(
+    Lambda       = signif(Lambda,       digits_lambda),
+    `95% CI min` = signif(`95% CI min`, digits_vals),
+    Predicted    = signif(Predicted,    digits_vals),
+    `95% CI max` = signif(`95% CI max`, digits_vals),
+    Observed     = signif(Observed,     digits_vals),
+    N            = as.integer(N)
+  )
+
+# --- 2) Add rCMRGlc by matching Structure from Sup Table 1
+
+
+# Use row 3 as column names; convert to character to avoid factor issues
+colnames(sup_tbl_raw) <- as.character(unlist(sup_tbl_raw[3, ]))
+
+# Drop rows 1–4 and keep only the relevant columns; ensure rCMRGlc is numeric and rounded to 1 decimal place
+sup_clean <- sup_tbl_raw[-c(1:4), ] %>%
+  select(
+    `Volume term`,
+    `rCMRGlc (µmol/100 g/min.)`
+  ) %>%
+  rename(
+    Structure = `Volume term`,
+    rCMRGlc   = `rCMRGlc (µmol/100 g/min.)`
+  ) %>%
+  mutate(
+    rCMRGlc = round(as.numeric(rCMRGlc), 1)
+  )
+
+# Join rCMRGlc into the main table by Structure
+core_with_rCMRGlc <- core_df_out %>%
+  left_join(
+    sup_clean %>% select(Structure, rCMRGlc),
+    by = "Structure"
+  )
+
+
+# --- 3) Print-ready table (BM vs ML grouped columns)
+
+metric_cols <- c(
+  "Lambda", "95% CI min", "Predicted", "95% CI max",
+  "Observed", "Diff.min", "Diff.pre", "Diff.max"
+)
+
+# model-specific metrics only
+model_wide <- core_with_rCMRGlc %>%
+  mutate(
+    ModelGroup = case_when(
+      grepl("brownian|\\bbm\\b", tolower(Model)) ~ "Brownian (BM)",
+      grepl("pagel|lambda|\\bml\\b", tolower(Model)) ~ "Pagel's Lambda (ML)",
+      TRUE ~ as.character(Model)
+    ),
+    ModelGroup = factor(ModelGroup, levels = c("Brownian (BM)", "Pagel's Lambda (ML)"))
+  ) %>%
+  select(Structure, ModelGroup, all_of(metric_cols)) %>%
+  pivot_wider(
+    names_from  = ModelGroup,
+    values_from = all_of(metric_cols),
+    names_glue  = "{ModelGroup}__{.value}"
+  )
+
+# shared columns (same across BM/ML for each structure)
+shared_cols <- core_with_rCMRGlc %>%
+  group_by(Structure) %>%
+  summarise(
+    N = dplyr::first(N),
+    rCMRGlc = dplyr::first(rCMRGlc),
+    .groups = "drop"
+  )
+
+# enforce final column order
+bm_cols <- paste0("Brownian (BM)__", metric_cols)
+ml_cols <- paste0("Pagel's Lambda (ML)__", metric_cols)
+
+tbl_body <- model_wide %>%
+  left_join(shared_cols, by = "Structure") %>%
+  arrange(Structure) %>%
+  select(Structure, all_of(bm_cols), all_of(ml_cols), N, rCMRGlc)
+
+# from your existing tbl_body (Structure + BM block + ML block + N + rCMRGlc)
+
+tbl_body2 <- tbl_body %>%
+  select(-any_of(c("Model", "ModelGroup")))   # removes model column if present
+
+# row 1: show each model name only once (first column of each block)
+header_top <- c(
+  "Structure",
+  "Brownian (BM)", rep("", length(metric_cols) - 1),
+  "Pagel's Lambda (ML)", rep("", length(metric_cols) - 1),
+  "N", "rCMRGlc" 
+)
+
+# row 2: subcolumn labels
+header_sub <- c("", metric_cols, metric_cols, "", "")
+
+print_ready_df <- as.data.frame(
+  rbind(
+    header_top,
+    header_sub,
+    as.matrix(tbl_body2)
+  ),
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+names(print_ready_df) <- rep("", ncol(print_ready_df))
+
+write.table(print_ready_df, here("output", "print_ready_table.tsv"),
+            sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
+write_xlsx(print_ready_df, here("output", "print_ready_table.xlsx"), col_names = FALSE)
+
+## -------------------------
+## TO REPORT: Correlation analysis between rCMRGlc and prediction error (Diff.pre) across structures
+## -------------------------
+
+diff_cols <- c(
+  "Brownian (BM)__Diff.min",
+  "Brownian (BM)__Diff.pre",
+  "Brownian (BM)__Diff.max",
+  "Pagel's Lambda (ML)__Diff.min",
+  "Pagel's Lambda (ML)__Diff.pre",
+  "Pagel's Lambda (ML)__Diff.max"
+)
+
+# keep needed columns + coerce to numeric
+cor_df <- tbl_body %>%
+  transmute(
+    Structure,
+    rCMRGlc = parse_number(as.character(rCMRGlc)),
+    across(all_of(diff_cols), ~ as.numeric(as.character(.x)))
+  )
+
+# one correlation per Diff column (across Structure rows)
+cor_pearson <- map_dfr(diff_cols, function(col) {
+  x <- cor_df[[col]]
+  y <- cor_df$rCMRGlc
+  ok <- complete.cases(x, y)
+
+  ct <- cor.test(x[ok], y[ok], method = "pearson")
+
+  tibble(
+    Diff_column = col,
+    n = sum(ok),
+    r = unname(ct$estimate),
+    p_value = ct$p.value,
+    ci_low = ct$conf.int[1],
+    ci_high = ct$conf.int[2]
+  )
+})
+cor_spearman <- map_dfr(diff_cols, function(col) {
+  x <- cor_df[[col]]
+  y <- cor_df$rCMRGlc
+  ok <- complete.cases(x, y)
+
+  ct <- cor.test(x[ok], y[ok], method = "spearman")
+
+  tibble(
+    Diff_column = col,
+    n = sum(ok),
+    rho = unname(ct$estimate),
+    p_value = ct$p.value,
+    ci_low = ct$conf.int[1],
+    ci_high = ct$conf.int[2]
+  )
+})
+
+# Correlation between rCMRGlc and Prediction Error (BM)
+plot(cor_df$rCMRGlc, cor_df$`Brownian (BM)__Diff.pre`, xlab = "rCMRGlc", ylab = "Diff.pre (BM)", main = "Correlation between rCMRGlc and Prediction Error (BM)")
+text(cor_df$rCMRGlc, cor_df$`Brownian (BM)__Diff.pre`, labels = cor_df$Structure, pos = 4, cex = 0.7)
+
+####################
+
+# Draw line without NeoW_Frahm (outlier) for visual clarity (but keep the point on the scatter)
+
+# First filter for Brownian model
+temp <- core_with_rCMRGlc %>% filter(Model == "Brownian (BM)")
+
+# Data used for the loess fit: exclude "Neocortex white"
+temp_no_nc_white <- temp %>% filter(Structure != "Neocortex white")  # exclude only for fit
+
+# Option A — Exclude from the loess fit only (keep the point on the scatter)
+plot_loess <- ggplot(temp, aes(x = rCMRGlc, y = `Diff.pre`)) +
+  geom_point() +
+  # loess line computed without "Neocortex white"
+  geom_smooth(
+    data = temp_no_nc_white,
+    aes(x = rCMRGlc, y = `Diff.pre`),
+    method = "loess",
+    se = FALSE,
+    color = "#377eb8",
+    span = 0.75
+  ) +
+  coord_cartesian(ylim = c(-3.5, 0.6)) +
+  theme_bw() +
+  labs(
+    title = "Correlation between rCMRGlc and Prediction Error (BM)",
+    x = "rCMRGlc (µmol/100 g/min.)",
+    y = "Prediction Error (Diff.pre) under Brownian Model"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    axis.title = element_text(size = 10)
+  ) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE)
+
+plot_loess
+
+# Option B — Use weights to exclude from the fit (keep the point)
+plot_loess <- ggplot(temp, aes(x = rCMRGlc, y = `Diff.pre`)) +
+  geom_point() +
+  geom_smooth(
+    aes(weight = ifelse(Structure == "Neocortex white", 0, 1)),
+    method = "loess",
+    se = FALSE,
+    color = "#377eb8",
+    span = 0.75
+  ) +
+  coord_cartesian(ylim = c(-3.5, 0.6)) +
+  theme_bw() +
+  labs(
+    title = "Correlation between rCMRGlc and Prediction Error (BM)",
+    x = "rCMRGlc (µmol/100 g/min.)",
+    y = "Prediction Error (Diff.pre) under Brownian Model"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    axis.title = element_text(size = 10)
+  ) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE)
+
+plot_loess
+
+####################
+# Plot with loess line including all points (no exclusion) and showing error bars for Diff.min and Diff.max 
+  temp <- core_with_rCMRGlc %>%
+  filter(Model == "Brownian (BM)") %>%
+  mutate(
+    rCMRGlc = readr::parse_number(as.character(rCMRGlc)),
+  )
+ggplot(temp, aes(x = rCMRGlc, y = Diff.pre)) +
+  geom_errorbar(aes(ymin = Diff.min, ymax = Diff.max), width = 0) +
+  geom_point(size = 2.5) +
+  geom_smooth(method = "loess", se = FALSE, span = 0.75) +
+  geom_text(aes(label = Structure), nudge_x = 0.5, size = 3, check_overlap = TRUE) +
+  theme_bw() +
+  labs(x = "rCMRGlc (µmol/100 g/min.)", y = "Diff.pre (BM)")
+  
+###################
+# Polynomial comparison + on-plot stats (no console output)
+###################
+
+# ---------- Regions of interest ----------
+regions_of_interest <- cor_df %>%
+  filter(Structure != "Neocortex white") %>%
+  pull(Structure) %>%
+  unique()
+
+# ---------- Prepare data ----------
+df <- core_with_rCMRGlc %>%
+  filter(
+    Model == "Brownian (BM)",
+    Structure %in% regions_of_interest
+  ) %>%
+  transmute(
+    Structure,
+    Diff.pre = as.numeric(Diff.pre),
+    rCMRGlc  = as.numeric(rCMRGlc)
+  ) %>%
+  drop_na(Diff.pre, rCMRGlc)
+
+# ---------- Fit polynomial models degree 1..5 ----------
+fits <- lapply(1:5, function(d) {
+  if (d == 1) {
+    lm(Diff.pre ~ rCMRGlc, data = df)
+  } else {
+    lm(Diff.pre ~ poly(rCMRGlc, d, raw = TRUE), data = df)
+  }
+})
+
+adj_r2 <- sapply(fits, function(f) summary(f)$adj.r.squared)
+best_degree <- which.max(adj_r2)
+best_fit <- fits[[best_degree]]
+best_sum <- summary(best_fit)
+
+# Model p-value (overall F-test)
+fstat <- best_sum$fstatistic
+model_p <- pf(fstat[1], fstat[2], fstat[3], lower.tail = FALSE)
+
+# ---------- Build equation string ----------
+fmt_num <- function(x) formatC(x, digits = 4, format = "f")
+coefs <- coef(best_fit)
+
+eqn <- paste0("y = ", fmt_num(coefs[1]))
+if (length(coefs) > 1) {
+  for (i in 2:length(coefs)) {
+    sign_txt <- if (coefs[i] >= 0) " + " else " - "
+    pow <- i - 1
+    term <- paste0(fmt_num(abs(coefs[i])), "·x", if (pow > 1) paste0("^", pow) else "")
+    eqn <- paste0(eqn, sign_txt, term)
+  }
+}
+
+# Wrap long equation so it stays in plot area
+eqn_wrapped <- paste(strwrap(eqn, width = 60), collapse = "\n")
+
+# ---------- Prediction grid ----------
+x_axis <- seq(min(df$rCMRGlc), max(df$rCMRGlc), length.out = 300)
+curve_df <- bind_rows(lapply(1:5, function(d) {
+  tibble(
+    degree = d,
+    rCMRGlc = x_axis,
+    y = predict(fits[[d]], newdata = data.frame(rCMRGlc = x_axis))
+  )
+}))
+
+# ---------- Plot ----------
+cols <- c("green4", "red3", "purple3", "dodgerblue3", "orange3")
+
+plot(df$rCMRGlc, df$Diff.pre, pch = 16,
+     xlab = "rCMRGlc (µmol/100 g/min)",
+     ylab = "Diff.pre (BM)",
+     main = "Polynomial fits (Degree 1–5)")
+
+# all model curves
+for (d in 1:5) {
+  lines(
+    curve_df$rCMRGlc[curve_df$degree == d],
+    curve_df$y[curve_df$degree == d],
+    col = cols[d], lwd = 2
+  )
+}
+
+# best-fit curve highlighted
+lines(
+  curve_df$rCMRGlc[curve_df$degree == best_degree],
+  curve_df$y[curve_df$degree == best_degree],
+  col = "black", lwd = 3, lty = 2
+)
+
+# point labels
+text(df$rCMRGlc, df$Diff.pre, labels = df$Structure, pos = 4, cex = 0.75)
+
+# legend with Adj R² per degree
+legend(
+  "topright",
+  legend = c(
+    paste0("Degree ", 1:5, " (Adj R²=", sprintf("%.3f", adj_r2), ")"),
+    paste0("Best fit: Degree ", best_degree)
+  ),
+  col = c(cols, "black"),
+  lwd = c(rep(2, 5), 3),
+  lty = c(rep(1, 5), 2),
+  cex = 0.8,
+  bty = "n"
+)
+
+# On-plot annotation (instead of console output)
+usr <- par("usr")
+x_annot <- usr[1] + 0.02 * (usr[2] - usr[1])
+y_annot <- usr[4] - 0.02 * (usr[4] - usr[3])
+
+stats_txt <- paste(
+  paste0("Best degree: ", best_degree),
+  paste0("Adj R²: ", sprintf("%.4f", adj_r2[best_degree])),
+  paste0("Model p: ", format.pval(model_p, digits = 3, eps = 1e-4)),
+  eqn_wrapped,
+  sep = "\n"
+)
+
+text(x_annot, y_annot, labels = stats_txt, adj = c(0, 1), cex = 0.8, col = "blue4")
+
+##################################################################################
+# Make best plot for ppt - quadratic fit with on-plot stats,
+# exclude Neocortex white from fit, then add Neocortex white on top
+##################################################################################
+
+quad_fit <- lm(Diff.pre ~ poly(rCMRGlc, 2, raw = TRUE), data = df)
+
+neo <- core_with_rCMRGlc %>%
+  filter(Model == "Brownian (BM)", Structure == "Neocortex white") %>%
+  transmute(
+    Structure,
+    Diff.pre = as.numeric(Diff.pre),
+    rCMRGlc  = as.numeric(rCMRGlc)
+  ) %>%
+  drop_na(Diff.pre, rCMRGlc)
+
+# stats text
+sm <- summary(quad_fit)
+adj_r2 <- sm$adj.r.squared
+f <- sm$fstatistic
+model_p <- pf(f[1], f[2], f[3], lower.tail = FALSE)
+b <- coef(quad_fit)
+eqn <- paste0(
+  "y = ", sprintf("%.4f", b[1]),
+  ifelse(b[2] >= 0, " + ", " - "), sprintf("%.4f", abs(b[2])), "x",
+  ifelse(b[3] >= 0, " + ", " - "), sprintf("%.4f", abs(b[3])), "x^2"
+)
+
+xg <- seq(10, 40, length.out = 300)
+pr <- predict(quad_fit, newdata = data.frame(rCMRGlc = xg), interval = "confidence")
+
+plot(df$rCMRGlc, df$Diff.pre,
+     xlim = c(10, 40),
+     ylim = c(-3.5, 1.5),
+     pch = 16, cex = 1.3,
+     xlab = "rCMRGlc (µmol/100 g/min)",
+     ylab = "Difference from prediction (BM)")
+
+polygon(c(xg, rev(xg)), c(pr[, "lwr"], rev(pr[, "upr"])),
+        border = NA, col = adjustcolor("steelblue", 0.2))
+lines(xg, pr[, "fit"], col = "steelblue4", lwd = 3)
+
+# add excluded point after drawing line
+points(neo$rCMRGlc, neo$Diff.pre, pch = 24, bg = "firebrick2", col = "firebrick4", cex = 1.8)
+#text(neo$rCMRGlc, neo$Diff.pre, "Neocortex white (excluded)", pos = 4, cex = 0.95, col = "firebrick4")
+
+
+# points
+points(df$rCMRGlc, df$Diff.pre, pch = 16)
+
+# labels for all points
+text(df$rCMRGlc, df$Diff.pre,
+     labels = df$Structure,
+     pos = 4,        # 1=below, 2=left, 3=above, 4=right
+     offset = 0.3,
+     cex = 0.75)
+
+points(neo$rCMRGlc, neo$Diff.pre, pch = 24, bg = "firebrick2")
+text(neo$rCMRGlc, neo$Diff.pre,
+     labels = "Neocortex white (excluded)",
+     pos = 4, cex = 0.9, col = "firebrick4", xpd = NA)
+
+
+# on-plot stats
+usr <- par("usr")
+text(usr[1] + 0.02*diff(usr[1:2]), usr[4] - 0.03*diff(usr[3:4]),
+     labels = paste0("Adj. R² = ", sprintf("%.3f", adj_r2),
+                     "\nModel p = ", format.pval(model_p, digits = 2, eps = 1e-4),
+                     "\n", eqn),
+     adj = c(0,1), cex = 0.95, col = "navy")
+

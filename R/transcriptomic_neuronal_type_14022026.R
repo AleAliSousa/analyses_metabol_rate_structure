@@ -1,15 +1,21 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Analysis_region_celltype_human")
-
+## Install and Load up packages
+library(here)
 library(anndataR)
-library(tidyverse)
 library(ggplot2)
+library(ggpmisc)
 library(readxl)
+library(tidyverse)
+
+# Paths relative to project root:
+r_dir      <- here("R")
+data_dir   <- here("data")
+output_dir <- here("output")
 
 # https://github.com/linnarsson-lab/adult-human-brain/
-# https://datasets.cellxgene.cziscience.com/c1d05de1-d442-48b1-a32c-86f4f0dc5f82.h5ad
+# https://datasets.cellxgene.cziscience.com/a71efd3c-765c-466b-8eca-0b29024094d4.h5ad
 # read anndata object from h5ad file
 adata <- read_h5ad(
-  "~/Library/CloudStorage/OneDrive-AllenInstitute/Analysis_region_celltype_human/c1d05de1-d442-48b1-a32c-86f4f0dc5f82.h5ad",
+  "~/Library/CloudStorage/OneDrive-AllenInstitute/Analysis_region_celltype_human/a71efd3c-765c-466b-8eca-0b29024094d4.h5ad",
   as = "HDF5AnnData"
 )
 
@@ -18,7 +24,14 @@ obs <- as.data.frame(adata$obs)
 # inspect the anndata object
 colnames(obs)
 
-############
+# filter to neurons only
+obs_neuron <- obs %>%
+  filter(cell_type == "neuron")
+
+#####################################
+# Anatomical grouping of dissections
+#####################################
+
 # --- NEW: derive cortical lobe for cerebral cortex dissections ---
 anatomy_rules <- tribble(
   ~pattern, ~anatomy_group,
@@ -114,21 +127,21 @@ anatomy_rules <- tribble(
 )
 
 # ---- Apply rules (first match wins) ----
-obs <- obs %>%
+obs_neuron <- obs_neuron %>%
   mutate(anatomy_group = NA_character_)
 
 for (i in seq_len(nrow(anatomy_rules))) {
-  obs$anatomy_group[
-    is.na(obs$anatomy_group) &
-      str_detect(obs$dissection,
+  obs_neuron$anatomy_group[
+    is.na(obs_neuron$anatomy_group) &
+      str_detect(obs_neuron$dissection,
                  regex(anatomy_rules$pattern[i], ignore_case = TRUE))
   ] <- anatomy_rules$anatomy_group[i]
 }
 
-obs$anatomy_group[is.na(obs$anatomy_group)] <- "Unmapped"
+obs_neuron$anatomy_group[is.na(obs_neuron$anatomy_group)] <- "Unmapped"
 
 # inspect the distribution of anatomy groups
-unmapped_df <- obs %>%
+unmapped_df <- obs_neuron %>%
   filter(anatomy_group == "Unmapped") %>%
   select(
     dissection,
@@ -141,47 +154,95 @@ unmapped_df <- obs %>%
 unmapped_df
 
 ###################################################################
-# Cell type proportion calculations (ALL nonneuronal categories)
+# Cell type proportion calculations (ALL major neuronal categories)
 ###################################################################
+# ---- Define major neuronal categories ----
+# These are mutually exclusive and exhaustive for neurons
+obs_neuron <- obs_neuron %>%
+  mutate(
+    cell_category = case_when(
+      # ---- Excitatory projection neurons ----
+      supercluster_term %in% c(
+        "Amygdala excitatory",
+        "Deep-layer corticothalamic and 6b",
+        "Deep-layer intratelencephalic",
+        "Deep-layer near-projecting",
+        "Upper-layer intratelencephalic",
+        "Thalamic excitatory",
+        "Hippocampal CA1-3",
+        "Hippocampal CA4",
+        "Hippocampal dentate gyrus",
+        "Mammillary body",
+        "Lower rhombic lip",
+        "Upper rhombic lip"
+      ) ~ "Excitatory_projection",
+      # ---- Inhibitory interneurons ----
+      supercluster_term %in% c(
+        "CGE interneuron",
+        "MGE interneuron",
+        "LAMP5-LHX6 and Chandelier",
+        "Cerebellar inhibitory",
+        "Midbrain-derived inhibitory"
+      ) ~ "Inhibitory_interneuron",
+      # ---- Inhibitory projection neurons (basal ganglia principal cells) ----
+      supercluster_term %in% c(
+        "Medium spiny neuron",
+        "Eccentric medium spiny neuron"
+      ) ~ "Inhibitory_projection_MSN",
+      # ---- Other projection neurons (rare / region-specific) ----
+      supercluster_term %in% c(
+        "Deep-layer corticothalamic and 6b"
+      ) ~ "Other_projection",
+      # ---- QC / unresolved neuronal clusters ----
+      supercluster_term %in% c(
+        "Splatter",
+        "Miscellaneous"
+      ) ~ "Unresolved_or_QC",
+      # ---- Fallback (should be rare) ----
+      TRUE ~ "Other_neuron"
+    )
+  )
+# ---- Sanity check: every neuron assigned ----
+table(obs_neuron$cell_category)
+# ---- Region × cell-category counts and proportions ----
 
-# ---- Region × cell-category proportions ----
-celltype_table_long <- obs %>%
+celltype_table_long <- obs_neuron %>%
   filter(anatomy_group != "", anatomy_group != "Unmapped") %>%
-  count(anatomy_group, supercluster_term, name = "n_cells") %>%
+  count(anatomy_group, cell_category, name = "n_cells") %>%
   group_by(anatomy_group) %>%
   mutate(
-    n_all_nonneurons = sum(n_cells),
-    p_cells = n_cells / n_all_nonneurons
+    n_all_neurons = sum(n_cells),
+    p_cells = n_cells / n_all_neurons
   ) %>%
   ungroup()
 
 celltype_proportion_table <- celltype_table_long %>%
   # Pivot counts
-  select(anatomy_group, supercluster_term, n_cells) %>%
+  select(anatomy_group, cell_category, n_cells) %>%
   tidyr::pivot_wider(
-    names_from  = supercluster_term,
+    names_from  = cell_category,
     values_from = n_cells,
     values_fill = 0,
     names_prefix = "n_"
   ) %>%
-  # Join proportions (pivoted separately)
+  # Join proportions
   left_join(
     celltype_table_long %>%
-      select(anatomy_group, supercluster_term, p_cells) %>%
+      select(anatomy_group, cell_category, p_cells) %>%
       tidyr::pivot_wider(
-        names_from  = supercluster_term,
+        names_from  = cell_category,
         values_from = p_cells,
         values_fill = 0,
         names_prefix = "p_"
       ),
     by = "anatomy_group"
   ) %>%
-  # Add totals and force “all nonneurons proportion = 1”
+  # Add total neuron count only (no forced proportions)
   left_join(
     celltype_table_long %>%
-      distinct(anatomy_group, n_all_nonneurons),
+      distinct(anatomy_group, n_all_neurons),
     by = "anatomy_group"
-  ) 
+  )
 
 # ---- QC: do neuron proportions sum to ~1 by region? ----
 
@@ -251,24 +312,12 @@ if (setequal(predictors, setdiff(all_p, exclude))) {
   cat(" ⚠ Mismatch detected\n")
 }
 
-
-# Wrap any predictor containing spaces in backticks
-predictors_backticked <- ifelse(
-  grepl("\\s", predictors),
-  paste0("`", predictors, "`"),
-  predictors
-)
-
-cat("\nPredictors (formula-safe):\n")
-print(predictors_backticked)
-
-
 ###########################
 ## MULTIVARIATE REGRESSION
 ###########################
 
 fit <- lm(
-  reformulate(predictors_backticked, response = "rcmr_value"),
+  reformulate(predictors, response = "rcmr_value"),
   data = analysis_df
 )
 summary(fit)
@@ -323,12 +372,20 @@ names(pal) <- regions
 ggplot(plot_df, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
   geom_point(size = 2.8, alpha = 0.85) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
+  stat_poly_eq(
+    aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
+    formula = y ~ x,
+    parse = TRUE,
+    label.x = "right",
+    label.y = "top",
+    size = 4,
+    color = "black"
+  ) +
   facet_wrap(~ predictor, scales = "free_x") +
   scale_color_manual(values = pal) +
   labs(
     x = "Cell-type proportion",
     y = "rCMRGlc (µmol/100 g/min.)",
-    title = "rCMRGlc vs cell-type composition predictors",
     color = "Region"
   ) +
   theme_classic(base_size = 14)
