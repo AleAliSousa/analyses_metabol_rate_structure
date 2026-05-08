@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+linnarsson_adult_human_brain_obs_metadata_neuronal.rds filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds filter=lfs diff=lfs merge=lfs -text
+data/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds filter=lfs diff=lfs merge=lfs -text
