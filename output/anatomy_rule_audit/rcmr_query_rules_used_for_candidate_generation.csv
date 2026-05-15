@@ -1,0 +1,131 @@
+rcmr_term,match_column,pattern,match_mode,rule_rank,rule_label,column_rank,column_order
+Basal forebrain,ROIGroup,Basal forebrain,exact_ci,0,exact rCMR term,1,1
+Capsula interna,ROIGroup,Capsula interna,exact_ci,0,exact rCMR term,1,1
+Caudatum,ROIGroup,Caudatum,exact_ci,0,exact rCMR term,1,1
+Centrum semiovale,ROIGroup,Centrum semiovale,exact_ci,0,exact rCMR term,1,1
+Cerebellar cortex,ROIGroup,Cerebellar cortex,exact_ci,0,exact rCMR term,1,1
+Colliculus inferior,ROIGroup,Colliculus inferior,exact_ci,0,exact rCMR term,1,1
+Colliculus superior,ROIGroup,Colliculus superior,exact_ci,0,exact rCMR term,1,1
+Corpus amygdaloideum,ROIGroup,Corpus amygdaloideum,exact_ci,0,exact rCMR term,1,1
+Corpus geniculatum laterale,ROIGroup,Corpus geniculatum laterale,exact_ci,0,exact rCMR term,1,1
+Corpus geniculatum mediale,ROIGroup,Corpus geniculatum mediale,exact_ci,0,exact rCMR term,1,1
+Frontal lobe,ROIGroup,Frontal lobe,exact_ci,0,exact rCMR term,1,1
+Hippocampus,ROIGroup,Hippocampus,exact_ci,0,exact rCMR term,1,1
+Insular lobe,ROIGroup,Insular lobe,exact_ci,0,exact rCMR term,1,1
+Nucleus accumbens,ROIGroup,Nucleus accumbens,exact_ci,0,exact rCMR term,1,1
+Nucleus dentatus cerebelli,ROIGroup,Nucleus dentatus cerebelli,exact_ci,0,exact rCMR term,1,1
+Nucleus medial thalami,ROIGroup,Nucleus medial thalami,exact_ci,0,exact rCMR term,1,1
+Nucleus ruber,ROIGroup,Nucleus ruber,exact_ci,0,exact rCMR term,1,1
+Nucleus subthalamicus,ROIGroup,Nucleus subthalamicus,exact_ci,0,exact rCMR term,1,1
+Occipital lobe,ROIGroup,Occipital lobe,exact_ci,0,exact rCMR term,1,1
+Pallidum,ROIGroup,Pallidum,exact_ci,0,exact rCMR term,1,1
+Parietal lobe,ROIGroup,Parietal lobe,exact_ci,0,exact rCMR term,1,1
+Putamen,ROIGroup,Putamen,exact_ci,0,exact rCMR term,1,1
+Substantia nigra,ROIGroup,Substantia nigra,exact_ci,0,exact rCMR term,1,1
+Temporal lobe,ROIGroup,Temporal lobe,exact_ci,0,exact rCMR term,1,1
+Vermis,ROIGroup,Vermis,exact_ci,0,exact rCMR term,1,1
+Hippocampus,ROIGroup,\bhippocampus\b|Head of hippocampus|Body of hippocampus|Tail of Hippocampus|\bHippocampal\b|Dentate gyrus|\bDG\b|\bCA1\b|\bCA2\b|\bCA3\b|\bCA4\b|Subicular cortex,regex_ci,10,hippocampus group or dissection pattern,1,1
+Basal forebrain,ROIGroupCoarse,Basal forebrain,exact_ci,0,exact rCMR term,1,2
+Capsula interna,ROIGroupCoarse,Capsula interna,exact_ci,0,exact rCMR term,1,2
+Caudatum,ROIGroupCoarse,Caudatum,exact_ci,0,exact rCMR term,1,2
+Centrum semiovale,ROIGroupCoarse,Centrum semiovale,exact_ci,0,exact rCMR term,1,2
+Cerebellar cortex,ROIGroupCoarse,Cerebellar cortex,exact_ci,0,exact rCMR term,1,2
+Colliculus inferior,ROIGroupCoarse,Colliculus inferior,exact_ci,0,exact rCMR term,1,2
+Colliculus superior,ROIGroupCoarse,Colliculus superior,exact_ci,0,exact rCMR term,1,2
+Corpus amygdaloideum,ROIGroupCoarse,Corpus amygdaloideum,exact_ci,0,exact rCMR term,1,2
+Corpus geniculatum laterale,ROIGroupCoarse,Corpus geniculatum laterale,exact_ci,0,exact rCMR term,1,2
+Corpus geniculatum mediale,ROIGroupCoarse,Corpus geniculatum mediale,exact_ci,0,exact rCMR term,1,2
+Frontal lobe,ROIGroupCoarse,Frontal lobe,exact_ci,0,exact rCMR term,1,2
+Hippocampus,ROIGroupCoarse,Hippocampus,exact_ci,0,exact rCMR term,1,2
+Insular lobe,ROIGroupCoarse,Insular lobe,exact_ci,0,exact rCMR term,1,2
+Nucleus accumbens,ROIGroupCoarse,Nucleus accumbens,exact_ci,0,exact rCMR term,1,2
+Nucleus dentatus cerebelli,ROIGroupCoarse,Nucleus dentatus cerebelli,exact_ci,0,exact rCMR term,1,2
+Nucleus medial thalami,ROIGroupCoarse,Nucleus medial thalami,exact_ci,0,exact rCMR term,1,2
+Nucleus ruber,ROIGroupCoarse,Nucleus ruber,exact_ci,0,exact rCMR term,1,2
+Nucleus subthalamicus,ROIGroupCoarse,Nucleus subthalamicus,exact_ci,0,exact rCMR term,1,2
+Occipital lobe,ROIGroupCoarse,Occipital lobe,exact_ci,0,exact rCMR term,1,2
+Pallidum,ROIGroupCoarse,Pallidum,exact_ci,0,exact rCMR term,1,2
+Parietal lobe,ROIGroupCoarse,Parietal lobe,exact_ci,0,exact rCMR term,1,2
+Putamen,ROIGroupCoarse,Putamen,exact_ci,0,exact rCMR term,1,2
+Substantia nigra,ROIGroupCoarse,Substantia nigra,exact_ci,0,exact rCMR term,1,2
+Temporal lobe,ROIGroupCoarse,Temporal lobe,exact_ci,0,exact rCMR term,1,2
+Vermis,ROIGroupCoarse,Vermis,exact_ci,0,exact rCMR term,1,2
+Hippocampus,ROIGroupCoarse,\bhippocampus\b|Head of hippocampus|Body of hippocampus|Tail of Hippocampus|\bHippocampal\b|Dentate gyrus|\bDG\b|\bCA1\b|\bCA2\b|\bCA3\b|\bCA4\b|Subicular cortex,regex_ci,10,hippocampus group or dissection pattern,1,2
+Basal forebrain,ROIGroupFine,Basal forebrain,exact_ci,0,exact rCMR term,2,3
+Capsula interna,ROIGroupFine,Capsula interna,exact_ci,0,exact rCMR term,2,3
+Caudatum,ROIGroupFine,Caudatum,exact_ci,0,exact rCMR term,2,3
+Centrum semiovale,ROIGroupFine,Centrum semiovale,exact_ci,0,exact rCMR term,2,3
+Cerebellar cortex,ROIGroupFine,Cerebellar cortex,exact_ci,0,exact rCMR term,2,3
+Colliculus inferior,ROIGroupFine,Colliculus inferior,exact_ci,0,exact rCMR term,2,3
+Colliculus superior,ROIGroupFine,Colliculus superior,exact_ci,0,exact rCMR term,2,3
+Corpus amygdaloideum,ROIGroupFine,Corpus amygdaloideum,exact_ci,0,exact rCMR term,2,3
+Corpus geniculatum laterale,ROIGroupFine,Corpus geniculatum laterale,exact_ci,0,exact rCMR term,2,3
+Corpus geniculatum mediale,ROIGroupFine,Corpus geniculatum mediale,exact_ci,0,exact rCMR term,2,3
+Frontal lobe,ROIGroupFine,Frontal lobe,exact_ci,0,exact rCMR term,2,3
+Hippocampus,ROIGroupFine,Hippocampus,exact_ci,0,exact rCMR term,2,3
+Insular lobe,ROIGroupFine,Insular lobe,exact_ci,0,exact rCMR term,2,3
+Nucleus accumbens,ROIGroupFine,Nucleus accumbens,exact_ci,0,exact rCMR term,2,3
+Nucleus dentatus cerebelli,ROIGroupFine,Nucleus dentatus cerebelli,exact_ci,0,exact rCMR term,2,3
+Nucleus medial thalami,ROIGroupFine,Nucleus medial thalami,exact_ci,0,exact rCMR term,2,3
+Nucleus ruber,ROIGroupFine,Nucleus ruber,exact_ci,0,exact rCMR term,2,3
+Nucleus subthalamicus,ROIGroupFine,Nucleus subthalamicus,exact_ci,0,exact rCMR term,2,3
+Occipital lobe,ROIGroupFine,Occipital lobe,exact_ci,0,exact rCMR term,2,3
+Pallidum,ROIGroupFine,Pallidum,exact_ci,0,exact rCMR term,2,3
+Parietal lobe,ROIGroupFine,Parietal lobe,exact_ci,0,exact rCMR term,2,3
+Putamen,ROIGroupFine,Putamen,exact_ci,0,exact rCMR term,2,3
+Substantia nigra,ROIGroupFine,Substantia nigra,exact_ci,0,exact rCMR term,2,3
+Temporal lobe,ROIGroupFine,Temporal lobe,exact_ci,0,exact rCMR term,2,3
+Vermis,ROIGroupFine,Vermis,exact_ci,0,exact rCMR term,2,3
+Basal forebrain,ROIGroupFine,^Basal forebrain$|Basal forebrain \(BF\)|septal nuclei|substantia innominata|\bSEP\b|\bSI\b,regex_ci,10,basal forebrain group or dissection pattern,2,3
+Corpus amygdaloideum,ROIGroupFine,Amygdaloid complex|Amygdala|Basolateral nuclear group|Central nuclear group|Corticomedial nuclear group|\bAMY\b|\bBLN\b|\bCEN\b|\bCMN\b,regex_ci,10,amygdaloid group or dissection pattern,2,3
+Hippocampus,ROIGroupFine,\bhippocampus\b|Head of hippocampus|Body of hippocampus|Tail of Hippocampus|\bHippocampal\b|Dentate gyrus|\bDG\b|\bCA1\b|\bCA2\b|\bCA3\b|\bCA4\b|Subicular cortex,regex_ci,10,hippocampus group or dissection pattern,2,3
+Basal forebrain,dissection,Basal forebrain,exact_ci,0,exact rCMR term,3,4
+Capsula interna,dissection,Capsula interna,exact_ci,0,exact rCMR term,3,4
+Caudatum,dissection,Caudatum,exact_ci,0,exact rCMR term,3,4
+Centrum semiovale,dissection,Centrum semiovale,exact_ci,0,exact rCMR term,3,4
+Cerebellar cortex,dissection,Cerebellar cortex,exact_ci,0,exact rCMR term,3,4
+Colliculus inferior,dissection,Colliculus inferior,exact_ci,0,exact rCMR term,3,4
+Colliculus superior,dissection,Colliculus superior,exact_ci,0,exact rCMR term,3,4
+Corpus amygdaloideum,dissection,Corpus amygdaloideum,exact_ci,0,exact rCMR term,3,4
+Corpus geniculatum laterale,dissection,Corpus geniculatum laterale,exact_ci,0,exact rCMR term,3,4
+Corpus geniculatum mediale,dissection,Corpus geniculatum mediale,exact_ci,0,exact rCMR term,3,4
+Frontal lobe,dissection,Frontal lobe,exact_ci,0,exact rCMR term,3,4
+Hippocampus,dissection,Hippocampus,exact_ci,0,exact rCMR term,3,4
+Insular lobe,dissection,Insular lobe,exact_ci,0,exact rCMR term,3,4
+Nucleus accumbens,dissection,Nucleus accumbens,exact_ci,0,exact rCMR term,3,4
+Nucleus dentatus cerebelli,dissection,Nucleus dentatus cerebelli,exact_ci,0,exact rCMR term,3,4
+Nucleus medial thalami,dissection,Nucleus medial thalami,exact_ci,0,exact rCMR term,3,4
+Nucleus ruber,dissection,Nucleus ruber,exact_ci,0,exact rCMR term,3,4
+Nucleus subthalamicus,dissection,Nucleus subthalamicus,exact_ci,0,exact rCMR term,3,4
+Occipital lobe,dissection,Occipital lobe,exact_ci,0,exact rCMR term,3,4
+Pallidum,dissection,Pallidum,exact_ci,0,exact rCMR term,3,4
+Parietal lobe,dissection,Parietal lobe,exact_ci,0,exact rCMR term,3,4
+Putamen,dissection,Putamen,exact_ci,0,exact rCMR term,3,4
+Substantia nigra,dissection,Substantia nigra,exact_ci,0,exact rCMR term,3,4
+Temporal lobe,dissection,Temporal lobe,exact_ci,0,exact rCMR term,3,4
+Vermis,dissection,Vermis,exact_ci,0,exact rCMR term,3,4
+Basal forebrain,dissection,^Basal forebrain$|Basal forebrain \(BF\)|septal nuclei|substantia innominata|\bSEP\b|\bSI\b,regex_ci,10,basal forebrain group or dissection pattern,3,4
+Capsula interna,dissection,Internal capsule|Capsula interna,regex_ci,10,internal capsule pattern,3,4
+Caudatum,dissection,Caudate|Body of the Caudate|\bCaB\b,regex_ci,10,caudate pattern,3,4
+Centrum semiovale,dissection,Centrum semiovale,regex_ci,10,centrum semiovale pattern,3,4
+Colliculus inferior,dissection,Inferior colliculus|\bIC\b,regex_ci,10,inferior colliculus pattern,3,4
+Colliculus superior,dissection,Superior colliculus|\bSC\b,regex_ci,10,superior colliculus pattern,3,4
+Corpus amygdaloideum,dissection,Amygdaloid complex|Amygdala|Basolateral nuclear group|Central nuclear group|Corticomedial nuclear group|\bAMY\b|\bBLN\b|\bCEN\b|\bCMN\b,regex_ci,10,amygdaloid group or dissection pattern,3,4
+Corpus geniculatum laterale,dissection,lateral geniculate|\bLG\b,regex_ci,10,lateral geniculate pattern,3,4
+Corpus geniculatum mediale,dissection,medial geniculate|\bMG\b,regex_ci,10,medial geniculate pattern,3,4
+Hippocampus,dissection,\bhippocampus\b|Head of hippocampus|Body of hippocampus|Tail of Hippocampus|\bHippocampal\b|Dentate gyrus|\bDG\b|\bCA1\b|\bCA2\b|\bCA3\b|\bCA4\b|Subicular cortex,regex_ci,10,hippocampus group or dissection pattern,3,4
+Insular lobe,dissection,^Cerebral cortex \(Cx\).*?(insula|insular|Short insular|Long insular|Granular insular|Dysgranular insular|Frontal agranular insular|\bIg\b|\bIdg\b|\bFI\b),regex_ci,10,cortical insular pattern,3,4
+Nucleus accumbens,dissection,Accumbens|Nucleus Accumbens|\bNAC\b,regex_ci,10,nucleus accumbens pattern,3,4
+Nucleus subthalamicus,dissection,Subthalamic|\bSTH\b,regex_ci,10,subthalamic pattern,3,4
+Pallidum,dissection,Pallidum|Globus pallidus|\bGP\b|\bGPe\b|\bGPi\b,regex_ci,10,pallidum pattern,3,4
+Putamen,dissection,Putamen|\bPu\b,regex_ci,10,putamen pattern,3,4
+Substantia nigra,dissection,Substantia Nigra|\bSN\b,regex_ci,10,substantia nigra pattern,3,4
+Vermis,dissection,Vermis|Cerebellar Vermis|\bCBV\b,regex_ci,10,vermis pattern,3,4
+Nucleus dentatus cerebelli,dissection,Dentate nucleus|Nucleus dentatus|Cerebellar deep nuclei|\bCbDN\b,regex_ci,20,dentate or cerebellar deep nuclei pattern,3,4
+Nucleus medial thalami,dissection,medial nuclear complex|mediodorsal|reuniens|medioventral|\bMNC\b|\bMD\b|\bRe\b,regex_ci,20,medial thalamic pattern,3,4
+Nucleus ruber,dissection,^Midbrain \(RN\) - Red Nucleus - RN$,regex_ci,20,red nucleus exact dissection,3,4
+Occipital lobe,dissection,^Cerebral cortex \(Cx\).*?(cuneus|lingual|occipital|peristriate|prostriata|visual|Primary Visual|Lingual gyrus \(LiG\)|\bV1C?\b|\bV2\b|\bA19\b|\bMT\b|\bSOG\b|\bPro\b),regex_ci,20,cortical occipital pattern,3,4
+Cerebellar cortex,dissection,Cerebellar cortex|Lateral hemisphere of cerebellum|\bCBL\b,regex_ci,30,cerebellar cortex or lateral hemisphere pattern,3,4
+Temporal lobe,dissection,^Cerebral cortex \(Cx\).*?(temporal|parahippocampal|entorhinal|perirhinal|fusiform|occipitotemporal|auditory|\bTTG\b|\bSTG\b|\bMTG\b|\bITG\b|\bTP\b|\bA1C\b|\bA35\b|\bA36\b|\bA38\b|\bLEC\b|\bMEC\b|\bFuGt\b|\bPPH\b|\bAPH\b|\bPRG\b),regex_ci,30,cortical temporal pattern,3,4
+Frontal lobe,dissection,^Cerebral cortex \(Cx\)(?!.*\binsular\b).*?(frontal|precentral|orbit|gyrus rectus|subcallosal|subgenual|rostral gyrus|motor cortex|\bMFC\b|\bOFC\b|\bPrCG\b|\bPOrG\b|\bSCG\b|\bMFG\b|\bIFG\b|\bRoG\b|\bReG\b|\bM1C\b|\bA44\b|\bA45\b|\bA46\b|\bA13\b|\bA14\b|\bA24\b|\bA25\b|\bA32\b),regex_ci,40,cortical frontal pattern,3,4
+Parietal lobe,dissection,^Cerebral cortex \(Cx\).*?(parietal|postcentral|supramarginal|supraparietal|somatosensory|operculum|\bPoCG\b|\bSMG\b|\bSPL\b|\bPaO\b|\bS1C\b|\bA40\b|\bA43\b|\bA5\b|\bA7\b),regex_ci,50,cortical parietal pattern,3,4

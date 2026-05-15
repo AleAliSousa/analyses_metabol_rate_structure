@@ -1,0 +1,133 @@
+dissection,n_obs_rows,match_status,conflict_flag,candidate_rcmr_terms,candidate_evidence,roi_column,roi_value
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,35359,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",34078,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,8673,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+Paleocortex (PalCx) - Piriform cortex - Pir,36941,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,17535,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+NA,2359,unmatched,FALSE,,,ROIGroup,Cerebral cortex
+Claustrum - Cla,40165,unmatched,FALSE,,,ROIGroup,Cerebral nuclei
+NA,3454,unmatched,FALSE,,,ROIGroup,Cerebral nuclei
+Epithalamus - ETH,24327,unmatched,FALSE,,,ROIGroup,Epithalamus
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,27210,unmatched,FALSE,,,ROIGroup,Hindbrain
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,23120,unmatched,FALSE,,,ROIGroup,Hindbrain
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,21534,unmatched,FALSE,,,ROIGroup,Hindbrain
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,13623,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - Pontine Nucleus - PN,33641,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,21693,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - Pontine reticular formation - PnRF,49512,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,23349,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,47416,unmatched,FALSE,,,ROIGroup,Hindbrain
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,26095,unmatched,FALSE,,,ROIGroup,Hindbrain
+NA,2462,unmatched,FALSE,,,ROIGroup,Hindbrain
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),10099,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,28155,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,18728,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,14979,unmatched,FALSE,,,ROIGroup,Hypothalamus
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",20027,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,12557,unmatched,FALSE,,,ROIGroup,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",7265,unmatched,FALSE,,,ROIGroup,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",9488,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,13173,unmatched,FALSE,,,ROIGroup,Hypothalamus
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,14094,unmatched,FALSE,,,ROIGroup,Midbrain
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,33794,unmatched,FALSE,,,ROIGroup,Midbrain
+Midbrain (M) - Pretectal region - PTR,25875,unmatched,FALSE,,,ROIGroup,Midbrain
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",49110,excluded_ambiguous_anatomy,FALSE,Substantia nigra,"dissection=Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN -> Substantia nigra",ROIGroup,Midbrain
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,22557,unmatched,FALSE,,,ROIGroup,Paleocortex
+Spinal cord - SpC,24190,unmatched,FALSE,,,ROIGroup,Spinal cord
+Thalamus (THM) - Anterior nuclear complex - ANC,31307,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,8573,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,27111,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,24354,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,12944,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,46453,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,17660,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,26172,unmatched,FALSE,,,ROIGroup,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,6877,unmatched,FALSE,,,ROIGroup,Thalamus
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,35359,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",34078,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,8673,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,22557,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+Paleocortex (PalCx) - Piriform cortex - Pir,36941,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,17535,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+NA,2359,unmatched,FALSE,,,ROIGroupCoarse,Cerebral cortex
+Claustrum - Cla,40165,unmatched,FALSE,,,ROIGroupCoarse,Cerebral nuclei
+NA,3454,unmatched,FALSE,,,ROIGroupCoarse,Cerebral nuclei
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),10099,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,28155,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,18728,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,14979,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",20027,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,12557,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",7265,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",9488,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,13173,unmatched,FALSE,,,ROIGroupCoarse,Hypothalamus
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,14094,unmatched,FALSE,,,ROIGroupCoarse,Midbrain
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,33794,unmatched,FALSE,,,ROIGroupCoarse,Midbrain
+Midbrain (M) - Pretectal region - PTR,25875,unmatched,FALSE,,,ROIGroupCoarse,Midbrain
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",49110,excluded_ambiguous_anatomy,FALSE,Substantia nigra,"dissection=Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN -> Substantia nigra",ROIGroupCoarse,Midbrain
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,27210,unmatched,FALSE,,,ROIGroupCoarse,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,23120,unmatched,FALSE,,,ROIGroupCoarse,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,21534,unmatched,FALSE,,,ROIGroupCoarse,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,13623,unmatched,FALSE,,,ROIGroupCoarse,Myelencephalon
+Pons (Pn) - Pontine Nucleus - PN,33641,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,21693,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Pons (Pn) - Pontine reticular formation - PnRF,49512,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,23349,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,47416,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,26095,unmatched,FALSE,,,ROIGroupCoarse,Pons
+NA,2462,unmatched,FALSE,,,ROIGroupCoarse,Pons
+Spinal cord - SpC,24190,unmatched,FALSE,,,ROIGroupCoarse,Spinal cord
+Epithalamus - ETH,24327,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - Anterior nuclear complex - ANC,31307,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,8573,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,27111,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,24354,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,12944,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,46453,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,17660,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,26172,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,6877,unmatched,FALSE,,,ROIGroupCoarse,Thalamus
+NA,3454,unmatched,FALSE,,,ROIGroupFine,Basal nuclei
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,35359,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",34078,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,8673,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,22557,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+Paleocortex (PalCx) - Piriform cortex - Pir,36941,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,17535,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+NA,2359,unmatched,FALSE,,,ROIGroupFine,Cerebral cortex
+Claustrum - Cla,40165,unmatched,FALSE,,,ROIGroupFine,Claustrum
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),10099,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,28155,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,18728,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,14979,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",20027,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,12557,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",7265,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",9488,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,13173,unmatched,FALSE,,,ROIGroupFine,Hypothalamus
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,14094,unmatched,FALSE,,,ROIGroupFine,Midbrain
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,33794,unmatched,FALSE,,,ROIGroupFine,Midbrain
+Midbrain (M) - Pretectal region - PTR,25875,unmatched,FALSE,,,ROIGroupFine,Midbrain
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",49110,excluded_ambiguous_anatomy,FALSE,Substantia nigra,"dissection=Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN -> Substantia nigra",ROIGroupFine,Midbrain
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,27210,unmatched,FALSE,,,ROIGroupFine,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,23120,unmatched,FALSE,,,ROIGroupFine,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,21534,unmatched,FALSE,,,ROIGroupFine,Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,13623,unmatched,FALSE,,,ROIGroupFine,Myelencephalon
+Pons (Pn) - Pontine Nucleus - PN,33641,unmatched,FALSE,,,ROIGroupFine,Pons
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,21693,unmatched,FALSE,,,ROIGroupFine,Pons
+Pons (Pn) - Pontine reticular formation - PnRF,49512,unmatched,FALSE,,,ROIGroupFine,Pons
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,23349,unmatched,FALSE,,,ROIGroupFine,Pons
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,47416,unmatched,FALSE,,,ROIGroupFine,Pons
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,26095,unmatched,FALSE,,,ROIGroupFine,Pons
+NA,2462,unmatched,FALSE,,,ROIGroupFine,Pons
+Spinal cord - SpC,24190,unmatched,FALSE,,,ROIGroupFine,Spinal cord
+Epithalamus - ETH,24327,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - Anterior nuclear complex - ANC,31307,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,8573,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,27111,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,24354,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,12944,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,46453,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,17660,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,26172,unmatched,FALSE,,,ROIGroupFine,Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,6877,unmatched,FALSE,,,ROIGroupFine,Thalamus

@@ -1,0 +1,108 @@
+dissection,n_roi_contexts,n_obs_rows_total,roi_contexts
+Amygdaloid complex (AMY) - Basolateral nuclear group (BLN) - lateral nucleus - La,1,28984,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Amygdaloid complex (AMY) - Central nuclear group - CEN,1,42699,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Amygdaloid complex (AMY) - Corticomedial nuclear group (CMN) - anterior cortical nucleus - CoA,1,10778,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basolateral nucleus (basal nucleus) - BL,1,35285,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basomedial nucleus (accessory basal nucleus) - BM,1,31090,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Amygdaloid complex (AMY) - corticomedial nuclear group - CMN,1,38331,Cerebral nuclei / Cerebral nuclei / Amygdaloid complex
+Basal forebrain (BF) - septal nuclei - SEP,1,40815,Cerebral nuclei / Cerebral nuclei / Basal forebrain
+Basal forebrain (BF) - substantia innominata and nearby nuclei - SI,1,38205,Cerebral nuclei / Cerebral nuclei / Basal forebrain
+Basal nuclei (BN) - Body of the Caudate - CaB,1,32678,Cerebral nuclei / Cerebral nuclei / Basal nuclei
+Basal nuclei (BN) - Globus pallidus (GP) - External segment of globus pallidus - GPe,1,47376,Cerebral nuclei / Cerebral nuclei / Basal nuclei
+Basal nuclei (BN) - Globus pallidus (GP) - Internal segment of globus pallidus - GPi,1,33968,Cerebral nuclei / Cerebral nuclei / Basal nuclei
+Basal nuclei (BN) - Nucleus Accumbens - NAC,1,30132,Cerebral nuclei / Cerebral nuclei / Basal nuclei
+Basal nuclei (BN) - Putamen - Pu,1,34416,Cerebral nuclei / Cerebral nuclei / Basal nuclei
+Body of hippocampus (HiB) - Rostral CA1-2,1,11265,Hippocampus / Hippocampus / Hippocampus
+Body of hippocampus (HiB) - Rostral CA1-CA3,1,28724,Hippocampus / Hippocampus / Hippocampus
+Body of hippocampus (HiB) - Rostral CA3,1,8077,Hippocampus / Hippocampus / Hippocampus
+Body of hippocampus (HiB) - Rostral DG-CA4,1,40191,Hippocampus / Hippocampus / Hippocampus
+Cerebellum (CB) - Cerebellar Vermis - CBV,1,71874,Hindbrain / Cerebellum / Cerebellum
+Cerebellum (CB) - Cerebellar deep nuclei - CbDN,1,52045,Hindbrain / Cerebellum / Cerebellum
+Cerebellum (CB) - Lateral hemisphere of cerebellum - CBL,1,28028,Hindbrain / Cerebellum / Cerebellum
+Cerebral cortex (Cx) - Anterior parahippocampal gyrus (AG) - Lateral entorhinal cortex - LEC,1,32745,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Anterior parahippocampal gyrus, posterior part (APH) - Medial entorhinal cortex - MEC",1,50362,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,1,35359,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",1,34078,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Cingulate gyrus, rostral (CgGr) - Ventral division of MFC - A24",1,32157,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Cuneus, caudal part - Peristriate Cortex - V2",1,32638,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Cuneus, rostral part - Area Prostriata - Pro",1,28051,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Frontal agranular insular cortex - FI,1,34949,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Gyrus rectus (ReG) - Medial orbitofrontal cortex - A14,1,14352,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Inferior frontal gyrus (IFG) - Ventrolateral prefrontal cortex - A44-A45,1,38259,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Inferior temporal gyrus - ITG,1,29522,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Lingual gyrus (LiG) - Primary Visual Cortex - V1C,1,33484,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Long insular gyri (LIG) - Dysgranular insular cortex - Idg,1,39696,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Middle Temporal Gyrus - MTG,1,107301,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Middle frontal gyrus (MFG) - A46,1,31065,Cerebral cortex / Cerebral cortex / Cerebral cortex
+"Cerebral cortex (Cx) - Occipitotemporal (fusiform) gyrus, temporal part (FuGt) - Temporal area TF",1,31899,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Parietal operculum (PaO) - Gustatory cortex - A43,1,42834,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Perirhinal gyrus (PRG) - A35-A36,1,22886,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Postcentral gyrus (PoCG) - Primary somatosensory cortex - S1C,1,38188,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Posterior intermediate orbital gyrus (POrG) - Caudal division of OFCi - A13,1,34919,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Posterior parahippocampal gyrus (PPH) - TH-TL,1,40677,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Precentral gyrus (PrCG) - Primary motor cortex - M1C,1,116576,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Rostral gyrus (RoG) - Dorsal division of MFC - A32,1,23295,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Short insular gyri - Granular insular cortex - Ig,1,38937,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Subcallosal Gyrus (SCG) - Subgenual (subcallosal) division of MFC - A25,1,37767,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Superior Temporal Gyrus - STG,1,40565,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Superior occipital gyrus (SOG) - Areas 19 and MT - A19,1,29674,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Supramarginal gyrus (SMG) - A40,1,39053,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Supraparietal lobule (SPL) - Posterosuperior (dorsal) parietal cortex - A5-A7,1,35290,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Temporal pole (TP) - Temporopolar area - A38,1,37642,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Cerebral cortex (Cx) - Transverse temporal gyrus (TTG) - Primary auditory cortex - A1C,1,32790,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Claustrum - Cla,1,40165,Cerebral nuclei / Cerebral nuclei / Claustrum
+Epithalamus - ETH,1,24327,Epithalamus / Thalamus / Thalamus
+Extended amygdala (EXA) - Bed nucleus of stria terminalis and nearby - BNST,1,34933,Cerebral nuclei / Cerebral nuclei / Extended amygdala
+Head of hippocampus (HiH) - Subicular cortex - Sub,1,19398,Hippocampus / Hippocampus / Hippocampus
+Head of hippocampus (HiH) - Uncal CA1,1,39147,Hippocampus / Hippocampus / Hippocampus
+Head of hippocampus (HiH) - Uncal CA1-CA3,1,37911,Hippocampus / Hippocampus / Hippocampus
+Head of hippocampus (HiH) - Uncal CA2-CA3,1,12461,Hippocampus / Hippocampus / Hippocampus
+Head of hippocampus (HiH) - Uncal DG-CA4,1,35350,Hippocampus / Hippocampus / Hippocampus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),1,10099,Hypothalamus / Hypothalamus / Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,1,28155,Hypothalamus / Hypothalamus / Hypothalamus
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,1,18728,Hypothalamus / Hypothalamus / Hypothalamus
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,1,14979,Hypothalamus / Hypothalamus / Hypothalamus
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",1,20027,Hypothalamus / Hypothalamus / Hypothalamus
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,1,12557,Hypothalamus / Hypothalamus / Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",1,7265,Hypothalamus / Hypothalamus / Hypothalamus
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",1,9488,Hypothalamus / Hypothalamus / Hypothalamus
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,1,13173,Hypothalamus / Hypothalamus / Hypothalamus
+Midbrain (M) - Inferior colliculus and nearby nuclei - IC,1,32306,Midbrain / Midbrain / Midbrain
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,1,14094,Midbrain / Midbrain / Midbrain
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,1,33794,Midbrain / Midbrain / Midbrain
+Midbrain (M) - Pretectal region - PTR,1,25875,Midbrain / Midbrain / Midbrain
+Midbrain (M) - Substantia Nigra - SN,1,59505,Midbrain / Midbrain / Midbrain
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",1,49110,Midbrain / Midbrain / Midbrain
+Midbrain (M) - Superior colliculus and nearby nuclei - SC,1,29907,Midbrain / Midbrain / Midbrain
+Midbrain (RN) - Red Nucleus - RN,1,4714,Midbrain / Midbrain / Midbrain
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,1,27210,Hindbrain / Myelencephalon / Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,1,23120,Hindbrain / Myelencephalon / Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,1,21534,Hindbrain / Myelencephalon / Myelencephalon
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,1,13623,Hindbrain / Myelencephalon / Myelencephalon
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,2,31230,Cerebral cortex / Cerebral cortex / Cerebral cortex || Paleocortex / Cerebral cortex / Cerebral cortex
+Paleocortex (PalCx) - Piriform cortex - Pir,1,36941,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,1,17535,Cerebral cortex / Cerebral cortex / Cerebral cortex
+Pons (Pn) - Pontine Nucleus - PN,1,33641,Hindbrain / Pons / Pons
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,1,21693,Hindbrain / Pons / Pons
+Pons (Pn) - Pontine reticular formation - PnRF,1,49512,Hindbrain / Pons / Pons
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,1,23349,Hindbrain / Pons / Pons
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,1,47416,Hindbrain / Pons / Pons
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,1,26095,Hindbrain / Pons / Pons
+Spinal cord - SpC,1,24190,Spinal cord / Spinal cord / Spinal cord
+Tail of Hippocampus (HiT) - Caudal Hippocampus - CA1-CA3,1,36886,Hippocampus / Hippocampus / Hippocampus
+Tail of Hippocampus (HiT) - Caudal Hippocampus - CA4-DGC,1,56367,Hippocampus / Hippocampus / Hippocampus
+Tail of Hippocampus (HiT) - Subicular cortex - Sub,1,22170,Hippocampus / Hippocampus / Hippocampus
+Thalamus (THM) - Anterior nuclear complex - ANC,1,31307,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,1,8573,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,1,27111,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - Subthalamic nucleus and nearby - STH,1,20162,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,1,24354,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,1,12944,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,1,46453,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,1,17660,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,1,26172,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,1,6877,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus + reuniens nucleus (medioventral nucleus) of thalamus - MD + Re,1,13382,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus - MD,1,20916,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - lateral geniculate nucleus (LG),1,48856,Thalamus / Thalamus / Thalamus
+Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - medial geniculate nuclei (MG),1,14226,Thalamus / Thalamus / Thalamus

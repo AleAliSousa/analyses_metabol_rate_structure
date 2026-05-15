@@ -1,0 +1,115 @@
+dissection,ROIGroup,ROIGroupCoarse,ROIGroupFine,roi
+,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A23
+,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A32
+,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A35-36
+,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human Gpe
+,Hindbrain,Pons,Pons,Human PB
+Amygdaloid complex (AMY) - Basolateral nuclear group (BLN) - lateral nucleus - La,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human La
+Amygdaloid complex (AMY) - Central nuclear group - CEN,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human CEN
+Amygdaloid complex (AMY) - Corticomedial nuclear group (CMN) - anterior cortical nucleus - CoA,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human CoA
+Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basolateral nucleus (basal nucleus) - BL,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human BL
+Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basomedial nucleus (accessory basal nucleus) - BM,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human BM
+Amygdaloid complex (AMY) - corticomedial nuclear group - CMN,Cerebral nuclei,Cerebral nuclei,Amygdaloid complex,Human CMN
+Basal forebrain (BF) - septal nuclei - SEP,Cerebral nuclei,Cerebral nuclei,Basal forebrain,Human SEP
+Basal forebrain (BF) - substantia innominata and nearby nuclei - SI,Cerebral nuclei,Cerebral nuclei,Basal forebrain,Human SI
+Basal nuclei (BN) - Body of the Caudate - CaB,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human CaB
+Basal nuclei (BN) - Globus pallidus (GP) - External segment of globus pallidus - GPe,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human GPe
+Basal nuclei (BN) - Globus pallidus (GP) - Internal segment of globus pallidus - GPi,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human GPi
+Basal nuclei (BN) - Nucleus Accumbens - NAC,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human NAC
+Basal nuclei (BN) - Putamen - Pu,Cerebral nuclei,Cerebral nuclei,Basal nuclei,Human Pu
+Body of hippocampus (HiB) - Rostral CA1-2,Hippocampus,Hippocampus,Hippocampus,Human CA1R-CA2R
+Body of hippocampus (HiB) - Rostral CA1-CA3,Hippocampus,Hippocampus,Hippocampus,Human CA1R-CA2R-CA3R
+Body of hippocampus (HiB) - Rostral CA3,Hippocampus,Hippocampus,Hippocampus,Human CA3R
+Body of hippocampus (HiB) - Rostral DG-CA4,Hippocampus,Hippocampus,Hippocampus,Human DGR-CA4Rpy
+Cerebellum (CB) - Cerebellar Vermis - CBV,Hindbrain,Cerebellum,Cerebellum,Human CBV
+Cerebellum (CB) - Cerebellar deep nuclei - CbDN,Hindbrain,Cerebellum,Cerebellum,Human CbDN
+Cerebellum (CB) - Lateral hemisphere of cerebellum - CBL,Hindbrain,Cerebellum,Cerebellum,Human CBL
+Cerebral cortex (Cx) - Anterior parahippocampal gyrus (AG) - Lateral entorhinal cortex - LEC,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human LEC
+"Cerebral cortex (Cx) - Anterior parahippocampal gyrus, posterior part (APH) - Medial entorhinal cortex - MEC",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human MEC
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A23
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A29-A30
+"Cerebral cortex (Cx) - Cingulate gyrus, rostral (CgGr) - Ventral division of MFC - A24",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A24
+"Cerebral cortex (Cx) - Cuneus, caudal part - Peristriate Cortex - V2",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human V2
+"Cerebral cortex (Cx) - Cuneus, rostral part - Area Prostriata - Pro",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human Pro
+Cerebral cortex (Cx) - Frontal agranular insular cortex - FI,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human FI
+Cerebral cortex (Cx) - Gyrus rectus (ReG) - Medial orbitofrontal cortex - A14,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A14
+Cerebral cortex (Cx) - Inferior frontal gyrus (IFG) - Ventrolateral prefrontal cortex - A44-A45,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A44-A45
+Cerebral cortex (Cx) - Inferior temporal gyrus - ITG,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human ITG
+Cerebral cortex (Cx) - Lingual gyrus (LiG) - Primary Visual Cortex - V1C,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human V1C
+Cerebral cortex (Cx) - Long insular gyri (LIG) - Dysgranular insular cortex - Idg,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human Idg
+Cerebral cortex (Cx) - Middle Temporal Gyrus - MTG,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human MTG
+Cerebral cortex (Cx) - Middle frontal gyrus (MFG) - A46,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A46
+"Cerebral cortex (Cx) - Occipitotemporal (fusiform) gyrus, temporal part (FuGt) - Temporal area TF",Cerebral cortex,Cerebral cortex,Cerebral cortex,Human TF
+Cerebral cortex (Cx) - Parietal operculum (PaO) - Gustatory cortex - A43,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A43
+Cerebral cortex (Cx) - Perirhinal gyrus (PRG) - A35-A36,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A35-A36
+Cerebral cortex (Cx) - Postcentral gyrus (PoCG) - Primary somatosensory cortex - S1C,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human S1C
+Cerebral cortex (Cx) - Posterior intermediate orbital gyrus (POrG) - Caudal division of OFCi - A13,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A13
+Cerebral cortex (Cx) - Posterior parahippocampal gyrus (PPH) - TH-TL,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human TH-TL
+Cerebral cortex (Cx) - Precentral gyrus (PrCG) - Primary motor cortex - M1C,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human M1C
+Cerebral cortex (Cx) - Rostral gyrus (RoG) - Dorsal division of MFC - A32,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A32
+Cerebral cortex (Cx) - Short insular gyri - Granular insular cortex - Ig,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human Ig
+Cerebral cortex (Cx) - Subcallosal Gyrus (SCG) - Subgenual (subcallosal) division of MFC - A25,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A25
+Cerebral cortex (Cx) - Superior Temporal Gyrus - STG,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human STG
+Cerebral cortex (Cx) - Superior occipital gyrus (SOG) - Areas 19 and MT - A19,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A19
+Cerebral cortex (Cx) - Supramarginal gyrus (SMG) - A40,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A40
+Cerebral cortex (Cx) - Supraparietal lobule (SPL) - Posterosuperior (dorsal) parietal cortex - A5-A7,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A5-A7
+Cerebral cortex (Cx) - Temporal pole (TP) - Temporopolar area - A38,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A38
+Cerebral cortex (Cx) - Transverse temporal gyrus (TTG) - Primary auditory cortex - A1C,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A1C
+Claustrum - Cla,Cerebral nuclei,Cerebral nuclei,Claustrum,Human Cla
+Epithalamus - ETH,Epithalamus,Thalamus,Thalamus,Human ETH
+Extended amygdala (EXA) - Bed nucleus of stria terminalis and nearby - BNST,Cerebral nuclei,Cerebral nuclei,Extended amygdala,Human BNST
+Head of hippocampus (HiH) - Subicular cortex - Sub,Hippocampus,Hippocampus,Hippocampus,Human Sub
+Head of hippocampus (HiH) - Uncal CA1,Hippocampus,Hippocampus,Hippocampus,Human CA1U
+Head of hippocampus (HiH) - Uncal CA1-CA3,Hippocampus,Hippocampus,Hippocampus,Human CA1-3
+Head of hippocampus (HiH) - Uncal CA1-CA3,Hippocampus,Hippocampus,Hippocampus,Human CA1U-CA2U-CA3U
+Head of hippocampus (HiH) - Uncal CA2-CA3,Hippocampus,Hippocampus,Hippocampus,Human CA2U-CA3U
+Head of hippocampus (HiH) - Uncal DG-CA4,Hippocampus,Hippocampus,Hippocampus,Human DGU-CA4Upy
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),Hypothalamus,Hypothalamus,Hypothalamus,Human HTHma
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,Hypothalamus,Hypothalamus,Hypothalamus,Human MN
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,Hypothalamus,Hypothalamus,Hypothalamus,Human HTHma-HTHtub
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,Hypothalamus,Hypothalamus,Hypothalamus,Human HTHpo
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",Hypothalamus,Hypothalamus,Hypothalamus,Human HTHpo-HTHso
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,Hypothalamus,Hypothalamus,Hypothalamus,Human HTHso
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",Hypothalamus,Hypothalamus,Hypothalamus,Human HTHso-HTHtub
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",Hypothalamus,Hypothalamus,Hypothalamus,Human HTHso-HTHtub
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,Hypothalamus,Hypothalamus,Hypothalamus,Human HTHtub
+Midbrain (M) - Inferior colliculus and nearby nuclei - IC,Midbrain,Midbrain,Midbrain,Human IC
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,Midbrain,Midbrain,Midbrain,Human PAG-DR
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,Midbrain,Midbrain,Midbrain,Human PAG
+Midbrain (M) - Pretectal region - PTR,Midbrain,Midbrain,Midbrain,Human PTR
+Midbrain (M) - Substantia Nigra - SN,Midbrain,Midbrain,Midbrain,Human SN
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",Midbrain,Midbrain,Midbrain,Human SN-RN
+Midbrain (M) - Superior colliculus and nearby nuclei - SC,Midbrain,Midbrain,Midbrain,Human SC
+Midbrain (RN) - Red Nucleus - RN,Midbrain,Midbrain,Midbrain,Human RN
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,Hindbrain,Myelencephalon,Myelencephalon,Human MoAN
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,Hindbrain,Myelencephalon,Myelencephalon,Human MoRF-MoEN
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,Hindbrain,Myelencephalon,Myelencephalon,Human IO
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,Hindbrain,Myelencephalon,Myelencephalon,Human MoSR
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human AON
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,Paleocortex,Cerebral cortex,Cerebral cortex,Human AON
+Paleocortex (PalCx) - Piriform cortex - Pir,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human Pir
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,Cerebral cortex,Cerebral cortex,Cerebral cortex,Human A35r
+Pons (Pn) - Pontine Nucleus - PN,Hindbrain,Pons,Pons,Human PN
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,Hindbrain,Pons,Pons,Human PB
+Pons (Pn) - Pontine reticular formation - PnRF,Hindbrain,Pons,Pons,Human PnRF
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,Hindbrain,Pons,Pons,Human PnAN
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,Hindbrain,Pons,Pons,Human PnEN
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,Hindbrain,Pons,Pons,Human DTg
+Spinal cord - SpC,Spinal cord,Spinal cord,Spinal cord,Human SpC
+Tail of Hippocampus (HiT) - Caudal Hippocampus - CA1-CA3,Hippocampus,Hippocampus,Hippocampus,Human CA1C-CA3C
+Tail of Hippocampus (HiT) - Caudal Hippocampus - CA4-DGC,Hippocampus,Hippocampus,Hippocampus,Human CA4C-DGC
+Tail of Hippocampus (HiT) - Subicular cortex - Sub,Hippocampus,Hippocampus,Hippocampus,Human Sub
+Thalamus (THM) - Anterior nuclear complex - ANC,Thalamus,Thalamus,Thalamus,Human ANC
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,Thalamus,Thalamus,Thalamus,Human VA
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,Thalamus,Thalamus,Thalamus,Human VLN
+Thalamus (THM) - Subthalamic nucleus and nearby - STH,Thalamus,Thalamus,Thalamus,Human STH
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,Thalamus,Thalamus,Thalamus,Human CM-Pf
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,Thalamus,Thalamus,Thalamus,Human CM
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,Thalamus,Thalamus,Thalamus,Human Pul
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,Thalamus,Thalamus,Thalamus,Human LP-VPL
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,Thalamus,Thalamus,Thalamus,Human LP
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,Thalamus,Thalamus,Thalamus,Human VPL
+Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus + reuniens nucleus (medioventral nucleus) of thalamus - MD + Re,Thalamus,Thalamus,Thalamus,Human MD-Re
+Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus - MD,Thalamus,Thalamus,Thalamus,Human MD
+Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - lateral geniculate nucleus (LG),Thalamus,Thalamus,Thalamus,Human LG
+Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - medial geniculate nuclei (MG),Thalamus,Thalamus,Thalamus,Human MG

@@ -1,0 +1,98 @@
+"anatomy_group","anatomy_match_source","anatomy_rule_id","ROIGroup","ROIGroupCoarse","ROIGroupFine","dissection","n_obs_rows"
+"Basal forebrain","dissection","basal_forebrain","Cerebral nuclei","Cerebral nuclei","Basal forebrain","Basal forebrain (BF) - septal nuclei - SEP",20296
+"Basal forebrain","dissection","basal_forebrain","Cerebral nuclei","Cerebral nuclei","Basal forebrain","Basal forebrain (BF) - substantia innominata and nearby nuclei - SI",4835
+"Caudatum","ROI fallback","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","Basal nuclei (BN) - Globus pallidus (GP) - External segment of globus pallidus - GPe",33090
+"Caudatum","ROI fallback","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","Basal nuclei (BN) - Globus pallidus (GP) - Internal segment of globus pallidus - GPi",32242
+"Caudatum","ROI fallback","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","Basal nuclei (BN) - Putamen - Pu",3675
+"Caudatum","ROI fallback","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","Basal nuclei (BN) - Nucleus Accumbens - NAC",2720
+"Caudatum","ROI fallback","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","",2478
+"Caudatum","dissection","caudatum","Cerebral nuclei","Cerebral nuclei","Basal nuclei","Basal nuclei (BN) - Body of the Caudate - CaB",2787
+"Corpus amygdaloideum","dissection","amygdala","Thalamus","Thalamus","Thalamus","Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL",16179
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - Central nuclear group - CEN",12647
+"Corpus amygdaloideum","dissection","amygdala","Thalamus","Thalamus","Thalamus","Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN",12582
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basomedial nucleus (accessory basal nucleus) - BM",4806
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - basolateral nuclear group (BLN) - basolateral nucleus (basal nucleus) - BL",4596
+"Corpus amygdaloideum","dissection","amygdala","Thalamus","Thalamus","Thalamus","Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL",4553
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - Basolateral nuclear group (BLN) - lateral nucleus - La",4420
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - corticomedial nuclear group - CMN",3966
+"Corpus amygdaloideum","dissection","amygdala","Cerebral nuclei","Cerebral nuclei","Amygdaloid complex","Amygdaloid complex (AMY) - Corticomedial nuclear group (CMN) - anterior cortical nucleus - CoA",2476
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Head of hippocampus (HiH) - Uncal CA1",24394
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Tail of Hippocampus (HiT) - Caudal Hippocampus - CA4-DGC",19743
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Body of hippocampus (HiB) - Rostral DG-CA4",14520
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Head of hippocampus (HiH) - Uncal DG-CA4",13331
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Head of hippocampus (HiH) - Subicular cortex - Sub",12043
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Body of hippocampus (HiB) - Rostral CA1-CA3",7010
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Head of hippocampus (HiH) - Uncal CA1-CA3",6731
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Tail of Hippocampus (HiT) - Caudal Hippocampus - CA1-CA3",4448
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Body of hippocampus (HiB) - Rostral CA3",3276
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Tail of Hippocampus (HiT) - Subicular cortex - Sub",1730
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Body of hippocampus (HiB) - Rostral CA1-2",1569
+"Hippocampus","dissection","hippocampus","Hippocampus","Hippocampus","Hippocampus","Head of hippocampus (HiH) - Uncal CA2-CA3",1185
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - Subthalamic nucleus and nearby - STH",19559
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul",15945
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP",13608
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN",10739
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - lateral geniculate nucleus (LG)",8595
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf",8333
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM",6909
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - Anterior nuclear complex - ANC",6272
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA",4310
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - posterior nuclear complex of thalamus (PoN) - medial geniculate nuclei (MG)",3691
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - supraoptic region of HTH - HTHso",3013
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub",2211
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub",2166
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Epithalamus","Thalamus","Thalamus","Epithalamus - ETH",2048
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",2019
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - preoptic region of HTH - HTHpo",1722
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - mammillary region of HTH (HTHma)",1074
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",1029
+"Nucleus medial thalami","ROI fallback","nucleus_medial_thalami","Hypothalamus","Hypothalamus","Hypothalamus","Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",218
+"Nucleus medial thalami","dissection","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus + reuniens nucleus (medioventral nucleus) of thalamus - MD + Re",4439
+"Nucleus medial thalami","dissection","nucleus_medial_thalami","Thalamus","Thalamus","Thalamus","Thalamus (THM) - medial nuclear complex of thalamus (MNC) - mediodorsal nucleus of thalamus - MD",3396
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Middle Temporal Gyrus - MTG",22134
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r",17491
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Superior Temporal Gyrus - STG",13196
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Posterior parahippocampal gyrus (PPH) - TH-TL",8423
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Precentral gyrus (PrCG) - Primary motor cortex - M1C",6320
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Paleocortex (PalCx) - Piriform cortex - Pir",4755
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Parietal operculum (PaO) - Gustatory cortex - A43",3796
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Cingulate gyrus, rostral (CgGr) - Ventral division of MFC - A24",3653
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Short insular gyri - Granular insular cortex - Ig",3617
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Anterior parahippocampal gyrus, posterior part (APH) - Medial entorhinal cortex - MEC",3480
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Long insular gyri (LIG) - Dysgranular insular cortex - Idg",3241
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Temporal pole (TP) - Temporopolar area - A38",3165
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Middle frontal gyrus (MFG) - A46",3136
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Supramarginal gyrus (SMG) - A40",3050
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Inferior temporal gyrus - ITG",2911
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Anterior parahippocampal gyrus (AG) - Lateral entorhinal cortex - LEC",2878
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Supraparietal lobule (SPL) - Posterosuperior (dorsal) parietal cortex - A5-A7",2758
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Postcentral gyrus (PoCG) - Primary somatosensory cortex - S1C",2726
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Subcallosal Gyrus (SCG) - Subgenual (subcallosal) division of MFC - A25",2663
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Transverse temporal gyrus (TTG) - Primary auditory cortex - A1C",2607
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Inferior frontal gyrus (IFG) - Ventrolateral prefrontal cortex - A44-A45",2555
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Occipitotemporal (fusiform) gyrus, temporal part (FuGt) - Temporal area TF",2486
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",2427
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23",2376
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Frontal agranular insular cortex - FI",2338
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Posterior intermediate orbital gyrus (POrG) - Caudal division of OFCi - A13",2279
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Perirhinal gyrus (PRG) - A35-A36",1948
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Rostral gyrus (RoG) - Dorsal division of MFC - A32",1922
+"Occipital lobe","ROI fallback","occipital_cortex","Paleocortex","Cerebral cortex","Cerebral cortex","Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON",1432
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Gyrus rectus (ReG) - Medial orbitofrontal cortex - A14",877
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON",535
+"Occipital lobe","ROI fallback","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","",199
+"Occipital lobe","dissection","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Cuneus, caudal part - Peristriate Cortex - V2",2982
+"Occipital lobe","dissection","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Superior occipital gyrus (SOG) - Areas 19 and MT - A19",2886
+"Occipital lobe","dissection","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Lingual gyrus (LiG) - Primary Visual Cortex - V1C",2872
+"Occipital lobe","dissection","occipital_cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex","Cerebral cortex (Cx) - Cuneus, rostral part - Area Prostriata - Pro",2760
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG",17187
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Inferior colliculus and nearby nuclei - IC",4290
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR",3406
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (RN) - Red Nucleus - RN",2973
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Superior colliculus and nearby nuclei - SC",2741
+"Substantia nigra","ROI fallback","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Pretectal region - PTR",2285
+"Substantia nigra","dissection","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Substantia Nigra - SN",50837
+"Substantia nigra","dissection","substantia_nigra","Midbrain","Midbrain","Midbrain","Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",37737
+"Vermis","ROI fallback","vermis","Hindbrain","Cerebellum","Cerebellum","Cerebellum (CB) - Cerebellar deep nuclei - CbDN",28652
+"Vermis","ROI fallback","vermis","Hindbrain","Cerebellum","Cerebellum","Cerebellum (CB) - Lateral hemisphere of cerebellum - CBL",3218
+"Vermis","dissection","vermis","Hindbrain","Cerebellum","Cerebellum","Cerebellum (CB) - Cerebellar Vermis - CBV",17133

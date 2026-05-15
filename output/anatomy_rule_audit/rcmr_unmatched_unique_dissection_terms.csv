@@ -1,0 +1,41 @@
+dissection,n_unmatched_roi_contexts,n_obs_rows_total,roi_contexts,match_statuses
+Cerebral cortex (Cx) - Caudal cingulate gyrus (CgGC) - A23,1,35359,Cerebral cortex / Cerebral cortex / Cerebral cortex,unmatched
+"Cerebral cortex (Cx) - Cingulate gyrus, retrosplenial (CgGrs) - A29-A30",1,34078,Cerebral cortex / Cerebral cortex / Cerebral cortex,unmatched
+Claustrum - Cla,1,40165,Cerebral nuclei / Cerebral nuclei / Claustrum,unmatched
+Epithalamus - ETH,1,24327,Epithalamus / Thalamus / Thalamus,unmatched
+Hypothalamus (HTH) - mammillary region of HTH (HTHma),1,10099,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - mammillary nucleus - MN,1,28155,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Hypothalamus (HTH) - mammillary region of HTH (HTHma) - tuberal region of HTH - HTHtub,1,18728,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Hypothalamus (HTH) - preoptic region of HTH - HTHpo,1,14979,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+"Hypothalamus (HTH) - preoptic region of HTH - HTHpo (medial preoptic nucleus, MPN) - supraoptic region of HTH - HTHso (paraventricular nucleus, PV)",1,20027,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Hypothalamus (HTH) - supraoptic region of HTH - HTHso,1,12557,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial and dorsomedial hypothalamic nucleic nuclei, VMH, DMH)",1,7265,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+"Hypothalamus (HTH) - supraoptic region of HTH - HTHso (anterior hypothalamic nucleus, AHN) - tuberal region of HTH - HTHtub (ventromedial hypothalamic nucleus, VMH)",1,9488,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Hypothalamus (HTH) - tuberal region of hypothalamus - HTHtub,1,13173,Hypothalamus / Hypothalamus / Hypothalamus,unmatched
+Midbrain (M) - Periaqueductal gray and Dorsal raphe nucleus - PAG-DR,1,14094,Midbrain / Midbrain / Midbrain,unmatched
+Midbrain (M) - Periaqueductal gray and nearby nuclei - PAG,1,33794,Midbrain / Midbrain / Midbrain,unmatched
+Midbrain (M) - Pretectal region - PTR,1,25875,Midbrain / Midbrain / Midbrain,unmatched
+"Midbrain (M) - Substantia Nigra, Red Nucleus, and nearby nuclei - SN-RN",1,49110,Midbrain / Midbrain / Midbrain,excluded_ambiguous_anatomy
+Myelencephalon (medulla oblongata) (Mo) - afferent nuclei of cranial nerves in medulla oblongata - MoAN,1,27210,Hindbrain / Myelencephalon / Myelencephalon,unmatched
+Myelencephalon (medulla oblongata) (Mo) - medullary reticular formation (MoRF) & efferent nuclei of cranial nerves in the medulla oblongata (MoEN) - MoRF-MoEN,1,23120,Hindbrain / Myelencephalon / Myelencephalon,unmatched
+Myelencephalon (medulla oblongata) (Mo) - precerebellar nuclei (PrCbN) - inferior olive - IO,1,21534,Hindbrain / Myelencephalon / Myelencephalon,unmatched
+Myelencephalon (medulla oblongata) (Mo) - sensory relay nuclei in medulla oblongata - MoSR,1,13623,Hindbrain / Myelencephalon / Myelencephalon,unmatched
+Paleocortex (PalCx) - Anterior Olfactory Nucleus - AON,2,31230,Cerebral cortex / Cerebral cortex / Cerebral cortex || Paleocortex / Cerebral cortex / Cerebral cortex,unmatched
+Paleocortex (PalCx) - Piriform cortex - Pir,1,36941,Cerebral cortex / Cerebral cortex / Cerebral cortex,unmatched
+Perirhinal cortex (area 35) (A35) - rostral subdivision of area 35 - A35r,1,17535,Cerebral cortex / Cerebral cortex / Cerebral cortex,unmatched
+Pons (Pn) - Pontine Nucleus - PN,1,33641,Hindbrain / Pons / Pons,unmatched
+Pons (Pn) - Pontine reticular formation (PnRF) - parabrachial nuclei - PB,1,21693,Hindbrain / Pons / Pons,unmatched
+Pons (Pn) - Pontine reticular formation - PnRF,1,49512,Hindbrain / Pons / Pons,unmatched
+Pons (Pn) - afferent nuclei of cranial nerves in pons - PnAN,1,23349,Hindbrain / Pons / Pons,unmatched
+Pons (Pn) - efferent nuclei of cranial nerves in pons - PnEN,1,47416,Hindbrain / Pons / Pons,unmatched
+Pons (Pn) - other nuclei in pontine tegmentum (XPnTg) - dorsal tegmental nucleus - DTg,1,26095,Hindbrain / Pons / Pons,unmatched
+Spinal cord - SpC,1,24190,Spinal cord / Spinal cord / Spinal cord,unmatched
+Thalamus (THM) - Anterior nuclear complex - ANC,1,31307,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - Lateral nuclear complex (LNC) - ventral anterior nucleus of thalamus - VA,1,8573,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - Lateral nuclear complex of thalamus (LNC) - ventral group of lateral nucleus - VLN,1,27111,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian and parafasicular nuclei - CM and Pf,1,24354,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - intralaminar nuclear complex (ILN) - posterior group of intralaminar nuclei (PILN) - centromedian nucleus of thalamus - CM,1,12944,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - Pulvinar of thalamus - Pul,1,46453,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus + ventral posterior lateral nucleus - LP + VPL,1,17660,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - lateral posterior nucleus of thalamus - LP,1,26172,Thalamus / Thalamus / Thalamus,unmatched
+Thalamus (THM) - lateral nuclear complex of thalamus (LNC) - ventral posterior lateral nucleus - VPL,1,6877,Thalamus / Thalamus / Thalamus,unmatched

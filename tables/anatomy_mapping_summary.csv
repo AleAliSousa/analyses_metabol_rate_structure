@@ -1,0 +1,15 @@
+"anatomy_group","anatomy_match_source","n_obs_rows"
+"Basal forebrain","dissection",25131
+"Caudatum","ROI fallback",74205
+"Caudatum","dissection",2787
+"Corpus amygdaloideum","dissection",66225
+"Hippocampus","dissection",109980
+"Nucleus medial thalami","ROI fallback",113461
+"Nucleus medial thalami","dissection",7835
+"Occipital lobe","ROI fallback",137374
+"Occipital lobe","dissection",11500
+"Substantia nigra","ROI fallback",32882
+"Substantia nigra","dissection",88574
+"Unmapped",NA,169306
+"Vermis","ROI fallback",31870
+"Vermis","dissection",17133
