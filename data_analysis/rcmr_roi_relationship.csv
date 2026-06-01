@@ -1,0 +1,24 @@
+rcmr_term,rois
+Basal forebrain,Human SEP || Human SI
+Caudatum,Human CaB
+Cerebellar cortex,Human CBL
+Colliculus inferior,Human IC
+Colliculus superior,Human SC
+Corpus amygdaloideum,Human BL || Human BM || Human BNST || Human CEN || Human CMN || Human CoA || Human La
+Corpus geniculatum laterale,Human LG
+Corpus geniculatum mediale,Human MG
+Frontal lobe,Human A13 || Human A14 || Human A25 || Human A32 || Human A44-A45 || Human A46 || Human M1C
+Hippocampus,Human CA1-3 || Human CA1C-CA3C || Human CA1R-CA2R || Human CA1R-CA2R-CA3R || Human CA1U || Human CA1U-CA2U-CA3U || Human CA2U-CA3U || Human CA3R || Human CA4C-DGC || Human DGR-CA4Rpy || Human DGU-CA4Upy || Human Sub
+Insular lobe,Human FI || Human Idg || Human Ig
+Nucleus accumbens,Human NAC
+Nucleus dentatus cerebelli,Human CbDN
+Nucleus medial thalami,Human MD || Human MD-Re
+Nucleus ruber,Human RN
+Nucleus subthalamicus,Human STH
+Occipital lobe,Human A19 || Human Pro || Human V1C || Human V2
+Pallidum,Human GPe || Human GPi || Human Gpe
+Parietal lobe,Human A40 || Human A43 || Human A5-A7 || Human S1C
+Putamen,Human Pu
+Substantia nigra,Human SN
+Temporal lobe,Human A1C || Human A35-A36 || Human A35r || Human A38 || Human ITG || Human LEC || Human MEC || Human MTG || Human STG || Human TF || Human TH-TL || Human A35-36
+Vermis,Human CBV

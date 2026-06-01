@@ -1,0 +1,19 @@
+Group,Diff_column,n,rho,p_value,ci_low,ci_high
+Cortical gray,Brownian (BM)__Diff.min,4,-0.4,0.75,NA,NA
+Cortical gray,Brownian (BM)__Diff.pre,4,-0.4,0.75,NA,NA
+Cortical gray,Brownian (BM)__Diff.max,4,-0.4,0.75,NA,NA
+Cortical gray,Pagel's lambda (ML)__Diff.min,4,0,1,NA,NA
+Cortical gray,Pagel's lambda (ML)__Diff.pre,4,0,1,NA,NA
+Cortical gray,Pagel's lambda (ML)__Diff.max,4,0,1,NA,NA
+White matter,Brownian (BM)__Diff.min,2,NA,NA,NA,NA
+White matter,Brownian (BM)__Diff.pre,2,NA,NA,NA,NA
+White matter,Brownian (BM)__Diff.max,2,NA,NA,NA,NA
+White matter,Pagel's lambda (ML)__Diff.min,2,NA,NA,NA,NA
+White matter,Pagel's lambda (ML)__Diff.pre,2,NA,NA,NA,NA
+White matter,Pagel's lambda (ML)__Diff.max,2,NA,NA,NA,NA
+Non-cortical,Brownian (BM)__Diff.min,7,0.4999999999999999,0.26666666666666666,NA,NA
+Non-cortical,Brownian (BM)__Diff.pre,7,0.607142857142857,0.16666666666666666,NA,NA
+Non-cortical,Brownian (BM)__Diff.max,7,0.607142857142857,0.16666666666666666,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.min,7,0.21428571428571422,0.6615079365079365,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.pre,7,0.46428571428571414,0.30238095238095236,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.max,7,0.5714285714285713,0.2,NA,NA

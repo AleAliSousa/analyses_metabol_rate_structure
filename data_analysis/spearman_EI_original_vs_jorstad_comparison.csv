@@ -1,0 +1,5 @@
+"EI_definition","variable","n_regions","rho","p_value","status","p_adj_BH"
+"Jorstad-like cortical E:I","EI_ratio",7,0.666693722394714,0.101920460246182,"tested",0.203840920492365
+"Jorstad-like cortical E:I","log2_EI_ratio",7,0.666693722394714,0.101920460246182,"tested",0.203840920492365
+"Original broad E:I, all regions","EI_ratio",23,-0.0064245121803157,0.97679054828888,"tested",0.97679054828888
+"Original broad E:I, all regions","log2_EI_ratio",23,-0.0064245121803157,0.97679054828888,"tested",0.97679054828888

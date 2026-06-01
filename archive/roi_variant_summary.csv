@@ -1,0 +1,5 @@
+"roi","n","n_blank","frac_blank","tissues","dissection_values"
+"Human A35-36",72,72,1,"perirhinal cortex",""
+"Human A35-A36",23660,774,0.0327134404057481,"perirhinal cortex","Cerebral cortex (Cx) - Perirhinal gyrus (PRG) - A35-A36; "
+"Human GPe",48352,976,0.0201853077432164,"globus pallidus","Basal nuclei (BN) - Globus pallidus (GP) - External segment of globus pallidus - GPe; "
+"Human Gpe",2478,2478,1,"globus pallidus",""

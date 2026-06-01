@@ -1,0 +1,201 @@
+"astro_type","cluster_id_int","supercluster_term","ROIGroupCoarse","anatomy_group","n_cells"
+"Astrocyte_Type1",52,"Astrocyte","Cerebral cortex","Temporal lobe",9860
+"Astrocyte_Type2",62,"Astrocyte","Cerebral nuclei","Pallidum",9728
+"Astrocyte_Type1",54,"Astrocyte","Hippocampus","Hippocampus",8006
+"Astrocyte_Type1",54,"Astrocyte","Cerebral cortex","Temporal lobe",7218
+"Astrocyte_Type1",61,"Astrocyte","Hippocampus","Hippocampus",6496
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",5342
+"Astrocyte_Type1",57,"Astrocyte","Hippocampus","Hippocampus",4626
+"Astrocyte_Type1",53,"Astrocyte","Hippocampus","Hippocampus",4625
+"Astrocyte_Type2",62,"Astrocyte","Cerebellum","Nucleus dentatus cerebelli",4497
+"Astrocyte_Type1",52,"Astrocyte","Cerebral cortex","Frontal lobe",4186
+"Astrocyte_Type1",58,"Astrocyte","Hippocampus","Hippocampus",3030
+"Astrocyte_Type1",52,"Astrocyte","Cerebral cortex","Parietal lobe",2758
+"Astrocyte_Type1",52,"Astrocyte","Cerebral cortex","Occipital lobe",2502
+"Astrocyte_Type2",62,"Astrocyte","Midbrain","Substantia nigra",2502
+"Astrocyte_Type2",60,"Astrocyte","Midbrain","Substantia nigra",2352
+"Astrocyte_Type1",58,"Astrocyte","Cerebral cortex","Temporal lobe",2066
+"Astrocyte_Type1",52,"Astrocyte","Cerebral cortex","Insular lobe",1741
+"Astrocyte_Type1",61,"Astrocyte","Cerebral cortex","Temporal lobe",1510
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Basal forebrain",1486
+"Astrocyte_Type2",59,"Astrocyte","Cerebellum","Nucleus dentatus cerebelli",1465
+"Astrocyte_Type2",60,"Astrocyte","Cerebral nuclei","Pallidum",1186
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",1007
+"Astrocyte_Type2",60,"Astrocyte","Thalamus","Nucleus medial thalami",969
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Basal forebrain",864
+"Astrocyte_Type1",58,"Astrocyte","Cerebral cortex","Frontal lobe",852
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Putamen",683
+"Astrocyte_Type2",62,"Astrocyte","Thalamus","Nucleus subthalamicus",659
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Caudatum",607
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Basal forebrain",605
+"Astrocyte_Type1",52,"Astrocyte","Hippocampus","Hippocampus",563
+"Astrocyte_Type2",60,"Astrocyte","Thalamus","Nucleus subthalamicus",542
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Nucleus accumbens",518
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Pallidum",501
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",492
+"Astrocyte_Type1",54,"Astrocyte","Cerebral cortex","Frontal lobe",437
+"Astrocyte_Type1",58,"Astrocyte","Cerebral cortex","Insular lobe",434
+"Astrocyte_Type1",54,"Astrocyte","Cerebral cortex","Insular lobe",425
+"Astrocyte_Type1",61,"Astrocyte","Cerebral cortex","Frontal lobe",423
+"Astrocyte_Type2",60,"Astrocyte","Thalamus","Corpus geniculatum laterale",420
+"Astrocyte_Type2",60,"Astrocyte","Midbrain","Colliculus inferior",408
+"Astrocyte_Type2",63,"Astrocyte","Thalamus","Corpus geniculatum laterale",383
+"Astrocyte_Type2",60,"Astrocyte","Cerebral nuclei","Basal forebrain",366
+"Astrocyte_Type1",58,"Astrocyte","Cerebral cortex","Parietal lobe",362
+"Astrocyte_Type1",58,"Astrocyte","Cerebral cortex","Occipital lobe",357
+"Astrocyte_Type2",63,"Astrocyte","Cerebral nuclei","Basal forebrain",355
+"Astrocyte_Type2",60,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",334
+"Astrocyte_Type2",60,"Astrocyte","Midbrain","Colliculus superior",295
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Pallidum",290
+"Astrocyte_Type2",63,"Astrocyte","Midbrain","Colliculus superior",282
+"Astrocyte_Type1",61,"Astrocyte","Cerebral cortex","Occipital lobe",276
+"Astrocyte_Type2",63,"Astrocyte","Midbrain","Substantia nigra",261
+"Astrocyte_Type1",58,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",243
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",239
+"Astrocyte_Type2",60,"Astrocyte","Midbrain","Nucleus ruber",235
+"Astrocyte_Type2",62,"Astrocyte","Cerebral nuclei","Basal forebrain",223
+"Astrocyte_Type2",63,"Astrocyte","Cerebellum","Nucleus dentatus cerebelli",210
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",208
+"Astrocyte_Type1",61,"Astrocyte","Cerebral cortex","Parietal lobe",203
+"Astrocyte_Type2",60,"Astrocyte","Thalamus","Corpus geniculatum mediale",200
+"Astrocyte_Type2",62,"Astrocyte","Cerebellum","Vermis",197
+"Astrocyte_Type2",62,"Astrocyte","Thalamus","Corpus geniculatum laterale",186
+"Astrocyte_Type2",59,"Astrocyte","Thalamus","Corpus geniculatum laterale",182
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Basal forebrain",179
+"Astrocyte_Type2",62,"Astrocyte","Hippocampus","Hippocampus",176
+"Astrocyte_Type1",54,"Astrocyte","Cerebral cortex","Parietal lobe",167
+"Astrocyte_Type1",54,"Astrocyte","Cerebral cortex","Occipital lobe",147
+"Astrocyte_Type1",56,"Astrocyte","Hippocampus","Hippocampus",134
+"Astrocyte_Type1",55,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",130
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Caudatum",114
+"Astrocyte_Type2",63,"Astrocyte","Midbrain","Colliculus inferior",112
+"Astrocyte_Type1",61,"Astrocyte","Cerebral cortex","Insular lobe",104
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Basal forebrain",103
+"Astrocyte_Type2",62,"Astrocyte","Cerebellum","Cerebellar cortex",103
+"Astrocyte_Type2",59,"Astrocyte","Midbrain","Substantia nigra",99
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Pallidum",97
+"Astrocyte_Type2",59,"Astrocyte","Thalamus","Nucleus subthalamicus",96
+"Astrocyte_Type2",60,"Astrocyte","Cerebellum","Nucleus dentatus cerebelli",93
+"Astrocyte_Type2",63,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",84
+"Astrocyte_Type1",57,"Astrocyte","Cerebral cortex","Temporal lobe",82
+"Astrocyte_Type2",62,"Astrocyte","Midbrain","Nucleus ruber",82
+"Astrocyte_Type1",57,"Astrocyte","Cerebral cortex","Frontal lobe",79
+"Astrocyte_Type2",62,"Astrocyte","Thalamus","Corpus geniculatum mediale",76
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Nucleus accumbens",74
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Nucleus accumbens",74
+"Astrocyte_Type2",62,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",74
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Putamen",65
+"Astrocyte_Type2",63,"Astrocyte","Hippocampus","Hippocampus",63
+"Astrocyte_Type2",62,"Astrocyte","Midbrain","Colliculus inferior",61
+"Astrocyte_Type2",62,"Astrocyte","Midbrain","Colliculus superior",61
+"Astrocyte_Type2",63,"Astrocyte","Thalamus","Nucleus medial thalami",61
+"Astrocyte_Type2",63,"Astrocyte","Cerebral nuclei","Pallidum",60
+"Astrocyte_Type1",61,"Astrocyte","Cerebral nuclei","Putamen",55
+"Astrocyte_Type1",56,"Astrocyte","Cerebral cortex","Temporal lobe",54
+"Astrocyte_Type2",62,"Astrocyte","Thalamus","Nucleus medial thalami",49
+"Astrocyte_Type1",53,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",44
+"Astrocyte_Type1",54,"Astrocyte","Midbrain","Substantia nigra",44
+"Astrocyte_Type1",56,"Astrocyte","Cerebral cortex","Frontal lobe",44
+"Astrocyte_Type1",53,"Astrocyte","Cerebral cortex","Temporal lobe",40
+"Astrocyte_Type2",59,"Astrocyte","Midbrain","Colliculus inferior",36
+"Astrocyte_Type1",58,"Astrocyte","Cerebral nuclei","Basal forebrain",33
+"Astrocyte_Type1",57,"Astrocyte","Cerebral cortex","Insular lobe",30
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Basal forebrain",28
+"Astrocyte_Type1",53,"Astrocyte","Cerebral nuclei","Basal forebrain",26
+"Astrocyte_Type1",56,"Astrocyte","Cerebral cortex","Insular lobe",25
+"Astrocyte_Type2",63,"Astrocyte","Midbrain","Nucleus ruber",25
+"Astrocyte_Type1",55,"Astrocyte","Hippocampus","Hippocampus",23
+"Astrocyte_Type1",61,"Astrocyte","Midbrain","Substantia nigra",21
+"Astrocyte_Type1",56,"Astrocyte","Thalamus","Corpus geniculatum laterale",20
+"Astrocyte_Type2",60,"Astrocyte","Hippocampus","Hippocampus",20
+"Astrocyte_Type2",64,"Astrocyte","Cerebral nuclei","Corpus amygdaloideum",19
+"Astrocyte_Type2",62,"Astrocyte","Cerebral cortex","Frontal lobe",18
+"Astrocyte_Type1",53,"Astrocyte","Cerebral nuclei","Putamen",17
+"Astrocyte_Type1",61,"Astrocyte","Thalamus","Corpus geniculatum laterale",17
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Nucleus accumbens",16
+"Astrocyte_Type1",57,"Astrocyte","Midbrain","Substantia nigra",16
+"Astrocyte_Type2",64,"Astrocyte","Hippocampus","Hippocampus",16
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Putamen",15
+"Astrocyte_Type2",62,"Astrocyte","Cerebral nuclei","Putamen",15
+"Astrocyte_Type1",53,"Astrocyte","Cerebral cortex","Frontal lobe",14
+"Astrocyte_Type1",56,"Astrocyte","Thalamus","Nucleus medial thalami",14
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Caudatum",11
+"Astrocyte_Type1",54,"Astrocyte","Cerebral nuclei","Nucleus accumbens",11
+"Astrocyte_Type1",56,"Astrocyte","Midbrain","Colliculus inferior",9
+"Astrocyte_Type1",57,"Astrocyte","Cerebral cortex","Parietal lobe",8
+"Astrocyte_Type2",60,"Astrocyte","Cerebral nuclei","Putamen",8
+"Astrocyte_Type2",63,"Astrocyte","Thalamus","Corpus geniculatum mediale",8
+"Astrocyte_Type2",64,"Astrocyte","Cerebral nuclei","Pallidum",8
+"Astrocyte_Type1",56,"Astrocyte","Cerebral cortex","Parietal lobe",7
+"Astrocyte_Type1",57,"Astrocyte","Cerebral cortex","Occipital lobe",7
+"Astrocyte_Type1",58,"Astrocyte","Cerebral nuclei","Caudatum",7
+"Astrocyte_Type2",62,"Astrocyte","Cerebral cortex","Temporal lobe",7
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Pallidum",6
+"Astrocyte_Type1",56,"Astrocyte","Cerebral cortex","Occipital lobe",6
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Caudatum",6
+"Astrocyte_Type1",56,"Astrocyte","Midbrain","Colliculus superior",6
+"Astrocyte_Type1",58,"Astrocyte","Midbrain","Substantia nigra",6
+"Astrocyte_Type1",58,"Astrocyte","Thalamus","Corpus geniculatum mediale",6
+"Astrocyte_Type1",61,"Astrocyte","Thalamus","Nucleus subthalamicus",6
+"Astrocyte_Type1",58,"Astrocyte","Cerebral nuclei","Nucleus accumbens",5
+"Astrocyte_Type1",58,"Astrocyte","Cerebral nuclei","Pallidum",5
+"Astrocyte_Type1",58,"Astrocyte","Midbrain","Colliculus superior",5
+"Astrocyte_Type2",63,"Astrocyte","Cerebral cortex","Temporal lobe",5
+"Astrocyte_Type2",63,"Astrocyte","Thalamus","Nucleus subthalamicus",5
+"Astrocyte_Type2",64,"Astrocyte","Cerebral nuclei","Basal forebrain",5
+"Astrocyte_Type2",64,"Astrocyte","Thalamus","Corpus geniculatum laterale",5
+"Astrocyte_Type1",52,"Astrocyte","Midbrain","Colliculus superior",4
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Pallidum",4
+"Astrocyte_Type1",56,"Astrocyte","Cerebral nuclei","Putamen",4
+"Astrocyte_Type1",56,"Astrocyte","Midbrain","Substantia nigra",4
+"Astrocyte_Type1",58,"Astrocyte","Thalamus","Corpus geniculatum laterale",4
+"Astrocyte_Type2",59,"Astrocyte","Cerebral nuclei","Pallidum",4
+"Astrocyte_Type2",59,"Astrocyte","Thalamus","Corpus geniculatum mediale",4
+"Astrocyte_Type2",60,"Astrocyte","Cerebral cortex","Frontal lobe",4
+"Astrocyte_Type2",63,"Astrocyte","Cerebellum","Vermis",4
+"Astrocyte_Type2",63,"Astrocyte","Cerebral nuclei","Nucleus accumbens",4
+"Astrocyte_Type2",64,"Astrocyte","Midbrain","Substantia nigra",4
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Nucleus accumbens",3
+"Astrocyte_Type1",53,"Astrocyte","Cerebral cortex","Insular lobe",3
+"Astrocyte_Type1",55,"Astrocyte","Cerebral cortex","Frontal lobe",3
+"Astrocyte_Type1",55,"Astrocyte","Midbrain","Substantia nigra",3
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Pallidum",3
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Putamen",3
+"Astrocyte_Type2",59,"Astrocyte","Cerebral nuclei","Basal forebrain",3
+"Astrocyte_Type2",60,"Astrocyte","Cerebellum","Cerebellar cortex",3
+"Astrocyte_Type2",63,"Astrocyte","Cerebral nuclei","Caudatum",3
+"Astrocyte_Type1",52,"Astrocyte","Cerebral nuclei","Caudatum",2
+"Astrocyte_Type1",53,"Astrocyte","Cerebral nuclei","Pallidum",2
+"Astrocyte_Type1",54,"Astrocyte","Midbrain","Colliculus superior",2
+"Astrocyte_Type1",54,"Astrocyte","Thalamus","Corpus geniculatum mediale",2
+"Astrocyte_Type1",54,"Astrocyte","Thalamus","Nucleus subthalamicus",2
+"Astrocyte_Type1",55,"Astrocyte","Cerebral cortex","Temporal lobe",2
+"Astrocyte_Type1",56,"Astrocyte","Cerebellum","Nucleus dentatus cerebelli",2
+"Astrocyte_Type1",56,"Astrocyte","Thalamus","Corpus geniculatum mediale",2
+"Astrocyte_Type1",61,"Astrocyte","Midbrain","Colliculus superior",2
+"Astrocyte_Type1",61,"Astrocyte","Thalamus","Nucleus medial thalami",2
+"Astrocyte_Type2",59,"Astrocyte","Cerebral cortex","Frontal lobe",2
+"Astrocyte_Type2",63,"Astrocyte","Cerebellum","Cerebellar cortex",2
+"Astrocyte_Type2",63,"Astrocyte","Cerebral cortex","Frontal lobe",2
+"Astrocyte_Type1",52,"Astrocyte","Thalamus","Corpus geniculatum mediale",1
+"Astrocyte_Type1",52,"Astrocyte","Thalamus","Nucleus medial thalami",1
+"Astrocyte_Type1",53,"Astrocyte","Cerebral cortex","Occipital lobe",1
+"Astrocyte_Type1",53,"Astrocyte","Cerebral cortex","Parietal lobe",1
+"Astrocyte_Type1",53,"Astrocyte","Cerebral nuclei","Caudatum",1
+"Astrocyte_Type1",54,"Astrocyte","Midbrain","Nucleus ruber",1
+"Astrocyte_Type1",54,"Astrocyte","Thalamus","Corpus geniculatum laterale",1
+"Astrocyte_Type1",55,"Astrocyte","Cerebral cortex","Insular lobe",1
+"Astrocyte_Type1",57,"Astrocyte","Cerebral nuclei","Caudatum",1
+"Astrocyte_Type1",57,"Astrocyte","Thalamus","Corpus geniculatum laterale",1
+"Astrocyte_Type1",57,"Astrocyte","Thalamus","Nucleus subthalamicus",1
+"Astrocyte_Type1",58,"Astrocyte","Midbrain","Colliculus inferior",1
+"Astrocyte_Type1",58,"Astrocyte","Thalamus","Nucleus subthalamicus",1
+"Astrocyte_Type2",59,"Astrocyte","Cerebellum","Vermis",1
+"Astrocyte_Type2",60,"Astrocyte","Cerebellum","Vermis",1
+"Astrocyte_Type2",60,"Astrocyte","Cerebral cortex","Temporal lobe",1
+"Astrocyte_Type2",60,"Astrocyte","Cerebral nuclei","Nucleus accumbens",1
+"Astrocyte_Type2",62,"Astrocyte","Cerebral cortex","Occipital lobe",1
+"Astrocyte_Type2",62,"Astrocyte","Cerebral nuclei","Caudatum",1
+"Astrocyte_Type2",64,"Astrocyte","Cerebral nuclei","Nucleus accumbens",1
+"Astrocyte_Type2",64,"Astrocyte","Midbrain","Nucleus ruber",1
+"Astrocyte_Type2",64,"Astrocyte","Thalamus","Nucleus medial thalami",1

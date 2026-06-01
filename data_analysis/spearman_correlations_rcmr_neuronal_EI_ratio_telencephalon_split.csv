@@ -1,0 +1,4 @@
+"subset","variable","rho","p_value","p_adj_BH","n_regions","n_regions_with_finite_ratio","mean_EI_ratio","sd_EI_ratio","status"
+"Telencephalon","EI_ratio",-0.28371321967703,0.371509666939279,0.769874999892137,12,12,1.83078639453988,1.05071264156703,"tested"
+"Non-telencephalon","EI_ratio",0.1,0.769874999892137,0.769874999892137,11,11,4.18112106647757,7.14886122481698,"tested"
+"All mapped regions","EI_ratio",-0.0785767258977073,0.7215579369125,0.769874999892137,23,23,2.95485949851008,5.0222663826576,"tested"

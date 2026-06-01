@@ -1,0 +1,13 @@
+Group,Diff_column,n,rho,p_value,ci_low,ci_high
+Cortical,Brownian (BM)__Diff.min,5,-0.09999999999999998,0.95,NA,NA
+Cortical,Brownian (BM)__Diff.pre,5,-0.09999999999999998,0.95,NA,NA
+Cortical,Brownian (BM)__Diff.max,5,-0.09999999999999998,0.95,NA,NA
+Cortical,Pagel's lambda (ML)__Diff.min,5,-0.09999999999999998,0.95,NA,NA
+Cortical,Pagel's lambda (ML)__Diff.pre,5,-0.09999999999999998,0.95,NA,NA
+Cortical,Pagel's lambda (ML)__Diff.max,5,0.29999999999999993,0.6833333333333333,NA,NA
+Non-cortical,Brownian (BM)__Diff.min,8,0.5000000000000001,0.21617063492063493,NA,NA
+Non-cortical,Brownian (BM)__Diff.pre,8,0.5714285714285715,0.151140873015873,NA,NA
+Non-cortical,Brownian (BM)__Diff.max,8,0.5714285714285715,0.151140873015873,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.min,8,0.1904761904761905,0.6645833333333333,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.pre,8,0.380952380952381,0.35987103174603174,NA,NA
+Non-cortical,Pagel's lambda (ML)__Diff.max,8,0.5238095238095238,0.19662698412698412,NA,NA

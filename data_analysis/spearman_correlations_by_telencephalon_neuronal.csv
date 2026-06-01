@@ -1,0 +1,5 @@
+"subset","variable","r","p_value","n","p_adj_BH"
+"Telencephalon","p_cells_Inhibitory_interneuron",0.154115823034436,0.632487778851591,12,0.939710022323152
+"Telencephalon","p_cells_Excitatory_projection",0.0245184263918421,0.939710022323152,12,0.939710022323152
+"Non-telencephalon","p_cells_Excitatory_projection",0.0727272727272727,0.831716405381337,11,0.873446577523315
+"Non-telencephalon","p_cells_Inhibitory_interneuron",-0.0545454545454545,0.873446577523315,11,0.873446577523315

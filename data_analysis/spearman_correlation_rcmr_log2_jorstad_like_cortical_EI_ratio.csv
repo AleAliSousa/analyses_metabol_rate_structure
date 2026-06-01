@@ -1,0 +1,2 @@
+"subset","variable","rho","p_value","n_regions","mean_EI_ratio","sd_EI_ratio","status"
+"Cortex-only log2 Jorstad-like E:I","log2_EI_ratio_jorstad_like",0.666693722394714,0.101920460246182,7,0.372069718114305,1.13358398572757,"tested"

@@ -1,0 +1,2997 @@
+"cell_category","supercluster_term","cluster_id","subcluster_id","n"
+"Excitatory_projection","Upper rhombic lip","311","11",54161
+"Excitatory_projection","Upper-layer intratelencephalic","138","2778",26989
+"Excitatory_projection","Upper rhombic lip","310","14",25922
+"Excitatory_projection","Upper-layer intratelencephalic","123","2560",22915
+"Excitatory_projection","Upper-layer intratelencephalic","122","2566",20360
+"Excitatory_projection","Deep-layer intratelencephalic","144","2719",19177
+"Excitatory_projection","Deep-layer intratelencephalic","149","2482",19009
+"Excitatory_projection","Upper rhombic lip","311","13",17377
+"Excitatory_projection","Upper-layer intratelencephalic","126","2589",15595
+"Excitatory_projection","Upper rhombic lip","311","12",14487
+"Excitatory_projection","Hippocampal dentate gyrus","200","2206",14227
+"Inhibitory_interneuron","CGE interneuron","288","429",14210
+"Excitatory_projection","Thalamic excitatory","446","123",13606
+"Excitatory_projection","Upper-layer intratelencephalic","138","2777",12358
+"Inhibitory_projection_MSN","Medium spiny neuron","207","2073",12273
+"Excitatory_projection","Upper-layer intratelencephalic","123","2562",11534
+"Inhibitory_interneuron","CGE interneuron","287","433",11498
+"Excitatory_projection","Upper-layer intratelencephalic","138","2776",11163
+"Excitatory_projection","Upper rhombic lip","311","10",11013
+"Excitatory_projection","Upper-layer intratelencephalic","121","2620",10613
+"Excitatory_projection","Lower rhombic lip","320","802",10326
+"Excitatory_projection","Deep-layer intratelencephalic","139","2773",9588
+"Inhibitory_interneuron","Midbrain-derived inhibitory","443","702",9158
+"Excitatory_projection","Hippocampal dentate gyrus","201","2210",8784
+"Inhibitory_interneuron","Midbrain-derived inhibitory","441","695",8255
+"Inhibitory_interneuron","Midbrain-derived inhibitory","438","691",8081
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","654",7692
+"Excitatory_projection","Upper-layer intratelencephalic","123","2561",7668
+"Excitatory_projection","Upper-layer intratelencephalic","129","2595",7452
+"Excitatory_projection","Thalamic excitatory","454","99",7424
+"Inhibitory_projection_MSN","Medium spiny neuron","207","2074",7149
+"Inhibitory_interneuron","MGE interneuron","251","280",7035
+"Inhibitory_interneuron","MGE interneuron","262","408",6943
+"Inhibitory_interneuron","Midbrain-derived inhibitory","442","701",6835
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2023",6453
+"Excitatory_projection","Lower rhombic lip","318","805",6396
+"Excitatory_projection","Upper rhombic lip","310","9",6351
+"Excitatory_projection","Hippocampal dentate gyrus","201","2208",6323
+"Excitatory_projection","Hippocampal dentate gyrus","204","2201",6020
+"Excitatory_projection","Upper-layer intratelencephalic","124","2628",6013
+"Inhibitory_interneuron","CGE interneuron","283","561",5984
+"Excitatory_projection","Upper-layer intratelencephalic","124","2626",5956
+"Excitatory_projection","Deep-layer intratelencephalic","137","2749",5837
+"Excitatory_projection","Lower rhombic lip","320","798",5770
+"Inhibitory_interneuron","MGE interneuron","263","424",5656
+"Excitatory_projection","Upper-layer intratelencephalic","129","2600",5602
+"Excitatory_projection","Upper-layer intratelencephalic","129","2598",5600
+"Excitatory_projection","Lower rhombic lip","319","801",5558
+"Excitatory_projection","Lower rhombic lip","320","803",5454
+"Excitatory_projection","Upper-layer intratelencephalic","123","2559",5446
+"Excitatory_projection","Deep-layer intratelencephalic","144","2718",5443
+"Excitatory_projection","Upper-layer intratelencephalic","122","2564",5443
+"Excitatory_projection","Upper-layer intratelencephalic","124","2627",5399
+"Inhibitory_interneuron","CGE interneuron","286","426",5390
+"Excitatory_projection","Upper-layer intratelencephalic","130","2571",5379
+"Excitatory_projection","Upper-layer intratelencephalic","121","2618",5312
+"Inhibitory_interneuron","Midbrain-derived inhibitory","441","696",5286
+"Excitatory_projection","Deep-layer intratelencephalic","149","2736",5268
+"Excitatory_projection","Hippocampal dentate gyrus","200","2215",5116
+"Excitatory_projection","Deep-layer intratelencephalic","139","2769",4813
+"Excitatory_projection","Hippocampal CA1-3","119","2325",4736
+"Excitatory_projection","Upper-layer intratelencephalic","129","2601",4727
+"Excitatory_projection","Hippocampal CA1-3","180","2306",4707
+"Excitatory_projection","Upper-layer intratelencephalic","123","2553",4685
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","274","450",4654
+"Splatter","Splatter","409","166",4595
+"Excitatory_projection","Upper-layer intratelencephalic","126","2588",4578
+"Excitatory_projection","Upper-layer intratelencephalic","129","2609",4538
+"Excitatory_projection","Amygdala excitatory","156","2401",4436
+"Excitatory_projection","Upper-layer intratelencephalic","135","2733",4390
+"Excitatory_projection","Hippocampal CA1-3","182","2302",4388
+"Inhibitory_projection_MSN","Medium spiny neuron","210","2085",4359
+"Excitatory_projection","Deep-layer intratelencephalic","137","2747",4298
+"Excitatory_projection","Upper-layer intratelencephalic","120","2554",4283
+"Inhibitory_interneuron","MGE interneuron","261","413",4276
+"Excitatory_projection","Upper-layer intratelencephalic","121","2629",4249
+"Inhibitory_interneuron","CGE interneuron","288","430",4232
+"Excitatory_projection","Deep-layer corticothalamic and 6b","106","2810",4126
+"Inhibitory_interneuron","CGE interneuron","290","514",4095
+"Excitatory_projection","Upper-layer intratelencephalic","131","2575",4090
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","264","374",4056
+"Excitatory_projection","Upper-layer intratelencephalic","126","2597",4018
+"Inhibitory_interneuron","Midbrain-derived inhibitory","441","699",4008
+"Excitatory_projection","Upper-layer intratelencephalic","126","2599",3932
+"Excitatory_projection","Upper-layer intratelencephalic","138","2779",3923
+"Excitatory_projection","Hippocampal dentate gyrus","201","2209",3889
+"Excitatory_projection","Upper-layer intratelencephalic","130","2567",3885
+"Inhibitory_interneuron","MGE interneuron","259","341",3883
+"Excitatory_projection","Upper-layer intratelencephalic","138","2775",3830
+"Excitatory_projection","Upper-layer intratelencephalic","135","2732",3808
+"Excitatory_projection","Thalamic excitatory","452","108",3801
+"Excitatory_projection","Upper-layer intratelencephalic","129","2689",3785
+"Excitatory_projection","Thalamic excitatory","460","43",3770
+"Inhibitory_interneuron","CGE interneuron","288","437",3745
+"Inhibitory_projection_MSN","Medium spiny neuron","210","2087",3697
+"Splatter","Splatter","415","1502",3690
+"Excitatory_projection","Upper-layer intratelencephalic","126","2596",3684
+"Excitatory_projection","Upper-layer intratelencephalic","131","2593",3677
+"Inhibitory_interneuron","Midbrain-derived inhibitory","441","697",3657
+"Excitatory_projection","Upper-layer intratelencephalic","122","2565",3631
+"Excitatory_projection","Upper-layer intratelencephalic","121","2621",3595
+"Excitatory_projection","Deep-layer intratelencephalic","139","2772",3580
+"Excitatory_projection","Deep-layer intratelencephalic","149","2738",3571
+"Inhibitory_interneuron","CGE interneuron","287","431",3529
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","655",3529
+"Excitatory_projection","Upper-layer intratelencephalic","121","2630",3516
+"Inhibitory_interneuron","Cerebellar inhibitory","306","153",3510
+"Excitatory_projection","Thalamic excitatory","451","88",3509
+"Excitatory_projection","Upper-layer intratelencephalic","129","2594",3491
+"Excitatory_projection","Hippocampal dentate gyrus","205","2212",3485
+"Inhibitory_interneuron","MGE interneuron","242","310",3465
+"Excitatory_projection","Deep-layer corticothalamic and 6b","112","2905",3458
+"Inhibitory_interneuron","CGE interneuron","290","534",3440
+"Inhibitory_interneuron","CGE interneuron","290","536",3386
+"Splatter","Splatter","415","1202",3385
+"Splatter","Splatter","365","1249",3378
+"Inhibitory_interneuron","CGE interneuron","293","505",3344
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2081",3342
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2025",3307
+"Inhibitory_interneuron","CGE interneuron","293","519",3300
+"Excitatory_projection","Deep-layer intratelencephalic","139","2770",3295
+"Inhibitory_interneuron","MGE interneuron","243","305",3290
+"Excitatory_projection","Upper-layer intratelencephalic","121","2631",3289
+"Excitatory_projection","Hippocampal dentate gyrus","204","2202",3270
+"Excitatory_projection","Upper-layer intratelencephalic","124","2624",3268
+"Excitatory_projection","Upper-layer intratelencephalic","129","2603",3261
+"Excitatory_projection","Hippocampal dentate gyrus","203","2197",3210
+"Excitatory_projection","Upper-layer intratelencephalic","121","2632",3187
+"Excitatory_projection","Upper-layer intratelencephalic","123","2563",3183
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","270","440",3179
+"Inhibitory_interneuron","Midbrain-derived inhibitory","444","705",3170
+"Excitatory_projection","Hippocampal CA1-3","180","2305",3169
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","670",3159
+"Inhibitory_interneuron","Midbrain-derived inhibitory","443","703",3113
+"Excitatory_projection","Upper-layer intratelencephalic","135","2728",3103
+"Excitatory_projection","Upper-layer intratelencephalic","135","2677",3102
+"Inhibitory_interneuron","Cerebellar inhibitory","306","154",3076
+"Excitatory_projection","Upper-layer intratelencephalic","129","2602",3062
+"Excitatory_projection","Upper-layer intratelencephalic","126","2591",3056
+"Excitatory_projection","Deep-layer intratelencephalic","148","2490",3007
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2026",2989
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","664",2981
+"Excitatory_projection","Lower rhombic lip","317","807",2978
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2029",2964
+"Inhibitory_interneuron","CGE interneuron","286","557",2953
+"Excitatory_projection","Upper-layer intratelencephalic","124","2623",2948
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2078",2934
+"Excitatory_projection","Upper-layer intratelencephalic","129","2604",2918
+"Excitatory_projection","Deep-layer corticothalamic and 6b","106","2821",2910
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2028",2905
+"Excitatory_projection","Upper-layer intratelencephalic","131","2697",2901
+"Inhibitory_interneuron","CGE interneuron","278","640",2880
+"Inhibitory_interneuron","MGE interneuron","243","307",2864
+"Excitatory_projection","Deep-layer intratelencephalic","141","2758",2861
+"Inhibitory_interneuron","MGE interneuron","261","411",2861
+"Excitatory_projection","Deep-layer intratelencephalic","139","2771",2847
+"Inhibitory_interneuron","MGE interneuron","261","418",2847
+"Excitatory_projection","Deep-layer intratelencephalic","137","2751",2839
+"Excitatory_projection","Upper-layer intratelencephalic","120","2636",2831
+"Excitatory_projection","Upper-layer intratelencephalic","135","2731",2827
+"Excitatory_projection","Upper-layer intratelencephalic","130","2611",2814
+"Excitatory_projection","Upper-layer intratelencephalic","133","2781",2750
+"Excitatory_projection","Upper-layer intratelencephalic","131","2576",2742
+"Inhibitory_interneuron","MGE interneuron","256","362",2742
+"Excitatory_projection","Upper-layer intratelencephalic","124","2625",2733
+"Excitatory_projection","Amygdala excitatory","157","2394",2720
+"Inhibitory_interneuron","CGE interneuron","291","531",2719
+"Excitatory_projection","Amygdala excitatory","155","2475",2717
+"Inhibitory_interneuron","CGE interneuron","291","541",2710
+"Inhibitory_interneuron","MGE interneuron","243","301",2693
+"Excitatory_projection","Amygdala excitatory","175","2335",2685
+"Inhibitory_interneuron","Midbrain-derived inhibitory","440","692",2684
+"Excitatory_projection","Upper-layer intratelencephalic","135","2742",2678
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2079",2646
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2035",2642
+"Excitatory_projection","Upper-layer intratelencephalic","130","2696",2634
+"Inhibitory_interneuron","CGE interneuron","293","517",2630
+"Excitatory_projection","Thalamic excitatory","451","85",2616
+"Excitatory_projection","Upper-layer intratelencephalic","125","2558",2615
+"Excitatory_projection","Hippocampal CA1-3","179","2316",2590
+"Inhibitory_interneuron","MGE interneuron","250","272",2576
+"Inhibitory_interneuron","MGE interneuron","261","415",2574
+"Inhibitory_interneuron","MGE interneuron","251","281",2570
+"Excitatory_projection","Deep-layer intratelencephalic","150","2640",2568
+"Inhibitory_interneuron","CGE interneuron","286","427",2563
+"Excitatory_projection","Deep-layer intratelencephalic","149","2483",2559
+"Excitatory_projection","Upper-layer intratelencephalic","133","2784",2556
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2045",2553
+"Excitatory_projection","Upper-layer intratelencephalic","121","2619",2547
+"Excitatory_projection","Deep-layer intratelencephalic","151","2662",2538
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2033",2538
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","689",2534
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","273","447",2509
+"Excitatory_projection","Upper-layer intratelencephalic","120","2555",2492
+"Excitatory_projection","Hippocampal CA1-3","184","2275",2480
+"Excitatory_projection","Upper-layer intratelencephalic","131","2577",2479
+"Excitatory_projection","Deep-layer intratelencephalic","148","2487",2475
+"Excitatory_projection","Upper-layer intratelencephalic","131","2615",2469
+"Excitatory_projection","Amygdala excitatory","157","2393",2459
+"Inhibitory_interneuron","MGE interneuron","257","409",2450
+"Excitatory_projection","Deep-layer intratelencephalic","140","2766",2432
+"Inhibitory_interneuron","MGE interneuron","242","309",2432
+"Excitatory_projection","Upper-layer intratelencephalic","130","2782",2410
+"Inhibitory_interneuron","CGE interneuron","288","438",2410
+"Inhibitory_interneuron","CGE interneuron","293","516",2407
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2037",2407
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","657",2406
+"Excitatory_projection","Upper-layer intratelencephalic","130","2608",2383
+"Excitatory_projection","Hippocampal dentate gyrus","200","2207",2376
+"Inhibitory_interneuron","Midbrain-derived inhibitory","440","693",2374
+"Excitatory_projection","Upper-layer intratelencephalic","128","2695",2373
+"Excitatory_projection","Lower rhombic lip","320","797",2359
+"Excitatory_projection","Deep-layer intratelencephalic","148","2485",2350
+"Excitatory_projection","Deep-layer intratelencephalic","151","2659",2328
+"Inhibitory_interneuron","MGE interneuron","258","401",2325
+"Inhibitory_interneuron","MGE interneuron","259","412",2322
+"Inhibitory_interneuron","MGE interneuron","251","284",2320
+"Inhibitory_interneuron","CGE interneuron","287","434",2315
+"Excitatory_projection","Deep-layer intratelencephalic","142","2706",2306
+"Excitatory_projection","Upper-layer intratelencephalic","130","2607",2294
+"Inhibitory_interneuron","MGE interneuron","257","404",2294
+"Excitatory_projection","Upper-layer intratelencephalic","120","2634",2290
+"Excitatory_projection","Upper-layer intratelencephalic","131","2574",2289
+"Inhibitory_interneuron","CGE interneuron","289","529",2286
+"Excitatory_projection","Upper-layer intratelencephalic","133","2675",2281
+"Inhibitory_interneuron","MGE interneuron","252","228",2278
+"Splatter","Splatter","365","1252",2262
+"Excitatory_projection","Upper-layer intratelencephalic","133","2674",2259
+"Excitatory_projection","Deep-layer intratelencephalic","140","2761",2258
+"Inhibitory_interneuron","Midbrain-derived inhibitory","438","662",2253
+"Inhibitory_interneuron","MGE interneuron","250","273",2252
+"Inhibitory_interneuron","CGE interneuron","290","538",2248
+"Inhibitory_interneuron","MGE interneuron","243","303",2227
+"Excitatory_projection","Thalamic excitatory","454","81",2225
+"Excitatory_projection","Thalamic excitatory","451","90",2215
+"Inhibitory_interneuron","CGE interneuron","292","573",2212
+"Excitatory_projection","Deep-layer intratelencephalic","142","2713",2193
+"Excitatory_projection","Lower rhombic lip","319","796",2191
+"Excitatory_projection","Deep-layer intratelencephalic","144","2716",2183
+"Inhibitory_interneuron","CGE interneuron","290","515",2165
+"Excitatory_projection","Hippocampal CA1-3","181","2298",2164
+"Excitatory_projection","Amygdala excitatory","157","2395",2161
+"Excitatory_projection","Deep-layer intratelencephalic","137","2750",2158
+"Excitatory_projection","Deep-layer intratelencephalic","143","2708",2158
+"Inhibitory_interneuron","Midbrain-derived inhibitory","443","704",2143
+"Excitatory_projection","Upper-layer intratelencephalic","120","2612",2140
+"Inhibitory_interneuron","CGE interneuron","286","428",2139
+"Excitatory_projection","Upper-layer intratelencephalic","126","2590",2107
+"Inhibitory_interneuron","MGE interneuron","261","417",2096
+"Inhibitory_interneuron","MGE interneuron","258","359",2090
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2866",2089
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2082",2084
+"Excitatory_projection","Deep-layer intratelencephalic","143","2721",2079
+"Inhibitory_interneuron","CGE interneuron","293","508",2075
+"Excitatory_projection","Upper-layer intratelencephalic","125","2613",2068
+"Inhibitory_interneuron","MGE interneuron","259","338",2065
+"Excitatory_projection","Amygdala excitatory","157","2397",2057
+"Inhibitory_interneuron","CGE interneuron","282","566",2043
+"Inhibitory_interneuron","CGE interneuron","289","526",2027
+"Inhibitory_interneuron","MGE interneuron","250","275",2024
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","675",2021
+"Splatter","Splatter","365","1232",2017
+"Excitatory_projection","Upper-layer intratelencephalic","120","2637",2013
+"Excitatory_projection","Deep-layer intratelencephalic","151","2656",2010
+"Excitatory_projection","Mammillary body","324","1856",2007
+"Inhibitory_interneuron","CGE interneuron","289","528",2007
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2039",2004
+"Excitatory_projection","Hippocampal CA1-3","183","2282",1995
+"Inhibitory_interneuron","MGE interneuron","260","421",1992
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","676",1980
+"Excitatory_projection","Deep-layer intratelencephalic","148","2489",1977
+"Inhibitory_interneuron","CGE interneuron","293","520",1973
+"Excitatory_projection","Lower rhombic lip","320","799",1972
+"Inhibitory_interneuron","MGE interneuron","261","416",1969
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2030",1963
+"Excitatory_projection","Upper-layer intratelencephalic","133","2785",1961
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","272","445",1960
+"Excitatory_projection","Hippocampal CA1-3","180","2308",1949
+"Excitatory_projection","Amygdala excitatory","174","2453",1942
+"Inhibitory_interneuron","CGE interneuron","290","535",1940
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2046",1939
+"Inhibitory_interneuron","MGE interneuron","259","344",1938
+"Excitatory_projection","Upper-layer intratelencephalic","135","2729",1927
+"Excitatory_projection","Upper-layer intratelencephalic","127","2586",1916
+"Inhibitory_interneuron","MGE interneuron","242","314",1910
+"Excitatory_projection","Upper-layer intratelencephalic","135","2730",1909
+"Excitatory_projection","Upper-layer intratelencephalic","124","2622",1907
+"Excitatory_projection","Upper-layer intratelencephalic","129","2605",1907
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2047",1899
+"Inhibitory_interneuron","CGE interneuron","292","576",1895
+"Excitatory_projection","Deep-layer corticothalamic and 6b","112","2906",1893
+"Inhibitory_interneuron","CGE interneuron","282","569",1892
+"Excitatory_projection","Deep-layer intratelencephalic","150","2645",1885
+"Excitatory_projection","Deep-layer intratelencephalic","151","2651",1884
+"Excitatory_projection","Deep-layer corticothalamic and 6b","101","2848",1871
+"Excitatory_projection","Upper-layer intratelencephalic","125","2616",1855
+"Inhibitory_interneuron","MGE interneuron","252","257",1854
+"Excitatory_projection","Deep-layer intratelencephalic","143","2707",1845
+"Excitatory_projection","Deep-layer intratelencephalic","141","2759",1839
+"Inhibitory_interneuron","MGE interneuron","243","306",1836
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2917",1833
+"Excitatory_projection","Thalamic excitatory","460","55",1825
+"Inhibitory_interneuron","MGE interneuron","252","225",1821
+"Excitatory_projection","Amygdala excitatory","155","2473",1814
+"Inhibitory_interneuron","CGE interneuron","291","542",1811
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","271","462",1811
+"Inhibitory_interneuron","CGE interneuron","292","574",1807
+"Inhibitory_interneuron","CGE interneuron","289","523",1806
+"Excitatory_projection","Deep-layer intratelencephalic","151","2650",1803
+"Excitatory_projection","Deep-layer intratelencephalic","148","2484",1799
+"Inhibitory_interneuron","MGE interneuron","259","342",1794
+"Excitatory_projection","Hippocampal dentate gyrus","203","2199",1792
+"Inhibitory_interneuron","CGE interneuron","291","543",1791
+"Inhibitory_interneuron","MGE interneuron","252","224",1791
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","658",1786
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2040",1785
+"Excitatory_projection","Upper-layer intratelencephalic","130","2780",1783
+"Inhibitory_interneuron","CGE interneuron","289","527",1782
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","707",1782
+"Excitatory_projection","Hippocampal dentate gyrus","205","2213",1781
+"Inhibitory_interneuron","MGE interneuron","257","393",1777
+"Inhibitory_interneuron","MGE interneuron","252","229",1776
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2048",1775
+"Inhibitory_interneuron","CGE interneuron","290","533",1769
+"Excitatory_projection","Amygdala excitatory","172","2343",1766
+"Excitatory_projection","Amygdala excitatory","157","2400",1762
+"Excitatory_projection","Amygdala excitatory","172","2349",1762
+"Inhibitory_interneuron","MGE interneuron","243","304",1762
+"Excitatory_projection","Upper-layer intratelencephalic","134","2678",1761
+"Excitatory_projection","Upper-layer intratelencephalic","135","2734",1759
+"Excitatory_projection","Deep-layer intratelencephalic","143","2725",1756
+"Inhibitory_interneuron","MGE interneuron","251","279",1752
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","674",1752
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2873",1751
+"Inhibitory_interneuron","MGE interneuron","250","270",1751
+"Inhibitory_interneuron","MGE interneuron","242","311",1750
+"Inhibitory_interneuron","MGE interneuron","261","414",1750
+"Inhibitory_interneuron","CGE interneuron","293","518",1744
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2044",1743
+"Excitatory_projection","Deep-layer intratelencephalic","151","2654",1738
+"Excitatory_projection","Deep-layer intratelencephalic","143","2723",1733
+"Inhibitory_interneuron","CGE interneuron","282","567",1729
+"Inhibitory_interneuron","MGE interneuron","252","223",1726
+"Inhibitory_interneuron","CGE interneuron","293","507",1725
+"Inhibitory_interneuron","Midbrain-derived inhibitory","441","698",1725
+"Excitatory_projection","Upper-layer intratelencephalic","135","2690",1724
+"Excitatory_projection","Hippocampal CA1-3","184","2276",1721
+"Excitatory_projection","Hippocampal dentate gyrus","203","2198",1721
+"Excitatory_projection","Amygdala excitatory","161","2408",1720
+"Excitatory_projection","Deep-layer intratelencephalic","147","2495",1714
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","265","383",1708
+"Excitatory_projection","Amygdala excitatory","172","2351",1704
+"Excitatory_projection","Upper-layer intratelencephalic","133","2672",1701
+"Excitatory_projection","Deep-layer intratelencephalic","150","2647",1700
+"Excitatory_projection","Hippocampal CA1-3","186","2289",1694
+"Inhibitory_interneuron","CGE interneuron","296","483",1693
+"Excitatory_projection","Hippocampal CA1-3","183","2280",1684
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2080",1676
+"Inhibitory_interneuron","CGE interneuron","292","578",1674
+"Excitatory_projection","Upper-layer intratelencephalic","128","2694",1670
+"Inhibitory_interneuron","MGE interneuron","259","337",1670
+"Inhibitory_interneuron","CGE interneuron","292","579",1665
+"Excitatory_projection","Upper-layer intratelencephalic","120","2556",1664
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2874",1661
+"Excitatory_projection","Hippocampal CA1-3","182","2301",1658
+"Excitatory_projection","Hippocampal CA1-3","180","2309",1654
+"Excitatory_projection","Upper-layer intratelencephalic","128","2573",1652
+"Excitatory_projection","Deep-layer corticothalamic and 6b","106","2820",1646
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","668",1643
+"Inhibitory_interneuron","CGE interneuron","294","509",1640
+"Excitatory_projection","Deep-layer intratelencephalic","142","2715",1626
+"Inhibitory_interneuron","MGE interneuron","242","313",1621
+"Inhibitory_interneuron","CGE interneuron","294","506",1616
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","679",1610
+"Inhibitory_interneuron","MGE interneuron","259","340",1605
+"Inhibitory_interneuron","CGE interneuron","283","562",1604
+"Excitatory_projection","Lower rhombic lip","318","804",1603
+"Excitatory_projection","Amygdala excitatory","155","2476",1602
+"Excitatory_projection","Upper-layer intratelencephalic","125","2570",1599
+"Excitatory_projection","Deep-layer intratelencephalic","140","2764",1597
+"Excitatory_projection","Deep-layer intratelencephalic","151","2657",1595
+"Excitatory_projection","Hippocampal CA1-3","179","2312",1592
+"Inhibitory_interneuron","MGE interneuron","242","312",1591
+"Splatter","Splatter","238","171",1588
+"Excitatory_projection","Deep-layer intratelencephalic","140","2768",1587
+"Excitatory_projection","Deep-layer intratelencephalic","150","2641",1578
+"Excitatory_projection","Thalamic excitatory","453","94",1577
+"Excitatory_projection","Hippocampal dentate gyrus","200","2214",1574
+"Excitatory_projection","Upper-layer intratelencephalic","134","2682",1565
+"Excitatory_projection","Amygdala excitatory","155","2474",1563
+"Excitatory_projection","Deep-layer intratelencephalic","148","2486",1563
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","708",1563
+"Excitatory_projection","Deep-layer intratelencephalic","142","2710",1558
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2067",1558
+"Excitatory_projection","Mammillary body","328","1848",1550
+"Splatter","Splatter","415","1686",1549
+"Inhibitory_interneuron","CGE interneuron","283","558",1546
+"Excitatory_projection","Hippocampal CA1-3","181","2297",1542
+"Excitatory_projection","Thalamic excitatory","446","124",1542
+"Excitatory_projection","Deep-layer intratelencephalic","148","2498",1541
+"Excitatory_projection","Upper-layer intratelencephalic","134","2685",1537
+"Excitatory_projection","Deep-layer intratelencephalic","151","2658",1533
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","656",1533
+"Inhibitory_interneuron","CGE interneuron","282","568",1529
+"Inhibitory_interneuron","CGE interneuron","286","556",1525
+"Inhibitory_interneuron","MGE interneuron","257","403",1525
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2077",1525
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2020",1520
+"Excitatory_projection","Upper-layer intratelencephalic","120","2633",1518
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2043",1512
+"Excitatory_projection","Amygdala excitatory","157","2398",1510
+"Excitatory_projection","Upper-layer intratelencephalic","133","2670",1508
+"Excitatory_projection","Upper-layer intratelencephalic","128","2683",1507
+"Excitatory_projection","Amygdala excitatory","175","2332",1506
+"Excitatory_projection","Amygdala excitatory","174","2331",1503
+"Inhibitory_interneuron","CGE interneuron","291","540",1502
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","677",1502
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2901",1501
+"Splatter","Splatter","365","1233",1501
+"Inhibitory_interneuron","CGE interneuron","284","553",1500
+"Inhibitory_interneuron","CGE interneuron","294","510",1493
+"Excitatory_projection","Amygdala excitatory","174","2451",1489
+"Inhibitory_interneuron","CGE interneuron","294","502",1481
+"Excitatory_projection","Deep-layer intratelencephalic","147","2497",1477
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","265","379",1477
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2018",1475
+"Excitatory_projection","Amygdala excitatory","172","2350",1472
+"Excitatory_projection","Upper rhombic lip","312","20",1465
+"Inhibitory_interneuron","MGE interneuron","259","339",1465
+"Inhibitory_interneuron","CGE interneuron","296","487",1460
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2072",1458
+"Excitatory_projection","Lower rhombic lip","320","795",1457
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2071",1457
+"Excitatory_projection","Upper-layer intratelencephalic","127","2580",1455
+"Excitatory_projection","Upper-layer intratelencephalic","127","2583",1455
+"Inhibitory_interneuron","MGE interneuron","250","269",1454
+"Inhibitory_interneuron","MGE interneuron","241","322",1451
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","231","2151",1450
+"Inhibitory_interneuron","CGE interneuron","294","504",1447
+"Excitatory_projection","Deep-layer intratelencephalic","143","2727",1441
+"Excitatory_projection","Upper-layer intratelencephalic","133","2783",1441
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2024",1438
+"Excitatory_projection","Hippocampal CA1-3","181","2296",1433
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2812",1428
+"Inhibitory_interneuron","MGE interneuron","257","394",1419
+"Excitatory_projection","Deep-layer intratelencephalic","147","2500",1418
+"Excitatory_projection","Deep-layer intratelencephalic","140","2767",1414
+"Excitatory_projection","Upper-layer intratelencephalic","134","2680",1414
+"Inhibitory_interneuron","MGE interneuron","252","227",1414
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","672",1414
+"Excitatory_projection","Amygdala excitatory","157","2399",1413
+"Splatter","Splatter","415","1503",1409
+"Excitatory_projection","Deep-layer intratelencephalic","147","2493",1403
+"Excitatory_projection","Upper-layer intratelencephalic","131","2557",1403
+"Inhibitory_interneuron","MGE interneuron","252","226",1403
+"Excitatory_projection","Deep-layer intratelencephalic","148","2488",1402
+"Splatter","Splatter","238","173",1402
+"Excitatory_projection","Amygdala excitatory","154","2470",1399
+"Inhibitory_interneuron","CGE interneuron","296","485",1396
+"Inhibitory_interneuron","MGE interneuron","257","399",1394
+"Excitatory_projection","Hippocampal CA1-3","183","2277",1389
+"Splatter","Splatter","365","1258",1388
+"Excitatory_projection","Deep-layer intratelencephalic","151","2660",1387
+"Excitatory_projection","Upper-layer intratelencephalic","120","2635",1387
+"Excitatory_projection","Upper-layer intratelencephalic","134","2679",1384
+"Inhibitory_interneuron","MGE interneuron","257","398",1383
+"Splatter","Splatter","415","1501",1380
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2892",1376
+"Inhibitory_interneuron","CGE interneuron","294","503",1375
+"Excitatory_projection","Deep-layer intratelencephalic","137","2752",1372
+"Inhibitory_interneuron","CGE interneuron","294","501",1370
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","682",1367
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2876",1366
+"Excitatory_projection","Hippocampal CA1-3","181","2299",1362
+"Excitatory_projection","Deep-layer intratelencephalic","142","2714",1360
+"Excitatory_projection","Deep-layer intratelencephalic","143","2722",1358
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2099",1354
+"Excitatory_projection","Hippocampal dentate gyrus","203","2200",1353
+"Excitatory_projection","Upper rhombic lip","312","16",1353
+"Inhibitory_interneuron","MGE interneuron","243","302",1351
+"Inhibitory_interneuron","Midbrain-derived inhibitory","440","694",1351
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2900",1349
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2064",1346
+"Splatter","Splatter","415","856",1337
+"Excitatory_projection","Upper-layer intratelencephalic","128","2693",1335
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","687",1333
+"Excitatory_projection","Amygdala excitatory","158","2447",1331
+"Excitatory_projection","Upper-layer intratelencephalic","125","2617",1331
+"Excitatory_projection","Amygdala excitatory","175","2344",1330
+"Excitatory_projection","Deep-layer intratelencephalic","151","2655",1330
+"Excitatory_projection","Thalamic excitatory","453","97",1329
+"Inhibitory_interneuron","MGE interneuron","262","405",1325
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2005",1324
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2027",1324
+"Excitatory_projection","Hippocampal CA1-3","186","2270",1321
+"Inhibitory_interneuron","CGE interneuron","292","575",1318
+"Inhibitory_interneuron","CGE interneuron","296","490",1312
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2869",1306
+"Excitatory_projection","Deep-layer intratelencephalic","141","2760",1305
+"Inhibitory_interneuron","MGE interneuron","251","282",1300
+"Excitatory_projection","Deep-layer intratelencephalic","147","2496",1298
+"Excitatory_projection","Deep-layer intratelencephalic","152","2735",1295
+"Excitatory_projection","Amygdala excitatory","155","2477",1290
+"Excitatory_projection","Amygdala excitatory","174","2450",1288
+"Excitatory_projection","Thalamic excitatory","458","91",1288
+"Inhibitory_interneuron","MGE interneuron","250","266",1287
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","274","448",1286
+"Excitatory_projection","Thalamic excitatory","449","105",1282
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","230","2154",1282
+"Inhibitory_interneuron","MGE interneuron","261","410",1278
+"Miscellaneous","Miscellaneous","404","2701",1276
+"Excitatory_projection","Hippocampal CA1-3","187","2286",1273
+"Excitatory_projection","Upper-layer intratelencephalic","134","2688",1266
+"Excitatory_projection","Hippocampal CA1-3","180","2304",1264
+"Excitatory_projection","Mammillary body","327","1854",1264
+"Excitatory_projection","Hippocampal CA1-3","184","2272",1262
+"Inhibitory_interneuron","MGE interneuron","261","419",1262
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2896",1261
+"Inhibitory_interneuron","CGE interneuron","289","525",1260
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2038",1260
+"Splatter","Splatter","365","1259",1258
+"Excitatory_projection","Deep-layer intratelencephalic","140","2765",1254
+"Inhibitory_interneuron","MGE interneuron","250","271",1246
+"Inhibitory_interneuron","MGE interneuron","258","372",1246
+"Excitatory_projection","Deep-layer intratelencephalic","146","2507",1245
+"Inhibitory_interneuron","CGE interneuron","278","642",1244
+"Excitatory_projection","Thalamic excitatory","454","80",1235
+"Inhibitory_interneuron","MGE interneuron","258","357",1235
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2870",1229
+"Excitatory_projection","Deep-layer intratelencephalic","150","2642",1227
+"Splatter","Splatter","365","1229",1224
+"Excitatory_projection","Deep-layer intratelencephalic","147","2499",1223
+"Excitatory_projection","Deep-layer intratelencephalic","142","2705",1222
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","264","376",1215
+"Excitatory_projection","Deep-layer near-projecting","93","2956",1209
+"Inhibitory_interneuron","MGE interneuron","250","268",1206
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2868",1202
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2898",1202
+"Excitatory_projection","Mammillary body","325","1855",1198
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2811",1195
+"Inhibitory_interneuron","CGE interneuron","284","552",1194
+"Splatter","Splatter","365","1247",1194
+"Excitatory_projection","Deep-layer intratelencephalic","150","2646",1191
+"Inhibitory_interneuron","MGE interneuron","256","363",1191
+"Excitatory_projection","Thalamic excitatory","452","107",1190
+"Excitatory_projection","Upper-layer intratelencephalic","127","2587",1188
+"Excitatory_projection","Thalamic excitatory","453","78",1187
+"Excitatory_projection","Upper-layer intratelencephalic","134","2686",1186
+"Excitatory_projection","Amygdala excitatory","154","2472",1185
+"Excitatory_projection","Deep-layer intratelencephalic","152","2661",1184
+"Excitatory_projection","Deep-layer intratelencephalic","141","2757",1179
+"Excitatory_projection","Upper-layer intratelencephalic","134","2681",1178
+"Inhibitory_interneuron","MGE interneuron","251","278",1178
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","680",1178
+"Splatter","Splatter","432","720",1178
+"Splatter","Splatter","415","1167",1171
+"Excitatory_projection","Amygdala excitatory","160","2388",1169
+"Inhibitory_interneuron","CGE interneuron","287","432",1163
+"Inhibitory_interneuron","CGE interneuron","289","522",1161
+"Inhibitory_projection_MSN","Medium spiny neuron","210","2086",1159
+"Excitatory_projection","Upper-layer intratelencephalic","127","2585",1154
+"Excitatory_projection","Hippocampal CA1-3","179","2314",1151
+"Excitatory_projection","Amygdala excitatory","160","2391",1150
+"Inhibitory_projection_MSN","Medium spiny neuron","207","2075",1147
+"Excitatory_projection","Hippocampal CA1-3","182","2300",1145
+"Excitatory_projection","Amygdala excitatory","174","2448",1144
+"Inhibitory_interneuron","MGE interneuron","254","206",1144
+"Splatter","Splatter","365","1248",1140
+"Excitatory_projection","Upper rhombic lip","310","15",1132
+"Excitatory_projection","Deep-layer intratelencephalic","140","2762",1124
+"Inhibitory_interneuron","MGE interneuron","254","205",1121
+"Excitatory_projection","Upper-layer intratelencephalic","128","2572",1118
+"Inhibitory_interneuron","CGE interneuron","296","486",1118
+"Inhibitory_interneuron","Midbrain-derived inhibitory","442","700",1116
+"Excitatory_projection","Amygdala excitatory","175","2333",1114
+"Inhibitory_interneuron","MGE interneuron","258","355",1109
+"Inhibitory_interneuron","MGE interneuron","252","218",1104
+"Inhibitory_interneuron","MGE interneuron","259","343",1099
+"Inhibitory_interneuron","MGE interneuron","260","335",1098
+"Excitatory_projection","Upper-layer intratelencephalic","127","2578",1097
+"Inhibitory_interneuron","CGE interneuron","284","551",1097
+"Excitatory_projection","Thalamic excitatory","448","115",1092
+"Inhibitory_interneuron","CGE interneuron","292","572",1091
+"Inhibitory_interneuron","MGE interneuron","258","402",1089
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","669",1086
+"Inhibitory_projection_MSN","Medium spiny neuron","210","2084",1084
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2061",1084
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","460",1082
+"Inhibitory_interneuron","Midbrain-derived inhibitory","438","663",1082
+"Excitatory_projection","Thalamic excitatory","458","72",1081
+"Inhibitory_interneuron","MGE interneuron","258","400",1078
+"Inhibitory_interneuron","MGE interneuron","258","358",1076
+"Splatter","Splatter","238","172",1074
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","264","375",1073
+"Excitatory_projection","Hippocampal CA1-3","183","2281",1071
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2069",1067
+"Inhibitory_interneuron","CGE interneuron","279","616",1066
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2034",1062
+"Inhibitory_interneuron","CGE interneuron","296","488",1060
+"Inhibitory_interneuron","MGE interneuron","262","407",1060
+"Excitatory_projection","Amygdala excitatory","155","2467",1059
+"Excitatory_projection","Deep-layer corticothalamic and 6b","106","2819",1059
+"Excitatory_projection","Hippocampal CA1-3","119","2322",1057
+"Excitatory_projection","Amygdala excitatory","160","2392",1055
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2897",1053
+"Excitatory_projection","Lower rhombic lip","317","809",1052
+"Excitatory_projection","Amygdala excitatory","155","2478",1047
+"Inhibitory_interneuron","MGE interneuron","239","347",1045
+"Inhibitory_interneuron","MGE interneuron","242","318",1044
+"Inhibitory_interneuron","CGE interneuron","284","546",1042
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","653",1041
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2019",1041
+"Excitatory_projection","Hippocampal CA1-3","183","2278",1037
+"Inhibitory_interneuron","MGE interneuron","250","274",1034
+"Splatter","Splatter","238","170",1033
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2008",1032
+"Excitatory_projection","Upper-layer intratelencephalic","125","2614",1031
+"Inhibitory_interneuron","CGE interneuron","286","425",1027
+"Excitatory_projection","Amygdala excitatory","172","2352",1023
+"Excitatory_projection","Amygdala excitatory","174","2454",1021
+"Excitatory_projection","Deep-layer intratelencephalic","149","2737",1021
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2127",1020
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","673",1019
+"Excitatory_projection","Upper-layer intratelencephalic","125","2569",1018
+"Inhibitory_interneuron","CGE interneuron","282","565",1017
+"Inhibitory_interneuron","CGE interneuron","289","524",1017
+"Excitatory_projection","Upper-layer intratelencephalic","133","2671",1014
+"Inhibitory_interneuron","MGE interneuron","258","356",1014
+"Excitatory_projection","Amygdala excitatory","154","2459",1011
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2899",1011
+"Excitatory_projection","Upper-layer intratelencephalic","130","2606",1011
+"Excitatory_projection","Upper rhombic lip","312","18",1007
+"Inhibitory_interneuron","MGE interneuron","250","283",1007
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","385",1005
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2871",1004
+"Excitatory_projection","Deep-layer intratelencephalic","141","2756",1004
+"Inhibitory_interneuron","Cerebellar inhibitory","307","159",1004
+"Miscellaneous","Miscellaneous","401","2223",1003
+"Inhibitory_interneuron","CGE interneuron","294","512",1002
+"Inhibitory_interneuron","CGE interneuron","280","585",1001
+"Inhibitory_interneuron","MGE interneuron","242","299",1001
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","681",998
+"Excitatory_projection","Amygdala excitatory","156","2402",997
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","270","442",997
+"Inhibitory_interneuron","CGE interneuron","278","639",996
+"Inhibitory_interneuron","MGE interneuron","254","203",994
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2167",987
+"Excitatory_projection","Deep-layer corticothalamic and 6b","112","2907",983
+"Excitatory_projection","Thalamic excitatory","448","113",982
+"Inhibitory_interneuron","MGE interneuron","242","308",982
+"Splatter","Splatter","415","1506",980
+"Excitatory_projection","Upper-layer intratelencephalic","125","2592",974
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","469",972
+"Splatter","Splatter","366","1204",972
+"Excitatory_projection","Deep-layer intratelencephalic","137","2746",970
+"Excitatory_projection","Amygdala excitatory","158","2407",966
+"Splatter","Splatter","429","1810",965
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2918",963
+"Splatter","Splatter","415","1478",962
+"Splatter","Splatter","415","1165",961
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2097",960
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2062",958
+"Inhibitory_interneuron","CGE interneuron","294","513",957
+"Inhibitory_interneuron","Midbrain-derived inhibitory","440","690",957
+"Inhibitory_interneuron","MGE interneuron","255","367",956
+"Excitatory_projection","Deep-layer intratelencephalic","141","2754",952
+"Inhibitory_interneuron","Cerebellar inhibitory","307","158",952
+"Splatter","Splatter","429","1814",952
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2894",950
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2021",950
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2121",949
+"Inhibitory_interneuron","CGE interneuron","283","559",946
+"Excitatory_projection","Thalamic excitatory","450","102",944
+"Splatter","Splatter","364","1062",942
+"Excitatory_projection","Deep-layer intratelencephalic","146","2512",941
+"Excitatory_projection","Amygdala excitatory","158","2405",940
+"Excitatory_projection","Amygdala excitatory","161","2455",938
+"Excitatory_projection","Amygdala excitatory","161","2456",936
+"Excitatory_projection","Deep-layer intratelencephalic","147","2481",936
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","685",933
+"Inhibitory_interneuron","CGE interneuron","290","537",932
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2872",931
+"Inhibitory_interneuron","MGE interneuron","254","220",931
+"Inhibitory_interneuron","MGE interneuron","263","423",931
+"Excitatory_projection","Amygdala excitatory","174","2452",928
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2120",928
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","231","2144",922
+"Inhibitory_interneuron","CGE interneuron","282","571",913
+"Splatter","Splatter","365","1246",913
+"Inhibitory_interneuron","CGE interneuron","278","643",911
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2118",910
+"Excitatory_projection","Thalamic excitatory","458","69",907
+"Excitatory_projection","Upper-layer intratelencephalic","125","2568",906
+"Excitatory_projection","Upper-layer intratelencephalic","130","2610",903
+"Inhibitory_interneuron","CGE interneuron","284","548",903
+"Excitatory_projection","Hippocampal CA1-3","119","2324",900
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2150",899
+"Splatter","Splatter","238","168",897
+"Excitatory_projection","Amygdala excitatory","161","2411",896
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2101",896
+"Splatter","Splatter","415","859",895
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2006",891
+"Inhibitory_interneuron","CGE interneuron","291","544",890
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2088",890
+"Excitatory_projection","Amygdala excitatory","160","2369",888
+"Inhibitory_interneuron","CGE interneuron","279","619",887
+"Excitatory_projection","Deep-layer intratelencephalic","152","2668",886
+"Excitatory_projection","Upper-layer intratelencephalic","128","2684",885
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","678",885
+"Excitatory_projection","Deep-layer intratelencephalic","150","2644",884
+"Excitatory_projection","Thalamic excitatory","460","42",883
+"Excitatory_projection","Amygdala excitatory","161","2413",882
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2016",881
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2163",879
+"Inhibitory_projection_MSN","Medium spiny neuron","208","2076",879
+"Excitatory_projection","Amygdala excitatory","160","2389",876
+"Inhibitory_interneuron","CGE interneuron","279","614",873
+"Excitatory_projection","Amygdala excitatory","174","2449",864
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2059",863
+"Inhibitory_interneuron","CGE interneuron","294","511",861
+"Inhibitory_interneuron","MGE interneuron","254","208",861
+"Excitatory_projection","Deep-layer intratelencephalic","142","2712",860
+"Excitatory_projection","Deep-layer intratelencephalic","145","2384",859
+"Excitatory_projection","Hippocampal CA1-3","179","2315",859
+"Excitatory_projection","Hippocampal CA1-3","187","2285",859
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2070",857
+"Excitatory_projection","Amygdala excitatory","154","2460",851
+"Splatter","Splatter","368","1199",850
+"Miscellaneous","Miscellaneous","177","2802",844
+"Inhibitory_interneuron","CGE interneuron","295","495",843
+"Inhibitory_interneuron","MGE interneuron","249","222",841
+"Excitatory_projection","Upper rhombic lip","312","19",839
+"Excitatory_projection","Upper-layer intratelencephalic","135","2741",839
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","661",839
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","459",838
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2123",838
+"Excitatory_projection","Amygdala excitatory","154","2479",837
+"Excitatory_projection","Deep-layer intratelencephalic","142","2739",837
+"Inhibitory_interneuron","CGE interneuron","284","555",836
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2036",834
+"Inhibitory_interneuron","MGE interneuron","260","336",831
+"Excitatory_projection","Amygdala excitatory","405","1949",830
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2893",830
+"Splatter","Splatter","409","165",830
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","271","443",829
+"Excitatory_projection","Lower rhombic lip","317","808",828
+"Excitatory_projection","Amygdala excitatory","160","2387",823
+"Miscellaneous","Miscellaneous","177","2801",823
+"Inhibitory_interneuron","Midbrain-derived inhibitory","444","706",821
+"Excitatory_projection","Upper-layer intratelencephalic","133","2786",820
+"Inhibitory_interneuron","CGE interneuron","278","641",820
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","230","2153",820
+"Inhibitory_interneuron","CGE interneuron","290","532",819
+"Inhibitory_interneuron","CGE interneuron","279","620",818
+"Inhibitory_interneuron","CGE interneuron","291","539",817
+"Excitatory_projection","Thalamic excitatory","451","86",814
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","684",814
+"Inhibitory_interneuron","CGE interneuron","284","550",813
+"Excitatory_projection","Amygdala excitatory","160","2368",811
+"Excitatory_projection","Hippocampal CA1-3","180","2311",809
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2147",809
+"Excitatory_projection","Deep-layer intratelencephalic","142","2709",808
+"Excitatory_projection","Amygdala excitatory","154","2457",806
+"Excitatory_projection","Deep-layer intratelencephalic","145","2376",806
+"Inhibitory_interneuron","CGE interneuron","295","498",806
+"Excitatory_projection","Upper-layer intratelencephalic","134","2687",804
+"Excitatory_projection","Amygdala excitatory","172","2342",803
+"Inhibitory_interneuron","CGE interneuron","280","582",801
+"Excitatory_projection","Thalamic excitatory","454","82",800
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2007",800
+"Splatter","Splatter","409","164",798
+"Inhibitory_interneuron","CGE interneuron","280","586",797
+"Inhibitory_interneuron","MGE interneuron","254","207",797
+"Excitatory_projection","Thalamic excitatory","458","74",794
+"Splatter","Splatter","368","1429",793
+"Excitatory_projection","Amygdala excitatory","175","2336",792
+"Excitatory_projection","Hippocampal CA1-3","186","2291",792
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2111",792
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2875",791
+"Inhibitory_interneuron","MGE interneuron","262","406",791
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1983",791
+"Excitatory_projection","Deep-layer intratelencephalic","140","2763",789
+"Excitatory_projection","Thalamic excitatory","447","117",784
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","688",782
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2164",781
+"Inhibitory_interneuron","MGE interneuron","253","214",779
+"Inhibitory_interneuron","MGE interneuron","241","323",778
+"Excitatory_projection","Amygdala excitatory","158","2418",777
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2830",777
+"Inhibitory_interneuron","CGE interneuron","292","577",777
+"Inhibitory_interneuron","CGE interneuron","293","521",776
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2098",776
+"Excitatory_projection","Deep-layer intratelencephalic","146","2505",775
+"Miscellaneous","Miscellaneous","177","2799",775
+"Excitatory_projection","Amygdala excitatory","157","2396",773
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2889",773
+"Excitatory_projection","Thalamic excitatory","458","70",772
+"Inhibitory_projection_MSN","Medium spiny neuron","209","2083",772
+"Excitatory_projection","Amygdala excitatory","154","2471",771
+"Inhibitory_interneuron","CGE interneuron","295","494",771
+"Inhibitory_interneuron","CGE interneuron","296","484",768
+"Inhibitory_interneuron","MGE interneuron","250","276",767
+"Excitatory_projection","Deep-layer intratelencephalic","145","2377",766
+"Excitatory_projection","Deep-layer intratelencephalic","152","2664",765
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","671",764
+"Splatter","Splatter","415","1440",764
+"Excitatory_projection","Deep-layer intratelencephalic","141","2755",762
+"Inhibitory_interneuron","CGE interneuron","289","496",760
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2053",759
+"Splatter","Splatter","238","176",759
+"Inhibitory_interneuron","MGE interneuron","260","422",757
+"Excitatory_projection","Hippocampal CA1-3","179","2307",756
+"Inhibitory_interneuron","MGE interneuron","253","211",755
+"Excitatory_projection","Hippocampal CA4","195","2249",754
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1987",753
+"Inhibitory_interneuron","MGE interneuron","249","261",751
+"Splatter","Splatter","364","1064",750
+"Inhibitory_interneuron","MGE interneuron","256","361",749
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2041",749
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2117",749
+"Excitatory_projection","Thalamic excitatory","449","62",748
+"Inhibitory_interneuron","MGE interneuron","241","315",748
+"Excitatory_projection","Deep-layer intratelencephalic","150","2639",747
+"Inhibitory_projection_MSN","Medium spiny neuron","211","2068",743
+"Splatter","Splatter","429","1812",741
+"Splatter","Splatter","368","1198",738
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","271","446",735
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2010",735
+"Splatter","Splatter","364","1060",735
+"Excitatory_projection","Amygdala excitatory","405","1948",734
+"Splatter","Splatter","415","1480",733
+"Splatter","Splatter","366","953",731
+"Excitatory_projection","Deep-layer intratelencephalic","147","2385",730
+"Excitatory_projection","Hippocampal CA1-3","186","2290",729
+"Excitatory_projection","Upper-layer intratelencephalic","120","2638",729
+"Splatter","Splatter","365","1261",729
+"Excitatory_projection","Upper rhombic lip","312","17",728
+"Excitatory_projection","Deep-layer corticothalamic and 6b","103","2836",726
+"Splatter","Splatter","415","1168",726
+"Excitatory_projection","Deep-layer intratelencephalic","142","2740",723
+"Inhibitory_interneuron","MGE interneuron","253","213",722
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2858",721
+"Inhibitory_interneuron","MGE interneuron","239","351",721
+"Inhibitory_interneuron","MGE interneuron","241","317",721
+"Splatter","Splatter","365","1253",719
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2100",718
+"Splatter","Splatter","368","1195",718
+"Splatter","Splatter","418","1794",718
+"Inhibitory_interneuron","CGE interneuron","296","489",717
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2817",716
+"Excitatory_projection","Hippocampal CA4","197","2252",716
+"Excitatory_projection","Hippocampal CA1-3","187","2267",715
+"Excitatory_projection","Hippocampal CA1-3","169","2446",714
+"Excitatory_projection","Thalamic excitatory","450","83",714
+"Excitatory_projection","Deep-layer corticothalamic and 6b","109","2895",713
+"Excitatory_projection","Hippocampal CA4","192","2261",713
+"Splatter","Splatter","365","1256",712
+"Miscellaneous","Miscellaneous","177","2800",711
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2861",708
+"Inhibitory_interneuron","MGE interneuron","249","263",704
+"Inhibitory_interneuron","MGE interneuron","260","333",704
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","2156",704
+"Inhibitory_interneuron","MGE interneuron","249","259",702
+"Inhibitory_interneuron","MGE interneuron","255","368",701
+"Inhibitory_interneuron","MGE interneuron","241","320",700
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","463",699
+"Splatter","Splatter","365","1244",699
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","444",698
+"Excitatory_projection","Deep-layer intratelencephalic","145","2381",697
+"Miscellaneous","Miscellaneous","401","2222",696
+"Excitatory_projection","Deep-layer intratelencephalic","147","2502",692
+"Excitatory_projection","Amygdala excitatory","406","1958",691
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2093",689
+"Splatter","Splatter","429","1507",688
+"Splatter","Splatter","364","1067",685
+"Inhibitory_interneuron","MGE interneuron","239","353",682
+"Miscellaneous","Miscellaneous","117","2523",682
+"Inhibitory_interneuron","MGE interneuron","258","354",681
+"Splatter","Splatter","366","1420",681
+"Inhibitory_interneuron","MGE interneuron","253","210",678
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2009",678
+"Excitatory_projection","Hippocampal CA1-3","183","2279",677
+"Excitatory_projection","Thalamic excitatory","449","106",677
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2902",676
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2065",676
+"Excitatory_projection","Amygdala excitatory","405","2514",675
+"Excitatory_projection","Upper-layer intratelencephalic","127","2579",675
+"Inhibitory_interneuron","CGE interneuron","285","604",675
+"Inhibitory_interneuron","MGE interneuron","252","221",675
+"Inhibitory_interneuron","Midbrain-derived inhibitory","437","686",675
+"Excitatory_projection","Hippocampal CA1-3","179","2544",674
+"Splatter","Splatter","359","1926",673
+"Splatter","Splatter","415","1505",672
+"Excitatory_projection","Hippocampal CA1-3","179","2313",671
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","271","461",670
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2148",670
+"Excitatory_projection","Amygdala excitatory","162","2416",669
+"Inhibitory_interneuron","MGE interneuron","253","217",669
+"Splatter","Splatter","365","1245",669
+"Excitatory_projection","Amygdala excitatory","154","2458",667
+"Excitatory_projection","Amygdala excitatory","406","1955",665
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2828",663
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","2158",662
+"Splatter","Splatter","415","1166",661
+"Inhibitory_interneuron","CGE interneuron","279","612",660
+"Splatter","Splatter","364","1066",659
+"Excitatory_projection","Thalamic excitatory","449","95",656
+"Inhibitory_interneuron","MGE interneuron","240","326",656
+"Miscellaneous","Miscellaneous","165","2364",656
+"Splatter","Splatter","415","1685",655
+"Excitatory_projection","Deep-layer corticothalamic and 6b","101","2847",654
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2867",654
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1981",654
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2827",653
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","465",652
+"Excitatory_projection","Upper-layer intratelencephalic","127","2584",650
+"Excitatory_projection","Deep-layer intratelencephalic","152","2663",649
+"Excitatory_projection","Hippocampal CA4","195","2233",649
+"Splatter","Splatter","365","1250",649
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2057",647
+"Excitatory_projection","Deep-layer intratelencephalic","147","2501",646
+"Inhibitory_interneuron","MGE interneuron","239","350",644
+"Inhibitory_interneuron","MGE interneuron","254","202",644
+"Splatter","Splatter","368","1194",644
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2877",643
+"Excitatory_projection","Hippocampal CA1-3","184","2287",642
+"Splatter","Splatter","368","1212",642
+"Excitatory_projection","Deep-layer intratelencephalic","145","2383",640
+"Excitatory_projection","Deep-layer near-projecting","92","2977",640
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","230","2155",640
+"Excitatory_projection","Deep-layer intratelencephalic","142","2711",639
+"Inhibitory_interneuron","MGE interneuron","253","212",637
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2110",636
+"Splatter","Splatter","235","199",634
+"Excitatory_projection","Amygdala excitatory","175","2334",631
+"Excitatory_projection","Deep-layer intratelencephalic","146","2506",630
+"Splatter","Splatter","336","1867",629
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2890",628
+"Inhibitory_interneuron","MGE interneuron","249","260",628
+"Excitatory_projection","Thalamic excitatory","450","104",627
+"Inhibitory_interneuron","MGE interneuron","253","216",627
+"Excitatory_projection","Amygdala excitatory","158","2403",626
+"Splatter","Splatter","344","1595",626
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","464",625
+"Excitatory_projection","Amygdala excitatory","155","2468",624
+"Excitatory_projection","Amygdala excitatory","405","1945",624
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2116",624
+"Inhibitory_interneuron","CGE interneuron","285","609",623
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1979",622
+"Excitatory_projection","Thalamic excitatory","448","112",621
+"Inhibitory_interneuron","CGE interneuron","279","615",621
+"Inhibitory_interneuron","CGE interneuron","295","500",620
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2814",617
+"Inhibitory_interneuron","CGE interneuron","280","581",617
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2051",617
+"Splatter","Splatter","413","1141",616
+"Excitatory_projection","Hippocampal CA1-3","187","2268",615
+"Inhibitory_interneuron","MGE interneuron","239","319",614
+"Inhibitory_interneuron","MGE interneuron","241","316",613
+"Excitatory_projection","Thalamic excitatory","459","1089",612
+"Excitatory_projection","Deep-layer intratelencephalic","143","2724",611
+"Excitatory_projection","Mammillary body","324","1849",610
+"Inhibitory_interneuron","MGE interneuron","239","352",610
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2862",609
+"Excitatory_projection","Amygdala excitatory","405","2513",608
+"Inhibitory_interneuron","CGE interneuron","279","595",607
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2050",606
+"Splatter","Splatter","366","1419",606
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2049",605
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2887",604
+"Excitatory_projection","Hippocampal CA1-3","184","2288",604
+"Inhibitory_interneuron","MGE interneuron","249","267",604
+"Splatter","Splatter","370","1019",604
+"Splatter","Splatter","410","843",604
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2824",603
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","265","382",603
+"Splatter","Splatter","429","1508",603
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2829",602
+"Excitatory_projection","Deep-layer intratelencephalic","147","2494",600
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2160",597
+"Excitatory_projection","Mammillary body","326","1851",596
+"Splatter","Splatter","429","1816",596
+"Excitatory_projection","Hippocampal CA4","197","2242",595
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","457",593
+"Excitatory_projection","Upper-layer intratelencephalic","133","2673",592
+"Splatter","Splatter","335","746",591
+"Splatter","Splatter","366","1196",590
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2813",589
+"Splatter","Splatter","368","1197",586
+"Splatter","Splatter","415","1684",585
+"Excitatory_projection","Hippocampal CA1-3","184","2274",584
+"Splatter","Splatter","365","1243",584
+"Excitatory_projection","Lower rhombic lip","316","787",583
+"Inhibitory_interneuron","MGE interneuron","236","391",583
+"Inhibitory_projection_MSN","Medium spiny neuron","214","2042",581
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2056",580
+"Excitatory_projection","Thalamic excitatory","447","119",579
+"Excitatory_projection","Thalamic excitatory","458","68",579
+"Inhibitory_interneuron","CGE interneuron","279","613",578
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2826",577
+"Excitatory_projection","Thalamic excitatory","459","45",577
+"Excitatory_projection","Thalamic excitatory","459","47",577
+"Splatter","Splatter","415","860",577
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2885",576
+"Splatter","Splatter","413","1148",576
+"Excitatory_projection","Thalamic excitatory","458","92",575
+"Inhibitory_interneuron","CGE interneuron","285","608",574
+"Inhibitory_interneuron","CGE interneuron","281","591",573
+"Excitatory_projection","Amygdala excitatory","405","1950",572
+"Inhibitory_interneuron","MGE interneuron","241","321",572
+"Inhibitory_interneuron","MGE interneuron","255","366",572
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2126",572
+"Splatter","Splatter","415","1481",572
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2865",570
+"Inhibitory_interneuron","CGE interneuron","285","601",570
+"Splatter","Splatter","368","1427",566
+"Excitatory_projection","Lower rhombic lip","321","792",565
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2131",565
+"Inhibitory_interneuron","Cerebellar inhibitory","307","157",564
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2113",562
+"Excitatory_projection","Hippocampal CA1-3","185","2293",561
+"Inhibitory_interneuron","CGE interneuron","282","570",561
+"Excitatory_projection","Thalamic excitatory","448","114",558
+"Inhibitory_interneuron","MGE interneuron","239","348",558
+"Inhibitory_interneuron","CGE interneuron","283","560",556
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","2174",556
+"Excitatory_projection","Mammillary body","328","1847",554
+"Splatter","Splatter","429","1805",554
+"Excitatory_projection","Hippocampal CA1-3","187","2284",553
+"Inhibitory_interneuron","MGE interneuron","254","209",553
+"Miscellaneous","Miscellaneous","167","2789",552
+"Excitatory_projection","Amygdala excitatory","406","1956",551
+"Splatter","Splatter","365","1251",550
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2125",548
+"Excitatory_projection","Amygdala excitatory","153","2466",547
+"Excitatory_projection","Hippocampal dentate gyrus","205","2211",547
+"Excitatory_projection","Amygdala excitatory","161","2410",546
+"Splatter","Splatter","343","1602",546
+"Splatter","Splatter","429","1815",546
+"Excitatory_projection","Amygdala excitatory","161","2414",545
+"Excitatory_projection","Deep-layer near-projecting","92","2976",545
+"Excitatory_projection","Thalamic excitatory","459","1085",544
+"Inhibitory_interneuron","MGE interneuron","261","420",544
+"Excitatory_projection","Hippocampal CA1-3","186","2269",543
+"Inhibitory_interneuron","MGE interneuron","236","329",543
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","665",542
+"Splatter","Splatter","418","1796",542
+"Splatter","Splatter","429","1809",542
+"Inhibitory_interneuron","CGE interneuron","295","492",541
+"Excitatory_projection","Upper-layer intratelencephalic","133","2669",540
+"Miscellaneous","Miscellaneous","165","2362",539
+"Splatter","Splatter","366","1242",539
+"Splatter","Splatter","418","1795",539
+"Excitatory_projection","Thalamic excitatory","458","71",538
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","386",537
+"Splatter","Splatter","365","1234",537
+"Splatter","Splatter","368","1213",537
+"Inhibitory_interneuron","CGE interneuron","280","587",536
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","273","470",536
+"Inhibitory_interneuron","MGE interneuron","255","370",536
+"Excitatory_projection","Amygdala excitatory","161","2409",534
+"Excitatory_projection","Deep-layer intratelencephalic","139","2774",534
+"Excitatory_projection","Amygdala excitatory","406","1939",533
+"Inhibitory_interneuron","MGE interneuron","251","277",533
+"Excitatory_projection","Amygdala excitatory","406","1941",532
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2115",532
+"Splatter","Splatter","366","1421",531
+"Splatter","Splatter","365","1267",529
+"Splatter","Splatter","359","1919",527
+"Excitatory_projection","Hippocampal CA1-3","186","2283",526
+"Excitatory_projection","Amygdala excitatory","153","2461",525
+"Excitatory_projection","Thalamic excitatory","448","64",525
+"Inhibitory_interneuron","CGE interneuron","285","603",525
+"Inhibitory_interneuron","MGE interneuron","236","396",525
+"Inhibitory_interneuron","CGE interneuron","294","621",524
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2809",523
+"Inhibitory_interneuron","CGE interneuron","280","584",523
+"Inhibitory_interneuron","CGE interneuron","295","499",523
+"Splatter","Splatter","364","1068",523
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2825",522
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1975",521
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1977",521
+"Excitatory_projection","Deep-layer intratelencephalic","146","2508",520
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2818",519
+"Miscellaneous","Miscellaneous","117","2522",519
+"Excitatory_projection","Hippocampal CA1-3","187","2423",518
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","270","441",518
+"Splatter","Splatter","383","1112",518
+"Excitatory_projection","Amygdala excitatory","406","1938",517
+"Inhibitory_interneuron","MGE interneuron","236","390",515
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2149",515
+"Miscellaneous","Miscellaneous","178","2797",515
+"Excitatory_projection","Thalamic excitatory","447","118",514
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2063",514
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2915",512
+"Inhibitory_interneuron","CGE interneuron","284","547",512
+"Inhibitory_interneuron","Midbrain-derived inhibitory","438","660",512
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1990",512
+"Splatter","Splatter","412","1130",511
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","2002",510
+"Excitatory_projection","Hippocampal CA1-3","187","2424",509
+"Excitatory_projection","Thalamic excitatory","448","77",509
+"Excitatory_projection","Thalamic excitatory","456","76",509
+"Splatter","Splatter","365","1266",509
+"Excitatory_projection","Deep-layer intratelencephalic","145","2378",508
+"Inhibitory_interneuron","CGE interneuron","281","590",508
+"Splatter","Splatter","356","1348",508
+"Excitatory_projection","Amygdala excitatory","405","1942",506
+"Excitatory_projection","Deep-layer near-projecting","94","2955",506
+"Splatter","Splatter","364","1006",506
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2122",505
+"Excitatory_projection","Amygdala excitatory","158","1951",504
+"Excitatory_projection","Thalamic excitatory","450","84",504
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2119",504
+"Splatter","Splatter","429","1818",504
+"Excitatory_projection","Hippocampal CA4","192","2263",502
+"Excitatory_projection","Upper-layer intratelencephalic","127","2581",501
+"Splatter","Splatter","365","1265",501
+"Splatter","Splatter","390","1404",501
+"Excitatory_projection","Amygdala excitatory","153","2462",500
+"Inhibitory_interneuron","Cerebellar inhibitory","307","160",500
+"Inhibitory_interneuron","MGE interneuron","236","392",500
+"Inhibitory_projection_MSN","Medium spiny neuron","427","2186",499
+"Excitatory_projection","Deep-layer intratelencephalic","152","2665",498
+"Splatter","Splatter","365","1239",498
+"Splatter","Splatter","413","1140",497
+"Excitatory_projection","Mammillary body","330","1837",496
+"Splatter","Splatter","343","1605",496
+"Splatter","Splatter","429","1807",496
+"Splatter","Splatter","429","1824",496
+"Excitatory_projection","Deep-layer near-projecting","90","2951",495
+"Inhibitory_interneuron","MGE interneuron","239","349",495
+"Splatter","Splatter","345","1584",495
+"Splatter","Splatter","368","1189",495
+"Splatter","Splatter","383","1108",495
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2823",494
+"Excitatory_projection","Mammillary body","325","1850",493
+"Inhibitory_interneuron","CGE interneuron","295","493",492
+"Splatter","Splatter","417","1678",492
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2857",489
+"Inhibitory_interneuron","CGE interneuron","280","583",489
+"Splatter","Splatter","235","198",487
+"Excitatory_projection","Deep-layer intratelencephalic","151","2649",486
+"Splatter","Splatter","402","2194",486
+"Splatter","Splatter","425","1743",486
+"Excitatory_projection","Thalamic excitatory","448","110",485
+"Splatter","Splatter","356","1932",485
+"Excitatory_projection","Thalamic excitatory","458","73",484
+"Splatter","Splatter","417","1677",484
+"Splatter","Splatter","429","1808",484
+"Inhibitory_interneuron","Midbrain-derived inhibitory","439","659",483
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2886",482
+"Splatter","Splatter","362","769",482
+"Splatter","Splatter","415","1504",482
+"Inhibitory_interneuron","MGE interneuron","240","325",479
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1976",479
+"Miscellaneous","Miscellaneous","117","2525",477
+"Excitatory_projection","Thalamic excitatory","453","96",476
+"Splatter","Splatter","235","293",476
+"Splatter","Splatter","356","1354",476
+"Excitatory_projection","Hippocampal CA4","197","2240",475
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","378",474
+"Excitatory_projection","Deep-layer near-projecting","95","2968",473
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2031",473
+"Splatter","Splatter","365","1240",473
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2856",472
+"Excitatory_projection","Hippocampal CA1-3","188","2295",472
+"Inhibitory_interneuron","CGE interneuron","285","602",470
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2169",470
+"Excitatory_projection","Amygdala excitatory","405","1943",468
+"Excitatory_projection","Thalamic excitatory","459","1091",468
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","709",468
+"Splatter","Splatter","418","1790",468
+"Excitatory_projection","Deep-layer intratelencephalic","146","2653",467
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","226","2004",467
+"Splatter","Splatter","359","1324",467
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","452",466
+"Splatter","Splatter","429","1813",466
+"Excitatory_projection","Thalamic excitatory","447","120",465
+"Excitatory_projection","Mammillary body","325","1826",464
+"Excitatory_projection","Mammillary body","326","1852",464
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","265","380",463
+"Excitatory_projection","Lower rhombic lip","320","794",462
+"Splatter","Splatter","368","1193",462
+"Excitatory_projection","Deep-layer intratelencephalic","146","2503",461
+"Inhibitory_interneuron","CGE interneuron","284","549",460
+"Inhibitory_projection_MSN","Medium spiny neuron","213","2032",459
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2055",459
+"Splatter","Splatter","412","1131",458
+"Excitatory_projection","Hippocampal CA1-3","180","2310",455
+"Excitatory_projection","Mammillary body","324","1857",454
+"Splatter","Splatter","350","1652",454
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1986",452
+"Splatter","Splatter","415","832",452
+"Excitatory_projection","Deep-layer near-projecting","90","2946",451
+"Inhibitory_interneuron","CGE interneuron","281","592",451
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","2001",451
+"Miscellaneous","Miscellaneous","117","2524",451
+"Splatter","Splatter","418","1797",451
+"Excitatory_projection","Deep-layer near-projecting","94","2957",450
+"Splatter","Splatter","431","813",450
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2864",449
+"Splatter","Splatter","364","1061",449
+"Excitatory_projection","Deep-layer corticothalamic and 6b","101","2846",447
+"Splatter","Splatter","416","862",447
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1984",446
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","2157",446
+"Splatter","Splatter","345","1585",446
+"Excitatory_projection","Amygdala excitatory","161","2412",445
+"Excitatory_projection","Thalamic excitatory","451","87",445
+"Excitatory_projection","Thalamic excitatory","458","67",444
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","456",444
+"Excitatory_projection","Amygdala excitatory","154","2469",443
+"Excitatory_projection","Amygdala excitatory","160","2390",442
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2920",441
+"Inhibitory_interneuron","CGE interneuron","277","636",441
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2145",439
+"Splatter","Splatter","383","1220",439
+"Splatter","Splatter","417","861",439
+"Excitatory_projection","Thalamic excitatory","459","1084",438
+"Splatter","Splatter","334","1577",438
+"Splatter","Splatter","365","1235",438
+"Excitatory_projection","Mammillary body","329","1835",437
+"Splatter","Splatter","366","1056",437
+"Splatter","Splatter","366","1425",437
+"Splatter","Splatter","415","1479",437
+"Excitatory_projection","Deep-layer near-projecting","92","2974",436
+"Splatter","Splatter","356","1345",436
+"Splatter","Splatter","415","1162",436
+"Excitatory_projection","Deep-layer near-projecting","90","2949",435
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","467",435
+"Inhibitory_interneuron","MGE interneuron","256","364",435
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1714",435
+"Splatter","Splatter","366","1271",434
+"Splatter","Splatter","366","1424",434
+"Excitatory_projection","Mammillary body","332","1282",433
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","274","449",433
+"Excitatory_projection","Amygdala excitatory","158","2406",431
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2854",431
+"Inhibitory_interneuron","CGE interneuron","281","593",431
+"Splatter","Splatter","418","1792",431
+"Splatter","Splatter","364","1063",430
+"Splatter","Splatter","380","901",430
+"Splatter","Splatter","412","1160",430
+"Inhibitory_interneuron","CGE interneuron","284","545",428
+"Splatter","Splatter","418","1787",428
+"Inhibitory_interneuron","MGE interneuron","239","346",427
+"Splatter","Splatter","412","1137",427
+"Excitatory_projection","Upper-layer intratelencephalic","133","2676",426
+"Splatter","Splatter","366","1418",426
+"Inhibitory_interneuron","MGE interneuron","253","219",425
+"Splatter","Splatter","359","1320",422
+"Splatter","Splatter","363","22",421
+"Excitatory_projection","Deep-layer intratelencephalic","143","2726",420
+"Splatter","Splatter","237","184",419
+"Splatter","Splatter","365","1260",418
+"Splatter","Splatter","412","1161",418
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2112",417
+"Splatter","Splatter","390","1333",417
+"Excitatory_projection","Lower rhombic lip","319","800",415
+"Inhibitory_interneuron","MGE interneuron","260","332",415
+"Inhibitory_interneuron","MGE interneuron","260","334",415
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2108",415
+"Inhibitory_interneuron","MGE interneuron","255","369",414
+"Miscellaneous","Miscellaneous","132","2788",414
+"Inhibitory_interneuron","CGE interneuron","279","611",413
+"Excitatory_projection","Deep-layer near-projecting","88","2986",412
+"Excitatory_projection","Hippocampal CA4","195","2251",412
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","384",412
+"Inhibitory_interneuron","MGE interneuron","249","250",412
+"Splatter","Splatter","367","1055",412
+"Splatter","Splatter","391","1568",412
+"Inhibitory_interneuron","MGE interneuron","253","373",411
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2092",411
+"Inhibitory_interneuron","MGE interneuron","256","360",409
+"Splatter","Splatter","366","1364",409
+"Splatter","Splatter","418","1791",407
+"Splatter","Splatter","384","1218",406
+"Inhibitory_interneuron","MGE interneuron","254","201",405
+"Splatter","Splatter","366","954",405
+"Excitatory_projection","Deep-layer intratelencephalic","152","2666",404
+"Splatter","Splatter","345","1592",404
+"Splatter","Splatter","376","1221",404
+"Inhibitory_interneuron","Midbrain-derived inhibitory","434","667",403
+"Splatter","Splatter","413","1144",402
+"Splatter","Splatter","368","1191",401
+"Excitatory_projection","Deep-layer near-projecting","86","2989",400
+"Excitatory_projection","Thalamic excitatory","448","65",400
+"Inhibitory_interneuron","Cerebellar inhibitory","303","147",400
+"Splatter","Splatter","345","1201",400
+"Splatter","Splatter","366","1207",400
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","453",399
+"Splatter","Splatter","417","857",398
+"Excitatory_projection","Amygdala excitatory","158","2404",397
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2888",397
+"Splatter","Splatter","428","1820",397
+"Splatter","Splatter","431","822",397
+"Excitatory_projection","Hippocampal CA1-3","187","2323",396
+"Splatter","Splatter","412","1139",396
+"Excitatory_projection","Hippocampal CA1-3","184","2273",395
+"Miscellaneous","Miscellaneous","165","2361",395
+"Splatter","Splatter","344","937",395
+"Inhibitory_projection_MSN","Medium spiny neuron","215","2022",394
+"Splatter","Splatter","413","1147",394
+"Splatter","Splatter","422","1491",394
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2054",392
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2130",392
+"Inhibitory_interneuron","MGE interneuron","236","328",390
+"Splatter","Splatter","343","1599",389
+"Splatter","Splatter","411","826",389
+"Splatter","Splatter","344","994",388
+"Splatter","Splatter","428","1822",388
+"Excitatory_projection","Thalamic excitatory","447","121",386
+"Splatter","Splatter","414","1127",386
+"Splatter","Splatter","429","1806",386
+"Splatter","Splatter","359","1921",385
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2133",384
+"Splatter","Splatter","235","195",384
+"Splatter","Splatter","383","1109",384
+"Excitatory_projection","Deep-layer intratelencephalic","147","2480",383
+"Splatter","Splatter","359","1924",383
+"Splatter","Splatter","410","724",383
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","388",381
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","230","2152",381
+"Splatter","Splatter","356","1360",381
+"Splatter","Splatter","375","1557",381
+"Splatter","Splatter","384","1862",380
+"Excitatory_projection","Amygdala excitatory","406","1954",379
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","381",379
+"Splatter","Splatter","367","1008",379
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","266","387",378
+"Splatter","Splatter","367","998",378
+"Splatter","Splatter","367","1054",378
+"Excitatory_projection","Amygdala excitatory","406","1940",377
+"Splatter","Splatter","428","1821",377
+"Excitatory_projection","Amygdala excitatory","419","1669",376
+"Excitatory_projection","Mammillary body","330","1842",376
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2841",375
+"Excitatory_projection","Hippocampal CA4","197","2241",375
+"Splatter","Splatter","412","1157",375
+"Excitatory_projection","Amygdala excitatory","405","1666",374
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2132",374
+"Splatter","Splatter","375","1558",374
+"Inhibitory_interneuron","Cerebellar inhibitory","303","144",372
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2162",372
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2095",372
+"Splatter","Splatter","416","1500",372
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2815",371
+"Splatter","Splatter","235","200",371
+"Splatter","Splatter","343","1600",371
+"Splatter","Splatter","428","1800",371
+"Splatter","Splatter","238","178",370
+"Splatter","Splatter","366","1208",370
+"Inhibitory_interneuron","CGE interneuron","294","599",368
+"Excitatory_projection","Amygdala excitatory","159","2372",367
+"Excitatory_projection","Deep-layer intratelencephalic","152","2667",367
+"Splatter","Splatter","410","844",367
+"Excitatory_projection","Hippocampal dentate gyrus","199","2216",366
+"Inhibitory_interneuron","MGE interneuron","236","330",366
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2109",366
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","652",364
+"Splatter","Splatter","334","1582",364
+"Inhibitory_interneuron","CGE interneuron","279","594",363
+"Splatter","Splatter","359","1322",363
+"Splatter","Splatter","432","1135",363
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2921",362
+"Splatter","Splatter","366","1422",362
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2919",361
+"Miscellaneous","Miscellaneous","177","2804",361
+"Splatter","Splatter","355","1393",361
+"Excitatory_projection","Thalamic excitatory","453","79",360
+"Inhibitory_projection_MSN","Medium spiny neuron","427","2185",360
+"Excitatory_projection","Deep-layer near-projecting","91","2961",359
+"Splatter","Splatter","417","1679",359
+"Inhibitory_interneuron","MGE interneuron","248","248",358
+"Splatter","Splatter","235","191",358
+"Excitatory_projection","Deep-layer near-projecting","86","2980",357
+"Splatter","Splatter","364","1069",357
+"Splatter","Splatter","422","1482",357
+"Excitatory_projection","Deep-layer intratelencephalic","147","2492",356
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2839",355
+"Splatter","Splatter","383","1114",355
+"Excitatory_projection","Deep-layer near-projecting","90","2950",354
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2137",354
+"Splatter","Splatter","342","29",354
+"Splatter","Splatter","369","1033",354
+"Splatter","Splatter","413","1150",354
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1973",353
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1974",353
+"Splatter","Splatter","423","777",353
+"Excitatory_projection","Deep-layer near-projecting","91","2948",352
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2165",352
+"Splatter","Splatter","380","906",352
+"Splatter","Splatter","429","1817",352
+"Splatter","Splatter","359","1918",351
+"Splatter","Splatter","368","1428",351
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2863",350
+"Excitatory_projection","Deep-layer near-projecting","94","2954",350
+"Excitatory_projection","Lower rhombic lip","316","786",350
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","232","2146",350
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2096",350
+"Splatter","Splatter","235","193",350
+"Excitatory_projection","Amygdala excitatory","159","2421",349
+"Miscellaneous","Miscellaneous","167","2794",349
+"Splatter","Splatter","355","1902",349
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1988",348
+"Inhibitory_interneuron","MGE interneuron","249","265",347
+"Splatter","Splatter","369","1041",347
+"Splatter","Splatter","384","1860",347
+"Excitatory_projection","Deep-layer near-projecting","91","2975",346
+"Excitatory_projection","Deep-layer near-projecting","94","2960",346
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","455",346
+"Splatter","Splatter","367","996",346
+"Splatter","Splatter","415","1455",345
+"Excitatory_projection","Hippocampal CA4","195","2232",344
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","2000",344
+"Splatter","Splatter","365","1228",344
+"Excitatory_projection","Amygdala excitatory","153","2465",343
+"Splatter","Splatter","366","1110",343
+"Excitatory_projection","Amygdala excitatory","159","2373",342
+"Inhibitory_interneuron","CGE interneuron","280","580",342
+"Splatter","Splatter","341","27",342
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2170",341
+"Inhibitory_projection_MSN","Medium spiny neuron","427","2187",341
+"Splatter","Splatter","359","1923",341
+"Splatter","Splatter","359","1928",341
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2908",340
+"Splatter","Splatter","357","1305",340
+"Splatter","Splatter","380","897",340
+"Excitatory_projection","Upper-layer intratelencephalic","127","2582",339
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1978",339
+"Miscellaneous","Miscellaneous","401","2221",339
+"Splatter","Splatter","412","1129",339
+"Excitatory_projection","Thalamic excitatory","459","1087",338
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","454",337
+"Splatter","Splatter","344","1593",337
+"Splatter","Splatter","380","958",337
+"Splatter","Splatter","422","1486",337
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2171",336
+"Splatter","Splatter","432","721",336
+"Excitatory_projection","Amygdala excitatory","159","2420",335
+"Splatter","Splatter","432","723",335
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2850",334
+"Splatter","Splatter","390","1691",334
+"Excitatory_projection","Deep-layer intratelencephalic","147","2491",333
+"Splatter","Splatter","383","1104",333
+"Miscellaneous","Miscellaneous","164","2366",332
+"Excitatory_projection","Thalamic excitatory","453","66",331
+"Splatter","Splatter","365","1264",331
+"Excitatory_projection","Deep-layer near-projecting","89","2941",330
+"Excitatory_projection","Hippocampal dentate gyrus","199","2220",330
+"Splatter","Splatter","368","1187",330
+"Inhibitory_interneuron","CGE interneuron","276","481",329
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2058",329
+"Splatter","Splatter","413","1149",329
+"Splatter","Splatter","416","869",329
+"Inhibitory_interneuron","MGE interneuron","248","285",328
+"Excitatory_projection","Deep-layer near-projecting","94","2958",327
+"Excitatory_projection","Thalamic excitatory","459","1090",326
+"Splatter","Splatter","403","1960",326
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","264","377",325
+"Excitatory_projection","Deep-layer intratelencephalic","146","2509",324
+"Inhibitory_interneuron","CGE interneuron","284","554",324
+"Splatter","Splatter","356","1343",324
+"Splatter","Splatter","365","1656",324
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2845",323
+"Excitatory_projection","Mammillary body","329","1836",323
+"Inhibitory_interneuron","CGE interneuron","277","632",323
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2134",323
+"Splatter","Splatter","344","1596",323
+"Inhibitory_interneuron","MGE interneuron","248","256",322
+"Splatter","Splatter","358","1892",322
+"Splatter","Splatter","369","1044",321
+"Miscellaneous","Miscellaneous","167","2791",320
+"Inhibitory_interneuron","MGE interneuron","236","395",319
+"Splatter","Splatter","237","327",319
+"Splatter","Splatter","238","169",319
+"Excitatory_projection","Hippocampal CA1-3","188","2294",318
+"Inhibitory_interneuron","MGE interneuron","239","345",318
+"Splatter","Splatter","364","1010",318
+"Excitatory_projection","Thalamic excitatory","372","1077",317
+"Splatter","Splatter","237","181",317
+"Splatter","Splatter","365","1255",317
+"Splatter","Splatter","367","1005",317
+"Splatter","Splatter","422","1495",317
+"Splatter","Splatter","425","1774",317
+"Excitatory_projection","Deep-layer near-projecting","94","2959",316
+"Excitatory_projection","Hippocampal dentate gyrus","199","2218",316
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","1997",316
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2060",316
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2178",316
+"Miscellaneous","Miscellaneous","177","2803",316
+"Splatter","Splatter","355","1905",316
+"Splatter","Splatter","414","1287",316
+"Inhibitory_interneuron","MGE interneuron","249","258",315
+"Splatter","Splatter","375","1565",315
+"Excitatory_projection","Hippocampal CA1-3","186","2292",314
+"Inhibitory_interneuron","MGE interneuron","248","247",314
+"Splatter","Splatter","417","1682",314
+"Excitatory_projection","Thalamic excitatory","460","56",313
+"Splatter","Splatter","384","1182",313
+"Splatter","Splatter","393","760",313
+"Splatter","Splatter","431","815",313
+"Excitatory_projection","Amygdala excitatory","159","2371",312
+"Excitatory_projection","Amygdala excitatory","405","1665",312
+"Excitatory_projection","Thalamic excitatory","460","41",312
+"Inhibitory_interneuron","CGE interneuron","276","626",312
+"Splatter","Splatter","355","1900",312
+"Splatter","Splatter","356","1347",312
+"Splatter","Splatter","390","1329",312
+"Excitatory_projection","Deep-layer near-projecting","91","2963",311
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","1996",311
+"Splatter","Splatter","392","1697",311
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2842",310
+"Excitatory_projection","Deep-layer near-projecting","88","2983",310
+"Inhibitory_interneuron","CGE interneuron","295","497",310
+"Miscellaneous","Miscellaneous","166","2356",310
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2879",309
+"Splatter","Splatter","334","1576",309
+"Inhibitory_interneuron","CGE interneuron","285","607",308
+"Inhibitory_interneuron","MGE interneuron","245","298",308
+"Inhibitory_interneuron","MGE interneuron","249","264",308
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1985",308
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2184",308
+"Splatter","Splatter","350","1644",308
+"Splatter","Splatter","425","1764",308
+"Splatter","Splatter","432","722",308
+"Splatter","Splatter","373","986",307
+"Splatter","Splatter","422","1485",307
+"Inhibitory_interneuron","MGE interneuron","236","397",306
+"Inhibitory_interneuron","MGE interneuron","245","188",306
+"Splatter","Splatter","359","1319",306
+"Splatter","Splatter","370","1020",306
+"Splatter","Splatter","370","1026",305
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1989",304
+"Splatter","Splatter","368","1205",304
+"Splatter","Splatter","403","1970",304
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2912",303
+"Splatter","Splatter","237","182",303
+"Splatter","Splatter","413","1151",303
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1994",302
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2181",302
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2851",301
+"Splatter","Splatter","368","1426",301
+"Splatter","Splatter","416","1499",301
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","1995",300
+"Splatter","Splatter","373","991",300
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2816",299
+"Excitatory_projection","Deep-layer near-projecting","93","2947",299
+"Splatter","Splatter","425","1762",299
+"Excitatory_projection","Amygdala excitatory","158","2419",298
+"Excitatory_projection","Deep-layer near-projecting","89","2936",297
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2094",297
+"Inhibitory_interneuron","MGE interneuron","244","292",296
+"Splatter","Splatter","425","1776",296
+"Splatter","Splatter","428","1802",296
+"Excitatory_projection","Amygdala excitatory","407","1740",295
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2916",295
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","2175",295
+"Splatter","Splatter","356","1344",295
+"Splatter","Splatter","367","1004",295
+"Excitatory_projection","Deep-layer near-projecting","92","2978",294
+"Splatter","Splatter","350","1649",294
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2849",292
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1993",292
+"Splatter","Splatter","349","913",292
+"Splatter","Splatter","412","1134",292
+"Splatter","Splatter","425","1753",292
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1980",291
+"Splatter","Splatter","348","1617",291
+"Splatter","Splatter","363","1572",291
+"Excitatory_projection","Deep-layer near-projecting","95","2970",290
+"Excitatory_projection","Hippocampal CA4","196","2250",290
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1992",290
+"Splatter","Splatter","366","1270",290
+"Splatter","Splatter","418","1798",290
+"Excitatory_projection","Mammillary body","330","1839",289
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1708",288
+"Splatter","Splatter","393","755",288
+"Excitatory_projection","Deep-layer intratelencephalic","150","2648",287
+"Splatter","Splatter","358","1298",287
+"Splatter","Splatter","413","1143",287
+"Splatter","Splatter","357","1311",286
+"Splatter","Splatter","358","1903",286
+"Splatter","Splatter","367","1431",286
+"Excitatory_projection","Hippocampal CA4","193","2259",285
+"Splatter","Splatter","343","1606",285
+"Splatter","Splatter","384","1861",285
+"Splatter","Splatter","385","1117",285
+"Splatter","Splatter","403","1962",285
+"Splatter","Splatter","416","863",285
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1718",284
+"Splatter","Splatter","390","1328",284
+"Splatter","Splatter","418","1789",284
+"Splatter","Splatter","429","1811",284
+"Excitatory_projection","Thalamic excitatory","450","103",283
+"Splatter","Splatter","364","1065",281
+"Splatter","Splatter","414","1176",281
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2855",280
+"Excitatory_projection","Mammillary body","327","1853",280
+"Inhibitory_interneuron","CGE interneuron","277","634",280
+"Inhibitory_projection_MSN","Medium spiny neuron","219","2017",280
+"Splatter","Splatter","355","1386",280
+"Splatter","Splatter","403","1969",280
+"Splatter","Splatter","417","1681",280
+"Inhibitory_interneuron","Cerebellar inhibitory","300","137",279
+"Inhibitory_projection_MSN","Medium spiny neuron","218","2114",279
+"Splatter","Splatter","350","1650",279
+"Splatter","Splatter","356","1350",279
+"Splatter","Splatter","356","1352",279
+"Splatter","Splatter","414","1178",279
+"Splatter","Splatter","344","1269",278
+"Splatter","Splatter","355","1257",278
+"Splatter","Splatter","402","2192",278
+"Excitatory_projection","Deep-layer intratelencephalic","145","2379",277
+"Excitatory_projection","Hippocampal dentate gyrus","203","2196",277
+"Splatter","Splatter","364","1432",277
+"Splatter","Splatter","380","905",277
+"Splatter","Splatter","414","1126",277
+"Excitatory_projection","Deep-layer intratelencephalic","144","2717",276
+"Splatter","Splatter","357","1310",276
+"Splatter","Splatter","359","1323",276
+"Splatter","Splatter","416","866",276
+"Excitatory_projection","Amygdala excitatory","407","1048",275
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1734",275
+"Splatter","Splatter","384","1181",275
+"Excitatory_projection","Deep-layer near-projecting","93","2973",274
+"Inhibitory_interneuron","MGE interneuron","246","235",274
+"Inhibitory_projection_MSN","Medium spiny neuron","217","1723",274
+"Splatter","Splatter","402","2190",274
+"Splatter","Splatter","418","1793",274
+"Excitatory_projection","Thalamic excitatory","459","1086",273
+"Splatter","Splatter","375","1564",273
+"Splatter","Splatter","383","1105",273
+"Excitatory_projection","Deep-layer near-projecting","88","2939",272
+"Excitatory_projection","Hippocampal CA4","193","2237",272
+"Inhibitory_interneuron","MGE interneuron","246","238",272
+"Splatter","Splatter","365","1262",272
+"Splatter","Splatter","369","1032",272
+"Splatter","Splatter","416","1498",272
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2843",271
+"Excitatory_projection","Hippocampal CA1-3","188","2264",271
+"Excitatory_projection","Thalamic excitatory","372","1074",271
+"Inhibitory_interneuron","CGE interneuron","281","589",271
+"Excitatory_projection","Hippocampal CA4","196","2247",269
+"Miscellaneous","Miscellaneous","167","2792",269
+"Splatter","Splatter","350","1659",269
+"Splatter","Splatter","423","1771",269
+"Excitatory_projection","Deep-layer intratelencephalic","146","2504",268
+"Miscellaneous","Miscellaneous","176","2806",268
+"Splatter","Splatter","357","1327",268
+"Splatter","Splatter","380","896",268
+"Excitatory_projection","Amygdala excitatory","407","942",267
+"Excitatory_projection","Thalamic excitatory","448","116",267
+"Splatter","Splatter","344","1597",267
+"Splatter","Splatter","393","1693",267
+"Splatter","Splatter","411","825",267
+"Splatter","Splatter","390","1406",266
+"Splatter","Splatter","393","754",266
+"Inhibitory_interneuron","Cerebellar inhibitory","300","141",265
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2140",265
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2168",265
+"Splatter","Splatter","403","1963",265
+"Splatter","Splatter","413","1145",265
+"Splatter","Splatter","425","1763",265
+"Excitatory_projection","Mammillary body","329","1833",264
+"Inhibitory_interneuron","CGE interneuron","277","635",264
+"Inhibitory_interneuron","Cerebellar inhibitory","304","149",264
+"Splatter","Splatter","235","194",264
+"Splatter","Splatter","362","1367",264
+"Splatter","Splatter","373","1203",264
+"Excitatory_projection","Deep-layer near-projecting","87","2943",263
+"Splatter","Splatter","370","1423",263
+"Inhibitory_interneuron","Cerebellar inhibitory","303","148",262
+"Splatter","Splatter","417","858",262
+"Inhibitory_interneuron","MGE interneuron","248","252",261
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2139",261
+"Splatter","Splatter","356","1358",261
+"Splatter","Splatter","366","948",261
+"Splatter","Splatter","368","1214",261
+"Excitatory_projection","Hippocampal dentate gyrus","202","2203",260
+"Splatter","Splatter","366","1363",260
+"Splatter","Splatter","390","1405",260
+"Splatter","Splatter","368","1190",259
+"Excitatory_projection","Deep-layer near-projecting","87","2944",258
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2091",258
+"Splatter","Splatter","356","1356",258
+"Excitatory_projection","Deep-layer corticothalamic and 6b","108","2878",257
+"Excitatory_projection","Hippocampal CA4","196","2246",257
+"Splatter","Splatter","398","1545",257
+"Splatter","Splatter","428","1476",257
+"Inhibitory_interneuron","MGE interneuron","236","331",256
+"Splatter","Splatter","375","1563",256
+"Splatter","Splatter","393","762",256
+"Splatter","Splatter","425","1761",256
+"Splatter","Splatter","380","959",255
+"Splatter","Splatter","423","1779",255
+"Splatter","Splatter","347","915",254
+"Splatter","Splatter","347","1630",254
+"Splatter","Splatter","354","775",253
+"Splatter","Splatter","355","1898",253
+"Splatter","Splatter","395","1869",253
+"Excitatory_projection","Mammillary body","326","1844",252
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","2003",252
+"Miscellaneous","Miscellaneous","164","1952",252
+"Splatter","Splatter","417","1683",252
+"Splatter","Splatter","235","192",251
+"Splatter","Splatter","344","938",251
+"Splatter","Splatter","377","852",251
+"Excitatory_projection","Amygdala excitatory","159","2422",250
+"Excitatory_projection","Hippocampal dentate gyrus","199","2219",250
+"Excitatory_projection","Thalamic excitatory","372","1081",250
+"Inhibitory_interneuron","CGE interneuron","278","638",250
+"Miscellaneous","Miscellaneous","116","2530",250
+"Miscellaneous","Miscellaneous","168","2326",250
+"Splatter","Splatter","350","1643",250
+"Splatter","Splatter","350","1653",250
+"Splatter","Splatter","356","1355",250
+"Splatter","Splatter","390","1331",250
+"Splatter","Splatter","393","756",250
+"Splatter","Splatter","425","1745",250
+"Splatter","Splatter","369","1030",249
+"Splatter","Splatter","370","1018",249
+"Splatter","Splatter","425","1754",249
+"Inhibitory_interneuron","Cerebellar inhibitory","302","125",248
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2172",248
+"Splatter","Splatter","380","895",248
+"Excitatory_projection","Deep-layer near-projecting","93","2972",247
+"Inhibitory_interneuron","CGE interneuron","285","610",247
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1711",247
+"Splatter","Splatter","350","1645",247
+"Splatter","Splatter","384","1183",247
+"Excitatory_projection","Upper rhombic lip","308","3",246
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","228","2161",246
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2129",246
+"Splatter","Splatter","392","773",246
+"Splatter","Splatter","423","1778",246
+"Splatter","Splatter","424","1767",246
+"Excitatory_projection","Mammillary body","329","1832",245
+"Inhibitory_interneuron","MGE interneuron","246","232",245
+"Splatter","Splatter","424","1695",245
+"Inhibitory_interneuron","MGE interneuron","247","245",244
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","1999",244
+"Excitatory_projection","Amygdala excitatory","419","1664",243
+"Splatter","Splatter","402","2191",243
+"Excitatory_projection","Mammillary body","328","1846",242
+"Splatter","Splatter","413","1142",242
+"Excitatory_projection","Amygdala excitatory","153","2463",241
+"Excitatory_projection","Deep-layer near-projecting","89","2994",241
+"Excitatory_projection","Mammillary body","326","1845",241
+"Splatter","Splatter","416","1475",241
+"Splatter","Splatter","423","1772",241
+"Excitatory_projection","Deep-layer intratelencephalic","150","2643",240
+"Splatter","Splatter","350","1648",240
+"Inhibitory_interneuron","CGE interneuron","279","596",239
+"Miscellaneous","Miscellaneous","116","2529",239
+"Splatter","Splatter","348","1608",239
+"Splatter","Splatter","359","1927",239
+"Splatter","Splatter","424","1484",239
+"Excitatory_projection","Amygdala excitatory","407","1047",238
+"Excitatory_projection","Lower rhombic lip","316","785",238
+"Splatter","Splatter","417","1676",238
+"Excitatory_projection","Deep-layer near-projecting","88","2938",237
+"Excitatory_projection","Thalamic excitatory","372","1071",237
+"Excitatory_projection","Upper-layer intratelencephalic","133","2692",237
+"Inhibitory_interneuron","MGE interneuron","252","215",237
+"Splatter","Splatter","237","183",237
+"Splatter","Splatter","334","1580",237
+"Splatter","Splatter","358","1904",237
+"Splatter","Splatter","376","1225",237
+"Excitatory_projection","Deep-layer corticothalamic and 6b","103","2835",236
+"Splatter","Splatter","368","1215",236
+"Excitatory_projection","Lower rhombic lip","316","790",235
+"Inhibitory_interneuron","MGE interneuron","245","294",235
+"Splatter","Splatter","335","744",235
+"Splatter","Splatter","359","1931",235
+"Splatter","Splatter","365","1241",235
+"Splatter","Splatter","370","1028",235
+"Excitatory_projection","Amygdala excitatory","406","1957",234
+"Excitatory_projection","Amygdala excitatory","419","1670",234
+"Inhibitory_interneuron","CGE interneuron","288","436",234
+"Inhibitory_interneuron","MGE interneuron","248","255",234
+"Splatter","Splatter","350","1658",234
+"Splatter","Splatter","375","1555",234
+"Splatter","Splatter","384","1859",234
+"Splatter","Splatter","411","830",234
+"Excitatory_projection","Deep-layer near-projecting","86","2988",233
+"Inhibitory_interneuron","Cerebellar inhibitory","300","138",233
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1713",233
+"Splatter","Splatter","385","1118",233
+"Splatter","Splatter","411","829",233
+"Excitatory_projection","Amygdala excitatory","406","1944",232
+"Excitatory_projection","Thalamic excitatory","459","1088",232
+"Splatter","Splatter","365","1227",231
+"Splatter","Splatter","383","1111",231
+"Splatter","Splatter","412","1164",231
+"Splatter","Splatter","431","817",231
+"Excitatory_projection","Lower rhombic lip","322","780",230
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2180",230
+"Splatter","Splatter","336","1866",230
+"Splatter","Splatter","356","1342",230
+"Splatter","Splatter","368","1192",230
+"Excitatory_projection","Hippocampal CA4","194","2238",229
+"Inhibitory_interneuron","Cerebellar inhibitory","303","145",229
+"Excitatory_projection","Deep-layer near-projecting","87","2984",228
+"Excitatory_projection","Hippocampal CA4","192","2262",228
+"Excitatory_projection","Hippocampal CA4","193","2230",228
+"Inhibitory_interneuron","MGE interneuron","248","253",228
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2159",228
+"Splatter","Splatter","334","1581",228
+"Splatter","Splatter","362","1238",228
+"Excitatory_projection","Deep-layer near-projecting","87","2981",227
+"Excitatory_projection","Deep-layer near-projecting","87","2985",227
+"Excitatory_projection","Amygdala excitatory","419","1662",226
+"Splatter","Splatter","356","1351",226
+"Miscellaneous","Miscellaneous","166","2355",225
+"Splatter","Splatter","345","1586",225
+"Splatter","Splatter","358","1300",225
+"Splatter","Splatter","385","1121",225
+"Excitatory_projection","Mammillary body","330","1838",224
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2182",224
+"Splatter","Splatter","355","1901",224
+"Splatter","Splatter","423","1748",224
+"Splatter","Splatter","425","1746",224
+"Splatter","Splatter","350","1647",223
+"Splatter","Splatter","357","1304",223
+"Splatter","Splatter","358","1316",223
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2883",222
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2173",222
+"Splatter","Splatter","358","1315",222
+"Splatter","Splatter","362","1553",222
+"Splatter","Splatter","390","1332",222
+"Excitatory_projection","Amygdala excitatory","419","1671",221
+"Excitatory_projection","Deep-layer near-projecting","95","2967",221
+"Inhibitory_interneuron","CGE interneuron","282","564",221
+"Splatter","Splatter","357","1306",221
+"Splatter","Splatter","394","1515",221
+"Splatter","Splatter","428","1730",221
+"Excitatory_projection","Upper rhombic lip","308","1",220
+"Excitatory_projection","Upper rhombic lip","309","7",220
+"Inhibitory_interneuron","CGE interneuron","289","530",220
+"Splatter","Splatter","350","1646",220
+"Splatter","Splatter","356","1359",220
+"Splatter","Splatter","365","1254",220
+"Splatter","Splatter","371","1016",220
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2904",219
+"Excitatory_projection","Hippocampal CA4","198","2226",219
+"Excitatory_projection","Lower rhombic lip","315","783",219
+"Splatter","Splatter","347","1631",219
+"Splatter","Splatter","410","833",219
+"Splatter","Splatter","418","1788",219
+"Splatter","Splatter","431","1159",219
+"Excitatory_projection","Amygdala excitatory","407","1741",218
+"Excitatory_projection","Deep-layer intratelencephalic","145","2382",218
+"Excitatory_projection","Deep-layer near-projecting","95","2971",218
+"Excitatory_projection","Mammillary body","329","1834",218
+"Excitatory_projection","Mammillary body","332","1280",218
+"Splatter","Splatter","383","1113",217
+"Splatter","Splatter","428","1823",217
+"Excitatory_projection","Amygdala excitatory","407","941",216
+"Splatter","Splatter","355","1387",216
+"Splatter","Splatter","368","1230",216
+"Splatter","Splatter","373","1414",216
+"Splatter","Splatter","392","1698",216
+"Inhibitory_interneuron","CGE interneuron","279","617",215
+"Splatter","Splatter","392","1707",215
+"Splatter","Splatter","393","757",215
+"Excitatory_projection","Mammillary body","332","1281",214
+"Splatter","Splatter","342","28",214
+"Excitatory_projection","Hippocampal CA1-3","188","2265",213
+"Excitatory_projection","Hippocampal CA4","196","2244",213
+"Inhibitory_interneuron","CGE interneuron","276","624",213
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","222","1982",213
+"Splatter","Splatter","412","1163",213
+"Splatter","Splatter","416","868",213
+"Splatter","Splatter","428","1477",213
+"Splatter","Splatter","237","179",212
+"Splatter","Splatter","356","1357",212
+"Splatter","Splatter","358","1385",212
+"Splatter","Splatter","402","2193",212
+"Splatter","Splatter","410","725",212
+"Splatter","Splatter","367","1001",211
+"Splatter","Splatter","380","1371",211
+"Splatter","Splatter","381","1550",211
+"Splatter","Splatter","398","1543",211
+"Splatter","Splatter","403","1968",211
+"Splatter","Splatter","422","1493",211
+"Excitatory_projection","Hippocampal CA1-3","187","2425",210
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","269","466",210
+"Inhibitory_interneuron","MGE interneuron","246","389",210
+"Splatter","Splatter","344","1594",210
+"Splatter","Splatter","347","1628",210
+"Splatter","Splatter","359","1925",210
+"Splatter","Splatter","392","1705",210
+"Splatter","Splatter","413","1146",210
+"Splatter","Splatter","423","1688",210
+"Excitatory_projection","Lower rhombic lip","321","806",209
+"Excitatory_projection","Thalamic excitatory","454","100",209
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","273","471",209
+"Inhibitory_interneuron","MGE interneuron","249","262",209
+"Miscellaneous","Miscellaneous","116","2528",209
+"Splatter","Splatter","352","1935",209
+"Splatter","Splatter","355","1388",209
+"Splatter","Splatter","366","955",209
+"Splatter","Splatter","380","898",209
+"Splatter","Splatter","348","1621",208
+"Splatter","Splatter","355","1389",208
+"Splatter","Splatter","358","1317",208
+"Splatter","Splatter","359","1318",208
+"Splatter","Splatter","375","1561",208
+"Splatter","Splatter","398","1536",208
+"Inhibitory_interneuron","Midbrain-derived inhibitory","435","666",207
+"Splatter","Splatter","425","1755",207
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2852",206
+"Excitatory_projection","Deep-layer near-projecting","89","2942",206
+"Excitatory_projection","Hippocampal CA4","197","2243",206
+"Inhibitory_interneuron","MGE interneuron","247","240",206
+"Splatter","Splatter","359","1566",206
+"Splatter","Splatter","368","1412",206
+"Splatter","Splatter","370","1035",206
+"Splatter","Splatter","384","1433",206
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2141",205
+"Splatter","Splatter","313","712",205
+"Splatter","Splatter","385","1122",205
+"Splatter","Splatter","392","1704",205
+"Excitatory_projection","Deep-layer near-projecting","92","2979",204
+"Excitatory_projection","Lower rhombic lip","316","789",204
+"Splatter","Splatter","334","1578",204
+"Splatter","Splatter","418","1786",204
+"Splatter","Splatter","431","816",204
+"Inhibitory_interneuron","MGE interneuron","248","254",203
+"Miscellaneous","Miscellaneous","117","2521",203
+"Inhibitory_interneuron","MGE interneuron","246","234",202
+"Miscellaneous","Miscellaneous","165","2360",202
+"Splatter","Splatter","347","1657",202
+"Splatter","Splatter","361","1889",202
+"Excitatory_projection","Deep-layer corticothalamic and 6b","99","2860",201
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","648",201
+"Splatter","Splatter","366","956",201
+"Excitatory_projection","Thalamic excitatory","453","46",200
+"Inhibitory_interneuron","CGE interneuron","276","480",200
+"Splatter","Splatter","347","1632",200
+"Splatter","Splatter","349","1627",200
+"Splatter","Splatter","376","1442",200
+"Excitatory_projection","Hippocampal CA4","193","2239",199
+"Inhibitory_interneuron","MGE interneuron","245","296",199
+"Miscellaneous","Miscellaneous","114","2540",199
+"Splatter","Splatter","352","1936",199
+"Splatter","Splatter","422","1489",199
+"Excitatory_projection","Amygdala excitatory","419","1668",198
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2884",198
+"Excitatory_projection","Hippocampal CA1-3","169","2442",198
+"Splatter","Splatter","355","1394",198
+"Splatter","Splatter","367","1002",198
+"Splatter","Splatter","392","1699",198
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","474",197
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2142",197
+"Miscellaneous","Miscellaneous","166","2358",197
+"Splatter","Splatter","370","1024",197
+"Splatter","Splatter","373","982",197
+"Splatter","Splatter","403","1966",197
+"Splatter","Splatter","431","820",197
+"Excitatory_projection","Mammillary body","332","1283",196
+"Excitatory_projection","Thalamic excitatory","447","98",196
+"Inhibitory_interneuron","CGE interneuron","277","633",196
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","649",196
+"Splatter","Splatter","359","1321",196
+"Splatter","Splatter","362","770",196
+"Splatter","Splatter","393","761",196
+"Splatter","Splatter","412","1132",196
+"Excitatory_projection","Hippocampal CA4","193","2236",195
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","225","1998",195
+"Splatter","Splatter","363","23",195
+"Excitatory_projection","Deep-layer intratelencephalic","142","2704",194
+"Inhibitory_interneuron","MGE interneuron","244","289",194
+"Inhibitory_projection_MSN","Medium spiny neuron","221","2090",194
+"Splatter","Splatter","364","1011",194
+"Splatter","Splatter","373","984",194
+"Splatter","Splatter","384","1231",194
+"Splatter","Splatter","414","835",194
+"Excitatory_projection","Amygdala excitatory","159","2370",193
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","476",193
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2143",193
+"Splatter","Splatter","337","776",193
+"Splatter","Splatter","355","1374",193
+"Splatter","Splatter","370","1025",193
+"Splatter","Splatter","394","1520",193
+"Excitatory_projection","Hippocampal CA4","192","2260",192
+"Inhibitory_interneuron","MGE interneuron","240","324",192
+"Miscellaneous","Miscellaneous","113","2547",192
+"Splatter","Splatter","369","1045",192
+"Splatter","Splatter","375","1562",192
+"Splatter","Splatter","376","1219",192
+"Splatter","Splatter","411","828",192
+"Excitatory_projection","Deep-layer near-projecting","96","2966",191
+"Excitatory_projection","Mammillary body","333","1289",191
+"Excitatory_projection","Thalamic excitatory","372","1078",191
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","223","1991",191
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1719",191
+"Splatter","Splatter","387","892",191
+"Splatter","Splatter","387","946",191
+"Splatter","Splatter","392","771",191
+"Splatter","Splatter","414","1200",191
+"Splatter","Splatter","423","1780",191
+"Splatter","Splatter","235","197",190
+"Splatter","Splatter","369","1040",190
+"Splatter","Splatter","377","848",190
+"Splatter","Splatter","403","1964",190
+"Splatter","Splatter","423","1465",190
+"Splatter","Splatter","345","1591",189
+"Excitatory_projection","Deep-layer near-projecting","83","2926",188
+"Excitatory_projection","Deep-layer near-projecting","93","2935",188
+"Excitatory_projection","Upper rhombic lip","308","4",188
+"Splatter","Splatter","376","1453",188
+"Splatter","Splatter","381","1365",188
+"Splatter","Splatter","396","1277",188
+"Splatter","Splatter","431","812",188
+"Excitatory_projection","Deep-layer near-projecting","89","2937",187
+"Excitatory_projection","Hippocampal CA1-3","169","2443",187
+"Excitatory_projection","Upper rhombic lip","308","2",187
+"Excitatory_projection","Amygdala excitatory","407","1522",186
+"Miscellaneous","Miscellaneous","116","2526",186
+"Miscellaneous","Miscellaneous","116","2527",186
+"Splatter","Splatter","367","1003",186
+"Splatter","Splatter","373","1415",186
+"Splatter","Splatter","374","922",186
+"Excitatory_projection","Amygdala excitatory","174","2432",185
+"Excitatory_projection","Deep-layer corticothalamic and 6b","103","2838",185
+"Excitatory_projection","Mammillary body","330","1841",185
+"Splatter","Splatter","344","993",185
+"Splatter","Splatter","348","1622",185
+"Splatter","Splatter","357","1307",185
+"Splatter","Splatter","369","1039",185
+"Splatter","Splatter","376","1226",185
+"Splatter","Splatter","385","1124",185
+"Splatter","Splatter","402","2189",185
+"Excitatory_projection","Hippocampal CA1-3","188","2266",184
+"Inhibitory_interneuron","MGE interneuron","246","233",184
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2128",184
+"Splatter","Splatter","357","1326",184
+"Splatter","Splatter","365","1383",184
+"Splatter","Splatter","374","1294",184
+"Splatter","Splatter","384","1216",184
+"Splatter","Splatter","396","1275",184
+"Splatter","Splatter","423","1769",184
+"Splatter","Splatter","348","1607",183
+"Splatter","Splatter","373","1413",183
+"Excitatory_projection","Amygdala excitatory","405","1947",182
+"Excitatory_projection","Deep-layer near-projecting","86","2992",182
+"Excitatory_projection","Hippocampal CA1-3","169","2444",182
+"Excitatory_projection","Lower rhombic lip","316","810",182
+"Excitatory_projection","Upper-layer intratelencephalic","135","2702",182
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","275","451",182
+"Splatter","Splatter","360","1917",182
+"Splatter","Splatter","393","1692",182
+"Splatter","Splatter","412","1133",182
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2859",181
+"Inhibitory_interneuron","MGE interneuron","245","189",181
+"Splatter","Splatter","374","921",181
+"Inhibitory_interneuron","Cerebellar inhibitory","304","151",180
+"Miscellaneous","Miscellaneous","167","2793",180
+"Splatter","Splatter","356","1346",180
+"Splatter","Splatter","377","849",180
+"Splatter","Splatter","380","899",179
+"Splatter","Splatter","380","957",179
+"Splatter","Splatter","393","758",179
+"Splatter","Splatter","424","1760",179
+"Splatter","Splatter","425","1756",179
+"Inhibitory_interneuron","MGE interneuron","246","237",178
+"Splatter","Splatter","336","1864",178
+"Splatter","Splatter","355","1878",178
+"Splatter","Splatter","371","1017",178
+"Splatter","Splatter","387","967",178
+"Splatter","Splatter","417","1680",178
+"Excitatory_projection","Amygdala excitatory","407","1739",177
+"Excitatory_projection","Hippocampal CA1-3","169","2445",177
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","647",177
+"Miscellaneous","Miscellaneous","117","2519",177
+"Splatter","Splatter","359","1933",177
+"Splatter","Splatter","375","1554",177
+"Splatter","Splatter","377","851",177
+"Splatter","Splatter","403","1965",177
+"Splatter","Splatter","424","1766",177
+"Excitatory_projection","Thalamic excitatory","449","63",176
+"Inhibitory_interneuron","Cerebellar inhibitory","303","146",176
+"Inhibitory_interneuron","Cerebellar inhibitory","304","150",176
+"Inhibitory_interneuron","MGE interneuron","244","287",176
+"Miscellaneous","Miscellaneous","178","2796",176
+"Splatter","Splatter","353","1575",176
+"Splatter","Splatter","368","1188",176
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2910",175
+"Splatter","Splatter","396","1274",175
+"Splatter","Splatter","414","1179",175
+"Excitatory_projection","Amygdala excitatory","407","943",174
+"Inhibitory_interneuron","MGE interneuron","246","230",174
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2136",174
+"Splatter","Splatter","360","1914",174
+"Splatter","Splatter","425","1744",174
+"Excitatory_projection","Mammillary body","330","1843",173
+"Excitatory_projection","Mammillary body","333","1288",173
+"Splatter","Splatter","358","1301",173
+"Splatter","Splatter","396","731",173
+"Splatter","Splatter","397","739",173
+"Splatter","Splatter","423","1687",173
+"Inhibitory_projection_MSN","Medium spiny neuron","206","2089",172
+"Splatter","Splatter","373","1073",172
+"Splatter","Splatter","385","1217",172
+"Splatter","Splatter","416","867",172
+"Excitatory_projection","Lower rhombic lip","321","793",171
+"Inhibitory_interneuron","CGE interneuron","276","625",171
+"Miscellaneous","Miscellaneous","167","2790",171
+"Splatter","Splatter","348","1620",171
+"Splatter","Splatter","357","1309",171
+"Splatter","Splatter","373","981",171
+"Splatter","Splatter","392","1701",171
+"Excitatory_projection","Deep-layer intratelencephalic","137","2748",170
+"Inhibitory_interneuron","CGE interneuron","285","588",170
+"Inhibitory_interneuron","MGE interneuron","246","231",170
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2135",170
+"Excitatory_projection","Deep-layer near-projecting","94","2953",169
+"Excitatory_projection","Hippocampal CA4","191","2258",169
+"Inhibitory_projection_MSN","Medium spiny neuron","217","1728",169
+"Splatter","Splatter","349","908",169
+"Splatter","Splatter","358","1299",169
+"Splatter","Splatter","360","1907",169
+"Splatter","Splatter","380","951",169
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2840",168
+"Splatter","Splatter","366","947",168
+"Inhibitory_interneuron","CGE interneuron","276","629",167
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","477",167
+"Splatter","Splatter","335","745",167
+"Splatter","Splatter","390","1236",167
+"Excitatory_projection","Hippocampal CA4","194","2234",166
+"Excitatory_projection","Hippocampal CA4","196","2248",166
+"Splatter","Splatter","343","1601",166
+"Splatter","Splatter","347","1616",166
+"Splatter","Splatter","349","1624",166
+"Splatter","Splatter","380","952",166
+"Splatter","Splatter","380","960",166
+"Splatter","Splatter","423","1770",166
+"Excitatory_projection","Hippocampal CA4","196","2245",165
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","646",165
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","227","2014",165
+"Splatter","Splatter","368","1012",165
+"Splatter","Splatter","376","1224",165
+"Splatter","Splatter","425","1775",165
+"Excitatory_projection","Deep-layer corticothalamic and 6b","106","2822",164
+"Excitatory_projection","Hippocampal CA4","193","2231",164
+"Excitatory_projection","Upper-layer intratelencephalic","123","2551",164
+"Inhibitory_interneuron","MGE interneuron","248","249",164
+"Splatter","Splatter","352","1937",164
+"Splatter","Splatter","362","1410",164
+"Splatter","Splatter","366","1268",164
+"Inhibitory_interneuron","CGE interneuron","285","631",163
+"Inhibitory_projection_MSN","Medium spiny neuron","217","2124",163
+"Splatter","Splatter","370","1023",163
+"Splatter","Splatter","422","1492",163
+"Splatter","Splatter","343","1604",162
+"Splatter","Splatter","369","1042",162
+"Splatter","Splatter","376","1223",162
+"Splatter","Splatter","412","1158",162
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","478",161
+"Splatter","Splatter","345","1590",161
+"Splatter","Splatter","355","1879",161
+"Splatter","Splatter","412","1138",161
+"Inhibitory_interneuron","CGE interneuron","282","563",160
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1724",160
+"Splatter","Splatter","383","1106",160
+"Splatter","Splatter","399","873",160
+"Splatter","Splatter","237","180",159
+"Splatter","Splatter","347","1613",159
+"Splatter","Splatter","373","983",159
+"Splatter","Splatter","374","923",159
+"Splatter","Splatter","413","1206",159
+"Splatter","Splatter","421","1472",159
+"Excitatory_projection","Mammillary body","323","1831",158
+"Splatter","Splatter","354","1384",158
+"Splatter","Splatter","380","1395",158
+"Splatter","Splatter","381","1369",158
+"Splatter","Splatter","382","846",158
+"Splatter","Splatter","396","1279",158
+"Excitatory_projection","Deep-layer corticothalamic and 6b","97","2923",157
+"Inhibitory_interneuron","CGE interneuron","285","606",157
+"Inhibitory_interneuron","Cerebellar inhibitory","299","130",157
+"Splatter","Splatter","424","1483",157
+"Excitatory_projection","Hippocampal CA4","194","2235",156
+"Splatter","Splatter","346","886",156
+"Splatter","Splatter","353","1574",156
+"Splatter","Splatter","414","1177",156
+"Excitatory_projection","Deep-layer near-projecting","91","2962",155
+"Splatter","Splatter","373","1184",155
+"Splatter","Splatter","416","865",155
+"Excitatory_projection","Amygdala excitatory","419","1673",154
+"Splatter","Splatter","355","1392",154
+"Splatter","Splatter","356","1361",154
+"Splatter","Splatter","431","821",154
+"Splatter","Splatter","348","1609",153
+"Splatter","Splatter","367","1000",153
+"Splatter","Splatter","387","893",153
+"Splatter","Splatter","421","1470",153
+"Splatter","Splatter","344","919",152
+"Splatter","Splatter","344","936",152
+"Splatter","Splatter","351","748",152
+"Splatter","Splatter","367","1007",152
+"Splatter","Splatter","370","1021",152
+"Splatter","Splatter","380","900",152
+"Splatter","Splatter","387","970",152
+"Splatter","Splatter","398","1533",152
+"Splatter","Splatter","424","1749",152
+"Inhibitory_interneuron","MGE interneuron","244","286",151
+"Inhibitory_projection_MSN","Medium spiny neuron","212","2066",151
+"Splatter","Splatter","352","1934",151
+"Splatter","Splatter","373","1416",151
+"Splatter","Splatter","375","1559",151
+"Splatter","Splatter","383","1102",151
+"Splatter","Splatter","424","1750",151
+"Splatter","Splatter","424","1759",151
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2911",150
+"Excitatory_projection","Deep-layer near-projecting","96","2933",150
+"Excitatory_projection","Hippocampal CA1-3","182","2303",150
+"Miscellaneous","Miscellaneous","166","2354",150
+"Splatter","Splatter","237","185",150
+"Splatter","Splatter","346","883",150
+"Splatter","Splatter","373","985",150
+"Splatter","Splatter","377","1460",150
+"Splatter","Splatter","381","1548",150
+"Splatter","Splatter","403","1967",150
+"Splatter","Splatter","410","840",150
+"Excitatory_projection","Hippocampal CA1-3","187","2321",149
+"Inhibitory_interneuron","MGE interneuron","247","243",149
+"Splatter","Splatter","349","910",149
+"Splatter","Splatter","370","1210",149
+"Splatter","Splatter","393","759",149
+"Excitatory_projection","Amygdala excitatory","419","1661",148
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2882",148
+"Excitatory_projection","Thalamic excitatory","372","1076",148
+"Excitatory_projection","Thalamic excitatory","372","1083",148
+"Splatter","Splatter","343","1603",148
+"Splatter","Splatter","370","1015",148
+"Splatter","Splatter","398","1542",148
+"Splatter","Splatter","428","1729",148
+"Excitatory_projection","Amygdala excitatory","406","1953",147
+"Excitatory_projection","Deep-layer near-projecting","86","2993",147
+"Excitatory_projection","Lower rhombic lip","316","788",147
+"Miscellaneous","Miscellaneous","114","2536",147
+"Splatter","Splatter","425","1747",147
+"Inhibitory_interneuron","CGE interneuron","276","628",146
+"Inhibitory_interneuron","Midbrain-derived inhibitory","436","683",146
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1712",146
+"Splatter","Splatter","354","1380",146
+"Excitatory_projection","Deep-layer near-projecting","88","2982",145
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","650",145
+"Splatter","Splatter","358","1891",145
+"Splatter","Splatter","376","1436",145
+"Splatter","Splatter","424","1752",145
+"Excitatory_projection","Deep-layer intratelencephalic","145","2380",144
+"Excitatory_projection","Deep-layer near-projecting","89","2995",144
+"Excitatory_projection","Deep-layer near-projecting","96","2932",144
+"Excitatory_projection","Lower rhombic lip","321","791",144
+"Splatter","Splatter","412","1136",144
+"Splatter","Splatter","416","1497",144
+"Splatter","Splatter","422","1487",144
+"Splatter","Splatter","424","1765",144
+"Excitatory_projection","Deep-layer near-projecting","85","2930",143
+"Excitatory_projection","Mammillary body","323","1827",143
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1720",143
+"Splatter","Splatter","345","1587",143
+"Splatter","Splatter","370","1031",143
+"Splatter","Splatter","377","1093",143
+"Splatter","Splatter","381","1549",143
+"Splatter","Splatter","392","1706",143
+"Splatter","Splatter","400","1637",143
+"Splatter","Splatter","420","1448",143
+"Excitatory_projection","Thalamic excitatory","372","1080",142
+"Miscellaneous","Miscellaneous","116","2542",142
+"Miscellaneous","Miscellaneous","168","2329",142
+"Splatter","Splatter","383","1107",142
+"Splatter","Splatter","420","1450",142
+"Excitatory_projection","Thalamic excitatory","451","89",141
+"Splatter","Splatter","345","1588",141
+"Splatter","Splatter","369","1037",141
+"Splatter","Splatter","376","1441",141
+"Inhibitory_interneuron","MGE interneuron","244","288",140
+"Inhibitory_interneuron","MGE interneuron","247","246",140
+"Splatter","Splatter","383","1115",140
+"Splatter","Splatter","387","891",140
+"Excitatory_projection","Amygdala excitatory","158","2374",139
+"Excitatory_projection","Amygdala excitatory","405","1959",139
+"Splatter","Splatter","352","1929",139
+"Splatter","Splatter","357","1308",139
+"Splatter","Splatter","374","927",139
+"Splatter","Splatter","410","839",139
+"Splatter","Splatter","425","186",139
+"Excitatory_projection","Amygdala excitatory","162","2417",138
+"Excitatory_projection","Deep-layer near-projecting","85","2927",138
+"Inhibitory_interneuron","MGE interneuron","247","242",138
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1709",138
+"Splatter","Splatter","347","1633",138
+"Splatter","Splatter","376","1438",138
+"Splatter","Splatter","394","1517",138
+"Splatter","Splatter","399","874",138
+"Splatter","Splatter","399","881",138
+"Splatter","Splatter","417","864",138
+"Excitatory_projection","Thalamic excitatory","372","987",137
+"Inhibitory_interneuron","CGE interneuron","277","637",137
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","472",137
+"Splatter","Splatter","347","1615",137
+"Splatter","Splatter","358","1353",137
+"Splatter","Splatter","374","928",137
+"Splatter","Splatter","397","728",137
+"Splatter","Splatter","398","1532",137
+"Splatter","Splatter","429","1803",137
+"Excitatory_projection","Hippocampal CA4","190","2253",136
+"Miscellaneous","Miscellaneous","165","2363",136
+"Splatter","Splatter","380","902",136
+"Splatter","Splatter","421","1785",136
+"Splatter","Splatter","428","1801",136
+"Inhibitory_interneuron","MGE interneuron","255","371",135
+"Splatter","Splatter","338","38",135
+"Splatter","Splatter","377","1459",135
+"Splatter","Splatter","418","1799",135
+"Excitatory_projection","Hippocampal CA1-3","119","2543",134
+"Excitatory_projection","Thalamic excitatory","445","122",134
+"Inhibitory_interneuron","CGE interneuron","285","605",134
+"Inhibitory_interneuron","MGE interneuron","244","290",134
+"Splatter","Splatter","357","1312",134
+"Splatter","Splatter","365","1390",134
+"Splatter","Splatter","368","1209",134
+"Splatter","Splatter","369","1043",134
+"Splatter","Splatter","374","1050",134
+"Splatter","Splatter","422","1488",134
+"Excitatory_projection","Hippocampal CA1-3","189","2319",133
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","233","2011",133
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2179",133
+"Splatter","Splatter","349","909",133
+"Splatter","Splatter","353","1885",133
+"Splatter","Splatter","357","1313",133
+"Splatter","Splatter","363","25",133
+"Splatter","Splatter","398","1541",133
+"Splatter","Splatter","421","1473",133
+"Splatter","Splatter","431","818",133
+"Miscellaneous","Miscellaneous","167","2795",132
+"Splatter","Splatter","349","1625",132
+"Splatter","Splatter","354","1391",132
+"Splatter","Splatter","385","1123",132
+"Splatter","Splatter","387","944",132
+"Inhibitory_projection_MSN","Medium spiny neuron","427","1710",131
+"Splatter","Splatter","359","1920",131
+"Splatter","Splatter","359","1930",131
+"Splatter","Splatter","362","1411",131
+"Splatter","Splatter","366","1417",131
+"Splatter","Splatter","387","968",131
+"Splatter","Splatter","400","1641",131
+"Splatter","Splatter","400","1642",131
+"Excitatory_projection","Deep-layer corticothalamic and 6b","97","2922",130
+"Excitatory_projection","Deep-layer near-projecting","86","2991",130
+"Inhibitory_interneuron","CGE interneuron","293","598",130
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","468",130
+"Splatter","Splatter","368","1430",130
+"Splatter","Splatter","387","971",130
+"Splatter","Splatter","395","1874",130
+"Splatter","Splatter","400","1635",130
+"Excitatory_projection","Deep-layer corticothalamic and 6b","104","2853",129
+"Excitatory_projection","Hippocampal CA4","191","2257",129
+"Inhibitory_interneuron","CGE interneuron","276","622",129
+"Miscellaneous","Miscellaneous","116","2531",129
+"Miscellaneous","Miscellaneous","170","2438",129
+"Splatter","Splatter","355","1899",129
+"Splatter","Splatter","361","1894",129
+"Splatter","Splatter","373","992",129
+"Splatter","Splatter","393","1694",129
+"Splatter","Splatter","398","1537",129
+"Excitatory_projection","Thalamic excitatory","372","1082",128
+"Splatter","Splatter","238","175",128
+"Splatter","Splatter","343","1598",128
+"Splatter","Splatter","360","1910",128
+"Splatter","Splatter","377","1462",128
+"Splatter","Splatter","377","1464",128
+"Excitatory_projection","Mammillary body","323","1828",127
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1726",127
+"Inhibitory_projection_MSN","Medium spiny neuron","216","2052",127
+"Miscellaneous","Miscellaneous","113","2548",127
+"Splatter","Splatter","369","1211",127
+"Splatter","Splatter","377","1458",127
+"Splatter","Splatter","383","1103",127
+"Splatter","Splatter","412","1128",127
+"Inhibitory_interneuron","CGE interneuron","276","482",126
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1733",126
+"Miscellaneous","Miscellaneous","113","2546",126
+"Splatter","Splatter","342","31",126
+"Splatter","Splatter","347","1629",126
+"Splatter","Splatter","368","1058",126
+"Splatter","Splatter","374","925",126
+"Splatter","Splatter","394","1013",126
+"Splatter","Splatter","421","1784",126
+"Excitatory_projection","Amygdala excitatory","171","2347",125
+"Inhibitory_interneuron","Cerebellar inhibitory","305","155",125
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2176",125
+"Splatter","Splatter","358","1893",125
+"Splatter","Splatter","381","917",125
+"Splatter","Splatter","382","1094",125
+"Splatter","Splatter","389","1401",125
+"Excitatory_projection","Hippocampal CA1-3","169","2441",124
+"Excitatory_projection","Hippocampal CA4","190","2254",124
+"Inhibitory_interneuron","Cerebellar inhibitory","299","133",124
+"Splatter","Splatter","421","1469",124
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","268","458",123
+"Inhibitory_interneuron","MGE interneuron","248","251",123
+"Splatter","Splatter","347","914",123
+"Splatter","Splatter","348","1619",123
+"Splatter","Splatter","351","751",123
+"Splatter","Splatter","362","1338",123
+"Splatter","Splatter","385","1119",123
+"Splatter","Splatter","391","1690",123
+"Splatter","Splatter","424","1751",123
+"Excitatory_projection","Thalamic excitatory","459","44",122
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2103",122
+"Splatter","Splatter","373","979",122
+"Splatter","Splatter","373","980",122
+"Splatter","Splatter","373","1186",122
+"Splatter","Splatter","397","726",122
+"Splatter","Splatter","398","872",122
+"Splatter","Splatter","428","1804",122
+"Inhibitory_interneuron","MGE interneuron","246","236",121
+"Miscellaneous","Miscellaneous","113","2545",121
+"Splatter","Splatter","340","1443",121
+"Splatter","Splatter","348","1610",121
+"Splatter","Splatter","370","1022",121
+"Splatter","Splatter","431","819",121
+"Excitatory_projection","Amygdala excitatory","407","1738",120
+"Excitatory_projection","Mammillary body","333","1285",120
+"Inhibitory_interneuron","Cerebellar inhibitory","298","127",120
+"Splatter","Splatter","390","1330",120
+"Splatter","Splatter","394","1525",120
+"Miscellaneous","Miscellaneous","114","2537",119
+"Splatter","Splatter","313","711",119
+"Splatter","Splatter","354","1376",119
+"Splatter","Splatter","380","961",119
+"Splatter","Splatter","382","1097",119
+"Splatter","Splatter","385","1125",119
+"Splatter","Splatter","389","1400",119
+"Splatter","Splatter","392","1703",119
+"Splatter","Splatter","399","880",119
+"Excitatory_projection","Deep-layer intratelencephalic","151","2652",118
+"Excitatory_projection","Mammillary body","323","1829",118
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1736",118
+"Splatter","Splatter","237","177",118
+"Splatter","Splatter","334","1579",118
+"Splatter","Splatter","363","1573",118
+"Splatter","Splatter","394","1518",118
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2913",117
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","473",117
+"Inhibitory_interneuron","MGE interneuron","247","241",117
+"Miscellaneous","Miscellaneous","114","2535",117
+"Splatter","Splatter","363","1461",117
+"Splatter","Splatter","380","904",117
+"Splatter","Splatter","420","1452",117
+"Inhibitory_interneuron","MGE interneuron","247","244",116
+"Splatter","Splatter","345","1589",116
+"Splatter","Splatter","375","1560",115
+"Splatter","Splatter","396","733",115
+"Splatter","Splatter","397","742",115
+"Inhibitory_interneuron","MGE interneuron","245","297",114
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","234","2166",114
+"Splatter","Splatter","349","912",114
+"Splatter","Splatter","358","1314",114
+"Splatter","Splatter","380","903",114
+"Splatter","Splatter","395","1875",114
+"Excitatory_projection","Thalamic excitatory","372","2698",113
+"Miscellaneous","Miscellaneous","114","2533",113
+"Splatter","Splatter","355","1373",113
+"Splatter","Splatter","381","1551",113
+"Splatter","Splatter","414","1170",113
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2177",112
+"Miscellaneous","Miscellaneous","114","2532",112
+"Miscellaneous","Miscellaneous","170","2433",112
+"Splatter","Splatter","353","1880",112
+"Splatter","Splatter","363","24",112
+"Splatter","Splatter","367","1009",112
+"Splatter","Splatter","395","1876",112
+"Splatter","Splatter","424","1768",112
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1727",111
+"Miscellaneous","Miscellaneous","177","2798",111
+"Splatter","Splatter","362","768",111
+"Splatter","Splatter","362","1339",111
+"Splatter","Splatter","392","772",111
+"Splatter","Splatter","392","1700",111
+"Excitatory_projection","Upper-layer intratelencephalic","128","2691",110
+"Splatter","Splatter","377","847",110
+"Splatter","Splatter","422","1496",110
+"Inhibitory_interneuron","Cerebellar inhibitory","300","139",109
+"Inhibitory_interneuron","Cerebellar inhibitory","300","142",109
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1735",109
+"Splatter","Splatter","369","1046",109
+"Splatter","Splatter","370","1029",109
+"Splatter","Splatter","421","1468",109
+"Splatter","Splatter","422","1490",109
+"Inhibitory_interneuron","Cerebellar inhibitory","299","132",108
+"Miscellaneous","Miscellaneous","114","2534",108
+"Splatter","Splatter","354","1382",108
+"Splatter","Splatter","367","995",108
+"Splatter","Splatter","381","916",108
+"Splatter","Splatter","381","1370",108
+"Splatter","Splatter","391","1567",108
+"Splatter","Splatter","398","1539",108
+"Excitatory_projection","Deep-layer near-projecting","83","2924",107
+"Inhibitory_interneuron","Cerebellar inhibitory","300","136",107
+"Splatter","Splatter","349","911",107
+"Splatter","Splatter","376","1439",107
+"Splatter","Splatter","395","1870",107
+"Splatter","Splatter","395","1871",107
+"Splatter","Splatter","397","729",107
+"Splatter","Splatter","420","1153",107
+"Excitatory_projection","Deep-layer near-projecting","83","2964",106
+"Inhibitory_interneuron","Cerebellar inhibitory","298","128",106
+"Splatter","Splatter","343","964",106
+"Splatter","Splatter","355","1911",106
+"Splatter","Splatter","360","1909",106
+"Excitatory_projection","Deep-layer near-projecting","95","2969",105
+"Excitatory_projection","Hippocampal CA1-3","163","2428",105
+"Splatter","Splatter","399","871",105
+"Splatter","Splatter","414","836",105
+"Excitatory_projection","Amygdala excitatory","171","2346",104
+"Inhibitory_interneuron","CGE interneuron","279","618",104
+"Miscellaneous","Miscellaneous","168","2330",104
+"Splatter","Splatter","360","1916",104
+"Splatter","Splatter","396","734",104
+"Splatter","Splatter","397","738",104
+"Splatter","Splatter","420","1451",104
+"Excitatory_projection","Deep-layer near-projecting","96","2934",103
+"Excitatory_projection","Hippocampal dentate gyrus","199","2217",103
+"Inhibitory_interneuron","MGE interneuron","243","300",103
+"Inhibitory_interneuron","MGE interneuron","245","187",103
+"Inhibitory_interneuron","Midbrain-derived inhibitory","433","651",103
+"Splatter","Splatter","361","1896",103
+"Splatter","Splatter","396","1278",103
+"Splatter","Splatter","403","1732",103
+"Splatter","Splatter","421","1783",103
+"Splatter","Splatter","422","1494",103
+"Excitatory_projection","Deep-layer near-projecting","88","2940",102
+"Excitatory_projection","Thalamic excitatory","372","988",102
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1725",102
+"Splatter","Splatter","394","1512",102
+"Splatter","Splatter","410","841",102
+"Splatter","Splatter","411","831",102
+"Splatter","Splatter","414","1175",102
+"Splatter","Splatter","423","1773",102
+"Excitatory_projection","Amygdala excitatory","405","1946",101
+"Excitatory_projection","Mammillary body","333","1284",101
+"Excitatory_projection","Thalamic excitatory","372","1070",101
+"Splatter","Splatter","414","1174",101
+"Excitatory_projection","Amygdala excitatory","407","1742",100
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2844",100
+"Splatter","Splatter","334","1583",100
+"Splatter","Splatter","347","1614",100
+"Splatter","Splatter","396","730",100
+"Splatter","Splatter","399","879",100
+"Excitatory_projection","Deep-layer corticothalamic and 6b","111","2909",99
+"Excitatory_projection","Deep-layer near-projecting","85","2931",99
+"Inhibitory_interneuron","Cerebellar inhibitory","304","152",99
+"Splatter","Splatter","387","1272",99
+"Splatter","Splatter","398","1535",99
+"Inhibitory_interneuron","CGE interneuron","276","630",98
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1731",98
+"Splatter","Splatter","355","1877",98
+"Splatter","Splatter","360","1915",98
+"Splatter","Splatter","361","1887",98
+"Splatter","Splatter","362","1368",98
+"Splatter","Splatter","362","1396",98
+"Splatter","Splatter","374","926",98
+"Splatter","Splatter","397","735",98
+"Splatter","Splatter","423","1466",98
+"Excitatory_projection","Deep-layer near-projecting","96","2965",97
+"Excitatory_projection","Mammillary body","333","1290",97
+"Splatter","Splatter","342","33",97
+"Splatter","Splatter","410","842",97
+"Excitatory_projection","Lower rhombic lip","322","782",96
+"Excitatory_projection","Thalamic excitatory","453","93",96
+"Splatter","Splatter","351","750",96
+"Splatter","Splatter","363","26",95
+"Splatter","Splatter","392","1702",95
+"Splatter","Splatter","394","1514",95
+"Splatter","Splatter","397","737",95
+"Splatter","Splatter","414","1173",95
+"Miscellaneous","Miscellaneous","170","2437",94
+"Splatter","Splatter","346","887",94
+"Splatter","Splatter","353","1881",94
+"Splatter","Splatter","361","1302",94
+"Splatter","Splatter","364","1057",94
+"Splatter","Splatter","380","1372",94
+"Excitatory_projection","Amygdala excitatory","173","2339",93
+"Excitatory_projection","Deep-layer intratelencephalic","137","2753",93
+"Excitatory_projection","Thalamic excitatory","372","1079",93
+"Splatter","Splatter","350","1660",93
+"Splatter","Splatter","354","1334",93
+"Splatter","Splatter","361","1886",93
+"Splatter","Splatter","394","1237",93
+"Splatter","Splatter","409","167",93
+"Splatter","Splatter","411","824",93
+"Inhibitory_interneuron","Cerebellar inhibitory","298","126",92
+"Splatter","Splatter","359","1922",92
+"Splatter","Splatter","366","1263",92
+"Splatter","Splatter","374","1292",92
+"Splatter","Splatter","381","1366",92
+"Splatter","Splatter","389","1341",92
+"Excitatory_projection","Thalamic excitatory","455","52",91
+"Splatter","Splatter","390","1407",91
+"Splatter","Splatter","396","1273",91
+"Splatter","Splatter","422","1715",91
+"Excitatory_projection","Amygdala excitatory","419","1672",90
+"Excitatory_projection","Deep-layer intratelencephalic","141","2703",90
+"Excitatory_projection","Hippocampal CA1-3","184","2271",90
+"Excitatory_projection","Hippocampal dentate gyrus","202","2205",90
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","227","2015",90
+"Miscellaneous","Miscellaneous","165","2365",90
+"Splatter","Splatter","338","37",90
+"Splatter","Splatter","339","39",90
+"Splatter","Splatter","358","1297",90
+"Excitatory_projection","Deep-layer corticothalamic and 6b","103","2837",89
+"Excitatory_projection","Hippocampal CA1-3","189","2320",89
+"Inhibitory_interneuron","MGE interneuron","254","204",89
+"Splatter","Splatter","340","1053",89
+"Splatter","Splatter","360","1908",89
+"Splatter","Splatter","361","1897",89
+"Splatter","Splatter","389","1398",89
+"Splatter","Splatter","411","827",89
+"Splatter","Splatter","420","1674",89
+"Excitatory_projection","Thalamic excitatory","455","50",88
+"Splatter","Splatter","347","1611",88
+"Splatter","Splatter","366","1362",88
+"Splatter","Splatter","377","1456",88
+"Splatter","Splatter","382","1099",88
+"Splatter","Splatter","395","1873",88
+"Splatter","Splatter","416","1169",88
+"Excitatory_projection","Upper rhombic lip","309","8",87
+"Splatter","Splatter","336","34",87
+"Splatter","Splatter","340","1052",87
+"Splatter","Splatter","356","1335",87
+"Splatter","Splatter","367","999",87
+"Splatter","Splatter","377","850",87
+"Splatter","Splatter","394","1524",87
+"Splatter","Splatter","395","1872",87
+"Splatter","Splatter","398","1534",87
+"Splatter","Splatter","354","1378",86
+"Splatter","Splatter","375","1556",86
+"Splatter","Splatter","385","1120",86
+"Splatter","Splatter","387","966",86
+"Splatter","Splatter","396","1276",86
+"Splatter","Splatter","397","736",86
+"Splatter","Splatter","410","837",86
+"Excitatory_projection","Thalamic excitatory","372","1072",85
+"Miscellaneous","Miscellaneous","170","2435",85
+"Miscellaneous","Miscellaneous","176","2805",85
+"Splatter","Splatter","235","196",85
+"Splatter","Splatter","369","1036",85
+"Splatter","Splatter","374","1435",85
+"Splatter","Splatter","390","1408",85
+"Splatter","Splatter","424","1758",85
+"Splatter","Splatter","336","1863",84
+"Splatter","Splatter","410","834",84
+"Splatter","Splatter","431","814",84
+"Excitatory_projection","Deep-layer near-projecting","94","2952",83
+"Excitatory_projection","Hippocampal CA1-3","189","2318",83
+"Splatter","Splatter","356","1336",83
+"Splatter","Splatter","376","1222",83
+"Splatter","Splatter","420","1449",83
+"Splatter","Splatter","423","1781",83
+"Excitatory_projection","Deep-layer intratelencephalic","148","2699",82
+"Inhibitory_interneuron","Cerebellar inhibitory","300","140",82
+"Miscellaneous","Miscellaneous","117","2520",82
+"Splatter","Splatter","344","963",82
+"Splatter","Splatter","378","1510",82
+"Splatter","Splatter","396","732",82
+"Splatter","Splatter","398","1544",82
+"Excitatory_projection","Hippocampal CA1-3","186","2549",81
+"Inhibitory_interneuron","MGE interneuron","244","291",81
+"Splatter","Splatter","238","174",81
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2891",80
+"Excitatory_projection","Mammillary body","323","1830",80
+"Excitatory_projection","Thalamic excitatory","455","54",80
+"Excitatory_projection","Thalamic excitatory","457","61",80
+"Miscellaneous","Miscellaneous","168","2328",80
+"Splatter","Splatter","340","1530",80
+"Splatter","Splatter","361","1890",80
+"Splatter","Splatter","387","969",80
+"Excitatory_projection","Hippocampal CA1-3","163","2439",79
+"Excitatory_projection","Upper rhombic lip","308","5",79
+"Splatter","Splatter","354","774",79
+"Splatter","Splatter","354","1377",79
+"Splatter","Splatter","370","1027",79
+"Splatter","Splatter","389","1403",79
+"Splatter","Splatter","409","163",79
+"Splatter","Splatter","421","1717",79
+"Inhibitory_interneuron","CGE interneuron","276","627",78
+"Miscellaneous","Miscellaneous","132","2787",78
+"Splatter","Splatter","338","36",78
+"Splatter","Splatter","346","884",78
+"Splatter","Splatter","360","1912",78
+"Splatter","Splatter","369","1038",78
+"Splatter","Splatter","382","1101",78
+"Splatter","Splatter","424","1757",78
+"Excitatory_projection","Deep-layer intratelencephalic","136","2744",77
+"Excitatory_projection","Hippocampal CA4","198","2225",77
+"Inhibitory_interneuron","CGE interneuron","276","479",77
+"Inhibitory_interneuron","MGE interneuron","245","295",77
+"Splatter","Splatter","356","1337",77
+"Splatter","Splatter","389","1397",77
+"Excitatory_projection","Amygdala excitatory","171","2345",76
+"Excitatory_projection","Amygdala excitatory","419","1667",76
+"Excitatory_projection","Amygdala excitatory","419","2415",76
+"Excitatory_projection","Hippocampal CA4","190","2255",76
+"Inhibitory_interneuron","CGE interneuron","278","644",76
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2106",76
+"Splatter","Splatter","348","1623",76
+"Splatter","Splatter","354","1381",76
+"Splatter","Splatter","378","854",76
+"Splatter","Splatter","378","1509",76
+"Splatter","Splatter","382","1100",76
+"Splatter","Splatter","399","877",76
+"Excitatory_projection","Deep-layer near-projecting","83","2925",75
+"Excitatory_projection","Deep-layer near-projecting","85","2928",75
+"Miscellaneous","Miscellaneous","164","2367",75
+"Splatter","Splatter","339","766",75
+"Splatter","Splatter","346","888",75
+"Splatter","Splatter","378","931",75
+"Splatter","Splatter","392","1696",75
+"Splatter","Splatter","398","1540",75
+"Splatter","Splatter","421","1471",75
+"Excitatory_projection","Hippocampal CA4","191","2228",74
+"Excitatory_projection","Lower rhombic lip","322","779",74
+"Splatter","Splatter","340","1444",74
+"Splatter","Splatter","353","1884",74
+"Splatter","Splatter","381","918",74
+"Splatter","Splatter","381","1547",74
+"Splatter","Splatter","391","1569",74
+"Splatter","Splatter","400","1638",74
+"Splatter","Splatter","403","1971",74
+"Excitatory_projection","Deep-layer corticothalamic and 6b","100","2511",73
+"Splatter","Splatter","339","763",73
+"Splatter","Splatter","349","1626",73
+"Splatter","Splatter","350","1651",73
+"Splatter","Splatter","351","752",73
+"Splatter","Splatter","397","727",73
+"Excitatory_projection","Amygdala excitatory","419","1663",72
+"Excitatory_projection","Hippocampal CA1-3","163","2431",72
+"Inhibitory_interneuron","CGE interneuron","285","600",72
+"Inhibitory_interneuron","Cerebellar inhibitory","299","135",72
+"Splatter","Splatter","357","1325",72
+"Splatter","Splatter","373","978",72
+"Splatter","Splatter","380","907",72
+"Splatter","Splatter","400","1636",72
+"Excitatory_projection","Amygdala excitatory","153","2464",71
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2880",70
+"Excitatory_projection","Deep-layer near-projecting","88","2987",70
+"Excitatory_projection","Upper-layer intratelencephalic","120","2552",70
+"Inhibitory_interneuron","MGE interneuron","246","239",70
+"Splatter","Splatter","374","924",70
+"Splatter","Splatter","397","741",70
+"Excitatory_projection","Amygdala excitatory","173","2340",69
+"Excitatory_projection","Deep-layer corticothalamic and 6b","84","2914",69
+"Excitatory_projection","Deep-layer corticothalamic and 6b","105","2832",69
+"Excitatory_projection","Deep-layer near-projecting","90","2945",69
+"Miscellaneous","Miscellaneous","118","2517",69
+"Splatter","Splatter","340","1051",69
+"Splatter","Splatter","394","1527",69
+"Splatter","Splatter","397","743",69
+"Excitatory_projection","Hippocampal CA1-3","163","2430",68
+"Splatter","Splatter","399","875",68
+"Splatter","Splatter","410","838",68
+"Excitatory_projection","Deep-layer intratelencephalic","143","2720",67
+"Excitatory_projection","Thalamic excitatory","372","1075",67
+"Excitatory_projection","Thalamic excitatory","455","48",67
+"Splatter","Splatter","367","997",67
+"Splatter","Splatter","378","853",67
+"Splatter","Splatter","394","1526",67
+"Splatter","Splatter","400","1634",67
+"Excitatory_projection","Hippocampal CA4","191","2229",66
+"Excitatory_projection","Mammillary body","331","1154",66
+"Excitatory_projection","Thalamic excitatory","455","51",66
+"Excitatory_projection","Thalamic excitatory","457","60",66
+"Excitatory_projection","Upper rhombic lip","309","6",66
+"Inhibitory_interneuron","CGE interneuron","287","435",66
+"Inhibitory_interneuron","Cerebellar inhibitory","301","129",66
+"Inhibitory_interneuron","Cerebellar inhibitory","305","156",66
+"Splatter","Splatter","389","1399",66
+"Splatter","Splatter","411","823",66
+"Splatter","Splatter","423","1777",66
+"Excitatory_projection","Mammillary body","330","1840",65
+"Splatter","Splatter","361","1303",65
+"Splatter","Splatter","376","1454",65
+"Excitatory_projection","Hippocampal CA1-3","115","2539",64
+"Miscellaneous","Miscellaneous","113","2550",64
+"Miscellaneous","Miscellaneous","117","2518",64
+"Splatter","Splatter","339","764",64
+"Splatter","Splatter","361","1895",64
+"Splatter","Splatter","386","934",64
+"Splatter","Splatter","393","753",64
+"Excitatory_projection","Thalamic excitatory","372","989",63
+"Splatter","Splatter","373","1185",63
+"Splatter","Splatter","421","1467",63
+"Splatter","Splatter","423","1737",63
+"Excitatory_projection","Amygdala excitatory","172","2353",62
+"Excitatory_projection","Deep-layer corticothalamic and 6b","98","2831",62
+"Excitatory_projection","Hippocampal CA4","198","2227",62
+"Excitatory_projection","Lower rhombic lip","322","781",62
+"Excitatory_projection","Mammillary body","331","1155",62
+"Miscellaneous","Miscellaneous","166","2357",62
+"Splatter","Splatter","366","1095",62
+"Splatter","Splatter","421","1474",62
+"Excitatory_projection","Thalamic excitatory","448","111",61
+"Inhibitory_projection_MSN","Medium spiny neuron","430","2183",61
+"Splatter","Splatter","379","949",61
+"Splatter","Splatter","391","1570",61
+"Splatter","Splatter","394","1516",61
+"Splatter","Splatter","339","973",60
+"Splatter","Splatter","354","1375",60
+"Splatter","Splatter","362","1552",60
+"Splatter","Splatter","373","990",60
+"Excitatory_projection","Deep-layer near-projecting","85","2929",59
+"Excitatory_projection","Deep-layer near-projecting","86","2990",59
+"Excitatory_projection","Hippocampal CA4","198","2224",59
+"Splatter","Splatter","313","713",59
+"Splatter","Splatter","313","714",59
+"Splatter","Splatter","351","747",59
+"Splatter","Splatter","379","950",59
+"Splatter","Splatter","383","1116",59
+"Splatter","Splatter","389","1402",59
+"Splatter","Splatter","347","1612",58
+"Splatter","Splatter","394","1528",58
+"Splatter","Splatter","398","1546",58
+"Splatter","Splatter","399","876",58
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","270","439",57
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","227","2013",57
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2102",57
+"Splatter","Splatter","344","878",57
+"Splatter","Splatter","390","1409",57
+"Splatter","Splatter","414","1171",57
+"Excitatory_projection","Amygdala excitatory","419","1675",56
+"Excitatory_projection","Deep-layer intratelencephalic","147","2700",56
+"Excitatory_projection","Hippocampal CA1-3","163","2427",56
+"Excitatory_projection","Thalamic excitatory","457","57",56
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2107",56
+"Splatter","Splatter","348","1655",56
+"Splatter","Splatter","351","749",56
+"Splatter","Splatter","360","1913",56
+"Splatter","Splatter","420","1447",56
+"Inhibitory_interneuron","Cerebellar inhibitory","299","131",55
+"Miscellaneous","Miscellaneous","168","2327",55
+"Splatter","Splatter","348","1618",55
+"Excitatory_projection","Amygdala excitatory","175","2337",54
+"Splatter","Splatter","353","1883",54
+"Splatter","Splatter","387","894",54
+"Splatter","Splatter","402","2188",54
+"Excitatory_projection","Amygdala excitatory","407","940",53
+"Excitatory_projection","Thalamic excitatory","452","109",53
+"Splatter","Splatter","353","1882",53
+"Splatter","Splatter","389","1340",53
+"Splatter","Splatter","394","1014",53
+"Excitatory_projection","Deep-layer corticothalamic and 6b","110","2903",52
+"Excitatory_projection","Thalamic excitatory","455","49",52
+"Miscellaneous","Miscellaneous","170","2434",52
+"Splatter","Splatter","350","1654",52
+"Splatter","Splatter","354","1379",52
+"Splatter","Splatter","394","1571",52
+"Splatter","Splatter","420","1446",52
+"Excitatory_projection","Amygdala excitatory","407","1049",51
+"Excitatory_projection","Deep-layer corticothalamic and 6b","107","2881",51
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2105",51
+"Splatter","Splatter","339","765",51
+"Splatter","Splatter","376","1463",51
+"Splatter","Splatter","387","945",51
+"Splatter","Splatter","394","1519",51
+"Splatter","Splatter","398","1538",51
+"Splatter","Splatter","417","855",51
+"Splatter","Splatter","421","1782",51
+"Excitatory_projection","Thalamic excitatory","457","58",50
+"Splatter","Splatter","356","1349",50
+"Splatter","Splatter","361","1888",50
+"Excitatory_projection","Hippocampal CA1-3","163","2429",49
+"Splatter","Splatter","388","975",49
+"Splatter","Splatter","391","1689",49
+"Splatter","Splatter","396","962",49
+"Splatter","Splatter","416","1819",49
+"Excitatory_projection","Hippocampal CA4","191","2256",48
+"Excitatory_projection","Hippocampal dentate gyrus","202","2204",48
+"Excitatory_projection","Lower rhombic lip","315","784",48
+"Splatter","Splatter","373","1521",48
+"Splatter","Splatter","378","929",48
+"Excitatory_projection","Mammillary body","331","1156",47
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","227","2012",47
+"Splatter","Splatter","338","35",47
+"Splatter","Splatter","397","740",47
+"Inhibitory_interneuron","LAMP5-LHX6 and Chandelier","267","475",46
+"Miscellaneous","Miscellaneous","165","2359",46
+"Splatter","Splatter","346","889",46
+"Splatter","Splatter","374","1293",46
+"Splatter","Splatter","394","1513",46
+"Splatter","Splatter","403","1961",46
+"Splatter","Splatter","378","930",45
+"Splatter","Splatter","399","882",45
+"Splatter","Splatter","414","1180",45
+"Excitatory_projection","Hippocampal CA1-3","189","2317",44
+"Excitatory_projection","Thalamic excitatory","457","59",44
+"Inhibitory_interneuron","Cerebellar inhibitory","299","134",44
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1721",44
+"Splatter","Splatter","421","1716",44
+"Excitatory_projection","Hippocampal CA1-3","163","2440",43
+"Inhibitory_interneuron","MGE interneuron","245","190",43
+"Excitatory_projection","Amygdala excitatory","173","2341",42
+"Excitatory_projection","Hippocampal CA1-3","115","2541",42
+"Excitatory_projection","Lower rhombic lip","322","778",42
+"Miscellaneous","Miscellaneous","314","21",42
+"Splatter","Splatter","357","1295",42
+"Splatter","Splatter","382","1096",42
+"Splatter","Splatter","392","1639",42
+"Splatter","Splatter","414","1172",42
+"Splatter","Splatter","376","1434",41
+"Splatter","Splatter","394","1511",41
+"Miscellaneous","Miscellaneous","118","2516",40
+"Miscellaneous","Miscellaneous","176","2807",40
+"Splatter","Splatter","342","32",40
+"Splatter","Splatter","377","1457",40
+"Splatter","Splatter","388","977",40
+"Splatter","Splatter","376","1531",39
+"Splatter","Splatter","428","597",39
+"Excitatory_projection","Deep-layer intratelencephalic","136","2745",38
+"Excitatory_projection","Deep-layer intratelencephalic","145","2375",38
+"Inhibitory_interneuron","Cerebellar inhibitory","301","162",38
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","229","2138",38
+"Splatter","Splatter","336","1868",38
+"Splatter","Splatter","386","935",38
+"Excitatory_projection","Deep-layer intratelencephalic","136","2743",37
+"Excitatory_projection","Mammillary body","327","1858",37
+"Splatter","Splatter","342","30",37
+"Splatter","Splatter","388","1092",37
+"Splatter","Splatter","339","972",36
+"Splatter","Splatter","346","885",36
+"Splatter","Splatter","387","890",36
+"Splatter","Splatter","388","976",36
+"Splatter","Splatter","398","965",36
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","426","1722",35
+"Splatter","Splatter","355","1296",35
+"Splatter","Splatter","385","1523",35
+"Splatter","Splatter","386","932",35
+"Splatter","Splatter","388","974",35
+"Splatter","Splatter","432","719",35
+"Excitatory_projection","Hippocampal CA1-3","115","2538",34
+"Excitatory_projection","Upper rhombic lip","297","0",34
+"Inhibitory_interneuron","CGE interneuron","276","623",34
+"Splatter","Splatter","344","939",33
+"Excitatory_projection","Deep-layer corticothalamic and 6b","103","2834",32
+"Excitatory_projection","Thalamic excitatory","458","75",32
+"Inhibitory_interneuron","Cerebellar inhibitory","301","161",32
+"Splatter","Splatter","402","2195",32
+"Miscellaneous","Miscellaneous","170","2436",31
+"Splatter","Splatter","360","1906",31
+"Excitatory_projection","Amygdala excitatory","160","2386",30
+"Excitatory_projection","Lower rhombic lip","321","811",30
+"Excitatory_projection","Thalamic excitatory","455","53",30
+"Splatter","Splatter","376","1291",30
+"Splatter","Splatter","377","1445",30
+"Splatter","Splatter","386","933",30
+"Excitatory_projection","Amygdala excitatory","173","2338",29
+"Excitatory_projection","Mammillary body","333","1286",29
+"Inhibitory_projection_MSN","Medium spiny neuron","220","2104",29
+"Splatter","Splatter","369","1034",29
+"Splatter","Splatter","374","920",29
+"Splatter","Splatter","384","1059",29
+"Splatter","Splatter","420","1152",29
+"Excitatory_projection","Mammillary body","323","1825",28
+"Excitatory_projection","Amygdala excitatory","171","2348",27
+"Inhibitory_interneuron","MGE interneuron","255","365",27
+"Inhibitory_projection_MSN","Eccentric medium spiny neuron","224","1972",27
+"Splatter","Splatter","340","1529",27
+"Splatter","Splatter","382","1098",27
+"Excitatory_projection","Hippocampal dentate gyrus","203","2515",25
+"Splatter","Splatter","339","767",25
+"Splatter","Splatter","378","845",24
+"Excitatory_projection","Deep-layer intratelencephalic","146","2510",23
+"Splatter","Splatter","349","870",22
+"Miscellaneous","Miscellaneous","176","2808",21
+"Splatter","Splatter","400","1640",21
+"Excitatory_projection","Amygdala excitatory","408","717",20
+"Excitatory_projection","Hippocampal CA1-3","163","2426",20
+"Excitatory_projection","Thalamic excitatory","450","101",20
+"Splatter","Splatter","397","1437",20
+"Excitatory_projection","Amygdala excitatory","408","716",19
+"Excitatory_projection","Deep-layer corticothalamic and 6b","102","2833",18
+"Splatter","Splatter","336","1865",17
+"Inhibitory_interneuron","CGE interneuron","295","491",16
+"Splatter","Splatter","339","40",15
+"Inhibitory_interneuron","Cerebellar inhibitory","300","143",10
+"Inhibitory_interneuron","CGE interneuron","277","645",9
+"Splatter","Splatter","313","710",7
+"Excitatory_projection","Amygdala excitatory","408","715",4
+"Excitatory_projection","Amygdala excitatory","408","718",2
