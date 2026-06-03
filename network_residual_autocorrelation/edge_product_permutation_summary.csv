@@ -1,0 +1,2 @@
+statistic,observed,expected_perm,sd_perm,p_greater,p_less,p_two_centered
+mean standardized residual product across primary edges,0.41681824012279295,-0.08023103060521855,0.22023162492646897,0.0211,0.979,0.0236
