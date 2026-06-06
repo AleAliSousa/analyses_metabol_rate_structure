@@ -1,0 +1,14 @@
+raw_column,Structure,N_present,N_missing,pct_missing,Strepsirrhini,Tarsiiformes,Platyrrhini,Cercopithecoidea,Hominoidea
+LGN_Sousa,Corpus geniculatum laterale,49,10,16.9,17,1,12,12,7
+Amygdala,Amygdala,18,41,69.5,8,1,5,2,2
+Pallidum,Pallidum,27,32,54.2,10,1,6,5,5
+NeoW_Frahm,Neocortex white,24,35,59.3,9,1,7,3,4
+Total_insula_volume_L,Insular cortex (grey),30,29,49.2,6,0,8,7,9
+Nucleus_subthalamicus,Nucleus subthalamicus Luysi,26,33,55.9,10,1,6,5,4
+Capsula_interna,Capsula interna,26,33,55.9,10,1,6,5,4
+Striatum,Striatum,46,13,22.0,17,1,12,10,5
+ASG_Sousa,Area striata grey,45,14,23.7,17,1,12,8,7
+NeoG_Frahm,Neocortex grey,24,35,59.3,9,1,7,3,4
+Mesencephalon,Mesencephalon,46,13,22.0,17,1,12,10,5
+Cerebellum,Cerebellum,46,13,22.0,17,1,12,10,5
+Hippocampus,Hippocampus,46,13,22.0,17,1,12,10,5

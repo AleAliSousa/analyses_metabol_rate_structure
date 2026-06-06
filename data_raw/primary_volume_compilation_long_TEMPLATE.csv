@@ -1,0 +1,9 @@
+species,heiss_region,structure_measured,hemisphere,value_mm3,value_sd,n_individuals,measurement_type,data_type,source_short,source_doi_pmid,specimen_collection,same_specimens_as_stephan,table_ref,notes
+Homo_sapiens,Temporal lobe,temporal lobe (total),both,,,,MRI,primary,Semendeferi & Damasio 2000,,Zilles collection,yes,TBD Semendeferi 2000,TEMPLATE ROW - expand to all species reported in source
+Pan_troglodytes,Parietal lobe,parietal lobe (total),both,,,,MRI,primary,Semendeferi et al. 2001/2002,,Zilles collection,yes,TBD,TEMPLATE ROW - verify species list + table
+Homo_sapiens,Vermis,cerebellar vermis,both,,,,MRI+histology,primary,MacLeod et al. 2003,PMID:12727461,Dusseldorf+Yerkes,partly,TBD MacLeod 2003,TEMPLATE ROW - primary vermis volume (replaces proportion-derived)
+Gorilla_gorilla,Cerebellar cortex,cerebellar hemispheres (lateral),both,,,,MRI+histology,primary,MacLeod et al. 2003,PMID:12727461,Dusseldorf+Yerkes,partly,TBD MacLeod 2003,TEMPLATE ROW
+Pan_troglodytes,Corpus amygdaloideum,amygdala (whole),both,,,,stereology,primary,Barger et al. 2007,,ape-aging/comparative,no,TBD Barger 2007,TEMPLATE ROW - species-mean merge (separate brains)
+Homo_sapiens,Corpus amygdaloideum,lateral nucleus,both,,,,stereology,primary,Barger et al. 2012,doi:10.1002/cne.23118,ape-aging/comparative,no,TBD Barger 2012,TEMPLATE ROW - subnucleus; species-mean merge
+Hylobates_lar,Frontal lobe,prefrontal grey,both,,,,histology,primary,Smaers et al. 2017,PMID:28162899,Dusseldorf C&O Vogt,yes,already in Stephan_primates.csv,CROSS-CHECK vs existing Prefrontal.Gray column
+Homo_sapiens,Frontal lobe,frontal motor grey,both,,,,histology,primary,Smaers et al. 2017,PMID:28162899,Dusseldorf C&O Vogt,yes,already in Stephan_primates.csv,CROSS-CHECK vs existing Frontal.motor.Gray column

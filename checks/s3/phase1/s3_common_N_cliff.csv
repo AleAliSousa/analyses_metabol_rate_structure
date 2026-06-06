@@ -1,0 +1,14 @@
+step,region_added,region_N,cumulative_common_N,common_species_clades
+1,Corpus geniculatum laterale,49,49,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:12;Hominoidea:7
+2,Striatum,46,45,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:10;Hominoidea:5
+3,Mesencephalon,46,45,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:10;Hominoidea:5
+4,Cerebellum,46,45,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:10;Hominoidea:5
+5,Hippocampus,46,45,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:10;Hominoidea:5
+6,Area striata grey,45,42,Strepsirrhini:17;Tarsiiformes:1;Platyrrhini:12;Cercopithecoidea:7;Hominoidea:5
+7,Insular cortex (grey),30,18,Strepsirrhini:6;Platyrrhini:4;Cercopithecoidea:3;Hominoidea:5
+8,Pallidum,27,15,Strepsirrhini:4;Platyrrhini:4;Cercopithecoidea:2;Hominoidea:5
+9,Nucleus subthalamicus Luysi,26,14,Strepsirrhini:4;Platyrrhini:4;Cercopithecoidea:2;Hominoidea:4
+10,Capsula interna,26,14,Strepsirrhini:4;Platyrrhini:4;Cercopithecoidea:2;Hominoidea:4
+11,Neocortex white,24,7,Strepsirrhini:1;Platyrrhini:2;Cercopithecoidea:1;Hominoidea:3
+12,Neocortex grey,24,7,Strepsirrhini:1;Platyrrhini:2;Cercopithecoidea:1;Hominoidea:3
+13,Amygdala,18,4,Strepsirrhini:1;Platyrrhini:1;Cercopithecoidea:1;Hominoidea:1

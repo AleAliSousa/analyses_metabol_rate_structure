@@ -19,7 +19,9 @@ tr <- read.tree("data_raw/species.nwk")
 Stephan_primates <- read.csv("data_raw/Stephan_primates.csv")
 
 # --- Clean columns
-data_clean <- subset(Stephan_primates, select = -c(X, order))
+# ('X' was an empty trailing column from an older CSV export; it has since been
+#  removed from data_raw/Stephan_primates.csv, so drop it only if still present.)
+data_clean <- Stephan_primates[, !names(Stephan_primates) %in% c("X", "order")]
 
 #  --- Create a unified “preferred brain volume” column
 data <- data_clean %>%
