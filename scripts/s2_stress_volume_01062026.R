@@ -4,6 +4,12 @@ setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions i
 library(tidyverse)  # loads ggplot2, dplyr, tidyr, etc.
 library(ggpmisc)    # for stat_poly_eq
 
+# Shared region colours/order (same palette as Study 1 figures).
+source("R/plot_settings.R")
+
+# Ensure the output folder exists so ggsave() does not error on a fresh checkout.
+if (!dir.exists("figs/s2")) dir.create("figs/s2", recursive = TRUE)
+
 ## ================================
 ## Volume Change vs rCMRGlc
 ## ================================
@@ -39,6 +45,8 @@ names(data) <- c(
 # Tidy region labels for display
 data$anatomy_group <- gsub("Accumbens", "Nucleus accumbens", data$anatomy_group)
 data$anatomy_group <- gsub("_", " ", data$anatomy_group)
+# Map onto the shared region palette keys (same colour per region across studies)
+data$anatomy_group <- canonical_region(data$anatomy_group)
 
 ## ----------------
 ## Reshape for plotting
@@ -62,15 +70,8 @@ plot_df <- data %>%
 ## ----------------
 ## Color palette
 ## ----------------
-
-regions <- sort(unique(plot_df$anatomy_group))
-base_cols <- c(
-  "#000000", "#E69F00", "#56B4E9", "#009E73",
-  "#F0E442", "#0072B2", "#D55E00", "#CC79A7"
-)
-
-pal <- grDevices::colorRampPalette(base_cols)(length(regions))
-names(pal) <- regions
+# Use the shared region palette so each region matches its colour in other
+# studies' figures (see check on the filtered data below).
 
 ## ----------------
 ## Plot
@@ -84,6 +85,9 @@ plot_df_clean <- plot_df %>%
     !is.na(volume_change)
   ) %>%
   droplevels()
+
+# Stop early if a plotted region label is not in the shared palette.
+check_region_palette(plot_df_clean, region_col = "anatomy_group")
 
 p1 <- ggplot(plot_df_clean, aes(x = rcmr_value, y = volume_change, color = anatomy_group)) +
   geom_point(size = 2.8, alpha = 0.85) +
@@ -103,7 +107,7 @@ p1 <- ggplot(plot_df_clean, aes(x = rcmr_value, y = volume_change, color = anato
     color = "black"
   ) +
   facet_wrap(~ group, scales = "free_y") +
-  scale_color_manual(values = pal) +
+  scale_color_manual(values = region_palette, drop = TRUE) +
   labs(
     x = "rCMRGlc (µmol / 100 g / min)",
     y = "% Volume change (Normative - Adoptee Group)",

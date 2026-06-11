@@ -19,11 +19,11 @@ out_dir <- "output/anatomy_rule_audit"
 ############################
 ## Load saved obs metadata
 ############################
-obs1 <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds") %>%
+obs1 <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds") %>%
   as_tibble() %>%
   mutate(obs_dataset = "nonneuronal")
 
-obs2 <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds") %>%
+obs2 <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds") %>%
   as_tibble() %>%
   mutate(obs_dataset = "neuronal")
 

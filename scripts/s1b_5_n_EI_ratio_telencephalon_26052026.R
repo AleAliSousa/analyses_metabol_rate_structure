@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
@@ -15,7 +15,7 @@ if (!dir.exists("figs")) dir.create("figs", recursive = TRUE)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 # filter to neurons only
 obs <- obs %>%
@@ -28,7 +28,7 @@ obs <- obs %>%
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 rcmr <- heiss_stephan_tbl %>%
   transmute(
@@ -46,7 +46,7 @@ rcmr <- heiss_stephan_tbl %>%
 # Anatomical grouping of rois
 #####################################
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   dplyr::transmute(
@@ -93,7 +93,7 @@ print(telencephalon_table, n = Inf)
 
 write.csv(
   telencephalon_table,
-  "data/telencephalon_classification_neuronal.csv",
+  "data_analysis/telencephalon_classification_neuronal.csv",
   row.names = FALSE
 )
 
@@ -216,7 +216,7 @@ print(
 
 write.csv(
   analysis_df,
-  "data/neuronal_EI_ratio_by_region_with_rcmr_telencephalon_split.csv",
+  "data_analysis/neuronal_EI_ratio_by_region_with_rcmr_telencephalon_split.csv",
   row.names = FALSE
 )
 
@@ -319,11 +319,11 @@ make_plot_subset <- function(df, label, file_slug, variable = "EI_ratio") {
   print(p)
 
   ggsave(
-    filename = paste0("figs/p_neuronal_EI_ratio_", file_slug, ".pdf"),
+    filename = paste0("figs/s1b/p_neuronal_EI_ratio_", file_slug, ".pdf"),
     plot = p, width = 8, height = 7, units = "in"
   )
   ggsave(
-    filename = paste0("figs/p_neuronal_EI_ratio_", file_slug, ".jpg"),
+    filename = paste0("figs/s1b/p_neuronal_EI_ratio_", file_slug, ".jpg"),
     plot = p, width = 8, height = 7, units = "in", dpi = 300
   )
   invisible(p)
@@ -351,7 +351,7 @@ print(cor_combined)
 
 write.csv(
   cor_combined,
-  "data/spearman_correlations_rcmr_neuronal_EI_ratio_telencephalon_split.csv",
+  "data_analysis/spearman_correlations_rcmr_neuronal_EI_ratio_telencephalon_split.csv",
   row.names = FALSE
 )
 
@@ -407,11 +407,11 @@ if (nrow(plot_df_all) < 4 || dplyr::n_distinct(plot_df_all$EI_ratio) < 2) {
   print(p_combined)
 
   ggsave(
-    filename = "figs/p_neuronal_EI_ratio_by_telencephalon.pdf",
+    filename = "figs/s1b/p_neuronal_EI_ratio_by_telencephalon.pdf",
     plot = p_combined, width = 9, height = 9, units = "in"
   )
   ggsave(
-    filename = "figs/p_neuronal_EI_ratio_by_telencephalon.jpg",
+    filename = "figs/s1b/p_neuronal_EI_ratio_by_telencephalon.jpg",
     plot = p_combined, width = 9, height = 9, units = "in", dpi = 300
   )
 
@@ -446,21 +446,21 @@ if (nrow(plot_df_all) < 4 || dplyr::n_distinct(plot_df_all$EI_ratio) < 2) {
   print(p_overlay)
 
   ggsave(
-    filename = "figs/p_neuronal_EI_ratio_overlay_telencephalon.pdf",
+    filename = "figs/s1b/p_neuronal_EI_ratio_overlay_telencephalon.pdf",
     plot = p_overlay, width = 8, height = 7, units = "in"
   )
   ggsave(
-    filename = "figs/p_neuronal_EI_ratio_overlay_telencephalon.jpg",
+    filename = "figs/s1b/p_neuronal_EI_ratio_overlay_telencephalon.jpg",
     plot = p_overlay, width = 8, height = 7, units = "in", dpi = 300
   )
 }
 
 cat("\nDone. Outputs:\n")
-cat("  data/telencephalon_classification_neuronal.csv\n")
-cat("  data/neuronal_EI_ratio_by_region_with_rcmr_telencephalon_split.csv\n")
-cat("  data/spearman_correlations_rcmr_neuronal_EI_ratio_telencephalon_split.csv\n")
-cat("  figs/p_neuronal_EI_ratio_telencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_EI_ratio_nontelencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_EI_ratio_all_regions.{pdf,jpg}\n")
-cat("  figs/p_neuronal_EI_ratio_by_telencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_EI_ratio_overlay_telencephalon.{pdf,jpg}\n")
+cat("  data_analysis/telencephalon_classification_neuronal.csv\n")
+cat("  data_analysis/neuronal_EI_ratio_by_region_with_rcmr_telencephalon_split.csv\n")
+cat("  data_analysis/spearman_correlations_rcmr_neuronal_EI_ratio_telencephalon_split.csv\n")
+cat("  figs/s1b/p_neuronal_EI_ratio_telencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_neuronal_EI_ratio_nontelencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_neuronal_EI_ratio_all_regions.{pdf,jpg}\n")
+cat("  figs/s1b/p_neuronal_EI_ratio_by_telencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_neuronal_EI_ratio_overlay_telencephalon.{pdf,jpg}\n")

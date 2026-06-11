@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 library(readxl)
 library(tidyverse)
@@ -8,7 +8,7 @@ library(tidyverse)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 # neurons only
 obs <- obs %>%
@@ -22,7 +22,7 @@ obs <- obs %>%
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 rcmr <- heiss_stephan_tbl %>%
   transmute(
@@ -40,7 +40,7 @@ rcmr <- heiss_stephan_tbl %>%
 # Anatomical grouping of ROIs
 #####################################
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   transmute(
@@ -84,7 +84,7 @@ telencephalon_table <- obs %>%
 
 write.csv(
   telencephalon_table,
-  "data/telencephalon_classification_neuronal.csv",
+  "data_analysis/telencephalon_classification_neuronal.csv",
   row.names = FALSE
 )
 
@@ -153,7 +153,7 @@ print(
 
 write.csv(
   analysis_df,
-  "data/supercluster_proportions_by_region_with_rcmr_telencephalon_split.csv",
+  "data_analysis/supercluster_proportions_by_region_with_rcmr_telencephalon_split.csv",
   row.names = FALSE
 )
 
@@ -265,13 +265,13 @@ cor_matrix_full <- cor_long %>%
   ) %>%
   arrange(supercluster_term)
 
-write.csv(cor_long, "data/spearman_correlations_rcmr_by_supercluster_term_long.csv", row.names = FALSE)
-write.csv(rho_matrix, "data/spearman_rho_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
-write.csv(p_matrix, "data/spearman_pvalue_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
-write.csv(padj_matrix, "data/spearman_BH_padj_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
-write.csv(n_regions_matrix, "data/n_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
-write.csv(n_nonzero_regions_matrix, "data/n_nonzero_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
-write.csv(cor_matrix_full, "data/spearman_correlation_full_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(cor_long, "data_analysis/spearman_correlations_rcmr_by_supercluster_term_long.csv", row.names = FALSE)
+write.csv(rho_matrix, "data_analysis/spearman_rho_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(p_matrix, "data_analysis/spearman_pvalue_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(padj_matrix, "data_analysis/spearman_BH_padj_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(n_regions_matrix, "data_analysis/n_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(n_nonzero_regions_matrix, "data_analysis/n_nonzero_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
+write.csv(cor_matrix_full, "data_analysis/spearman_correlation_full_matrix_rcmr_by_supercluster_term_telencephalon_split.csv", row.names = FALSE)
 
 cat("\n================ Spearman rho matrix: rCMRGlc ~ supercluster proportions ================\n")
 print(rho_matrix, n = Inf)
@@ -280,11 +280,11 @@ cat("\n================ Full correlation matrix ================\n")
 print(cor_matrix_full, n = Inf)
 
 cat("\nDone. Outputs:\n")
-cat("  data/supercluster_proportions_by_region_with_rcmr_telencephalon_split.csv\n")
-cat("  data/spearman_correlations_rcmr_by_supercluster_term_long.csv\n")
-cat("  data/spearman_rho_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
-cat("  data/spearman_pvalue_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
-cat("  data/spearman_BH_padj_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
-cat("  data/n_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
-cat("  data/n_nonzero_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
-cat("  data/spearman_correlation_full_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/supercluster_proportions_by_region_with_rcmr_telencephalon_split.csv\n")
+cat("  data_analysis/spearman_correlations_rcmr_by_supercluster_term_long.csv\n")
+cat("  data_analysis/spearman_rho_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/spearman_pvalue_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/spearman_BH_padj_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/n_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/n_nonzero_regions_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")
+cat("  data_analysis/spearman_correlation_full_matrix_rcmr_by_supercluster_term_telencephalon_split.csv\n")

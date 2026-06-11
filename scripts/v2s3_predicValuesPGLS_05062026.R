@@ -34,6 +34,10 @@ library(scales)
 library(readxl)
 library(writexl)
 
+# Shared region colours (same palette as Studies 1-2). Used here to colour the
+# per-region axis labels so a given brain region keeps a consistent colour.
+source("R/plot_settings.R")
+
 options(scipen = 999)
 
 # ============================================================
@@ -343,6 +347,9 @@ core_df <- map_dfr(target_cols, function(vn) {
 core_df$Variable <- factor(core_df$Variable, levels = target_cols)
 core_df$VarLabel <- label_region(core_df$Variable)
 
+# Per-region colours for the (alphabetical) region axis, shared across studies.
+region_axis_cols <- region_axis_colors(sort(unique(core_df$VarLabel)))
+
 # ---- PLOT I: predicted vs observed, BM vs Pagel ----
 p1 <- ggplot(core_df, aes(x = VarLabel)) +
   geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.2, color = "#377eb8") +
@@ -356,7 +363,7 @@ p1 <- ggplot(core_df, aes(x = VarLabel)) +
        subtitle = "Predictor = Rest of Brain (Total - Structure)",
        y = "Volume / Value (Original Scale)", x = "Brain Structure") +
   theme(strip.text = element_text(face = "bold", size = 11),
-        axis.text.y = element_text(size = 9))
+        axis.text.y = element_text(size = 9, colour = region_axis_cols))
 p1
 
 # ---- PLOT II: per-structure 0-1 normalized prediction error ----
@@ -384,7 +391,7 @@ p2 <- ggplot(final_df_norm, aes(x = VarLabel)) +
        subtitle = "0 = min, 1 = max value per structure (across CI and Obs). Predictor = Rest of Brain",
        y = "Standardized Position (0 to 1)", x = "Brain Structure") +
   theme(strip.text = element_text(face = "bold", size = 11),
-        axis.text.y = element_text(size = 9))
+        axis.text.y = element_text(size = 9, colour = region_axis_cols))
 p2
 
 # ============================================================
@@ -399,6 +406,9 @@ final_df$Direction <- ifelse(final_df$PropDiff > 0, "Larger than Predicted", "Sm
 final_df$Model     <- factor(final_df$Model,
                              levels = c("Independence (λ=0)", "Pagel's ML (Estimated)", "Brownian (λ=1)"))
 final_df$VarLabel  <- label_region(final_df$Variable)
+
+# Region axis colours in this plot's reordered (by PropDiff) order.
+region_axis_cols_p3 <- region_axis_colors(levels(reorder(final_df$VarLabel, final_df$PropDiff)))
 
 p3 <- ggplot(final_df, aes(x = reorder(VarLabel, PropDiff), y = PropDiff, color = Direction)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray40") +
@@ -417,7 +427,7 @@ p3 <- ggplot(final_df, aes(x = reorder(VarLabel, PropDiff), y = PropDiff, color 
        y = "Deviation from Prediction (%)", x = "Brain Structure", color = "Direction") +
   theme(strip.text = element_text(face = "bold", size = 10),
         legend.position = "bottom",
-        axis.text.y = element_text(size = 9, face = "bold"))
+        axis.text.y = element_text(size = 9, face = "bold", colour = region_axis_cols_p3))
 p3
 
 # ============================================================

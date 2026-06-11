@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
@@ -16,7 +16,7 @@ if (!dir.exists("figs")) dir.create("figs", recursive = TRUE)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 # filter to neurons only
 obs <- obs %>%
@@ -33,7 +33,7 @@ obs <- obs %>%
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 rcmr <- heiss_stephan_tbl %>%
   transmute(
@@ -51,7 +51,7 @@ rcmr <- heiss_stephan_tbl %>%
 # Anatomical grouping of rois
 #####################################
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   dplyr::transmute(
@@ -115,7 +115,7 @@ siletti_jorstad_crosswalk <- tibble::tribble(
 
 write.csv(
   siletti_jorstad_crosswalk,
-  "data/siletti_to_jorstad_like_cortical_EI_crosswalk.csv",
+  "data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv",
   row.names = FALSE
 )
 
@@ -173,7 +173,7 @@ print(cortex_table, n = Inf)
 
 write.csv(
   cortex_table,
-  "data/cortex_classification_neuronal.csv",
+  "data_analysis/cortex_classification_neuronal.csv",
   row.names = FALSE
 )
 
@@ -192,7 +192,7 @@ print(tibble::as_tibble(cluster_membership_check), n = Inf)
 
 write.csv(
   cluster_membership_check,
-  "data/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv",
+  "data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv",
   row.names = FALSE
 )
 
@@ -278,7 +278,7 @@ print(
 
 write.csv(
   ei_region,
-  "data/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv",
+  "data_analysis/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv",
   row.names = FALSE
 )
 
@@ -377,11 +377,11 @@ make_cortical_plot <- function(df, variable = "EI_ratio_jorstad_like", file_slug
   print(p)
 
   ggsave(
-    filename = paste0("figs/p_", file_slug, ".pdf"),
+    filename = paste0("figs/s1b/p_", file_slug, ".pdf"),
     plot = p, width = 8.5, height = 7, units = "in"
   )
   ggsave(
-    filename = paste0("figs/p_", file_slug, ".jpg"),
+    filename = paste0("figs/s1b/p_", file_slug, ".jpg"),
     plot = p, width = 8.5, height = 7, units = "in", dpi = 300
   )
   invisible(p)
@@ -395,7 +395,7 @@ print(cor_cortex)
 
 write.csv(
   cor_cortex,
-  "data/spearman_correlation_rcmr_jorstad_like_cortical_EI_ratio.csv",
+  "data_analysis/spearman_correlation_rcmr_jorstad_like_cortical_EI_ratio.csv",
   row.names = FALSE
 )
 
@@ -409,15 +409,15 @@ if (nrow(ei_region %>% filter(is.finite(log2_EI_ratio_jorstad_like))) >= 3) {
   cor_log <- safe_spearman(ei_region, "Cortex-only log2 Jorstad-like E:I", "log2_EI_ratio_jorstad_like")
   write.csv(
     cor_log,
-    "data/spearman_correlation_rcmr_log2_jorstad_like_cortical_EI_ratio.csv",
+    "data_analysis/spearman_correlation_rcmr_log2_jorstad_like_cortical_EI_ratio.csv",
     row.names = FALSE
   )
 }
 
 cat("\nDone. Outputs:\n")
-cat("  data/siletti_to_jorstad_like_cortical_EI_crosswalk.csv\n")
-cat("  data/cortex_classification_neuronal.csv\n")
-cat("  data/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv\n")
-cat("  data/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv\n")
-cat("  data/spearman_correlation_rcmr_jorstad_like_cortical_EI_ratio.csv\n")
-cat("  figs/p_cortex_jorstad_like.{pdf,jpg}\n")
+cat("  data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv\n")
+cat("  data_analysis/cortex_classification_neuronal.csv\n")
+cat("  data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv\n")
+cat("  data_analysis/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv\n")
+cat("  data_analysis/spearman_correlation_rcmr_jorstad_like_cortical_EI_ratio.csv\n")
+cat("  figs/s1b/p_cortex_jorstad_like.{pdf,jpg}\n")

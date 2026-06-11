@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
@@ -11,14 +11,14 @@ library(tidyverse)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds")
 
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
 # Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 # Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
 rcmr <- heiss_stephan_tbl %>%
@@ -45,7 +45,7 @@ head(rcmr)
 #   rois: one or more exact obs$roi strings separated by "||"
 
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   dplyr::transmute(
@@ -102,7 +102,7 @@ print(telencephalon_table, n = Inf)
 # Persist the classification table
 write.csv(
   telencephalon_table,
-  "data/telencephalon_classification.csv",
+  "data_analysis/telencephalon_classification.csv",
   row.names = FALSE
 )
 
@@ -175,18 +175,18 @@ unassigned_astro_clusters <- obs_celltype %>%
 if (nrow(unassigned_astro_clusters) > 0) {
   warning(
     "Some astrocyte clusters were not assigned to Type 1 or Type 2. ",
-    "Inspect data/astrocyte_type_unassigned_clusters.csv."
+    "Inspect data_analysis/astrocyte_type_unassigned_clusters.csv."
   )
 }
 
 write.csv(
   astro_cluster_qc,
-  "data/astrocyte_type_cluster_qc_by_region.csv",
+  "data_analysis/astrocyte_type_cluster_qc_by_region.csv",
   row.names = FALSE
 )
 write.csv(
   unassigned_astro_clusters,
-  "data/astrocyte_type_unassigned_clusters.csv",
+  "data_analysis/astrocyte_type_unassigned_clusters.csv",
   row.names = FALSE
 )
 
@@ -239,7 +239,7 @@ celltype_proportion_table <- celltype_table_long %>%
 
 write.csv(
   celltype_proportion_table,
-  "data/type1_type2_astrocyte_mean_proportion_by_region.csv",
+  "data_analysis/type1_type2_astrocyte_mean_proportion_by_region.csv",
   row.names = FALSE
 )
 
@@ -417,11 +417,11 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
   print(p)
 
   ggsave(
-    filename = paste0("figs/p_type1_type2_astrocytes_", file_slug, ".pdf"),
+    filename = paste0("figs/s1b/p_type1_type2_astrocytes_", file_slug, ".pdf"),
     plot = p, width = 10, height = 7, units = "in"
   )
   ggsave(
-    filename = paste0("figs/p_type1_type2_astrocytes_", file_slug, ".jpg"),
+    filename = paste0("figs/s1b/p_type1_type2_astrocytes_", file_slug, ".jpg"),
     plot = p, width = 10, height = 7, units = "in", dpi = 300
   )
   invisible(p)
@@ -450,12 +450,12 @@ cat("Dropped in Non-tel because constant or too sparse:", paste(setdiff(predicto
 
 write.csv(
   tel_df,
-  "data/type1_type2_astrocyte_proportions_by_region_telencephalon.csv",
+  "data_analysis/type1_type2_astrocyte_proportions_by_region_telencephalon.csv",
   row.names = FALSE
 )
 write.csv(
   nontel_df,
-  "data/type1_type2_astrocyte_proportions_by_region_nontelencephalon.csv",
+  "data_analysis/type1_type2_astrocyte_proportions_by_region_nontelencephalon.csv",
   row.names = FALSE
 )
 
@@ -468,7 +468,7 @@ cor_nontel <- run_cor_subset(nontel_df, predictors_nontel, "Non-telencephalon")
 cor_combined <- dplyr::bind_rows(cor_tel, cor_nontel)
 write.csv(
   cor_combined,
-  "data/spearman_correlations_type1_type2_astrocytes_by_telencephalon.csv",
+  "data_analysis/spearman_correlations_type1_type2_astrocytes_by_telencephalon.csv",
   row.names = FALSE
 )
 
@@ -507,7 +507,7 @@ if (length(predictors_union) > 0) {
   })
 
   p_combined <- ggplot(plot_df_all, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
-    geom_point(size = 2.8, alpha = 0.85) +
+    geom_point(size = 2.4, alpha = 0.85) +
     geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
     stat_poly_eq(
       aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
@@ -515,30 +515,39 @@ if (length(predictors_union) > 0) {
       parse = TRUE,
       label.x = "right",
       label.y = "top",
-      size = 3.2,
+      size = 3,
       color = "black"
     ) +
     facet_grid(division ~ predictor, scales = "free_x") +
     labs(
-      title = "Type 1 / Type 2 astrocyte proportions vs rCMRGlc by telencephalon status",
-      subtitle = paste0(length(predictors_union), " Type 1 / Type 2 astrocyte predictors"),
-      x = "Mean cell type proportion among nonneuronal cells",
+      title = "Telencephalic (Type 1) vs non-telencephalic (Type 2) astrocyte proportions\nvs regional glucose metabolism (rCMRGlc)",
+      subtitle = "Columns: astrocyte type. Rows: telencephalon vs non-telencephalon. Points are brain regions.",
+      x = "Mean proportion among nonneuronal cells",
       y = "rCMRGlc (µmol/100 g/min.)",
-      color = "Region"
+      color = "Region",
+      caption = paste(
+        "Siletti et al. (2023) grouped 13 astrocyte clusters into telencephalic (Type 1) and non-telencephalic (Type 2)",
+        "types, each with GFAP-low and -high populations. Type 1 includes human cortical populations: WIF1+ gray-matter,",
+        "TNC+ white-matter and LMO2+ interlaminar astrocytes. Proportions are each type as a fraction of all nonneuronal",
+        "cells. Lines are OLS fits with 95% CI (R^2 and p shown). In our data, telencephalic regions show a positive",
+        "relationship between rCMRGlc and the Type 1 / all-nonneuronal proportion; the Type 2 relationship is negative and",
+        "borderline (not quite significant). Non-telencephalic regions show no such relationship.",
+        sep = "\n"
+      )
     ) +
-    theme_classic(base_size = 12) +
-    theme(strip.text.x = element_text(size = 10))
+    theme_facet_compact(12)
   if (!is.null(region_scale_all)) p_combined <- p_combined + region_scale_all
 
   print(p_combined)
 
+  grid_w <- length(unique(plot_df_all$predictor)) * 3.3 + 2.6
   ggsave(
-    filename = "figs/p_type1_type2_astrocytes_by_telencephalon.pdf",
-    plot = p_combined, width = 10, height = 7, units = "in"
+    filename = "figs/s1b/p_type1_type2_astrocytes_by_telencephalon.pdf",
+    plot = p_combined, width = grid_w, height = 7.8, units = "in"
   )
   ggsave(
-    filename = "figs/p_type1_type2_astrocytes_by_telencephalon.jpg",
-    plot = p_combined, width = 10, height = 7, units = "in", dpi = 300
+    filename = "figs/s1b/p_type1_type2_astrocytes_by_telencephalon.jpg",
+    plot = p_combined, width = grid_w, height = 7.8, units = "in", dpi = 300
   )
 
   p_overlay <- ggplot(plot_df_all,
@@ -572,497 +581,13 @@ if (length(predictors_union) > 0) {
   print(p_overlay)
 
   ggsave(
-    filename = "figs/p_type1_type2_astrocytes_overlay_telencephalon.pdf",
+    filename = "figs/s1b/p_type1_type2_astrocytes_overlay_telencephalon.pdf",
     plot = p_overlay, width = 10, height = 7, units = "in"
   )
   ggsave(
-    filename = "figs/p_type1_type2_astrocytes_overlay_telencephalon.jpg",
+    filename = "figs/s1b/p_type1_type2_astrocytes_overlay_telencephalon.jpg",
     plot = p_overlay, width = 10, height = 7, units = "in", dpi = 300
   )
 } else {
   cat("\nSkipping combined plots: no predictors with nonzero variance in either subset.\n")
 }
-
-###################################################################
-# ADDITIONAL ANALYSIS: Type 1 / Type 2 astrocyte composition
-# Denominator is Type 1 + Type 2 astrocytes, so proportions sum to 1
-# within each anatomy_group. This is analogous to the Type 1 / Type 2
-# oligodendrocyte and OPC composition panel in the reference figure.
-###################################################################
-
-# Recalculate donor-level Type1/Type2 composition with denominator restricted
-# to assigned Type 1 + Type 2 astrocytes, then average across donors.
-astrotype_composition_long <- donor_region %>%
-  tidyr::crossing(astro_type = factor(astro_type_levels, levels = astro_type_levels)) %>%
-  left_join(
-    astrotype_counts,
-    by = c("anatomy_group", "donor_id", "astro_type")
-  ) %>%
-  mutate(n_cells = tidyr::replace_na(n_cells, 0L)) %>%
-  group_by(anatomy_group, donor_id) %>%
-  mutate(
-    donor_total_type1_type2_astrocytes = sum(n_cells),
-    donor_comp = dplyr::if_else(
-      donor_total_type1_type2_astrocytes > 0,
-      n_cells / donor_total_type1_type2_astrocytes,
-      NA_real_
-    )
-  ) %>%
-  ungroup() %>%
-  group_by(anatomy_group, astro_type) %>%
-  summarise(
-    comp_mean = mean(donor_comp, na.rm = TRUE),
-    comp_sd = sd(donor_comp, na.rm = TRUE),
-    n_donors = sum(is.finite(donor_comp)),
-    mean_assigned_astro_n = mean(donor_total_type1_type2_astrocytes, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  mutate(
-    astro_type_label = dplyr::recode(
-      as.character(astro_type),
-      "Astrocyte_Type1" = "Type 1 astrocytes",
-      "Astrocyte_Type2" = "Type 2 astrocytes"
-    )
-  )
-
-astrotype_composition_wide <- astrotype_composition_long %>%
-  select(anatomy_group, astro_type, comp_mean) %>%
-  tidyr::pivot_wider(
-    names_from = astro_type,
-    values_from = comp_mean,
-    values_fill = NA_real_,
-    names_prefix = "comp_"
-  ) %>%
-  mutate(
-    comp_Type1_minus_Type2 = comp_Astrocyte_Type1 - comp_Astrocyte_Type2,
-    comp_Type1_over_Type2 = comp_Astrocyte_Type1 / comp_Astrocyte_Type2
-  )
-
-astrotype_composition_analysis <- astrotype_composition_wide %>%
-  inner_join(rcmr, by = c("anatomy_group" = "rcmr_term")) %>%
-  left_join(
-    telencephalon_table %>% select(anatomy_group, is_telencephalon, division),
-    by = "anatomy_group"
-  ) %>%
-  arrange(desc(comp_Astrocyte_Type1))
-
-write.csv(
-  astrotype_composition_long,
-  "data/type1_type2_astrocyte_composition_long_by_region.csv",
-  row.names = FALSE
-)
-write.csv(
-  astrotype_composition_analysis,
-  "data/type1_type2_astrocyte_composition_with_rcmr_by_region.csv",
-  row.names = FALSE
-)
-
-cat("\n================ Type 1 / Type 2 astrocyte composition ================\n")
-print(
-  astrotype_composition_analysis %>%
-    select(anatomy_group, division, rcmr_value,
-           comp_Astrocyte_Type1, comp_Astrocyte_Type2,
-           comp_Type1_minus_Type2, comp_Type1_over_Type2) %>%
-    tibble::as_tibble(),
-  n = Inf
-)
-
-# Correlations between rCMRGlc and Type1/Type2 composition.
-composition_cor <- astrotype_composition_analysis %>%
-  summarise(
-    n = sum(complete.cases(rcmr_value, comp_Astrocyte_Type1)),
-    spearman_rho_type1 = suppressWarnings(cor(rcmr_value, comp_Astrocyte_Type1,
-                                              method = "spearman", use = "complete.obs")),
-    pearson_r_type1 = suppressWarnings(cor(rcmr_value, comp_Astrocyte_Type1,
-                                           method = "pearson", use = "complete.obs")),
-    spearman_p_type1 = suppressWarnings(cor.test(rcmr_value, comp_Astrocyte_Type1,
-                                                 method = "spearman", exact = FALSE)$p.value),
-    pearson_p_type1 = suppressWarnings(cor.test(rcmr_value, comp_Astrocyte_Type1,
-                                                method = "pearson")$p.value)
-  )
-write.csv(
-  composition_cor,
-  "data/type1_type2_astrocyte_composition_rcmr_correlations.csv",
-  row.names = FALSE
-)
-cat("\nComposition correlations with rCMRGlc:\n")
-print(composition_cor)
-
-###################################################################
-# Figure A: signed paired bar plot like the oligodendrocyte panel
-# Type 1 is plotted upward; Type 2 is plotted downward. Since the
-# denominator is Type 1 + Type 2 astrocytes, the absolute values sum
-# to 1 for every region.
-###################################################################
-
-composition_bar_df <- astrotype_composition_long %>%
-  inner_join(
-    astrotype_composition_analysis %>% select(anatomy_group, rcmr_value, division),
-    by = "anatomy_group"
-  ) %>%
-  mutate(
-    signed_comp = dplyr::if_else(astro_type == "Astrocyte_Type1", comp_mean, -comp_mean),
-    anatomy_group = forcats::fct_reorder(anatomy_group, rcmr_value),
-    astro_type_label = factor(astro_type_label,
-                              levels = c("Type 1 astrocytes", "Type 2 astrocytes"))
-  )
-
-p_type1_type2_signed_bar <- ggplot(
-  composition_bar_df,
-  aes(x = anatomy_group, y = signed_comp, fill = rcmr_value)
-) +
-  geom_col(width = 0.85, color = NA) +
-  geom_hline(yintercept = 0, linewidth = 0.35) +
-  facet_grid(astro_type_label ~ ., scales = "free_y") +
-  scale_y_continuous(
-    labels = function(x) abs(x),
-    breaks = c(-1, -0.5, 0, 0.5, 1)
-  ) +
-  scale_fill_viridis_c(option = "magma", direction = -1) +
-  labs(
-    title = "Relative composition of Type 1 and Type 2 astrocytes by region",
-    subtitle = "Within each region, Type 1 + Type 2 astrocyte fractions sum to 1; regions ordered by rCMRGlc",
-    x = NULL,
-    y = "Fraction of assigned Type 1 + Type 2 astrocytes",
-    fill = "rCMRGlc\n(µmol/100 g/min.)"
-  ) +
-  theme_classic(base_size = 12) +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
-    strip.background = element_blank(),
-    strip.text.y = element_text(angle = 0)
-  )
-
-print(p_type1_type2_signed_bar)
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_composition_signed_bar_rcmr_ordered.pdf",
-  plot = p_type1_type2_signed_bar, width = 11, height = 5.5, units = "in"
-)
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_composition_signed_bar_rcmr_ordered.jpg",
-  plot = p_type1_type2_signed_bar, width = 11, height = 5.5, units = "in", dpi = 300
-)
-
-###################################################################
-# Figure B: stacked composition bars plus rCMRGlc points/line.
-# This shows Type1/Type2 composition and metabolism in the same panel
-# without using a dual y-axis for the bars themselves.
-###################################################################
-
-composition_stacked_df <- astrotype_composition_long %>%
-  inner_join(
-    astrotype_composition_analysis %>% select(anatomy_group, rcmr_value, division),
-    by = "anatomy_group"
-  ) %>%
-  mutate(
-    anatomy_group = forcats::fct_reorder(anatomy_group, rcmr_value),
-    astro_type_label = factor(astro_type_label,
-                              levels = c("Type 2 astrocytes", "Type 1 astrocytes"))
-  )
-
-rcmr_overlay_df <- astrotype_composition_analysis %>%
-  mutate(
-    anatomy_group = forcats::fct_reorder(anatomy_group, rcmr_value),
-    rcmr_scaled_to_fraction = scales::rescale(rcmr_value, to = c(0, 1))
-  )
-
-p_type1_type2_stacked_with_rcmr <- ggplot(
-  composition_stacked_df,
-  aes(x = anatomy_group, y = comp_mean, fill = astro_type_label)
-) +
-  geom_col(width = 0.85, color = "white", linewidth = 0.2) +
-  geom_line(
-    data = rcmr_overlay_df,
-    aes(x = anatomy_group, y = rcmr_scaled_to_fraction, group = 1),
-    inherit.aes = FALSE,
-    color = "black",
-    linewidth = 0.6
-  ) +
-  geom_point(
-    data = rcmr_overlay_df,
-    aes(x = anatomy_group, y = rcmr_scaled_to_fraction),
-    inherit.aes = FALSE,
-    color = "black",
-    size = 2
-  ) +
-  scale_fill_manual(
-    values = c("Type 1 astrocytes" = "#9E2F7F", "Type 2 astrocytes" = "#F0A202")
-  ) +
-  labs(
-    title = "Type 1 / Type 2 astrocyte composition with rCMRGlc overlay",
-    subtitle = "Bars show astrocyte composition; black points/line show rCMRGlc rescaled to 0–1 and regions ordered by rCMRGlc",
-    x = NULL,
-    y = "Fraction of assigned Type 1 + Type 2 astrocytes",
-    fill = "Astrocyte type"
-  ) +
-  theme_classic(base_size = 12) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
-
-print(p_type1_type2_stacked_with_rcmr)
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay.pdf",
-  plot = p_type1_type2_stacked_with_rcmr, width = 11, height = 5.5, units = "in"
-)
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay.jpg",
-  plot = p_type1_type2_stacked_with_rcmr, width = 11, height = 5.5, units = "in", dpi = 300
-)
-
-###################################################################
-# Figure C: direct rCMRGlc association plot.
-# Because Type 1 and Type 2 fractions sum to 1, plotting Type 1 is
-# sufficient; Type 2 is exactly 1 - Type 1.
-###################################################################
-
-region_scale_comp <- tryCatch({
-  check_region_palette(astrotype_composition_analysis, region_col = "anatomy_group")
-  present <- intersect(region_order, unique(as.character(astrotype_composition_analysis$anatomy_group)))
-  astrotype_composition_analysis$anatomy_group <- factor(astrotype_composition_analysis$anatomy_group,
-                                                         levels = present)
-  ggplot2::scale_color_manual(values = region_palette, drop = TRUE)
-}, error = function(e) {
-  message("Region palette unavailable for composition rCMR plot (", e$message,
-          "); using default ggplot palette.")
-  NULL
-})
-
-p_type1_fraction_vs_rcmr <- ggplot(
-  astrotype_composition_analysis,
-  aes(x = comp_Astrocyte_Type1, y = rcmr_value, color = anatomy_group)
-) +
-  geom_point(size = 3, alpha = 0.9) +
-  geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "black") +
-  ggpmisc::stat_poly_eq(
-    aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
-    formula = y ~ x,
-    parse = TRUE,
-    label.x = "right",
-    label.y = "top",
-    size = 4,
-    color = "black"
-  ) +
-  labs(
-    title = "rCMRGlc versus Type 1 astrocyte fraction",
-    subtitle = "Type 1 fraction is computed within assigned Type 1 + Type 2 astrocytes; Type 2 fraction = 1 - Type 1",
-    x = "Type 1 astrocyte fraction among Type 1 + Type 2 astrocytes",
-    y = "rCMRGlc (µmol/100 g/min.)",
-    color = "Region"
-  ) +
-  theme_classic(base_size = 13)
-if (!is.null(region_scale_comp)) p_type1_fraction_vs_rcmr <- p_type1_fraction_vs_rcmr + region_scale_comp
-
-print(p_type1_fraction_vs_rcmr)
-ggsave(
-  filename = "figs/p_type1_astrocyte_fraction_vs_rcmr.pdf",
-  plot = p_type1_fraction_vs_rcmr, width = 9, height = 6, units = "in"
-)
-ggsave(
-  filename = "figs/p_type1_astrocyte_fraction_vs_rcmr.jpg",
-  plot = p_type1_fraction_vs_rcmr, width = 9, height = 6, units = "in", dpi = 300
-)
-
-###################################################################
-# Figure D: telencephalon split for the compositional Type 1 fraction.
-###################################################################
-
-p_type1_fraction_vs_rcmr_division <- ggplot(
-  astrotype_composition_analysis,
-  aes(x = comp_Astrocyte_Type1, y = rcmr_value, color = division, fill = division)
-) +
-  geom_point(size = 3, alpha = 0.9) +
-  geom_smooth(method = "lm", se = TRUE, alpha = 0.15) +
-  ggpmisc::stat_poly_eq(
-    aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
-    formula = y ~ x,
-    parse = TRUE,
-    label.x = "right",
-    size = 3.5,
-    show.legend = FALSE
-  ) +
-  facet_wrap(~ division) +
-  scale_color_manual(values = c("Telencephalon" = "#D7263D",
-                                "Non-telencephalon" = "#1B998B")) +
-  scale_fill_manual(values  = c("Telencephalon" = "#D7263D",
-                                "Non-telencephalon" = "#1B998B")) +
-  labs(
-    title = "rCMRGlc versus Type 1 astrocyte fraction by telencephalon status",
-    subtitle = "Type 2 fraction is the complement of Type 1 within assigned astrocyte types",
-    x = "Type 1 astrocyte fraction among Type 1 + Type 2 astrocytes",
-    y = "rCMRGlc (µmol/100 g/min.)",
-    color = "Division",
-    fill = "Division"
-  ) +
-  theme_classic(base_size = 13) +
-  theme(legend.position = "top")
-
-print(p_type1_fraction_vs_rcmr_division)
-ggsave(
-  filename = "figs/p_type1_astrocyte_fraction_vs_rcmr_by_telencephalon.pdf",
-  plot = p_type1_fraction_vs_rcmr_division, width = 10, height = 5.8, units = "in"
-)
-ggsave(
-  filename = "figs/p_type1_astrocyte_fraction_vs_rcmr_by_telencephalon.jpg",
-  plot = p_type1_fraction_vs_rcmr_division, width = 10, height = 5.8, units = "in", dpi = 300
-)
-
-
-####################
-####################
-
-###################################################################
-# Figure: Type 1 / Type 2 astrocyte proportions with rCMRGlc overlay
-# Split into telencephalon and non-telencephalon panels.
-# Regions are ordered by increasing rCMRGlc within each division.
-###################################################################
-
-if (!requireNamespace("tidytext", quietly = TRUE)) {
-  install.packages("tidytext")
-}
-library(tidytext)
-
-###################################################################
-# Build shared region order
-###################################################################
-
-region_order_df <- astrotype_composition_analysis %>%
-  distinct(anatomy_group, division, rcmr_value) %>%
-  arrange(division, rcmr_value) %>%
-  group_by(division) %>%
-  mutate(region_order = row_number()) %>%
-  ungroup()
-
-###################################################################
-# Composition data for bars
-###################################################################
-
-composition_stacked_df <- astrotype_composition_long %>%
-  inner_join(
-    astrotype_composition_analysis %>%
-      select(anatomy_group, rcmr_value, division),
-    by = "anatomy_group"
-  ) %>%
-  left_join(
-    region_order_df,
-    by = c("anatomy_group", "division", "rcmr_value")
-  ) %>%
-  mutate(
-    anatomy_group_ordered = tidytext::reorder_within(
-      anatomy_group,
-      region_order,
-      division
-    ),
-    astro_type_label = factor(
-      astro_type_label,
-      levels = c("Type 2 astrocytes", "Type 1 astrocytes")
-    )
-  )
-
-###################################################################
-# rCMRGlc data for black overlay line
-###################################################################
-
-rcmr_overlay_df <- astrotype_composition_analysis %>%
-  distinct(anatomy_group, division, rcmr_value) %>%
-  left_join(
-    region_order_df,
-    by = c("anatomy_group", "division", "rcmr_value")
-  ) %>%
-  group_by(division) %>%
-  mutate(
-    rcmr_scaled_to_fraction = scales::rescale(rcmr_value, to = c(0, 1)),
-    anatomy_group_ordered = tidytext::reorder_within(
-      anatomy_group,
-      region_order,
-      division
-    )
-  ) %>%
-  arrange(division, region_order) %>%
-  ungroup()
-
-###################################################################
-# Plot
-###################################################################
-
-p_type1_type2_dodged_with_rcmr_split <- ggplot(
-  composition_stacked_df,
-  aes(
-    x = anatomy_group_ordered,
-    y = comp_mean,
-    fill = astro_type_label
-  )
-) +
-  geom_col(
-    position = position_dodge(width = 0.65),
-    width = 0.45,
-    color = "white",
-    linewidth = 0.25
-  ) +
-  geom_line(
-    data = rcmr_overlay_df,
-    aes(
-      x = anatomy_group_ordered,
-      y = rcmr_scaled_to_fraction,
-      group = division
-    ),
-    inherit.aes = FALSE,
-    color = "black",
-    linewidth = 0.75
-  ) +
-  geom_point(
-    data = rcmr_overlay_df,
-    aes(
-      x = anatomy_group_ordered,
-      y = rcmr_scaled_to_fraction
-    ),
-    inherit.aes = FALSE,
-    color = "black",
-    size = 2
-  ) +
-  facet_wrap(
-    ~ division,
-    scales = "free_x",
-    ncol = 1
-  ) +
-  tidytext::scale_x_reordered() +
-  scale_fill_manual(
-    values = c(
-      "Type 1 astrocytes" = "#9E2F7F",
-      "Type 2 astrocytes" = "#F0A202"
-    )
-  ) +
-  labs(
-    title = "Type 1 / Type 2 astrocyte proportions with rCMRGlc overlay",
-    subtitle = "Regions ordered by increasing rCMRGlc within each division; black line shows rCMRGlc rescaled within division",
-    x = NULL,
-    y = "Fraction of Type 1 + Type 2 astrocytes",
-    fill = "Astrocyte type"
-  ) +
-  theme_classic(base_size = 12) +
-  theme(
-    axis.text.x = element_text(
-      angle = 45,
-      hjust = 1,
-      vjust = 1
-    ),
-    strip.background = element_blank(),
-    strip.text = element_text(face = "bold")
-  )
-
-print(p_type1_type2_dodged_with_rcmr_split)
-
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_dodged_with_rcmr_split.pdf",
-  plot = p_type1_type2_dodged_with_rcmr_split,
-  width = 12,
-  height = 8,
-  units = "in"
-)
-
-ggsave(
-  filename = "figs/p_type1_type2_astrocyte_dodged_with_rcmr_split.jpg",
-  plot = p_type1_type2_dodged_with_rcmr_split,
-  width = 12,
-  height = 8,
-  units = "in",
-  dpi = 300
-)

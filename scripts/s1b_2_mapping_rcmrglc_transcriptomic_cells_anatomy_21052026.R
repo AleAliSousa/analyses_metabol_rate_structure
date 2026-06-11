@@ -22,11 +22,11 @@ library(tidyverse)
 ############################
 ## Load saved obs metadata
 ############################
-obs1 <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds") %>%
+obs1 <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds") %>%
   as_tibble() %>%
   mutate(obs_dataset = "nonneuronal")
 
-obs2 <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds") %>%
+obs2 <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds") %>%
   as_tibble() %>%
   mutate(obs_dataset = "neuronal")
 
@@ -45,7 +45,7 @@ colnames(obs)
 ######################################################
 
 # Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 # Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
 rcmr <- heiss_stephan_tbl %>%
@@ -622,4 +622,4 @@ unique(hits)
 
 ## Conclusion: we are happy with the mapping of rCMRGlc terms to obs dissection terms, and the coverage of the mapping across the observed anatomy contexts. The few unmatched contexts are either ambiguous (e.g. "Midbrain (M)
 # Save rcmr_roi_relationship to on output so it can be used in the final mapping script.
-write_csv(rcmr_roi_relationship, "data/rcmr_roi_relationship.csv")
+write_csv(rcmr_roi_relationship, "data_intermediate/rcmr_roi_relationship.csv")

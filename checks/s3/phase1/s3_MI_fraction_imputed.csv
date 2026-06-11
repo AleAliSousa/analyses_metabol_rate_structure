@@ -1,0 +1,15 @@
+raw_column,Structure,n_missing,frac_imputed
+LGN_Sousa,Corpus geniculatum laterale,10,0.169
+Amygdala,Amygdala,41,0.695
+Pallidum,Pallidum,32,0.542
+NeoW_Frahm,Neocortex white,35,0.593
+Total_insula_volume_L,Insular cortex (grey),29,0.492
+Nucleus_subthalamicus,Nucleus subthalamicus Luysi,33,0.559
+Capsula_interna,Capsula interna,33,0.559
+Striatum,Striatum,13,0.22
+ASG_Sousa,Area striata grey,14,0.237
+NeoG_Frahm,Neocortex grey,35,0.593
+Mesencephalon,Mesencephalon,13,0.22
+Cerebellum,Cerebellum,13,0.22
+Hippocampus,Hippocampus,13,0.22
+Preferred_brain_volume,Preferred_brain_volume,0,0

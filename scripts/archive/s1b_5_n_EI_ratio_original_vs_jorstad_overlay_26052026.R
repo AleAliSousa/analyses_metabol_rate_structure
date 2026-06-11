@@ -2,14 +2,14 @@ setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions i
 
 # Compare original broad E:I ratio with Jorstad-like cortical E:I ratio.
 # Main outputs:
-#   figs/p_EI_original_all_regions_with_jorstad_cortex_overlay.{pdf,jpg}
-#   figs/p_EI_original_vs_jorstad_facet.{pdf,jpg}
-#   figs/p_EI_original_all_regions_cortex_highlight.{pdf,jpg}
-#   data/EI_original_vs_jorstad_comparison_table.csv
-#   data/spearman_EI_original_vs_jorstad_comparison.csv
-#   data/lm_EI_original_vs_jorstad_comparison.csv
-#   data/siletti_to_jorstad_like_cortical_EI_crosswalk.csv
-#   data/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv
+#   figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay.{pdf,jpg}
+#   figs/s1b/p_EI_original_vs_jorstad_facet.{pdf,jpg}
+#   figs/s1b/p_EI_original_all_regions_cortex_highlight.{pdf,jpg}
+#   data_analysis/EI_original_vs_jorstad_comparison_table.csv
+#   data_analysis/spearman_EI_original_vs_jorstad_comparison.csv
+#   data_analysis/lm_EI_original_vs_jorstad_comparison.csv
+#   data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv
+#   data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -20,17 +20,17 @@ suppressPackageStartupMessages({
 has_ggrepel <- requireNamespace("ggrepel", quietly = TRUE)
 
 # Optional local plot settings. The script still runs if unavailable.
-if (file.exists("R/0.01_plot_settings.R")) {
-  source("R/0.01_plot_settings.R")
+if (file.exists("R/plot_settings.R")) {
+  source("R/plot_settings.R")
 }
 
-if (!dir.exists("data")) dir.create("data", recursive = TRUE)
-if (!dir.exists("figs")) dir.create("figs", recursive = TRUE)
+if (!dir.exists("data_analysis")) dir.create("data_analysis", recursive = TRUE)
+if (!dir.exists("figs/s1b")) dir.create("figs/s1b", recursive = TRUE)
 
 ############################
 ## Load Siletti obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 obs <- obs %>%
   filter(cell_type == "neuron") %>%
@@ -44,7 +44,7 @@ obs <- obs %>%
 ######################################################
 # Read rCMRGlc values from Heiss/Stephan table
 ######################################################
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 rcmr <- heiss_stephan_tbl %>%
   transmute(
@@ -62,7 +62,7 @@ rcmr <- heiss_stephan_tbl %>%
 # Map Siletti ROI to rCMR anatomy terms
 #####################################
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   transmute(
@@ -186,7 +186,7 @@ region_classification <- obs %>%
 cat("\n================ Region classification ================\n")
 print(as_tibble(region_classification), n = Inf)
 
-write.csv(region_classification, "data/region_classification_for_EI_comparison.csv", row.names = FALSE)
+write.csv(region_classification, "data_analysis/region_classification_for_EI_comparison.csv", row.names = FALSE)
 
 ###################################################################
 # Jorstad-like cortical E:I definition
@@ -210,7 +210,7 @@ siletti_jorstad_crosswalk <- tibble::tribble(
 
 write.csv(
   siletti_jorstad_crosswalk,
-  "data/siletti_to_jorstad_like_cortical_EI_crosswalk.csv",
+  "data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv",
   row.names = FALSE
 )
 
@@ -223,7 +223,7 @@ cluster_membership_check <- obs %>%
 
 write.csv(
   cluster_membership_check,
-  "data/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv",
+  "data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv",
   row.names = FALSE
 )
 
@@ -322,7 +322,7 @@ original_wide <- calculate_region_props(
     EI_definition = "Original broad E:I, all regions"
   )
 
-write.csv(original_wide, "data/original_broad_EI_ratio_all_regions_with_rcmr.csv", row.names = FALSE)
+write.csv(original_wide, "data_analysis/original_broad_EI_ratio_all_regions_with_rcmr.csv", row.names = FALSE)
 
 ###################################################################
 # Jorstad-like cortex-only E:I
@@ -358,7 +358,7 @@ jorstad_wide <- calculate_region_props(
     EI_definition = "Jorstad-like cortical E:I"
   )
 
-write.csv(jorstad_wide, "data/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv", row.names = FALSE)
+write.csv(jorstad_wide, "data_analysis/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv", row.names = FALSE)
 
 ###################################################################
 # Combined comparison table
@@ -405,7 +405,7 @@ comparison_df <- bind_rows(
 ) %>%
   filter(is.finite(EI_ratio), is.finite(log2_EI_ratio), !is.na(rcmr_value))
 
-write.csv(comparison_df, "data/EI_original_vs_jorstad_comparison_table.csv", row.names = FALSE)
+write.csv(comparison_df, "data_analysis/EI_original_vs_jorstad_comparison_table.csv", row.names = FALSE)
 
 ###################################################################
 # Correlation and LM summaries
@@ -447,7 +447,7 @@ spearman_tbl <- comparison_df %>%
 cat("\n================ Spearman comparison ================\n")
 print(as_tibble(spearman_tbl), n = Inf)
 
-write.csv(spearman_tbl, "data/spearman_EI_original_vs_jorstad_comparison.csv", row.names = FALSE)
+write.csv(spearman_tbl, "data_analysis/spearman_EI_original_vs_jorstad_comparison.csv", row.names = FALSE)
 
 lm_summary_one <- function(df, variable = "log2_EI_ratio") {
   df2 <- df %>% filter(is.finite(.data[[variable]]), !is.na(rcmr_value))
@@ -492,7 +492,7 @@ lm_tbl <- comparison_df %>%
 cat("\n================ LM comparison ================\n")
 print(as_tibble(lm_tbl), n = Inf)
 
-write.csv(lm_tbl, "data/lm_EI_original_vs_jorstad_comparison.csv", row.names = FALSE)
+write.csv(lm_tbl, "data_analysis/lm_EI_original_vs_jorstad_comparison.csv", row.names = FALSE)
 
 ###################################################################
 # Plot helpers
@@ -537,13 +537,44 @@ p_overlay <- ggplot() +
     fill = "#D8ECF7",
     linewidth = 1.0
   ) +
-  labs(
-    title = "Original broad E:I versus Jorstad-like cortical E:I",
-    subtitle = "Grey: all regions using broad supercluster E/I. Blue: cortex-only Jorstad-like supercluster crosswalk.",
-    x = "log2(E:I ratio)",
-    y = "rCMRGlc (µmol/100 g/min.)"
+  # Per-line regression equations + R^2 + p, colour-matched to each fit.
+  stat_poly_eq(
+    data = plot_df_original,
+    aes(x = log2_EI_ratio, y = rcmr_value,
+        label = paste(after_stat(eq.label), after_stat(rr.label), after_stat(p.value.label),
+                      sep = "*\", \"*")),
+    formula = y ~ x, parse = TRUE, color = "grey45",
+    label.x = "left", label.y = 0.99, size = 3
   ) +
-  theme_classic(base_size = 13)
+  stat_poly_eq(
+    data = plot_df_jorstad,
+    aes(x = log2_EI_ratio, y = rcmr_value,
+        label = paste(after_stat(eq.label), after_stat(rr.label), after_stat(p.value.label),
+                      sep = "*\", \"*")),
+    formula = y ~ x, parse = TRUE, color = "#0072B2",
+    label.x = "left", label.y = 0.91, size = 3
+  ) +
+  labs(
+    title = "Regional glucose metabolism vs neuronal E:I ratio:\nbroad whole-brain vs Jorstad-like cortical definition",
+    subtitle = "Each cortical region appears twice (same rCMRGlc): grey = broad whole-brain E:I, blue = Jorstad-like cortical E:I.",
+    x = expression(log[2]*"(E:I ratio)"),
+    y = "rCMRGlc (µmol/100 g/min.)",
+    caption = paste(
+      "Grey points/line: all mapped brain regions. E:I = excitatory-projection / inhibitory-interneuron superclusters,",
+      "pooled across the whole brain (medium spiny neurons excluded from the ratio).",
+      "Blue points/line: cerebral cortical regions only. E:I uses only cortical excitatory and inhibitory supercluster",
+      "families crosswalked to Jorstad et al. (2023) neocortical E/I subclasses (no MSN; no thalamic, hippocampal,",
+      "cerebellar or midbrain cell types). Lines are OLS fits with 95% CI; the colour-matched equations give slope, R^2",
+      "and p. The aim is to expand the cortical (Jorstad-like) E:I definition, not a more inclusive whole-brain one.",
+      "Jorstad et al., Science 382, 176 (2023).",
+      sep = "\n"
+    )
+  ) +
+  theme_classic(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold", size = 13),
+    plot.caption = element_text(hjust = 0, size = 7.5)
+  )
 
 
 if (has_ggrepel) {
@@ -562,8 +593,8 @@ if (has_ggrepel) {
 }
 
 print(p_overlay)
-ggsave("figs/p_EI_original_all_regions_with_jorstad_cortex_overlay.pdf", p_overlay, width = 8.5, height = 7, units = "in")
-ggsave("figs/p_EI_original_all_regions_with_jorstad_cortex_overlay.jpg", p_overlay, width = 8.5, height = 7, units = "in", dpi = 300)
+ggsave("figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay.pdf", p_overlay, width = 8.5, height = 7, units = "in")
+ggsave("figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay.jpg", p_overlay, width = 8.5, height = 7, units = "in", dpi = 300)
 
 # Facet: same y-axis, separate x ranges for each definition.
 p_facet <- ggplot(comparison_df, aes(x = log2_EI_ratio, y = rcmr_value)) +
@@ -581,8 +612,8 @@ p_facet <- ggplot(comparison_df, aes(x = log2_EI_ratio, y = rcmr_value)) +
   theme_classic(base_size = 13)
 
 print(p_facet)
-ggsave("figs/p_EI_original_vs_jorstad_facet.pdf", p_facet, width = 10.5, height = 6, units = "in")
-ggsave("figs/p_EI_original_vs_jorstad_facet.jpg", p_facet, width = 10.5, height = 6, units = "in", dpi = 300)
+ggsave("figs/s1b/p_EI_original_vs_jorstad_facet.pdf", p_facet, width = 10.5, height = 6, units = "in")
+ggsave("figs/s1b/p_EI_original_vs_jorstad_facet.jpg", p_facet, width = 10.5, height = 6, units = "in", dpi = 300)
 
 # Original broad ratio only, with cortex highlighted. This checks whether the
 # all-region null is due to non-cortical regions dominating the broad analysis.
@@ -608,8 +639,8 @@ p_original_highlight <- ggplot(plot_df_original, aes(x = log2_EI_ratio, y = rcmr
   theme_classic(base_size = 13)
 
 print(p_original_highlight)
-ggsave("figs/p_EI_original_all_regions_cortex_highlight.pdf", p_original_highlight, width = 8.5, height = 7, units = "in")
-ggsave("figs/p_EI_original_all_regions_cortex_highlight.jpg", p_original_highlight, width = 8.5, height = 7, units = "in", dpi = 300)
+ggsave("figs/s1b/p_EI_original_all_regions_cortex_highlight.pdf", p_original_highlight, width = 8.5, height = 7, units = "in")
+ggsave("figs/s1b/p_EI_original_all_regions_cortex_highlight.jpg", p_original_highlight, width = 8.5, height = 7, units = "in", dpi = 300)
 
 # Optional raw-ratio overlay. Log2 is the primary plot because raw ratios are
 # strongly right-skewed, but this keeps a one-to-one visual check with earlier plots.
@@ -655,14 +686,14 @@ p_overlay_raw <- ggplot() +
   theme_classic(base_size = 13)
 
 print(p_overlay_raw)
-ggsave("figs/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.pdf", p_overlay_raw, width = 8.5, height = 7, units = "in")
-ggsave("figs/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.jpg", p_overlay_raw, width = 8.5, height = 7, units = "in", dpi = 300)
+ggsave("figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.pdf", p_overlay_raw, width = 8.5, height = 7, units = "in")
+ggsave("figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.jpg", p_overlay_raw, width = 8.5, height = 7, units = "in", dpi = 300)
 
 cat("\nDone. Key outputs:\n")
-cat("  data/EI_original_vs_jorstad_comparison_table.csv\n")
-cat("  data/spearman_EI_original_vs_jorstad_comparison.csv\n")
-cat("  data/lm_EI_original_vs_jorstad_comparison.csv\n")
-cat("  figs/p_EI_original_all_regions_with_jorstad_cortex_overlay.{pdf,jpg}\n")
-cat("  figs/p_EI_original_vs_jorstad_facet.{pdf,jpg}\n")
-cat("  figs/p_EI_original_all_regions_cortex_highlight.{pdf,jpg}\n")
-cat("  figs/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.{pdf,jpg}\n")
+cat("  data_analysis/EI_original_vs_jorstad_comparison_table.csv\n")
+cat("  data_analysis/spearman_EI_original_vs_jorstad_comparison.csv\n")
+cat("  data_analysis/lm_EI_original_vs_jorstad_comparison.csv\n")
+cat("  figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay.{pdf,jpg}\n")
+cat("  figs/s1b/p_EI_original_vs_jorstad_facet.{pdf,jpg}\n")
+cat("  figs/s1b/p_EI_original_all_regions_cortex_highlight.{pdf,jpg}\n")
+cat("  figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio.{pdf,jpg}\n")

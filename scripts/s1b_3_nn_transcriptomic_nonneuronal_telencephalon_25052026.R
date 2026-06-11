@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
@@ -11,22 +11,14 @@ library(tidyverse)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
-
-# inspect the anndata object
-colnames(obs)
-#####################################
-
-# filter to neurons only
-obs <- obs %>%
-  filter(cell_type == "neuron")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonneuronal.rds")
 
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
 # Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 # Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
 rcmr <- heiss_stephan_tbl %>%
@@ -53,7 +45,7 @@ head(rcmr)
 #   rois: one or more exact obs$roi strings separated by "||"
 
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   dplyr::transmute(
@@ -110,84 +102,38 @@ print(telencephalon_table, n = Inf)
 # Persist the classification table
 write.csv(
   telencephalon_table,
-  "data/telencephalon_classification_neuronal.csv",
+  "data_analysis/telencephalon_classification.csv",
   row.names = FALSE
 )
 
 ###################################################################
-# Cell type proportion calculations (ALL major neuronal categories)
-###################################################################
-# ---- Define major neuronal categories ----
-# These are mutually exclusive and exhaustive for neurons
-obs <- obs %>%
-  mutate(
-    cell_category = case_when(
-      # ---- Excitatory projection neurons ----
-      supercluster_term %in% c(
-        "Amygdala excitatory",
-        "Deep-layer corticothalamic and 6b",
-        "Deep-layer intratelencephalic",
-        "Deep-layer near-projecting",
-        "Upper-layer intratelencephalic",
-        "Thalamic excitatory",
-        "Hippocampal CA1-3",
-        "Hippocampal CA4",
-        "Hippocampal dentate gyrus",
-        "Mammillary body",
-        "Lower rhombic lip",
-        "Upper rhombic lip"
-      ) ~ "Excitatory_projection",
-      # ---- Inhibitory interneurons ----
-      supercluster_term %in% c(
-        "CGE interneuron",
-        "MGE interneuron",
-        "LAMP5-LHX6 and Chandelier",
-        "Cerebellar inhibitory",
-        "Midbrain-derived inhibitory"
-      ) ~ "Inhibitory_interneuron",
-      # ---- Inhibitory projection neurons (basal ganglia principal cells) ----
-      supercluster_term %in% c(
-        "Medium spiny neuron",
-        "Eccentric medium spiny neuron"
-      ) ~ "Inhibitory_projection_MSN",
-      # ---- Splatter ----
-      supercluster_term == "Splatter" ~ "Splatter",
-      # ---- Miscellaneous ----
-      supercluster_term == "Miscellaneous" ~ "Miscellaneous",
-      # ---- Fallback (should be rare) ----
-      TRUE ~ "Other_neuron"
-    )
-  )
-# ---- Sanity check: every neuron assigned ----
-table(obs$cell_category)
-
-###################################################################
-# Mean participant-level proportions by anatomy_group (over cell_category)
+# Cell type proportion calculations
+# Mean participant-level proportions by anatomy_group
 ###################################################################
 
 # Keep mapped regions only
 obs_celltype <- obs %>%
   filter(anatomy_group != "", anatomy_group != "Unmapped")
 
-# All cell categories observed in the analysis universe
+# All cell types observed in the analysis universe
 celltypes <- obs_celltype %>%
-  distinct(cell_category)
+  distinct(supercluster_term)
 
 # All observed donor × region combinations
 donor_region <- obs_celltype %>%
   distinct(anatomy_group, donor_id)
 
-# Raw counts per donor × region × cell category
+# Raw counts per donor × region × cell type
 celltype_counts <- obs_celltype %>%
-  count(anatomy_group, donor_id, cell_category, name = "n_cells")
+  count(anatomy_group, donor_id, supercluster_term, name = "n_cells")
 
-# Add zero counts for categories absent from a donor-region sample,
+# Add zero counts for cell types absent from a donor-region sample,
 # then calculate donor-level proportions
 celltype_table_long <- donor_region %>%
   crossing(celltypes) %>%
   left_join(
     celltype_counts,
-    by = c("anatomy_group", "donor_id", "cell_category")
+    by = c("anatomy_group", "donor_id", "supercluster_term")
   ) %>%
   mutate(n_cells = replace_na(n_cells, 0)) %>%
   group_by(anatomy_group, donor_id) %>%
@@ -198,17 +144,17 @@ celltype_table_long <- donor_region %>%
   ungroup() %>%
 
   # Region-level mean of donor-level proportions
-  group_by(anatomy_group, cell_category) %>%
+  group_by(anatomy_group, supercluster_term) %>%
   summarise(
     p_cells = mean(donor_prop, na.rm = TRUE),
     .groups = "drop"
   )
 
 # Wide table:
-# p_cells_* columns are mean participant-level proportions by cell_category
+# p_cells_* columns are mean participant-level cell type proportions
 celltype_proportion_table <- celltype_table_long %>%
   pivot_wider(
-    names_from  = cell_category,
+    names_from  = supercluster_term,
     values_from = p_cells,
     values_fill = 0,
     names_prefix = "p_cells_"
@@ -247,14 +193,12 @@ print(
 ## AUTOMATIC PREDICTOR SETUP
 #############################
 
-# Explicit exclusions for neuronal cell_category predictors:
-# - Splatter / Miscellaneous: QC/annotation residuals, not real cell classes.
-# - Inhibitory_projection_MSN: basal-ganglia (striatal) projection neurons;
-#   essentially a "basal ganglia vs not" indicator rather than a smooth
-#   pan-region cell-type axis.
-exclude <- c("p_cells_Splatter",
-             "p_cells_Miscellaneous",
-             "p_cells_Inhibitory_projection_MSN"
+# Explicit exclusions: known anatomically-restricted markers (not pan-regional axes).
+# NOTE: actual column names use the "p_cells_" prefix (from the pivot_wider with
+# names_sep="_"). The earlier "p_*" entries silently never matched -- now fixed.
+exclude <- c("p_cells_Bergmann glia",   # cerebellum-specific
+             "p_cells_Choroid plexus",  # ventricle-associated; sampling artefact
+             "p_cells_Ependymal"        # ventricle-lining; anatomically restricted
 )
 
 all_p_cells <- names(analysis_df)[grepl("^p_cells_", names(analysis_df))]
@@ -266,7 +210,7 @@ if (length(unmatched) > 0) {
           paste(unmatched, collapse = ", "))
 }
 
-cat("\nPredictors after EXPLICIT exclusion (Splatter, Miscellaneous, MSN):\n")
+cat("\nPredictors after EXPLICIT exclusion (Bergmann glia, Choroid plexus, Ependymal):\n")
 print(predictors)
 
 # Wrap any predictor containing spaces in backticks (formula-safe)
@@ -291,13 +235,16 @@ predictors_for_subset <- function(df, base_predictors) {
 # ----------------------------------------------------------------
 # CORE predictor set for the multivariate LM
 # ----------------------------------------------------------------
-# Using the cell_category collapse, the two canonical pan-region neuronal
-# axes are excitatory projection neurons and inhibitory interneurons.
-# With ~11-12 regions per subset and 2 predictors, df_residual = n - 3,
-# i.e. ~8-9 -- comfortable for inference.
+# With ~11-12 regions per subset, a 9-10 predictor model is saturated
+# (df_residual = 0-2). Restrict to the four canonical glial classes,
+# which together account for the vast majority of parenchymal nonneuronal
+# cells and are interpretable. This gives df_residual = n - 5, i.e. ~6-7
+# for each subset -- enough for meaningful inference.
 lm_predictors <- c(
-  "p_cells_Excitatory_projection",
-  "p_cells_Inhibitory_interneuron"
+  "p_cells_Astrocyte",
+  "p_cells_Oligodendrocyte",
+  "p_cells_Oligodendrocyte precursor",
+  "p_cells_Microglia"
 )
 lm_predictors_backticked <- ifelse(
   grepl("\\s", lm_predictors),
@@ -334,10 +281,6 @@ run_cor_subset <- function(df, predictors, label) {
   cat("\n========== SPEARMAN CORRELATIONS:", label, "(n =", nrow(df), "regions) ==========\n")
   if (nrow(df) < 4) {
     cat("  Skipping correlations: only", nrow(df), "regions.\n")
-    return(invisible(NULL))
-  }
-  if (length(predictors) == 0) {
-    cat("  Skipping correlations: no predictors survived dynamic exclusion.\n")
     return(invisible(NULL))
   }
   cor_results <- do.call(
@@ -390,7 +333,7 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
   })
 
   p <- ggplot(plot_df, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
-    geom_point(size = 2.8, alpha = 0.85) +
+    geom_point(size = 2.4, alpha = 0.85) +
     geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
     stat_poly_eq(
       aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
@@ -398,29 +341,30 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
       parse = TRUE,
       label.x = "right",
       label.y = "top",
-      size = 4,
+      size = 3,
       color = "black"
     ) +
-    facet_wrap(~ predictor, scales = "free_x") +
+    facet_wrap(~ predictor, scales = "free_x", ncol = facet_ncol(length(predictors))) +
     labs(
-      title = paste0("Neuronal cell-type proportions vs rCMRGlc \u2014 ", label),
+      title = paste0("Nonneuronal cell-type proportions vs rCMRGlc \u2014 ", label),
       subtitle = paste0("n = ", nrow(df), " regions; ", length(predictors), " predictors"),
-      x = "Neuronal Cell-type proportion",
+      x = "Nonneuronal Cell-type proportion",
       y = "rCMRGlc (\u00b5mol/100 g/min.)",
       color = "Region"
     ) +
-    theme_classic(base_size = 14)
+    theme_facet_compact(12)
   if (!is.null(region_scale)) p <- p + region_scale
 
   print(p)
 
+  fd <- facet_dims(length(predictors))
   ggsave(
-    filename = paste0("figs/p_neuronal_", file_slug, ".pdf"),
-    plot = p, width = 10, height = 7, units = "in"
+    filename = paste0("figs/s1b/p_nonneuronal_", file_slug, ".pdf"),
+    plot = p, width = fd$width, height = fd$height, units = "in"
   )
   ggsave(
-    filename = paste0("figs/p_neuronal_", file_slug, ".jpg"),
-    plot = p, width = 10, height = 7, units = "in", dpi = 300
+    filename = paste0("figs/s1b/p_nonneuronal_", file_slug, ".jpg"),
+    plot = p, width = fd$width, height = fd$height, units = "in", dpi = 300
   )
   invisible(p)
 }
@@ -450,12 +394,12 @@ cat("Dropped in Non-tel due to zeros:", paste(setdiff(predictors, predictors_non
 # Write per-subset proportion tables for the record
 write.csv(
   tel_df,
-  "data/neuronal_celltype_proportions_by_region_telencephalon.csv",
+  "data_analysis/nonneuronal_celltype_proportions_by_region_telencephalon.csv",
   row.names = FALSE
 )
 write.csv(
   nontel_df,
-  "data/neuronal_celltype_proportions_by_region_nontelencephalon.csv",
+  "data_analysis/nonneuronal_celltype_proportions_by_region_nontelencephalon.csv",
   row.names = FALSE
 )
 
@@ -469,7 +413,7 @@ cor_nontel <- run_cor_subset(nontel_df, predictors_nontel, "Non-telencephalon")
 cor_combined <- dplyr::bind_rows(cor_tel, cor_nontel)
 write.csv(
   cor_combined,
-  "data/spearman_correlations_by_telencephalon_neuronal.csv",
+  "data_analysis/spearman_correlations_by_telencephalon.csv",
   row.names = FALSE
 )
 
@@ -479,10 +423,6 @@ p_nontel <- make_plot_subset(nontel_df, predictors_nontel, "Non-telencephalon", 
 ###################################################################
 # Combined plots (use predictors_common: present and non-zero in both subsets)
 ###################################################################
-
-if (length(predictors_common) == 0) {
-  cat("\nSkipping combined plots: no predictors are non-zero in BOTH divisions.\n")
-} else {
 
 # (a) Grid plot: predictor (columns) x division (rows) -- separate panels
 plot_df_all <- analysis_df %>%
@@ -505,7 +445,7 @@ region_scale_all <- tryCatch({
 })
 
 p_combined <- ggplot(plot_df_all, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
-  geom_point(size = 2.8, alpha = 0.85) +
+  geom_point(size = 2.4, alpha = 0.85) +
   geom_smooth(aes(group = division), method = "lm", se = TRUE, color = "steelblue") +
   stat_poly_eq(
     aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
@@ -513,81 +453,82 @@ p_combined <- ggplot(plot_df_all, aes(x = prop, y = rcmr_value, color = anatomy_
     parse = TRUE,
     label.x = "right",
     label.y = "top",
-    size = 3.2,
+    size = 3,
     color = "black"
   ) +
   facet_grid(division ~ predictor, scales = "free_x") +
   labs(
-    title = "Neuronal cell-type proportions vs rCMRGlc by telencephalon vs non-telencephalon",
+    title = "Nonneuronal cell-type proportions vs rCMRGlc by telencephalon vs non-telencephalon",
     subtitle = paste0(length(predictors_common), " predictors shared across both divisions"),
-    x = "Neuronal Cell-type proportion",
+    x = "Nonneuronal Cell-type proportion",
     y = "rCMRGlc (\u00b5mol/100 g/min.)",
     color = "Region"
   ) +
-  theme_classic(base_size = 12) +
-  theme(strip.text.x = element_text(size = 9))
+  theme_facet_compact(11)
 if (!is.null(region_scale_all)) p_combined <- p_combined + region_scale_all
 
 print(p_combined)
 
+# 2 division rows x predictors_common columns; size width by columns so panels
+# are not squashed, with a fixed taller height for the two rows.
+grid_w <- length(predictors_common) * 3.3 + 2.6
 ggsave(
-  filename = "figs/p_neuronal_by_telencephalon.pdf",
-  plot = p_combined, width = 14, height = 9, units = "in"
+  filename = "figs/s1b/p_nonneuronal_by_telencephalon.pdf",
+  plot = p_combined, width = grid_w, height = 9, units = "in"
 )
 ggsave(
-  filename = "figs/p_neuronal_by_telencephalon.jpg",
-  plot = p_combined, width = 14, height = 9, units = "in", dpi = 300
+  filename = "figs/s1b/p_nonneuronal_by_telencephalon.jpg",
+  plot = p_combined, width = grid_w, height = 9, units = "in", dpi = 300
 )
 
 # (b) Overlay plot: one panel per predictor, both divisions on same axes,
 #     separate regression lines + per-line R^2 / p annotations.
 p_overlay <- ggplot(plot_df_all,
                     aes(x = prop, y = rcmr_value, color = division, fill = division)) +
-  geom_point(size = 2.6, alpha = 0.85) +
+  geom_point(size = 2.4, alpha = 0.85) +
   geom_smooth(method = "lm", se = TRUE, alpha = 0.15) +
   stat_poly_eq(
     aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
     formula = y ~ x,
     parse = TRUE,
     label.x = "right",
-    size = 3.2,
+    size = 3,
     show.legend = FALSE
   ) +
-  facet_wrap(~ predictor, scales = "free_x") +
+  facet_wrap(~ predictor, scales = "free_x", ncol = facet_ncol(length(predictors_common))) +
   scale_color_manual(values = c("Telencephalon" = "#D7263D",
                                 "Non-telencephalon" = "#1B998B")) +
   scale_fill_manual(values  = c("Telencephalon" = "#D7263D",
                                 "Non-telencephalon" = "#1B998B")) +
   labs(
-    title = "Neuronal cell-type proportion vs rCMRGlc -- Telencephalon vs Non-telencephalon",
+    title = "Nonneuronal cell-type proportion vs rCMRGlc -- Telencephalon vs Non-telencephalon",
     subtitle = paste0(length(predictors_common), " predictors shared across both divisions"),
-    x = "Neuronal Cell-type proportion",
+    x = "Nonneuronal Cell-type proportion",
     y = "rCMRGlc (\u00b5mol/100 g/min.)",
     color = "Division",
     fill  = "Division"
   ) +
-  theme_classic(base_size = 13) +
+  theme_facet_compact(12) +
   theme(legend.position = "top")
 
 print(p_overlay)
 
+fd_overlay <- facet_dims(length(predictors_common))
 ggsave(
-  filename = "figs/p_neuronal_overlay_telencephalon.pdf",
-  plot = p_overlay, width = 12, height = 8, units = "in"
+  filename = "figs/s1b/p_nonneuronal_overlay_telencephalon.pdf",
+  plot = p_overlay, width = fd_overlay$width, height = fd_overlay$height, units = "in"
 )
 ggsave(
-  filename = "figs/p_neuronal_overlay_telencephalon.jpg",
-  plot = p_overlay, width = 12, height = 8, units = "in", dpi = 300
+  filename = "figs/s1b/p_nonneuronal_overlay_telencephalon.jpg",
+  plot = p_overlay, width = fd_overlay$width, height = fd_overlay$height, units = "in", dpi = 300
 )
-
-}  # end of `if (length(predictors_common) > 0)` guard
 
 cat("\nDone. Outputs:\n")
-cat("  data/telencephalon_classification_neuronal.csv\n")
-cat("  data/neuronal_celltype_proportions_by_region_telencephalon.csv\n")
-cat("  data/neuronal_celltype_proportions_by_region_nontelencephalon.csv\n")
-cat("  data/spearman_correlations_by_telencephalon_neuronal.csv\n")
-cat("  figs/p_neuronal_telencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_nontelencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_by_telencephalon.{pdf,jpg}\n")
-cat("  figs/p_neuronal_overlay_telencephalon.{pdf,jpg}\n")
+cat("  data_analysis/telencephalon_classification.csv\n")
+cat("  data_analysis/nonneuronal_celltype_proportions_by_region_telencephalon.csv\n")
+cat("  data_analysis/nonneuronal_celltype_proportions_by_region_nontelencephalon.csv\n")
+cat("  data_analysis/spearman_correlations_by_telencephalon.csv\n")
+cat("  figs/s1b/p_nonneuronal_telencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_nonneuronal_nontelencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_nonneuronal_by_telencephalon.{pdf,jpg}\n")
+cat("  figs/s1b/p_nonneuronal_overlay_telencephalon.{pdf,jpg}\n")

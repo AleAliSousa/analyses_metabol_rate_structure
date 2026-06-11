@@ -1,6 +1,6 @@
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
 
-source("R/0.01_plot_settings.R")
+source("R/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
@@ -11,7 +11,7 @@ library(tidyverse)
 ############################
 ## Load saved obs metadata
 ############################
-obs <- readRDS("data/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
+obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 # filter to neurons only
 obs_neuron <- obs %>%
@@ -22,7 +22,7 @@ obs_neuron <- obs %>%
 ######################################################
 
 # Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data/Heiss_Stephan_data.csv")
+heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 
 # Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
 rcmr <- heiss_stephan_tbl %>%
@@ -49,7 +49,7 @@ head(rcmr)
 #   rois: one or more exact obs$roi strings separated by "||"
 
 anatomy_rules <- readr::read_csv(
-  "data/rcmr_roi_relationship.csv",
+  "data_intermediate/rcmr_roi_relationship.csv",
   show_col_types = FALSE
 ) %>%
   dplyr::transmute(
@@ -169,7 +169,7 @@ celltype_proportion_table <- celltype_table_long %>%
 
 write.csv(
   celltype_proportion_table,
-  "data/neuronal_category_p_by_region.csv",
+  "data_analysis/neuronal_category_p_by_region.csv",
   row.names = FALSE
 )
 
@@ -280,8 +280,10 @@ plot_df <- analysis_df %>%
 check_region_palette(analysis_df, region_col = "anatomy_group")
 analysis_df <- set_region_order(analysis_df, region_col = "anatomy_group")
 
+fd_n <- facet_dims(length(predictors))
+
 p_neuronal<-ggplot(plot_df, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
-  geom_point(size = 2.8, alpha = 0.85) +
+  geom_point(size = 2.4, alpha = 0.85) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
   stat_poly_eq(
     aes(label = paste(after_stat(rr.label), after_stat(p.value.label), sep = "*\", \"*")),
@@ -289,10 +291,10 @@ p_neuronal<-ggplot(plot_df, aes(x = prop, y = rcmr_value, color = anatomy_group)
     parse = TRUE,
     label.x = "right",
     label.y = "top",
-    size = 4,
+    size = 3,
     color = "black"
   ) +
-  facet_wrap(~ predictor, scales = "free_x") +
+  facet_wrap(~ predictor, scales = "free_x", ncol = fd_n$ncol) +
   #scale_color_manual(values = pal) +
   scale_color_regions() +
   labs(
@@ -300,23 +302,23 @@ p_neuronal<-ggplot(plot_df, aes(x = prop, y = rcmr_value, color = anatomy_group)
     y = "rCMRGlc (µmol/100 g/min.)",
     color = "Region"
   ) +
-  theme_classic(base_size = 14)
+  theme_facet_compact(12)
 
 p_neuronal
 
 ggsave(
-  filename = "figs/p_neuronal.pdf",
+  filename = "figs/s1b/p_neuronal.pdf",
   plot = p_neuronal,
-  width = 10,
-  height = 7,
+  width = fd_n$width,
+  height = fd_n$height,
   units = "in"
 )
 
 ggsave(
-  filename = "figs/p_neuronal.jpg",
+  filename = "figs/s1b/p_neuronal.jpg",
   plot = p_neuronal,
-  width = 10,
-  height = 7,
+  width = fd_n$width,
+  height = fd_n$height,
   units = "in",
   dpi = 300
 )
