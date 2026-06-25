@@ -1,7 +1,4 @@
 "EI_definition","variable","n_regions","rho","p_value","status","p_adj_BH"
 "Broad all-region E:I (MSN excluded)","EI_ratio",23,-0.0064245121803157,0.97679054828888,"tested",0.97679054828888
-"Broad all-region E:I (MSN excluded)","log2_EI_ratio",23,-0.0064245121803157,0.97679054828888,"tested",0.97679054828888
 "Broad all-region E:I (MSN included)","EI_ratio",23,-0.0222386960087851,0.919774768738396,"tested",0.97679054828888
-"Broad all-region E:I (MSN included)","log2_EI_ratio",23,-0.0222386960087851,0.919774768738396,"tested",0.97679054828888
 "Jorstad-like cortical E:I","EI_ratio",7,0.666693722394714,0.101920460246182,"tested",0.305761380738547
-"Jorstad-like cortical E:I","log2_EI_ratio",7,0.666693722394714,0.101920460246182,"tested",0.305761380738547

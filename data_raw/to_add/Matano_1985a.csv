@@ -1,0 +1,109 @@
+Species,Body_weight_current,Body_weight_current_source,Species_Matano1985a,code_Matano1985a,Body_weight_1985a,Cerebellar_nuclei_total,Interpositus_cerebellar_nuclei,Lateral_cerebellar_nuclei,Medial_cerebellar_nuclei,Number_cerebellar_nuclei
+AAAA_Anatomy_code,,,,,BoW,TCN,ICN,LCN,MCN,
+AAAA_Reference,ALL,ALL,Matano_1985a,Matano_1985a,Matano_1985a,Matano_1985a,Matano_1985a,Matano_1985a,Matano_1985a,Matano_1985a
+Alouatta caraya,6420,Bauernfeind_2013,,,,,,,,
+Alouatta seniculus,"6,400",Stephan_1981,Alouatta seniculus,,"6,400",113.79,26.57,59.75,27.47,2
+Aotus trivirgatus,830,Stephan_1981,Aotus trivirgatus,3325,830,41.45,11.42,17.02,13.01,2
+Atelerix algirus,790,Stephan_1981,,,,,,,,
+Ateles geoffroyi,"8,000",Stephan_1981,Ateles geoffroyi,3371,"8,000",209.17,59.75,114.79,34.63,1
+Avahi laniger,"1,285",Stephan_1981,Avahi l. laniger,3243,"1,285",37.89,11.28,14.46,12.15,1
+Avahi occidentalis,860,Stephan_1981,Avahi l. occidentalis,3244,860,29.66,10.18,11.3,8.18,1
+Blarina brevicauda,,,,,,,,,,
+Callicebus moloch,900,Stephan_1981,Callicebus moloch,3327,900,61.41,19.47,21.24,20.7,2
+Callimico goeldii,480,Stephan_1981,,,,,,,,
+Callithrix jacchus,280,Stephan_1981,Callithrix jacchus,3287,280,20.96,5.44,7.93,7.59,2
+Callithrix pygmaea,140,Stephan_1981,Cebuella pygmaea,3289,120,11.48,3.2,4.35,3.93,2
+Cebus albifrons,"3,100",Stephan_1981,Cebus albifrons,3317,"3,100",173.18,38.98,99.52,34.68,1
+Cercocebus agilis,5660,Bauernfeind_2013,,,,,,,,
+Cercopithecus ascanius,"3,400",Stephan_1981,Cercopithecus ascanius,3433,"3,400",143.98,41.7,67.67,34.61,2
+Cercopithecus mitis,"6,300",Stephan_1981,Cercopithecus mitis,3453,"6,300",171.16,54.55,82.38,34.23,1
+Cheirogaleus major,450,Stephan_1981,Cheirogaleus major,3203,450,19.45,3.85,9.95,5.65,2
+Cheirogaleus medius,177,Stephan_1981,Cheirogaleus medius,3205,177,9.45,1.94,4.27,3.24,1
+Chrysochloris asiatica,49,Stephan_1981,,,,,,,,
+Chrysochloris stuhlmanni,40,Stephan_1981,,,,,,,,
+Colobus angolensis,9680,Bauernfeind_2013,,,,,,,,
+Crocidura flavescens,28,Stephan_1981,Crocidura flavescens,943,33.1,1.17,0.42,0.47,0.27,1
+Crocidura hildegardeae,,,,,,,,,,
+Crocidura jacksoni,,,,,,,,,,
+Crocidura russula,11,Stephan_1981,Crocidura r. russula,1070,11.1,0.58,0.23,0.23,0.12,1
+Daubentonia madagascariensis,2800,Stephan_1981,Daubentonia madagasc.,3251,"2,800",126.08,36.11,61.03,28.94,1
+Desmana moschata,440,Stephan_1981,,,,,,,,
+Echinops telfairi,87.5,Stephan_1981,Echinops telfairi,585,87.5,1.71,0.87,0.46,0.39,1
+Echinosorex gymnura,,,,,,,,,,
+Elephantulus fuscipes,57,Stephan_1981,,,,,,,,
+Erinaceus europaeus,860,Stephan_1981,Erinaceus europaeus,695,860,12.65,5.53,3.83,3.3,1
+Erythrocebus patas,7800,Stephan_1981,Erythrocebus patas,3473,"7,800",295.09,95.07,126.31,73.71,2
+Eulemur fulvus,1400,Stephan_1981,Lemur fulvus,3215,"1,400",86.28,27.58,32.05,26.65,2
+Galago senegalensis,186,Stephan_1981,Galago senegalensis,3265,186,12.6,3.77,4.4,4.43,2
+Galagoides demidoff,81,Stephan_1981,Galagoides demidoff,3275,81,8.22,2.08,3.06,3.08,2
+Galemys pyrenaicus,57.5,Stephan_1981,,,,,,,,
+Gorilla sp.,103517.5,Bauernfeind_2013,Gorilla gorilla,3551,"105,000",740.4,112.36,534.6,93.44,2
+Hemicentetes semispinosus,110,Stephan_1981,Hemicentetes semispin.,581,110,3.23,1.52,1.16,0.55,1
+Hemiechinus auritus,250,Stephan_1981,,,,,,,,
+Homo sapiens,70100,Bauernfeind_2013,Homo sapiens,3553,"65,000","1,513.78",190.48,"1,166.90",156.4,2
+Hylobates lar,5700,Stephan_1981,Hylobates lar,3539,"5,700",242.09,65.6,141.08,35.41,1
+Hylobates muelleri,5710,Bauernfeind_2013,,,,,,,,
+Hylomys suillus,,,,,,,,,,
+Indri indri,6250,Stephan_1981,lndri indri,3249,"6,250",141.3,46.96,56.31,38.03,2
+Lagothrix lagothricha,5200,Stephan_1981,Lagothrix lagothricha,3379,"5,200",212.95,60.23,108.57,44.15,2
+Leontopithecus rosalia,598,Bauernfeind_2013,,,,,,,,
+Lepilemur ruficaudatus,915,Stephan_1981,Lepilemur ruficaudatus,3239,915,23.07,6.41,9.35,7.31,1
+Lophocebus albigena,7900,Stephan_1981,Cercocebus albigena,3407,"7,900",232.63,74.6,113.33,44.7,2
+Loris tardigradus,322,Stephan_1981,Loris tardigradus,3253,322,17.99,5.58,5.76,6.65,2
+Macaca fascicularis,,,,,,,,,,
+Macaca maura,6050,Bauernfeind_2013,,,,,,,,
+Macaca mulatta,7800,Stephan_1981,Macaca mulatta,3391,"7,800",235.31,75.13,106.94,53.24,2
+Microcebus murinus,54,Stephan_1981,Microcebus murinus,3199,54,4.74,1.14,2.11,1.49,2
+Microgale cowani,15.2,Stephan_1981,,,,,,,,
+Microgale mergulus,92,Stephan_1981,,,,,,,,
+Micropotamogale lamottei,64.2,Stephan_1981,,,,,,,,
+Micropotamogale ruwenzorii,,,,,,,,,,
+Microsorex hoyi,,,,,,,,,,
+Miopithecus talapoin,1200,Stephan_1981,Miopithecus talapoin,3469,"1,200",78.95,26.42,33.84,18.69,2
+Myosorex babaulti,,,,,,,,,,
+Nasalis larvatus,14000,Stephan_1981,Nasalis larvatus,3499,"14,000",340.36,105.48,149.33,85.55,1
+Neomys fodiens,15.2,Stephan_1981,,,,,,,,
+Nesogale dobsoni,32.6,Stephan_1981,,,,,,,,
+Nesogale talazaci,50.4,Stephan_1981,,,,,,,,
+Nycticebus coucang,800,Stephan_1981,Nycticebus coucang,3255,800,33.75,8.76,14.03,10.96,2
+Oryzorictes hova,44.2,Stephan_1981,,,,,,,,
+Otolemur crassicaudatus,850,Stephan_1981,Otolemur crassicaudatus,3267,850,25.9,6.63,9.64,9.63,2
+Pan paniscus,37133.33333,Bauernfeind_2013,,,,,,,,
+Pan troglodytes,46503.33333,Bauernfeind_2013,Pan troglodytes,3549,"46,000",601.42,87.27,455.83,58.32,1
+Papio anubis,25000,Stephan_1981,Papio anubis,3415,"25,000",379.04,99.91,220.35,58.78,2
+Perodicticus potto,1150,Stephan_1981,Perodicticus potto,3259,"1,150",29.44,8.43,12.25,8.76,2
+Piliocolobus badius,7000,Stephan_1981,Colobus badius,3477,"7,000",190.92,57.76,98.52,34.64,2
+Pithecia monachus,1500,Stephan_1981,Pithecia monachus,3341,"1,500",109.36,31.78,53.67,23.91,2
+Pithecia pithecia,1580,Bauernfeind_2013,,,,,,,,
+Pongo sp.,61700,Bauernfeind_2013,,,,,,,,
+Potamogale velox,660,Stephan_1981,,,,,,,,
+Propithecus verreauxi,3480,Stephan_1981,Propithecus verreauxi,3247,"3,480",97.12,30.94,39.46,26.72,2
+Pygathrix nemaeus,7500,Stephan_1981,Pygathrix nemaeus,3493,"7,500",265.75,80.76,137.05,47.94,1
+Rattus norvegicus,233.7,Stephan_1981,,,,6.002,,,,
+Rhynchocyon cirnei,490,Stephan_1981,,,,,,,,
+Ruwenzorisorex suncoides,,,,,,,,,,
+Saguinus geoffroyi,482,Bauernfeind_2013,,,,,,,,
+Saguinus midas,340,Stephan_1981,Saguinus midas,3305,340,21.57,6.94,7.75,6.88,2
+Saguinus oedipus,380,Stephan_1981,Saguinus oedipus,3311,380,24.6,7.19,8.8,8.61,2
+Saimiri sciureus,660,Stephan_1981,Saimiri sciureus,3335,660,73.22,21.93,27.2,24.09,2
+Scutisorex somereni,,,,,,,,,,
+Setifer setosus,237,Frahm_1994,Setifer setosus,579,248,4.19,1.78,1.21,1.2,1
+Solenodon paradoxus,900,Stephan_1981,,,,,,,,
+Sorex araneus,10.3,Stephan_1981,Sorex araneus,715,10.2,0.58,0.18,0.21,0.18,1
+Sorex cinereus,,,,,,,,,,
+Sorex fumeus,,,,,,,,,,
+Sorex minutus,5.3,Stephan_1981,Sorex minutus,769,4.42,0.35,0.13,0.13,0.09,1
+Spalax ehrenbergi,112.9,Stephan_1981,,,,9.36,,,,
+Suncus etruscus,,,,,,,,,,
+Suncus megalura,,,,,,,,,,
+Suncus murinus,35.5,Stephan_1981,Suncus murinus,137,33,1.06,0.38,0.44,0.23,1
+Sylvisorex granti,,,,,,,,,,
+Symphalangus syndactylus,11900,Bauernfeind_2013,,,,,,,,
+Talpa europaea,76,Stephan_1981,,,,,,,,
+Tarsius sp.,125,Stephan_1981,Tarsius spp.,3282,125,8.06,1.82,3.37,2.87,4
+Tenrec ecaudatus,832,Stephan_1981,Tenrec ecaudatus,577,832,9.82,4.43,3.33,2.06,1
+Trachypithecus francoisi,7700,Bauernfeind_2013,,,,,,,,
+Tupaia glis,170,Stephan_1981,Tupaia glis,1263,170,12.46,3.4,5.13,3.93,2
+Tupaia minor,70,Stephan_1981,,,,,,,,
+Urogale everetti,275,Stephan_1981,Urogale everetti,1289,275,15.07,3.94,7,4.13,1
+Varecia variegata,3000,Stephan_1981,Varecia variegata,3227,"3,000",94.67,28.83,37.45,28.39,1

@@ -25,6 +25,6 @@
 "Cerebellum","Cerebellum1",,,"Cerebellum",29.7507692307692,"Cerebellum","Stephan et al. 1981; Zilles and Rehkamper 1988","0.56*Cerebellar cortex + 0.08*Vermis + 0.01*Nucleus dentatus cerebelli + 0.45*Other (Sullivan et al. 2000, MacLeod et al. 2003, Matano 2001)"
 "Cerebellum",,,"Cerebellar cortex","Cerebellar cortex",29.8,,,
 "Cerebellum",,,"Vermis","Vermis",30.1,,,
-"Cerebellum",,,"Nucleus dentatus cerebelli","Nucleus dentatus cerebelli",24.2,,,
+"Cerebellum",,,"Nucleus dentatus cerebelli","Nucleus dentatus cerebelli",24.2,"Nucleus dentatus cerebelli","Matano et al. 1985 a",
 "White matter",,,"Centrum semiovale","Centrum semiovale",12.3,"Neocortex white","Frahm et al. 1982; Zilles and Rehkamper 1988",
 "White matter",,,"Capsula interna","Capsula interna",25.5,"Capsula interna","Stephan et al. 1981",

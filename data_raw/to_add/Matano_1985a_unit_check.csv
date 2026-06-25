@@ -1,0 +1,45 @@
+"target_species","Species_Matano1985a","code_Matano1985a","Body_weight_1985a","Cerebellar_nuclei_total","Interpositus_cerebellar_nuclei","Lateral_cerebellar_nuclei","Medial_cerebellar_nuclei","Number_cerebellar_nuclei","Body_weight","Cerebellum","Cerebellar_nuclei_total_to_Cerebellum"
+"Alouatta_seniculus","Alouatta seniculus",,6400,113.79,26.57,59.75,27.47,2,6400,5699,0.0199666608176873
+"Aotus_trivirgatus","Aotus trivirgatus","3325",830,41.45,11.42,17.02,13.01,2,830,1873,0.0221302722904431
+"Ateles_geoffroyi","Ateles geoffroyi","3371",8000,209.17,59.75,114.79,34.63,1,8000,12438,0.0168170123814118
+"Avahi_laniger","Avahi l. laniger","3243",1285,37.89,11.28,14.46,12.15,1,1285,1489,0.0254466084620551
+"Avahi_occidentalis","Avahi l. occidentalis","3244",860,29.66,10.18,11.3,8.18,1,860,1383,0.0214461315979754
+"Plecturocebus_moloch","Callicebus moloch","3327",900,61.41,19.47,21.24,20.7,2,900,1622,0.0378606658446363
+"Callithrix_jacchus","Callithrix jacchus","3287",280,20.96,5.44,7.93,7.59,2,280,757,0.0276882430647292
+"Callithrix_pygmaea","Cebuella pygmaea","3289",120,11.48,3.2,4.35,3.93,2,140,468,0.0245299145299145
+"Cebus_albifrons","Cebus albifrons","3317",3100,173.18,38.98,99.52,34.68,1,3100,7871,0.0220022868758735
+"Cercopithecus_ascanius","Cercopithecus ascanius","3433",3400,143.98,41.7,67.67,34.61,2,3400,5828,0.0247048730267673
+"Cercopithecus_mitis","Cercopithecus mitis","3453",6300,171.16,54.55,82.38,34.23,1,6300,6758,0.0253270198283516
+"Cheirogaleus_major","Cheirogaleus major","3203",450,19.45,3.85,9.95,5.65,2,450,947,0.0205385427666315
+"Cheirogaleus_medius","Cheirogaleus medius","3205",177,9.45,1.94,4.27,3.24,1,177,437,0.0216247139588101
+"Daubentonia_madagascariensis","Daubentonia madagasc.","3251",2800,126.08,36.11,61.03,28.94,1,2800,6461,0.0195140071196409
+"Erythrocebus_patas","Erythrocebus patas","3473",7800,295.09,95.07,126.31,73.71,2,7800,8738,0.0337708857862211
+"Eulemur_fulvus","Lemur fulvus","3215",1400,86.28,27.58,32.05,26.65,2,1400,3328,0.0259254807692308
+"Galago_senegalensis","Galago senegalensis","3265",186,12.6,3.77,4.4,4.43,2,186,672,0.01875
+"Galagoides_demidoff","Galagoides demidoff","3275",81,8.22,2.08,3.06,3.08,2,81,413,0.0199031476997579
+"Gorilla_gorilla","Gorilla gorilla","3551",105000,740.4,112.36,534.6,93.44,2,105000,69249,0.0106918511458649
+"Homo_sapiens","Homo sapiens","3553",65000,1513.78,190.48,1166.9,156.4,2,65000,137421,0.0110156380756944
+"Hylobates_lar","Hylobates lar","3539",5700,242.09,65.6,141.08,35.41,1,5700,12078,0.0200438814373241
+"Indri_indri","lndri indri","3249",6250,141.3,46.96,56.31,38.03,2,6250,5504,0.025672238372093
+"Lagothrix_lagotricha","Lagothrix lagothricha","3379",5200,212.95,60.23,108.57,44.15,2,5200,11268,0.0188986510472133
+"Lepilemur_ruficaudatus","Lepilemur ruficaudatus","3239",915,23.07,6.41,9.35,7.31,1,915,1165,0.0198025751072961
+"Lophocebus_albigena","Cercocebus albigena","3407",7900,232.63,74.6,113.33,44.7,2,7900,10726,0.0216884206600783
+"Loris_tardigradus","Loris tardigradus","3253",322,17.99,5.58,5.76,6.65,2,322,728,0.0247115384615385
+"Macaca_mulatta","Macaca mulatta","3391",7800,235.31,75.13,106.94,53.24,2,7800,8965,0.0262476296709426
+"Microcebus_murinus","Microcebus murinus","3199",54,4.74,1.14,2.11,1.49,2,54,234,0.0202564102564103
+"Miopithecus_talapoin","Miopithecus talapoin","3469",1200,78.95,26.42,33.84,18.69,2,1200,3374,0.0233995257854179
+"Nasalis_larvatus","Nasalis larvatus","3499",14000,340.36,105.48,149.33,85.55,1,14000,12113,0.0280987368942459
+"Nycticebus_coucang","Nycticebus coucang","3255",800,33.75,8.76,14.03,10.96,2,800,1310,0.025763358778626
+"Otolemur_crassicaudatus","Otolemur crassicaudatus","3267",850,25.9,6.63,9.64,9.63,2,850,1414,0.0183168316831683
+"Pan_troglodytes","Pan troglodytes","3549",46000,601.42,87.27,455.83,58.32,1,46000,43663,0.0137741337058837
+"Papio_anubis","Papio anubis","3415",25000,379.04,99.91,220.35,58.78,2,25000,18683,0.0202879623186854
+"Perodicticus_potto","Perodicticus potto","3259",1150,29.44,8.43,12.25,8.76,2,1150,1699,0.017327839905827
+"Piliocolobus_badius","Colobus badius","3477",7000,190.92,57.76,98.52,34.64,2,7000,8648,0.0220767807585569
+"Pithecia_monachus","Pithecia monachus","3341",1500,109.36,31.78,53.67,23.91,2,1500,3908,0.0279836233367451
+"Propithecus_verreauxi","Propithecus verreauxi","3247",3480,97.12,30.94,39.46,26.72,2,3480,3957,0.0245438463482436
+"Pygathrix_nemaeus","Pygathrix nemaeus","3493",7500,265.75,80.76,137.05,47.94,1,7500,8063,0.0329591963289098
+"Saguinus_midas","Saguinus midas","3305",340,21.57,6.94,7.75,6.88,2,340,1061,0.0203298774740811
+"Saguinus_oedipus","Saguinus oedipus","3311",380,24.6,7.19,8.8,8.61,2,380,984,0.025
+"Saimiri_sciureus","Saimiri sciureus","3335",660,73.22,21.93,27.2,24.09,2,660,2260,0.0323982300884956
+"Tarsius_syrichta","Tarsius spp.","3282",125,8.06,1.82,3.37,2.87,4,125,428,0.0188317757009346
+"Varecia_variegata","Varecia variegata","3227",3000,94.67,28.83,37.45,28.39,1,3000,4286,0.022088194120392

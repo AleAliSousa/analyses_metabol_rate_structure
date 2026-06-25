@@ -209,7 +209,7 @@ names(pal) <- regions
 # Plot with regression line and equation
 p_counts <- ggplot(plot_df_counts, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
   geom_point(size = 2.8, alpha = 0.85) +
-  #geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
+  geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +
   stat_poly_eq(
     aes(label = paste(..rr.label.., ..p.value.label.., sep = "*\", \"*")),
     formula = y ~ x,
@@ -219,6 +219,7 @@ p_counts <- ggplot(plot_df_counts, aes(x = prop, y = rcmr_value, color = anatomy
     size = 4,
     color = "black"
   ) +
+  scale_x_continuous(n.breaks = 3, labels = scales::label_scientific()) +
   facet_wrap(~ cell_counts, scales = "free_x") +
   scale_color_manual(values = pal) +
   labs(
@@ -294,6 +295,7 @@ p_densities<-ggplot(plot_df_densities, aes(x = prop, y = rcmr_value, color = ana
     size = 4,
     color = "black"
   ) +
+  scale_x_continuous(n.breaks = 3, labels = scales::label_scientific()) +
   facet_wrap(~ cell_densities, scales = "free_x") +
   scale_color_manual(values = pal) +
   labs(

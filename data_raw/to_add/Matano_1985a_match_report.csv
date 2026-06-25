@@ -1,0 +1,59 @@
+"Species","Species_Matano1985a","matano_accepted_name","target_species_raw","target_species","matched_in_Stephan","Body_weight_current","Body_weight_current_source","code_Matano1985a","Body_weight_1985a","Cerebellar_nuclei_total","Interpositus_cerebellar_nuclei","Lateral_cerebellar_nuclei","Medial_cerebellar_nuclei","Number_cerebellar_nuclei"
+"Alouatta seniculus","Alouatta seniculus","Alouatta seniculus","Alouatta_seniculus","Alouatta_seniculus",TRUE,6400,"Stephan_1981",,6400,113.79,26.57,59.75,27.47,2
+"Aotus trivirgatus","Aotus trivirgatus","Aotus trivirgatus","Aotus_trivirgatus","Aotus_trivirgatus",TRUE,830,"Stephan_1981","3325",830,41.45,11.42,17.02,13.01,2
+"Ateles geoffroyi","Ateles geoffroyi","Ateles geoffroyi","Ateles_geoffroyi","Ateles_geoffroyi",TRUE,8000,"Stephan_1981","3371",8000,209.17,59.75,114.79,34.63,1
+"Avahi laniger","Avahi l. laniger","Avahi laniger","Avahi_laniger","Avahi_laniger",TRUE,1285,"Stephan_1981","3243",1285,37.89,11.28,14.46,12.15,1
+"Avahi occidentalis","Avahi l. occidentalis","Avahi occidentalis","Avahi_occidentalis","Avahi_occidentalis",TRUE,860,"Stephan_1981","3244",860,29.66,10.18,11.3,8.18,1
+"Callicebus moloch","Callicebus moloch","Callicebus moloch","Callicebus_moloch","Plecturocebus_moloch",TRUE,900,"Stephan_1981","3327",900,61.41,19.47,21.24,20.7,2
+"Callithrix jacchus","Callithrix jacchus","Callithrix jacchus","Callithrix_jacchus","Callithrix_jacchus",TRUE,280,"Stephan_1981","3287",280,20.96,5.44,7.93,7.59,2
+"Callithrix pygmaea","Cebuella pygmaea","Callithrix pygmaea","Callithrix_pygmaea","Callithrix_pygmaea",TRUE,140,"Stephan_1981","3289",120,11.48,3.2,4.35,3.93,2
+"Cebus albifrons","Cebus albifrons","Cebus albifrons","Cebus_albifrons","Cebus_albifrons",TRUE,3100,"Stephan_1981","3317",3100,173.18,38.98,99.52,34.68,1
+"Cercopithecus ascanius","Cercopithecus ascanius","Cercopithecus ascanius","Cercopithecus_ascanius","Cercopithecus_ascanius",TRUE,3400,"Stephan_1981","3433",3400,143.98,41.7,67.67,34.61,2
+"Cercopithecus mitis","Cercopithecus mitis","Cercopithecus mitis","Cercopithecus_mitis","Cercopithecus_mitis",TRUE,6300,"Stephan_1981","3453",6300,171.16,54.55,82.38,34.23,1
+"Cheirogaleus major","Cheirogaleus major","Cheirogaleus major","Cheirogaleus_major","Cheirogaleus_major",TRUE,450,"Stephan_1981","3203",450,19.45,3.85,9.95,5.65,2
+"Cheirogaleus medius","Cheirogaleus medius","Cheirogaleus medius","Cheirogaleus_medius","Cheirogaleus_medius",TRUE,177,"Stephan_1981","3205",177,9.45,1.94,4.27,3.24,1
+"Crocidura flavescens","Crocidura flavescens","Crocidura flavescens","Crocidura_flavescens","Crocidura_flavescens",FALSE,28,"Stephan_1981","943",33.1,1.17,0.42,0.47,0.27,1
+"Crocidura russula","Crocidura r. russula","Crocidura russula","Crocidura_russula","Crocidura_russula",FALSE,11,"Stephan_1981","1070",11.1,0.58,0.23,0.23,0.12,1
+"Daubentonia madagascariensis","Daubentonia madagasc.","Daubentonia madagascariensis","Daubentonia_madagascariensis","Daubentonia_madagascariensis",TRUE,2800,"Stephan_1981","3251",2800,126.08,36.11,61.03,28.94,1
+"Echinops telfairi","Echinops telfairi","Echinops telfairi","Echinops_telfairi","Echinops_telfairi",FALSE,87.5,"Stephan_1981","585",87.5,1.71,0.87,0.46,0.39,1
+"Erinaceus europaeus","Erinaceus europaeus","Erinaceus europaeus","Erinaceus_europaeus","Erinaceus_europaeus",FALSE,860,"Stephan_1981","695",860,12.65,5.53,3.83,3.3,1
+"Erythrocebus patas","Erythrocebus patas","Erythrocebus patas","Erythrocebus_patas","Erythrocebus_patas",TRUE,7800,"Stephan_1981","3473",7800,295.09,95.07,126.31,73.71,2
+"Eulemur fulvus","Lemur fulvus","Eulemur fulvus","Eulemur_fulvus","Eulemur_fulvus",TRUE,1400,"Stephan_1981","3215",1400,86.28,27.58,32.05,26.65,2
+"Galago senegalensis","Galago senegalensis","Galago senegalensis","Galago_senegalensis","Galago_senegalensis",TRUE,186,"Stephan_1981","3265",186,12.6,3.77,4.4,4.43,2
+"Galagoides demidoff","Galagoides demidoff","Galagoides demidoff","Galagoides_demidoff","Galagoides_demidoff",TRUE,81,"Stephan_1981","3275",81,8.22,2.08,3.06,3.08,2
+"Gorilla sp.","Gorilla gorilla","Gorilla sp.","Gorilla_sp.","Gorilla_gorilla",TRUE,103517.5,"Bauernfeind_2013","3551",105000,740.4,112.36,534.6,93.44,2
+"Hemicentetes semispinosus","Hemicentetes semispin.","Hemicentetes semispinosus","Hemicentetes_semispinosus","Hemicentetes_semispinosus",FALSE,110,"Stephan_1981","581",110,3.23,1.52,1.16,0.55,1
+"Homo sapiens","Homo sapiens","Homo sapiens","Homo_sapiens","Homo_sapiens",TRUE,70100,"Bauernfeind_2013","3553",65000,1513.78,190.48,1166.9,156.4,2
+"Hylobates lar","Hylobates lar","Hylobates lar","Hylobates_lar","Hylobates_lar",TRUE,5700,"Stephan_1981","3539",5700,242.09,65.6,141.08,35.41,1
+"Indri indri","lndri indri","Indri indri","Indri_indri","Indri_indri",TRUE,6250,"Stephan_1981","3249",6250,141.3,46.96,56.31,38.03,2
+"Lagothrix lagothricha","Lagothrix lagothricha","Lagothrix lagothricha","Lagothrix_lagothricha","Lagothrix_lagotricha",TRUE,5200,"Stephan_1981","3379",5200,212.95,60.23,108.57,44.15,2
+"Lepilemur ruficaudatus","Lepilemur ruficaudatus","Lepilemur ruficaudatus","Lepilemur_ruficaudatus","Lepilemur_ruficaudatus",TRUE,915,"Stephan_1981","3239",915,23.07,6.41,9.35,7.31,1
+"Lophocebus albigena","Cercocebus albigena","Lophocebus albigena","Lophocebus_albigena","Lophocebus_albigena",TRUE,7900,"Stephan_1981","3407",7900,232.63,74.6,113.33,44.7,2
+"Loris tardigradus","Loris tardigradus","Loris tardigradus","Loris_tardigradus","Loris_tardigradus",TRUE,322,"Stephan_1981","3253",322,17.99,5.58,5.76,6.65,2
+"Macaca mulatta","Macaca mulatta","Macaca mulatta","Macaca_mulatta","Macaca_mulatta",TRUE,7800,"Stephan_1981","3391",7800,235.31,75.13,106.94,53.24,2
+"Microcebus murinus","Microcebus murinus","Microcebus murinus","Microcebus_murinus","Microcebus_murinus",TRUE,54,"Stephan_1981","3199",54,4.74,1.14,2.11,1.49,2
+"Miopithecus talapoin","Miopithecus talapoin","Miopithecus talapoin","Miopithecus_talapoin","Miopithecus_talapoin",TRUE,1200,"Stephan_1981","3469",1200,78.95,26.42,33.84,18.69,2
+"Nasalis larvatus","Nasalis larvatus","Nasalis larvatus","Nasalis_larvatus","Nasalis_larvatus",TRUE,14000,"Stephan_1981","3499",14000,340.36,105.48,149.33,85.55,1
+"Nycticebus coucang","Nycticebus coucang","Nycticebus coucang","Nycticebus_coucang","Nycticebus_coucang",TRUE,800,"Stephan_1981","3255",800,33.75,8.76,14.03,10.96,2
+"Otolemur crassicaudatus","Otolemur crassicaudatus","Otolemur crassicaudatus","Otolemur_crassicaudatus","Otolemur_crassicaudatus",TRUE,850,"Stephan_1981","3267",850,25.9,6.63,9.64,9.63,2
+"Pan troglodytes","Pan troglodytes","Pan troglodytes","Pan_troglodytes","Pan_troglodytes",TRUE,46503.33333,"Bauernfeind_2013","3549",46000,601.42,87.27,455.83,58.32,1
+"Papio anubis","Papio anubis","Papio anubis","Papio_anubis","Papio_anubis",TRUE,25000,"Stephan_1981","3415",25000,379.04,99.91,220.35,58.78,2
+"Perodicticus potto","Perodicticus potto","Perodicticus potto","Perodicticus_potto","Perodicticus_potto",TRUE,1150,"Stephan_1981","3259",1150,29.44,8.43,12.25,8.76,2
+"Piliocolobus badius","Colobus badius","Piliocolobus badius","Piliocolobus_badius","Piliocolobus_badius",TRUE,7000,"Stephan_1981","3477",7000,190.92,57.76,98.52,34.64,2
+"Pithecia monachus","Pithecia monachus","Pithecia monachus","Pithecia_monachus","Pithecia_monachus",TRUE,1500,"Stephan_1981","3341",1500,109.36,31.78,53.67,23.91,2
+"Propithecus verreauxi","Propithecus verreauxi","Propithecus verreauxi","Propithecus_verreauxi","Propithecus_verreauxi",TRUE,3480,"Stephan_1981","3247",3480,97.12,30.94,39.46,26.72,2
+"Pygathrix nemaeus","Pygathrix nemaeus","Pygathrix nemaeus","Pygathrix_nemaeus","Pygathrix_nemaeus",TRUE,7500,"Stephan_1981","3493",7500,265.75,80.76,137.05,47.94,1
+"Rattus norvegicus",,"Rattus norvegicus","Rattus_norvegicus","Rattus_norvegicus",FALSE,233.7,"Stephan_1981",,,6.002,,,,
+"Saguinus midas","Saguinus midas","Saguinus midas","Saguinus_midas","Saguinus_midas",TRUE,340,"Stephan_1981","3305",340,21.57,6.94,7.75,6.88,2
+"Saguinus oedipus","Saguinus oedipus","Saguinus oedipus","Saguinus_oedipus","Saguinus_oedipus",TRUE,380,"Stephan_1981","3311",380,24.6,7.19,8.8,8.61,2
+"Saimiri sciureus","Saimiri sciureus","Saimiri sciureus","Saimiri_sciureus","Saimiri_sciureus",TRUE,660,"Stephan_1981","3335",660,73.22,21.93,27.2,24.09,2
+"Setifer setosus","Setifer setosus","Setifer setosus","Setifer_setosus","Setifer_setosus",FALSE,237,"Frahm_1994","579",248,4.19,1.78,1.21,1.2,1
+"Sorex araneus","Sorex araneus","Sorex araneus","Sorex_araneus","Sorex_araneus",FALSE,10.3,"Stephan_1981","715",10.2,0.58,0.18,0.21,0.18,1
+"Sorex minutus","Sorex minutus","Sorex minutus","Sorex_minutus","Sorex_minutus",FALSE,5.3,"Stephan_1981","769",4.42,0.35,0.13,0.13,0.09,1
+"Spalax ehrenbergi",,"Spalax ehrenbergi","Spalax_ehrenbergi","Spalax_ehrenbergi",FALSE,112.9,"Stephan_1981",,,9.36,,,,
+"Suncus murinus","Suncus murinus","Suncus murinus","Suncus_murinus","Suncus_murinus",FALSE,35.5,"Stephan_1981","137",33,1.06,0.38,0.44,0.23,1
+"Tarsius sp.","Tarsius spp.","Tarsius sp.","Tarsius_sp.","Tarsius_syrichta",TRUE,125,"Stephan_1981","3282",125,8.06,1.82,3.37,2.87,4
+"Tenrec ecaudatus","Tenrec ecaudatus","Tenrec ecaudatus","Tenrec_ecaudatus","Tenrec_ecaudatus",FALSE,832,"Stephan_1981","577",832,9.82,4.43,3.33,2.06,1
+"Tupaia glis","Tupaia glis","Tupaia glis","Tupaia_glis","Tupaia_glis",FALSE,170,"Stephan_1981","1263",170,12.46,3.4,5.13,3.93,2
+"Urogale everetti","Urogale everetti","Urogale everetti","Urogale_everetti","Urogale_everetti",FALSE,275,"Stephan_1981","1289",275,15.07,3.94,7,4.13,1
+"Varecia variegata","Varecia variegata","Varecia variegata","Varecia_variegata","Varecia_variegata",TRUE,3000,"Stephan_1981","3227",3000,94.67,28.83,37.45,28.39,1

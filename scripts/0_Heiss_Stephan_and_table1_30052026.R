@@ -75,6 +75,15 @@ heiss$volume_term[heiss$Region == "Capsula interna"] <- "Capsula interna"
 heiss$volume_source[heiss$Region == "Capsula interna"] <- 
   "Stephan et al. 1981"
 
+# NB: volume_term MUST match the display label used in
+# s3_predicValuesPGLS_...R (region_labels: "Lateral_cerebellar_nuclei" ->
+# "Nucleus dentatus cerebelli"). The rCMRGlc left_join in s3 is keyed on this
+# string; using "Lateral cerebellar nuclei" here makes the dentate fail the join
+# and get dropped (drop_na) from the combined-anatomy rCMRGlc plots.
+heiss$volume_term[heiss$Region == "Nucleus dentatus cerebelli"] <- "Nucleus dentatus cerebelli"
+heiss$volume_source[heiss$Region == "Nucleus dentatus cerebelli"] <- 
+  "Matano et al. 1985 a"
+
 # -----------------------------
 # 3. Calculate composite rows
 # -----------------------------
@@ -282,6 +291,17 @@ pub$term_3[i] <- NA
 section <- pub[NA_integer_, ]
 
 out <- pub[0, ]
+
+# --- promote dentate nucleus as standalone row ---
+
+dentate_row <- pub[pub$Heiss_region == "Nucleus dentatus cerebelli", ]
+
+# ensure it has structure-level classification
+dentate_row$term_1 <- "Cerebellum"
+dentate_row$term_2 <- NA
+dentate_row$term_3 <- "Nucleus dentatus cerebelli"
+
+out <- rbind(out, dentate_row)
 
 for (i in seq_len(nrow(pub))) {
   if (pub$Heiss_region[i] == "Striatum") {

@@ -10,8 +10,8 @@ library(ggpmisc)
 library(readxl)
 library(tidyverse)
 
-data_dir <- "data"
-out_dir <- "output/anatomy_rule_audit"
+data_dir <- "data_intermediate"
+out_dir <- "checks/anatomy_rule_audit"
 
 ## cortical ROIs / Lobes are here: https://github.com/linnarsson-lab/adult-human-brain/blob/main/notebooks/Revision/RevisionFig2.ipynb
 ## Also See Fig 2 in the original paper: https://www.science.org/doi/10.1126/science.add7046

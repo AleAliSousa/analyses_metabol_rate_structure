@@ -1,0 +1,15 @@
+"Species","Species_Matano1985a","matano_accepted_name","target_species_raw","target_species","matched_in_Stephan","Body_weight_current","Body_weight_current_source","code_Matano1985a","Body_weight_1985a","Cerebellar_nuclei_total","Interpositus_cerebellar_nuclei","Lateral_cerebellar_nuclei","Medial_cerebellar_nuclei","Number_cerebellar_nuclei"
+"Crocidura flavescens","Crocidura flavescens","Crocidura flavescens","Crocidura_flavescens","Crocidura_flavescens",FALSE,28,"Stephan_1981","943",33.1,1.17,0.42,0.47,0.27,1
+"Crocidura russula","Crocidura r. russula","Crocidura russula","Crocidura_russula","Crocidura_russula",FALSE,11,"Stephan_1981","1070",11.1,0.58,0.23,0.23,0.12,1
+"Echinops telfairi","Echinops telfairi","Echinops telfairi","Echinops_telfairi","Echinops_telfairi",FALSE,87.5,"Stephan_1981","585",87.5,1.71,0.87,0.46,0.39,1
+"Erinaceus europaeus","Erinaceus europaeus","Erinaceus europaeus","Erinaceus_europaeus","Erinaceus_europaeus",FALSE,860,"Stephan_1981","695",860,12.65,5.53,3.83,3.3,1
+"Hemicentetes semispinosus","Hemicentetes semispin.","Hemicentetes semispinosus","Hemicentetes_semispinosus","Hemicentetes_semispinosus",FALSE,110,"Stephan_1981","581",110,3.23,1.52,1.16,0.55,1
+"Rattus norvegicus",,"Rattus norvegicus","Rattus_norvegicus","Rattus_norvegicus",FALSE,233.7,"Stephan_1981",,,6.002,,,,
+"Setifer setosus","Setifer setosus","Setifer setosus","Setifer_setosus","Setifer_setosus",FALSE,237,"Frahm_1994","579",248,4.19,1.78,1.21,1.2,1
+"Sorex araneus","Sorex araneus","Sorex araneus","Sorex_araneus","Sorex_araneus",FALSE,10.3,"Stephan_1981","715",10.2,0.58,0.18,0.21,0.18,1
+"Sorex minutus","Sorex minutus","Sorex minutus","Sorex_minutus","Sorex_minutus",FALSE,5.3,"Stephan_1981","769",4.42,0.35,0.13,0.13,0.09,1
+"Spalax ehrenbergi",,"Spalax ehrenbergi","Spalax_ehrenbergi","Spalax_ehrenbergi",FALSE,112.9,"Stephan_1981",,,9.36,,,,
+"Suncus murinus","Suncus murinus","Suncus murinus","Suncus_murinus","Suncus_murinus",FALSE,35.5,"Stephan_1981","137",33,1.06,0.38,0.44,0.23,1
+"Tenrec ecaudatus","Tenrec ecaudatus","Tenrec ecaudatus","Tenrec_ecaudatus","Tenrec_ecaudatus",FALSE,832,"Stephan_1981","577",832,9.82,4.43,3.33,2.06,1
+"Tupaia glis","Tupaia glis","Tupaia glis","Tupaia_glis","Tupaia_glis",FALSE,170,"Stephan_1981","1263",170,12.46,3.4,5.13,3.93,2
+"Urogale everetti","Urogale everetti","Urogale everetti","Urogale_everetti","Urogale_everetti",FALSE,275,"Stephan_1981","1289",275,15.07,3.94,7,4.13,1
