@@ -68,6 +68,51 @@ Barger's apes are **separate brains** and merge only at the **species-mean** lev
    mount the OneDrive Stephan-team folder), I'll extract the per-species volumes into the template.
    Smaers values you largely already have.
 
+## Data-quality caveats on candidate sources (per DeCasien & Higham 2019)
+
+DeCasien & Higham (2019, *Nat. Ecol. Evol.*), in their comparative brain-region
+compilation, flagged specific problems with two sources adjacent to the ones planned
+above. Recording these here so we apply the same caution before pooling:
+
+> "Specifically, although Semendeferi and Damasio (ref. 66) presents whole brain
+> volumes, this measure excludes the medulla, the pons and most of the midbrain.
+> Navarrete et al. (ref. 67) explicitly compare their data to others (refs 24,51,52,59)
+> and note several regions for which there are marked, statistically significant
+> differences in average brain region volumes (for example, the hippocampus is up to
+> 60% smaller in their dataset). On investigation of these data, we found further
+> inconsistencies with earlier data, which may be based on differences in the regional
+> boundaries used for measurement. Since regional boundary information is not available,
+> even after contacting the authors, we are not using these data at this time — please
+> see the authors' published erratum (ref. 68)."
+
+**Implications for this compilation and for Study 3:**
+
+1. **Semendeferi whole-brain ≠ our `Total_brain_net_volume`.** Their whole-brain
+   measure omits medulla, pons and most of the midbrain, so it is *not* interchangeable
+   with the Stephan `Total_brain_net_volume` used as the Study 3 predictor / rest-of-brain
+   base. If Semendeferi parietal/temporal **lobe** volumes are added, use only the lobe
+   values and keep the Stephan total as the predictor; do **not** substitute or pool their
+   whole-brain figure, and check lobe-to-total scaling against Stephan before merging
+   specimen-to-specimen.
+
+2. **Navarrete et al. data: exclude, following DeCasien & Higham.** The marked,
+   unexplained regional discrepancies (e.g. hippocampus up to ~60% smaller) and the
+   absence of regional-boundary definitions make these values unsafe to pool. We adopt
+   the same position and do not ingest Navarrete volumes; see the authors' published
+   erratum (ref. 68).
+
+3. Both points reinforce the merge rule above ("Primary beats derived; check scaling
+   consistency before pooling") — differences in **regional boundary definitions** are
+   the likely driver of cross-dataset disagreement, so any new lobe/region source must be
+   boundary-checked against Stephan before it enters `volumes_wide` / `volumes_long`.
+
+*Refs as numbered in DeCasien & Higham 2019:*
+- *66. Semendeferi, K. & Damasio, H. The brain and its main anatomical subdivisions in living
+  hominoids using magnetic resonance imaging. J. Hum. Evol. 38, 317–332 (2000).*
+- *67. Navarrete, A. F. et al. Primate brain anatomy: new volumetric MRI measurements for
+  neuroanatomical studies. Brain Behav. Evol. 91, 1–9 (2018).*
+- *68. Erratum. Brain Behav. Evol. 92, 182–184 (2019).*
+
 ## Files
 - `data_raw/primary_volume_compilation_long_TEMPLATE.csv` — the empty scaffold to fill.
 - This plan.

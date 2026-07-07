@@ -1,0 +1,15 @@
+Structure,stephan_N,stephan_human,merged_all_N,merged_all_human,merged_histol_N,merged_histol_human,merged_all_anthro_N,merged_all_anthro_human
+Corpus geniculatum laterale,48,True,47,True,37,True,30,True
+Amygdala,17,True,44,True,34,True,27,True
+Pallidum,26,True,24,True,19,True,14,True
+Neocortex white,23,True,28,True,19,True,15,True
+Insular cortex (grey),29,True,26,True,21,True,20,True
+Nucleus subthalamicus,25,True,23,True,19,True,13,True
+Capsula interna,25,True,23,True,19,True,13,True
+Striatum,45,True,43,True,35,True,26,True
+Area striata grey,44,True,42,True,33,True,25,True
+Neocortex grey,23,True,28,True,19,True,15,True
+Mesencephalon,45,True,43,True,35,True,26,True
+Cerebellum,45,True,45,True,35,True,28,True
+Hippocampus,45,True,44,True,35,True,27,True
+Nucleus dentatus,43,True,41,True,33,True,24,True

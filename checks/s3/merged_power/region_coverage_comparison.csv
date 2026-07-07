@@ -1,0 +1,15 @@
+Region,Stephan_N,Merged_allPrimate_N,Merged_anthropoid_N,delta_merged_vs_stephan,human_ok
+Corpus geniculatum laterale,48,47,30,-1,True
+Amygdala,17,44,27,27,True
+Pallidum,26,24,14,-2,True
+Neocortex white,23,28,15,5,True
+Insular cortex (grey),29,26,20,-3,True
+Nucleus subthalamicus,25,23,13,-2,True
+Capsula interna,25,23,13,-2,True
+Striatum,45,43,26,-2,True
+Area striata grey,44,42,25,-2,True
+Neocortex grey,23,28,15,5,True
+Mesencephalon,45,43,26,-2,True
+Cerebellum,45,45,28,0,True
+Hippocampus,45,44,27,-1,True
+Nucleus dentatus,43,41,24,-2,True
