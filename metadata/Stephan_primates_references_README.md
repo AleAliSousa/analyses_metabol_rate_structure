@@ -27,28 +27,60 @@ the organised **Evo-M1-Trait-Data** project.
 ## Outputs
 
 - **`Stephan_primates_references_long.csv`** — one row per non-empty data cell,
-  with the resolved specific reference(s). Key columns: `preferred_reference`
-  (best single source, consistent with the metadata's stated source and, among
-  ties, the original publication), `preferred_citation`, `all_matching_sources`,
-  `status`, `metadata_reference`, `unit_rescale_flag`, `closest_nonmatching`.
-- **`Stephan_primates_reference_mismatches.csv`** — cells to review: values that
-  match no Evo-M1 source (`value_differs`) plus cells matched only after a unit
-  rescale.
+  with the resolved specific reference(s). Key columns: `preferred_reference`,
+  `preferred_citation`, `all_matching_sources`, `status`, `metadata_reference`,
+  `unit_rescale_flag`, `merge_deviation_flag`, `closest_nonmatching`.
+- **`Stephan_primates_reference_mismatches.csv`** — cells to review:
+  `value_differs`, `matched_outside_metadata`, unit-rescale, and merge-deviation
+  cells.
 - **`Stephan_primates_references_by_column.csv`** — per-column coverage.
+- **`Stephan_primates_source_hunt.csv`** — for every unresolved cell
+  (`value_differs`, `matched_outside_metadata`, `provenance_gap`), the file and
+  row in the raw cut-and-paste directory (`datasets brain and regions species/
+  Stephan and Frahm`) where the value actually appears — i.e. where the compiler
+  copied it from.
 
 ## Coverage (2,268 data cells)
 
 | status | n | meaning |
 |---|---|---|
-| resolved_unique | 1,414 | exactly one source carries the value |
-| resolved_multiple | 472 | several sources share it (preferred = original) |
+| resolved_unique | 1,389 | one source carries the value |
+| resolved_multiple | 429 | several sources share it (preferred picked by the rule below) |
 | metadata_only | 240 | no Evo-M1 volumetric equivalent (see below) |
 | provenance_gap | 105 | Evo-M1 has the variable but not this species |
-| value_differs | 37 | value matches no source — **review** |
+| matched_outside_metadata | 68 | value matches an Evo-M1 source that is *not* the metadata source — **review** |
+| value_differs | 37 | value matches no Evo-M1 source — **review** |
 
 `metadata_only` columns (reference taken straight from the xlsx): the seven
 Smaers 2017 cortical grey/white columns, `Meninges_hypophysis_nerves_etc`,
 `Brainvol` (de Sousa 2010), and `Brain_volume` (Bauernfeind 2013).
+
+## How the preferred reference is chosen
+
+This follows the universal rule of the Evo-M1 volumes merge (`volumes_compiled.R`
+§5–6), **not** a hand-picked priority:
+
+1. **Scope to the metadata source.** Candidate sources are first restricted to
+   the paper(s) the metadata lists for that column, so a coincidental identical
+   number in another team or structure is not mistaken for the source. (This is
+   also why the older Stephan 1970 monograph is not chosen where the metadata
+   lists Stephan 1981 — 1970 is simply not in scope, not a special case.)
+2. **Within scope, apply the merge rule:** per team, take the **most recent**
+   source; the Stephan_collection team is used first; body/brain **mass →
+   Stephan 1981** (as the merge does).
+3. **Deviations** flagged by the merge (newest-vs-next within a team, i.e. the
+   typo/anomaly cases in `volumes_flags.csv`) are carried through in
+   `merge_deviation_flag`.
+
+`matched_outside_metadata` means the Stephan_primates value matched an Evo-M1
+source that is not the metadata's stated source (e.g. `ASG_Sousa`/`LGN_Sousa`,
+which are de Sousa's columns but whose numbers coincide with the Stephan/Frahm
+data de Sousa built on; or a body/brain-mass value that coincidentally equals a
+Stephan volume). These are attributed to the metadata source and flagged so you
+can confirm; the `source_hunt` file shows where the value really came from.
+
+A value that matches **no** source (`value_differs`) is the real surprise to
+watch for — that is where unpublished/raw data would show up.
 
 ## Matching rules
 

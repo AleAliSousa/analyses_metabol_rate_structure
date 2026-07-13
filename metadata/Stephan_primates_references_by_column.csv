@@ -1,28 +1,29 @@
 Stephan_column,EvoM1_variable,n_cells,n_resolved,n_unique,n_multiple,n_value_differs,n_gap,n_metadata_only,metadata_reference
 Body_mass,Body_Mass.g,30,25,24,1,5,0,0,Bauernfeind et al 2013
-ASG_Sousa,Area_striata_grey_matter_Vol.mm3,45,36,15,21,4,5,0,de Sousa et al 2010
-Brain_mass,Brain_Mass.mg,30,26,21,5,4,0,0,Bauernfeind et al 2013
+ASG_Sousa,Area_striata_grey_matter_Vol.mm3,45,0,0,0,4,5,0,de Sousa et al 2010
+Brain_mass,Brain_Mass.mg,30,25,20,5,4,0,0,Bauernfeind et al 2013
 Total_insula_volume_L,Insula_left_Vol.mm3,30,24,24,0,3,3,0,Bauernfeind et al 2013
 Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,30,25,25,0,2,3,0,Bauernfeind et al 2013
 Body_weight,Body_Mass.g,59,56,14,42,2,1,0,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Brain_weight,Brain_Mass.mg,59,57,18,39,2,0,0,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Brain_weight,Brain_Mass.mg,59,56,16,40,2,0,0,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,39,34,34,0,2,3,0,Stephan et al 1981
 Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,30,25,25,0,2,3,0,Bauernfeind et al 2013
 FI_volume_L,fronto_insular_cortex_left_Vol.mm3,6,3,3,0,2,1,0,Bauernfeind et al 2013
 Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,30,25,25,0,2,3,0,Bauernfeind et al 2013
-LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,49,45,13,32,2,2,0,de Sousa et al 2010; de Sousa et al 2013
+LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,49,15,7,8,2,2,0,de Sousa et al 2010; de Sousa et al 2013
 NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,24,22,20,2,2,0,0,Frahm et al 1992; Zilles and Rehkamper 1988
-Body_weight_1985a,Body_Mass.g,44,42,0,42,1,1,0,
-Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,39,35,35,0,1,3,0,Stephan et al 1981
+Body_weight_1985a,Body_Mass.g,44,42,0,42,1,1,0,NA
 Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,39,35,35,0,1,3,0,Stephan et al 1981
 NeoW_Frahm,Neocortex_white_matter_Vol.mm3,24,23,21,2,1,0,0,Frahm et al 1992; Zilles and Rehkamper 1988
+Nucleus.septalis.triangularis,Nucleus_septalis_triangularis_Vol.mm3,39,35,35,0,1,3,0,Stephan et al 1981
 Nucleus.vestibularis.lateralis,Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,26,23,23,0,1,2,0,Stephan et al 1981
 Amygdala,Amygdala_Vol.mm3,18,18,16,2,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
-Brain_volume,,30,0,0,0,0,0,30,Bauernfeind et al 2013
-Brainvol,,43,0,0,0,0,0,43,de Sousa et al 2010; Stephan et al 1981
+Brain_volume,NA,30,0,0,0,0,0,30,Bauernfeind et al 2013
+Brainvol,NA,43,0,0,0,0,0,43,de Sousa et al 2010; Stephan et al 1981
 Bulbus_olfactorius,Bulbus_olfactorius_Vol.mm3,45,45,3,42,0,0,0,Stephan et al 1981
-Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,45,45,45,0,0,0,0,Stephan et al 1981
+Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,45,44,44,0,0,1,0,Stephan et al 1981
 Capsula_interna,Capsula_interna_Vol.mm3,26,25,25,0,0,1,0,Stephan et al 1981
-Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,44,42,42,0,0,2,0,
+Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,44,42,42,0,0,2,0,NA
 Cerebellum,Cerebellum_Vol.mm3,46,46,31,15,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,26,24,24,0,0,2,0,Stephan et al 1981
 Complexus_centromedialis,Complexus_centromedialis_Vol.mm3,17,17,15,2,0,0,0,Stephan et al 1981
@@ -30,34 +31,33 @@ Complexus_cortico_basolateralis,Complexus_corticobasolateralis_Vol.mm3,17,17,16,
 Corpus.pineale,Corpus_pineal_Vol.mm3,39,36,36,0,0,3,0,Stephan et al 1981
 Diencephalon,Diencephalon_Vol.mm3,46,46,33,13,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Epithalamus,Epithalamus_Vol.mm3,26,25,25,0,0,1,0,Stephan et al 1981
-Frontal.motor,,19,0,0,0,0,0,19,Smaers et al 2017
-Frontal.motor.Gray,,19,0,0,0,0,0,19,Smaers et al 2017
-Hippocampus,Hippocampus_Vol.mm3,46,46,5,41,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
+Frontal.motor,NA,19,0,0,0,0,0,19,Smaers et al 2017
+Frontal.motor.Gray,NA,19,0,0,0,0,0,19,Smaers et al 2017
+Hippocampus,Hippocampus_Vol.mm3,46,46,4,42,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Hypothalamus,Hypothalamus_Vol.mm3,26,25,25,0,0,1,0,Stephan et al 1981
-Interpositus_cerebellar_nuclei,Interpositus_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,
-Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,
+Interpositus_cerebellar_nuclei,Interpositus_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,NA
+Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,NA
 Lobus_piriformis,Lobus_piriformis_Vol.mm3,46,45,45,0,0,1,0,Stephan et al 1981; Zilles and Rehkamper 1988
-Medial_cerebellar_nuclei,Medial_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,
+Medial_cerebellar_nuclei,Medial_cerebellar_nuclei_Vol.mm3,44,42,42,0,0,2,0,NA
 Medulla_oblongata,Medulla_oblongata_Vol.mm3,46,46,9,37,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
-Meninges_hypophysis_nerves_etc,,45,0,0,0,0,0,45,Stephan et al 1981
+Meninges_hypophysis_nerves_etc,NA,45,0,0,0,0,0,45,Stephan et al 1981
 Mesencephalon,Mesencephalon_Vol.mm3,46,46,30,16,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 NeoWG,Neocortex_Vol.mm3,46,46,16,30,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Nucleus.habenularis.medialis,Nucleus_habenularis_medialis_Vol.mm3,39,36,36,0,0,3,0,Stephan et al 1981
-Nucleus.septalis.triangularis,Nucleus_septalis_triangularis_Vol.mm3,39,36,36,0,0,3,0,Stephan et al 1981
 Nucleus.vestibularis.descendens,Nucleus_vestibularis_descendens_unilateral_Vol.mm3,26,24,24,0,0,2,0,Stephan et al 1981
 Nucleus.vestibularis.medialis,Nucleus_vestibularis_medialis_unilateral_Vol.mm3,26,24,24,0,0,2,0,Stephan et al 1981
 Nucleus.vestibularis.superior,Nucleus_vestibularis_superior_unilateral_Vol.mm3,26,24,24,0,0,2,0,Stephan et al 1981
 Nucleus_amygdalae_basalis_parsmagnocellularis,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,15,14,14,0,0,1,0,Stephan et al 1981
 Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,26,25,25,0,0,1,0,Stephan et al 1981
 Nucleus_tractus_olfactorius,Nucleus_tractus_olfactorius_Vol.mm3,17,17,16,1,0,0,0,Stephan et al 1981
-Other.cortical.association.areas.Gray,,16,0,0,0,0,0,16,Smaers et al 2017
-Other.cortical.association.areas.White,,15,0,0,0,0,0,15,Smaers et al 2017
+Other.cortical.association.areas.Gray,NA,16,0,0,0,0,0,16,Smaers et al 2017
+Other.cortical.association.areas.White,NA,15,0,0,0,0,0,15,Smaers et al 2017
 Palaeocortex,Palaeocortex_Vol.mm3,18,18,18,0,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Pallidum,Pallidum_Vol.mm3,27,26,26,0,0,1,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Pons,Pons_Vol.mm3,41,1,1,0,0,40,0,Matano et al 1985; Zilles and Rehkamper 1988
-Prefrontal.Gray,,19,0,0,0,0,0,19,Smaers et al 2017
-Prefrontal.White,,19,0,0,0,0,0,19,Smaers et al 2017
-Primary.visual.White.Smaers,,15,0,0,0,0,0,15,Smaers et al 2017
+Prefrontal.Gray,NA,19,0,0,0,0,0,19,Smaers et al 2017
+Prefrontal.White,NA,19,0,0,0,0,0,19,Smaers et al 2017
+Primary.visual.White.Smaers,NA,15,0,0,0,0,0,15,Smaers et al 2017
 Schizocortex,Schizo_cortex_Vol.mm3,45,45,33,12,0,0,0,Stephan et al 1981
 Septum,Septum_Vol.mm3,46,46,30,16,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Striatum,Striatum_Vol.mm3,46,46,33,13,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988

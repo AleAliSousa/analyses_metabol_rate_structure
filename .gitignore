@@ -1,3 +1,18 @@
-
 .DS_Store
 .Rhistory
+.RData
+
+# R interactive default-device artifacts (produced when plotting without a device)
+Rplot*.png
+
+# Build artifacts belong in figs/, tables/, or data_intermediate/ -- never the
+# repo root. Ignore stray outputs dropped at the top level.
+/*.png
+/*.jpg
+/*.jpeg
+/*.pdf
+/*.csv
+
+# pipeline run logs
+logs/
+.Rproj.user

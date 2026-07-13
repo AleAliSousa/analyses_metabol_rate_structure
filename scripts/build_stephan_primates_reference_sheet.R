@@ -55,9 +55,9 @@ suppressPackageStartupMessages({
 })
 
 ## --- project root -----------------------------------------------------------
-## Edit if you run from elsewhere. All paths below are relative to this.
-proj <- "~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure"
-if (dir.exists(proj)) setwd(proj)
+## Portable: walk up from the current directory to the repo root (.git).
+## All paths below are relative to this. See R/project_root.R.
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))
 
 f_data <- "data_raw/Stephan_primates.csv"
 f_meta <- "metadata/Stephan_primates_metadata.xlsx"
@@ -204,9 +204,20 @@ meta_lookup <- function(col) {
 
 P <- read.csv(f_prov, stringsAsFactors = FALSE, check.names = FALSE)
 P$Value <- suppressWarnings(as.numeric(P$Value))
+P$Year  <- suppressWarnings(as.integer(P$Year))
 P <- P[!is.na(P$Value), ]
-prov <- split(P[, c("Source", "Value", "Year")], list(P$Species, P$Variable), drop = TRUE)
+prov <- split(P[, c("Source", "Value", "Year", "Team")], list(P$Species, P$Variable), drop = TRUE)
 prov_key <- function(sp, var) paste(sp, var, sep = ".")
+
+## merge deviation flags (newest-vs-next within Stephan_collection; possible typos)
+f_flags <- "data_intermediate/volumes_flags.csv"
+FL <- if (file.exists(f_flags)) read.csv(f_flags, stringsAsFactors = FALSE, check.names = FALSE) else
+        data.frame(Species = character(), Variable = character(), flag = character(), detail = character())
+dev_flag <- function(sp, var) {
+  h <- which(FL$Species == sp & FL$Variable == var & FL$flag == "deviation")
+  if (length(h)) FL$detail[h[1]] else ""
+}
+MASS_VARS <- c("Body_Mass.g", "Brain_Mass.mg")
 
 ## --- fallback provenance: Stephan et al 1981 combined Tables I-VI -----------
 ## Consulted only when the primary merge (volumes_unfiltered) yields no match.
@@ -247,6 +258,13 @@ s81_value <- function(sp_underscore, col) {
   suppressWarnings(as.numeric(S81[[ s81_col[[col]] ]][r[1]]))
 }
 
+## intended source for columns not covered by the metadata sheet (Matano 1985a block)
+col_primary <- c(
+  Body_weight_1985a = "Matano_etal_1985_a", Cerebellar_nuclei_total = "Matano_etal_1985_a",
+  Interpositus_cerebellar_nuclei = "Matano_etal_1985_a", Lateral_cerebellar_nuclei = "Matano_etal_1985_a",
+  Medial_cerebellar_nuclei = "Matano_etal_1985_a"
+)
+
 ## --- 5. matching helpers ----------------------------------------------------
 rel_pct <- function(a, b) { d <- pmax(abs(a), abs(b)); ifelse(d == 0, 0, 100 * abs(a - b) / d) }
 ndec <- function(s) { s <- trimws(s); if (grepl("\\.", s)) nchar(sub("^[^.]*\\.", "", s)) else 0L }
@@ -270,67 +288,79 @@ for (r in seq_len(nrow(S))) {
     meta_refs <- meta_lookup(col)
     cand <- prov[[prov_key(sp_evo, var)]]
     scales <- if (col %in% mass_cols) c(1, 1000, 0.001) else 1
-    matched_src <- character(0); facs <- numeric(0)
+    m_src <- character(0); m_yr <- integer(0); m_team <- character(0); facs <- numeric(0)
     if (!is.null(cand)) {
       for (k in seq_len(nrow(cand))) {
         for (sc in scales) {
           if (is_match(sval, sstr, cand$Value[k], sc)) {
-            matched_src <- c(matched_src, cand$Source[k]); facs <- c(facs, sc); break
+            m_src <- c(m_src, cand$Source[k]); m_yr <- c(m_yr, cand$Year[k])
+            m_team <- c(m_team, cand$Team[k]); facs <- c(facs, sc); break
           }
         }
       }
     }
-    matched_src_u <- sort(unique(matched_src))
-
-    # preferred reference: prefer sources consistent with the metadata phrase(s)
-    pref <- NA_character_
-    if (length(matched_src_u)) {
-      allow <- na.omit(unique(vapply(strsplit(meta_refs %||% "", ";\\s*")[[1]],
-                                     meta_phrase_to_key, character(1))))
-      pick <- matched_src_u[Reduce(`|`, lapply(allow, function(a) startsWith(matched_src_u, a)),
-                                    rep(FALSE, length(matched_src_u)))]
-      if (!length(pick)) pick <- matched_src_u
-      yrs <- suppressWarnings(as.integer(sub(".*?(\\d{4}).*", "\\1", pick)))
-      pref <- pick[order(yrs, pick)][1]
+    # confirm against the Stephan 1981 combined table (core Stephan columns): the
+    # merge drops some 1981 revised rows (e.g. Gorilla, Homo). Value-gated.
+    fv <- s81_value(sp_raw, col)
+    fb81 <- !is.na(fv) && is_match(sval, sstr, fv, 1)
+    if (fb81 && !any(startsWith(m_src, "Stephan_etal_1981"))) {
+      m_src <- c(m_src, "Stephan_etal_1981_TablesI-VI"); m_yr <- c(m_yr, 1981L)
+      m_team <- c(m_team, "Stephan_collection")
     }
+    matched_src_u <- sort(unique(m_src))
 
-    # fallback to Stephan 1981 combined table if the merge produced no match
-    fb_used <- FALSE
-    if (!length(matched_src_u)) {
-      fv <- s81_value(sp_raw, col)
-      if (!is.na(fv) && is_match(sval, sstr, fv, 1)) {
-        matched_src_u <- "Stephan_etal_1981_TablesI-VI"
-        pref <- "Stephan_etal_1981_TablesI-VI"; fb_used <- TRUE
+    allow <- na.omit(unique(vapply(strsplit(meta_refs %||% "", ";\\s*")[[1]],
+                                   meta_phrase_to_key, character(1))))
+    if (col %in% names(col_primary)) allow <- c(allow, col_primary[[col]])
+
+    # preferred reference: (1) scope to the metadata-listed source(s) (which
+    # paper the compiler used); (2) within scope apply the volumes-merge rule:
+    # Stephan_collection first, most recent year, mass -> Stephan 1981.
+    pref <- NA_character_; scope <- "none"; dev <- ""
+    if (length(m_src)) {
+      in_allow <- if (length(allow))
+        Reduce(`|`, lapply(allow, function(a) startsWith(m_src, a)), rep(FALSE, length(m_src))) else rep(FALSE, length(m_src))
+      idx <- if (any(in_allow)) which(in_allow) else seq_along(m_src)
+      scope <- if (any(in_allow)) "ok" else "outside_metadata"
+      sc_i <- idx[m_team[idx] == "Stephan_collection"]; if (length(sc_i)) idx <- sc_i
+      if (var %in% MASS_VARS) {
+        s81 <- idx[grepl("^Stephan_etal_1981_Table(I{1,3})$", m_src[idx])]
+        if (length(s81)) idx <- s81[1]
       }
+      pref <- m_src[idx[order(-m_yr[idx], m_src[idx])][1]]
     }
+    dev <- dev_flag(sp_evo, var)
 
-    # status
-    if (length(matched_src_u)) {
+    scale_flag <- if (length(facs) && any(facs != 1)) paste(sort(unique(facs[facs != 1])), collapse = ";") else ""
+
+    if (length(m_src) && scope != "outside_metadata") {
       status <- if (length(matched_src_u) == 1) "resolved_unique" else "resolved_multiple"
-      closest <- if (fb_used)
-        "matched via Stephan 1981 Tables I-VI (revised values; absent from Evo-M1 merge)" else NA_character_
+      closest <- if (identical(pref, "Stephan_etal_1981_TablesI-VI"))
+                   "confirmed via Stephan 1981 Tables I-VI (absent from Evo-M1 merge)"
+                 else if (nzchar(dev)) paste0("merge deviation flag: ", dev) else NA_character_
+    } else if (length(m_src) && scope == "outside_metadata") {
+      status <- "matched_outside_metadata"
+      mp <- na.omit(vapply(strsplit(meta_refs %||% "", ";\\s*")[[1]], meta_phrase_to_key, character(1)))
+      if (length(mp)) pref <- mp[1]
+      closest <- sprintf("Evo-M1 value matches %s (not the metadata source); attributed to metadata source; see source_hunt",
+                         paste(matched_src_u, collapse = "; "))
     } else if (is.null(cand)) {
       status <- "provenance_gap"; closest <- NA_character_
     } else {
       status <- "value_differs"
       j <- which.min(rel_pct(sval, cand$Value))
-      closest <- sprintf("%s = %s (%.1f%%)", cand$Source[j], cand$Value[j],
-                         rel_pct(sval, cand$Value[j]))
+      closest <- sprintf("%s = %s (%.1f%%)", cand$Source[j], cand$Value[j], rel_pct(sval, cand$Value[j]))
     }
-    scale_flag <- if (length(facs) && any(facs != 1)) paste(sort(unique(facs[facs != 1])), collapse = ";") else ""
 
     i <- i + 1L
     rows[[i]] <- tibble(
       Species = sp_raw, Species_evo = sp_evo, Stephan_column = col,
-      EvoM1_variable = var, Stephan_value = sval,
-      status = status,
-      preferred_reference = pref,
-      preferred_citation = cite_of(pref),
+      EvoM1_variable = var, Stephan_value = sval, status = status,
+      preferred_reference = pref, preferred_citation = cite_of(pref),
       all_matching_sources = paste(matched_src_u, collapse = "; "),
       n_candidate_sources = if (is.null(cand)) 0L else nrow(cand),
-      metadata_reference = meta_refs,
-      unit_rescale_flag = scale_flag,
-      closest_nonmatching = closest
+      metadata_reference = meta_refs, unit_rescale_flag = scale_flag,
+      merge_deviation_flag = dev, closest_nonmatching = closest
     )
   }
 }
@@ -352,7 +382,7 @@ for (r in seq_len(nrow(S))) for (col in meta_only_cols) {
                     preferred_reference = NA_character_, preferred_citation = NA_character_,
                     all_matching_sources = "", n_candidate_sources = 0L,
                     metadata_reference = meta_lookup(col), unit_rescale_flag = "",
-                    closest_nonmatching = NA_character_)
+                    merge_deviation_flag = "", closest_nonmatching = NA_character_)
 }
 if (length(mo)) long <- bind_rows(long, bind_rows(mo))
 
@@ -363,11 +393,13 @@ dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 write_csv(long, file.path(out_dir, "Stephan_primates_references_long.csv"))
 
 mism <- long %>%
-  filter(status == "value_differs" | unit_rescale_flag != "") %>%
+  filter(status %in% c("value_differs", "matched_outside_metadata") |
+           unit_rescale_flag != "" | merge_deviation_flag != "") %>%
   select(Species, Stephan_column, EvoM1_variable, Stephan_value, status,
-         unit_rescale_flag, closest_nonmatching, all_matching_sources,
-         metadata_reference) %>%
-  arrange(desc(status == "value_differs"), Species, Stephan_column)
+         unit_rescale_flag, merge_deviation_flag, closest_nonmatching,
+         all_matching_sources, metadata_reference) %>%
+  arrange(desc(status == "value_differs"), desc(status == "matched_outside_metadata"),
+          desc(merge_deviation_flag != ""), Species, Stephan_column)
 write_csv(mism, file.path(out_dir, "Stephan_primates_reference_mismatches.csv"))
 
 by_col <- long %>%
@@ -384,7 +416,89 @@ by_col <- long %>%
   arrange(desc(n_value_differs), Stephan_column)
 write_csv(by_col, file.path(out_dir, "Stephan_primates_references_by_column.csv"))
 
-## --- 9. console summary -----------------------------------------------------
+## --- 9. source hunt: trace unresolved cells to the raw cut-and-paste dir -----
+## For cells that did not resolve cleanly against Evo-M1 (value_differs,
+## matched_outside_metadata, provenance_gap), search the original messy source
+## material for the value and report the file/row where it appears. This is
+## where the compiler's number actually came from (e.g. Bauernfeind converted
+## files, Visual_volumes.xlsx). Set HUNT <- FALSE to skip (it is slow: it reads
+## every csv/xls/xlsx under the directory).
+HUNT <- TRUE
+hunt_dir <- "../datasets brain and regions species/Stephan and Frahm"
+if (HUNT && dir.exists(hunt_dir)) {
+  message("source hunt: indexing ", hunt_dir, " ...")
+  hfiles <- list.files(hunt_dir, pattern = "\\.(csv|xls|xlsx)$", full.names = TRUE, recursive = TRUE)
+  hfiles <- hfiles[!grepl("~\\$", hfiles)]
+  hidx <- list(); hi <- 0L
+  read_any <- function(f) {
+    tryCatch({
+      if (grepl("\\.csv$", f, ignore.case = TRUE)) {
+        # read as latin1: accepts any byte, never errors on old encodings.
+        # lazy = FALSE so any parse error surfaces here (inside tryCatch), not later.
+        list(`_` = suppressWarnings(suppressMessages(
+          readr::read_csv(f, col_names = FALSE, col_types = cols(.default = "c"),
+                          locale = readr::locale(encoding = "latin1"),
+                          lazy = FALSE, show_col_types = FALSE, progress = FALSE))))
+      } else {
+        sh <- readxl::excel_sheets(f)
+        setNames(lapply(sh, function(s)
+          suppressMessages(readxl::read_excel(f, sheet = s, col_names = FALSE, col_types = "text"))), sh)
+      }
+    }, error = function(e) NULL)
+  }
+  index_file <- function(f) {
+    rel <- sub(paste0("^", hunt_dir, "/?"), "", f)
+    frames <- read_any(f); if (is.null(frames)) return(invisible())
+    for (shn in names(frames)) {
+      df <- frames[[shn]]; if (is.null(df) || !nrow(df)) next
+      cells_all <- lapply(df, function(cc) iconv(as.character(cc), to = "UTF-8", sub = ""))
+      for (rr in seq_len(nrow(df))) {
+        cells <- vapply(cells_all, `[`, character(1), rr)
+        vals <- suppressWarnings(as.numeric(cells))
+        vals <- vals[!is.na(vals)]; if (!length(vals)) next
+        rowtext <- paste(cells, collapse = " | "); if (is.na(rowtext)) rowtext <- ""
+        hi <<- hi + 1L
+        hidx[[hi]] <<- list(vals = vals, rel = rel, sheet = if (shn == "_") "" else shn,
+                            rowtext = substr(rowtext, 1, 150))
+      }
+    }
+  }
+  for (f in hfiles) tryCatch(index_file(f), error = function(e)
+    message("  (skipped unreadable file: ", basename(f), ")"))
+  hunt_one <- function(val, token) {
+    hits <- Filter(function(h) any(abs(h$vals - val) <= 0.005 * pmax(abs(h$vals), abs(val))), hidx)
+    if (!length(hits)) return(NULL)
+    tok <- tolower(token)
+    spmatch <- vapply(hits, function(h) grepl(tok, tolower(h$rowtext), fixed = TRUE), logical(1))
+    hits <- hits[order(!spmatch)]; spmatch <- sort(spmatch, decreasing = TRUE)
+    lapply(seq_len(min(3, length(hits))), function(k)
+      tibble(hunt_species_match = ifelse(spmatch[k], "yes", "no"),
+             hunt_file = hits[[k]]$rel, hunt_sheet = hits[[k]]$sheet, hunt_rowtext = hits[[k]]$rowtext))
+  }
+  review <- long %>% filter(status %in% c("value_differs", "matched_outside_metadata", "provenance_gap"))
+  hunt_rows <- list(); hk <- 0L
+  for (r in seq_len(nrow(review))) {
+    token <- strsplit(review$Species[r], "_")[[1]][1]
+    hh <- hunt_one(review$Stephan_value[r], token)
+    base <- tibble(Species = review$Species[r], Stephan_column = review$Stephan_column[r],
+                   Stephan_value = review$Stephan_value[r], status = review$status[r])
+    if (is.null(hh)) {
+      hk <- hk + 1L
+      hunt_rows[[hk]] <- bind_cols(base, tibble(hunt_rank = 1L, hunt_species_match = "",
+        hunt_file = "(value not found in Stephan & Frahm dir)", hunt_sheet = "", hunt_rowtext = ""))
+    } else for (k in seq_along(hh)) {
+      hk <- hk + 1L; hunt_rows[[hk]] <- bind_cols(base, mutate(hh[[k]], hunt_rank = k))
+    }
+  }
+  if (length(hunt_rows))
+    write_csv(bind_rows(hunt_rows) %>%
+                select(Species, Stephan_column, Stephan_value, status, hunt_rank,
+                       hunt_species_match, hunt_file, hunt_sheet, hunt_rowtext),
+              file.path(out_dir, "Stephan_primates_source_hunt.csv"))
+  message("source hunt: ", length(hunt_rows), " rows written")
+}
+
+## --- 10. console summary ----------------------------------------------------
 message("cells written: ", nrow(long))
 print(long %>% count(status) %>% arrange(desc(n)))
-message("mismatches / rescales flagged for review: ", nrow(mism))
+message("cells flagged for review (mismatches file): ", nrow(mism))

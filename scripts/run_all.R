@@ -51,7 +51,7 @@ RUN_ORDER <- c(
   "v2_0_Heiss_Stephan_and_table1_05062026.R",
 
   # background comparative plot (slide 8)
-  "neocortex_grey_white.R",
+  "traits_neocortex_grey_white.R",
 
   # Study 1a: stereology
   "s1a_1_stereology_cell_types_30052026.R",

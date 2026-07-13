@@ -33,7 +33,7 @@
 # which sets .s3_config_override and source()s this file once per configuration.
 # ============================================================
 
-setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
 
 library(here)
 library(ape)

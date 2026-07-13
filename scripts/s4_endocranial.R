@@ -75,7 +75,7 @@
 #   tables/s4/endocranial_budget_summary.csv         totals and NT/MH, EH/MH ratios
 # ============================================================
 
-setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
 
 # Assumed constants (only affect ABSOLUTE budget units, NOT the species ratios)
 BRAIN_DENSITY_G_PER_CC <- 1.036   # assumed fresh brain-tissue density (~1.03-1.04 g/cc); cancels in the species ratios

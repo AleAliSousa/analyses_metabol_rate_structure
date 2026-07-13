@@ -1,0 +1,19 @@
+output_stem,formats,kind,study,producing_script,consumer,check,status,notes
+figs/traits/neocortex_gray_white,png|pdf,figure,intro,traits_neocortex_grey_white.R,slide 8,file,ok,grey vs white matter neocortex scaling
+figs/s1a/p_densities,jpg|pdf,figure,s1a,s1a_1_stereology_cell_types_30052026.R,slide 18,file,ok,stereology cell densities
+figs/s1a/p_counts,jpg|pdf,figure,s1a,s1a_1_stereology_cell_types_30052026.R,slide 58,file,ok,stereology cell counts
+figs/s1b/scatter_rcmr_supercluster_all_regions,png|pdf,figure,s1b,s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R,slide 57,file,ok,supercluster vs rCMRglc all regions
+figs/s1b/scatter_rcmr_supercluster_telencephalon,png|pdf,figure,s1b,s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R,slide 60,file,ok,supercluster telencephalon
+figs/s1b/scatter_rcmr_supercluster_non_telencephalon,png|pdf,figure,s1b,s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R,slide 61,file,ok,supercluster non-telencephalon
+figs/s2/mean_brain_region_volumes_boxplot,jpg|pdf,figure,s2,s2_stress_volume_01062026.R,slide 30,file,ok,environmental stress volume boxplot
+figs/s2/rCMRGlc_volume_change,jpg|pdf,figure,s2,s2_stress_volume_01062026.R,slide 31,file,ok,volume change vs rCMRglc
+figs/s4/endocranial_region_budgets,png|pdf,figure,s4,s4_endocranial.R,slide 65,file,ok,regional glucose budgets barplot
+figs/s4/endocranial_region_cost_pie_3species_volctx,png|pdf,figure,s4,s4_endocranial.R,slide 45,file,ok,regional cost pie three species
+figs/s4/rcmrglc_vs_fig3a_deviation,png|pdf,figure,s4,s4_endocranial.R,slide 43,file,ok,rCMRglc vs Fig3A deviation
+figs/s4/volume_timeline_logage_flipped,png|pdf,figure,s4,s4_endocranial.R,slide 46,file,ok,brain volume timeline log age
+figs/s4/cerebellum_volume_timeline_logage,png|pdf,figure,s4,s4_endocranial_cerebellum.R,slide 68,file,ok,cerebellum budget timeline log age
+figs/s4/budget_significance,png|pdf,figure,s4,s4_endocranial_cerebellum.R,slide 69,file,reconstructed,rebuilt 2026-07-13 from whole-brain and cerebellum group budgets
+figs/s4/budget_residual_vs_volume,png,figure,s4,,slide 69,none,MISSING_PRODUCER,no producing script in repo or history - needs original code or residual definition
+figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio,jpg|pdf,figure,s1b,s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R,slides 24-25,script_only,render_differs,deck shows an earlier E:I render than current file
+figs/s1b/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay,jpg|pdf,figure,s1b,s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R,slides 21-22,script_only,render_differs,deck shows an earlier astrocyte render than current file
+figs/s3/all/plot_human_brain_mosaicism,png|pdf,figure,s3,s3_run_and_compare_configs.R,slides 37-38,script_only,render_differs,Study 3 observed vs predicted - deck shows an earlier render

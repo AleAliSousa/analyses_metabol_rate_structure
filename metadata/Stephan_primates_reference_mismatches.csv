@@ -1,76 +1,149 @@
-Species,Stephan_column,EvoM1_variable,Stephan_value,status,unit_rescale_flag,closest_nonmatching,all_matching_sources,metadata_reference
-Avahi_laniger,Body_mass,Body_Mass.g,1030.0,value_differs,,Stephan_etal_1970_Table2 = 860.0 (16.5%),,Bauernfeind et al 2013
-Callithrix_pygmaea,Body_mass,Body_Mass.g,110.0,value_differs,,Frahm_Zilles_1994_Table1 = 120.0 (8.3%),,Bauernfeind et al 2013
-Callithrix_pygmaea,Brain_mass,Brain_Mass.mg,4200.0,value_differs,,Frahm_etal_1998_Table1 = 4150.0 (1.2%),,Bauernfeind et al 2013
-Cebus_albifrons,Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,0.43,value_differs,,Stephan_etal_1981_TableXVI = 0.425 (1.2%),,Stephan et al 1981
-Gorilla_gorilla,Body_mass,Body_Mass.g,102342.5,value_differs,,Stephan_etal_1970_Table3 = 125000.0 (18.1%),,Bauernfeind et al 2013
-Gorilla_gorilla,Body_weight_1985a,Body_Mass.g,105000.0,value_differs,,Stephan_etal_1970_Table3 = 125000.0 (16.0%),,
-Gorilla_gorilla,Brain_mass,Brain_Mass.mg,416250.0,value_differs,,Stephan_etal_1970_Table3 = 465000.0 (10.5%),,Bauernfeind et al 2013
-Homo_sapiens,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,15247.5,value_differs,,Frahm_etal_1984_Table1 = 14787.0 (3.0%),,de Sousa et al 2010
-Homo_sapiens,Total_insula_volume_L,Insula_left_Vol.mm3,6165.0,value_differs,,Bauernfeind_etal_2013_Table1 = 6479.0 (4.8%),,Bauernfeind et al 2013
-Hylobates_lar,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4086.7,value_differs,,Bush_Allman_2004_b_TABLE1 = 4400.0 (7.1%),,de Sousa et al 2010
-Lepilemur_ruficaudatus,Nucleus.vestibularis.lateralis,Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,2.3,value_differs,,Stephan_etal_1981_TableXIII = 2.38 (3.4%),,Stephan et al 1981
-Nycticebus_coucang,Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,0.18,value_differs,,Stephan_etal_1981_TableXV = 0.175 (2.8%),,Stephan et al 1981
-Pan_paniscus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,275.1,value_differs,,deSousa_etal_2013_Table1 = 282.3 (2.6%),,de Sousa et al 2010; de Sousa et al 2013
-Pan_troglodytes,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8268.3,value_differs,,Frahm_etal_1984_Table1 = 10593.0 (21.9%),,de Sousa et al 2010
-Pan_troglodytes,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,250.7,value_differs,,Bush_Allman_2004_b_TABLE1 = 290.0 (13.6%),,de Sousa et al 2010; de Sousa et al 2013
-Pongo_abelii,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,321.5,value_differs,,Bauernfeind_etal_2013_Table1 = 254.75 (20.8%),,Bauernfeind et al 2013
-Pongo_abelii,Body_mass,Body_Mass.g,35600.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (23.2%),,Bauernfeind et al 2013
-Pongo_abelii,Body_weight,Body_Mass.g,35600.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (23.2%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pongo_abelii,Brain_mass,Brain_Mass.mg,345900.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (10.1%),,Bauernfeind et al 2013
-Pongo_abelii,Brain_weight,Brain_Mass.mg,345900.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (10.1%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pongo_abelii,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,599.5,value_differs,,Bauernfeind_etal_2013_Table1 = 828.25 (27.6%),,Bauernfeind et al 2013
-Pongo_abelii,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,19.5,value_differs,,Bauernfeind_etal_2013_Table1 = 39.75 (50.9%),,Bauernfeind et al 2013
-Pongo_abelii,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,218.5,value_differs,,Bauernfeind_etal_2013_Table1 = 208.75 (4.5%),,Bauernfeind et al 2013
-Pongo_abelii,Total_insula_volume_L,Insula_left_Vol.mm3,1158.0,value_differs,,Bauernfeind_etal_2013_Table1 = 1331.5 (13.0%),,Bauernfeind et al 2013
-Pongo_pygmaeus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8233.7,value_differs,,Zilles_Rehkämper_1988_Table12-2 = 8400.0 (2.0%),,de Sousa et al 2010
-Pongo_pygmaeus,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,188.0,value_differs,,Bauernfeind_etal_2013_Table1 = 254.75 (26.2%),,Bauernfeind et al 2013
-Pongo_pygmaeus,Body_mass,Body_Mass.g,57050.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (18.8%),,Bauernfeind et al 2013
-Pongo_pygmaeus,Body_weight,Body_Mass.g,57050.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (18.8%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pongo_pygmaeus,Brain_mass,Brain_Mass.mg,360500.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (6.3%),,Bauernfeind et al 2013
-Pongo_pygmaeus,Brain_weight,Brain_Mass.mg,336000.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (12.7%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pongo_pygmaeus,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,1057.0,value_differs,,Bauernfeind_etal_2013_Table1 = 828.25 (21.6%),,Bauernfeind et al 2013
-Pongo_pygmaeus,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,60.0,value_differs,,Bauernfeind_etal_2013_Table1 = 39.75 (33.8%),,Bauernfeind et al 2013
-Pongo_pygmaeus,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,199.0,value_differs,,Bauernfeind_etal_2013_Table1 = 208.75 (4.7%),,Bauernfeind et al 2013
-Pongo_pygmaeus,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,138300.0,value_differs,,Zilles_Rehkämper_1988_Table12-2 = 129900.0 (6.1%),,Frahm et al 1992; Zilles and Rehkamper 1988
-Pongo_pygmaeus,Total_insula_volume_L,Insula_left_Vol.mm3,1505.0,value_differs,,Bauernfeind_etal_2013_Table1 = 1331.5 (11.5%),,Bauernfeind et al 2013
-Tarsius_syrichta,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1631.0,value_differs,,Bush_Allman_2003_Table1 = 1470.0 (9.9%),,Frahm et al 1992; Zilles and Rehkamper 1988
-Tarsius_syrichta,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,137.0,value_differs,,Bush_Allman_2003_Table1 = 151.0 (9.3%),,Frahm et al 1992; Zilles and Rehkamper 1988
-Alouatta_caraya,Brain_mass,Brain_Mass.mg,55800.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Alouatta_caraya,Brain_weight,Brain_Mass.mg,55800.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Ateles_geoffroyi,Brain_mass,Brain_Mass.mg,106400.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Avahi_occidentalis,Brain_weight,Brain_Mass.mg,9670.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Cebus_albifrons,Brain_mass,Brain_Mass.mg,79800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table3,Bauernfeind et al 2013
-Cercocebus_agilis,Brain_mass,Brain_Mass.mg,95300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Cercocebus_agilis,Brain_weight,Brain_Mass.mg,95300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Cercopithecus_mitis,Brain_mass,Brain_Mass.mg,71600.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Colobus_angolensis,Brain_mass,Brain_Mass.mg,74400.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
-Colobus_angolensis,Brain_weight,Brain_Mass.mg,74400.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Galagoides_demidoff,Brain_mass,Brain_Mass.mg,3300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Homo_sapiens,Brain_mass,Brain_Mass.mg,1406720.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Hylobates_lar,Brain_mass,Brain_Mass.mg,92000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Hylobates_muelleri,Brain_mass,Brain_Mass.mg,101800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
-Hylobates_muelleri,Brain_weight,Brain_Mass.mg,101800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Indri_indri,Brain_mass,Brain_Mass.mg,33700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Leontopithecus_rosalia,Brain_mass,Brain_Mass.mg,12700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Leontopithecus_rosalia,Brain_weight,Brain_Mass.mg,12700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Lophocebus_albigena,Brain_mass,Brain_Mass.mg,110500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
-Loris_tardigradus,Brain_mass,Brain_Mass.mg,6900.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Macaca_maura,Brain_mass,Brain_Mass.mg,83300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Macaca_maura,Brain_weight,Brain_Mass.mg,83300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pan_paniscus,Brain_mass,Brain_Mass.mg,352000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Pan_paniscus,Brain_weight,Brain_Mass.mg,352000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Pan_troglodytes,Brain_mass,Brain_Mass.mg,342700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Perodicticus_potto,Brain_mass,Brain_Mass.mg,11500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Piliocolobus_badius,Brain_mass,Brain_Mass.mg,75000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Pithecia_pithecia,Brain_mass,Brain_Mass.mg,30000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Pithecia_pithecia,Brain_weight,Brain_Mass.mg,30000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Saguinus_geoffroyi,Brain_mass,Brain_Mass.mg,10500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Saguinus_geoffroyi,Brain_weight,Brain_Mass.mg,10500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Saguinus_oedipus,Brain_mass,Brain_Mass.mg,9300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Symphalangus_syndactylus,Brain_mass,Brain_Mass.mg,138700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Symphalangus_syndactylus,Brain_weight,Brain_Mass.mg,138700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Trachypithecus_francoisi,Brain_mass,Brain_Mass.mg,102100.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
-Trachypithecus_francoisi,Brain_weight,Brain_Mass.mg,102100.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
-Varecia_variegata,Brain_mass,Brain_Mass.mg,31500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Bauernfeind et al 2013
-Varecia_variegata,Brain_weight,Brain_Mass.mg,31500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Species,Stephan_column,EvoM1_variable,Stephan_value,status,unit_rescale_flag,merge_deviation_flag,closest_nonmatching,all_matching_sources,metadata_reference
+Avahi_laniger,Body_mass,Body_Mass.g,1030,value_differs,,,Stephan_etal_1970_Table2 = 860 (16.5%),,Bauernfeind et al 2013
+Callithrix_pygmaea,Body_mass,Body_Mass.g,110,value_differs,,,Frahm_Zilles_1994_Table1 = 120 (8.3%),,Bauernfeind et al 2013
+Callithrix_pygmaea,Brain_mass,Brain_Mass.mg,4200,value_differs,,,Frahm_etal_1998_Table1 = 4150 (1.2%),,Bauernfeind et al 2013
+Cebus_albifrons,Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,0.43,value_differs,,,Stephan_etal_1981_TableXVI = 0.425 (1.2%),,Stephan et al 1981
+Cheirogaleus_medius,Nucleus.septalis.triangularis,Nucleus_septalis_triangularis_Vol.mm3,0.39,value_differs,,,Stephan_etal_1981_TableXV = 0.385 (1.3%),,Stephan et al 1981
+Gorilla_gorilla,Body_mass,Body_Mass.g,102342.5,value_differs,,,Stephan_etal_1970_Table3 = 125000 (18.1%),,Bauernfeind et al 2013
+Gorilla_gorilla,Body_weight_1985a,Body_Mass.g,105000,value_differs,,,Stephan_etal_1970_Table3 = 125000 (16.0%),,NA
+Gorilla_gorilla,Brain_mass,Brain_Mass.mg,416250,value_differs,,,Stephan_etal_1970_Table3 = 465000 (10.5%),,Bauernfeind et al 2013
+Homo_sapiens,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,15247.5,value_differs,,,Frahm_etal_1984_Table1 = 14787 (3.0%),,de Sousa et al 2010
+Homo_sapiens,Total_insula_volume_L,Insula_left_Vol.mm3,6165,value_differs,,,Bauernfeind_etal_2013_Table1 = 6479 (4.8%),,Bauernfeind et al 2013
+Hylobates_lar,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4086.7,value_differs,,,Bush_Allman_2004_b_TABLE1 = 4400 (7.1%),,de Sousa et al 2010
+Lepilemur_ruficaudatus,Nucleus.vestibularis.lateralis,Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,2.3,value_differs,,,Stephan_etal_1981_TableXIII = 2.38 (3.4%),,Stephan et al 1981
+Nycticebus_coucang,Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,0.18,value_differs,,,Stephan_etal_1981_TableXV = 0.175 (2.8%),,Stephan et al 1981
+Pan_paniscus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,275.1,value_differs,,,deSousa_etal_2013_Table1 = 282.3 (2.6%),,de Sousa et al 2010; de Sousa et al 2013
+Pan_troglodytes,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8268.3,value_differs,,,Frahm_etal_1984_Table1 = 10593 (21.9%),,de Sousa et al 2010
+Pan_troglodytes,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,250.7,value_differs,,,Bush_Allman_2004_b_TABLE1 = 290 (13.6%),,de Sousa et al 2010; de Sousa et al 2013
+Piliocolobus_badius,Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,0.27,value_differs,,,Stephan_etal_1981_TableXVI = 0.265 (1.9%),,Stephan et al 1981
+Pongo_abelii,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,321.5,value_differs,,,Bauernfeind_etal_2013_Table1 = 254.75 (20.8%),,Bauernfeind et al 2013
+Pongo_abelii,Body_mass,Body_Mass.g,35600,value_differs,,,Bauernfeind_etal_2013_Table1 = 46325 (23.2%),,Bauernfeind et al 2013
+Pongo_abelii,Body_weight,Body_Mass.g,35600,value_differs,,,Bauernfeind_etal_2013_Table1 = 46325 (23.2%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_abelii,Brain_mass,Brain_Mass.mg,345900,value_differs,,,deSousa_etal_2013_Table1 = 384667 (10.1%),,Bauernfeind et al 2013
+Pongo_abelii,Brain_weight,Brain_Mass.mg,345900,value_differs,,,deSousa_etal_2013_Table1 = 384667 (10.1%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_abelii,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,599.5,value_differs,,,Bauernfeind_etal_2013_Table1 = 828.25 (27.6%),,Bauernfeind et al 2013
+Pongo_abelii,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,19.5,value_differs,,,Bauernfeind_etal_2013_Table1 = 39.75 (50.9%),,Bauernfeind et al 2013
+Pongo_abelii,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,218.5,value_differs,,,Bauernfeind_etal_2013_Table1 = 208.75 (4.5%),,Bauernfeind et al 2013
+Pongo_abelii,Total_insula_volume_L,Insula_left_Vol.mm3,1158,value_differs,,,Bauernfeind_etal_2013_Table1 = 1331.5 (13.0%),,Bauernfeind et al 2013
+Pongo_pygmaeus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8233.7,value_differs,,,Zilles_Rehkämper_1988_Table12-2 = 8400 (2.0%),,de Sousa et al 2010
+Pongo_pygmaeus,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,188,value_differs,,,Bauernfeind_etal_2013_Table1 = 254.75 (26.2%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Body_mass,Body_Mass.g,57050,value_differs,,,Bauernfeind_etal_2013_Table1 = 46325 (18.8%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Body_weight,Body_Mass.g,57050,value_differs,,,Bauernfeind_etal_2013_Table1 = 46325 (18.8%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_pygmaeus,Brain_mass,Brain_Mass.mg,360500,value_differs,,,deSousa_etal_2013_Table1 = 384667 (6.3%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Brain_weight,Brain_Mass.mg,336000,value_differs,,,deSousa_etal_2013_Table1 = 384667 (12.7%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_pygmaeus,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,1057,value_differs,,,Bauernfeind_etal_2013_Table1 = 828.25 (21.6%),,Bauernfeind et al 2013
+Pongo_pygmaeus,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,60,value_differs,,,Bauernfeind_etal_2013_Table1 = 39.75 (33.8%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,199,value_differs,,,Bauernfeind_etal_2013_Table1 = 208.75 (4.7%),,Bauernfeind et al 2013
+Pongo_pygmaeus,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,138300,value_differs,,,Zilles_Rehkämper_1988_Table12-2 = 129900 (6.1%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Pongo_pygmaeus,Total_insula_volume_L,Insula_left_Vol.mm3,1505,value_differs,,,Bauernfeind_etal_2013_Table1 = 1331.5 (11.5%),,Bauernfeind et al 2013
+Tarsius_syrichta,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1631,value_differs,,,Bush_Allman_2003_Table1 = 1470 (9.9%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Tarsius_syrichta,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,137,value_differs,,,Bush_Allman_2003_Table1 = 151 (9.3%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Alouatta_seniculus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1918,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Alouatta_seniculus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,87.4,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Aotus_trivirgatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,996,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Aotus_trivirgatus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,32.9,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Ateles_geoffroyi,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3753,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Ateles_geoffroyi,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,151,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Avahi_laniger,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,475,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Avahi_laniger,Brain_mass,Brain_Mass.mg,9600,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1970_Table2 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1970_Table2,Bauernfeind et al 2013
+Avahi_laniger,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,27.6,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Avahi_occidentalis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,450,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Avahi_occidentalis,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,29.3,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Callithrix_jacchus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,566,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Callithrix_jacchus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,25.1,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Callithrix_pygmaea,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,363,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Callithrix_pygmaea,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,16.9,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1,de Sousa et al 2010; de Sousa et al 2013
+Cebus_albifrons,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3764,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Cebus_albifrons,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,137,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Cercopithecus_ascanius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4272,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Cercopithecus_mitis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4232,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Cercopithecus_mitis,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,150,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Cheirogaleus_major,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,433,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Cheirogaleus_major,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,21.5,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Cheirogaleus_medius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,199,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Cheirogaleus_medius,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,10.8,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Daubentonia_madagascariensis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1113,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Daubentonia_madagascariensis,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,58.5,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Eulemur_fulvus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1253,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Eulemur_fulvus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,51.8,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Galago_senegalensis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,301,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Galago_senegalensis,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,16,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Galagoides_demidoff,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,214,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Galagoides_demidoff,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,10.9,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Indri_indri,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1648,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Indri_indri,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,94.5,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Lagothrix_lagotricha,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4856,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Lagothrix_lagotricha,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,164,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Lepilemur_ruficaudatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,326,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Lepilemur_ruficaudatus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,15.6,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Lophocebus_albigena,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5420,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Loris_tardigradus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,529,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Loris_tardigradus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,24.6,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Macaca_fascicularis,Brain_weight,Brain_Mass.mg,57600,matched_outside_metadata,,,Evo-M1 value matches deSousa_etal_2013_Table1 (not the metadata source); attributed to metadata source; see source_hunt,deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Macaca_mulatta,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5343,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Microcebus_murinus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,136,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Microcebus_murinus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,7.1,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Miopithecus_talapoin,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,2339,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Nycticebus_coucang,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,696,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Nycticebus_coucang,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,35.9,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Otolemur_crassicaudatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,479,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Otolemur_crassicaudatus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,23.2,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Papio_anubis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,10001,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Perodicticus_potto,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,495,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Perodicticus_potto,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,24.3,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Piliocolobus_badius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3053,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Pithecia_monachus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1679,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Pithecia_monachus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,76.3,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Plecturocebus_moloch,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1201,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1,de Sousa et al 2010
+Plecturocebus_moloch,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,54.2,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Propithecus_verreauxi,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1106,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Propithecus_verreauxi,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,64.5,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Saguinus_midas,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,841,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Saguinus_midas,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,36,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1,de Sousa et al 2010; de Sousa et al 2013
+Saguinus_oedipus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,807,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1; Frahm_etal_1998_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1; Frahm_etal_1998_Table1,de Sousa et al 2010
+Saguinus_oedipus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,34.2,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1998_Table1; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1998_Table1; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Saimiri_sciureus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1884,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Saimiri_sciureus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,62.9,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Varecia_variegata,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1745,matched_outside_metadata,,,Evo-M1 value matches Frahm_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Frahm_etal_1984_Table1,de Sousa et al 2010
+Varecia_variegata,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,68.9,matched_outside_metadata,,,Evo-M1 value matches Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1 (not the metadata source); attributed to metadata source; see source_hunt,Stephan_etal_1981_TableIX; Stephan_etal_1984_Table1,de Sousa et al 2010; de Sousa et al 2013
+Homo_sapiens,Amygdala,Amygdala_Vol.mm3,3015,resolved_unique,,Stephan_etal_1987_Table1=5286.6 vs Stephan_etal_1981_TableXI=3015,merge deviation flag: Stephan_etal_1987_Table1=5286.6 vs Stephan_etal_1981_TableXI=3015,Stephan_etal_1981_TableXI,Stephan et al 1981; Zilles and Rehkamper 1988
+Homo_sapiens,Complexus_centromedialis,Complexus_centromedialis_Vol.mm3,592,resolved_unique,,Stephan_etal_1987_Table1=1306.4 vs Stephan_etal_1981_TableXI=592,merge deviation flag: Stephan_etal_1987_Table1=1306.4 vs Stephan_etal_1981_TableXI=592,Stephan_etal_1981_TableXI,Stephan et al 1981
+Homo_sapiens,Complexus_cortico_basolateralis,Complexus_corticobasolateralis_Vol.mm3,2424,resolved_unique,,Stephan_etal_1987_Table1=3980.2 vs Stephan_etal_1981_TableXI=2424,merge deviation flag: Stephan_etal_1987_Table1=3980.2 vs Stephan_etal_1981_TableXI=2424,Stephan_etal_1981_TableXI,Stephan et al 1981
+Alouatta_caraya,Brain_mass,Brain_Mass.mg,55800,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Alouatta_caraya,Brain_weight,Brain_Mass.mg,55800,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Ateles_geoffroyi,Brain_mass,Brain_Mass.mg,106400,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Avahi_occidentalis,Brain_weight,Brain_Mass.mg,9670,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Cebus_albifrons,Brain_mass,Brain_Mass.mg,79800,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table3,Bauernfeind et al 2013
+Cercocebus_agilis,Brain_mass,Brain_Mass.mg,95300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Cercocebus_agilis,Brain_weight,Brain_Mass.mg,95300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Cercopithecus_mitis,Brain_mass,Brain_Mass.mg,71600,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Colobus_angolensis,Brain_mass,Brain_Mass.mg,74400,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Colobus_angolensis,Brain_weight,Brain_Mass.mg,74400,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Galagoides_demidoff,Brain_mass,Brain_Mass.mg,3300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Homo_sapiens,Brain_mass,Brain_Mass.mg,1406720,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_lar,Brain_mass,Brain_Mass.mg,92000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_muelleri,Brain_mass,Brain_Mass.mg,101800,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_muelleri,Brain_weight,Brain_Mass.mg,101800,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Indri_indri,Brain_mass,Brain_Mass.mg,33700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Leontopithecus_rosalia,Brain_mass,Brain_Mass.mg,12700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Leontopithecus_rosalia,Brain_weight,Brain_Mass.mg,12700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Lophocebus_albigena,Brain_mass,Brain_Mass.mg,110500,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Loris_tardigradus,Brain_mass,Brain_Mass.mg,6900,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Macaca_maura,Brain_mass,Brain_Mass.mg,83300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Macaca_maura,Brain_weight,Brain_Mass.mg,83300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pan_paniscus,Brain_mass,Brain_Mass.mg,352000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pan_paniscus,Brain_weight,Brain_Mass.mg,352000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pan_troglodytes,Brain_mass,Brain_Mass.mg,342700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Perodicticus_potto,Brain_mass,Brain_Mass.mg,11500,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Piliocolobus_badius,Brain_mass,Brain_Mass.mg,75000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pithecia_pithecia,Brain_mass,Brain_Mass.mg,30000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pithecia_pithecia,Brain_weight,Brain_Mass.mg,30000,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Saguinus_geoffroyi,Brain_mass,Brain_Mass.mg,10500,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Saguinus_geoffroyi,Brain_weight,Brain_Mass.mg,10500,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Saguinus_oedipus,Brain_mass,Brain_Mass.mg,9300,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Symphalangus_syndactylus,Brain_mass,Brain_Mass.mg,138700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Symphalangus_syndactylus,Brain_weight,Brain_Mass.mg,138700,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Trachypithecus_francoisi,Brain_mass,Brain_Mass.mg,102100,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Trachypithecus_francoisi,Brain_weight,Brain_Mass.mg,102100,resolved_unique,1000,,NA,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Varecia_variegata,Brain_mass,Brain_Mass.mg,31500,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Bauernfeind et al 2013
+Varecia_variegata,Brain_weight,Brain_Mass.mg,31500,resolved_multiple,1000,,NA,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013

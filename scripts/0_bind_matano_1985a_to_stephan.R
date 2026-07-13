@@ -2,7 +2,7 @@
 # The join is by species.  Name changes/synonyms are handled with species_key.csv
 # plus a few manual mappings for names used in the current Stephan_primates.csv.
 
-setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
 
 # ---------- Helpers ----------
 first_existing <- function(paths, label) {
