@@ -1,0 +1,76 @@
+Species,Stephan_column,EvoM1_variable,Stephan_value,status,unit_rescale_flag,closest_nonmatching,all_matching_sources,metadata_reference
+Avahi_laniger,Body_mass,Body_Mass.g,1030.0,value_differs,,Stephan_etal_1970_Table2 = 860.0 (16.5%),,Bauernfeind et al 2013
+Callithrix_pygmaea,Body_mass,Body_Mass.g,110.0,value_differs,,Frahm_Zilles_1994_Table1 = 120.0 (8.3%),,Bauernfeind et al 2013
+Callithrix_pygmaea,Brain_mass,Brain_Mass.mg,4200.0,value_differs,,Frahm_etal_1998_Table1 = 4150.0 (1.2%),,Bauernfeind et al 2013
+Cebus_albifrons,Corpus.subcommissurale,Corpus_subcommissurale_Vol.mm3,0.43,value_differs,,Stephan_etal_1981_TableXVI = 0.425 (1.2%),,Stephan et al 1981
+Gorilla_gorilla,Body_mass,Body_Mass.g,102342.5,value_differs,,Stephan_etal_1970_Table3 = 125000.0 (18.1%),,Bauernfeind et al 2013
+Gorilla_gorilla,Body_weight_1985a,Body_Mass.g,105000.0,value_differs,,Stephan_etal_1970_Table3 = 125000.0 (16.0%),,
+Gorilla_gorilla,Brain_mass,Brain_Mass.mg,416250.0,value_differs,,Stephan_etal_1970_Table3 = 465000.0 (10.5%),,Bauernfeind et al 2013
+Homo_sapiens,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,15247.5,value_differs,,Frahm_etal_1984_Table1 = 14787.0 (3.0%),,de Sousa et al 2010
+Homo_sapiens,Total_insula_volume_L,Insula_left_Vol.mm3,6165.0,value_differs,,Bauernfeind_etal_2013_Table1 = 6479.0 (4.8%),,Bauernfeind et al 2013
+Hylobates_lar,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4086.7,value_differs,,Bush_Allman_2004_b_TABLE1 = 4400.0 (7.1%),,de Sousa et al 2010
+Lepilemur_ruficaudatus,Nucleus.vestibularis.lateralis,Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,2.3,value_differs,,Stephan_etal_1981_TableXIII = 2.38 (3.4%),,Stephan et al 1981
+Nycticebus_coucang,Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,0.18,value_differs,,Stephan_etal_1981_TableXV = 0.175 (2.8%),,Stephan et al 1981
+Pan_paniscus,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,275.1,value_differs,,deSousa_etal_2013_Table1 = 282.3 (2.6%),,de Sousa et al 2010; de Sousa et al 2013
+Pan_troglodytes,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8268.3,value_differs,,Frahm_etal_1984_Table1 = 10593.0 (21.9%),,de Sousa et al 2010
+Pan_troglodytes,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,250.7,value_differs,,Bush_Allman_2004_b_TABLE1 = 290.0 (13.6%),,de Sousa et al 2010; de Sousa et al 2013
+Pongo_abelii,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,321.5,value_differs,,Bauernfeind_etal_2013_Table1 = 254.75 (20.8%),,Bauernfeind et al 2013
+Pongo_abelii,Body_mass,Body_Mass.g,35600.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (23.2%),,Bauernfeind et al 2013
+Pongo_abelii,Body_weight,Body_Mass.g,35600.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (23.2%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_abelii,Brain_mass,Brain_Mass.mg,345900.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (10.1%),,Bauernfeind et al 2013
+Pongo_abelii,Brain_weight,Brain_Mass.mg,345900.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (10.1%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_abelii,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,599.5,value_differs,,Bauernfeind_etal_2013_Table1 = 828.25 (27.6%),,Bauernfeind et al 2013
+Pongo_abelii,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,19.5,value_differs,,Bauernfeind_etal_2013_Table1 = 39.75 (50.9%),,Bauernfeind et al 2013
+Pongo_abelii,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,218.5,value_differs,,Bauernfeind_etal_2013_Table1 = 208.75 (4.5%),,Bauernfeind et al 2013
+Pongo_abelii,Total_insula_volume_L,Insula_left_Vol.mm3,1158.0,value_differs,,Bauernfeind_etal_2013_Table1 = 1331.5 (13.0%),,Bauernfeind et al 2013
+Pongo_pygmaeus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8233.7,value_differs,,Zilles_Rehkämper_1988_Table12-2 = 8400.0 (2.0%),,de Sousa et al 2010
+Pongo_pygmaeus,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,188.0,value_differs,,Bauernfeind_etal_2013_Table1 = 254.75 (26.2%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Body_mass,Body_Mass.g,57050.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (18.8%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Body_weight,Body_Mass.g,57050.0,value_differs,,Bauernfeind_etal_2013_Table1 = 46325.0 (18.8%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_pygmaeus,Brain_mass,Brain_Mass.mg,360500.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (6.3%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Brain_weight,Brain_Mass.mg,336000.0,value_differs,,deSousa_etal_2013_Table1 = 384667.0 (12.7%),,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pongo_pygmaeus,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,1057.0,value_differs,,Bauernfeind_etal_2013_Table1 = 828.25 (21.6%),,Bauernfeind et al 2013
+Pongo_pygmaeus,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,60.0,value_differs,,Bauernfeind_etal_2013_Table1 = 39.75 (33.8%),,Bauernfeind et al 2013
+Pongo_pygmaeus,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,199.0,value_differs,,Bauernfeind_etal_2013_Table1 = 208.75 (4.7%),,Bauernfeind et al 2013
+Pongo_pygmaeus,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,138300.0,value_differs,,Zilles_Rehkämper_1988_Table12-2 = 129900.0 (6.1%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Pongo_pygmaeus,Total_insula_volume_L,Insula_left_Vol.mm3,1505.0,value_differs,,Bauernfeind_etal_2013_Table1 = 1331.5 (11.5%),,Bauernfeind et al 2013
+Tarsius_syrichta,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1631.0,value_differs,,Bush_Allman_2003_Table1 = 1470.0 (9.9%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Tarsius_syrichta,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,137.0,value_differs,,Bush_Allman_2003_Table1 = 151.0 (9.3%),,Frahm et al 1992; Zilles and Rehkamper 1988
+Alouatta_caraya,Brain_mass,Brain_Mass.mg,55800.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Alouatta_caraya,Brain_weight,Brain_Mass.mg,55800.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Ateles_geoffroyi,Brain_mass,Brain_Mass.mg,106400.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Avahi_occidentalis,Brain_weight,Brain_Mass.mg,9670.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Cebus_albifrons,Brain_mass,Brain_Mass.mg,79800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table3,Bauernfeind et al 2013
+Cercocebus_agilis,Brain_mass,Brain_Mass.mg,95300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Cercocebus_agilis,Brain_weight,Brain_Mass.mg,95300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Cercopithecus_mitis,Brain_mass,Brain_Mass.mg,71600.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Colobus_angolensis,Brain_mass,Brain_Mass.mg,74400.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Colobus_angolensis,Brain_weight,Brain_Mass.mg,74400.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Galagoides_demidoff,Brain_mass,Brain_Mass.mg,3300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Homo_sapiens,Brain_mass,Brain_Mass.mg,1406720.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_lar,Brain_mass,Brain_Mass.mg,92000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_muelleri,Brain_mass,Brain_Mass.mg,101800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Hylobates_muelleri,Brain_weight,Brain_Mass.mg,101800.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Indri_indri,Brain_mass,Brain_Mass.mg,33700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Leontopithecus_rosalia,Brain_mass,Brain_Mass.mg,12700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Leontopithecus_rosalia,Brain_weight,Brain_Mass.mg,12700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Lophocebus_albigena,Brain_mass,Brain_Mass.mg,110500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; deSousa_etal_2013_Table1,Bauernfeind et al 2013
+Loris_tardigradus,Brain_mass,Brain_Mass.mg,6900.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Macaca_maura,Brain_mass,Brain_Mass.mg,83300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Macaca_maura,Brain_weight,Brain_Mass.mg,83300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pan_paniscus,Brain_mass,Brain_Mass.mg,352000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pan_paniscus,Brain_weight,Brain_Mass.mg,352000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Pan_troglodytes,Brain_mass,Brain_Mass.mg,342700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Perodicticus_potto,Brain_mass,Brain_Mass.mg,11500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Piliocolobus_badius,Brain_mass,Brain_Mass.mg,75000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pithecia_pithecia,Brain_mass,Brain_Mass.mg,30000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Pithecia_pithecia,Brain_weight,Brain_Mass.mg,30000.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Saguinus_geoffroyi,Brain_mass,Brain_Mass.mg,10500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Saguinus_geoffroyi,Brain_weight,Brain_Mass.mg,10500.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Saguinus_oedipus,Brain_mass,Brain_Mass.mg,9300.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Symphalangus_syndactylus,Brain_mass,Brain_Mass.mg,138700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Symphalangus_syndactylus,Brain_weight,Brain_Mass.mg,138700.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Trachypithecus_francoisi,Brain_mass,Brain_Mass.mg,102100.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Bauernfeind et al 2013
+Trachypithecus_francoisi,Brain_weight,Brain_Mass.mg,102100.0,resolved_unique,1000,,Bauernfeind_etal_2013_Table1,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
+Varecia_variegata,Brain_mass,Brain_Mass.mg,31500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Bauernfeind et al 2013
+Varecia_variegata,Brain_weight,Brain_Mass.mg,31500.0,resolved_multiple,1000,,Bauernfeind_etal_2013_Table1; Stephan_etal_1970_Table2; Stephan_etal_1981_TableII,Stephan et al 1981; Zilles and Rehkamper 1988; Bauernfeind et al 2013
