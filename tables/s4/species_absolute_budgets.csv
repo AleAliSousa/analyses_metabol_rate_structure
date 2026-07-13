@@ -1,0 +1,4 @@
+"group","n","cerebral_cc","cerebellar_cc","budget_umol_min","budget_sd","budget_ci95_halfwidth","budget_ratio_MH","budget_ratio_MH_sd","budget_ratio_MH_ci95"
+"NT",4,1161,149,344.63,47.01,74.8,1.0491,0.1431,0.2277
+"EH",4,1135,153,340.04,21.75,34.6,1.0351,0.0662,0.1053
+"MH",1185,1097,149,328.51,30.15,1.72,1,0.0918,0.0052

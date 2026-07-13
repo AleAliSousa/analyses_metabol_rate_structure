@@ -1,0 +1,9 @@
+specimen,group,age_min_kya,age_max_kya,cerebral_cc,cerebellar_cc,total_cc,budget_umol_min,budget_ratio_MH
+Amud 1,NT, 50, 70,1304,182,1486,391.13,1.1906
+La Chapelle-aux-Saints 1,NT, 47, 56,1159,140,1299,341.62,1.0399
+La Ferrassie 1,NT, 43, 45,1268,166,1434,377.30,1.1485
+Forbes' Quarry 1,NT,NA,NA, 912,106,1018,267.67,0.8148
+Qafzeh 9,EH, 90,120,1075,147,1222,322.68,0.9822
+Skhul 5,EH,100,135,1053,146,1199,316.66,0.9639
+Mladeč 1,EH, 35, 35,1205,165,1370,361.76,1.1012
+Cro-Magnon 1,EH, 32, 32,1208,156,1364,359.93,1.0956

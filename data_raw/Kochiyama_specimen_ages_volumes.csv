@@ -1,0 +1,9 @@
+specimen,group,age_min_kya,age_max_kya,cerebral_cc,cerebellar_cc,age_note,source
+Amud 1,NT,50,70,1304,182,dated,"Kochiyama_etal_2018 (refs 20,21)"
+La Chapelle-aux-Saints 1,NT,47,56,1159,140,dated,"Kochiyama_etal_2018 (ref 22)"
+La Ferrassie 1,NT,43,45,1268,166,dated,"Kochiyama_etal_2018 (ref 23)"
+Forbes' Quarry 1,NT,NA,NA,912,106,undated,"Kochiyama_etal_2018 (no dating)"
+Qafzeh 9,EH,90,120,1075,147,dated,"Kochiyama_etal_2018 (refs 22,24,25)"
+Skhul 5,EH,100,135,1053,146,dated,"Kochiyama_etal_2018 (refs 26,27)"
+Mladec 1,EH,35,35,1205,165,point,"Kochiyama_etal_2018 (ref 28)"
+Cro-Magnon 1,EH,32,32,1208,156,point,"Kochiyama_etal_2018 (ref 29)"

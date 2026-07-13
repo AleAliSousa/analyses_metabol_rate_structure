@@ -1,0 +1,4 @@
+Group,n,Cerebrum_mean_cc,Cerebrum_sd_cc,Cerebellum_mean_cc,Cerebellum_sd_cc,Cerebellum_Cerebrum_ratio_mean,Cerebellum_Cerebrum_ratio_sd,note
+NT,4,1161,177,149,33,0.127,0.01,4 Neanderthal fossils
+EH,4,1135,83,153,9,0.135,0.004,4 early Homo sapiens fossils
+MH,1185,1097,115,149,15,0.136,0.005,living modern humans (not fossils)

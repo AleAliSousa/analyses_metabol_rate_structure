@@ -39,8 +39,21 @@ extra <- list(
   extra_regions = extra,
   extra_tag     = "frontalvermis"
 )
+# The sourced variant crops primate -> tree -> anthropoid at its first step and
+# hard-stops on any non-primate. assert_primates_only() re-confirms it at this entry
+# point (is_primate/data live in the global env after source()).
+assert_primates_only <- function(tag) {
+  if (!exists("data") || !exists("is_primate"))
+    stop("[driver] variant did not populate data/is_primate for ", tag)
+  bad <- unique(data$Species[!is_primate(data$Species)])
+  if (length(bad) > 0)
+    stop("[driver] NON-PRIMATE leaked in ", tag, ": ", paste(bad, collapse = ", "))
+  message(sprintf("[driver] %s: %d primate species confirmed (0 non-primates).", tag, nrow(data)))
+}
+
 source(VARIANT_SCRIPT, local = FALSE)
 anthro_tag <- CONFIG$run_tag                       # "merged_all_anthro_frontalvermis"
+assert_primates_only(anthro_tag)                   # consistency guard
 
 # ---- Optional comparator: all primates, same 16 regions ----
 # (Frontal/vermis are anthropoid-dominated so their rows change little; the OTHER
@@ -54,6 +67,7 @@ anthro_tag <- CONFIG$run_tag                       # "merged_all_anthro_frontalv
 )
 source(VARIANT_SCRIPT, local = FALSE)
 allprim_tag <- CONFIG$run_tag                      # "merged_all_frontalvermis"
+assert_primates_only(allprim_tag)                  # consistency guard
 
 if (exists(".s3_config_override")) rm(.s3_config_override)
 

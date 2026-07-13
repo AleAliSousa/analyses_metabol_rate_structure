@@ -1,0 +1,4 @@
+"code","label","rate","mh_cc","mass_g","base_umol","shape_NT","shape_EH","shape_MH"
+"Ce A","Anterior cerebellar cortex",29.8,13.86,14.35896,4.27897008,0.99,1,1
+"Ce P","Posterior cerebellar cortex",29.8,114.41,118.52876,35.32157048,0.94,0.995,1
+"Ce V","Vermis",30.1,12.38,12.82568,3.86052968,0.965,1.01,1

@@ -61,11 +61,25 @@ if (isTRUE(INCLUDE_FRONTAL_VERMIS)) {
 }
 
 # ---- Run each configuration ----
+# The sourced variant performs the primate -> tree -> anthropoid crop at its first
+# step and hard-stops on any non-primate. We re-assert here so this entry point
+# independently confirms primates-only (is_primate/grade_of/data live in the global
+# env after each source()).
+assert_primates_only <- function(tag) {
+  if (!exists("data") || !exists("is_primate"))
+    stop("[driver] variant did not populate data/is_primate for ", tag)
+  bad <- unique(data$Species[!is_primate(data$Species)])
+  if (length(bad) > 0)
+    stop("[driver] NON-PRIMATE leaked in ", tag, ": ", paste(bad, collapse = ", "))
+  message(sprintf("[driver] %s: %d primate species confirmed (0 non-primates).", tag, nrow(data)))
+}
+
 run_tags <- character(0)
 for (nm in names(configs)) {
   message("\n=================  RUNNING CONFIG: ", nm, "  =================")
   .s3_config_override <<- configs[[nm]]
-  source(VARIANT_SCRIPT, local = FALSE)         # populates CONFIG, writes tagged outputs
+  source(VARIANT_SCRIPT, local = FALSE)         # populates CONFIG + crops data, writes tagged outputs
+  assert_primates_only(nm)                      # consistency guard
   run_tags[nm] <- CONFIG$run_tag
 }
 if (exists(".s3_config_override")) rm(.s3_config_override)

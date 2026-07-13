@@ -1,0 +1,15 @@
+"Koch_code","Heiss_region","split_weight","MH_vol_cc","NT_rel","EH_rel","MH_rel","eff_vol_cc"
+"Ce A","Cerebellar cortex",1,13.86,0.99,1,1,13.86
+"Ce P","Cerebellar cortex",1,114.41,0.94,0.995,1,114.41
+"Fr SM","Frontal lobe",1,161.61,0.98,1.01,1,161.61
+"Fr I","Frontal lobe",1,41.57,1,0.995,1,41.57
+"Fr O","Frontal lobe",1,65.46,0.99,1.01,1,65.46
+"Sm","Frontal lobe",0.5,96.93,0.98,0.965,1,48.465
+"Oc SM","Occipital lobe",1,93.7,1.065,1.06,1,93.7
+"Oc I","Occipital lobe",1,39.99,1.03,1.045,1,39.99
+"Sm","Parietal lobe",0.5,96.93,0.98,0.965,1,48.465
+"Pa SI","Parietal lobe",1,88.3,0.96,0.965,1,88.3
+"Pa TP","Parietal lobe",1,37.38,1.015,0.985,1,37.38
+"Te SM","Temporal lobe",1,91.27,1.05,0.99,1,91.27
+"Te I","Temporal lobe",1,82.5,1.03,1,1,82.5
+"Ce V","Vermis",1,12.38,0.965,1.01,1,12.38

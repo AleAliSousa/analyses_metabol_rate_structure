@@ -42,40 +42,53 @@ labelW <- paste0(
 # ---- Output folder ----
 dir.create("figs/traits", recursive = TRUE, showWarnings = FALSE)
 
-# ---- OPEN plotting window (so you see it) ----
-dev.new()
+# ---- Draw routine (base graphics; replayed once per device) ----
+# Wrapped in a function so the identical plot can be written to every device
+# without relying on dev.copy() of an interactive window (which is a fragile
+# "snapshot" and fails when the script is run head-less via Rscript).
+draw_neocortex_plot <- function() {
+  plot(NULL,
+       xlim = range(df$logNeo, na.rm = TRUE),
+       ylim = range(c(df$logGray, df$logWhite), na.rm = TRUE),
+       xlab = expression(log[10]*" neocortex volume (mm"^3*")"),
+       ylab = expression(log[10]*" gray or white matter volume (mm"^3*")"))
 
-# ---- Plot ----
-plot(NULL,
-     xlim = range(df$logNeo, na.rm = TRUE),
-     ylim = range(c(df$logGray, df$logWhite), na.rm = TRUE),
-     xlab = expression(log[10]*" neocortex volume (mm"^3*")"),
-     ylab = expression(log[10]*" gray or white matter volume (mm"^3*")"))
+  # Points
+  points(dG$logNeo, dG$logGray,
+         pch = 16, col = "grey40", cex = 1.3)
+  points(dW$logNeo, dW$logWhite,
+         pch = 1, col = "black", cex = 1.3)
 
-# Points
-points(dG$logNeo, dG$logGray,
-       pch = 16, col = "grey40", cex = 1.3)
+  # Regression lines (match aesthetics)
+  abline(fitG, col = "grey40", lwd = 2)
+  abline(fitW, col = "black", lwd = 2)
 
-points(dW$logNeo, dW$logWhite,
-       pch = 1, col = "black", cex = 1.3)
+  # Text labels (matched to data)
+  text(3.5, 4.6, labelG, col = "grey40", adj = 0)
+  text(3.5, 2.2, labelW, col = "black", adj = 0)
 
-# Regression lines (match aesthetics)
-abline(fitG, col = "grey40", lwd = 2)
-abline(fitW, col = "black", lwd = 2)
+  # Legend
+  legend(x = 3, y = 6,
+         legend = c("Gray matter", "White matter"),
+         pch = c(16, 1),
+         col = c("grey40", "black"),
+         bty = "n")
+}
 
-# Text labels (matched to data)
-text(3.5, 4.6, labelG, col = "grey40", adj = 0)
-text(3.5, 2.2, labelW, col = "black", adj = 0)
+# ---- Optional interactive preview ----
+if (interactive()) {
+  dev.new()
+  draw_neocortex_plot()
+}
 
-# Legend
-legend(x = 3, y = 6,
-       legend = c("Gray matter", "White matter"),
-       pch = c(16, 1),
-       col = c("grey40", "black"),
-       bty = "n")
+# ---- SAVE: raster for slides (PNG) + vector for print/PDF ----
+png("figs/traits/neocortex_gray_white.png",
+    width = 800, height = 600)
+draw_neocortex_plot()
+dev.off()
 
-
-# ---- SAVE the same plot ----
-dev.copy(png, "figs/traits/neocortex_gray_white.png",
-         width = 800, height = 600)
+# cairo_pdf embeds the Unicode superscripts / R^2 glyph reliably.
+cairo_pdf("figs/traits/neocortex_gray_white.pdf",
+          width = 8, height = 6)
+draw_neocortex_plot()
 dev.off()
