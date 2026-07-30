@@ -1,0 +1,14 @@
+"anatomy_group","lobe","rcmrglc_mean","rcmrglc_sd","sv2a_mean","sv2a_sd"
+"Centrum semiovale","White matter",12.3,1.45,12,19
+"Pallidum","Subcortical",21.9,2.26,304,52
+"Corpus amygdaloideum","Subcortical",22.2,1.74,472,84
+"Hippocampus","Subcortical",25.7,2.11,350,64
+"Cerebellar cortex","Subcortical",29.8,2.2,341,55
+"Insular lobe","Temporal",30.3,2.55,566,81
+"Temporal lobe","Temporal",30.5,2.54,595,91
+"Nucleus accumbens","Subcortical",32.3,2.39,598,108
+"Caudatum","Subcortical",32.6,3.04,539,81
+"Frontal lobe","Frontal",35.3,3.51,569,83
+"Occipital lobe","Occipital",35.8,3.12,546,82
+"Parietal lobe","Parietal",35.8,3.23,577,85
+"Putamen","Subcortical",40.2,3.5,604,88

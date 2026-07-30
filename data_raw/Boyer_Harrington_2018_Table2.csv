@@ -1,0 +1,23 @@
+# Boyer & Harrington (2018) J. Hum. Evol. 114:85-101, Table 2.
+# Taxa with directly measured whole-Brain Glucose Utilization (BGU), total
+# arterial canal area (ACA) and endocranial volume (ECV); used by the authors to
+# calibrate the prediction of BGU from ACA and ECV.
+#   BGU_umol_min : whole-brain glucose utilization. Printed in the paper as
+#                  "Glucose util. (mmol/min)", but the values are numerically
+#                  micromol/min (Homo 428.55 matches Clarke & Sokoloff 1994 whole-
+#                  brain CMRglc ~= 429 umol/min, the same modern-human reference
+#                  used in s4). Treated here as umol/min so units match s4 budgets.
+#   ACA_mm2      : total arterial canal area (doubled transverse-foramen + doubled
+#                  promontorial-canal CSA), mm^2. New measurements in Boyer 2018.
+#   ECV_cc       : endocranial volume, cc (source-matched to the BGU specimens;
+#                  may differ from the Table 1 species-mean ECV).
+#   Neuron_count : total brain neurons (Herculano-Houzel et al. 2015).
+# BGU data transcribed by Boyer & Harrington from Karbowski (2007).
+species,BGU_umol_min,BGU_source,ACA_mm2,ECV_cc,ECV_source,Neuron_count
+Homo sapiens,428.55,Clarke and Sokoloff 1994,159.81,1422.33,Boyer et al. 2016,8.606e10
+Macaca,35.98,Kennedy et al. 1978,18.61,87.30,Herculano-Houzel et al. 2007,6.376e9
+Mus,0.32,Bouilleret et al. 2000,0.32,0.402,Herculano-Houzel et al. 2011,6.787e7
+Oryctolagus,7.93,Passero et al. 1981,9.66,9.132,Herculano-Houzel et al. 2011,4.942e8
+Rattus,1.52,Nehlig et al. 1988,1.82,1.724,Herculano-Houzel et al. 2011,1.889e8
+Sciurus,3.88,Frerichs et al. 1995,3.46,5.548,Herculano-Houzel et al. 2011,4.537e8
+Papio,60.40,Meguro et al. 1999,38.27,152.50,Boyer et al. 2016,1.095e10

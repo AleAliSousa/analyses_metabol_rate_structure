@@ -1,0 +1,4 @@
+"model","intercept","b_lnACA","b_lnECV","r_squared","smearing","n"
+"ACA+ECV",-0.139,0.44,0.5412,0.9997,1.0007,7
+"ACA_only",-0.0939,1.1709,NA,0.9866,1.0325,7
+"ECV_only",-0.1348,NA,0.8562,0.9951,1.0128,7

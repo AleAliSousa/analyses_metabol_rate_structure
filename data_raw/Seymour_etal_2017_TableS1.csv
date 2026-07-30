@@ -1,0 +1,31 @@
+Species,Specimen,Original_or_Cast,Foramen_radius_cm,Lumen_radius_cm,Total_QICA_cm3_s,Body_mass_note,Body_mass_kg,Body_mass_g,Body_mass_ref,Brain_volume_cm3,Brain_volume_ref,Age_note,Age_Mya
+H. floresiensis,LB1,C,0.135,0.096,0.79,,22.5,22500,Mean estimate from Aiello 1,417,"Falk, et al. 2",H,0.06 – 0.10
+H. neanderthalensis,Gibraltar (Forbes Quarry),C,0.293,0.209,6.08,,93.4,93400,Schoenemann 3 and Kappelman 4,1200,Schoenemann 3 and Kappelman 4,A,0.05
+H. neanderthalensis,La Chapelle-aux-Saints,C,0.307,0.22,6.93,,100.2,100200,Schoenemann 3 and Kappelman 4,1625,Schoenemann 3 and Kappelman 4,A,0.05
+H. sapiens,AS8078,C,0.302,0.216,7.34,,59.1,59100,Mean modern H. sapiens estimated from Kappelman 4,1493,Mean modern H. sapiens estimated from Kappelman 4,G,~0.2 – present
+H. sapiens (Bushman),M3-A343,O,0.312,0.223,8.08,,59.1,59100,Mean modern H. sapiens estimated from Kappelman 4,1493,Mean modern H. sapiens estimated from Kappelman 4,D,~0.023 – 0.018
+H. sapiens (Bushman),M4-A344,O,0.298,0.213,7.02,,59.1,59100,Mean modern H. sapiens estimated from Kappelman 4,1493,Mean modern H. sapiens estimated from Kappelman 4,D,~0.023 – 0.018
+H. sapiens,BC1,O,0.306,0.219,7.63,,59.1,59100,Mean modern H. sapiens estimated from Kappelman 4,1510,Schoenemann 3,F,0.08
+H. sapiens,LH 18,C,0.286,0.204,6.02,a,70,70000,"Pearson, et al. 6",1367,Schoenemann 3,A,0.12
+H. sapiens,Skhul 5,C,0.268,0.192,4.74,,70.1,70100,Schoenemann 3,1520,Mean modern H. sapiens estimated from Kappelman 4,C,~0.120 – 0.080
+H. rudolfensis,KNM-ER 1470,C,0.185,0.132,1.76,,45.6,45600,Schoenemann 3 and Kappelman 4,752,Schoenemann 3 and Kappelman 4,A,1.88
+H. heidelbergensis,Ndutu,C,0.24,0.172,3.21,b,118.1,118100,Mean from Schoenemann 3,1100,Schoenemann 3,A,0.4
+H. heidelbergensis,Kabwe (Broken Hill),C,0.292,0.209,5.6,,118.9,118900,Schoenemann 3,1325,Schoenemann 3,A,0.18
+H. erectus (soloensis),Ngandong 14 (Solo XI),C,0.264,0.188,4.47,c,76.1,76100,Schoenemann 3,1090,Schoenemann 3,A,0.143 – 0.546
+H. erectus,KNM-ER 42700 (IIIeret),C,0.226,0.161,3.05,d,59.9,59900,Schoenemann 3,691,Schoenemann 3,A,1.55
+H. erectus,Sangiran 12,C,0.249,0.178,3.91,c,76.1,76100,Schoenemann 3,1059,Schoenemann 3,A,1.1
+H. erectus,OH 9,C,0.243,0.174,3.81,d,59.9,59900,Schoenemann 3,1067,Schoenemann 3,A,1.4
+H. erectus,Sambungmacan 3,C,0.271,0.194,5.03,c,76.1,76100,Schoenemann 3,917,Schoenemann 3,A,0.4
+H. habilis,OH 24,C,0.198,0.142,2.37,,30.3,30300,Schoenemann 3 and Kappelman 4,590,Schoenemann 3 and Kappelman 4,A,1.8
+H. georgicus,Dmanisi D2700,C,0.156,0.112,1.05,e,40,40000,"Lordkipanidze, et al. 7",600,Schoenemann 3,A,1.7
+A. africanus,Sts 5,O,0.15,0.107,1.03,,27.8,27800,Schoenemann 3,485,Schoenemann 3,A,2.5
+A. africanus,Sts 19,O,0.152,0.109,1.09,,27.2,27200,Kappelman 4,436,Schoenemann 3,A,2.5
+A. africanus,MLD 37 / 38,O,0.15,0.107,1.04,,27.2,27200,Kappelman 4,435,Schoenemann 3,A,3.1
+A. africanus,STW 53g,C,0.14,0.1,0.85,,27.2,27200,Kappelman 4,462,"Holloway, et al. 8",B,~2.4 – 2.8
+A. africanus,STW 329h,O,0.17,0.121,1.52,,27.2,27200,Kappelman 4,462,"Holloway, et al. 8",B,~2.4 – 2.8
+A. africanus,STS 25h,O,0.157,0.112,1.2,,27.2,27200,Kappelman 4,462,"Holloway, et al. 8",B,~2.4 – 2.8
+A. africanus,STW 98h,O,0.172,0.123,1.57,,27.2,27200,Kappelman 4,462,"Holloway, et al. 8",B,~2.4 – 2.8
+A. africanus,STW 255h,O,0.162,0.116,1.32,,27.2,27200,Kappelman 4,462,"Holloway, et al. 8",B,~2.4 – 2.8
+A. afarensis,AL 333-105,O,0.165,0.118,1.38,f,27.2,27200,Kappelman 4i,400,Schoenemann 3,E,3.18
+A. afarensis,AL 166-9,O,0.197,0.141,2.37,f,27.2,27200,Kappelman 4i,514,Herculano-Houzel and Kaas 9,E,3.18
+H. naledi,DH3 (Rising Star),O,0.172,0.123,1.42,,47.7,47700,"Berger, et al. 10",460,"Berger, et al. 10",I,~0.285

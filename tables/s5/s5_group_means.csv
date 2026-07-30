@@ -1,0 +1,5 @@
+group_arterial,n,endocranial_cc_mean,ratioMH_seymour_mean,ratioMH_boyer_scaled_mean,BGU_seymour_wholebrain_mean,BGU_boyer_scaled_wholebrain_mean
+EH/MH, 6,1479,0.927,0.976,397.3,413.5
+NT, 2,1412,0.886,0.964,379.8,408.5
+early Homo,12, 839,0.414,0.561,177.4,237.6
+Australopithecus,10, 458,0.182,0.304, 78.1,129.0

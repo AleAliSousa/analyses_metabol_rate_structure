@@ -1,0 +1,94 @@
+Species,Specimen,group_arterial,sapiens_grade,method,scope,BGU_umol_min,ratio_MH,lwr,hi
+H. floresiensis,LB1,early Homo,NA,Seymour_flow,whole_brain, 46.1,0.108,,
+H. neanderthalensis,Gibraltar (Forbes Quarry),NT,NA,Seymour_flow,whole_brain,355.0,0.828,,
+H. neanderthalensis,La Chapelle-aux-Saints,NT,NA,Seymour_flow,whole_brain,404.6,0.944,,
+H. sapiens,AS8078,EH/MH,modern_reference,Seymour_flow,whole_brain,428.6,1.000,,
+H. sapiens (Bushman),M3-A343,EH/MH,recent,Seymour_flow,whole_brain,471.8,1.101,,
+H. sapiens (Bushman),M4-A344,EH/MH,recent,Seymour_flow,whole_brain,409.9,0.956,,
+H. sapiens,BC1,EH/MH,early,Seymour_flow,whole_brain,445.5,1.040,,
+H. sapiens,LH 18,EH/MH,early,Seymour_flow,whole_brain,351.5,0.820,,
+H. sapiens,Skhul 5,EH/MH,early,Seymour_flow,whole_brain,276.7,0.646,,
+H. rudolfensis,KNM-ER 1470,early Homo,NA,Seymour_flow,whole_brain,102.8,0.240,,
+H. heidelbergensis,Ndutu,early Homo,NA,Seymour_flow,whole_brain,187.4,0.437,,
+H. heidelbergensis,Kabwe (Broken Hill),early Homo,NA,Seymour_flow,whole_brain,327.0,0.763,,
+H. erectus (soloensis),Ngandong 14 (Solo XI),early Homo,NA,Seymour_flow,whole_brain,261.0,0.609,,
+H. erectus,KNM-ER 42700 (IIIeret),early Homo,NA,Seymour_flow,whole_brain,178.1,0.416,,
+H. erectus,Sangiran 12,early Homo,NA,Seymour_flow,whole_brain,228.3,0.533,,
+H. erectus,OH 9,early Homo,NA,Seymour_flow,whole_brain,222.4,0.519,,
+H. erectus,Sambungmacan 3,early Homo,NA,Seymour_flow,whole_brain,293.7,0.685,,
+H. habilis,OH 24,early Homo,NA,Seymour_flow,whole_brain,138.4,0.323,,
+H. georgicus,Dmanisi D2700,early Homo,NA,Seymour_flow,whole_brain, 61.3,0.143,,
+A. africanus,Sts 5,Australopithecus,NA,Seymour_flow,whole_brain, 60.1,0.140,,
+A. africanus,Sts 19,Australopithecus,NA,Seymour_flow,whole_brain, 63.6,0.149,,
+A. africanus,MLD 37 / 38,Australopithecus,NA,Seymour_flow,whole_brain, 60.7,0.142,,
+A. africanus,STW 53g,Australopithecus,NA,Seymour_flow,whole_brain, 49.6,0.116,,
+A. africanus,STW 329h,Australopithecus,NA,Seymour_flow,whole_brain, 88.7,0.207,,
+A. africanus,STS 25h,Australopithecus,NA,Seymour_flow,whole_brain, 70.1,0.163,,
+A. africanus,STW 98h,Australopithecus,NA,Seymour_flow,whole_brain, 91.7,0.214,,
+A. africanus,STW 255h,Australopithecus,NA,Seymour_flow,whole_brain, 77.1,0.180,,
+A. afarensis,AL 333-105,Australopithecus,NA,Seymour_flow,whole_brain, 80.6,0.188,,
+A. afarensis,AL 166-9,Australopithecus,NA,Seymour_flow,whole_brain,138.4,0.323,,
+H. naledi,DH3 (Rising Star),early Homo,NA,Seymour_flow,whole_brain, 82.9,0.193,,
+H. floresiensis,LB1,early Homo,NA,Boyer_ACA_scaled,whole_brain,104.7,0.247, 90.0,121.7
+H. neanderthalensis,Gibraltar (Forbes Quarry),NT,NA,Boyer_ACA_scaled,whole_brain,366.7,0.865,332.8,404.2
+H. neanderthalensis,La Chapelle-aux-Saints,NT,NA,Boyer_ACA_scaled,whole_brain,450.3,1.062,405.1,500.5
+H. sapiens,AS8078,EH/MH,modern_reference,Boyer_ACA_scaled,whole_brain,423.9,1.000,382.3,470.0
+H. sapiens (Bushman),M3-A343,EH/MH,recent,Boyer_ACA_scaled,whole_brain,436.2,1.029,394.2,482.8
+H. sapiens (Bushman),M4-A344,EH/MH,recent,Boyer_ACA_scaled,whole_brain,419.0,0.988,377.5,465.0
+H. sapiens,BC1,EH/MH,early,Boyer_ACA_scaled,whole_brain,431.5,1.018,389.3,478.2
+H. sapiens,LH 18,EH/MH,early,Boyer_ACA_scaled,whole_brain,385.2,0.909,347.3,427.4
+H. sapiens,Skhul 5,EH/MH,early,Boyer_ACA_scaled,whole_brain,385.3,0.909,342.4,433.6
+H. rudolfensis,KNM-ER 1470,early Homo,NA,Boyer_ACA_scaled,whole_brain,190.0,0.448,166.6,216.8
+H. heidelbergensis,Ndutu,early Homo,NA,Boyer_ACA_scaled,whole_brain,293.5,0.692,262.2,328.6
+H. heidelbergensis,Kabwe (Broken Hill),early Homo,NA,Boyer_ACA_scaled,whole_brain,385.8,0.910,348.8,426.7
+H. erectus (soloensis),Ngandong 14 (Solo XI),early Homo,NA,Boyer_ACA_scaled,whole_brain,317.6,0.749,287.4,351.1
+H. erectus,KNM-ER 42700 (IIIeret),early Homo,NA,Boyer_ACA_scaled,whole_brain,216.5,0.511,197.4,237.4
+H. erectus,Sangiran 12,early Homo,NA,Boyer_ACA_scaled,whole_brain,297.0,0.701,267.4,329.9
+H. erectus,OH 9,early Homo,NA,Boyer_ACA_scaled,whole_brain,291.9,0.689,261.8,325.4
+H. erectus,Sambungmacan 3,early Homo,NA,Boyer_ACA_scaled,whole_brain,296.0,0.698,269.9,324.7
+H. habilis,OH 24,early Homo,NA,Boyer_ACA_scaled,whole_brain,176.9,0.417,160.2,195.4
+H. georgicus,Dmanisi D2700,early Homo,NA,Boyer_ACA_scaled,whole_brain,144.7,0.341,124.5,168.2
+A. africanus,Sts 5,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,124.6,0.294,108.4,143.2
+A. africanus,Sts 19,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,119.0,0.281,104.9,135.0
+A. africanus,MLD 37 / 38,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,117.5,0.277,103.2,133.7
+A. africanus,STW 53g,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,114.2,0.269, 98.2,132.9
+A. africanus,STW 329h,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,135.5,0.320,121.7,150.9
+A. africanus,STS 25h,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,126.3,0.298,111.6,143.1
+A. africanus,STW 98h,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,136.9,0.323,123.2,152.1
+A. africanus,STW 255h,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,129.9,0.306,115.5,146.1
+A. afarensis,AL 333-105,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,122.1,0.288,110.3,135.2
+A. afarensis,AL 166-9,Australopithecus,NA,Boyer_ACA_scaled,whole_brain,163.4,0.386,149.2,179.1
+H. naledi,DH3 (Rising Star),early Homo,NA,Boyer_ACA_scaled,whole_brain,136.6,0.322,123.0,151.7
+H. floresiensis,LB1,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,154.7,0.365,,
+H. neanderthalensis,Gibraltar (Forbes Quarry),NT,NA,Boyer_ACA_ecvpred,whole_brain,388.7,0.917,,
+H. neanderthalensis,La Chapelle-aux-Saints,NT,NA,Boyer_ACA_ecvpred,whole_brain,506.3,1.194,,
+H. sapiens,AS8078,EH/MH,modern_reference,Boyer_ACA_ecvpred,whole_brain,470.2,1.109,,
+H. sapiens (Bushman),M3-A343,EH/MH,recent,Boyer_ACA_ecvpred,whole_brain,470.2,1.109,,
+H. sapiens (Bushman),M4-A344,EH/MH,recent,Boyer_ACA_ecvpred,whole_brain,470.2,1.109,,
+H. sapiens,BC1,EH/MH,early,Boyer_ACA_ecvpred,whole_brain,474.9,1.120,,
+H. sapiens,LH 18,EH/MH,early,Boyer_ACA_ecvpred,whole_brain,435.4,1.027,,
+H. sapiens,Skhul 5,EH/MH,early,Boyer_ACA_ecvpred,whole_brain,477.6,1.127,,
+H. rudolfensis,KNM-ER 1470,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,258.6,0.610,,
+H. heidelbergensis,Ndutu,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,360.3,0.850,,
+H. heidelbergensis,Kabwe (Broken Hill),early Homo,NA,Boyer_ACA_ecvpred,whole_brain,423.8,1.000,,
+H. erectus (soloensis),Ngandong 14 (Solo XI),early Homo,NA,Boyer_ACA_ecvpred,whole_brain,357.4,0.843,,
+H. erectus,KNM-ER 42700 (IIIeret),early Homo,NA,Boyer_ACA_ecvpred,whole_brain,240.3,0.567,,
+H. erectus,Sangiran 12,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,348.6,0.822,,
+H. erectus,OH 9,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,350.9,0.828,,
+H. erectus,Sambungmacan 3,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,307.5,0.725,,
+H. habilis,OH 24,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,209.3,0.494,,
+H. georgicus,Dmanisi D2700,early Homo,NA,Boyer_ACA_ecvpred,whole_brain,212.4,0.501,,
+A. africanus,Sts 5,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,176.5,0.416,,
+A. africanus,Sts 19,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,160.8,0.379,,
+A. africanus,MLD 37 / 38,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,160.5,0.379,,
+A. africanus,STW 53g,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,169.2,0.399,,
+A. africanus,STW 329h,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,169.2,0.399,,
+A. africanus,STS 25h,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,169.2,0.399,,
+A. africanus,STW 98h,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,169.2,0.399,,
+A. africanus,STW 255h,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,169.2,0.399,,
+A. afarensis,AL 333-105,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,149.2,0.352,,
+A. afarensis,AL 166-9,Australopithecus,NA,Boyer_ACA_ecvpred,whole_brain,185.6,0.438,,
+H. naledi,DH3 (Rising Star),early Homo,NA,Boyer_ACA_ecvpred,whole_brain,168.5,0.398,,
+H. neanderthalensis,Gibraltar (Forbes Quarry),NT,NA,s4_volume,cortical+cerebellar,267.7,0.815,,
+H. neanderthalensis,La Chapelle-aux-Saints,NT,NA,s4_volume,cortical+cerebellar,341.6,1.040,,
+H. sapiens,Skhul 5,EH/MH,early,s4_volume,cortical+cerebellar,316.7,0.964,,
