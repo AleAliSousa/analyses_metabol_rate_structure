@@ -1,4 +1,4 @@
 sapiens_grade,n,specimens,endocranial_cc_mean,ratioMH_seymour_mean,ratioMH_boyer_scaled_mean,BGU_seymour_wholebrain_mean,BGU_boyer_scaled_wholebrain_mean
 early,3,BC1; LH 18; Skhul 5,1466,0.835,0.945,357.9,400.7
-recent,2,M3-A343; M4-A344,1493,1.028,1.008,440.9,427.6
-modern_reference,1,AS8078,1493,1.0,1.0,428.6,423.9
+recent,2,M3-A343; M4-A344,1493,1.029,1.009,440.8,427.6
+modern_reference,1,AS8078,1493,1.000,1.000,428.6,423.9
