@@ -9,6 +9,7 @@
 #
 # Outputs (checks/compare_volumes_files/):
 #   coalesced_species_rows.csv          rows merged because two labels = one taxon
+#   coalesced_row_conflicts.csv         columns where those merged rows disagree
 #   species_only_in_volumes_wide.csv    species present only in the merge
 #   species_only_in_stephan.csv         species present only in Stephan
 #   requested_study3_variables_missing.csv  requested Study 3 vars absent from either source
@@ -62,6 +63,27 @@ compare_vars <- c(
   "Hippocampus",                   # Hippocampus_Vol.mm3
   "Lateral_cerebellar_nuclei"      # Lateral_cerebellar_nuclei_Vol.mm3
 )
+
+# ------------------------------------------------------------
+# Duplicate-row conflict guard
+#
+# Where two labels collapse onto one accepted name (see coalesce_duplicate_rows
+# below) their values are merged field by field.  If the two rows disagree, that
+# merge is quietly picking a winner, so the script stops rather than compare
+# against a value it invented.
+#
+# Conflicts in EVERY column are always recorded in coalesced_row_conflicts.csv.
+# guard_scope only controls which of them are fatal:
+#
+#   "compared"        only columns actually compared, i.e. driven by
+#                     compare_vars above -- edit that list and the guard follows
+#   "all"             every column in either file (the pre-2026-08 behaviour)
+#   character vector  an explicit set of column names; may mix Stephan-side and
+#                     merge-side names, e.g.
+#                       c("Body_weight", "Brain_Mass.mg", "Thalamus")
+# ------------------------------------------------------------
+
+guard_scope <- "compared"
 
 if (!file.exists(wide_path)) {
   stop("volumes_wide_select.csv not found at:\n  ", wide_path,
@@ -172,11 +194,9 @@ coalesce_conflicts <- bind_rows(wide_co$conflicts, stephan_co$conflicts)
 
 write_csv(coalesce_report, file.path(out_dir, "coalesced_species_rows.csv"))
 
-if (nrow(coalesce_conflicts) > 0) {
-  print(coalesce_conflicts, n = Inf)
-  stop("Rows that collapse onto one accepted name hold conflicting values ",
-       "(see printout above). Resolve in the source file before comparing.")
-}
+# The fatal/non-fatal split needs the finalised crosswalk, so the guard itself
+# runs further down, under "Duplicate-row conflict guard (deferred)".  Whatever
+# happens there, every conflict has already been captured in coalesce_conflicts.
 
 if (nrow(coalesce_report) > 0) {
   message("Coalesced ", nrow(coalesce_report), " duplicated taxon label(s):")
@@ -376,6 +396,66 @@ stopifnot(nrow(crosswalk) > 0)
 
 cat("\nStudy 3 variables requested:", length(compare_vars), "\n")
 cat("Study 3 variables compared:", nrow(crosswalk), "\n")
+
+# ------------------------------------------------------------
+# Duplicate-row conflict guard (deferred)
+#
+# Deferred to here because "compared" resolves against the FINAL crosswalk --
+# already filtered to compare_vars and to columns that exist in both files --
+# so the guard tracks compare_vars automatically with no second list to keep
+# in sync.  See guard_scope at the top of the script.
+#
+# Non-fatal conflicts are not swept away: they are written to
+# coalesced_row_conflicts.csv with fatal = FALSE.  For those columns the merged
+# row keeps the first non-blank value, which is arbitrary but harmless because
+# nothing downstream reads them.
+# ------------------------------------------------------------
+
+stopifnot(is.character(guard_scope), length(guard_scope) >= 1)
+
+guarded_cols <- function(all_cols, compared_cols) {
+  if (identical(guard_scope, "all"))      return(all_cols)
+  if (identical(guard_scope, "compared")) return(compared_cols)
+  guard_scope
+}
+guarded_wide    <- guarded_cols(wide_names,    crosswalk$wide_var)
+guarded_stephan <- guarded_cols(stephan_names, crosswalk$stephan_var)
+
+if (nrow(coalesce_conflicts) > 0) {
+  coalesce_conflicts <- coalesce_conflicts %>%
+    mutate(fatal = (file == "volumes_wide_select" & column %in% guarded_wide) |
+                   (file == "Stephan_primates"    & column %in% guarded_stephan)) %>%
+    arrange(desc(fatal), file, Species_std, column)
+}
+
+write_csv(coalesce_conflicts, file.path(out_dir, "coalesced_row_conflicts.csv"))
+
+n_fatal   <- if (nrow(coalesce_conflicts) > 0) sum(coalesce_conflicts$fatal)  else 0L
+n_ignored <- if (nrow(coalesce_conflicts) > 0) sum(!coalesce_conflicts$fatal) else 0L
+
+# Braces are required: at top level R closes the `if` at the line break and
+# then fails on a bare `else`.
+guard_label <- if (length(guard_scope) == 1) {
+  paste0('"', guard_scope, '"')
+} else {
+  paste0(length(guard_scope), " named column(s)")
+}
+
+cat("Duplicate-row guard scope:", guard_label,
+    " (", n_fatal, " fatal / ", n_ignored, " ignored conflict(s))\n", sep = "")
+
+if (n_ignored > 0) {
+  message("Ignoring ", n_ignored, " conflicting column(s) outside the guarded set; ",
+          "see coalesced_row_conflicts.csv (fatal = FALSE).")
+}
+
+if (n_fatal > 0) {
+  print(coalesce_conflicts %>% filter(fatal), n = Inf)
+  stop("Rows that collapse onto one accepted name hold conflicting values in ",
+       n_fatal, " compared column(s) -- see ",
+       file.path(out_dir, "coalesced_row_conflicts.csv"),
+       ". Resolve in the source file before comparing.")
+}
 
 # ------------------------------------------------------------
 # Variable coverage
