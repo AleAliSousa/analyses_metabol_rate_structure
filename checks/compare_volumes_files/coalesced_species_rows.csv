@@ -1,4 +1,0 @@
-file,Species_std,n_rows_merged,labels_merged,populated_fields_per_row
-volumes_wide_select,Gorilla gorilla,2,Gorilla gorilla | Gorilla sp.,13 | 72
-volumes_wide_select,Lagothrix lagotricha,2,Lagothrix lagothricha | Lagothrix lagotricha,59 | 13
-volumes_wide_select,Plecturocebus moloch,2,Callicebus moloch | Plecturocebus moloch,33 | 13
