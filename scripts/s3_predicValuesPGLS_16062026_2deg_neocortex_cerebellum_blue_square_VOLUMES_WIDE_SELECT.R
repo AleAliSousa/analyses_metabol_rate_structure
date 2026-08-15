@@ -58,7 +58,8 @@ for (d in c(CONFIG$dir_figs,
 # ============================================================
 heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
 tr               <- read.tree("data_raw/species.nwk")
-volumes_wide_select <- read.csv("data_raw/volumes_wide_select.csv", check.names = FALSE)
+#volumes_wide_select <- read.csv("data_raw/volumes_wide_select.csv", check.names = FALSE)
+volumes_wide_select <- read.csv("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_wide_select.csv", check.names = FALSE)
 
 # Drop blank/junk rows, then convert taxon formatting to the underscore style used by the tree.
 data_clean <- volumes_wide_select %>%

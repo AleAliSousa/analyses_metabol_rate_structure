@@ -8,10 +8,6 @@ library(ggpmisc)
 library(readxl)
 library(tidyverse)
 
-# Make sure output directories exist
-if (!dir.exists("data")) dir.create("data", recursive = TRUE)
-if (!dir.exists("figs")) dir.create("figs", recursive = TRUE)
-
 ############################
 ## Load saved obs metadata
 ############################
