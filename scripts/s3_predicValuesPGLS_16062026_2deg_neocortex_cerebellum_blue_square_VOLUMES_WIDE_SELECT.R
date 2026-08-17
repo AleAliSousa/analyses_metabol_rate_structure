@@ -10,10 +10,11 @@
 # Phase 1 fixes (see metadata/PHASE1_missing_data_strategy.md):
 #   1.1  Common-species handling is explicit and configurable (CONFIG$restrict_species).
 #        Strict listwise across all target regions can leave very few species, so the
-#        DEFAULT remains max-data per-region fitting; see the diagnostic script
-#        s3_0_missingness_clade_diagnostic_04062026.R to choose a common set,
-#        and the MI script s3_1_phylo_multiple_imputation_04062026.R for the
-#        balanced-sample sensitivity analysis.
+#        DEFAULT remains max-data per-region fitting. The diagnostic
+#        (s3_0_missingness_clade_diagnostic_04062026.R) and MI sensitivity
+#        (s3_1_phylo_multiple_imputation_04062026.R) scripts are RETIRED --
+#        the imputation approach is no longer pursued; both remain in git
+#        history (pre-7ae5165) if ever needed.
 # ============================================================
 
 setwd("~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure")

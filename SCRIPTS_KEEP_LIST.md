@@ -74,7 +74,7 @@ Verified to have **no** output in either file:
 - `v2_0_Heiss_Stephan_and_table1_05062026.R` — writes `Heiss_Stephan_data_v2.csv`, which no other script reads (orphan; the deck pipeline uses the v1 file).
 - `s1a_2_stereology_proportions_30052026.R` — stereology proportion pies; not embedded.
 - `s1b_5_n_EI_ratio_telencephalon_26052026.R` — superseded by the `..._raw_EI_only_16062026` version.
-- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R` (canonical; the `_x` duplicate was merged into it), `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`, `network_residual_autocorrelation_analysis.R`.
+- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R` (canonical; the `_x` duplicate was merged into it), `network_residual_autocorrelation_analysis.R`. Retired (deleted in `7ae5165`, git history only; imputation no longer pursued): `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`.
 
 ## Snapshot fixes (2026-07-11)
 

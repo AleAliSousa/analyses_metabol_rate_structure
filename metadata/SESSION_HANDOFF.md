@@ -18,6 +18,13 @@
 > - Junk removed and git-ignored: `.__captest/`, `.Rapp.history`,
 >   `.DS_Store` (tracked copies `git rm`'d).
 > - README directory tree + `SCRIPTS_KEEP_LIST.md` synced to reality.
+> - Orphan prune: `figs/s3/phase1/` (4 figs from the retired
+>   `s3_0_missingness` diagnostic) and `checks/Stephan_primates_data_used.csv`
+>   (no producer) deleted; MI sensitivity analysis confirmed retired, so the
+>   Phase-1 scripts were NOT restored (they remain in git history pre-`7ae5165`
+>   and in the Dropbox `archive/`). References in the s3 headers,
+>   `PHASE1_missing_data_strategy.md`, keep list and `figs_inventory.csv`
+>   updated to say so.
 >
 > Still open (larger-risk items, deferred): rebuild s3 as one engine + config
 > drivers (the two forks both write to `figs/s3/all` etc. — last run wins);
@@ -100,9 +107,9 @@ drivers, not run standalone.
    downstream → archive/delete.
 5. **Naming & organization (Part 2, do after the manifest is trusted).**
    - Move QC scripts to `scripts/checks/` with `check_`/`qc_` prefixes
-     (`s1b_2_check_dissection_roi`,
-     `s3_0_missingness_clade_diagnostic`, `s3_compare_stephan_vs_merged`,
-     `network_residual_autocorrelation_analysis`).
+     (`s1b_2_check_dissection_roi`, `network_residual_autocorrelation_analysis`;
+     the `s3_0_missingness` / `s3_compare_stephan_vs_merged` scripts were
+     retired in `7ae5165`).
    - Rebuild Study 3 as one engine in `R/` (e.g. `R/pgls_engine.R`) plus thin
      per-config drivers — the two current `s3_predicValuesPGLS_*` forks are
      near-duplicates that both write to `figs/s3/all` (last run wins).

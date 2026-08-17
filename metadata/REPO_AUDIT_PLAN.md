@@ -76,8 +76,9 @@ pipeline.
    Outputs to `figs/<study>/` and `tables/<study>/` only.
 
 3. **Checks / QC** — validate data or assumptions, produce **no deliverable**
-   (e.g. `s1b_2_check_dissection_roi.R`, `s3_0_missingness_clade_diagnostic`,
-   `s3_compare_stephan_vs_merged`, `network_residual_autocorrelation_analysis`).
+   (e.g. `s1b_2_check_dissection_roi.R`, `network_residual_autocorrelation_analysis`;
+   the `s3_0_missingness_clade_diagnostic` / `s3_compare_stephan_vs_merged`
+   examples were retired in `7ae5165`).
    *Convention:* `check_*` / `qc_*`, kept in a `scripts/checks/` subfolder, writing
    only to `checks/`. Excluded from the deliverable pipeline; run as a separate QC
    pass.

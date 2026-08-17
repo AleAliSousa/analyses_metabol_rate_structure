@@ -2,6 +2,13 @@
 
 _Last updated 2026-06-04._
 
+> **Status 2026-08-17:** the multiple-imputation sensitivity analysis is **no
+> longer pursued**. The diagnostic (`s3_0_missingness_clade_diagnostic`) and MI
+> (`s3_1_phylo_multiple_imputation`) scripts were retired (deleted in `7ae5165`;
+> recoverable from git history), and their `figs/s3/phase1/` outputs were pruned.
+> This document remains as the decision record for why the default is max-data
+> per-region fitting.
+
 ## The problem
 
 Study 3 fits, per brain region, `log(region) ~ log(rest-of-brain)` by PGLS, predicts
