@@ -1,7 +1,14 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
 
 ############################################################
-# Create CSVs to inspect obs terms that map to rCMRGlc terms
+# s1b_2 check — ROI/dissection consistency audit.
+# Creates CSVs to inspect obs terms that map to rCMRGlc terms.
+# (Canonical version: merged from the former duplicate pair
+# s1b_2_check_dissection_roi.R / s1b_x_check_dissection_roi.R;
+# this is the variant that also writes the audit tables.)
+#
+# Outputs: checks/anatomy_rule_audit/*.csv  (6 tables)
+# Role: QC check — no deliverable figures/tables.
 ############################################################
 
 ## Install and Load up packages
@@ -12,6 +19,7 @@ library(tidyverse)
 
 data_dir <- "data_intermediate"
 out_dir <- "checks/anatomy_rule_audit"
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 ## cortical ROIs / Lobes are here: https://github.com/linnarsson-lab/adult-human-brain/blob/main/notebooks/Revision/RevisionFig2.ipynb
 ## Also See Fig 2 in the original paper: https://www.science.org/doi/10.1126/science.add7046
@@ -202,8 +210,27 @@ if (length(rois_blank_rows_and_ambiguous_mapping) > 0) {
   pair_map %>%
     filter(roi %in% rois_blank_rows_and_ambiguous_mapping) %>%
     arrange(roi, dissection) %>%
-    print(n = Inf, width = Inf)
+  print(n = Inf, width = Inf)
 }
+
+############################################################
+# Save audit tables to out_dir (checks/anatomy_rule_audit)
+# Canonical outputs of this ROI/dissection consistency check, so the folder is
+# produced by an active script (resolves the prior output/ vs checks/ mismatch).
+############################################################
+readr::write_csv(roi_dissection_counts,
+                 file.path(out_dir, "roi_dissection_counts.csv"))
+readr::write_csv(missing_pair_summary,
+                 file.path(out_dir, "roi_dissection_missingness_summary.csv"))
+readr::write_csv(roi_to_many_dissections,
+                 file.path(out_dir, "roi_to_many_dissections.csv"))
+readr::write_csv(dissection_to_many_rois,
+                 file.path(out_dir, "dissection_to_many_rois.csv"))
+readr::write_csv(roi_blank_dissection_coverage,
+                 file.path(out_dir, "roi_blank_dissection_coverage.csv"))
+readr::write_csv(roi_blank_dissection_mapping,
+                 file.path(out_dir, "roi_blank_dissection_mapping.csv"))
+cat("\nWrote 6 audit tables to ", out_dir, "\n", sep = "")
 
 # RESULTS SUMMARY:
 # All ROIs that lack a dissection assignment also occur elsewhere with a defined dissection except two cases (Human A35-36, Human Gpe).

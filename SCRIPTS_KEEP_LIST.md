@@ -1,5 +1,17 @@
 # Scripts keep list — outputs that reach the presentation / manuscript
 
+> **2026-08-17 update.** The s3 engine/driver scripts listed below
+> (`s3_predicValuesPGLS_MERGED_variant.R`, `s3_run_and_compare_configs.R`,
+> `s3_run_frontal_vermis_anthro.R`) were deleted in commit `7ae5165`; Study 3
+> is currently produced by the two fork scripts
+> `s3_predicValuesPGLS_..._UPDATED_MU_PLOTS_1_PATCHED.R` and
+> `..._VOLUMES_WIDE_SELECT.R` (both write to `figs/s3/all` — last run wins).
+> The `s1b_1_n`/`s1b_1_nn` extract pair was merged into
+> `s1b_1_extract_transcriptomic_30052026.R`; the duplicate
+> `s1b_x_check_dissection_roi.R` was merged into `s1b_2_check_dissection_roi.R`;
+> superseded `s1b_5_n_EI_ratio_telencephalon_26052026.R` moved to
+> `scripts/archive/`.
+
 **Generated:** 2026-07-11
 **Presentation:** `Brain energetics/Energetic Constraints on Brain Organization in Human Paleoneurology_11072026.pptx` (69 slides)
 **Manuscript:** `Brain energetics/MS Is human brain organization economical_04072026_TRACKED.docx`
@@ -39,9 +51,8 @@ pixel-match the current file. Keep them — they are core content.
 |---|---|---|
 | `s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R` | Excitatory:Inhibitory ratio (Study 1) | 24, 25 |
 | `s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R` | Astrocyte composition vs rCMRglc (Study 1) | 21, 22 |
-| `s3_predicValuesPGLS_MERGED_variant.R` | Study 3 evolutionary deviation engine | 33–39 |
-| `s3_run_and_compare_configs.R` | Study 3 driver (sources the engine per config) | 33–39 |
-| `s3_run_frontal_vermis_anthro.R` | Study 3 driver (frontal/vermis focus) | 33–39 |
+| `s3_predicValuesPGLS_..._UPDATED_MU_PLOTS_1_PATCHED.R` | Study 3 evolutionary deviation (Stephan inputs) | 33–39 |
+| `s3_predicValuesPGLS_..._VOLUMES_WIDE_SELECT.R` | Study 3 evolutionary deviation (volumes_wide inputs) | 33–39 |
 
 ## Tier C — Keep: upstream data-prep (no figure of their own, but required inputs)
 
@@ -49,8 +60,7 @@ pixel-match the current file. Keep them — they are core content.
 |---|---|---|
 | `0_Heiss_Stephan_and_table1_30052026.R` | `data_intermediate/Heiss_Stephan_data.csv` (shared rCMRglc × volume reference) | s1b_4/5/6, s3 |
 | `0_bind_matano_1985a_to_stephan.R` | augments `Stephan_primates` volumes | s3, s4 |
-| `s1b_1_n_extract_transcriptomic_neuronal_30052026.R` | `..._neuronal.rds` | s1b_4, s1b_5 |
-| `s1b_1_nn_extract_transcriptomic_nonneuronal_30052026.R` | `..._nonneuronal.rds` | s1b_6 |
+| `s1b_1_extract_transcriptomic_30052026.R` | `..._neuronal.rds` + `..._nonneuronal.rds` | s1b_4, s1b_5, s1b_6 |
 | `s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R` | maps cells → anatomy → `Heiss_Stephan_data.csv` | s1b_4/5/6 |
 | `s1b_3_*` transcriptomic (neuronal/nonneuronal ± telencephalon) | add proportion columns to `Heiss_Stephan_data.csv` | s1b_4/5/6 |
 | `R/plot_settings.R` | shared ggplot theme | sourced by most s1b/s3 scripts |
@@ -64,7 +74,7 @@ Verified to have **no** output in either file:
 - `v2_0_Heiss_Stephan_and_table1_05062026.R` — writes `Heiss_Stephan_data_v2.csv`, which no other script reads (orphan; the deck pipeline uses the v1 file).
 - `s1a_2_stereology_proportions_30052026.R` — stereology proportion pies; not embedded.
 - `s1b_5_n_EI_ratio_telencephalon_26052026.R` — superseded by the `..._raw_EI_only_16062026` version.
-- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R`, `s1b_x_check_dissection_roi.R`, `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`, `network_residual_autocorrelation_analysis.R`.
+- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R` (canonical; the `_x` duplicate was merged into it), `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`, `network_residual_autocorrelation_analysis.R`.
 
 ## Snapshot fixes (2026-07-11)
 
