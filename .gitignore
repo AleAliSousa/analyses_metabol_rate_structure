@@ -16,3 +16,5 @@ Rplot*.png
 # pipeline run logs
 logs/
 .Rproj.user
+.Rapp.history
+.__captest/

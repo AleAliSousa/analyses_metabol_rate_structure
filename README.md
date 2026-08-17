@@ -1,15 +1,27 @@
 analyses_metabol_rate_structure/
 ├── README.md
 ├── .gitignore
-├── scripts/
-├── R/
-├── data_raw/
-├── data_working/
-├── data_final/
-├── metadata/
-├── tables/
-├── figs/
-└── archive/
+├── scripts/            # analysis pipeline, run via scripts/run_all.R
+│   ├── archive/        # superseded scripts kept for reference (not run)
+│   └── qc_stephan/     # QC scripts for the Stephan volume compilation
+├── R/                  # shared helpers (plot_settings.R, project_root.R)
+├── data_raw/           # source data as published/digitised
+├── data_intermediate/  # derived tables passed between scripts
+├── data_analysis/      # Study 1b result tables (destination of the s1b_* scripts)
+├── metadata/           # provenance, correction log, audit plans, output manifest
+├── checks/             # QC / audit outputs (no deliverables)
+├── tables/             # deliverable tables, one subfolder per study
+├── figs/               # deliverable figures, one subfolder per study
+├── network_residual_autocorrelation/  # outputs of the network QC script
+└── logs/               # pipeline run logs (git-ignored)
+
+## Running the pipeline
+
+    Rscript scripts/run_all.R
+
+Runs every analysis script in dependency order, then sources
+`scripts/verify_outputs.R` as a gate against `metadata/output_manifest.csv`.
+See `metadata/SESSION_HANDOFF.md` for current status and open items.
 
 ## Data corrections
 

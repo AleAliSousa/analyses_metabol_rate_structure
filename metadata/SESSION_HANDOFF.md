@@ -1,6 +1,36 @@
 # Session handoff — repo audit & reproducibility work
 
-**Updated:** 2026-07-14
+**Updated:** 2026-08-17
+
+> ## 2026-08-17 — low-risk cleanup pass (this update)
+>
+> Done:
+> - `run_all.R` rewritten to match the scripts that actually exist (the old
+>   list named 6 scripts deleted in commit `7ae5165`, including the s3
+>   engine + drivers; new scripts `s1c`, `s5`, `network_residual` and both
+>   s3 forks now run in a defined order). `verify_outputs.R` is no longer a
+>   pipeline step — it is sourced as a **gate** after the run summary.
+> - Duplicate pairs merged: `s1b_1_n`/`s1b_1_nn` →
+>   `s1b_1_extract_transcriptomic_30052026.R`; `s1b_x_check_dissection_roi.R`
+>   (the superset) → `s1b_2_check_dissection_roi.R`.
+> - Superseded `s1b_5_n_EI_ratio_telencephalon_26052026.R` moved to
+>   `scripts/archive/` and dropped from the pipeline.
+> - Junk removed and git-ignored: `.__captest/`, `.Rapp.history`,
+>   `.DS_Store` (tracked copies `git rm`'d).
+> - README directory tree + `SCRIPTS_KEEP_LIST.md` synced to reality.
+>
+> Still open (larger-risk items, deferred): rebuild s3 as one engine + config
+> drivers (the two forks both write to `figs/s3/all` etc. — last run wins);
+> centralize the root-finder/`save_png_pdf`/`fmt_p` boilerplate in `R/`;
+> remove the remaining hardcoded absolute paths (both s3 scripts'
+> Dropbox `setwd`, OneDrive inputs in s1b_1/s3-VWS/qc_stephan); move
+> `data_analysis/` → `tables/s1b/`; orphaned outputs
+> (`checks/Stephan_primates_data_used.csv`, the 7 `figs/s3/*` config dirs
+> from the deleted drivers, ~190 files).
+
+---
+
+**Previous update:** 2026-07-14
 **Repo:** `analyses_metabol_rate_structure`
 **Deliverables this repo feeds:**
 `Brain energetics/Energetic Constraints on Brain Organization in Human Paleoneurology_11072026.pptx` (69 slides)
@@ -70,10 +100,12 @@ drivers, not run standalone.
    downstream → archive/delete.
 5. **Naming & organization (Part 2, do after the manifest is trusted).**
    - Move QC scripts to `scripts/checks/` with `check_`/`qc_` prefixes
-     (`s1b_2_check_dissection_roi`, `s1b_x_check_dissection_roi`,
+     (`s1b_2_check_dissection_roi`,
      `s3_0_missingness_clade_diagnostic`, `s3_compare_stephan_vs_merged`,
      `network_residual_autocorrelation_analysis`).
-   - Move the s3 engine to `R/` (e.g. `R/pgls_engine.R`).
+   - Rebuild Study 3 as one engine in `R/` (e.g. `R/pgls_engine.R`) plus thin
+     per-config drivers — the two current `s3_predicValuesPGLS_*` forks are
+     near-duplicates that both write to `figs/s3/all` (last run wins).
    - Drop dated/`PATCHED` suffixes → one canonical name per analysis.
    - Resolve shared ownership: `data_intermediate/Heiss_Stephan_data.csv` is written
      by `0_Heiss…` AND appended by `s1b_2`/`s1b_3` — give a single `prep_` script
