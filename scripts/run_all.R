@@ -9,19 +9,23 @@
 #
 # What it does
 #   * Runs the scripts in the order the pipeline needs (raw-data prep ->
-#     Study 1 cells -> Study 2 stress -> Study 3 evolution -> Study 4 fossils).
+#     Study 1 cells -> Study 2 stress -> Study 3 evolution -> Study 4 fossils
+#     -> Study 5 arterial canal -> QC checks).
 #   * Each script runs in its OWN environment so leftover objects from one
 #     script cannot silently feed the next.
 #   * A failing script is caught, logged, and the run CONTINUES; a summary
 #     table (and logs/run_all_status.csv) is printed at the end.
+#   * After the summary, scripts/verify_outputs.R is sourced as a GATE: it
+#     checks the deliverable manifest and exits non-zero on failure.
 #
 # Notes
-#   * s3_predicValuesPGLS_MERGED_variant.R is the Study-3 ENGINE. It is NOT
-#     run directly -- it is source()d by s3_run_and_compare_configs.R and
-#     s3_run_frontal_vermis_anthro.R, which set the per-configuration options
-#     first. It therefore appears in ENGINE_ONLY below, not in RUN_ORDER.
 #   * s4_endocranial.R must run before s4_endocranial_cerebellum.R (the
 #     cerebellum script reads the whole-brain budget table the main one writes).
+#   * KNOWN ISSUE (Study 3): the two s3_predicValuesPGLS_* scripts are forks
+#     that BOTH write to figs/s3/all, tables/s3/all and checks/s3/all, so the
+#     later one (VOLUMES_WIDE_SELECT) overwrites the earlier one's outputs.
+#     A single engine + per-config drivers is the planned fix; until then the
+#     order below preserves the outputs produced by the last logged run.
 #   * The working directory is reset to the project root before every script,
 #     because the scripts use paths relative to the project root
 #     (e.g. "data_raw/...", "figs/s4/...", "R/plot_settings.R").
@@ -48,7 +52,6 @@ RUN_ORDER <- c(
   # 0. raw-data preparation (Stephan volumes + Heiss/Stephan reference table)
   "0_bind_matano_1985a_to_stephan.R",
   "0_Heiss_Stephan_and_table1_30052026.R",
-  "v2_0_Heiss_Stephan_and_table1_05062026.R",
 
   # background comparative plot (slide 8)
   "traits_neocortex_grey_white.R",
@@ -58,42 +61,49 @@ RUN_ORDER <- c(
   "s1a_2_stereology_proportions_30052026.R",
 
   # Study 1b: transcriptomic cells (extract -> map -> proportions -> analyses)
-  "s1b_1_n_extract_transcriptomic_neuronal_30052026.R",
-  "s1b_1_nn_extract_transcriptomic_nonneuronal_30052026.R",
+  "s1b_1_extract_transcriptomic_30052026.R",
   "s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R",
   "s1b_2_check_dissection_roi.R",
-  "s1b_x_check_dissection_roi.R",
   "s1b_3_n_transcriptomic_neuronal_25052026.R",
   "s1b_3_n_transcriptomic_neuronal_telencephalon_25052026.R",
   "s1b_3_nn_transcriptomic_nonneuronal_25052026.R",
   "s1b_3_nn_transcriptomic_nonneuronal_telencephalon_25052026.R",
   "s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R",
   "s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R",
-  "s1b_5_n_EI_ratio_telencephalon_26052026.R",
   "s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R",
+
+  # Study 1c: synaptic density (SV2A) vs rCMRGlc
+  "s1c_synaptic_density_metabolic_rate.R",
 
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
 
-  # Study 3: evolutionary deviation (diagnostics, then the config drivers that
-  # source the engine)
-  "s3_0_missingness_clade_diagnostic_04062026.R",
-  "s3_1_phylo_multiple_imputation_04062026.R",
-  "s3_compare_stephan_vs_merged.R",
-  "s3_run_and_compare_configs.R",
-  "s3_run_frontal_vermis_anthro.R",
+  # Study 3: evolutionary deviation (PGLS). See KNOWN ISSUE in the header:
+  # both forks write the same output dirs; VOLUMES_WIDE_SELECT runs last so
+  # its outputs win, matching the last logged run.
+  "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_UPDATED_MU_PLOTS_1_PATCHED.R",
+  "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_VOLUMES_WIDE_SELECT.R",
 
   # Study 4: fossil endocranial budgets (main before cerebellum sibling)
   "s4_endocranial.R",
-  "s4_endocranial_cerebellum.R"
+  "s4_endocranial_cerebellum.R",
+
+  # Study 5: arterial-canal metabolic estimates
+  "s5_arterial_canal.R",
+
+  # QC / robustness checks (no deliverable outputs)
+  "network_residual_autocorrelation_analysis.R"
 )
 
-# Scripts that are source()d by another script and must NOT be run on their own
-ENGINE_ONLY <- c("s3_predicValuesPGLS_MERGED_variant.R")
+# Scripts that live in scripts/ but are NOT run here
+DO_NOT_RUN <- c(
+  "run_all.R",          # this file
+  "verify_outputs.R"    # sourced as a gate after the run, below
+)
 
 # ---- append any top-level script not already accounted for ----------
 all_scripts <- list.files(SCRIPT_DIR, pattern = "\\.R$", full.names = FALSE)
-known <- c(RUN_ORDER, ENGINE_ONLY, "run_all.R")
+known <- c(RUN_ORDER, DO_NOT_RUN)
 extra <- setdiff(all_scripts, known)
 if (length(extra)) {
   cat("NOTE: these scripts are not in the known order and will run last:\n  ",
@@ -147,9 +157,7 @@ cat("RUN SUMMARY  (", sum(status$result == "OK"), " OK / ",
     sum(status$result == "FAILED"), " failed of ", nrow(status), ")\n", sep = "")
 cat(strrep("=", 70), "\n", sep = "")
 print(status[, c("step", "script", "result", "seconds")], row.names = FALSE)
-cat("\nEngine sourced by drivers (not run standalone):",
-    paste(ENGINE_ONLY, collapse = ", "), "\n")
-cat("Status log written to:", log_path, "\n")
+cat("\nStatus log written to:", log_path, "\n")
 
 failed <- status$script[status$result == "FAILED"]
 if (length(failed)) {
@@ -159,3 +167,14 @@ if (length(failed)) {
 } else {
   cat("\nAll scripts completed without error.\n")
 }
+
+# ---- gate: verify deliverable outputs against the manifest ----------
+# Runs after the summary so the log above is always written. verify_outputs.R
+# itself exits non-zero if a deliverable file/script is missing, which makes
+# the whole Rscript invocation fail -- that is the intended gate behaviour.
+cat("\n", strrep("=", 70), "\n", sep = "")
+cat("GATE: verify_outputs.R\n")
+cat(strrep("=", 70), "\n", sep = "")
+setwd(ROOT)
+sys.source(file.path(SCRIPT_DIR, "verify_outputs.R"),
+           envir = new.env(parent = globalenv()), keep.source = FALSE)
