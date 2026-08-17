@@ -1,16 +1,16 @@
-stephan_var,wide_var,unit_scale,n_both,n_agree,n_disagree,cor,median_ratio,median_abs_pct,max_abs_pct,mean_abs_diff,max_abs_diff
-LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,48,39,9,0.9909756689813329,1,0,37.21579577183886,2.6693749999999987,93.30000000000001
-ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,42,37,5,0.9881844252779912,1,0,32.12838207908862,151.7095238095238,2933
-Cerebellum,Cerebellum_Vol.mm3,1,46,35,11,0.9987044826548983,1,0,27.1802070538691,374.3260869565143,6900
-Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,45,24,21,0.9960349157435057,1,0,23.687485971964332,6626.65111111111,105973
-Total_insula_volume_L,Insula_left_Vol.mm3,1,28,25,3,0.9989914694351903,1,0,14.98272884283247,23.64880952380929,314
-NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,24,23,1,0.9999018087712679,1,0,6.073752711496746,350,8400
-Amygdala,Amygdala_Vol.mm3,1,18,18,0,1,1,0,0,0,0
-Capsula_interna,Capsula_interna_Vol.mm3,1,25,25,0,1,1,0,0,0,0
-Hippocampus,Hippocampus_Vol.mm3,1,46,46,0,1,1,0,0,0,0
-Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,44,44,0,1,1,0,0,0,0
-Mesencephalon,Mesencephalon_Vol.mm3,1,46,46,0,1,1,0,0,0,0
-NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,24,24,0,1,1,0,0,0,0
-Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,25,25,0,1,1,0,0,0,0
-Pallidum,Pallidum_Vol.mm3,1,26,26,0,1,1,0,0,0,0
-Striatum,Striatum_Vol.mm3,1,46,46,0,0.9999999999999997,1,0,0,0,0
+label,stephan_var,wide_var,unit_scale,role,n_both,N_Stephan,N_volumes_wide,n_same,n_rounding,n_DIFFERENT,n_agree_0_1pct,n_disagree_0_1pct,n_Stephan_only,n_wide_only,cor,median_ratio,median_abs_pct,max_abs_pct,max_abs_diff
+Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,48,48,48,38,5,5,39,9,0,0,0.9909756689813329,1,0,37.21579577183886,93.30000000000001
+Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,42,42,42,37,0,5,37,5,0,0,0.9881844252779912,1,0,32.12838207908862,2933
+Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,46,46,46,35,2,9,35,11,0,0,0.9987044826548983,1,0,27.1802070538691,6900
+Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,45,45,45,24,1,20,24,21,0,0,0.9960349157435057,1,0,23.687485971964332,105973
+Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,28,28,28,22,3,3,25,3,0,0,0.9989914694351903,1,0,14.98272884283247,314
+Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,24,24,24,23,0,1,23,1,0,0,0.9999018087712679,1,0,6.073752711496746,8400
+Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,18,18,18,18,0,0,18,0,0,0,1,1,0,0,0
+Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,25,25,25,25,0,0,25,0,0,0,1,1,0,0,0
+Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,46,46,46,46,0,0,46,0,0,0,1,1,0,0,0
+Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,46,46,46,46,0,0,46,0,0,0,1,1,0,0,0
+Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,24,24,24,24,0,0,24,0,0,0,1,1,0,0,0
+Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,44,44,44,44,0,0,44,0,0,0,1,1,0,0,0
+Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,25,25,25,25,0,0,25,0,0,0,1,1,0,0,0
+Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,26,26,26,26,0,0,26,0,0,0,1,1,0,0,0
+Striatum,Striatum,Striatum_Vol.mm3,1,study3,46,46,46,46,0,0,46,0,0,0,0.9999999999999997,1,0,0,0
