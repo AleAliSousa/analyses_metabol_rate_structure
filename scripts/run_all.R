@@ -1,6 +1,9 @@
 # =====================================================================
 # run_all.R  --  run every analysis script in scripts/ in dependency order
 # ---------------------------------------------------------------------
+# NOTE: this runner is TEMPORARY -- it exists to build/debug the pipeline
+# and will NOT be part of the published version.
+#
 # Usage:
 #   From a terminal (project root or anywhere):
 #       Rscript scripts/run_all.R
@@ -92,7 +95,13 @@ RUN_ORDER <- c(
   "s4b_arterial_canal.R",
 
   # QC / robustness checks (no deliverable outputs)
-  "network_residual_autocorrelation_analysis.R"
+  "network_residual_autocorrelation_analysis.R",
+
+  # QC: Stephan reference sheet + raw/model comparison against
+  # volumes_wide_select. The compare script's "model" mode reads
+  # checks/*_data_used.csv written by the s3 scripts, so it runs after them.
+  "qc_stephan/build_stephan_primates_reference_sheet.R",
+  "qc_stephan/compare_stephan_vs_volumes_wide_merged_v3.R"
 )
 
 # Scripts that live in scripts/ but are NOT run here
@@ -101,8 +110,12 @@ DO_NOT_RUN <- c(
   "verify_outputs.R"    # sourced as a gate after the run, below
 )
 
-# ---- append any top-level script not already accounted for ----------
-all_scripts <- list.files(SCRIPT_DIR, pattern = "\\.R$", full.names = FALSE)
+# ---- append any script not already accounted for --------------------
+# recursive so subfolder scripts (e.g. qc_stephan/) are discovered; archived
+# scripts are never run.
+all_scripts <- list.files(SCRIPT_DIR, pattern = "\\.R$", full.names = FALSE,
+                          recursive = TRUE)
+all_scripts <- all_scripts[!startsWith(all_scripts, "archive/")]
 known <- c(RUN_ORDER, DO_NOT_RUN)
 extra <- setdiff(all_scripts, known)
 if (length(extra)) {
