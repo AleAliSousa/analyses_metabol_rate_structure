@@ -756,7 +756,7 @@ plots <- gls_plot_data %>% map(make_region_gls_plot)
 failed_regions <- setdiff(label_region(target_cols), names(plots))
 if (length(failed_regions)) message("Region plots skipped: ", paste(failed_regions, collapse = ", "))
 
-walk(plots, print)
+# walk(plots, print)
 
 # Multipage PDF
 pdf(file.path(CONFIG$dir_figs, "phylo_gls_region_plots.pdf"), width = 7, height = 5)

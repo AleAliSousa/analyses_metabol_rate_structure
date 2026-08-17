@@ -355,7 +355,7 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
     theme_facet_compact(12)
   if (!is.null(region_scale)) p <- p + region_scale
 
-  print(p)
+#   print(p)
 
   fd <- facet_dims(length(predictors))
   ggsave(
@@ -467,7 +467,7 @@ p_combined <- ggplot(plot_df_all, aes(x = prop, y = rcmr_value, color = anatomy_
   theme_facet_compact(11)
 if (!is.null(region_scale_all)) p_combined <- p_combined + region_scale_all
 
-print(p_combined)
+# print(p_combined)
 
 # 2 division rows x predictors_common columns; size width by columns so panels
 # are not squashed, with a fixed taller height for the two rows.
@@ -511,7 +511,7 @@ p_overlay <- ggplot(plot_df_all,
   theme_facet_compact(12) +
   theme(legend.position = "top")
 
-print(p_overlay)
+# print(p_overlay)
 
 fd_overlay <- facet_dims(length(predictors_common))
 ggsave(
