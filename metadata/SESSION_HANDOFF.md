@@ -7,7 +7,7 @@
 > Done:
 > - `run_all.R` rewritten to match the scripts that actually exist (the old
 >   list named 6 scripts deleted in commit `7ae5165`, including the s3
->   engine + drivers; new scripts `s1c`, `s5`, `network_residual` and both
+>   engine + drivers; new scripts `s1c`, `s4b`, `network_residual` and both
 >   s3 forks now run in a defined order). `verify_outputs.R` is no longer a
 >   pipeline step — it is sourced as a **gate** after the run summary.
 > - Duplicate pairs merged: `s1b_1_n`/`s1b_1_nn` →
@@ -43,7 +43,7 @@
 `Brain energetics/Energetic Constraints on Brain Organization in Human Paleoneurology_11072026.pptx` (69 slides)
 and `Brain energetics/MS Is human brain organization economical_04072026_TRACKED.docx`.
 Analyses are organized as four studies: s1 (cellular composition), s2 (environmental
-stress), s3 (evolutionary deviation, PGLS), s4 (fossil endocranial budgets).
+stress), s3 (evolutionary deviation, PGLS), s4a (fossil endocranial budgets).
 
 ---
 
@@ -58,10 +58,10 @@ schematics/photos). Superseded/duplicate scripts were moved to
 **Snapshot / export fixes.** Figures saved by hand now export both a raster (PNG/JPG
 for slides) and a vector PDF:
 - `traits_neocortex_grey_white.R` (was `dev.copy` snapshot) → PNG+PDF via a draw function.
-- `s4_endocranial.R` → PNG+PDF for `endocranial_region_budgets`,
+- `s4a_endocranial.R` → PNG+PDF for `endocranial_region_budgets`,
   `endocranial_region_cost_pie_3species_volctx`, `volume_timeline_logage_flipped`
   (via a `save_png_pdf()` helper).
-- `s4_endocranial_cerebellum.R` → PNG+PDF for `cerebellum_volume_timeline_logage`,
+- `s4a_endocranial_cerebellum.R` → PNG+PDF for `cerebellum_volume_timeline_logage`,
   and a **reconstructed `budget_significance`** figure (whole-brain + cerebellum
   group budgets, mean ± 95% CI vs MH=1.0, two-sided t p-values) + CSV.
 
@@ -78,7 +78,7 @@ drivers, not run standalone.
 
 **Repo hygiene (Part 3).**
 - Deleted strays: 22 `Rplot*.png` default-device artifacts and the root
-  `rcmrglc_vs_fig3a_deviation.png` / `_fit.png` (canonical copies remain in `figs/s4/`).
+  `rcmrglc_vs_fig3a_deviation.png` / `_fit.png` (canonical copies remain in `figs/s4a/`).
 - `.gitignore` extended: `Rplot*.png`, root-level `*.png/jpg/jpeg/pdf/csv`, `.RData`, `logs/`.
 - Replaced the hardcoded `setwd("~/Library/CloudStorage/Dropbox/…")` in 27 scripts
   with a portable walk-up-to-`.git` root finder. Added `R/project_root.R` (reusable
@@ -99,7 +99,7 @@ drivers, not run standalone.
 3. **`budget_residual_vs_volume` (slide 69) still has NO producing script.** Its
    original derivation is unrecoverable; no natural size-residual reproduces its
    ±0.09–0.26 values (the model's budget is ~fully explained by size). Supply the
-   original code or agree a definition, then it can be added to `s4_endocranial.R`
+   original code or agree a definition, then it can be added to `s4a_endocranial.R`
    with PNG+PDF export.
 4. **Clean-room reproducibility test + dead-output prune (Part 1).** Move `figs/`,
    `tables/`, `data_intermediate/` aside, run `run_all.R`, confirm manifest outputs
@@ -134,8 +134,8 @@ drivers, not run standalone.
   `analyses_metabol_rate_structure.Rproj`, `metadata/output_manifest.csv`,
   `metadata/REPO_AUDIT_PLAN.md`, `SCRIPTS_KEEP_LIST.md`,
   `scripts/archive/pruned_2026-07-11/` (10 archived scripts).
-- Modified: `traits_neocortex_grey_white.R`, `s4_endocranial.R`,
-  `s4_endocranial_cerebellum.R`, 27 scripts (`setwd` → root finder), `.gitignore`.
+- Modified: `traits_neocortex_grey_white.R`, `s4a_endocranial.R`,
+  `s4a_endocranial_cerebellum.R`, 27 scripts (`setwd` → root finder), `.gitignore`.
 - Deleted: 22 `Rplot*.png`, root `rcmrglc_vs_fig3a_deviation{,_fit}.png`.
 
 ## Environment caveats

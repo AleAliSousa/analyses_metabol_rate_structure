@@ -6,7 +6,7 @@
 #                  "Glucose util. (mmol/min)", but the values are numerically
 #                  micromol/min (Homo 428.55 matches Clarke & Sokoloff 1994 whole-
 #                  brain CMRglc ~= 429 umol/min, the same modern-human reference
-#                  used in s4). Treated here as umol/min so units match s4 budgets.
+#                  used in s4a). Treated here as umol/min so units match s4a budgets.
 #   ACA_mm2      : total arterial canal area (doubled transverse-foramen + doubled
 #                  promontorial-canal CSA), mm^2. New measurements in Boyer 2018.
 #   ECV_cc       : endocranial volume, cc (source-matched to the BGU specimens;

@@ -1,10 +1,10 @@
 # =====================================================================
-# s5_arterial_canal.R
+# s4b_arterial_canal.R
 # ---------------------------------------------------------------------
 # Brain glucose metabolism of fossil hominins from ARTERIAL CANAL size,
 # combining the rationales of Boyer & Harrington (2018) and Seymour et al.
 # (2016/2017), for comparison with the VOLUME-based (Kochiyama shape x Heiss
-# regional rCMRGlc) budgets produced by s4_endocranial.R.
+# regional rCMRGlc) budgets produced by s4a_endocranial.R.
 #
 # ---------------------------------------------------------------------
 # WHY TWO METHODS (and what each assumes)
@@ -19,12 +19,12 @@
 #       blood-flow rate Q (cm^3 s^-1) from foramen radius (Hagen-Poiseuille,
 #       Q ~ r^3) and argue perfusion is proportional to the tissue's metabolic
 #       rate. Hence relative flow ~ relative metabolism. We anchor the modern
-#       human at the same whole-brain glucose value s4 uses (Clarke & Sokoloff
+#       human at the same whole-brain glucose value s4a uses (Clarke & Sokoloff
 #       1994 / Boyer Table 2 ~= 429 umol/min) and scale each fossil by its flow
 #       ratio to the modern-human reference specimen:
 #            BGU_fossil = BGU_modH * (Q_fossil / Q_modH)
 #       This uses ONLY the fossil data that actually exists (carotid), needs no
-#       total-ACA reconstruction, and lands in the same units as s4.
+#       total-ACA reconstruction, and lands in the same units as s4a.
 #
 #   [B] BOYER regression.  Boyer & Harrington calibrated whole-Brain Glucose
 #       Utilization (BGU) on TOTAL arterial canal area (ACA) + ECV across 7
@@ -60,22 +60,22 @@
 #     La Chapelle 1625 ~= Hawks & Wolpoff cranial capacity 1626; Skhul 5
 #     1520 = 1520). LARGE.
 #   * Brain-TISSUE volume (GM+WM) = metabolically active parenchyma, from
-#     Kochiyama's MRI-based endocast reconstruction. This is what s4 uses
+#     Kochiyama's MRI-based endocast reconstruction. This is what s4a uses
 #     (cerebrum + cerebellum). SMALLER: e.g. Skhul 5 tissue 1199 cc vs
 #     capacity 1520 cc; modern-human tissue ~1246 cc vs capacity ~1450-1493.
 #   The Boyer branch here is INTERNALLY consistent -- Boyer calibrated BGU on
 #   endocranial capacity (Table 2 Homo ECV 1422) and we feed fossils Seymour's
 #   endocranial capacity, so no tissue<->capacity conversion is done or needed.
 #   The Seymour branch uses flow only, no volume. But when COMPARING against
-#   s4, the volumes are different conventions: output columns are labelled by
-#   provenance (endocranial_cc_arterial vs brain_tissue_cc_s4) and are NOT the
+#   s4a, the volumes are different conventions: output columns are labelled by
+#   provenance (endocranial_cc_arterial vs brain_tissue_cc_s4a) and are NOT the
 #   same measurement.
 #
 # ---------------------------------------------------------------------
 # METABOLIC SCOPE  --  whole brain vs partial regional sum
 # ---------------------------------------------------------------------
 #   Boyer/Seymour BGU is WHOLE-BRAIN glucose (~429 umol/min in modern humans).
-#   s4's budget is the SUM OF 6 Heiss regions only (frontal, parietal, temporal,
+#   s4a's budget is the SUM OF 6 Heiss regions only (frontal, parietal, temporal,
 #   occipital lobes + cerebellar cortex + vermis) = 328.51 umol/min for the
 #   modern human = 76.7% of whole brain (it omits deep grey, brainstem,
 #   diencephalon, etc.). So the ABSOLUTE umol/min values are NOT directly
@@ -85,11 +85,11 @@
 #      human within each method (dimensionless), which cancels both the
 #      capacity-vs-tissue and whole-brain-vs-partial offsets with no extra
 #      assumption. We additionally emit a scope-adjusted arterial absolute
-#      (BGU x 0.767) on s4's cortical+cerebellar footing, flagged as assuming
+#      (BGU x 0.767) on s4a's cortical+cerebellar footing, flagged as assuming
 #      the covered-region fraction is constant across taxa.
 #
 # CROSS-METHOD VALIDATION.  La Chapelle-aux-Saints, Forbes'/Gibraltar and
-# Skhul 5 appear in BOTH Seymour and s4, giving direct convergence checks
+# Skhul 5 appear in BOTH Seymour and s4a, giving direct convergence checks
 # (compare on RATIO, not absolute umol/min).
 #
 # ---------------------------------------------------------------------
@@ -97,19 +97,19 @@
 #   data_raw/Boyer_Harrington_2018_Table2.csv   7-taxon BGU calibration
 #   data_raw/Boyer_Harrington_2018_Table1.csv   extant euarchontans: DPA/ACA/ECV
 #   data_raw/Seymour_etal_2017_TableS1.csv       30 fossil hominin specimens
-#   data_intermediate/s4_specimen_budgets.csv    s4 volume-based per-specimen
-#   tables/s4/species_absolute_budgets.csv       s4 volume-based group means
+#   data_intermediate/s4a_specimen_budgets.csv    s4a volume-based per-specimen
+#   tables/s4a/species_absolute_budgets.csv       s4a volume-based group means
 #
 # OUTPUTS
-#   data_intermediate/s5_boyer_calibration.csv   fitted coefficients + fit stats
-#   data_intermediate/s5_fossil_estimates.csv    per-specimen, all methods (wide)
-#   data_intermediate/s5_fossil_estimates_long.csv  tidy long form (one row/est.)
-#   tables/s5/s5_specimen_crosswalk.csv           Seymour<->s4 name matching
-#   tables/s5/s5_method_comparison_overlap.csv    overlap specimens across methods
-#   tables/s5/s5_group_means.csv                  NT / EH / MH group summaries
-#   tables/s5/s5_sapiens_grade_means.csv          H. sapiens early/recent/modern split
+#   data_intermediate/s4b_boyer_calibration.csv   fitted coefficients + fit stats
+#   data_intermediate/s4b_fossil_estimates.csv    per-specimen, all methods (wide)
+#   data_intermediate/s4b_fossil_estimates_long.csv  tidy long form (one row/est.)
+#   tables/s4b/s4b_specimen_crosswalk.csv           Seymour<->s4a name matching
+#   tables/s4b/s4b_method_comparison_overlap.csv    overlap specimens across methods
+#   tables/s4b/s4b_group_means.csv                  NT / EH / MH group summaries
+#   tables/s4b/s4b_sapiens_grade_means.csv          H. sapiens early/recent/modern split
 #
-# All glucose values are umol glucose / min (same as s4). No figures are
+# All glucose values are umol glucose / min (same as s4a). No figures are
 # produced (per request) -- these tables feed downstream plotting.
 #
 # References
@@ -132,7 +132,7 @@ setwd(local({ d <- normalizePath(getwd())
               while (!file.exists(file.path(d, ".git")) &&
                      dirname(d) != d) d <- dirname(d); d }))  # repo root
 
-dir.create("tables/s5",         showWarnings = FALSE, recursive = TRUE)
+dir.create("tables/s4b",         showWarnings = FALSE, recursive = TRUE)
 dir.create("data_intermediate", showWarnings = FALSE, recursive = TRUE)
 
 rd <- function(p) read.csv(p, stringsAsFactors = FALSE, check.names = FALSE,
@@ -191,7 +191,7 @@ calib_out <- data.frame(
   stringsAsFactors = FALSE)
 calib_out[ , sapply(calib_out, is.numeric)] <-
   round(calib_out[ , sapply(calib_out, is.numeric)], 4)
-write.csv(calib_out, "data_intermediate/s5_boyer_calibration.csv", row.names = FALSE)
+write.csv(calib_out, "data_intermediate/s4b_boyer_calibration.csv", row.names = FALSE)
 
 ## =====================================================================
 ## 2. ACA ~ ECV allometry (for the B2 ECV-predicted-ACA bound)
@@ -239,11 +239,11 @@ Q_MODH    <- 7.34     # cm^3/s, total Q_ICA of AS8078
 R_MODH    <- 0.302    # cm, internal-carotid foramen radius of AS8078
 ECV_MODH  <- 1493     # cc, endocranial CAPACITY of AS8078 (NOT brain tissue)
 
-# Metabolic-scope bridge to s4: s4's 6-region sum captures this fraction of
+# Metabolic-scope bridge to s4a: s4a's 6-region sum captures this fraction of
 # whole-brain glucose in the modern human (328.51 / 428.55). Used only to put
-# the whole-brain arterial BGU onto s4's cortical+cerebellar footing.
-S4_MODH_REGIONAL <- 328.51
-S4_SCOPE_FRAC    <- S4_MODH_REGIONAL / BGU_MODH   # ~0.767
+# the whole-brain arterial BGU onto s4a's cortical+cerebellar footing.
+S4A_MODH_REGIONAL <- 328.51
+S4A_SCOPE_FRAC    <- S4A_MODH_REGIONAL / BGU_MODH   # ~0.767
 
 ## =====================================================================
 ## 4. Fossil specimens (Seymour 2017 Table S1)
@@ -292,13 +292,13 @@ BGU_boyer_modH <- boyer_pred(ACA_HOMO, ECV_MODH)$fit
 sey$ratioMH_boyer_scaled <- sey$BGU_boyer_scaled  / BGU_boyer_modH
 sey$ratioMH_boyer_ecvpred<- sey$BGU_boyer_ecvpred / BGU_boyer_modH
 
-## -- scope-adjusted arterial absolutes (put whole-brain BGU on s4's 6-region
+## -- scope-adjusted arterial absolutes (put whole-brain BGU on s4a's 6-region
 ##    cortical+cerebellar footing; assumes covered fraction constant across taxa)
-sey$BGU_seymour_s4scope      <- sey$BGU_seymour      * S4_SCOPE_FRAC
-sey$BGU_boyer_scaled_s4scope <- sey$BGU_boyer_scaled * S4_SCOPE_FRAC
+sey$BGU_seymour_s4ascope      <- sey$BGU_seymour      * S4A_SCOPE_FRAC
+sey$BGU_boyer_scaled_s4ascope <- sey$BGU_boyer_scaled * S4A_SCOPE_FRAC
 
 ## =====================================================================
-## 5. Taxon-group tag (for group means / comparison with s4)
+## 5. Taxon-group tag (for group means / comparison with s4a)
 ## =====================================================================
 grp_of <- function(sp) {
   s <- sp
@@ -316,32 +316,32 @@ sey$group_arterial <- grp_of(sey$Species)
 # LH 18 (Ngaloba ~120 ka), which are early H. sapiens carried by Seymour/Boyer but
 # not by Kochiyama; recent = the two Bushman crania; modern_reference = AS8078.
 # Note: of the Kochiyama EH set only Skhul 5 is in the arterial (Seymour) sample;
-# Qafzeh 9, Mladeč 1, Cro-Magnon 1 are volumetric-only (s4) — see tables/s4.
+# Qafzeh 9, Mladeč 1, Cro-Magnon 1 are volumetric-only (s4a) — see tables/s4a.
 grade_by_specimen <- c("AS8078" = "modern_reference", "M3-A343" = "recent",
   "M4-A344" = "recent", "BC1" = "early", "LH 18" = "early", "Skhul 5" = "early")
 sey$sapiens_grade <- ifelse(sey$Specimen %in% names(grade_by_specimen),
                             grade_by_specimen[sey$Specimen], "NA")
 
 ## =====================================================================
-## 6. Crosswalk Seymour <-> s4 / Kochiyama specimen names, and merge
+## 6. Crosswalk Seymour <-> s4a / Kochiyama specimen names, and merge
 ## =====================================================================
-s4spec <- rd("data_intermediate/s4_specimen_budgets.csv")
-s4spec$budget_umol_min <- as.numeric(s4spec$budget_umol_min)
-s4spec$total_cc        <- as.numeric(s4spec$total_cc)         # Kochiyama GM+WM tissue
-s4spec$budget_ratio_MH <- as.numeric(s4spec$budget_ratio_MH)  # s4's own ratio to MH
+s4aspec <- rd("data_intermediate/s4a_specimen_budgets.csv")
+s4aspec$budget_umol_min <- as.numeric(s4aspec$budget_umol_min)
+s4aspec$total_cc        <- as.numeric(s4aspec$total_cc)         # Kochiyama GM+WM tissue
+s4aspec$budget_ratio_MH <- as.numeric(s4aspec$budget_ratio_MH)  # s4a's own ratio to MH
 
-# Seymour label -> s4 specimen label (only the overlapping individuals)
+# Seymour label -> s4a specimen label (only the overlapping individuals)
 xwalk <- data.frame(
   seymour_specimen = c("Gibraltar (Forbes Quarry)", "La Chapelle-aux-Saints", "Skhul 5"),
-  s4_specimen      = c("Forbes' Quarry 1", "La Chapelle-aux-Saints 1", "Skhul 5"),
+  s4a_specimen      = c("Forbes' Quarry 1", "La Chapelle-aux-Saints 1", "Skhul 5"),
   stringsAsFactors = FALSE)
-write_csv_utf8(xwalk, "tables/s5/s5_specimen_crosswalk.csv")
+write_csv_utf8(xwalk, "tables/s4b/s4b_specimen_crosswalk.csv")
 
-sey$s4_specimen <- xwalk$s4_specimen[match(sey$Specimen, xwalk$seymour_specimen)]
-# s4 quantities (brain-TISSUE based, 6-region cortical+cerebellar scope)
-sey$brain_tissue_cc_s4  <- s4spec$total_cc[match(sey$s4_specimen, s4spec$specimen)]
-sey$BGU_s4_regional     <- s4spec$budget_umol_min[match(sey$s4_specimen, s4spec$specimen)]
-sey$ratioMH_s4          <- s4spec$budget_ratio_MH[match(sey$s4_specimen, s4spec$specimen)]
+sey$s4a_specimen <- xwalk$s4a_specimen[match(sey$Specimen, xwalk$seymour_specimen)]
+# s4a quantities (brain-TISSUE based, 6-region cortical+cerebellar scope)
+sey$brain_tissue_cc_s4a  <- s4aspec$total_cc[match(sey$s4a_specimen, s4aspec$specimen)]
+sey$BGU_s4a_regional     <- s4aspec$budget_umol_min[match(sey$s4a_specimen, s4aspec$specimen)]
+sey$ratioMH_s4a          <- s4aspec$budget_ratio_MH[match(sey$s4a_specimen, s4aspec$specimen)]
 
 ## =====================================================================
 ## 7. Assemble outputs
@@ -353,12 +353,12 @@ wide <- data.frame(
   Specimen           = sey$Specimen,
   group_arterial     = sey$group_arterial,
   sapiens_grade      = sey$sapiens_grade,
-  s4_specimen        = sey$s4_specimen,
+  s4a_specimen        = sey$s4a_specimen,
   foramen_radius_cm  = sey$Foramen_radius_cm,
   QICA_cm3_s         = sey$Total_QICA_cm3_s,
   # --- volumes, labelled by convention (NOT interchangeable) ---
   endocranial_cc_arterial = sey$Brain_volume_cm3,   # cranial CAPACITY (Seymour/Boyer)
-  brain_tissue_cc_s4      = rnd(sey$brain_tissue_cc_s4, 0),  # GM+WM tissue (Kochiyama/s4)
+  brain_tissue_cc_s4a      = rnd(sey$brain_tissue_cc_s4a, 0),  # GM+WM tissue (Kochiyama/s4a)
   ACA_scaled_mm2     = rnd(sey$ACA_scaled, 2),
   ACA_ecvpred_mm2    = rnd(sey$ACA_ecvpred, 2),
   # --- whole-brain glucose, umol/min (arterial methods) ---
@@ -367,17 +367,17 @@ wide <- data.frame(
   BGU_boyer_scaled_lwr = rnd(sey$BGU_boyer_scaled_lwr, 1),
   BGU_boyer_scaled_upr = rnd(sey$BGU_boyer_scaled_upr, 1),
   BGU_boyer_ecvpred_wholebrain = rnd(sey$BGU_boyer_ecvpred, 1),  # upper bound
-  # --- scope-adjusted to s4's 6-region cortical+cerebellar footing ---
-  BGU_seymour_s4scope      = rnd(sey$BGU_seymour_s4scope, 1),
-  BGU_boyer_scaled_s4scope = rnd(sey$BGU_boyer_scaled_s4scope, 1),
-  BGU_s4_regional          = rnd(sey$BGU_s4_regional, 1),
+  # --- scope-adjusted to s4a's 6-region cortical+cerebellar footing ---
+  BGU_seymour_s4ascope      = rnd(sey$BGU_seymour_s4ascope, 1),
+  BGU_boyer_scaled_s4ascope = rnd(sey$BGU_boyer_scaled_s4ascope, 1),
+  BGU_s4a_regional          = rnd(sey$BGU_s4a_regional, 1),
   # --- ratio to modern human (PRIMARY comparison; unit/scope invariant) ---
   ratioMH_seymour       = rnd(sey$ratioMH_seymour, 3),
   ratioMH_boyer_scaled  = rnd(sey$ratioMH_boyer_scaled, 3),
   ratioMH_boyer_ecvpred = rnd(sey$ratioMH_boyer_ecvpred, 3),
-  ratioMH_s4            = rnd(sey$ratioMH_s4, 3),
+  ratioMH_s4a            = rnd(sey$ratioMH_s4a, 3),
   stringsAsFactors = FALSE)
-write_csv_utf8(wide, "data_intermediate/s5_fossil_estimates.csv")
+write_csv_utf8(wide, "data_intermediate/s4b_fossil_estimates.csv")
 
 # tidy long form (one row per specimen x method); scale = metabolic scope,
 # quantity = ratio-to-MH (comparable) plus native absolute (scope-specific).
@@ -393,25 +393,25 @@ long <- rbind(
   mk_long("Boyer_ACA_scaled",  "whole_brain",        sey$BGU_boyer_scaled, sey$ratioMH_boyer_scaled,
           sey$BGU_boyer_scaled_lwr, sey$BGU_boyer_scaled_upr),
   mk_long("Boyer_ACA_ecvpred", "whole_brain",        sey$BGU_boyer_ecvpred, sey$ratioMH_boyer_ecvpred),
-  mk_long("s4_volume",         "cortical+cerebellar", sey$BGU_s4_regional,  sey$ratioMH_s4))
+  mk_long("s4a_volume",         "cortical+cerebellar", sey$BGU_s4a_regional,  sey$ratioMH_s4a))
 long <- long[!is.na(long$BGU_umol_min), ]
-write_csv_utf8(long, "data_intermediate/s5_fossil_estimates_long.csv")
+write_csv_utf8(long, "data_intermediate/s4b_fossil_estimates_long.csv")
 
 ## -- overlap specimens: all methods side by side ------------------------------
 ## Compare on ratio_MH (invariant). Absolutes shown in each method's native
 ## scope; volumes labelled by convention.
-ov <- wide[!is.na(wide$s4_specimen),
-           c("Specimen", "s4_specimen", "QICA_cm3_s",
-             "endocranial_cc_arterial", "brain_tissue_cc_s4",
+ov <- wide[!is.na(wide$s4a_specimen),
+           c("Specimen", "s4a_specimen", "QICA_cm3_s",
+             "endocranial_cc_arterial", "brain_tissue_cc_s4a",
              "ratioMH_seymour", "ratioMH_boyer_scaled", "ratioMH_boyer_ecvpred",
-             "ratioMH_s4",
-             "BGU_seymour_s4scope", "BGU_boyer_scaled_s4scope", "BGU_s4_regional")]
-write_csv_utf8(ov, "tables/s5/s5_method_comparison_overlap.csv")
-cat("=== overlap specimens (in both Seymour and s4); compare on ratio_MH ===\n")
+             "ratioMH_s4a",
+             "BGU_seymour_s4ascope", "BGU_boyer_scaled_s4ascope", "BGU_s4a_regional")]
+write_csv_utf8(ov, "tables/s4b/s4b_method_comparison_overlap.csv")
+cat("=== overlap specimens (in both Seymour and s4a); compare on ratio_MH ===\n")
 print(ov, row.names = FALSE)
 cat("\n")
 
-## -- group means (arterial methods) + s4 group means for comparison -----------
+## -- group means (arterial methods) + s4a group means for comparison -----------
 grp_summ <- do.call(rbind, lapply(split(sey, sey$group_arterial), function(d) data.frame(
   group_arterial          = d$group_arterial[1], n = nrow(d),
   endocranial_cc_mean     = round(mean(d$Brain_volume_cm3), 0),
@@ -421,7 +421,7 @@ grp_summ <- do.call(rbind, lapply(split(sey, sey$group_arterial), function(d) da
   BGU_boyer_scaled_wholebrain_mean = round(mean(d$BGU_boyer_scaled), 1),
   stringsAsFactors = FALSE)))
 grp_summ <- grp_summ[order(-grp_summ$endocranial_cc_mean), ]
-write_csv_utf8(grp_summ, "tables/s5/s5_group_means.csv")
+write_csv_utf8(grp_summ, "tables/s4b/s4b_group_means.csv")
 cat("=== arterial-method group means (endocranial capacity; whole-brain BGU) ===\n")
 print(grp_summ, row.names = FALSE)
 
@@ -440,24 +440,24 @@ grade_summ <- do.call(rbind, lapply(c("early", "recent", "modern_reference"), fu
     BGU_boyer_scaled_wholebrain_mean = round(mean(d$BGU_boyer_scaled), 1),
     stringsAsFactors = FALSE)
 }))
-write_csv_utf8(grade_summ, "tables/s5/s5_sapiens_grade_means.csv")
+write_csv_utf8(grade_summ, "tables/s4b/s4b_sapiens_grade_means.csv")
 cat("=== H. sapiens grade means (arterial; early vs recent vs modern reference) ===\n")
 print(grade_summ, row.names = FALSE)
 
 cat(sprintf("\n[note] Boyer modern-human reference BGU = %.1f umol/min (whole brain);\n",
             BGU_boyer_modH))
-cat(sprintf("       s4 modern-human budget = %.1f umol/min (6-region cortical+cerebellar,\n",
-            S4_MODH_REGIONAL))
+cat(sprintf("       s4a modern-human budget = %.1f umol/min (6-region cortical+cerebellar,\n",
+            S4A_MODH_REGIONAL))
 cat(sprintf("       = %.1f%% of whole brain). Absolute umol/min compare only within a scope;\n",
-            100 * S4_SCOPE_FRAC))
+            100 * S4A_SCOPE_FRAC))
 cat("       cross-method comparison uses ratio_MH.\n")
 
-s4grp_path <- "tables/s4/species_absolute_budgets.csv"
-if (file.exists(s4grp_path)) {
-  s4grp <- rd(s4grp_path)
-  cat("\n=== s4 volume-based group means (brain TISSUE; cortical+cerebellar scope) ===\n")
-  print(s4grp[, c("group", "n", "cerebral_cc", "budget_umol_min",
+s4agrp_path <- "tables/s4a/species_absolute_budgets.csv"
+if (file.exists(s4agrp_path)) {
+  s4agrp <- rd(s4agrp_path)
+  cat("\n=== s4a volume-based group means (brain TISSUE; cortical+cerebellar scope) ===\n")
+  print(s4agrp[, c("group", "n", "cerebral_cc", "budget_umol_min",
                   "budget_ci95_halfwidth", "budget_ratio_MH")], row.names = FALSE)
 }
 
-cat("\n[s5] done. Outputs in data_intermediate/s5_* and tables/s5/.\n")
+cat("\n[s4b] done. Outputs in data_intermediate/s4b_* and tables/s4b/.\n")

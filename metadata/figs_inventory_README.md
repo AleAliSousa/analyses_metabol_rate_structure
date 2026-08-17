@@ -15,7 +15,7 @@ Prep for open item #4 (dead-output prune). Enumerates all **448** files in
 | `manifest_output` | 35 | The 18 tracked deliverable stems × their png/pdf/jpg variants. These reach the deck/manuscript. |
 | `script_output_untracked` | 413 | Produced by a script but not tracked in the manifest. |
 
-Untracked breakdown by study: s3 = 299, s1b = 60, s3v2 = 31, s1a = 12, s4 = 11.
+Untracked breakdown by study: s3 = 299, s1b = 60, s3v2 = 31, s1a = 12, s4a = 11.
 
 ## Key conclusion: a static prune is unsafe
 
