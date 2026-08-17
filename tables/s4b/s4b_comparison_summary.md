@@ -1,13 +1,13 @@
 # Fossil-hominin brain glucose metabolism: three-method comparison
 
 Comparison of three independent estimates of fossil-hominin brain glucose
-metabolism — a regional volumetric budget (s4), a carotid-blood-flow estimate
+metabolism — a regional volumetric budget (s4a), a carotid-blood-flow estimate
 (Seymour), and an arterial-canal regression (Boyer) — produced by
-`scripts/s5_arterial_canal.R`.
+`scripts/s4b_arterial_canal.R`.
 
 Sources: `data_raw/Boyer_Harrington_2018_Table2.csv`,
 `data_raw/Seymour_etal_2017_TableS1.csv`,
-`data_intermediate/s4_specimen_budgets.csv`.
+`data_intermediate/s4a_specimen_budgets.csv`.
 
 ---
 
@@ -74,13 +74,13 @@ carotid flow alone or from total arterial canal area together with brain volume.
 
 ### Overlap specimens (ratio to modern human)
 
-| Specimen | Seymour flow | Boyer ACA | s4 volume |
+| Specimen | Seymour flow | Boyer ACA | s4a volume |
 |---|---|---|---|
 | Forbes'/Gibraltar | 0.83 | 0.87 | 0.82 |
 | La Chapelle-aux-Saints | 0.94 | 1.06 | 1.04 |
 | Skhul 5 | 0.65 | 0.91 | 0.96 |
 
-Mean absolute difference (ratio units): Boyer vs s4 = 0.043; Seymour vs s4 =
+Mean absolute difference (ratio units): Boyer vs s4a = 0.043; Seymour vs s4a =
 0.142; Seymour vs Boyer = 0.139.
 
 ### Group means (ratio to modern human; whole-brain scope for arterial methods)
@@ -95,8 +95,8 @@ Mean absolute difference (ratio units): Boyer vs s4 = 0.043; Seymour vs s4 =
 ### Early vs modern *Homo sapiens* (`sapiens_grade`)
 
 The six arterial *H. sapiens* above pool early fossils with recent and living
-humans. The `sapiens_grade` field (in `s5_fossil_estimates.csv`; means in
-`s5_sapiens_grade_means.csv`) separates them:
+humans. The `sapiens_grade` field (in `s4b_fossil_estimates.csv`; means in
+`s4b_sapiens_grade_means.csv`) separates them:
 
 | grade | n | specimens | Endocranial (cc) | Seymour flow | Boyer ACA |
 |---|---|---|---|---|---|
@@ -110,11 +110,11 @@ effect: Skhul 5's anomalously small carotid foramen depresses its flow estimate
 (0.65, the flagged outlier), and LH 18 has the smallest endocranial volume in the
 *H. sapiens* set (1367 cc). Excluding the Skhul 5 flow anomaly, the early-grade
 Seymour mean rises to 0.93, and the Boyer estimate (0.95) already overlaps the
-modern range. On the volumetric (s4) budget — which carries all four Kochiyama
+modern range. On the volumetric (s4a) budget — which carries all four Kochiyama
 early *H. sapiens* fossils (Qafzeh 9, Skhul 5, Mladeč 1, Cro-Magnon 1) — the early
 grade is indistinguishable from living humans: EH mean ratio 1.04 (± 0.07) versus
 the modern (MH) baseline 1.00 and Neanderthals 1.05
-(`tables/s4/species_absolute_budgets.csv`). The early-versus-modern *H. sapiens*
+(`tables/s4a/species_absolute_budgets.csv`). The early-versus-modern *H. sapiens*
 difference in brain glucose use is therefore small and method-dependent —
 negligible on the tissue-volumetric budget, marginally lower on the arterial
 estimate, and there attributable to specimen-specific vascular anatomy (Skhul 5)
@@ -136,7 +136,7 @@ separable (cf. the fossil-vs-extant note in the Evo-M1 specimen crosswalk).
 
 - Modern-human whole-brain glucose: 428.6 umol min^-1 (Clarke & Sokoloff 1994 /
   Boyer Table 2)
-- s4 modern-human budget: 328.5 umol min^-1 (6-region cortical+cerebellar =
+- s4a modern-human budget: 328.5 umol min^-1 (6-region cortical+cerebellar =
   76.7% of whole brain)
 - Boyer calibration (n = 7): ln BGU = -0.139 + 0.440*ln ACA + 0.541*ln ECV;
   R^2 = 0.9997; smearing 1.001
@@ -144,7 +144,7 @@ separable (cf. the fossil-vs-extant note in the Evo-M1 specimen crosswalk).
 ## Caveats
 
 - The Neanderthal arterial sample is only n = 2 (Gibraltar, La Chapelle).
-- Seymour and s4 use different specimen sets and volume conventions (cranial
+- Seymour and s4a use different specimen sets and volume conventions (cranial
   capacity vs grey+white-matter brain tissue); only the three overlap
   individuals are strict like-for-like.
 - The ECV-predicted-ACA variant of the Boyer branch is an upper bound: hominins

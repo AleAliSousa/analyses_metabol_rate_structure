@@ -38,8 +38,8 @@ below is driven entirely by the presentation.
 | `s1a_1_stereology_cell_types_30052026.R` | `figs/s1a/p_counts.jpg`, `figs/s1a/p_densities.jpg` | 58, 18 |
 | `s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R` | `figs/s1b/scatter_rcmr_supercluster_{all_regions,telencephalon,non_telencephalon}.png` | 57, 60, 61 |
 | `s2_stress_volume_01062026.R` | `figs/s2/mean_brain_region_volumes_boxplot.jpg`, `figs/s2/rCMRGlc_volume_change.jpg` | 30, 31 |
-| `s4_endocranial.R` | `figs/s4/endocranial_region_budgets.png` (65), `endocranial_region_cost_pie_3species_volctx.png` (45), `rcmrglc_vs_fig3a_deviation.png` (43), `volume_timeline_logage_flipped.png` (46) | 43, 45, 46, 65 |
-| `s4_endocranial_cerebellum.R` | `figs/s4/cerebellum_volume_timeline_logage.png` | 68 |
+| `s4a_endocranial.R` | `figs/s4a/endocranial_region_budgets.png` (65), `endocranial_region_cost_pie_3species_volctx.png` (45), `rcmrglc_vs_fig3a_deviation.png` (43), `volume_timeline_logage_flipped.png` (46) | 43, 45, 46, 65 |
+| `s4a_endocranial_cerebellum.R` | `figs/s4a/cerebellum_volume_timeline_logage.png` | 68 |
 
 ## Tier B — Keep: analysis + plot are in the deck, but the embedded image is an earlier render
 
@@ -59,7 +59,7 @@ pixel-match the current file. Keep them — they are core content.
 | Script | Produces / does | Feeds |
 |---|---|---|
 | `0_Heiss_Stephan_and_table1_30052026.R` | `data_intermediate/Heiss_Stephan_data.csv` (shared rCMRglc × volume reference) | s1b_4/5/6, s3 |
-| `0_bind_matano_1985a_to_stephan.R` | augments `Stephan_primates` volumes | s3, s4 |
+| `0_bind_matano_1985a_to_stephan.R` | augments `Stephan_primates` volumes | s3, s4a |
 | `s1b_1_extract_transcriptomic_30052026.R` | `..._neuronal.rds` + `..._nonneuronal.rds` | s1b_4, s1b_5, s1b_6 |
 | `s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R` | maps cells → anatomy → `Heiss_Stephan_data.csv` | s1b_4/5/6 |
 | `s1b_3_*` transcriptomic (neuronal/nonneuronal ± telencephalon) | add proportion columns to `Heiss_Stephan_data.csv` | s1b_4/5/6 |
@@ -74,7 +74,7 @@ Verified to have **no** output in either file:
 - `v2_0_Heiss_Stephan_and_table1_05062026.R` — writes `Heiss_Stephan_data_v2.csv`, which no other script reads (orphan; the deck pipeline uses the v1 file).
 - `s1a_2_stereology_proportions_30052026.R` — stereology proportion pies; not embedded.
 - `s1b_5_n_EI_ratio_telencephalon_26052026.R` — superseded by the `..._raw_EI_only_16062026` version.
-- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R` (canonical; the `_x` duplicate was merged into it), `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`, `network_residual_autocorrelation_analysis.R`.
+- QC / diagnostic / robustness (no slide): `s1b_2_check_dissection_roi.R` (canonical; the `_x` duplicate was merged into it), `network_residual_autocorrelation_analysis.R`. Retired (deleted in `7ae5165`, git history only; imputation no longer pursued): `s3_0_missingness_clade_diagnostic_04062026.R`, `s3_1_phylo_multiple_imputation_04062026.R`, `s3_compare_stephan_vs_merged.R`.
 
 ## Snapshot fixes (2026-07-11)
 
@@ -85,13 +85,13 @@ and a vector PDF:
 - `neocortex_grey_white.R` — was an interactive `dev.new()` + `dev.copy(png)`
   snapshot (PNG only, broke head-less). Now builds the plot in a reusable
   function and writes `neocortex_gray_white.png` + `.pdf`.
-- `s4_endocranial.R` — `endocranial_region_budgets`, `endocranial_region_cost_pie_3species_volctx`,
+- `s4a_endocranial.R` — `endocranial_region_budgets`, `endocranial_region_cost_pie_3species_volctx`,
   `volume_timeline_logage_flipped` now export PNG **and** PDF (via a
   `save_png_pdf()` helper).
-- `s4_endocranial_cerebellum.R` — `cerebellum_volume_timeline_logage` now exports
+- `s4a_endocranial_cerebellum.R` — `cerebellum_volume_timeline_logage` now exports
   PNG + PDF.
-- `figs/s4/budget_significance.png` (deck slide 69) had **no source anywhere**.
-  Reconstructed as a new block in `s4_endocranial_cerebellum.R`: whole-brain
+- `figs/s4a/budget_significance.png` (deck slide 69) had **no source anywhere**.
+  Reconstructed as a new block in `s4a_endocranial_cerebellum.R`: whole-brain
   (from `species_absolute_budgets.csv`) + cerebellum group budgets, mean +/- 95%
   CI vs MH = 1.0, with a two-sided one-sample t-test p-value. Writes
   `budget_significance.png` + `.pdf` + `budget_significance.csv`. Current-data
@@ -101,7 +101,7 @@ and a vector PDF:
 
 ## Still to resolve
 
-- **`figs/s4/budget_residual_vs_volume.png` (slide 69) could not be
+- **`figs/s4a/budget_residual_vs_volume.png` (slide 69) could not be
   reconstructed.** No plotting code exists in the repo or R history, and none of
   the natural definitions of "the part not explained by brain size" reproduce
   its values (±0.09 to ±0.26): in the current model the budget is almost
@@ -110,7 +110,7 @@ and a vector PDF:
   **Needs the original code or a definition of the residual to regenerate.**
 - The edited scripts pass static checks (brace/paren/bracket balance, device
   open/close pairing) but could **not be executed here** (R is not installed in
-  this environment). Run `s4_endocranial.R` then `s4_endocranial_cerebellum.R`
+  this environment). Run `s4a_endocranial.R` then `s4a_endocranial_cerebellum.R`
   once to confirm the new PNG/PDF pairs render.
 - Tier B figures were matched by topic, not pixels, because the deck predates the
   current renders. If you re-export those slides from current scripts, the images

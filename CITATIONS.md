@@ -1,6 +1,6 @@
-# Citations & data provenance — s4 endocranial energy-budget analysis
+# Citations & data provenance — s4a endocranial energy-budget analysis
 
-This file records where each number in the `s4_endocranial*` analyses comes from,
+This file records where each number in the `s4a_endocranial*` analyses comes from,
 and — importantly — keeps the **metabolic-rate inputs** (Heiss) separate from the
 **whole-brain benchmark values** used only as an external sanity check (which are
 NOT from Heiss).

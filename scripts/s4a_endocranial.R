@@ -1,5 +1,5 @@
 # ============================================================
-# s4_endocranial.R
+# s4a_endocranial.R
 # Endocast-scaled regional brain energy budgets: Neanderthal (NT),
 # early modern human (EH) and modern human (MH).
 #
@@ -70,9 +70,9 @@
 #   Kochiyama reconstructed brain (tissue) volumes on the same CSF-excluded basis.
 #
 # OUTPUTS
-#   data_intermediate/s4_region_crosswalk.csv        region correspondence + weights
-#   data_intermediate/s4_endocranial_region_budgets.csv  per-region budgets by species
-#   tables/s4/endocranial_budget_summary.csv         totals and NT/MH, EH/MH ratios
+#   data_intermediate/s4a_region_crosswalk.csv        region correspondence + weights
+#   data_intermediate/s4a_endocranial_region_budgets.csv  per-region budgets by species
+#   tables/s4a/endocranial_budget_summary.csv         totals and NT/MH, EH/MH ratios
 # ============================================================
 
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
@@ -143,7 +143,7 @@ stopifnot(!any(is.na(crosswalk$MH_vol_cc)),   # every parcel found in legend
           !any(is.na(crosswalk$NT_rel)))      # every parcel found in Figure 3
 
 write.csv(crosswalk[order(crosswalk$Heiss_region), ],
-          "data_intermediate/s4_region_crosswalk.csv", row.names = FALSE)
+          "data_intermediate/s4a_region_crosswalk.csv", row.names = FALSE)
 
 # -----------------------------
 # 3. Aggregate to Heiss-region level
@@ -195,7 +195,7 @@ region_budgets <- agg[, c("Heiss_region","rCMRGlc","MH_vol_cc",
                           "budget_NT","budget_EH","budget_MH")]
 region_budgets[ , -1] <- lapply(region_budgets[ , -1], round, 4)
 write.csv(region_budgets,
-          "data_intermediate/s4_endocranial_region_budgets.csv", row.names = FALSE)
+          "data_intermediate/s4a_endocranial_region_budgets.csv", row.names = FALSE)
 
 # -----------------------------
 # 5. Totals and species ratios
@@ -214,7 +214,7 @@ summary_tab <- data.frame(
   stringsAsFactors = FALSE
 )
 
-write.csv(summary_tab, "tables/s4/endocranial_budget_summary.csv", row.names = FALSE)
+write.csv(summary_tab, "tables/s4a/endocranial_budget_summary.csv", row.names = FALSE)
 
 # -----------------------------
 # 5b. Per-specimen and species-average ABSOLUTE-SIZE budgets
@@ -308,7 +308,7 @@ write_csv_utf8 <- function(df, path) {
   body <- apply(df, 1, function(r) paste(q(as.character(r)), collapse = ","))
   writeLines(c(paste(names(df), collapse = ","), body), path, useBytes = TRUE)
 }
-write_csv_utf8(specimen_budgets, "data_intermediate/s4_specimen_budgets.csv")
+write_csv_utf8(specimen_budgets, "data_intermediate/s4a_specimen_budgets.csv")
 
 # --- species-average budgets from GROUP-MEAN volumes (+ SD propagation) ---
 # IDENTICAL MODEL to the per-specimen function above: Fig3A shape everywhere,
@@ -379,7 +379,7 @@ species_budgets <- data.frame(
   budget_ratio_MH_ci95   = round(grp_vol$budget_ratio_MH_ci95, 4),
   stringsAsFactors = FALSE)
 write.csv(species_budgets,
-          "tables/s4/species_absolute_budgets.csv", row.names = FALSE)
+          "tables/s4a/species_absolute_budgets.csv", row.names = FALSE)
 
 # -----------------------------
 # 5c. Fig3B INDEPENDENT CHECK (does NOT feed any budget/figure)
@@ -407,13 +407,13 @@ fig3b_check <- data.frame(
   fig3B_cerebellarcortex_ratio_MH = round(as.numeric(f3b_ratio), 4),      # independent check
   abs_diff              = round(abs(as.numeric(f3a_cec_ratio) - as.numeric(f3b_ratio)), 4),
   stringsAsFactors = FALSE)
-write.csv(fig3b_check, "tables/s4/fig3B_cerebellar_cortex_check.csv", row.names = FALSE)
+write.csv(fig3b_check, "tables/s4a/fig3B_cerebellar_cortex_check.csv", row.names = FALSE)
 
 # -----------------------------
 # 6. Console report
 # -----------------------------
 
-cat("\n=== s4_endocranial: matched regions (Heiss <-> Kochiyama) ===\n")
+cat("\n=== s4a_endocranial: matched regions (Heiss <-> Kochiyama) ===\n")
 print(region_budgets, row.names = FALSE)
 
 cat("\n=== Total brain energy budget across matched regions ===\n")
@@ -474,7 +474,7 @@ mtext(paste0("Total budget ratio to MH:  NT = ", summary_tab$ratio_to_MH[1],
       side = 1, line = 6.2, cex = 0.8, adj = 0)
 par(op)
 }
-save_png_pdf("figs/s4/endocranial_region_budgets",
+save_png_pdf("figs/s4a/endocranial_region_budgets",
              .draw_region_budgets, width = 2100, height = 1350, res = 220)
 
 # -----------------------------
@@ -524,7 +524,7 @@ ann_wedge <- function(cx, cy, r_in, r_out, a0, a1, col, border="white", lwd=1.5)
   polygon(xx, yy, col = col, border = border, lwd = lwd)
 }
 
-png("figs/s4/endocranial_region_volume_pie.png", width = 2100, height = 1500, res = 220)
+png("figs/s4a/endocranial_region_volume_pie.png", width = 2100, height = 1500, res = 220)
 op <- par(mar = c(2.2, 1, 3.4, 1))
 plot(NA, xlim = c(-1.72, 1.72), ylim = c(-1.35, 1.35), asp = 1,
      axes = FALSE, xlab = "", ylab = "")
@@ -627,7 +627,7 @@ draw_one <- function(d, sp, brain_cc) {
   title(main = sprintf("%s (%s)", sp_full, sp), cex.main = 0.95, font.main = 1, line = 0.2)
 }
 
-png("figs/s4/endocranial_region_volume_pie_3species.png", width = 2550, height = 1150, res = 220)
+png("figs/s4a/endocranial_region_volume_pie_3species.png", width = 2550, height = 1150, res = 220)
 op <- par(mfrow = c(1,3), mar = c(1.4,0.6,2.6,0.6), oma = c(4.2,0,3.0,0))
 for (sp in c("NT","EH","MH")) {
   d <- build_pie(sp)
@@ -704,7 +704,7 @@ draw_cost <- function(d, sp) {
   title(main = sprintf("%s (%s)", sp_full, sp), cex.main = 0.95, font.main = 1, line = 0.2)
 }
 
-png("figs/s4/endocranial_region_cost_pie_3species.png", width = 2700, height = 1200, res = 220)
+png("figs/s4a/endocranial_region_cost_pie_3species.png", width = 2700, height = 1200, res = 220)
 op <- par(mfrow = c(1,3), mar = c(1.2,2.0,2.6,2.0), oma = c(5.2,0,3.2,0))
 for (sp in c("NT","EH","MH")) draw_cost(build_cost_pie(sp), sp)
 mtext("Absolute regional glucose cost across hominin groups  (wedge SIZE = brain volume; wedge LABEL = rate x mass, umol glucose/min)",
@@ -782,7 +782,7 @@ mtext("Wedge area proportional to VOLUME; label = absolute glucose cost via Heis
 mtext("Point estimates from group-mean sizes; between-species differences are not statistically significant (n = 4 fossils/group).",
       side = 1, outer = TRUE, cex = 0.53, col = "grey40", line = 3.4)
 }
-save_png_pdf("figs/s4/endocranial_region_cost_pie_3species_volctx",
+save_png_pdf("figs/s4a/endocranial_region_cost_pie_3species_volctx",
              .draw_cost_pie_3species, width = 2700, height = 1250, res = 220)
 
 # =============================================================================
@@ -912,7 +912,7 @@ famous_scatter <- function(yvar, ylab, main, mh_y, y_pad = 0.06,
 }
 
 # ---- Fig A: brain volume through time (true scale), point size = budget ----
-png("figs/s4/volume_timeline.png", width = 2100, height = 1450, res = 220)
+png("figs/s4a/volume_timeline.png", width = 2100, height = 1450, res = 220)
 famous_scatter("total_cc",
                ylab = "Total brain volume (cerebral + cerebellar, cc)",
                main = "Fossil brain volume through time (point size = energy budget)",
@@ -921,7 +921,7 @@ famous_scatter("total_cc",
 dev.off()
 
 # ---- Fig A2: same, LOG10 age axis (spreads the fossils out) ----------------
-png("figs/s4/volume_timeline_logage.png", width = 2100, height = 1450, res = 220)
+png("figs/s4a/volume_timeline_logage.png", width = 2100, height = 1450, res = 220)
 famous_scatter("total_cc",
                ylab = "Total brain volume (cerebral + cerebellar, cc)",
                main = "Fossil brain volume through time (log age; point size = energy budget)",
@@ -1017,7 +1017,7 @@ famous_scatter_flip <- function(main, note = "", xlog = FALSE) {
   invisible(gmean)
 }
 
-save_png_pdf("figs/s4/volume_timeline_logage_flipped",
+save_png_pdf("figs/s4a/volume_timeline_logage_flipped",
   function() famous_scatter_flip(
     main = "Fossil glucose utilization through time (log age; point size = brain volume)",
     xlog = TRUE,
@@ -1059,7 +1059,7 @@ species_ci_plot <- function(ytick = NULL,
 }
 
 # ---- Fig C: species means +/- 95% CI (true scale) -------------------------
-png("figs/s4/species_budget_ci.png", width = 2000, height = 1300, res = 220)
+png("figs/s4a/species_budget_ci.png", width = 2000, height = 1300, res = 220)
 species_ci_plot(ytick = seq(0.85, 1.20, 0.05),
                 main = "Species-average brain energy budget (95% CI, true scale)",
                 note = "Error bars = 95% CI on the mean (t-based, from group volume s.d. and n). Wide fossil CIs reflect n=4.")
@@ -1094,8 +1094,8 @@ dev.off()
 # correlation, reported with its p-value and CI, not a significance claim.
 #
 # OUTPUTS
-#   tables/s4/rcmrglc_vs_fig3a_deviation.csv     per-region + fitted stats
-#   figs/s4/rcmrglc_vs_fig3a_deviation.png       scatter + OLS fit + 95% CI band
+#   tables/s4a/rcmrglc_vs_fig3a_deviation.csv     per-region + fitted stats
+#   figs/s4a/rcmrglc_vs_fig3a_deviation.png       scatter + OLS fit + 95% CI band
 
 corr_df <- data.frame(
   Heiss_region = agg$Heiss_region,
@@ -1128,8 +1128,8 @@ corr_stats <- do.call(rbind, lapply(c("NT","EH"), function(sp) {
 corr_stats[ , sapply(corr_stats, is.numeric)] <-
   lapply(corr_stats[ , sapply(corr_stats, is.numeric)], round, 4)
 
-write.csv(corr_df,    "tables/s4/rcmrglc_vs_fig3a_deviation.csv", row.names = FALSE)
-write.csv(corr_stats, "tables/s4/rcmrglc_vs_fig3a_deviation_stats.csv", row.names = FALSE)
+write.csv(corr_df,    "tables/s4a/rcmrglc_vs_fig3a_deviation.csv", row.names = FALSE)
+write.csv(corr_stats, "tables/s4a/rcmrglc_vs_fig3a_deviation_stats.csv", row.names = FALSE)
 
 cat("\n=== rCMRGlc vs Fig-3A deviation-from-MH (per matched region) ===\n")
 print(corr_df, row.names = FALSE)
@@ -1165,7 +1165,7 @@ corr_panel <- function(sp, col) {
                     sprintf("n = %d matched regions", nrow(corr_df))))
 }
 
-png("figs/s4/rcmrglc_vs_fig3a_deviation_fit.png", width = 2500, height = 1150, res = 220)
+png("figs/s4a/rcmrglc_vs_fig3a_deviation_fit.png", width = 2500, height = 1150, res = 220)
 op <- par(mfrow = c(1,2), mar = c(4.8, 4.8, 3.0, 1.2), mgp = c(2.9, 0.7, 0),
           oma = c(2.2, 0, 2.4, 0))
 corr_panel("NT", grp_col["NT"]); corr_panel("EH", grp_col["EH"])
@@ -1196,7 +1196,7 @@ theme_paper <- theme_bw(base_size = 16) +
 
 fmt_p <- function(p) format.pval(p, digits = 2, eps = 1e-4)
 
-s4_corr_scatter <- function(sp, sp_full) {
+s4a_corr_scatter <- function(sp, sp_full) {
   d <- data.frame(
     rCMRGlc   = corr_df$rCMRGlc,
     y         = corr_df[[paste0(sp, "_rel")]],
@@ -1274,13 +1274,13 @@ s4_corr_scatter <- function(sp, sp_full) {
     theme_paper
 }
 
-p_corr_nt <- s4_corr_scatter("NT", "Neanderthal")
-p_corr_eh <- s4_corr_scatter("EH", "Early modern human")
+p_corr_nt <- s4a_corr_scatter("NT", "Neanderthal")
+p_corr_eh <- s4a_corr_scatter("EH", "Early modern human")
 p_corr    <- p_corr_nt + p_corr_eh
 # type = "cairo" renders the Greek rho (\u03c1) correctly regardless of the
 # session locale (base png() substitutes a dot under a non-UTF-8 locale, e.g.
 # when the script is run head-less via Rscript). cairo_pdf() does the same for pdf.
-ggsave("figs/s4/rcmrglc_vs_fig3a_deviation.png", p_corr, width = 15, height = 6.2,
+ggsave("figs/s4a/rcmrglc_vs_fig3a_deviation.png", p_corr, width = 15, height = 6.2,
        dpi = 220, type = "cairo")
-ggsave("figs/s4/rcmrglc_vs_fig3a_deviation.pdf", p_corr, width = 15, height = 6.2,
+ggsave("figs/s4a/rcmrglc_vs_fig3a_deviation.pdf", p_corr, width = 15, height = 6.2,
        device = cairo_pdf)

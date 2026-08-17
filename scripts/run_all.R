@@ -9,8 +9,8 @@
 #
 # What it does
 #   * Runs the scripts in the order the pipeline needs (raw-data prep ->
-#     Study 1 cells -> Study 2 stress -> Study 3 evolution -> Study 4 fossils
-#     -> Study 5 arterial canal -> QC checks).
+#     Study 1 cells -> Study 2 stress -> Study 3 evolution -> Study 4a fossils
+#     -> Study 4b arterial canal -> QC checks).
 #   * Each script runs in its OWN environment so leftover objects from one
 #     script cannot silently feed the next.
 #   * A failing script is caught, logged, and the run CONTINUES; a summary
@@ -19,7 +19,7 @@
 #     checks the deliverable manifest and exits non-zero on failure.
 #
 # Notes
-#   * s4_endocranial.R must run before s4_endocranial_cerebellum.R (the
+#   * s4a_endocranial.R must run before s4a_endocranial_cerebellum.R (the
 #     cerebellum script reads the whole-brain budget table the main one writes).
 #   * KNOWN ISSUE (Study 3): the two s3_predicValuesPGLS_* scripts are forks
 #     that BOTH write to figs/s3/all, tables/s3/all and checks/s3/all, so the
@@ -28,7 +28,7 @@
 #     order below preserves the outputs produced by the last logged run.
 #   * The working directory is reset to the project root before every script,
 #     because the scripts use paths relative to the project root
-#     (e.g. "data_raw/...", "figs/s4/...", "R/plot_settings.R").
+#     (e.g. "data_raw/...", "figs/s4a/...", "R/plot_settings.R").
 # =====================================================================
 
 # ---- locate the project root (parent of this scripts/ folder) -------
@@ -84,12 +84,12 @@ RUN_ORDER <- c(
   "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_UPDATED_MU_PLOTS_1_PATCHED.R",
   "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_VOLUMES_WIDE_SELECT.R",
 
-  # Study 4: fossil endocranial budgets (main before cerebellum sibling)
-  "s4_endocranial.R",
-  "s4_endocranial_cerebellum.R",
+  # Study 4a: fossil endocranial budgets (main before cerebellum sibling)
+  "s4a_endocranial.R",
+  "s4a_endocranial_cerebellum.R",
 
-  # Study 5: arterial-canal metabolic estimates
-  "s5_arterial_canal.R",
+  # Study 4b: arterial-canal metabolic estimates
+  "s4b_arterial_canal.R",
 
   # QC / robustness checks (no deliverable outputs)
   "network_residual_autocorrelation_analysis.R"

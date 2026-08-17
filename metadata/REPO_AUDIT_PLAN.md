@@ -16,7 +16,7 @@ manuscript, exactly one script produces it, and running the pipeline from clean
 inputs recreates it.
 
 **Why it matters.** Right now most deck figures map to a script, but at least one
-(`figs/s4/budget_residual_vs_volume.png`) has no producer, and several figures
+(`figs/s4a/budget_residual_vs_volume.png`) has no producer, and several figures
 exist in `figs/` that never reach a deliverable. Neither problem is visible
 without a manifest.
 
@@ -72,12 +72,13 @@ pipeline.
    layers.
 
 2. **Per-study analysis** — produces that study's figs/tables. Keep the working
-   `s1a_ / s1b_ / s2_ / s3_ / s4_` prefixes plus a step number for run order.
+   `s1a_ / s1b_ / s2_ / s3_ / s4a_` prefixes plus a step number for run order.
    Outputs to `figs/<study>/` and `tables/<study>/` only.
 
 3. **Checks / QC** — validate data or assumptions, produce **no deliverable**
-   (e.g. `s1b_2_check_dissection_roi.R`, `s3_0_missingness_clade_diagnostic`,
-   `s3_compare_stephan_vs_merged`, `network_residual_autocorrelation_analysis`).
+   (e.g. `s1b_2_check_dissection_roi.R`, `network_residual_autocorrelation_analysis`;
+   the `s3_0_missingness_clade_diagnostic` / `s3_compare_stephan_vs_merged`
+   examples were retired in `7ae5165`).
    *Convention:* `check_*` / `qc_*`, kept in a `scripts/checks/` subfolder, writing
    only to `checks/`. Excluded from the deliverable pipeline; run as a separate QC
    pass.
@@ -116,7 +117,7 @@ the working directory is handled the same way everywhere.
   plotting code is run line-by-line without an open device. An interactive
   artifact, not a real output.
 - `rcmrglc_vs_fig3a_deviation.png` and `..._fit.png` (root) — **stale** copies;
-  `s4_endocranial.R` now writes both to `figs/s4/`, and the root versions differ
+  `s4a_endocranial.R` now writes both to `figs/s4a/`, and the root versions differ
   (older). `..._fit.png` is committed to git.
 - **Root cause:** inconsistent project-root handling — 23 script locations use
   `here()`, but ~several still hardcode
@@ -135,7 +136,7 @@ the working directory is handled the same way everywhere.
    `data_intermediate/`. Add this to each script header.
 3. **Clean up existing strays.** Delete `Rplot001.png`; `git rm` the tracked
    `rcmrglc_vs_fig3a_deviation_fit.png` in root and delete the root
-   `rcmrglc_vs_fig3a_deviation.png` (the real ones live in `figs/s4/`). Confirm
+   `rcmrglc_vs_fig3a_deviation.png` (the real ones live in `figs/s4a/`). Confirm
    via Part 1 clean-room rerun that nothing regenerates them in root.
 4. **Extend `.gitignore`.** Add `Rplot*.png`, `/*.png`, `/*.csv` at the repo root
    (top-level only), and `.RData`, so interactive artifacts never get committed.

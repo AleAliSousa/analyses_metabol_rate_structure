@@ -66,7 +66,7 @@ region_map <- tribble(
   "Pallidum",                "Pallidum",
   # Thalamus excluded: Johansen measures the whole thalamus (FreeSurfer ROI)
   # but Heiss only sampled Nucleus medial thalami + geniculate bodies — no
-  # composite spanning the full thalamus exists, consistent with s3 and s4.
+  # composite spanning the full thalamus exists, consistent with s3 and s4a.
   "Cerebellum",              "Cerebellar cortex",
   "White matter",            "Centrum semiovale"
 )

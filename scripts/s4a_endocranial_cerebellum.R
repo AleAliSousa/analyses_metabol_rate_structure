@@ -1,15 +1,15 @@
 # =====================================================================
-# s4_endocranial_cerebellum.R
+# s4a_endocranial_cerebellum.R
 # ---------------------------------------------------------------------
 # CEREBELLUM-ONLY energy budget for fossil hominins.
 #
 # Purpose: test whether the elevated whole-brain budget of Neanderthals
 # (NT) and early modern humans (EH) relative to modern humans (MH), seen
-# in s4_endocranial.R, is driven by the CEREBELLUM. This script is a
-# self-contained sibling of s4_endocranial.R that uses ONLY cerebellar
+# in s4a_endocranial.R, is driven by the CEREBELLUM. This script is a
+# self-contained sibling of s4a_endocranial.R that uses ONLY cerebellar
 # data and reports ONLY the cerebellar budget.
 #
-# METHOD (identical model to s4_endocranial.R, restricted to cerebellum):
+# METHOD (identical model to s4a_endocranial.R, restricted to cerebellum):
 #   budget_part = rCMRGlc_part x (MH_mass_part / 100 g) x shape_part(group)
 #                                                       x cerebellar_size(indiv)
 #   where
@@ -35,7 +35,7 @@
 #
 # NOTE on the size reference: CEREBELLAR_MH = 149 cc is the modern-human
 # whole-cerebellum group mean (FossilSpecimensText groupmeans, n = 1185),
-# the same reference used in s4_endocranial.R. The digitized parcels sum
+# the same reference used in s4a_endocranial.R. The digitized parcels sum
 # to ~140.6 cc; because every quantity is expressed as a RATIO to MH, the
 # choice of reference cancels and does not affect the group/specimen ratios.
 # =====================================================================
@@ -54,8 +54,8 @@ if (!is.null(this_file)) {
 }
 if (!dir.exists(file.path(root, "data_raw"))) root <- "."   # fall back to cwd
 raw_dir   <- file.path(root, "data_raw")
-tab_dir   <- file.path(root, "tables", "s4")
-fig_dir   <- file.path(root, "figs",   "s4")
+tab_dir   <- file.path(root, "tables", "s4a")
+fig_dir   <- file.path(root, "figs",   "s4a")
 dir.create(tab_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 
@@ -231,7 +231,7 @@ legend("bottomright", legend = c("Neanderthal","early H. sapiens"),
 par(op); dev.off()
 
 ## --- 4c/4d. cerebellum volume through time (point size = cerebellum budget)
-## Mirror of s4_endocranial.R's volume_timeline figures, restricted to the
+## Mirror of s4a_endocranial.R's volume_timeline figures, restricted to the
 ## cerebellum: y = cerebellar volume (cc); point AREA = cerebellum budget
 ## ratio to MH; colour = group; shape = specimen. Linear + log10 age axes.
 spec$age_plot <- ifelse(is.na(spec$age_mid),
@@ -455,12 +455,12 @@ print(spec[, c("specimen","group","cerebellar_cc","budget_ratio")],
 ## 5. Significance summary figure: whole-brain vs cerebellum budgets
 ##    (mean +/- 95% CI vs MH = 1.0, with two-sided p-values)
 ## ----------------------------------------------------------------
-## Rebuilds figs/s4/budget_significance.{png,pdf}. Whole-brain group budgets
+## Rebuilds figs/s4a/budget_significance.{png,pdf}. Whole-brain group budgets
 ## are read from the main script's output (species_absolute_budgets.csv);
 ## cerebellum group budgets are `species_out` computed above. The p-value is a
 ## two-sided one-sample t-test that the group-mean budget ratio differs from
 ## MH = 1.0, with SEM = sd / sqrt(n) and df = n - 1 (fossil n = 4). Run
-## s4_endocranial.R first so the whole-brain table exists.
+## s4a_endocranial.R first so the whole-brain table exists.
 wb_path <- file.path(tab_dir, "species_absolute_budgets.csv")
 if (file.exists(wb_path)) {
   wb <- read.csv(wb_path, stringsAsFactors = FALSE)
@@ -510,5 +510,5 @@ if (file.exists(wb_path)) {
   cat("\nbudget_significance figure written (whole-brain + cerebellum).\n")
 } else {
   message("budget_significance skipped: ", wb_path,
-          " not found -- run s4_endocranial.R first.")
+          " not found -- run s4a_endocranial.R first.")
 }
