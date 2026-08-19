@@ -1,13 +1,13 @@
 mode,Species,stephan_species,pair_note,label,stephan_var,wide_var,unit_scale,role,stephan_value,wide_value,on_tree,status,rel,pct_diff,ratio,anomaly
 raw,Alouatta caraya,Alouatta caraya,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,53861,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Alouatta seniculus,Alouatta seniculus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,49009,37400,NA,DIFFERENT,0.23687485971964334,-23.687485971964332,0.7631251402803567,NA
-raw,Aotus trivirgatus,Aotus trivirgatus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,16195,19125,NA,DIFFERENT,0.15320261437908497,18.092003704847176,1.1809200370484718,NA
+raw,Alouatta seniculus,Alouatta seniculus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,49009,49009,NA,same,0,0,1,NA
+raw,Aotus trivirgatus,Aotus trivirgatus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,16195,16195,NA,same,0,0,1,NA
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,101034,102700,NA,DIFFERENT,0.016222005842259007,1.6489498584634876,1.0164894985846349,NA
 raw,Avahi laniger,Avahi laniger,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,9798,9798,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,9124,9256.8,NA,DIFFERENT,0.014346210353469804,1.4555019728189311,1.0145550197281894,NA
 raw,Callimico goeldii,Callimico goeldii,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,10510,10510,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,7241,7241,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,4302,4302,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,4302,4005.8,NA,DIFFERENT,0.06885169688516965,-6.885169688516965,0.9311483031148303,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,66939,77027,NA,DIFFERENT,0.13096706349721526,15.07043726377747,1.1507043726377746,NA
 raw,Cercocebus agilis,Cercocebus agilis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,91988,NA,volumes_wide_only,NA,NA,NA,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,63505,63505,NA,same,0,0,1,NA
@@ -16,7 +16,7 @@ raw,Cheirogaleus major,Cheirogaleus major,NA,Preferred brain volume,Total_brain_
 raw,Cheirogaleus medius,Cheirogaleus medius,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,2961,2961,NA,same,0,0,1,NA
 raw,Colobus angolensis,Colobus angolensis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,71815,NA,volumes_wide_only,NA,NA,NA,NA
 raw,Daubentonia madagascariensis,Daubentonia madagascariensis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,42611,42611,NA,same,0,0,1,NA
-raw,Erythrocebus patas,Erythrocebus patas,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,103167,89000,NA,DIFFERENT,0.13732104258144562,-13.732104258144561,0.8626789574185544,NA
+raw,Erythrocebus patas,Erythrocebus patas,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,103167,103167,NA,same,0,0,1,NA
 raw,Eulemur fulvus,Eulemur fulvus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,22106,22106,NA,same,0,0,1,NA
 raw,Galago senegalensis,Galago senegalensis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,4512,4512,NA,same,0,0,1,NA
 raw,Galagoides demidoff,Galagoides demidoff,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,3203,3185.3,NA,rounding,0.005526069310021798,-0.5526069310021797,0.9944739306899782,NA
@@ -32,7 +32,7 @@ raw,Lophocebus albigena,Lophocebus albigena,NA,Preferred brain volume,Total_brai
 raw,Loris tardigradus,Loris tardigradus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,6269,6612,NA,DIFFERENT,0.051875378100423475,5.471367044185675,1.0547136704418567,NA
 raw,Macaca fascicularis,Macaca fascicularis,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,55600,NA,volumes_wide_only,NA,NA,NA,NA
 raw,Macaca maura,Macaca maura,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,80405,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Macaca mulatta,Macaca mulatta,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,87896,84880,NA,DIFFERENT,0.034313279330117415,-3.431327933011741,0.9656867206698826,NA
+raw,Macaca mulatta,Macaca mulatta,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,87896,87896,NA,same,0,0,1,NA
 raw,Microcebus murinus,Microcebus murinus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,1680,1680,NA,same,0,0,1,NA
 raw,Miopithecus talapoin,Miopithecus talapoin,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,37776,37776,NA,same,0,0,1,NA
 raw,Nasalis larvatus,Nasalis larvatus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,92797,92797,NA,same,0,0,1,NA
@@ -53,7 +53,7 @@ raw,Pygathrix nemaeus,Pygathrix nemaeus,NA,Preferred brain volume,Total_brain_ne
 raw,Saguinus geoffroyi,Saguinus geoffroyi,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,10135,NA,volumes_wide_only,NA,NA,NA,NA
 raw,Saguinus midas,Saguinus midas,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,9569,9569,NA,same,0,0,1,NA
 raw,Saguinus oedipus,Saguinus oedipus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,9537,8938.2,NA,DIFFERENT,0.06278703994966964,-6.278703994966963,0.9372129600503304,NA
-raw,Saimiri sciureus,Saimiri sciureus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,22572,23100,NA,DIFFERENT,0.022857142857142857,2.3391812865497075,1.023391812865497,NA
+raw,Saimiri sciureus,Saimiri sciureus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,22572,22572,NA,same,0,0,1,NA
 raw,Symphalangus syndactylus,Symphalangus syndactylus,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,133880,NA,volumes_wide_only,NA,NA,NA,NA
 raw,Tarsius syrichta,Tarsius syrichta,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,3393,3393,NA,same,0,0,1,NA
 raw,Trachypithecus francoisi,Trachypithecus francoisi,NA,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,report_only,NA,98552,NA,volumes_wide_only,NA,NA,NA,NA
@@ -64,7 +64,7 @@ raw,Ateles geoffroyi,Ateles geoffroyi,NA,Corpus geniculatum laterale,LGN_Sousa,C
 raw,Avahi laniger,Avahi laniger,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,27.6,27.6,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,29.3,29.3,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,25.1,25.1,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,16.9,NA,NA,Stephan_only,NA,NA,NA,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,16.9,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,137,137,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,147,147,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,150,167.2,NA,DIFFERENT,0.10287081339712913,11.46666666666666,1.1146666666666667,NA
@@ -130,7 +130,7 @@ raw,Tarsius syrichta,Tarsius syrichta,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,st
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,807,807,NA,same,0,0,1,NA
 raw,Avahi laniger,Avahi laniger,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,74.5,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,NA,74.5,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,25.8,25.8,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,25.8,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,567,567,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,405,405,NA,same,0,0,1,NA
 raw,Cheirogaleus major,Cheirogaleus major,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,31.6,31.6,NA,same,0,0,1,NA
@@ -160,7 +160,7 @@ raw,Alouatta seniculus,Alouatta seniculus,NA,Neocortex white,NeoW_Frahm,Neocorte
 raw,Aotus trivirgatus,Aotus trivirgatus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,2174,2174,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,777,777,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,807.1,807.1,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,395.3,395.3,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,395.3,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,15799,15799,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,13052,13052,NA,same,0,0,1,NA
 raw,Daubentonia madagascariensis,Daubentonia madagascariensis,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,5053,5053,NA,same,0,0,1,NA
@@ -185,7 +185,7 @@ raw,Alouatta caraya,Alouatta caraya,NA,Insular cortex (grey),Total_insula_volume
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,416,416,NA,same,0,0,1,NA
 raw,Avahi laniger,Avahi laniger,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,38,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,NA,38,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,11,NA,NA,Stephan_only,NA,NA,NA,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,11,11,NA,same,0,0,1,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,297,297,NA,same,0,0,1,NA
 raw,Cercocebus agilis,Cercocebus agilis,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,379,379,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,614,614,NA,same,0,0,1,NA
@@ -215,7 +215,7 @@ raw,Varecia variegata,Varecia variegata,NA,Insular cortex (grey),Total_insula_vo
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,52.8,52.8,NA,same,0,0,1,NA
 raw,Avahi laniger,Avahi laniger,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,5.94,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,NA,5.94,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.95,1.95,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.95,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,41.7,41.7,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,25.7,25.7,NA,same,0,0,1,NA
 raw,Cheirogaleus major,Cheirogaleus major,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,2.27,2.27,NA,same,0,0,1,NA
@@ -242,7 +242,7 @@ raw,Tarsius syrichta,Tarsius syrichta,NA,Nucleus subthalamicus Luysi,Nucleus_sub
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,570,570,NA,same,0,0,1,NA
 raw,Avahi laniger,Avahi laniger,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,105,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,NA,105,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,21.8,21.8,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,21.8,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,549,549,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,421,421,NA,same,0,0,1,NA
 raw,Cheirogaleus major,Cheirogaleus major,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,48.6,48.6,NA,same,0,0,1,NA
@@ -273,7 +273,7 @@ raw,Avahi laniger,Avahi laniger,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,5
 raw,Avahi occidentalis,Avahi occidentalis,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,478,478,NA,same,0,0,1,NA
 raw,Callimico goeldii,Callimico goeldii,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,493,493,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,372,372,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,174,174,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,174,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,3258,3258,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,2827,2827,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,2733,2733,NA,same,0,0,1,NA
@@ -319,7 +319,7 @@ raw,Ateles geoffroyi,Ateles geoffroyi,NA,Area striata grey,ASG_Sousa,Area_striat
 raw,Avahi laniger,Avahi laniger,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,475,475,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,450,450,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,566,566,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,363,363,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,363,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,3764,3764,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4272,4272,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4232,4232,NA,same,0,0,1,NA
@@ -363,7 +363,7 @@ raw,Alouatta seniculus,Alouatta seniculus,NA,Neocortex grey,NeoG_Frahm,Neocortex
 raw,Aotus trivirgatus,Aotus trivirgatus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,7776,7776,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,3666,3666,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,3564,3564,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,2139,2139,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,2139,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,30630,30630,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,32114,32114,NA,same,0,0,1,NA
 raw,Daubentonia madagascariensis,Daubentonia madagascariensis,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,17074,17074,NA,same,0,0,1,NA
@@ -391,7 +391,7 @@ raw,Avahi laniger,Avahi laniger,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol
 raw,Avahi occidentalis,Avahi occidentalis,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,345,345,NA,same,0,0,1,NA
 raw,Callimico goeldii,Callimico goeldii,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,340,340,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,295,295,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,192,192,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,192,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1221,1221,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1162,1162,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1354,1354,NA,same,0,0,1,NA
@@ -431,52 +431,51 @@ raw,Saguinus oedipus,Saguinus oedipus,NA,Mesencephalon,Mesencephalon,Mesencephal
 raw,Saimiri sciureus,Saimiri sciureus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,526,526,NA,same,0,0,1,NA
 raw,Tarsius syrichta,Tarsius syrichta,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,197,197,NA,same,0,0,1,NA
 raw,Varecia variegata,Varecia variegata,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1018,1018,NA,same,0,0,1,NA
-raw,Alouatta seniculus,Alouatta seniculus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5699,4150,NA,DIFFERENT,0.271802070538691,-27.1802070538691,0.728197929461309,NA
-raw,Aotus trivirgatus,Aotus trivirgatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1873,1750,NA,DIFFERENT,0.06567004805125468,-6.5670048051254675,0.9343299519487454,NA
+raw,Alouatta seniculus,Alouatta seniculus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5699,5699,NA,same,0,0,1,NA
+raw,Aotus trivirgatus,Aotus trivirgatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1873,1873,NA,same,0,0,1,NA
 raw,Ateles geoffroyi,Ateles geoffroyi,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12438,12438,NA,same,0,0,1,NA
 raw,Avahi laniger,Avahi laniger,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1489,1489,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1383,1383,NA,same,0,0,1,NA
 raw,Callimico goeldii,Callimico goeldii,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1240,1240,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,757,757,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,468,468,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,468,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,7871,7871,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5828,5828,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,6758,6758,NA,same,0,0,1,NA
 raw,Cheirogaleus major,Cheirogaleus major,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,947,947,NA,same,0,0,1,NA
 raw,Cheirogaleus medius,Cheirogaleus medius,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,437,437,NA,same,0,0,1,NA
 raw,Daubentonia madagascariensis,Daubentonia madagascariensis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,6461,6461,NA,same,0,0,1,NA
-raw,Erythrocebus patas,Erythrocebus patas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8738,7900,NA,DIFFERENT,0.09590295262073702,-9.5902952620737,0.904097047379263,NA
+raw,Erythrocebus patas,Erythrocebus patas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8738,8738,NA,same,0,0,1,NA
 raw,Eulemur fulvus,Eulemur fulvus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3328,3328,NA,same,0,0,1,NA
 raw,Galago senegalensis,Galago senegalensis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,672,672,NA,same,0,0,1,NA
 raw,Galagoides demidoff,Galagoides demidoff,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,413,413,NA,same,0,0,1,NA
-raw,Gorilla gorilla,Gorilla gorilla,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,69249,68650,NA,rounding,0.008649944403529293,-0.8649944403529293,0.9913500555964707,NA
-raw,Homo sapiens,Homo sapiens,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,137421,137016.666666667,NA,rounding,0.002942296543708704,-0.2942296543708704,0.9970577034562913,NA
-raw,Hylobates lar,Hylobates lar,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12078,11625,NA,DIFFERENT,0.03750620963735718,-3.750620963735718,0.9624937903626428,NA
+raw,Gorilla gorilla,Gorilla gorilla,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,69249,69249,NA,same,0,0,1,NA
+raw,Homo sapiens,Homo sapiens,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,137421,137421,NA,same,0,0,1,NA
+raw,Hylobates lar,Hylobates lar,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12078,12078,NA,same,0,0,1,NA
 raw,Indri indri,Indri indri,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5504,5504,NA,same,0,0,1,NA
 raw,Lagothrix lagotricha,Lagothrix lagotricha,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,11268,11268,NA,same,0,0,1,NA
 raw,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1165,1165,NA,same,0,0,1,NA
-raw,Lophocebus albigena,Lophocebus albigena,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,10726,11700,NA,DIFFERENT,0.08324786324786325,9.080738392690659,1.0908073839269066,NA
+raw,Lophocebus albigena,Lophocebus albigena,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,10726,10726,NA,same,0,0,1,NA
 raw,Loris tardigradus,Loris tardigradus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,728,728,NA,same,0,0,1,NA
-raw,Macaca mulatta,Macaca mulatta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8965,7233.33333333333,NA,DIFFERENT,0.19315857966164748,-19.31585796616475,0.8068414203383525,NA
+raw,Macaca mulatta,Macaca mulatta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8965,8965,NA,same,0,0,1,NA
 raw,Microcebus murinus,Microcebus murinus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,234,234,NA,same,0,0,1,NA
 raw,Miopithecus talapoin,Miopithecus talapoin,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3374,3374,NA,same,0,0,1,NA
 raw,Nasalis larvatus,Nasalis larvatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12113,12113,NA,same,0,0,1,NA
 raw,Nycticebus coucang,Nycticebus coucang,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1310,1310,NA,same,0,0,1,NA
 raw,Otolemur crassicaudatus,Otolemur crassicaudatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1414,1414,NA,same,0,0,1,NA
-raw,Pan paniscus,Pan paniscus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,NA,44175,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Pan troglodytes,Pan troglodytes,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,43663,47100,NA,DIFFERENT,0.0729723991507431,7.871653344937362,1.0787165334493736,NA
+raw,Pan troglodytes,Pan troglodytes,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,43663,43663,NA,same,0,0,1,NA
 raw,Papio anubis,Papio anubis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,18683,18683,NA,same,0,0,1,NA
 raw,Perodicticus potto,Perodicticus potto,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1699,1699,NA,same,0,0,1,NA
 raw,Piliocolobus badius,Piliocolobus badius,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8648,8648,NA,same,0,0,1,NA
 raw,Pithecia monachus,Pithecia monachus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3908,3908,NA,same,0,0,1,NA
 raw,Plecturocebus moloch,Plecturocebus moloch,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1622,1622,NA,same,0,0,1,NA
-raw,Pongo sp.,Pongo abelii,merge 'Pongo sp.' is a sensu lato mean (Bornean + Sumatran + hybrid); Stephan row is Sumatran,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,NA,49800,NA,volumes_wide_only,NA,NA,NA,NA
-raw,Pongo sp.,Pongo pygmaeus,merge 'Pongo sp.' is a sensu lato mean (Bornean + Sumatran + hybrid); Stephan row is Bornean,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,42900,49800,NA,DIFFERENT,0.13855421686746988,16.083916083916083,1.1608391608391608,NA
+raw,Pongo sp.,Pongo abelii,merge 'Pongo sp.' is a sensu lato mean (Bornean + Sumatran + hybrid); Stephan row is Sumatran,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,NA,42900,NA,volumes_wide_only,NA,NA,NA,NA
+raw,Pongo sp.,Pongo pygmaeus,merge 'Pongo sp.' is a sensu lato mean (Bornean + Sumatran + hybrid); Stephan row is Bornean,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,42900,42900,NA,same,0,0,1,NA
 raw,Propithecus verreauxi,Propithecus verreauxi,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3957,3957,NA,same,0,0,1,NA
 raw,Pygathrix nemaeus,Pygathrix nemaeus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8063,8063,NA,same,0,0,1,NA
 raw,Saguinus midas,Saguinus midas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1061,1061,NA,same,0,0,1,NA
 raw,Saguinus oedipus,Saguinus oedipus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,984,984,NA,same,0,0,1,NA
-raw,Saimiri sciureus,Saimiri sciureus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,2260,2050,NA,DIFFERENT,0.09292035398230089,-9.29203539823009,0.9070796460176991,NA
+raw,Saimiri sciureus,Saimiri sciureus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,2260,2260,NA,same,0,0,1,NA
 raw,Tarsius syrichta,Tarsius syrichta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,428,428,NA,same,0,0,1,NA
 raw,Varecia variegata,Varecia variegata,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,4286,4286,NA,same,0,0,1,NA
 raw,Alouatta seniculus,Alouatta seniculus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1320,1320,NA,same,0,0,1,NA
@@ -486,7 +485,7 @@ raw,Avahi laniger,Avahi laniger,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1
 raw,Avahi occidentalis,Avahi occidentalis,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,476,476,NA,same,0,0,1,NA
 raw,Callimico goeldii,Callimico goeldii,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,281,281,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,221,221,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,133,133,NA,same,0,0,1,NA
+raw,Cebuella pygmaea,Cebuella pygmaea,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,133,NA,NA,Stephan_only,NA,NA,NA,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,890,890,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1189,1189,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1366,1366,NA,same,0,0,1,NA
@@ -532,7 +531,6 @@ raw,Ateles geoffroyi,Ateles geoffroyi,NA,Nucleus dentatus cerebelli,Lateral_cere
 raw,Avahi laniger,Avahi laniger,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,14.46,14.46,NA,same,0,0,1,NA
 raw,Avahi occidentalis,Avahi occidentalis,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,11.3,11.3,NA,same,0,0,1,NA
 raw,Callithrix jacchus,Callithrix jacchus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,7.93,7.93,NA,same,0,0,1,NA
-raw,Callithrix pygmaea,Callithrix pygmaea,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,4.35,4.35,NA,same,0,0,1,NA
 raw,Cebus albifrons,Cebus albifrons,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,99.52,99.52,NA,same,0,0,1,NA
 raw,Cercopithecus ascanius,Cercopithecus ascanius,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,67.67,67.67,NA,same,0,0,1,NA
 raw,Cercopithecus mitis,Cercopithecus mitis,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,82.38,82.38,NA,same,0,0,1,NA
@@ -579,7 +577,7 @@ model,Cercocebus_agilis,Cercocebus_agilis,NA,Preferred brain volume,Preferred_br
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,69112,69112,yes,same,0,0,1,NA
 model,Colobus_angolensis,Colobus_angolensis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,71815,71815,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,3185.3,3185.3,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,401785,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,401785,401785,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,1357820,1357820,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,88803,88803,yes,same,0,0,1,NA
 model,Hylobates_muelleri,Hylobates_muelleri,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,98263,98263,yes,same,0,0,1,NA
@@ -600,8 +598,8 @@ model,Saguinus_oedipus,Saguinus_oedipus,NA,Preferred brain volume,Preferred_brai
 model,Symphalangus_syndactylus,Symphalangus_syndactylus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,133880,133880,yes,same,0,0,1,NA
 model,Trachypithecus_francoisi,Trachypithecus_francoisi,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,98552,98552,yes,same,0,0,1,NA
 model,Varecia_variegata,Varecia_variegata,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,30405,30405,yes,same,0,0,1,NA
-model,Alouatta_seniculus,Alouatta_seniculus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,50193.05,37400,yes,DIFFERENT,0.2548769202110651,-25.48769202110651,0.7451230797889349,NA
-model,Aotus_trivirgatus,Aotus_trivirgatus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,16505.79,19125,yes,DIFFERENT,0.13695215686274506,15.868431623084984,1.1586843162308498,NA
+model,Alouatta_seniculus,Alouatta_seniculus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,50193.05,49009,yes,DIFFERENT,0.023589919321499748,-2.3589919321499746,0.9764100806785002,NA
+model,Aotus_trivirgatus,Aotus_trivirgatus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,16505.79,16195,yes,DIFFERENT,0.01882915025575879,-1.8829150255758789,0.9811708497442412,NA
 model,Avahi_occidentalis,Avahi_occidentalis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,9124,9256.8,yes,DIFFERENT,0.014346210353469804,1.4555019728189311,1.0145550197281894,NA
 model,Callimico_goeldii,Callimico_goeldii,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,10510,10510,yes,same,0,0,1,NA
 model,Callithrix_jacchus,Callithrix_jacchus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,7335.91,7241,yes,DIFFERENT,0.012937726880509693,-1.2937726880509692,0.9870622731194904,NA
@@ -609,13 +607,13 @@ model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Preferred brain volume,Pr
 model,Cheirogaleus_major,Cheirogaleus_major,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,6563.71,6373,yes,DIFFERENT,0.02905521420050551,-2.905521420050551,0.9709447857994945,NA
 model,Cheirogaleus_medius,Cheirogaleus_medius,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,3030.89,2961,yes,DIFFERENT,0.02305923342648525,-2.305923342648525,0.9769407665735147,NA
 model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,43581.08,42611,yes,DIFFERENT,0.022259200552166254,-2.2259200552166254,0.9777407994478338,NA
-model,Erythrocebus_patas,Erythrocebus_patas,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,103167,89000,yes,DIFFERENT,0.13732104258144562,-13.732104258144561,0.8626789574185544,NA
+model,Erythrocebus_patas,Erythrocebus_patas,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,103167,103167,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,22490.35,22106,yes,DIFFERENT,0.01708955174108,-1.708955174108,0.98291044825892,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,4633.2,4512,yes,DIFFERENT,0.02615902615902612,-2.615902615902612,0.9738409738409739,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,97490.35,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,97490.35,95503,yes,DIFFERENT,0.0203850945247402,-2.03850945247402,0.9796149054752598,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,7335.91,7175,yes,DIFFERENT,0.021934565718499797,-2.1934565718499797,0.9780654342815002,NA
 model,Macaca_fascicularis,Macaca_fascicularis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,55598.46,55600,yes,rounding,2.769784172663441e-5,0.002769860891832028,1.0000276986089183,NA
-model,Macaca_mulatta,Macaca_mulatta,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,89768.34,84880,yes,DIFFERENT,0.054455056203556805,-5.44550562035568,0.9455449437964432,NA
+model,Macaca_mulatta,Macaca_mulatta,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,89768.34,87896,yes,DIFFERENT,0.020857464892410804,-2.0857464892410804,0.9791425351075892,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,1718.15,1680,yes,DIFFERENT,0.022204114891016553,-2.220411489101655,0.9777958851089834,NA
 model,Miopithecus_talapoin,Miopithecus_talapoin,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,38610.04,37776,yes,DIFFERENT,0.021601635222341153,-2.1601635222341153,0.9783983647776588,NA
 model,Nasalis_larvatus,Nasalis_larvatus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,92797,92797,yes,same,0,0,1,NA
@@ -623,12 +621,12 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Preferred brain volume,Preferred_
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,9942.08,9668,yes,DIFFERENT,0.027567671955968966,-2.7567671955968964,0.972432328044031,NA
 model,Papio_anubis,Papio_anubis,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,194015.44,190957,yes,DIFFERENT,0.01576390002775038,-1.5763900027750382,0.9842360999722496,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,33783.78,32867,yes,DIFFERENT,0.027136691039309362,-2.713669103930936,0.9728633089606906,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,18339.77,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,18339.77,17944,yes,DIFFERENT,0.021579878046453168,-2.157987804645317,0.9784201219535469,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,25772.2,25194,yes,DIFFERENT,0.022435026889439037,-2.2435026889439036,0.977564973110561,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,72530,72530,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,9942.08,9569,yes,DIFFERENT,0.037525346808716074,-3.752534680871608,0.9624746531912839,NA
-model,Saimiri_sciureus,Saimiri_sciureus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,23166.02,23100,yes,rounding,0.0028498637228147276,-0.2849863722814728,0.9971501362771853,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,3474.9,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Saimiri_sciureus,Saimiri_sciureus,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,23166.02,22572,yes,DIFFERENT,0.025641866837721818,-2.564186683772182,0.9743581331622782,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Preferred brain volume,Preferred_brain_volume,Preferred_brain_volume,1,report_only,3474.9,3393,yes,DIFFERENT,0.023569023569023594,-2.3569023569023595,0.9764309764309764,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,151,151,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,27.6,27.6,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,16.9,NA,yes,Stephan_only,NA,NA,NA,NA
@@ -636,7 +634,7 @@ model,Cebus_albifrons,Cebus_albifrons,NA,Corpus geniculatum laterale,LGN_Sousa,C
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,150,167.2,yes,DIFFERENT,0.10287081339712913,11.46666666666666,1.1146666666666667,NA
 model,Colobus_angolensis,Colobus_angolensis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,103,103,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,10.9,10.9,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,308.5,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,308.5,300.1,yes,DIFFERENT,0.027228525121555842,-2.722852512155584,0.9727714748784442,NA
 model,Homo_sapiens,Homo_sapiens,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,335,335,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,166.2,166.2,yes,same,0,0,1,NA
 model,Hylobates_muelleri,Hylobates_muelleri,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,162,161.6,yes,rounding,0.002469135802469171,-0.2469135802469171,0.9975308641975308,NA
@@ -661,7 +659,7 @@ model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Corpus genicu
 model,Erythrocebus_patas,Erythrocebus_patas,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,267,266.8,yes,rounding,7.490636704119424e-4,-0.07490636704119424,0.9992509363295881,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,51.8,51.8,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,16,16,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,164,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,164,164,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,15.6,15.6,yes,same,0,0,1,NA
 model,Macaca_fascicularis,Macaca_fascicularis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,91.9,91.9,yes,same,0,0,1,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,158,158,yes,same,0,0,1,NA
@@ -672,12 +670,12 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Corpus geniculatum laterale,LGN_S
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,23.2,23.2,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,395,395,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,76.3,76.3,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,54.2,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,54.2,54.2,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,64.5,64.5,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,115,114.8,yes,rounding,0.0017391304347826335,-0.17391304347826333,0.9982608695652173,NA
 model,Saguinus_midas,Saguinus_midas,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,36,36.8,yes,DIFFERENT,0.021739130434782532,2.2222222222222143,1.0222222222222221,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,62.9,62.9,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,20.8,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,20.8,20.8,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,502,502,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,50.2,50.2,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,3015,3015,yes,same,0,0,1,NA
@@ -695,13 +693,13 @@ model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Amygdala,Amygdala,Amygdal
 model,Microcebus_murinus,Microcebus_murinus,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,36.4,36.4,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,251,251,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,227,227,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,49.8,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,49.8,49.8,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,807,807,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,74.5,NA,yes,Stephan_only,NA,NA,NA,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,25.8,25.8,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,567,567,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,17,17,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,2604,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,2604,2604,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,4711,4711,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,715,715,yes,same,0,0,1,NA
 model,Lophocebus_albigena,Lophocebus_albigena,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,674,674,yes,same,0,0,1,NA
@@ -715,7 +713,7 @@ model,Avahi_occidentalis,Avahi_occidentalis,NA,Pallidum,Pallidum,Pallidum_Vol.mm
 model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,405,405,yes,same,0,0,1,NA
 model,Cheirogaleus_major,Cheirogaleus_major,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,31.6,31.6,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,212,212,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,845,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,845,845,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,55.2,55.2,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,10.7,10.7,yes,same,0,0,1,NA
 model,Nasalis_larvatus,Nasalis_larvatus,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,550,550,yes,same,0,0,1,NA
@@ -723,7 +721,7 @@ model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Pallidum,Pallidum,Palli
 model,Papio_anubis,Papio_anubis,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,1147,1147,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,263,263,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,169,169,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,16.1,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,16.1,16.1,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,395.3,395.3,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,15799,15799,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,150.6,150.6,yes,same,0,0,1,NA
@@ -740,14 +738,14 @@ model,Callithrix_jacchus,Callithrix_jacchus,NA,Neocortex white,NeoW_Frahm,Neocor
 model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,13052,13052,yes,same,0,0,1,NA
 model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,5053,5053,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,3035,3035,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,16727,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,16727,16727,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,476.6,476.6,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,65.31,65.31,yes,same,0,0,1,NA
 model,Nycticebus_coucang,Nycticebus_coucang,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,1240,1240,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,54416,54416,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,3335,3335,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,3710,3710,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,137,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,137,137,yes,same,0,0,1,NA
 model,Alouatta_caraya,Alouatta_caraya,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,272,272,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,416,416,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,38,NA,yes,Stephan_only,NA,NA,NA,NA
@@ -757,7 +755,7 @@ model,Cercocebus_agilis,Cercocebus_agilis,NA,Insular cortex (grey),Total_insula_
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,614,614,yes,same,0,0,1,NA
 model,Colobus_angolensis,Colobus_angolensis,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,222,222,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,12,12,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,2146,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,2146,2145.5,yes,rounding,2.3299161230195712e-4,-0.023299161230195712,0.999767008387698,NA
 model,Homo_sapiens,Homo_sapiens,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,6165,6479,yes,DIFFERENT,0.04846426917734218,5.093268450932684,1.0509326845093268,NA
 model,Hylobates_lar,Hylobates_lar,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,289,289,yes,same,0,0,1,NA
 model,Hylobates_muelleri,Hylobates_muelleri,NA,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,539,539,yes,same,0,0,1,NA
@@ -784,7 +782,7 @@ model,Avahi_laniger,Avahi_laniger,NA,Nucleus subthalamicus Luysi,Nucleus_subthal
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.95,1.95,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,41.7,41.7,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.4,1.4,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,178,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,178,178,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,469,469,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,61.6,61.6,yes,same,0,0,1,NA
 model,Lophocebus_albigena,Lophocebus_albigena,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,52.4,52.4,yes,same,0,0,1,NA
@@ -797,7 +795,7 @@ model,Avahi_occidentalis,Avahi_occidentalis,NA,Nucleus subthalamicus Luysi,Nucle
 model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,25.7,25.7,yes,same,0,0,1,NA
 model,Cheirogaleus_major,Cheirogaleus_major,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,2.27,2.27,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,13.9,13.9,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,63.8,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,63.8,63.8,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,2.91,2.91,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,0.65,0.65,yes,same,0,0,1,NA
 model,Nasalis_larvatus,Nasalis_larvatus,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,37.2,37.2,yes,same,0,0,1,NA
@@ -805,13 +803,13 @@ model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Nucleus subthalamicus L
 model,Papio_anubis,Papio_anubis,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,94.7,94.7,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,20,20,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,11.5,11.5,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.09,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,1.09,1.09,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,570,570,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,105,NA,yes,Stephan_only,NA,NA,NA,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,21.8,21.8,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,549,549,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,18.4,18.4,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,2471,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,2471,2471,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,7008,7008,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,693,693,yes,same,0,0,1,NA
 model,Lophocebus_albigena,Lophocebus_albigena,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,708,708,yes,same,0,0,1,NA
@@ -824,7 +822,7 @@ model,Avahi_occidentalis,Avahi_occidentalis,NA,Capsula interna,Capsula_interna,C
 model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,421,421,yes,same,0,0,1,NA
 model,Cheirogaleus_major,Cheirogaleus_major,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,48.6,48.6,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,248,248,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,612,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,612,612,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,63,63,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,9.08,9.08,yes,same,0,0,1,NA
 model,Nasalis_larvatus,Nasalis_larvatus,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,564,564,yes,same,0,0,1,NA
@@ -832,14 +830,14 @@ model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Capsula interna,Capsula
 model,Papio_anubis,Papio_anubis,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,1257,1257,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,324,324,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,132,132,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,16.7,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,16.7,16.7,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,4950,4950,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,524,524,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,174,174,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,3258,3258,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,2733,2733,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,169,169,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,14567,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,14567,14567,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,28689,28689,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,4784,4784,yes,same,0,0,1,NA
 model,Indri_indri,Indri_indri,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,1855,1855,yes,same,0,0,1,NA
@@ -863,7 +861,7 @@ model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Striatum,Stri
 model,Erythrocebus_patas,Erythrocebus_patas,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,3624,3624,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,1215,1215,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,210,210,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,4947,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,4947,4947,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,366,366,yes,same,0,0,1,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,4032,4032,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,85.7,85.7,yes,same,0,0,1,NA
@@ -873,19 +871,19 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Striatum,Striatum,Striatum_Vol.mm
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,556,556,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,7182,7182,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,1918,1918,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,920,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,920,920,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,1411,1411,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,3166,3166,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,471,471,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,1042,1042,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,133,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Striatum,Striatum,Striatum_Vol.mm3,1,study3,133,133,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,3753,3753,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,475,475,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,363,363,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,3764,3764,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4232,4232,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,214,214,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,9129,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,9129,12062,yes,DIFFERENT,0.2431603382523628,32.12838207908862,1.3212838207908861,NA
 model,Homo_sapiens,Homo_sapiens,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,15247.5,14787,yes,DIFFERENT,0.030201672405312345,-3.0201672405312348,0.9697983275946876,NA
 model,Hylobates_lar,Hylobates_lar,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4086.7,4574,yes,DIFFERENT,0.10653694796676873,11.92404629652287,1.1192404629652286,NA
 model,Indri_indri,Indri_indri,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1648,1648,yes,same,0,0,1,NA
@@ -909,7 +907,7 @@ model,Cheirogaleus_medius,Cheirogaleus_medius,NA,Area striata grey,ASG_Sousa,Are
 model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1113,1113,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1253,1253,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,301,301,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4856,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,4856,4856,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,326,326,yes,same,0,0,1,NA
 model,Macaca_fascicularis,Macaca_fascicularis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,2713.3,NA,yes,Stephan_only,NA,NA,NA,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,5343,5343,yes,same,0,0,1,NA
@@ -919,11 +917,11 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Area striata grey,ASG_Sousa,Area_
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,479,479,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,10001,10001,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1679,1679,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1201,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1201,1201,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1106,1106,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,841,841,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,1884,1884,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,349,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,349,349,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,2139,2139,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,30630,30630,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,1417,1417,yes,same,0,0,1,NA
@@ -940,21 +938,21 @@ model,Callithrix_jacchus,Callithrix_jacchus,NA,Neocortex grey,NeoG_Frahm,Neocort
 model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,32114,32114,yes,same,0,0,1,NA
 model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,17074,17074,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,9172,9172,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,49147,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,49147,49147,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,2805,2805,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,674.2,674.2,yes,same,0,0,1,NA
 model,Nycticebus_coucang,Nycticebus_coucang,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,4952,4952,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,85726,85726,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,9835,9835,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,11832,11832,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,1631,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,1631,1631,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1482,1482,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,343,343,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,192,192,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1221,1221,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1354,1354,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,135,135,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,4352,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,4352,4352,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,8087,8087,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1459,1459,yes,same,0,0,1,NA
 model,Indri_indri,Indri_indri,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,978,978,yes,same,0,0,1,NA
@@ -978,7 +976,7 @@ model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Mesencephalon
 model,Erythrocebus_patas,Erythrocebus_patas,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1621,1621,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,590,590,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,205,205,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1582,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1582,1582,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,260,260,yes,same,0,0,1,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1380,1380,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,85.2,85.2,yes,same,0,0,1,NA
@@ -988,33 +986,32 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Mesencephalon,Mesencephalon,Mesen
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,384,384,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,2711,2711,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,745,745,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,530,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,530,530,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,780,780,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,1345,1345,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,332,332,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,526,526,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,197,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,197,197,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12438,12438,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1489,1489,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,468,468,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,7871,7871,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,6758,6758,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,413,413,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,69249,NA,yes,Stephan_only,NA,NA,NA,NA
-model,Homo_sapiens,Homo_sapiens,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,137421,137016.666666667,yes,rounding,0.002942296543708704,-0.2942296543708704,0.9970577034562913,NA
-model,Hylobates_lar,Hylobates_lar,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12078,11625,yes,DIFFERENT,0.03750620963735718,-3.750620963735718,0.9624937903626428,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,69249,69249,yes,same,0,0,1,NA
+model,Homo_sapiens,Homo_sapiens,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,137421,137421,yes,same,0,0,1,NA
+model,Hylobates_lar,Hylobates_lar,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12078,12078,yes,same,0,0,1,NA
 model,Indri_indri,Indri_indri,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5504,5504,yes,same,0,0,1,NA
-model,Lophocebus_albigena,Lophocebus_albigena,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,10726,11700,yes,DIFFERENT,0.08324786324786325,9.080738392690659,1.0908073839269066,NA
+model,Lophocebus_albigena,Lophocebus_albigena,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,10726,10726,yes,same,0,0,1,NA
 model,Loris_tardigradus,Loris_tardigradus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,728,728,yes,same,0,0,1,NA
-model,Pan_paniscus,Pan_paniscus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,NA,44175,yes,volumes_wide_only,NA,NA,NA,NA
-model,Pan_troglodytes,Pan_troglodytes,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,43663,47100,yes,DIFFERENT,0.0729723991507431,7.871653344937362,1.0787165334493736,NA
+model,Pan_troglodytes,Pan_troglodytes,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,43663,43663,yes,same,0,0,1,NA
 model,Perodicticus_potto,Perodicticus_potto,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1699,1699,yes,same,0,0,1,NA
 model,Piliocolobus_badius,Piliocolobus_badius,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8648,8648,yes,same,0,0,1,NA
 model,Pongo_pygmaeus,Pongo_pygmaeus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,42900,NA,yes,Stephan_only,NA,NA,NA,NA
 model,Saguinus_oedipus,Saguinus_oedipus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,984,984,yes,same,0,0,1,NA
 model,Varecia_variegata,Varecia_variegata,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,4286,4286,yes,same,0,0,1,NA
-model,Alouatta_seniculus,Alouatta_seniculus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5699,4150,yes,DIFFERENT,0.271802070538691,-27.1802070538691,0.728197929461309,NA
-model,Aotus_trivirgatus,Aotus_trivirgatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1873,1750,yes,DIFFERENT,0.06567004805125468,-6.5670048051254675,0.9343299519487454,NA
+model,Alouatta_seniculus,Alouatta_seniculus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,5699,5699,yes,same,0,0,1,NA
+model,Aotus_trivirgatus,Aotus_trivirgatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1873,1873,yes,same,0,0,1,NA
 model,Avahi_occidentalis,Avahi_occidentalis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1383,1383,yes,same,0,0,1,NA
 model,Callimico_goeldii,Callimico_goeldii,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1240,1240,yes,same,0,0,1,NA
 model,Callithrix_jacchus,Callithrix_jacchus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,757,757,yes,same,0,0,1,NA
@@ -1022,12 +1019,12 @@ model,Cercopithecus_ascanius,Cercopithecus_ascanius,NA,Cerebellum,Cerebellum,Cer
 model,Cheirogaleus_major,Cheirogaleus_major,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,947,947,yes,same,0,0,1,NA
 model,Cheirogaleus_medius,Cheirogaleus_medius,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,437,437,yes,same,0,0,1,NA
 model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,6461,6461,yes,same,0,0,1,NA
-model,Erythrocebus_patas,Erythrocebus_patas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8738,7900,yes,DIFFERENT,0.09590295262073702,-9.5902952620737,0.904097047379263,NA
+model,Erythrocebus_patas,Erythrocebus_patas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8738,8738,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3328,3328,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,672,672,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,11268,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,11268,11268,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1165,1165,yes,same,0,0,1,NA
-model,Macaca_mulatta,Macaca_mulatta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8965,7233.33333333333,yes,DIFFERENT,0.19315857966164748,-19.31585796616475,0.8068414203383525,NA
+model,Macaca_mulatta,Macaca_mulatta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8965,8965,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,234,234,yes,same,0,0,1,NA
 model,Miopithecus_talapoin,Miopithecus_talapoin,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3374,3374,yes,same,0,0,1,NA
 model,Nasalis_larvatus,Nasalis_larvatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,12113,12113,yes,same,0,0,1,NA
@@ -1035,19 +1032,19 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Cerebellum,Cerebellum,Cerebellum_
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1414,1414,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,18683,18683,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3908,3908,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1622,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1622,1622,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,3957,3957,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,8063,8063,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,1061,1061,yes,same,0,0,1,NA
-model,Saimiri_sciureus,Saimiri_sciureus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,2260,2050,yes,DIFFERENT,0.09292035398230089,-9.29203539823009,0.9070796460176991,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,428,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Saimiri_sciureus,Saimiri_sciureus,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,2260,2260,yes,same,0,0,1,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,428,428,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1366,1366,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,526,526,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,133,133,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,890,890,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1366,1366,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,152,152,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,4781,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,4781,4781,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,10287,10287,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,2673,2673,yes,same,0,0,1,NA
 model,Indri_indri,Indri_indri,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1520,1520,yes,same,0,0,1,NA
@@ -1071,7 +1068,7 @@ model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Hippocampus,H
 model,Erythrocebus_patas,Erythrocebus_patas,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1591,1591,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,752,752,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,261,261,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1586,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1586,1586,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,392,392,yes,same,0,0,1,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1353,1353,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,100,100,yes,same,0,0,1,NA
@@ -1081,19 +1078,19 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Hippocampus,Hippocampus,Hippocamp
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,461,461,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,3398,3398,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,834,834,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,588,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,588,588,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,1043,1043,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,2295,2295,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,280,280,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,352,352,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,153,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Hippocampus,Hippocampus,Hippocampus_Vol.mm3,1,study3,153,153,yes,same,0,0,1,NA
 model,Ateles_geoffroyi,Ateles_geoffroyi,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,114.79,114.79,yes,same,0,0,1,NA
 model,Avahi_laniger,Avahi_laniger,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,14.46,14.46,yes,same,0,0,1,NA
 model,Callithrix_pygmaea,Callithrix_pygmaea,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,4.35,4.35,yes,same,0,0,1,NA
 model,Cebus_albifrons,Cebus_albifrons,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,99.52,99.52,yes,same,0,0,1,NA
 model,Cercopithecus_mitis,Cercopithecus_mitis,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,82.38,82.38,yes,same,0,0,1,NA
 model,Galagoides_demidoff,Galagoides_demidoff,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,3.06,3.06,yes,same,0,0,1,NA
-model,Gorilla_gorilla,Gorilla_gorilla,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,534.6,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Gorilla_gorilla,Gorilla_gorilla,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,534.6,534.6,yes,same,0,0,1,NA
 model,Homo_sapiens,Homo_sapiens,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,1166.9,1166.9,yes,same,0,0,1,NA
 model,Hylobates_lar,Hylobates_lar,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,141.08,141.08,yes,same,0,0,1,NA
 model,Indri_indri,Indri_indri,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,56.31,56.31,yes,same,0,0,1,NA
@@ -1115,7 +1112,7 @@ model,Daubentonia_madagascariensis,Daubentonia_madagascariensis,NA,Nucleus denta
 model,Erythrocebus_patas,Erythrocebus_patas,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,126.31,126.31,yes,same,0,0,1,NA
 model,Eulemur_fulvus,Eulemur_fulvus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,32.05,32.05,yes,same,0,0,1,NA
 model,Galago_senegalensis,Galago_senegalensis,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,4.4,4.4,yes,same,0,0,1,NA
-model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,108.57,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Lagothrix_lagotricha,Lagothrix_lagotricha,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,108.57,108.57,yes,same,0,0,1,NA
 model,Lepilemur_ruficaudatus,Lepilemur_ruficaudatus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,9.35,9.35,yes,same,0,0,1,NA
 model,Macaca_mulatta,Macaca_mulatta,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,106.94,106.94,yes,same,0,0,1,NA
 model,Microcebus_murinus,Microcebus_murinus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,2.11,2.11,yes,same,0,0,1,NA
@@ -1125,9 +1122,9 @@ model,Nycticebus_coucang,Nycticebus_coucang,NA,Nucleus dentatus cerebelli,Latera
 model,Otolemur_crassicaudatus,Otolemur_crassicaudatus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,9.64,9.64,yes,same,0,0,1,NA
 model,Papio_anubis,Papio_anubis,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,220.35,220.35,yes,same,0,0,1,NA
 model,Pithecia_monachus,Pithecia_monachus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,53.67,53.67,yes,same,0,0,1,NA
-model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,21.24,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Plecturocebus_moloch,Plecturocebus_moloch,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,21.24,21.24,yes,same,0,0,1,NA
 model,Propithecus_verreauxi,Propithecus_verreauxi,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,39.46,39.46,yes,same,0,0,1,NA
 model,Pygathrix_nemaeus,Pygathrix_nemaeus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,137.05,137.05,yes,same,0,0,1,NA
 model,Saguinus_midas,Saguinus_midas,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,7.75,7.75,yes,same,0,0,1,NA
 model,Saimiri_sciureus,Saimiri_sciureus,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,27.2,27.2,yes,same,0,0,1,NA
-model,Tarsius_syrichta,Tarsius_syrichta,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,3.37,NA,yes,Stephan_only,NA,NA,NA,NA
+model,Tarsius_syrichta,Tarsius_syrichta,NA,Nucleus dentatus cerebelli,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,1,study3,3.37,3.37,yes,same,0,0,1,NA

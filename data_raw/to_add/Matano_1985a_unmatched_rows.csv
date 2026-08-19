@@ -1,4 +1,5 @@
 "Species","Species_Matano1985a","matano_accepted_name","target_species_raw","target_species","matched_in_Stephan","Body_weight_current","Body_weight_current_source","code_Matano1985a","Body_weight_1985a","Cerebellar_nuclei_total","Interpositus_cerebellar_nuclei","Lateral_cerebellar_nuclei","Medial_cerebellar_nuclei","Number_cerebellar_nuclei"
+"Callithrix pygmaea","Cebuella pygmaea","Callithrix pygmaea","Callithrix_pygmaea","Callithrix_pygmaea",FALSE,140,"Stephan_1981","3289",120,11.48,3.2,4.35,3.93,2
 "Crocidura flavescens","Crocidura flavescens","Crocidura flavescens","Crocidura_flavescens","Crocidura_flavescens",FALSE,28,"Stephan_1981","943",33.1,1.17,0.42,0.47,0.27,1
 "Crocidura russula","Crocidura r. russula","Crocidura russula","Crocidura_russula","Crocidura_russula",FALSE,11,"Stephan_1981","1070",11.1,0.58,0.23,0.23,0.12,1
 "Echinops telfairi","Echinops telfairi","Echinops telfairi","Echinops_telfairi","Echinops_telfairi",FALSE,87.5,"Stephan_1981","585",87.5,1.71,0.87,0.46,0.39,1

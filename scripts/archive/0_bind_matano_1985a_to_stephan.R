@@ -1,3 +1,32 @@
+# =============================================================================
+# ARCHIVED 2026-08-18 -- DO NOT RUN. Its output is already committed.
+#
+# WHAT IT DID WRONG
+#   Line ~84 renamed Callithrix_pygmaea -> Cebuella_pygmaea *before* joining,
+#   then wrote the result back over data_raw/Stephan_primates.csv in place.
+#   The rename broke the script's own join key, so the pygmy marmoset lost its
+#   entire Matano block:
+#       committed:  "Callithrix_pygmaea",...,"Cebuella pygmaea","3289",120,11.48,3.2,4.35,3.93,2
+#       after run:  "Cebuella_pygmaea", ...,,,,,,,,
+#   It also knocked that row off species.nwk (tip label is Callithrix_pygmaea)
+#   and out of volumes_wide_select.csv, where it surfaced as a phantom
+#   "species only in volumes_wide". One rename, three failures downstream.
+#
+#   Note the taxonomy while you are here: the accepted name for the pygmy
+#   marmoset is Cebuella pygmaea. It is NOT Callicebus -- that genus is the
+#   titi monkeys, and this file's own manual_name_map contains the unrelated
+#   Callicebus_moloch -> Plecturocebus_moloch two lines from the rename.
+#
+# THE DATA IS NOT LOST. The Matano 1985a columns (including
+#   Lateral_cerebellar_nuclei, one of the 14 study-3 response regions) are
+#   already bound into the committed data_raw/Stephan_primates.csv. Nothing
+#   needs re-running. If you ever must redo the bind, do the join FIRST and
+#   never write back to the source file -- write a new file.
+#
+# Species labels are now declared once, in R/species_aliases.R, keyed on
+# species.nwk tip labels. Do not add a rename to a data-loading script.
+# =============================================================================
+
 # Bind Matano 1985a cerebellar nuclei data onto Stephan_primates.csv.
 # The join is by species.  Name changes/synonyms are handled with species_key.csv
 # plus a few manual mappings for names used in the current Stephan_primates.csv.
@@ -77,6 +106,10 @@ species_key_path <- first_existing(
 
 # ---------- Read data ----------
 stephan <- read_csv_plain(stephan_path)
+
+# Rename Callithrix_pygmaea to current accepted name
+stephan$Species[stephan$Species == "Callithrix_pygmaea"] <- "Cebuella_pygmaea"
+
 # Matano file contains a Latin-1 character in at least one non-primate species name.
 matano_raw <- read_csv_plain(matano_path, encoding = "latin1")
 species_key <- read_csv_plain(species_key_path)

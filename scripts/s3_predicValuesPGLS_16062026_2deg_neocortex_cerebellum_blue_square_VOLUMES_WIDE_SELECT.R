@@ -68,6 +68,71 @@ data_clean <- volumes_wide_select %>%
   mutate(Species = gsub(" ", "_", trimws(Species)))
 
 # ------------------------------------------------------------
+# TAXON LABEL RESOLUTION
+# ------------------------------------------------------------
+# Not every volumes_wide_select.csv label matches a species.nwk tip. Without
+# this block those rows fail the %in% TAXA filter below and vanish with no
+# record -- six species were being lost that way (Gorilla, Tarsius, Lagothrix,
+# Callicebus/Plecturocebus, and both Pongo tips), which is why the wide fits
+# ran on 53 species while the Stephan fits ran on 59.
+#
+# Two kinds of entry, kept apart because they carry different weight:
+#
+#   wide_relabel  the same taxon under an outdated spelling. Lossless; no
+#                 taxonomic claim is being made.
+#   wide_resolve  a genus-level indeterminate label ("Genus sp.") assigned to
+#                 the genus's single tree tip. This IS a claim. It is only
+#                 admissible where the merge registry records a 1:1
+#                 modern_equivalent for the concept, in
+#                 Evo-M1-Trait-Data/_keys/specimen_crosswalk/
+#                 taxon_concept_registry.csv.
+#
+# Pongo is deliberately absent. 'Pongo pygmaeus (s.l.)' carries
+# decomposable = FALSE and modern_equivalent = NA in that registry: the merge's
+# 'Pongo sp.' row is a pooled Bornean + Sumatran (+ hybrid) mean, and the
+# consumer contract forbids rewriting it to a modern species. It needs its own
+# tip, not a relabel.
+#
+# BRIDGE: the durable fix is upstream in the merge. Delete entries here as
+# upstream adopts them -- the `unused` message says when one has gone dead.
+
+wide_relabel <- c(
+  "Lagothrix_lagothricha" = "Lagothrix_lagotricha",   # orthographic variant
+  "Callicebus_moloch"     = "Plecturocebus_moloch"    # genus reassignment
+)
+
+wide_resolve <- c(
+  "Gorilla_sp." = "Gorilla_gorilla",   # 7/12 compared cells identical to Stephan
+  "Tarsius_sp." = "Tarsius_syrichta"   # 14/14 compared cells identical to Stephan
+)
+
+wide_to_tip <- c(wide_relabel, wide_resolve)
+
+# A mistyped target would silently no-op -- exactly the failure this block exists
+# to prevent -- so fail loudly instead.
+stopifnot(all(wide_to_tip %in% tr$tip.label))
+
+unused <- setdiff(names(wide_to_tip), data_clean$Species)
+if (length(unused))
+  message("wide_to_tip: ", length(unused), " entry(ies) matched no row -- ",
+          "upstream may have fixed these; consider deleting: ",
+          paste(unused, collapse = ", "))
+
+hit <- data_clean$Species %in% names(wide_to_tip)
+if (any(hit)) {
+  clash <- intersect(unname(wide_to_tip[data_clean$Species[hit]]),
+                     data_clean$Species[!hit])
+  if (length(clash))
+    stop("Relabelling would collide with an existing row: ",
+         paste(clash, collapse = ", "),
+         ". Two distinct wide rows would collapse onto one tip -- resolve upstream.")
+  message("Relabelled ", sum(hit), " wide row(s): ",
+          paste(data_clean$Species[hit], "->",
+                unname(wide_to_tip[data_clean$Species[hit]]), collapse = "; "))
+  data_clean$Species[hit] <- unname(wide_to_tip[data_clean$Species[hit]])
+}
+
+# ------------------------------------------------------------
 # TAXON SELECTION
 # ------------------------------------------------------------
 # volumes_wide_select.csv carries the wider Stephan-Frahm-Baron mammal series,

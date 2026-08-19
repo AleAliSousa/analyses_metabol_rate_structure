@@ -6,7 +6,7 @@
 "Avahi occidentalis","Avahi l. occidentalis","Avahi occidentalis","Avahi_occidentalis","Avahi_occidentalis",TRUE,860,"Stephan_1981","3244",860,29.66,10.18,11.3,8.18,1
 "Callicebus moloch","Callicebus moloch","Callicebus moloch","Callicebus_moloch","Plecturocebus_moloch",TRUE,900,"Stephan_1981","3327",900,61.41,19.47,21.24,20.7,2
 "Callithrix jacchus","Callithrix jacchus","Callithrix jacchus","Callithrix_jacchus","Callithrix_jacchus",TRUE,280,"Stephan_1981","3287",280,20.96,5.44,7.93,7.59,2
-"Callithrix pygmaea","Cebuella pygmaea","Callithrix pygmaea","Callithrix_pygmaea","Callithrix_pygmaea",TRUE,140,"Stephan_1981","3289",120,11.48,3.2,4.35,3.93,2
+"Callithrix pygmaea","Cebuella pygmaea","Callithrix pygmaea","Callithrix_pygmaea","Callithrix_pygmaea",FALSE,140,"Stephan_1981","3289",120,11.48,3.2,4.35,3.93,2
 "Cebus albifrons","Cebus albifrons","Cebus albifrons","Cebus_albifrons","Cebus_albifrons",TRUE,3100,"Stephan_1981","3317",3100,173.18,38.98,99.52,34.68,1
 "Cercopithecus ascanius","Cercopithecus ascanius","Cercopithecus ascanius","Cercopithecus_ascanius","Cercopithecus_ascanius",TRUE,3400,"Stephan_1981","3433",3400,143.98,41.7,67.67,34.61,2
 "Cercopithecus mitis","Cercopithecus mitis","Cercopithecus mitis","Cercopithecus_mitis","Cercopithecus_mitis",TRUE,6300,"Stephan_1981","3453",6300,171.16,54.55,82.38,34.23,1
