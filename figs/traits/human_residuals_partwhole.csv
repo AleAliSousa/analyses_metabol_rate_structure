@@ -1,0 +1,55 @@
+"Region","Model","Residual"
+"Medulla_oblongata","OLS",-0.234894274817567
+"Cerebellum","OLS",0.0305428821508142
+"Mesencephalon","OLS",-0.0497075436421373
+"Diencephalon","OLS",-0.188369664498117
+"Telencephalon","OLS",0.0382981052337836
+"Corpus geniculatum laterale","OLS",-0.487120968877046
+"Amygdala","OLS",-0.185135271529254
+"Pallidum","OLS",-0.280229316645127
+"Neocortex white","OLS",-0.220896476476513
+"Insular cortex (grey)","OLS",-0.0724821809874512
+"Nucleus subthalamicus Luysi","OLS",-0.13647050606307
+"Capsula interna","OLS",-0.0860498961084657
+"Striatum","OLS",-0.229997952041593
+"Area striata grey","OLS",-0.340428973710796
+"Neocortex grey","OLS",-0.0116029097703843
+"Mesencephalon","OLS",-0.0497075436421373
+"Cerebellum","OLS",0.0305428821508142
+"Hippocampus","OLS",-0.0159638837915859
+"Medulla_oblongata","PGLS_ML",-0.350317060757186
+"Cerebellum","PGLS_ML",-0.146751920799202
+"Mesencephalon","PGLS_ML",-0.104635638014499
+"Diencephalon","PGLS_ML",-0.274504574843149
+"Telencephalon","PGLS_ML",0.208845624314924
+"Corpus geniculatum laterale","PGLS_ML",-0.438518846655009
+"Amygdala","PGLS_ML",-0.151295227679345
+"Pallidum","PGLS_ML",-0.361911437256627
+"Neocortex white","PGLS_ML",-0.0723350357995125
+"Insular cortex (grey)","PGLS_ML",-0.0617032385301073
+"Nucleus subthalamicus Luysi","PGLS_ML",-0.226240563171355
+"Capsula interna","PGLS_ML",-0.247645848293037
+"Striatum","PGLS_ML",-0.310136849653206
+"Area striata grey","PGLS_ML",-0.197195180980112
+"Neocortex grey","PGLS_ML",0.093592136151365
+"Mesencephalon","PGLS_ML",-0.104635638014499
+"Cerebellum","PGLS_ML",-0.146751920799202
+"Hippocampus","PGLS_ML",-0.209732334475357
+"Medulla_oblongata","PGLS_BM",-0.350317060757186
+"Cerebellum","PGLS_BM",-0.146751920799202
+"Mesencephalon","PGLS_BM",-0.104635638014499
+"Diencephalon","PGLS_BM",-0.274504574843149
+"Telencephalon","PGLS_BM",0.208845624314924
+"Corpus geniculatum laterale","PGLS_BM",-0.438518846655009
+"Amygdala","PGLS_BM",-0.151295227679345
+"Pallidum","PGLS_BM",-0.361911437256627
+"Neocortex white","PGLS_BM",-0.0723350357995125
+"Insular cortex (grey)","PGLS_BM",-0.0617032385301073
+"Nucleus subthalamicus Luysi","PGLS_BM",-0.226240563171355
+"Capsula interna","PGLS_BM",-0.247645848293037
+"Striatum","PGLS_BM",-0.310136849653206
+"Area striata grey","PGLS_BM",-0.197195180980112
+"Neocortex grey","PGLS_BM",0.093592136151365
+"Mesencephalon","PGLS_BM",-0.104635638014499
+"Cerebellum","PGLS_BM",-0.146751920799202
+"Hippocampus","PGLS_BM",-0.209732334475357
