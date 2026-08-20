@@ -78,8 +78,8 @@ check('no duplicate tips after aliasing',
 
 print('\n== 3. crosswalk csv ==')
 roles = Counter(r['role'] for r in xwalk)
-check('57 pairs, 14 study3 + 1 predictor + 42 reference',
-      len(xwalk) == 57 and roles['study3'] == 14 and roles['predictor'] == 1 and roles['reference'] == 42,
+check('65 pairs, 14 study3 + 1 predictor + 50 reference',
+      len(xwalk) == 65 and roles['study3'] == 14 and roles['predictor'] == 1 and roles['reference'] == 50,
       dict(roles))
 check('labels unique', len(set(r['label'] for r in xwalk)) == len(xwalk))
 check('stephan_var unique', len(set(r['stephan_var'] for r in xwalk)) == len(xwalk))

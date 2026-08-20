@@ -10,7 +10,7 @@
 # laterality or 1000x unit slip is still visible.
 #
 # What moved where:
-#   the 60-row variable crosswalk -> metadata/qc_stephan/stephan_wide_crosswalk.csv
+#   the variable crosswalk -> metadata/qc_stephan/stephan_wide_crosswalk.csv
 #   the species synonyms          -> R/species_aliases.R
 #   everything else               -> scripts/qc_stephan/compare_stephan.R
 # =============================================================================

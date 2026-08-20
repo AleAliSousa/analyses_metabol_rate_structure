@@ -1,6 +1,6 @@
 label,stephan_var,wide_var,unit_scale,role,model_stephan,model_wide,note
-Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,predictor,Preferred_brain_volume,Preferred_brain_volume,raw: different constructs (net vs whole brain); model: the PGLS x-axis
-Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,,,"VERIFIED 2026-08-19: 44/49 agree. 5 disagree (Pan troglodytes 250.7 vs 344.0 = 27% is the outlier); 4 of those already come from deSousa_etal_2013_Table1 in the merge, so this is a specimen-set/version difference, NOT laterality -- 2x-left does not reconcile them."
+Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1,predictor,Preferred_brain_volume,Preferred_brain_volume,"STRUCTURE KEY: Stephan code 5 net brain = codes 6-10; do not key to a generic whole-brain volume. Model use remains the PGLS x-axis."
+Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,1,study3,,,"STRUCTURE KEY: de Sousa 2010 Supp. Table 2 publishes a bilateral estimate = 2 x left entire LGN; the unsuffixed Evo term is correct. VERIFIED 2026-08-19: 44/49 agree. Five disagreements are specimen-set/version differences, not laterality."
 Amygdala,Amygdala,Amygdala_Vol.mm3,1,study3,,,
 Pallidum,Pallidum,Pallidum_Vol.mm3,1,study3,,,
 Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,1,study3,,,
@@ -8,7 +8,7 @@ Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,1,study3,,,Steph
 Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,1,study3,,,
 Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,1,study3,,,
 Striatum,Striatum,Striatum_Vol.mm3,1,study3,,,
-Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,,,"VERIFIED 2026-08-19: mapping is correct for 40/45. Stephan = 2x mean of deSousa 2010 Table1 LEFT specimens. 5 hominoid cells disagree because the merge's bilateral term is won by Frahm 1984 (Pongo: Zilles 1988) -- deSousa 2010 enters the ledger ONLY as Area_striata_grey_matter_left_Vol.mm3, so it cannot win here. Merge-selection issue, not a data fault."
+Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1,study3,,,"STRUCTURE KEY: grey matter only and bilateral estimate as published in de Sousa 2010 Supp. Table 2 (= 2 x mean left V1). Do not key to Stephan 1981 Area_striata, which includes underlying white matter."
 Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,1,study3,,,
 Mesencephalon,Mesencephalon,Mesencephalon_Vol.mm3,1,study3,,,
 Cerebellum,Cerebellum,Cerebellum_Vol.mm3,1,study3,,,merge can take MacLeod 2003 over Stephan on recency
@@ -20,7 +20,7 @@ Ventricles,Ventricles,Ventricles_Vol.mm3,1,reference,,,
 Medulla oblongata,Medulla_oblongata,Medulla_oblongata_Vol.mm3,1,reference,,,
 Diencephalon,Diencephalon,Diencephalon_Vol.mm3,1,reference,,,
 Telencephalon,Telencephalon,Telencephalon_Vol.mm3,1,reference,,,
-Pons,Pons,Pons_Vol.mm3,1,reference,,,
+Pons,Pons,Ventral_pons_Vol.mm3,1,reference,,,"SOURCE-CONDITIONED KEY: Matano 1985b rows are ventral pons (VPo); only the Zilles & Rehkamper Pongo row uses the broader Pons_Vol.mm3 term. The build script enforces the source constraint."
 Bulbus olfactorius,Bulbus_olfactorius,Bulbus_olfactorius_Vol.mm3,1,reference,,,
 Bulbus olfactorius accessorius,Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,1,reference,,,
 Nucleus tractus olfactorius,Nucleus_tractus_olfactorius,Nucleus_tractus_olfactorius_Vol.mm3,1,reference,,,
@@ -28,7 +28,7 @@ Lobus piriformis,Lobus_piriformis,Lobus_piriformis_Vol.mm3,1,reference,,,
 Septum,Septum,Septum_Vol.mm3,1,reference,,,
 Schizocortex,Schizocortex,Schizo_cortex_Vol.mm3,1,reference,,,
 Palaeocortex,Palaeocortex,Palaeocortex_Vol.mm3,1,reference,,,
-Neocortex (grey+white),NeoWG,Neocortex_Vol.mm3,1,reference,,,
+Neocortex (grey+white),NeoWG,Neocortex_Vol.mm3,1,reference,,,"Stephan code 18: grey + underlying white matter + corpus callosum; includes insular/subgenual/cingular/retrosplenial transitional cortex."
 Complexus centromedialis,Complexus_centromedialis,Complexus_centromedialis_Vol.mm3,1,reference,,,
 Complexus corticobasolateralis,Complexus_cortico_basolateralis,Complexus_corticobasolateralis_Vol.mm3,1,reference,,,
 Nucleus amygdalae basalis,Nucleus_amygdalae_basalis_parsmagnocellularis,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,1,reference,,,
@@ -54,5 +54,13 @@ Granular insula (L),Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,1,ref
 Dysgranular insula (L),Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,1,reference,,,Stephan is LEFT only
 Agranular insula (L),Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,1,reference,,,Stephan is LEFT only
 Fronto-insular (L),FI_volume_L,fronto_insular_cortex_left_Vol.mm3,1,reference,,,Stephan is LEFT only
-Frontal motor grey,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1000,reference,,,"Stephan in cm3, merge in mm3"
-Frontal motor white,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1000,reference,,,"Stephan in cm3, merge in mm3"
+Frontal motor grey,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1000,reference,,,"Smaers 2017 Table S1 bilateral posterior-5-of-20 frontal-section proxy; not the complement of prefrontal; cm3 to mm3."
+Frontal motor white,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1000,reference,,,"Smaers 2017 Table S1 bilateral posterior-5-of-20 frontal-section proxy; not the complement of prefrontal; cm3 to mm3."
+Primary visual white,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1000,reference,,,"Smaers 2017 Table S1 both hemispheres; source values are cm3 despite the supplement's mm3 label."
+Prefrontal grey,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1000,reference,,,"Smaers 2017 Table S1 bilateral anterior-5-of-20 frontal-pole proxy; cm3 to mm3."
+Prefrontal white,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,1000,reference,,,"Smaers 2017 Table S1 bilateral anterior-5-of-20 frontal-pole proxy; cm3 to mm3."
+Other association grey,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,1000,reference,,,"Smaers 2017 derived residual = neocortex - whole frontal lobe - primary visual; both hemispheres; cm3 to mm3."
+Other association white,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,1000,reference,,,"Smaers 2017 derived residual = neocortex - whole frontal lobe - primary visual; both hemispheres; cm3 to mm3."
+Body mass (Bauernfeind),Body_mass,Body_Mass.g,1,reference,,,"Bauernfeind 2013 external species estimate, not an individual specimen mass."
+Brain mass (Bauernfeind),Brain_mass,Brain_Mass.mg,1,reference,,,"Bauernfeind 2013 fresh brain mass; source prints g and the project key is mg."
+Body weight (Matano 1985a),Body_weight_1985a,Body_Mass.g,1,reference,,,"Matano 1985a body weight in g; largely reused from Stephan 1981."
