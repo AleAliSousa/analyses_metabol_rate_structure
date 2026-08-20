@@ -707,7 +707,7 @@ make_overlay_plot <- function(broad_df,
     message("Package ggrepel is not installed; skipping cortical region labels on overlay plot.")
   }
 
-  print(p)
+#   print(p)
   ggsave(paste0(output_stem, ".pdf"), p, width = 8.5, height = 7, units = "in")
   ggsave(paste0(output_stem, ".jpg"), p, width = 8.5, height = 7, units = "in", dpi = 300)
 

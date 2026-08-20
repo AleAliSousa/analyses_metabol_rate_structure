@@ -414,7 +414,7 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
     theme_classic(base_size = 14)
   if (!is.null(region_scale)) p <- p + region_scale
 
-  print(p)
+#   print(p)
 
   ggsave(
     filename = paste0("figs/s1b/p_type1_type2_astrocytes_", file_slug, ".pdf"),
@@ -538,7 +538,7 @@ if (length(predictors_union) > 0) {
     theme_facet_compact(12)
   if (!is.null(region_scale_all)) p_combined <- p_combined + region_scale_all
 
-  print(p_combined)
+#   print(p_combined)
 
   grid_w <- length(unique(plot_df_all$predictor)) * 3.3 + 2.6
   ggsave(
@@ -578,7 +578,7 @@ if (length(predictors_union) > 0) {
     theme_classic(base_size = 13) +
     theme(legend.position = "top")
 
-  print(p_overlay)
+#   print(p_overlay)
 
   ggsave(
     filename = "figs/s1b/p_type1_type2_astrocytes_overlay_telencephalon.pdf",
@@ -742,7 +742,7 @@ p_type1_type2_signed_bar <- ggplot(
     strip.text.y = element_text(angle = 0)
   )
 
-print(p_type1_type2_signed_bar)
+# print(p_type1_type2_signed_bar)
 ggsave(
   filename = "figs/s1b/p_type1_type2_astrocyte_composition_signed_bar_rcmr_ordered.pdf",
   plot = p_type1_type2_signed_bar, width = 11, height = 5.5, units = "in"
@@ -807,7 +807,7 @@ p_type1_type2_stacked_with_rcmr <- ggplot(
   theme_classic(base_size = 12) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 
-print(p_type1_type2_stacked_with_rcmr)
+# print(p_type1_type2_stacked_with_rcmr)
 ggsave(
   filename = "figs/s1b/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay.pdf",
   plot = p_type1_type2_stacked_with_rcmr, width = 11, height = 5.5, units = "in"
@@ -860,7 +860,7 @@ p_type1_fraction_vs_rcmr <- ggplot(
   theme_classic(base_size = 13)
 if (!is.null(region_scale_comp)) p_type1_fraction_vs_rcmr <- p_type1_fraction_vs_rcmr + region_scale_comp
 
-print(p_type1_fraction_vs_rcmr)
+# print(p_type1_fraction_vs_rcmr)
 ggsave(
   filename = "figs/s1b/p_type1_astrocyte_fraction_vs_rcmr.pdf",
   plot = p_type1_fraction_vs_rcmr, width = 9, height = 6, units = "in"
@@ -904,7 +904,7 @@ p_type1_fraction_vs_rcmr_division <- ggplot(
   theme_classic(base_size = 13) +
   theme(legend.position = "top")
 
-print(p_type1_fraction_vs_rcmr_division)
+# print(p_type1_fraction_vs_rcmr_division)
 ggsave(
   filename = "figs/s1b/p_type1_astrocyte_fraction_vs_rcmr_by_telencephalon.pdf",
   plot = p_type1_fraction_vs_rcmr_division, width = 10, height = 5.8, units = "in"
@@ -1057,7 +1057,7 @@ p_type1_type2_dodged_with_rcmr_split <- ggplot(
     strip.text = element_text(face = "bold")
   )
 
-print(p_type1_type2_dodged_with_rcmr_split)
+# print(p_type1_type2_dodged_with_rcmr_split)
 
 ggsave(
   filename = "figs/s1b/p_type1_type2_astrocyte_dodged_with_rcmr_split.pdf",
