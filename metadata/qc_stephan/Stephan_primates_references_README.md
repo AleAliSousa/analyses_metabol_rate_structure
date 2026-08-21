@@ -19,7 +19,7 @@ The search is intentionally ordered:
    structure key.
 3. Search the canonical all-table Evo-M1 volume ledger.
 4. If mounted, search dated volume inputs in
-   `Evo-M1-Traits-Data-restricted`.
+   `Evo-M1-Trait-Data-restricted`.
 
 Only sources dated 2019 or earlier are eligible. The cutoff uses publication or
 manually curated source dates, not filesystem modification times, because the
@@ -40,10 +40,10 @@ files have been moved and re-synced since the compilation was assembled.
 - finalized de Sousa 2010 Supplementary Table 2 and Smaers 2017 Table S1 public
   CSVs. They are valid provenance tables even though the modern merge excludes
   some secondary/derived rows from its pooled estimate.
-- `Evo-M1-Traits-Data-restricted/MIGRATED_INDEX.csv` and the explicitly listed
+- `Evo-M1-Trait-Data-restricted/MIGRATED_INDEX.csv` and the explicitly listed
   unpublished volume folders, when mounted
 
-Set `EVOM1_RESTRICTED=/path/to/Evo-M1-Traits-Data-restricted` to override the
+Set `EVOM1_RESTRICTED=/path/to/Evo-M1-Trait-Data-restricted` to override the
 default restricted-repo location. If the private repo is absent, the script
 warns and completes the public search.
 

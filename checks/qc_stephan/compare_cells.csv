@@ -58,56 +58,56 @@ Pygathrix_nemaeus,Pygathrix nemaeus,FALSE,Preferred brain volume,Total_brain_net
 Saguinus_midas,Saguinus midas,FALSE,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,predictor,9569,9569,1,0,0,same,NA,Stephan_etal_1981_TableIII,Stephan_etal_1981_TableIII
 Saimiri_sciureus,Saimiri sciureus,FALSE,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,predictor,22572,22572,1,0,0,same,NA,Stephan_etal_1981_TableIII,Stephan_etal_1981_TableIII
 Tarsius_syrichta,Tarsius sp.,FALSE,Preferred brain volume,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,predictor,3393,3393,1,0,0,same,NA,Stephan_etal_1981_TableII,Stephan_etal_1981_TableII
-Ateles_geoffroyi,Ateles geoffroyi,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,151,151,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Avahi_laniger,Avahi laniger,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,27.6,27.6,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Callithrix_pygmaea,Callithrix pygmaea,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,16.9,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
-Cebus_albifrons,Cebus albifrons,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,137,137,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Cercopithecus_mitis,Cercopithecus mitis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,150,167.2,1.1146666666666667,11.46666666666666,0.10287081339712913,DIFFERENT,NA,deSousa_etal_2010,deSousa_etal_2013_Table1
+Ateles_geoffroyi,Ateles geoffroyi,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,151,151,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Avahi_laniger,Avahi laniger,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,27.6,27.6,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Callithrix_pygmaea,Callithrix pygmaea,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,16.9,NA,NA,NA,NA,Stephan_only,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],NA
+Cebus_albifrons,Cebus albifrons,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,137,137,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Cercopithecus_mitis,Cercopithecus mitis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,150,167.2,1.1146666666666667,11.46666666666666,0.10287081339712913,DIFFERENT,NA,deSousa_etal_2010_SupTable2,deSousa_etal_2013_Table1
 Colobus_angolensis,Colobus angolensis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,103,103,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Galagoides_demidoff,Galagoides demidoff,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,10.9,10.9,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Gorilla_gorilla,Gorilla sp.,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,308.5,300.1,0.9727714748784442,-2.722852512155584,0.027228525121555842,DIFFERENT,NA,value_differs,deSousa_etal_2013_Table1
+Galagoides_demidoff,Galagoides demidoff,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,10.9,10.9,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Gorilla_gorilla,Gorilla sp.,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,308.5,300.1,0.9727714748784442,-2.722852512155584,0.027228525121555842,DIFFERENT,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
 Homo_sapiens,Homo sapiens,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,335,335,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
 Hylobates_lar,Hylobates lar,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,166.2,166.2,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
 Hylobates_muelleri,Hylobates muelleri,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,162,161.6,0.9975308641975308,-0.2469135802469171,0.002469135802469171,rounding,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Indri_indri,Indri indri,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,94.5,94.5,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
+Indri_indri,Indri indri,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,94.5,94.5,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
 Lophocebus_albigena,Lophocebus albigena,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,182,182,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+2 tied)
-Loris_tardigradus,Loris tardigradus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,24.6,24.6,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Pan_paniscus,Pan paniscus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,275.1,282.3,1.0261723009814612,2.6172300981461243,0.025504782146652458,DIFFERENT,NA,value_differs,deSousa_etal_2013_Table1
-Pan_troglodytes,Pan troglodytes,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,250.7,344,1.3721579577183887,37.21579577183886,0.27122093023255817,DIFFERENT,NA,value_differs,deSousa_etal_2013_Table1
-Perodicticus_potto,Perodicticus potto,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,24.3,24.3,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
+Loris_tardigradus,Loris tardigradus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,24.6,24.6,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Stephan_etal_1984_Table1 (+1 tied)
+Pan_paniscus,Pan paniscus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,275.1,282.3,1.0261723009814612,2.6172300981461243,0.025504782146652458,DIFFERENT,NA,deSousa_etal_2013 [restricted: compare_LGN_vs_Stephan.csv],deSousa_etal_2013_Table1
+Pan_troglodytes,Pan troglodytes,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,250.7,344,1.3721579577183887,37.21579577183886,0.27122093023255817,DIFFERENT,NA,deSousa_etal_2010_SupTable2,deSousa_etal_2013_Table1
+Perodicticus_potto,Perodicticus potto,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,24.3,24.3,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Stephan_etal_1984_Table1 (+1 tied)
 Piliocolobus_badius,Piliocolobus badius,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,128,128,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+2 tied)
 Pongo_abelii,Pongo sp.,TRUE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,NA,259.1,NA,NA,NA,wide_only,NA,NA,deSousa_etal_2013_Table1
 Pongo_pygmaeus,Pongo sp.,TRUE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,259.1,259.1,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Saguinus_oedipus,Saguinus oedipus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,34.2,34.2,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Varecia_variegata,Varecia variegata,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,68.9,68.9,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Alouatta_seniculus,Alouatta seniculus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,87.4,87.4,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Aotus_trivirgatus,Aotus trivirgatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,32.9,32.9,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Avahi_occidentalis,Avahi occidentalis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,29.3,29.3,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Callithrix_jacchus,Callithrix jacchus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,25.1,25.1,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
+Saguinus_oedipus,Saguinus oedipus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,34.2,34.2,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Varecia_variegata,Varecia variegata,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,68.9,68.9,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Alouatta_seniculus,Alouatta seniculus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,87.4,87.4,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Aotus_trivirgatus,Aotus trivirgatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,32.9,32.9,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Avahi_occidentalis,Avahi occidentalis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,29.3,29.3,1,0,0,same,NA,Stephan_etal_1984_Table1,Stephan_etal_1984_Table1
+Callithrix_jacchus,Callithrix jacchus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,25.1,25.1,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
 Cercopithecus_ascanius,Cercopithecus ascanius,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,147,147,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+2 tied)
-Cheirogaleus_major,Cheirogaleus major,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,21.5,21.5,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Cheirogaleus_medius,Cheirogaleus medius,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,10.8,10.8,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Daubentonia_madagascariensis,Daubentonia madagascariensis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,58.5,58.5,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
+Cheirogaleus_major,Cheirogaleus major,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,21.5,21.5,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Stephan_etal_1984_Table1 (+1 tied)
+Cheirogaleus_medius,Cheirogaleus medius,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,10.8,10.8,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Stephan_etal_1984_Table1 (+1 tied)
+Daubentonia_madagascariensis,Daubentonia madagascariensis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,58.5,58.5,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
 Erythrocebus_patas,Erythrocebus patas,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,267,266.8,0.9992509363295881,-0.07490636704119424,7.490636704119424e-4,rounding,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Eulemur_fulvus,Eulemur fulvus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,51.8,51.8,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Galago_senegalensis,Galago senegalensis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,16,16,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Lagothrix_lagotricha,Lagothrix lagothricha,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,164,164,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Lepilemur_ruficaudatus,Lepilemur ruficaudatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,15.6,15.6,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
+Eulemur_fulvus,Eulemur fulvus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,51.8,51.8,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Galago_senegalensis,Galago senegalensis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,16,16,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Lagothrix_lagotricha,Lagothrix lagothricha,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,164,164,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Stephan_etal_1984_Table1
+Lepilemur_ruficaudatus,Lepilemur ruficaudatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,15.6,15.6,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Stephan_etal_1984_Table1 (+1 tied)
 Macaca_fascicularis,Macaca fascicularis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,91.9,91.9,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
 Macaca_mulatta,Macaca mulatta,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,158,158,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+2 tied)
-Microcebus_murinus,Microcebus murinus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,7.1,7.07,0.9957746478873241,-0.42253521126759663,0.004225352112675967,rounding,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
+Microcebus_murinus,Microcebus murinus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,7.1,7.07,0.9957746478873241,-0.42253521126759663,0.004225352112675967,rounding,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Stephan_etal_1984_Table1
 Miopithecus_talapoin,Miopithecus talapoin,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,109,109,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+1 tied)
 Nasalis_larvatus,Nasalis larvatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,157,156.6,0.9974522292993631,-0.2547770700636979,0.002547770700636979,rounding,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Nycticebus_coucang,Nycticebus coucang,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,35.9,35.9,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Otolemur_crassicaudatus,Otolemur crassicaudatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,23.2,23.2,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
+Nycticebus_coucang,Nycticebus coucang,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,35.9,35.9,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Otolemur_crassicaudatus,Otolemur crassicaudatus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,23.2,23.2,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
 Papio_anubis,Papio anubis,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,395,395,1,0,0,same,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1 (+1 tied)
-Pithecia_monachus,Pithecia monachus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,76.3,76.3,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Plecturocebus_moloch,Callicebus moloch,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,54.2,54.2,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
-Propithecus_verreauxi,Propithecus verreauxi,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,64.5,64.5,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1
+Pithecia_monachus,Pithecia monachus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,76.3,76.3,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Plecturocebus_moloch,Callicebus moloch,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,54.2,54.2,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
+Propithecus_verreauxi,Propithecus verreauxi,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,64.5,64.5,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1
 Pygathrix_nemaeus,Pygathrix nemaeus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,115,114.8,0.9982608695652173,-0.17391304347826333,0.0017391304347826335,rounding,NA,deSousa_etal_2013_Table1,deSousa_etal_2013_Table1
-Saguinus_midas,Saguinus midas,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,36,36.8,1.0222222222222221,2.2222222222222143,0.021739130434782532,DIFFERENT,NA,value_differs,Stephan_etal_1981_TableIX
-Saimiri_sciureus,Saimiri sciureus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,62.9,62.9,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
-Tarsius_syrichta,Tarsius sp.,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,20.8,20.8,1,0,0,same,NA,deSousa_etal_2010,Stephan_etal_1984_Table1 (+1 tied)
+Saguinus_midas,Saguinus midas,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,36,36.8,1.0222222222222221,2.2222222222222143,0.021739130434782532,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1981_TableIX
+Saimiri_sciureus,Saimiri sciureus,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,62.9,62.9,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
+Tarsius_syrichta,Tarsius sp.,FALSE,Corpus geniculatum laterale,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,study3,20.8,20.8,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Stephan_etal_1984_Table1 (+1 tied)
 Cebus_albifrons,Cebus albifrons,FALSE,Amygdala,Amygdala,Amygdala_Vol.mm3,study3,502,502,1,0,0,same,NA,Stephan_etal_1981_TableXI,Stephan_etal_1981_TableXI
 Galagoides_demidoff,Galagoides demidoff,FALSE,Amygdala,Amygdala,Amygdala_Vol.mm3,study3,50.2,50.2,1,0,0,same,NA,Stephan_etal_1981_TableXI,Stephan_etal_1981_TableXI
 Homo_sapiens,Homo sapiens,FALSE,Amygdala,Amygdala,Amygdala_Vol.mm3,study3,3015,3015,1,0,0,same,NA,Stephan_etal_1981_TableXI,Stephan_etal_1981_TableXI
@@ -128,7 +128,7 @@ Propithecus_verreauxi,Propithecus verreauxi,FALSE,Amygdala,Amygdala,Amygdala_Vol
 Saimiri_sciureus,Saimiri sciureus,FALSE,Amygdala,Amygdala,Amygdala_Vol.mm3,study3,227,227,1,0,0,same,NA,Stephan_etal_1981_TableXI,Stephan_etal_1981_TableXI
 Tarsius_syrichta,Tarsius sp.,FALSE,Amygdala,Amygdala,Amygdala_Vol.mm3,study3,49.8,49.8,1,0,0,same,NA,Stephan_etal_1981_TableXI,Stephan_etal_1981_TableXI
 Ateles_geoffroyi,Ateles geoffroyi,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,807,807,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
-Avahi_laniger,Avahi laniger,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,74.5,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
+Avahi_laniger,Avahi laniger,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,74.5,NA,NA,NA,NA,Stephan_only,NA,Stephan_etal_1981 [restricted: Stephan_1981.csv],NA
 Callithrix_pygmaea,Callithrix pygmaea,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,25.8,25.8,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Cebus_albifrons,Cebus albifrons,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,567,567,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Galagoides_demidoff,Galagoides demidoff,FALSE,Pallidum,Pallidum,Pallidum_Vol.mm3,study3,17,17,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
@@ -183,15 +183,15 @@ Saimiri_sciureus,Saimiri sciureus,FALSE,Neocortex white,NeoW_Frahm,Neocortex_whi
 Tarsius_syrichta,Tarsius sp.,FALSE,Neocortex white,NeoW_Frahm,Neocortex_white_matter_Vol.mm3,study3,137,137,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Alouatta_caraya,Alouatta caraya,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,272,272,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Ateles_geoffroyi,Ateles geoffroyi,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,416,416,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
-Avahi_laniger,Avahi laniger,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,38,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
-Callithrix_pygmaea,Callithrix pygmaea,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,11,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
+Avahi_laniger,Avahi laniger,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,38,NA,NA,NA,NA,Stephan_only,NA,Bauernfeind_etal_2013 [restricted: Bauernfeind_2013.csv],NA
+Callithrix_pygmaea,Callithrix pygmaea,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,11,NA,NA,NA,NA,Stephan_only,NA,Bauernfeind_etal_2013 [restricted: Bauernfeind_2013.csv],NA
 Cebus_albifrons,Cebus albifrons,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,297,297,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Cercocebus_agilis,Cercocebus agilis,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,379,379,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Cercopithecus_mitis,Cercopithecus mitis,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,614,614,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Colobus_angolensis,Colobus angolensis,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,222,222,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Galagoides_demidoff,Galagoides demidoff,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,12,12,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Gorilla_gorilla,Gorilla sp.,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,2146,2145.5,0.999767008387698,-0.023299161230195712,2.3299161230195712e-4,rounding,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
-Homo_sapiens,Homo sapiens,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,6165,6479,1.0509326845093268,5.093268450932684,0.04846426917734218,DIFFERENT,NA,value_differs,Bauernfeind_etal_2013_Table1
+Homo_sapiens,Homo sapiens,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,6165,6479,1.0509326845093268,5.093268450932684,0.04846426917734218,DIFFERENT,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Hylobates_lar,Hylobates lar,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,289,289,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Hylobates_muelleri,Hylobates muelleri,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,539,539,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Indri_indri,Indri indri,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,167,167,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
@@ -204,7 +204,7 @@ Pan_troglodytes,Pan troglodytes,FALSE,Insular cortex (grey),Total_insula_volume_
 Perodicticus_potto,Perodicticus potto,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,31,31,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Piliocolobus_badius,Piliocolobus badius,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,241,241,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Pithecia_pithecia,Pithecia pithecia,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,279,279,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
-Pongo_abelii,Pongo sp.,TRUE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,1158,1331.5,1.1498272884283247,14.98272884283247,0.13030416823131807,DIFFERENT,NA,value_differs,Bauernfeind_etal_2013_Table1
+Pongo_abelii,Pongo sp.,TRUE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,1158,1331.5,1.1498272884283247,14.98272884283247,0.13030416823131807,DIFFERENT,NA,Bauernfeind_etal_2013 [restricted: insulaAmy.xls],Bauernfeind_etal_2013_Table1
 Pongo_pygmaeus,Pongo sp.,TRUE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,1505,1331.5,0.8847176079734219,-11.528239202657808,0.11528239202657807,DIFFERENT,NA,value_differs,Bauernfeind_etal_2013_Table1
 Saguinus_geoffroyi,Saguinus geoffroyi,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,23,23,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Saguinus_oedipus,Saguinus oedipus,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,26,26,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
@@ -213,7 +213,7 @@ Trachypithecus_francoisi,Trachypithecus francoisi,FALSE,Insular cortex (grey),To
 Varecia_variegata,Varecia variegata,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,100,100,1,0,0,same,NA,Bauernfeind_etal_2013_Table1,Bauernfeind_etal_2013_Table1
 Avahi_occidentalis,Avahi occidentalis,FALSE,Insular cortex (grey),Total_insula_volume_L,Insula_left_Vol.mm3,study3,NA,38,NA,NA,NA,wide_only,NA,NA,Bauernfeind_etal_2013_Table1
 Ateles_geoffroyi,Ateles geoffroyi,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,52.8,52.8,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
-Avahi_laniger,Avahi laniger,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,5.94,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
+Avahi_laniger,Avahi laniger,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,5.94,NA,NA,NA,NA,Stephan_only,NA,Stephan_etal_1981 [restricted: Stephan_1981.csv],NA
 Callithrix_pygmaea,Callithrix pygmaea,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,1.95,1.95,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Cebus_albifrons,Cebus albifrons,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,41.7,41.7,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Galagoides_demidoff,Galagoides demidoff,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,1.4,1.4,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
@@ -240,7 +240,7 @@ Propithecus_verreauxi,Propithecus verreauxi,FALSE,Nucleus subthalamicus Luysi,Nu
 Saimiri_sciureus,Saimiri sciureus,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,11.5,11.5,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Tarsius_syrichta,Tarsius sp.,FALSE,Nucleus subthalamicus Luysi,Nucleus_subthalamicus,Nucleus_subthalamicus_Vol.mm3,study3,1.09,1.09,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Ateles_geoffroyi,Ateles geoffroyi,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,570,570,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
-Avahi_laniger,Avahi laniger,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,105,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
+Avahi_laniger,Avahi laniger,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,105,NA,NA,NA,NA,Stephan_only,NA,Stephan_etal_1981 [restricted: Stephan_1981.csv],NA
 Callithrix_pygmaea,Callithrix pygmaea,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,21.8,21.8,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Cebus_albifrons,Cebus albifrons,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,549,549,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
 Galagoides_demidoff,Galagoides demidoff,FALSE,Capsula interna,Capsula_interna,Capsula_interna_Vol.mm3,study3,18.4,18.4,1,0,0,same,NA,Stephan_etal_1981_TableVIII,Stephan_etal_1981_TableVIII
@@ -313,52 +313,52 @@ Pygathrix_nemaeus,Pygathrix nemaeus,FALSE,Striatum,Striatum,Striatum_Vol.mm3,stu
 Saguinus_midas,Saguinus midas,FALSE,Striatum,Striatum,Striatum_Vol.mm3,study3,471,471,1,0,0,same,NA,Stephan_etal_1981_TableVI,Stephan_etal_1981_TableVI
 Saimiri_sciureus,Saimiri sciureus,FALSE,Striatum,Striatum,Striatum_Vol.mm3,study3,1042,1042,1,0,0,same,NA,Stephan_etal_1981_TableVI,Stephan_etal_1981_TableVI
 Tarsius_syrichta,Tarsius sp.,FALSE,Striatum,Striatum,Striatum_Vol.mm3,study3,133,133,1,0,0,same,NA,Stephan_etal_1981_TableV,Stephan_etal_1981_TableV
-Ateles_geoffroyi,Ateles geoffroyi,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3753,3753,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Avahi_laniger,Avahi laniger,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,475,475,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Callithrix_pygmaea,Callithrix pygmaea,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,363,363,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Cebus_albifrons,Cebus albifrons,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3764,3764,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Cercopithecus_mitis,Cercopithecus mitis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4232,4232,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Galagoides_demidoff,Galagoides demidoff,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,214,214,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Gorilla_gorilla,Gorilla sp.,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,9129,12062,1.3212838207908861,32.12838207908862,0.2431603382523628,DIFFERENT,NA,value_differs,Frahm_etal_1984_Table1
-Homo_sapiens,Homo sapiens,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,15247.5,14787,0.9697983275946876,-3.0201672405312348,0.030201672405312345,DIFFERENT,NA,value_differs,Frahm_etal_1984_Table1
-Hylobates_lar,Hylobates lar,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4086.7,4574,1.1192404629652286,11.92404629652287,0.10653694796676873,DIFFERENT,NA,value_differs,Frahm_etal_1984_Table1
-Indri_indri,Indri indri,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1648,1648,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Lophocebus_albigena,Lophocebus albigena,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5420,5420,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Loris_tardigradus,Loris tardigradus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,529,529,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Pan_paniscus,Pan paniscus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,11606.5,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
-Pan_troglodytes,Pan troglodytes,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,8268.3,10593,1.2811581582671168,28.115815826711668,0.2194562446898896,DIFFERENT,NA,value_differs,Frahm_etal_1984_Table1
-Perodicticus_potto,Perodicticus potto,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,495,495,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Piliocolobus_badius,Piliocolobus badius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3053,3053,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
+Ateles_geoffroyi,Ateles geoffroyi,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3753,3753,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Avahi_laniger,Avahi laniger,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,475,475,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Callithrix_pygmaea,Callithrix pygmaea,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,363,363,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Cebus_albifrons,Cebus albifrons,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3764,3764,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Cercopithecus_mitis,Cercopithecus mitis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4232,4232,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Galagoides_demidoff,Galagoides demidoff,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,214,214,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Gorilla_gorilla,Gorilla sp.,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,9129,12062,1.3212838207908861,32.12838207908862,0.2431603382523628,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Homo_sapiens,Homo sapiens,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,15247.5,14787,0.9697983275946876,-3.0201672405312348,0.030201672405312345,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Hylobates_lar,Hylobates lar,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4086.7,4574,1.1192404629652286,11.92404629652287,0.10653694796676873,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Indri_indri,Indri indri,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1648,1648,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Lophocebus_albigena,Lophocebus albigena,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5420,5420,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Loris_tardigradus,Loris tardigradus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,529,529,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Pan_paniscus,Pan paniscus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,11606.5,NA,NA,NA,NA,Stephan_only,NA,deSousa_etal_2010_SupTable2,NA
+Pan_troglodytes,Pan troglodytes,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,8268.3,10593,1.2811581582671168,28.115815826711668,0.2194562446898896,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Perodicticus_potto,Perodicticus potto,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,495,495,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Piliocolobus_badius,Piliocolobus badius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,3053,3053,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
 Pongo_abelii,Pongo sp.,TRUE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,NA,8400,NA,NA,NA,wide_only,NA,NA,Zilles_Rehkämper_1988_Table12-2
-Pongo_pygmaeus,Pongo sp.,TRUE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,8233.7,8400,1.0201974810838383,2.019748108383828,0.01979761904761896,DIFFERENT,NA,value_differs,Zilles_Rehkämper_1988_Table12-2
-Saguinus_oedipus,Saguinus oedipus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,807,807,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Symphalangus_syndactylus,Symphalangus syndactylus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5468.9,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
-Varecia_variegata,Varecia variegata,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1745,1745,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Alouatta_seniculus,Alouatta seniculus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1918,1918,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Aotus_trivirgatus,Aotus trivirgatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,996,996,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Avahi_occidentalis,Avahi occidentalis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,450,450,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Callithrix_jacchus,Callithrix jacchus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,566,566,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Cercopithecus_ascanius,Cercopithecus ascanius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4272,4272,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Cheirogaleus_major,Cheirogaleus major,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,433,433,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Cheirogaleus_medius,Cheirogaleus medius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,199,199,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Daubentonia_madagascariensis,Daubentonia madagascariensis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1113,1113,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Eulemur_fulvus,Eulemur fulvus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1253,1253,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Galago_senegalensis,Galago senegalensis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,301,301,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Lagothrix_lagotricha,Lagothrix lagothricha,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4856,4856,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Lepilemur_ruficaudatus,Lepilemur ruficaudatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,326,326,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Macaca_fascicularis,Macaca fascicularis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,2713.3,NA,NA,NA,NA,Stephan_only,NA,provenance_gap,NA
-Macaca_mulatta,Macaca mulatta,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5343,5343,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Microcebus_murinus,Microcebus murinus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,136,136,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Miopithecus_talapoin,Miopithecus talapoin,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,2339,2339,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Nycticebus_coucang,Nycticebus coucang,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,696,696,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Otolemur_crassicaudatus,Otolemur crassicaudatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,479,479,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Papio_anubis,Papio anubis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,10001,10001,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Pithecia_monachus,Pithecia monachus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1679,1679,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Plecturocebus_moloch,Callicebus moloch,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1201,1201,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Propithecus_verreauxi,Propithecus verreauxi,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1106,1106,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Saguinus_midas,Saguinus midas,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,841,841,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Saimiri_sciureus,Saimiri sciureus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1884,1884,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
-Tarsius_syrichta,Tarsius sp.,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,349,349,1,0,0,same,NA,deSousa_etal_2010,Frahm_etal_1984_Table1
+Pongo_pygmaeus,Pongo sp.,TRUE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,8233.7,8400,1.0201974810838383,2.019748108383828,0.01979761904761896,DIFFERENT,NA,deSousa_etal_2010_SupTable2,Zilles_Rehkämper_1988_Table12-2
+Saguinus_oedipus,Saguinus oedipus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,807,807,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Symphalangus_syndactylus,Symphalangus syndactylus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5468.9,NA,NA,NA,NA,Stephan_only,NA,deSousa_etal_2010_SupTable2,NA
+Varecia_variegata,Varecia variegata,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1745,1745,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Alouatta_seniculus,Alouatta seniculus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1918,1918,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Aotus_trivirgatus,Aotus trivirgatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,996,996,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Avahi_occidentalis,Avahi occidentalis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,450,450,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Callithrix_jacchus,Callithrix jacchus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,566,566,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Cercopithecus_ascanius,Cercopithecus ascanius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4272,4272,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Cheirogaleus_major,Cheirogaleus major,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,433,433,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Cheirogaleus_medius,Cheirogaleus medius,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,199,199,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Daubentonia_madagascariensis,Daubentonia madagascariensis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1113,1113,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Eulemur_fulvus,Eulemur fulvus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1253,1253,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Galago_senegalensis,Galago senegalensis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,301,301,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Lagothrix_lagotricha,Lagothrix lagothricha,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,4856,4856,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Lepilemur_ruficaudatus,Lepilemur ruficaudatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,326,326,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Macaca_fascicularis,Macaca fascicularis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,2713.3,NA,NA,NA,NA,Stephan_only,NA,deSousa_etal_2010_SupTable2,NA
+Macaca_mulatta,Macaca mulatta,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,5343,5343,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Microcebus_murinus,Microcebus murinus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,136,136,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Miopithecus_talapoin,Miopithecus talapoin,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,2339,2339,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Nycticebus_coucang,Nycticebus coucang,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,696,696,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Otolemur_crassicaudatus,Otolemur crassicaudatus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,479,479,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
+Papio_anubis,Papio anubis,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,10001,10001,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Pithecia_monachus,Pithecia monachus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1679,1679,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Plecturocebus_moloch,Callicebus moloch,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1201,1201,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Propithecus_verreauxi,Propithecus verreauxi,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1106,1106,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Saguinus_midas,Saguinus midas,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,841,841,1,0,0,same,NA,deSousa_etal_2010 [restricted: deSousa_2010.csv],Frahm_etal_1984_Table1
+Saimiri_sciureus,Saimiri sciureus,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,1884,1884,1,0,0,same,NA,deSousa_etal_2010_SupTable2,Frahm_etal_1984_Table1
+Tarsius_syrichta,Tarsius sp.,FALSE,Area striata grey,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,study3,349,349,1,0,0,same,NA,deSousa_etal_2010 [restricted: Visual_volumes.xlsx],Frahm_etal_1984_Table1
 Callithrix_pygmaea,Callithrix pygmaea,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,2139,2139,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Cebus_albifrons,Cebus albifrons,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,30630,30630,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Galagoides_demidoff,Galagoides demidoff,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,1417,1417,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
@@ -368,7 +368,7 @@ Indri_indri,Indri indri,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vo
 Pan_troglodytes,Pan troglodytes,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,172597,172597,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Piliocolobus_badius,Piliocolobus badius,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,36575,36575,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Pongo_abelii,Pongo sp.,TRUE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,NA,129900,NA,NA,NA,wide_only,NA,NA,Zilles_Rehkämper_1988_Table12-2
-Pongo_pygmaeus,Pongo sp.,TRUE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,138300,129900,0.9392624728850325,-6.073752711496746,0.06073752711496746,DIFFERENT,NA,value_differs,Zilles_Rehkämper_1988_Table12-2
+Pongo_pygmaeus,Pongo sp.,TRUE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,138300,129900,0.9392624728850325,-6.073752711496746,0.06073752711496746,DIFFERENT,NA,Frahm_etal_1982 [restricted: Frahm_1982.csv],Zilles_Rehkämper_1988_Table12-2
 Alouatta_seniculus,Alouatta seniculus,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,21791,21791,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Aotus_trivirgatus,Aotus trivirgatus,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,7776,7776,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2
 Avahi_occidentalis,Avahi occidentalis,FALSE,Neocortex grey,NeoG_Frahm,Neocortex_grey_matter_Vol.mm3,study3,3666,3666,1,0,0,same,NA,Frahm_etal_1982_Table2,Frahm_etal_1982_Table2

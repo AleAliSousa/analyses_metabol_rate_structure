@@ -32,7 +32,7 @@
 #     deSousa_etal_2010/deSousa_etal_2010_SupTable2.csv and
 #     Smaers_etal_2017/Smaers_etal_2017_TableS1part1.csv - final public tables
 #         named by the metadata but intentionally not selected into the ledger.
-#   READ, WHEN MOUNTED, from Evo-M1-Traits-Data-restricted
+#   READ, WHEN MOUNTED, from Evo-M1-Trait-Data-restricted
 #     MIGRATED_INDEX.csv plus the known unpublished volume workbooks. Restricted
 #     files are searched only for unresolved cells and never copied here.
 #
@@ -138,7 +138,7 @@ f_smaers_s1 <- file.path(EVOM1_ROOT, "Smaers_etal_2017",
 ## The restricted repo normally sits beside the OneDrive "Species" directory;
 ## EVOM1_RESTRICTED remains the portable override used by the Evo-M1 projects.
 restricted_default <- file.path(dirname(dirname(EVOM1_ROOT)),
-                                "Evo-M1-Traits-Data-restricted")
+                                "Evo-M1-Trait-Data-restricted")
 EVOM1_RESTRICTED_ROOT <- Sys.getenv("EVOM1_RESTRICTED", unset = restricted_default)
 
 ## Outputs live under the qc_stephan/ layer: scaffolding for checking over
