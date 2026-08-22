@@ -11,7 +11,7 @@
 #
 # What moved where:
 #   the variable crosswalk -> metadata/qc_stephan/stephan_wide_crosswalk.csv
-#   the species synonyms          -> R/species_aliases.R
+#   the species synonyms          -> helpers/species_aliases.R
 #   everything else               -> scripts/qc_stephan/compare_stephan.R
 # =============================================================================
 

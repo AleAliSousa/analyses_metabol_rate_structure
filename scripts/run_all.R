@@ -31,7 +31,7 @@
 #     order below preserves the outputs produced by the last logged run.
 #   * The working directory is reset to the project root before every script,
 #     because the scripts use paths relative to the project root
-#     (e.g. "data_raw/...", "figs/s4a/...", "R/plot_settings.R").
+#     (e.g. "data_raw/...", "figs/s4a/...", "helpers/plot_settings.R").
 # =====================================================================
 
 # ---- locate the project root (parent of this scripts/ folder) -------

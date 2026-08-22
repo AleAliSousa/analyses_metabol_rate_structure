@@ -4,7 +4,7 @@
 # ------------------------------------------------------------
 
 # Set working directory
-setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
 # Load data
 df <- read.csv("data_raw/Stephan_primates.csv", stringsAsFactors = FALSE)

@@ -1,4 +1,4 @@
-setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
 # Compare broad all-region E:I ratios with a Jorstad-like cortical E:I ratio.
 #
@@ -27,8 +27,8 @@ suppressPackageStartupMessages({
 has_ggrepel <- requireNamespace("ggrepel", quietly = TRUE)
 
 # Optional local plot settings. The script still runs if unavailable.
-if (file.exists("R/plot_settings.R")) {
-  source("R/plot_settings.R")
+if (file.exists("helpers/plot_settings.R")) {
+  source("helpers/plot_settings.R")
 }
 
 if (!dir.exists("data_analysis")) dir.create("data_analysis", recursive = TRUE)

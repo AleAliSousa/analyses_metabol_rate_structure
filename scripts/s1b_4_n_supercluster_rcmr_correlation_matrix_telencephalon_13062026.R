@@ -1,8 +1,8 @@
-setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
 # ------------------------------------------------------------
 # Re-run the correlation pipeline. Sourcing this also runs its own
-# source("R/plot_settings.R"), so we inherit region_palette, canonical_region(),
+# source("helpers/plot_settings.R"), so we inherit region_palette, canonical_region(),
 # scale_color_regions(), theme_facet_compact(), facet_dims(), AND the objects
 # analysis_df, all_supercluster_predictors, run_supercluster_correlations().
 # Edit the path below if your correlation script lives elsewhere / is renamed.
@@ -11,7 +11,7 @@ setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".gi
 out_dir <- "figs/s1b"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
-source("R/plot_settings.R")
+source("helpers/plot_settings.R")
 
 library(readxl)
 library(tidyverse)

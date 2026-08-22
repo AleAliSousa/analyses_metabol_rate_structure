@@ -21,7 +21,7 @@ setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".gi
 library(tidyverse)
 library(ggpmisc)
 
-source("R/plot_settings.R")
+source("helpers/plot_settings.R")
 
 if (!dir.exists("figs/s1c")) dir.create("figs/s1c", recursive = TRUE)
 

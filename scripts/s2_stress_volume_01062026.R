@@ -1,11 +1,11 @@
-setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see R/project_root.R)
+setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
 ## Install and Load up packages
 library(tidyverse)  # loads ggplot2, dplyr, tidyr, etc.
 library(ggpmisc)    # for stat_poly_eq
 
 # Shared region colours/order (same palette as Study 1 figures).
-source("R/plot_settings.R")
+source("helpers/plot_settings.R")
 
 # Ensure the output folder exists so ggsave() does not error on a fresh checkout.
 if (!dir.exists("figs/s2")) dir.create("figs/s2", recursive = TRUE)

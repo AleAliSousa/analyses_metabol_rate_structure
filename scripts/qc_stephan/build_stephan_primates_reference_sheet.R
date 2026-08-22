@@ -82,7 +82,7 @@ suppressPackageStartupMessages({
 
 ## --- project root -----------------------------------------------------------
 ## Portable: walk up from the current directory to the repo root (.git).
-## All paths below are relative to this. See R/project_root.R.
+## All paths below are relative to this. See helpers/project_root.R.
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))
 
 ## --- which Evo-M1 merge instance ---------------------------------------------

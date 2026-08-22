@@ -18,7 +18,7 @@
 #                 resolved from volumes_unfiltered_select.csv, the per-source
 #                 ledger behind the merge
 #
-# Species labels come from R/species_aliases.R -- ONE table, canonical
+# Species labels come from helpers/species_aliases.R -- ONE table, canonical
 # namespace = data_raw/species.nwk tip labels. Nothing is renamed here.
 #
 # Prints four blocks (FILES / SPECIES / VARIABLES / SUSPECT) and nothing else.
@@ -30,7 +30,7 @@
 
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))
 suppressPackageStartupMessages(library(tidyverse))
-source("R/species_aliases.R")
+source("helpers/species_aliases.R")
 
 # ---- 0. config --------------------------------------------------------------
 EVOM1_DIR    <- file.path("/Users/crossmodal/Library/CloudStorage",

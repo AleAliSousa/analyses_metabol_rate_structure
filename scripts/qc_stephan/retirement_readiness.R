@@ -30,7 +30,7 @@
 
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))
 suppressPackageStartupMessages(library(tidyverse))
-source("R/species_aliases.R")
+source("helpers/species_aliases.R")
 
 wide_path    <- file.path("/Users/crossmodal/Library/CloudStorage",
                           "OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data",
