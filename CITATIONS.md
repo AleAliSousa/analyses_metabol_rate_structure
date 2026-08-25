@@ -68,6 +68,33 @@ of the calculation and are **not** from Heiss.
 The whole-brain summing check that uses these values lives in
 `Evo-M1-Trait-Data/__energetics_comparison/heiss_wholebrain_check.R`.
 
+## 3b. Phylogeny — the PGLS covariance structure
+
+- **Upham NS, Esselstyn JA, Jetz W. "Inferring the mammal tree: species-level
+  sets of phylogenies for questions in ecology, evolution, and conservation."
+  PLoS Biol. 2019;17(12):e3000494. doi:10.1371/journal.pbio.3000494** — source
+  of every tree used here. Two items from it are in play:
+  - *Single tree*: the DNA-only MCC (4,098 sp, `topoFree NDexp`), which is what
+    the legacy `data_raw/species.nwk` descends from.
+  - *100-tree sample*: `MamPhy_BDvr_Completed_5911sp_topoCons_NDexp`, 100 trees
+    drawn from the published 10k pseudoposterior via vertlife.org
+    (download job recorded in the source folder's `config.yaml`). Used for
+    PGLS-across-trees sensitivity analysis, so topological and branch-length
+    uncertainty enters the result rather than being fixed by one point estimate.
+    In the *Completed* set, species without DNA are placed by the **authors'**
+    taxonomic imputation, differently in each posterior tree.
+  Local: `Evo-M1-Trait-Data/Upham_etal_2019/`.
+- Tip-name reconciliation (e.g. `Callithrix pygmaea` → `Cebuella pygmaea`,
+  `Plecturocebus moloch` → `Callicebus moloch`) uses only synonym tables already
+  recorded in that repo — `__merging_trees/tree_tip_crosswalk.csv`,
+  `_keys/species_display_aliases.csv`, `_keys/species_reference.csv`. Nothing is
+  grafted or imputed locally: a species no published tip carries is reported
+  absent in the coverage report and left off the trees.
+
+`scripts/s3_prepare_tree_sample.R` builds the sample and writes
+`data_intermediate/s3_tree_coverage_report.csv`, which states how every input
+species was handled.
+
 ## 4. Unit conversion used throughout
 
 - Volume → mass: cc × 1.036 g/cc (brain tissue density).

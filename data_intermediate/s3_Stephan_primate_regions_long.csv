@@ -1,0 +1,827 @@
+Species,Preferred_brain_volume,raw_region,Region_volume,Structure,rCMRGlc
+Alouatta_caraya,53861,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Alouatta_caraya,53861,Amygdala,,Amygdala,22.2
+Alouatta_caraya,53861,Pallidum,,Pallidum,21.9
+Alouatta_caraya,53861,NeoW_Frahm,,Neocortex white,12.3
+Alouatta_caraya,53861,Total_insula_volume_L,272,Insular cortex (grey),30.3
+Alouatta_caraya,53861,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Alouatta_caraya,53861,Capsula_interna,,Capsula interna,25.5
+Alouatta_caraya,53861,Striatum,,Striatum,36.2663366336634
+Alouatta_caraya,53861,ASG_Sousa,,Area striata grey,35.8
+Alouatta_caraya,53861,NeoG_Frahm,,Neocortex grey,33.5
+Alouatta_caraya,53861,Mesencephalon,,Mesencephalon,25.2727272727273
+Alouatta_caraya,53861,Cerebellum,,Cerebellum,29.7507692307692
+Alouatta_caraya,53861,Hippocampus,,Hippocampus,25.7
+Alouatta_caraya,53861,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Alouatta_seniculus,50193.05,LGN_Sousa,87.4,Corpus geniculatum laterale,23.1
+Alouatta_seniculus,50193.05,Amygdala,413,Amygdala,22.2
+Alouatta_seniculus,50193.05,Pallidum,,Pallidum,21.9
+Alouatta_seniculus,50193.05,NeoW_Frahm,9869,Neocortex white,12.3
+Alouatta_seniculus,50193.05,Total_insula_volume_L,,Insular cortex (grey),30.3
+Alouatta_seniculus,50193.05,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Alouatta_seniculus,50193.05,Capsula_interna,,Capsula interna,25.5
+Alouatta_seniculus,50193.05,Striatum,2829,Striatum,36.2663366336634
+Alouatta_seniculus,50193.05,ASG_Sousa,1918,Area striata grey,35.8
+Alouatta_seniculus,50193.05,NeoG_Frahm,21791,Neocortex grey,33.5
+Alouatta_seniculus,50193.05,Mesencephalon,986,Mesencephalon,25.2727272727273
+Alouatta_seniculus,50193.05,Cerebellum,5699,Cerebellum,29.7507692307692
+Alouatta_seniculus,50193.05,Hippocampus,1320,Hippocampus,25.7
+Alouatta_seniculus,50193.05,Lateral_cerebellar_nuclei,59.75,Nucleus dentatus cerebelli,24.2
+Aotus_trivirgatus,16505.79,LGN_Sousa,32.9,Corpus geniculatum laterale,23.1
+Aotus_trivirgatus,16505.79,Amygdala,201,Amygdala,22.2
+Aotus_trivirgatus,16505.79,Pallidum,,Pallidum,21.9
+Aotus_trivirgatus,16505.79,NeoW_Frahm,2174,Neocortex white,12.3
+Aotus_trivirgatus,16505.79,Total_insula_volume_L,,Insular cortex (grey),30.3
+Aotus_trivirgatus,16505.79,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Aotus_trivirgatus,16505.79,Capsula_interna,,Capsula interna,25.5
+Aotus_trivirgatus,16505.79,Striatum,862,Striatum,36.2663366336634
+Aotus_trivirgatus,16505.79,ASG_Sousa,996,Area striata grey,35.8
+Aotus_trivirgatus,16505.79,NeoG_Frahm,7776,Neocortex grey,33.5
+Aotus_trivirgatus,16505.79,Mesencephalon,409,Mesencephalon,25.2727272727273
+Aotus_trivirgatus,16505.79,Cerebellum,1873,Cerebellum,29.7507692307692
+Aotus_trivirgatus,16505.79,Hippocampus,539,Hippocampus,25.7
+Aotus_trivirgatus,16505.79,Lateral_cerebellar_nuclei,17.02,Nucleus dentatus cerebelli,24.2
+Ateles_geoffroyi,102700,LGN_Sousa,151,Corpus geniculatum laterale,23.1
+Ateles_geoffroyi,102700,Amygdala,,Amygdala,22.2
+Ateles_geoffroyi,102700,Pallidum,807,Pallidum,21.9
+Ateles_geoffroyi,102700,NeoW_Frahm,,Neocortex white,12.3
+Ateles_geoffroyi,102700,Total_insula_volume_L,416,Insular cortex (grey),30.3
+Ateles_geoffroyi,102700,Nucleus_subthalamicus,52.8,Nucleus subthalamicus Luysi,25.2
+Ateles_geoffroyi,102700,Capsula_interna,570,Capsula interna,25.5
+Ateles_geoffroyi,102700,Striatum,4950,Striatum,36.2663366336634
+Ateles_geoffroyi,102700,ASG_Sousa,3753,Area striata grey,35.8
+Ateles_geoffroyi,102700,NeoG_Frahm,,Neocortex grey,33.5
+Ateles_geoffroyi,102700,Mesencephalon,1482,Mesencephalon,25.2727272727273
+Ateles_geoffroyi,102700,Cerebellum,12438,Cerebellum,29.7507692307692
+Ateles_geoffroyi,102700,Hippocampus,1366,Hippocampus,25.7
+Ateles_geoffroyi,102700,Lateral_cerebellar_nuclei,114.79,Nucleus dentatus cerebelli,24.2
+Avahi_laniger,9256.8,LGN_Sousa,27.6,Corpus geniculatum laterale,23.1
+Avahi_laniger,9256.8,Amygdala,,Amygdala,22.2
+Avahi_laniger,9256.8,Pallidum,74.5,Pallidum,21.9
+Avahi_laniger,9256.8,NeoW_Frahm,,Neocortex white,12.3
+Avahi_laniger,9256.8,Total_insula_volume_L,38,Insular cortex (grey),30.3
+Avahi_laniger,9256.8,Nucleus_subthalamicus,5.94,Nucleus subthalamicus Luysi,25.2
+Avahi_laniger,9256.8,Capsula_interna,105,Capsula interna,25.5
+Avahi_laniger,9256.8,Striatum,524,Striatum,36.2663366336634
+Avahi_laniger,9256.8,ASG_Sousa,475,Area striata grey,35.8
+Avahi_laniger,9256.8,NeoG_Frahm,,Neocortex grey,33.5
+Avahi_laniger,9256.8,Mesencephalon,343,Mesencephalon,25.2727272727273
+Avahi_laniger,9256.8,Cerebellum,1489,Cerebellum,29.7507692307692
+Avahi_laniger,9256.8,Hippocampus,526,Hippocampus,25.7
+Avahi_laniger,9256.8,Lateral_cerebellar_nuclei,14.46,Nucleus dentatus cerebelli,24.2
+Avahi_occidentalis,9124,LGN_Sousa,29.3,Corpus geniculatum laterale,23.1
+Avahi_occidentalis,9124,Amygdala,,Amygdala,22.2
+Avahi_occidentalis,9124,Pallidum,,Pallidum,21.9
+Avahi_occidentalis,9124,NeoW_Frahm,777,Neocortex white,12.3
+Avahi_occidentalis,9124,Total_insula_volume_L,,Insular cortex (grey),30.3
+Avahi_occidentalis,9124,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Avahi_occidentalis,9124,Capsula_interna,,Capsula interna,25.5
+Avahi_occidentalis,9124,Striatum,478,Striatum,36.2663366336634
+Avahi_occidentalis,9124,ASG_Sousa,450,Area striata grey,35.8
+Avahi_occidentalis,9124,NeoG_Frahm,3666,Neocortex grey,33.5
+Avahi_occidentalis,9124,Mesencephalon,345,Mesencephalon,25.2727272727273
+Avahi_occidentalis,9124,Cerebellum,1383,Cerebellum,29.7507692307692
+Avahi_occidentalis,9124,Hippocampus,476,Hippocampus,25.7
+Avahi_occidentalis,9124,Lateral_cerebellar_nuclei,11.3,Nucleus dentatus cerebelli,24.2
+Callimico_goeldii,10510,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Callimico_goeldii,10510,Amygdala,,Amygdala,22.2
+Callimico_goeldii,10510,Pallidum,,Pallidum,21.9
+Callimico_goeldii,10510,NeoW_Frahm,,Neocortex white,12.3
+Callimico_goeldii,10510,Total_insula_volume_L,,Insular cortex (grey),30.3
+Callimico_goeldii,10510,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Callimico_goeldii,10510,Capsula_interna,,Capsula interna,25.5
+Callimico_goeldii,10510,Striatum,493,Striatum,36.2663366336634
+Callimico_goeldii,10510,ASG_Sousa,,Area striata grey,35.8
+Callimico_goeldii,10510,NeoG_Frahm,,Neocortex grey,33.5
+Callimico_goeldii,10510,Mesencephalon,340,Mesencephalon,25.2727272727273
+Callimico_goeldii,10510,Cerebellum,1240,Cerebellum,29.7507692307692
+Callimico_goeldii,10510,Hippocampus,281,Hippocampus,25.7
+Callimico_goeldii,10510,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Callithrix_jacchus,7335.91,LGN_Sousa,25.1,Corpus geniculatum laterale,23.1
+Callithrix_jacchus,7335.91,Amygdala,113,Amygdala,22.2
+Callithrix_jacchus,7335.91,Pallidum,,Pallidum,21.9
+Callithrix_jacchus,7335.91,NeoW_Frahm,807.1,Neocortex white,12.3
+Callithrix_jacchus,7335.91,Total_insula_volume_L,,Insular cortex (grey),30.3
+Callithrix_jacchus,7335.91,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Callithrix_jacchus,7335.91,Capsula_interna,,Capsula interna,25.5
+Callithrix_jacchus,7335.91,Striatum,372,Striatum,36.2663366336634
+Callithrix_jacchus,7335.91,ASG_Sousa,566,Area striata grey,35.8
+Callithrix_jacchus,7335.91,NeoG_Frahm,3564,Neocortex grey,33.5
+Callithrix_jacchus,7335.91,Mesencephalon,295,Mesencephalon,25.2727272727273
+Callithrix_jacchus,7335.91,Cerebellum,757,Cerebellum,29.7507692307692
+Callithrix_jacchus,7335.91,Hippocampus,221,Hippocampus,25.7
+Callithrix_jacchus,7335.91,Lateral_cerebellar_nuclei,7.93,Nucleus dentatus cerebelli,24.2
+Callithrix_pygmaea,4005.8,LGN_Sousa,16.9,Corpus geniculatum laterale,23.1
+Callithrix_pygmaea,4005.8,Amygdala,,Amygdala,22.2
+Callithrix_pygmaea,4005.8,Pallidum,25.8,Pallidum,21.9
+Callithrix_pygmaea,4005.8,NeoW_Frahm,395.3,Neocortex white,12.3
+Callithrix_pygmaea,4005.8,Total_insula_volume_L,11,Insular cortex (grey),30.3
+Callithrix_pygmaea,4005.8,Nucleus_subthalamicus,1.95,Nucleus subthalamicus Luysi,25.2
+Callithrix_pygmaea,4005.8,Capsula_interna,21.8,Capsula interna,25.5
+Callithrix_pygmaea,4005.8,Striatum,174,Striatum,36.2663366336634
+Callithrix_pygmaea,4005.8,ASG_Sousa,363,Area striata grey,35.8
+Callithrix_pygmaea,4005.8,NeoG_Frahm,2139,Neocortex grey,33.5
+Callithrix_pygmaea,4005.8,Mesencephalon,192,Mesencephalon,25.2727272727273
+Callithrix_pygmaea,4005.8,Cerebellum,468,Cerebellum,29.7507692307692
+Callithrix_pygmaea,4005.8,Hippocampus,133,Hippocampus,25.7
+Callithrix_pygmaea,4005.8,Lateral_cerebellar_nuclei,4.35,Nucleus dentatus cerebelli,24.2
+Cebus_albifrons,77027,LGN_Sousa,137,Corpus geniculatum laterale,23.1
+Cebus_albifrons,77027,Amygdala,502,Amygdala,22.2
+Cebus_albifrons,77027,Pallidum,567,Pallidum,21.9
+Cebus_albifrons,77027,NeoW_Frahm,15799,Neocortex white,12.3
+Cebus_albifrons,77027,Total_insula_volume_L,297,Insular cortex (grey),30.3
+Cebus_albifrons,77027,Nucleus_subthalamicus,41.7,Nucleus subthalamicus Luysi,25.2
+Cebus_albifrons,77027,Capsula_interna,549,Capsula interna,25.5
+Cebus_albifrons,77027,Striatum,3258,Striatum,36.2663366336634
+Cebus_albifrons,77027,ASG_Sousa,3764,Area striata grey,35.8
+Cebus_albifrons,77027,NeoG_Frahm,30630,Neocortex grey,33.5
+Cebus_albifrons,77027,Mesencephalon,1221,Mesencephalon,25.2727272727273
+Cebus_albifrons,77027,Cerebellum,7871,Cerebellum,29.7507692307692
+Cebus_albifrons,77027,Hippocampus,890,Hippocampus,25.7
+Cebus_albifrons,77027,Lateral_cerebellar_nuclei,99.52,Nucleus dentatus cerebelli,24.2
+Cercocebus_agilis,91988,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Cercocebus_agilis,91988,Amygdala,,Amygdala,22.2
+Cercocebus_agilis,91988,Pallidum,,Pallidum,21.9
+Cercocebus_agilis,91988,NeoW_Frahm,,Neocortex white,12.3
+Cercocebus_agilis,91988,Total_insula_volume_L,379,Insular cortex (grey),30.3
+Cercocebus_agilis,91988,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Cercocebus_agilis,91988,Capsula_interna,,Capsula interna,25.5
+Cercocebus_agilis,91988,Striatum,,Striatum,36.2663366336634
+Cercocebus_agilis,91988,ASG_Sousa,,Area striata grey,35.8
+Cercocebus_agilis,91988,NeoG_Frahm,,Neocortex grey,33.5
+Cercocebus_agilis,91988,Mesencephalon,,Mesencephalon,25.2727272727273
+Cercocebus_agilis,91988,Cerebellum,,Cerebellum,29.7507692307692
+Cercocebus_agilis,91988,Hippocampus,,Hippocampus,25.7
+Cercocebus_agilis,91988,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Cercopithecus_ascanius,64671.81,LGN_Sousa,147,Corpus geniculatum laterale,23.1
+Cercopithecus_ascanius,64671.81,Amygdala,601,Amygdala,22.2
+Cercopithecus_ascanius,64671.81,Pallidum,405,Pallidum,21.9
+Cercopithecus_ascanius,64671.81,NeoW_Frahm,13052,Neocortex white,12.3
+Cercopithecus_ascanius,64671.81,Total_insula_volume_L,,Insular cortex (grey),30.3
+Cercopithecus_ascanius,64671.81,Nucleus_subthalamicus,25.7,Nucleus subthalamicus Luysi,25.2
+Cercopithecus_ascanius,64671.81,Capsula_interna,421,Capsula interna,25.5
+Cercopithecus_ascanius,64671.81,Striatum,2827,Striatum,36.2663366336634
+Cercopithecus_ascanius,64671.81,ASG_Sousa,4272,Area striata grey,35.8
+Cercopithecus_ascanius,64671.81,NeoG_Frahm,32114,Neocortex grey,33.5
+Cercopithecus_ascanius,64671.81,Mesencephalon,1162,Mesencephalon,25.2727272727273
+Cercopithecus_ascanius,64671.81,Cerebellum,5828,Cerebellum,29.7507692307692
+Cercopithecus_ascanius,64671.81,Hippocampus,1189,Hippocampus,25.7
+Cercopithecus_ascanius,64671.81,Lateral_cerebellar_nuclei,67.67,Nucleus dentatus cerebelli,24.2
+Cercopithecus_mitis,69112,LGN_Sousa,150,Corpus geniculatum laterale,23.1
+Cercopithecus_mitis,69112,Amygdala,,Amygdala,22.2
+Cercopithecus_mitis,69112,Pallidum,,Pallidum,21.9
+Cercopithecus_mitis,69112,NeoW_Frahm,,Neocortex white,12.3
+Cercopithecus_mitis,69112,Total_insula_volume_L,614,Insular cortex (grey),30.3
+Cercopithecus_mitis,69112,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Cercopithecus_mitis,69112,Capsula_interna,,Capsula interna,25.5
+Cercopithecus_mitis,69112,Striatum,2733,Striatum,36.2663366336634
+Cercopithecus_mitis,69112,ASG_Sousa,4232,Area striata grey,35.8
+Cercopithecus_mitis,69112,NeoG_Frahm,,Neocortex grey,33.5
+Cercopithecus_mitis,69112,Mesencephalon,1354,Mesencephalon,25.2727272727273
+Cercopithecus_mitis,69112,Cerebellum,6758,Cerebellum,29.7507692307692
+Cercopithecus_mitis,69112,Hippocampus,1366,Hippocampus,25.7
+Cercopithecus_mitis,69112,Lateral_cerebellar_nuclei,82.38,Nucleus dentatus cerebelli,24.2
+Cheirogaleus_major,6563.71,LGN_Sousa,21.5,Corpus geniculatum laterale,23.1
+Cheirogaleus_major,6563.71,Amygdala,99.4,Amygdala,22.2
+Cheirogaleus_major,6563.71,Pallidum,31.6,Pallidum,21.9
+Cheirogaleus_major,6563.71,NeoW_Frahm,,Neocortex white,12.3
+Cheirogaleus_major,6563.71,Total_insula_volume_L,,Insular cortex (grey),30.3
+Cheirogaleus_major,6563.71,Nucleus_subthalamicus,2.27,Nucleus subthalamicus Luysi,25.2
+Cheirogaleus_major,6563.71,Capsula_interna,48.6,Capsula interna,25.5
+Cheirogaleus_major,6563.71,Striatum,327,Striatum,36.2663366336634
+Cheirogaleus_major,6563.71,ASG_Sousa,433,Area striata grey,35.8
+Cheirogaleus_major,6563.71,NeoG_Frahm,,Neocortex grey,33.5
+Cheirogaleus_major,6563.71,Mesencephalon,241,Mesencephalon,25.2727272727273
+Cheirogaleus_major,6563.71,Cerebellum,947,Cerebellum,29.7507692307692
+Cheirogaleus_major,6563.71,Hippocampus,347,Hippocampus,25.7
+Cheirogaleus_major,6563.71,Lateral_cerebellar_nuclei,9.95,Nucleus dentatus cerebelli,24.2
+Cheirogaleus_medius,3030.89,LGN_Sousa,10.8,Corpus geniculatum laterale,23.1
+Cheirogaleus_medius,3030.89,Amygdala,63.2,Amygdala,22.2
+Cheirogaleus_medius,3030.89,Pallidum,,Pallidum,21.9
+Cheirogaleus_medius,3030.89,NeoW_Frahm,,Neocortex white,12.3
+Cheirogaleus_medius,3030.89,Total_insula_volume_L,,Insular cortex (grey),30.3
+Cheirogaleus_medius,3030.89,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Cheirogaleus_medius,3030.89,Capsula_interna,,Capsula interna,25.5
+Cheirogaleus_medius,3030.89,Striatum,145,Striatum,36.2663366336634
+Cheirogaleus_medius,3030.89,ASG_Sousa,199,Area striata grey,35.8
+Cheirogaleus_medius,3030.89,NeoG_Frahm,,Neocortex grey,33.5
+Cheirogaleus_medius,3030.89,Mesencephalon,145,Mesencephalon,25.2727272727273
+Cheirogaleus_medius,3030.89,Cerebellum,437,Cerebellum,29.7507692307692
+Cheirogaleus_medius,3030.89,Hippocampus,174,Hippocampus,25.7
+Cheirogaleus_medius,3030.89,Lateral_cerebellar_nuclei,4.27,Nucleus dentatus cerebelli,24.2
+Colobus_angolensis,71815,LGN_Sousa,103,Corpus geniculatum laterale,23.1
+Colobus_angolensis,71815,Amygdala,,Amygdala,22.2
+Colobus_angolensis,71815,Pallidum,,Pallidum,21.9
+Colobus_angolensis,71815,NeoW_Frahm,,Neocortex white,12.3
+Colobus_angolensis,71815,Total_insula_volume_L,222,Insular cortex (grey),30.3
+Colobus_angolensis,71815,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Colobus_angolensis,71815,Capsula_interna,,Capsula interna,25.5
+Colobus_angolensis,71815,Striatum,,Striatum,36.2663366336634
+Colobus_angolensis,71815,ASG_Sousa,,Area striata grey,35.8
+Colobus_angolensis,71815,NeoG_Frahm,,Neocortex grey,33.5
+Colobus_angolensis,71815,Mesencephalon,,Mesencephalon,25.2727272727273
+Colobus_angolensis,71815,Cerebellum,,Cerebellum,29.7507692307692
+Colobus_angolensis,71815,Hippocampus,,Hippocampus,25.7
+Colobus_angolensis,71815,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Daubentonia_madagascariensis,43581.08,LGN_Sousa,58.5,Corpus geniculatum laterale,23.1
+Daubentonia_madagascariensis,43581.08,Amygdala,473,Amygdala,22.2
+Daubentonia_madagascariensis,43581.08,Pallidum,,Pallidum,21.9
+Daubentonia_madagascariensis,43581.08,NeoW_Frahm,5053,Neocortex white,12.3
+Daubentonia_madagascariensis,43581.08,Total_insula_volume_L,,Insular cortex (grey),30.3
+Daubentonia_madagascariensis,43581.08,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Daubentonia_madagascariensis,43581.08,Capsula_interna,,Capsula interna,25.5
+Daubentonia_madagascariensis,43581.08,Striatum,2765,Striatum,36.2663366336634
+Daubentonia_madagascariensis,43581.08,ASG_Sousa,1113,Area striata grey,35.8
+Daubentonia_madagascariensis,43581.08,NeoG_Frahm,17074,Neocortex grey,33.5
+Daubentonia_madagascariensis,43581.08,Mesencephalon,897,Mesencephalon,25.2727272727273
+Daubentonia_madagascariensis,43581.08,Cerebellum,6461,Cerebellum,29.7507692307692
+Daubentonia_madagascariensis,43581.08,Hippocampus,1776,Hippocampus,25.7
+Daubentonia_madagascariensis,43581.08,Lateral_cerebellar_nuclei,61.03,Nucleus dentatus cerebelli,24.2
+Erythrocebus_patas,103167,LGN_Sousa,267,Corpus geniculatum laterale,23.1
+Erythrocebus_patas,103167,Amygdala,,Amygdala,22.2
+Erythrocebus_patas,103167,Pallidum,,Pallidum,21.9
+Erythrocebus_patas,103167,NeoW_Frahm,,Neocortex white,12.3
+Erythrocebus_patas,103167,Total_insula_volume_L,,Insular cortex (grey),30.3
+Erythrocebus_patas,103167,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Erythrocebus_patas,103167,Capsula_interna,,Capsula interna,25.5
+Erythrocebus_patas,103167,Striatum,3624,Striatum,36.2663366336634
+Erythrocebus_patas,103167,ASG_Sousa,,Area striata grey,35.8
+Erythrocebus_patas,103167,NeoG_Frahm,,Neocortex grey,33.5
+Erythrocebus_patas,103167,Mesencephalon,1621,Mesencephalon,25.2727272727273
+Erythrocebus_patas,103167,Cerebellum,8738,Cerebellum,29.7507692307692
+Erythrocebus_patas,103167,Hippocampus,1591,Hippocampus,25.7
+Erythrocebus_patas,103167,Lateral_cerebellar_nuclei,126.31,Nucleus dentatus cerebelli,24.2
+Eulemur_fulvus,22490.35,LGN_Sousa,51.8,Corpus geniculatum laterale,23.1
+Eulemur_fulvus,22490.35,Amygdala,251,Amygdala,22.2
+Eulemur_fulvus,22490.35,Pallidum,212,Pallidum,21.9
+Eulemur_fulvus,22490.35,NeoW_Frahm,3035,Neocortex white,12.3
+Eulemur_fulvus,22490.35,Total_insula_volume_L,,Insular cortex (grey),30.3
+Eulemur_fulvus,22490.35,Nucleus_subthalamicus,13.9,Nucleus subthalamicus Luysi,25.2
+Eulemur_fulvus,22490.35,Capsula_interna,248,Capsula interna,25.5
+Eulemur_fulvus,22490.35,Striatum,1215,Striatum,36.2663366336634
+Eulemur_fulvus,22490.35,ASG_Sousa,1253,Area striata grey,35.8
+Eulemur_fulvus,22490.35,NeoG_Frahm,9172,Neocortex grey,33.5
+Eulemur_fulvus,22490.35,Mesencephalon,590,Mesencephalon,25.2727272727273
+Eulemur_fulvus,22490.35,Cerebellum,3328,Cerebellum,29.7507692307692
+Eulemur_fulvus,22490.35,Hippocampus,752,Hippocampus,25.7
+Eulemur_fulvus,22490.35,Lateral_cerebellar_nuclei,32.05,Nucleus dentatus cerebelli,24.2
+Galago_senegalensis,4633.2,LGN_Sousa,16,Corpus geniculatum laterale,23.1
+Galago_senegalensis,4633.2,Amygdala,,Amygdala,22.2
+Galago_senegalensis,4633.2,Pallidum,,Pallidum,21.9
+Galago_senegalensis,4633.2,NeoW_Frahm,,Neocortex white,12.3
+Galago_senegalensis,4633.2,Total_insula_volume_L,,Insular cortex (grey),30.3
+Galago_senegalensis,4633.2,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Galago_senegalensis,4633.2,Capsula_interna,,Capsula interna,25.5
+Galago_senegalensis,4633.2,Striatum,210,Striatum,36.2663366336634
+Galago_senegalensis,4633.2,ASG_Sousa,301,Area striata grey,35.8
+Galago_senegalensis,4633.2,NeoG_Frahm,,Neocortex grey,33.5
+Galago_senegalensis,4633.2,Mesencephalon,205,Mesencephalon,25.2727272727273
+Galago_senegalensis,4633.2,Cerebellum,672,Cerebellum,29.7507692307692
+Galago_senegalensis,4633.2,Hippocampus,261,Hippocampus,25.7
+Galago_senegalensis,4633.2,Lateral_cerebellar_nuclei,4.4,Nucleus dentatus cerebelli,24.2
+Galagoides_demidoff,3185.3,LGN_Sousa,10.9,Corpus geniculatum laterale,23.1
+Galagoides_demidoff,3185.3,Amygdala,50.2,Amygdala,22.2
+Galagoides_demidoff,3185.3,Pallidum,17,Pallidum,21.9
+Galagoides_demidoff,3185.3,NeoW_Frahm,150.6,Neocortex white,12.3
+Galagoides_demidoff,3185.3,Total_insula_volume_L,12,Insular cortex (grey),30.3
+Galagoides_demidoff,3185.3,Nucleus_subthalamicus,1.4,Nucleus subthalamicus Luysi,25.2
+Galagoides_demidoff,3185.3,Capsula_interna,18.4,Capsula interna,25.5
+Galagoides_demidoff,3185.3,Striatum,169,Striatum,36.2663366336634
+Galagoides_demidoff,3185.3,ASG_Sousa,214,Area striata grey,35.8
+Galagoides_demidoff,3185.3,NeoG_Frahm,1417,Neocortex grey,33.5
+Galagoides_demidoff,3185.3,Mesencephalon,135,Mesencephalon,25.2727272727273
+Galagoides_demidoff,3185.3,Cerebellum,413,Cerebellum,29.7507692307692
+Galagoides_demidoff,3185.3,Hippocampus,152,Hippocampus,25.7
+Galagoides_demidoff,3185.3,Lateral_cerebellar_nuclei,3.06,Nucleus dentatus cerebelli,24.2
+Gorilla_gorilla,401785,LGN_Sousa,308.5,Corpus geniculatum laterale,23.1
+Gorilla_gorilla,401785,Amygdala,,Amygdala,22.2
+Gorilla_gorilla,401785,Pallidum,2604,Pallidum,21.9
+Gorilla_gorilla,401785,NeoW_Frahm,,Neocortex white,12.3
+Gorilla_gorilla,401785,Total_insula_volume_L,2146,Insular cortex (grey),30.3
+Gorilla_gorilla,401785,Nucleus_subthalamicus,178,Nucleus subthalamicus Luysi,25.2
+Gorilla_gorilla,401785,Capsula_interna,2471,Capsula interna,25.5
+Gorilla_gorilla,401785,Striatum,14567,Striatum,36.2663366336634
+Gorilla_gorilla,401785,ASG_Sousa,9129,Area striata grey,35.8
+Gorilla_gorilla,401785,NeoG_Frahm,,Neocortex grey,33.5
+Gorilla_gorilla,401785,Mesencephalon,4352,Mesencephalon,25.2727272727273
+Gorilla_gorilla,401785,Cerebellum,69249,Cerebellum,29.7507692307692
+Gorilla_gorilla,401785,Hippocampus,4781,Hippocampus,25.7
+Gorilla_gorilla,401785,Lateral_cerebellar_nuclei,534.6,Nucleus dentatus cerebelli,24.2
+Homo_sapiens,1357820,LGN_Sousa,335,Corpus geniculatum laterale,23.1
+Homo_sapiens,1357820,Amygdala,3015,Amygdala,22.2
+Homo_sapiens,1357820,Pallidum,4711,Pallidum,21.9
+Homo_sapiens,1357820,NeoW_Frahm,421819,Neocortex white,12.3
+Homo_sapiens,1357820,Total_insula_volume_L,6165,Insular cortex (grey),30.3
+Homo_sapiens,1357820,Nucleus_subthalamicus,469,Nucleus subthalamicus Luysi,25.2
+Homo_sapiens,1357820,Capsula_interna,7008,Capsula interna,25.5
+Homo_sapiens,1357820,Striatum,28689,Striatum,36.2663366336634
+Homo_sapiens,1357820,ASG_Sousa,15247.5,Area striata grey,35.8
+Homo_sapiens,1357820,NeoG_Frahm,584706,Neocortex grey,33.5
+Homo_sapiens,1357820,Mesencephalon,8087,Mesencephalon,25.2727272727273
+Homo_sapiens,1357820,Cerebellum,137421,Cerebellum,29.7507692307692
+Homo_sapiens,1357820,Hippocampus,10287,Hippocampus,25.7
+Homo_sapiens,1357820,Lateral_cerebellar_nuclei,1166.9,Nucleus dentatus cerebelli,24.2
+Hylobates_lar,88803,LGN_Sousa,166.2,Corpus geniculatum laterale,23.1
+Hylobates_lar,88803,Amygdala,,Amygdala,22.2
+Hylobates_lar,88803,Pallidum,715,Pallidum,21.9
+Hylobates_lar,88803,NeoW_Frahm,19154,Neocortex white,12.3
+Hylobates_lar,88803,Total_insula_volume_L,289,Insular cortex (grey),30.3
+Hylobates_lar,88803,Nucleus_subthalamicus,61.6,Nucleus subthalamicus Luysi,25.2
+Hylobates_lar,88803,Capsula_interna,693,Capsula interna,25.5
+Hylobates_lar,88803,Striatum,4784,Striatum,36.2663366336634
+Hylobates_lar,88803,ASG_Sousa,4086.7,Area striata grey,35.8
+Hylobates_lar,88803,NeoG_Frahm,46646,Neocortex grey,33.5
+Hylobates_lar,88803,Mesencephalon,1459,Mesencephalon,25.2727272727273
+Hylobates_lar,88803,Cerebellum,12078,Cerebellum,29.7507692307692
+Hylobates_lar,88803,Hippocampus,2673,Hippocampus,25.7
+Hylobates_lar,88803,Lateral_cerebellar_nuclei,141.08,Nucleus dentatus cerebelli,24.2
+Hylobates_muelleri,98263,LGN_Sousa,162,Corpus geniculatum laterale,23.1
+Hylobates_muelleri,98263,Amygdala,,Amygdala,22.2
+Hylobates_muelleri,98263,Pallidum,,Pallidum,21.9
+Hylobates_muelleri,98263,NeoW_Frahm,,Neocortex white,12.3
+Hylobates_muelleri,98263,Total_insula_volume_L,539,Insular cortex (grey),30.3
+Hylobates_muelleri,98263,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Hylobates_muelleri,98263,Capsula_interna,,Capsula interna,25.5
+Hylobates_muelleri,98263,Striatum,,Striatum,36.2663366336634
+Hylobates_muelleri,98263,ASG_Sousa,,Area striata grey,35.8
+Hylobates_muelleri,98263,NeoG_Frahm,,Neocortex grey,33.5
+Hylobates_muelleri,98263,Mesencephalon,,Mesencephalon,25.2727272727273
+Hylobates_muelleri,98263,Cerebellum,,Cerebellum,29.7507692307692
+Hylobates_muelleri,98263,Hippocampus,,Hippocampus,25.7
+Hylobates_muelleri,98263,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Indri_indri,32481,LGN_Sousa,94.5,Corpus geniculatum laterale,23.1
+Indri_indri,32481,Amygdala,,Amygdala,22.2
+Indri_indri,32481,Pallidum,,Pallidum,21.9
+Indri_indri,32481,NeoW_Frahm,4223,Neocortex white,12.3
+Indri_indri,32481,Total_insula_volume_L,167,Insular cortex (grey),30.3
+Indri_indri,32481,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Indri_indri,32481,Capsula_interna,,Capsula interna,25.5
+Indri_indri,32481,Striatum,1855,Striatum,36.2663366336634
+Indri_indri,32481,ASG_Sousa,1648,Area striata grey,35.8
+Indri_indri,32481,NeoG_Frahm,15891,Neocortex grey,33.5
+Indri_indri,32481,Mesencephalon,978,Mesencephalon,25.2727272727273
+Indri_indri,32481,Cerebellum,5504,Cerebellum,29.7507692307692
+Indri_indri,32481,Hippocampus,1520,Hippocampus,25.7
+Indri_indri,32481,Lateral_cerebellar_nuclei,56.31,Nucleus dentatus cerebelli,24.2
+Lagothrix_lagotricha,97490.35,LGN_Sousa,164,Corpus geniculatum laterale,23.1
+Lagothrix_lagotricha,97490.35,Amygdala,,Amygdala,22.2
+Lagothrix_lagotricha,97490.35,Pallidum,845,Pallidum,21.9
+Lagothrix_lagotricha,97490.35,NeoW_Frahm,16727,Neocortex white,12.3
+Lagothrix_lagotricha,97490.35,Total_insula_volume_L,,Insular cortex (grey),30.3
+Lagothrix_lagotricha,97490.35,Nucleus_subthalamicus,63.8,Nucleus subthalamicus Luysi,25.2
+Lagothrix_lagotricha,97490.35,Capsula_interna,612,Capsula interna,25.5
+Lagothrix_lagotricha,97490.35,Striatum,4947,Striatum,36.2663366336634
+Lagothrix_lagotricha,97490.35,ASG_Sousa,4856,Area striata grey,35.8
+Lagothrix_lagotricha,97490.35,NeoG_Frahm,49147,Neocortex grey,33.5
+Lagothrix_lagotricha,97490.35,Mesencephalon,1582,Mesencephalon,25.2727272727273
+Lagothrix_lagotricha,97490.35,Cerebellum,11268,Cerebellum,29.7507692307692
+Lagothrix_lagotricha,97490.35,Hippocampus,1586,Hippocampus,25.7
+Lagothrix_lagotricha,97490.35,Lateral_cerebellar_nuclei,108.57,Nucleus dentatus cerebelli,24.2
+Leontopithecus_rosalia,12259,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Leontopithecus_rosalia,12259,Amygdala,,Amygdala,22.2
+Leontopithecus_rosalia,12259,Pallidum,,Pallidum,21.9
+Leontopithecus_rosalia,12259,NeoW_Frahm,,Neocortex white,12.3
+Leontopithecus_rosalia,12259,Total_insula_volume_L,37,Insular cortex (grey),30.3
+Leontopithecus_rosalia,12259,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Leontopithecus_rosalia,12259,Capsula_interna,,Capsula interna,25.5
+Leontopithecus_rosalia,12259,Striatum,,Striatum,36.2663366336634
+Leontopithecus_rosalia,12259,ASG_Sousa,,Area striata grey,35.8
+Leontopithecus_rosalia,12259,NeoG_Frahm,,Neocortex grey,33.5
+Leontopithecus_rosalia,12259,Mesencephalon,,Mesencephalon,25.2727272727273
+Leontopithecus_rosalia,12259,Cerebellum,,Cerebellum,29.7507692307692
+Leontopithecus_rosalia,12259,Hippocampus,,Hippocampus,25.7
+Leontopithecus_rosalia,12259,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Lepilemur_ruficaudatus,7335.91,LGN_Sousa,15.6,Corpus geniculatum laterale,23.1
+Lepilemur_ruficaudatus,7335.91,Amygdala,133,Amygdala,22.2
+Lepilemur_ruficaudatus,7335.91,Pallidum,55.2,Pallidum,21.9
+Lepilemur_ruficaudatus,7335.91,NeoW_Frahm,476.6,Neocortex white,12.3
+Lepilemur_ruficaudatus,7335.91,Total_insula_volume_L,,Insular cortex (grey),30.3
+Lepilemur_ruficaudatus,7335.91,Nucleus_subthalamicus,2.91,Nucleus subthalamicus Luysi,25.2
+Lepilemur_ruficaudatus,7335.91,Capsula_interna,63,Capsula interna,25.5
+Lepilemur_ruficaudatus,7335.91,Striatum,366,Striatum,36.2663366336634
+Lepilemur_ruficaudatus,7335.91,ASG_Sousa,326,Area striata grey,35.8
+Lepilemur_ruficaudatus,7335.91,NeoG_Frahm,2805,Neocortex grey,33.5
+Lepilemur_ruficaudatus,7335.91,Mesencephalon,260,Mesencephalon,25.2727272727273
+Lepilemur_ruficaudatus,7335.91,Cerebellum,1165,Cerebellum,29.7507692307692
+Lepilemur_ruficaudatus,7335.91,Hippocampus,392,Hippocampus,25.7
+Lepilemur_ruficaudatus,7335.91,Lateral_cerebellar_nuclei,9.35,Nucleus dentatus cerebelli,24.2
+Lophocebus_albigena,106660,LGN_Sousa,182,Corpus geniculatum laterale,23.1
+Lophocebus_albigena,106660,Amygdala,,Amygdala,22.2
+Lophocebus_albigena,106660,Pallidum,674,Pallidum,21.9
+Lophocebus_albigena,106660,NeoW_Frahm,,Neocortex white,12.3
+Lophocebus_albigena,106660,Total_insula_volume_L,536,Insular cortex (grey),30.3
+Lophocebus_albigena,106660,Nucleus_subthalamicus,52.4,Nucleus subthalamicus Luysi,25.2
+Lophocebus_albigena,106660,Capsula_interna,708,Capsula interna,25.5
+Lophocebus_albigena,106660,Striatum,4146,Striatum,36.2663366336634
+Lophocebus_albigena,106660,ASG_Sousa,5420,Area striata grey,35.8
+Lophocebus_albigena,106660,NeoG_Frahm,,Neocortex grey,33.5
+Lophocebus_albigena,106660,Mesencephalon,1770,Mesencephalon,25.2727272727273
+Lophocebus_albigena,106660,Cerebellum,10726,Cerebellum,29.7507692307692
+Lophocebus_albigena,106660,Hippocampus,1485,Hippocampus,25.7
+Lophocebus_albigena,106660,Lateral_cerebellar_nuclei,113.33,Nucleus dentatus cerebelli,24.2
+Loris_tardigradus,6612,LGN_Sousa,24.6,Corpus geniculatum laterale,23.1
+Loris_tardigradus,6612,Amygdala,,Amygdala,22.2
+Loris_tardigradus,6612,Pallidum,41.4,Pallidum,21.9
+Loris_tardigradus,6612,NeoW_Frahm,,Neocortex white,12.3
+Loris_tardigradus,6612,Total_insula_volume_L,12,Insular cortex (grey),30.3
+Loris_tardigradus,6612,Nucleus_subthalamicus,3.79,Nucleus subthalamicus Luysi,25.2
+Loris_tardigradus,6612,Capsula_interna,46.3,Capsula interna,25.5
+Loris_tardigradus,6612,Striatum,351,Striatum,36.2663366336634
+Loris_tardigradus,6612,ASG_Sousa,529,Area striata grey,35.8
+Loris_tardigradus,6612,NeoG_Frahm,,Neocortex grey,33.5
+Loris_tardigradus,6612,Mesencephalon,220,Mesencephalon,25.2727272727273
+Loris_tardigradus,6612,Cerebellum,728,Cerebellum,29.7507692307692
+Loris_tardigradus,6612,Hippocampus,191,Hippocampus,25.7
+Loris_tardigradus,6612,Lateral_cerebellar_nuclei,5.76,Nucleus dentatus cerebelli,24.2
+Macaca_fascicularis,55598.46,LGN_Sousa,91.9,Corpus geniculatum laterale,23.1
+Macaca_fascicularis,55598.46,Amygdala,,Amygdala,22.2
+Macaca_fascicularis,55598.46,Pallidum,,Pallidum,21.9
+Macaca_fascicularis,55598.46,NeoW_Frahm,,Neocortex white,12.3
+Macaca_fascicularis,55598.46,Total_insula_volume_L,,Insular cortex (grey),30.3
+Macaca_fascicularis,55598.46,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Macaca_fascicularis,55598.46,Capsula_interna,,Capsula interna,25.5
+Macaca_fascicularis,55598.46,Striatum,,Striatum,36.2663366336634
+Macaca_fascicularis,55598.46,ASG_Sousa,2713.3,Area striata grey,35.8
+Macaca_fascicularis,55598.46,NeoG_Frahm,,Neocortex grey,33.5
+Macaca_fascicularis,55598.46,Mesencephalon,,Mesencephalon,25.2727272727273
+Macaca_fascicularis,55598.46,Cerebellum,,Cerebellum,29.7507692307692
+Macaca_fascicularis,55598.46,Hippocampus,,Hippocampus,25.7
+Macaca_fascicularis,55598.46,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Macaca_maura,80405,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Macaca_maura,80405,Amygdala,,Amygdala,22.2
+Macaca_maura,80405,Pallidum,,Pallidum,21.9
+Macaca_maura,80405,NeoW_Frahm,,Neocortex white,12.3
+Macaca_maura,80405,Total_insula_volume_L,492,Insular cortex (grey),30.3
+Macaca_maura,80405,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Macaca_maura,80405,Capsula_interna,,Capsula interna,25.5
+Macaca_maura,80405,Striatum,,Striatum,36.2663366336634
+Macaca_maura,80405,ASG_Sousa,,Area striata grey,35.8
+Macaca_maura,80405,NeoG_Frahm,,Neocortex grey,33.5
+Macaca_maura,80405,Mesencephalon,,Mesencephalon,25.2727272727273
+Macaca_maura,80405,Cerebellum,,Cerebellum,29.7507692307692
+Macaca_maura,80405,Hippocampus,,Hippocampus,25.7
+Macaca_maura,80405,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Macaca_mulatta,89768.34,LGN_Sousa,158,Corpus geniculatum laterale,23.1
+Macaca_mulatta,89768.34,Amygdala,,Amygdala,22.2
+Macaca_mulatta,89768.34,Pallidum,,Pallidum,21.9
+Macaca_mulatta,89768.34,NeoW_Frahm,,Neocortex white,12.3
+Macaca_mulatta,89768.34,Total_insula_volume_L,,Insular cortex (grey),30.3
+Macaca_mulatta,89768.34,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Macaca_mulatta,89768.34,Capsula_interna,,Capsula interna,25.5
+Macaca_mulatta,89768.34,Striatum,4032,Striatum,36.2663366336634
+Macaca_mulatta,89768.34,ASG_Sousa,5343,Area striata grey,35.8
+Macaca_mulatta,89768.34,NeoG_Frahm,,Neocortex grey,33.5
+Macaca_mulatta,89768.34,Mesencephalon,1380,Mesencephalon,25.2727272727273
+Macaca_mulatta,89768.34,Cerebellum,8965,Cerebellum,29.7507692307692
+Macaca_mulatta,89768.34,Hippocampus,1353,Hippocampus,25.7
+Macaca_mulatta,89768.34,Lateral_cerebellar_nuclei,106.94,Nucleus dentatus cerebelli,24.2
+Microcebus_murinus,1718.15,LGN_Sousa,7.1,Corpus geniculatum laterale,23.1
+Microcebus_murinus,1718.15,Amygdala,36.4,Amygdala,22.2
+Microcebus_murinus,1718.15,Pallidum,10.7,Pallidum,21.9
+Microcebus_murinus,1718.15,NeoW_Frahm,65.31,Neocortex white,12.3
+Microcebus_murinus,1718.15,Total_insula_volume_L,,Insular cortex (grey),30.3
+Microcebus_murinus,1718.15,Nucleus_subthalamicus,0.65,Nucleus subthalamicus Luysi,25.2
+Microcebus_murinus,1718.15,Capsula_interna,9.08,Capsula interna,25.5
+Microcebus_murinus,1718.15,Striatum,85.7,Striatum,36.2663366336634
+Microcebus_murinus,1718.15,ASG_Sousa,136,Area striata grey,35.8
+Microcebus_murinus,1718.15,NeoG_Frahm,674.2,Neocortex grey,33.5
+Microcebus_murinus,1718.15,Mesencephalon,85.2,Mesencephalon,25.2727272727273
+Microcebus_murinus,1718.15,Cerebellum,234,Cerebellum,29.7507692307692
+Microcebus_murinus,1718.15,Hippocampus,100,Hippocampus,25.7
+Microcebus_murinus,1718.15,Lateral_cerebellar_nuclei,2.11,Nucleus dentatus cerebelli,24.2
+Miopithecus_talapoin,38610.04,LGN_Sousa,109,Corpus geniculatum laterale,23.1
+Miopithecus_talapoin,38610.04,Amygdala,,Amygdala,22.2
+Miopithecus_talapoin,38610.04,Pallidum,,Pallidum,21.9
+Miopithecus_talapoin,38610.04,NeoW_Frahm,,Neocortex white,12.3
+Miopithecus_talapoin,38610.04,Total_insula_volume_L,,Insular cortex (grey),30.3
+Miopithecus_talapoin,38610.04,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Miopithecus_talapoin,38610.04,Capsula_interna,,Capsula interna,25.5
+Miopithecus_talapoin,38610.04,Striatum,1908,Striatum,36.2663366336634
+Miopithecus_talapoin,38610.04,ASG_Sousa,2339,Area striata grey,35.8
+Miopithecus_talapoin,38610.04,NeoG_Frahm,,Neocortex grey,33.5
+Miopithecus_talapoin,38610.04,Mesencephalon,826,Mesencephalon,25.2727272727273
+Miopithecus_talapoin,38610.04,Cerebellum,3374,Cerebellum,29.7507692307692
+Miopithecus_talapoin,38610.04,Hippocampus,705,Hippocampus,25.7
+Miopithecus_talapoin,38610.04,Lateral_cerebellar_nuclei,33.84,Nucleus dentatus cerebelli,24.2
+Nasalis_larvatus,92797,LGN_Sousa,157,Corpus geniculatum laterale,23.1
+Nasalis_larvatus,92797,Amygdala,,Amygdala,22.2
+Nasalis_larvatus,92797,Pallidum,550,Pallidum,21.9
+Nasalis_larvatus,92797,NeoW_Frahm,,Neocortex white,12.3
+Nasalis_larvatus,92797,Total_insula_volume_L,,Insular cortex (grey),30.3
+Nasalis_larvatus,92797,Nucleus_subthalamicus,37.2,Nucleus subthalamicus Luysi,25.2
+Nasalis_larvatus,92797,Capsula_interna,564,Capsula interna,25.5
+Nasalis_larvatus,92797,Striatum,3735,Striatum,36.2663366336634
+Nasalis_larvatus,92797,ASG_Sousa,,Area striata grey,35.8
+Nasalis_larvatus,92797,NeoG_Frahm,,Neocortex grey,33.5
+Nasalis_larvatus,92797,Mesencephalon,1556,Mesencephalon,25.2727272727273
+Nasalis_larvatus,92797,Cerebellum,12113,Cerebellum,29.7507692307692
+Nasalis_larvatus,92797,Hippocampus,1966,Hippocampus,25.7
+Nasalis_larvatus,92797,Lateral_cerebellar_nuclei,149.33,Nucleus dentatus cerebelli,24.2
+Nycticebus_coucang,12065.64,LGN_Sousa,35.9,Corpus geniculatum laterale,23.1
+Nycticebus_coucang,12065.64,Amygdala,,Amygdala,22.2
+Nycticebus_coucang,12065.64,Pallidum,,Pallidum,21.9
+Nycticebus_coucang,12065.64,NeoW_Frahm,1240,Neocortex white,12.3
+Nycticebus_coucang,12065.64,Total_insula_volume_L,,Insular cortex (grey),30.3
+Nycticebus_coucang,12065.64,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Nycticebus_coucang,12065.64,Capsula_interna,,Capsula interna,25.5
+Nycticebus_coucang,12065.64,Striatum,760,Striatum,36.2663366336634
+Nycticebus_coucang,12065.64,ASG_Sousa,696,Area striata grey,35.8
+Nycticebus_coucang,12065.64,NeoG_Frahm,4952,Neocortex grey,33.5
+Nycticebus_coucang,12065.64,Mesencephalon,345,Mesencephalon,25.2727272727273
+Nycticebus_coucang,12065.64,Cerebellum,1310,Cerebellum,29.7507692307692
+Nycticebus_coucang,12065.64,Hippocampus,566,Hippocampus,25.7
+Nycticebus_coucang,12065.64,Lateral_cerebellar_nuclei,14.03,Nucleus dentatus cerebelli,24.2
+Otolemur_crassicaudatus,9942.08,LGN_Sousa,23.2,Corpus geniculatum laterale,23.1
+Otolemur_crassicaudatus,9942.08,Amygdala,,Amygdala,22.2
+Otolemur_crassicaudatus,9942.08,Pallidum,63.3,Pallidum,21.9
+Otolemur_crassicaudatus,9942.08,NeoW_Frahm,,Neocortex white,12.3
+Otolemur_crassicaudatus,9942.08,Total_insula_volume_L,,Insular cortex (grey),30.3
+Otolemur_crassicaudatus,9942.08,Nucleus_subthalamicus,4.1,Nucleus subthalamicus Luysi,25.2
+Otolemur_crassicaudatus,9942.08,Capsula_interna,74.6,Capsula interna,25.5
+Otolemur_crassicaudatus,9942.08,Striatum,556,Striatum,36.2663366336634
+Otolemur_crassicaudatus,9942.08,ASG_Sousa,479,Area striata grey,35.8
+Otolemur_crassicaudatus,9942.08,NeoG_Frahm,,Neocortex grey,33.5
+Otolemur_crassicaudatus,9942.08,Mesencephalon,384,Mesencephalon,25.2727272727273
+Otolemur_crassicaudatus,9942.08,Cerebellum,1414,Cerebellum,29.7507692307692
+Otolemur_crassicaudatus,9942.08,Hippocampus,461,Hippocampus,25.7
+Otolemur_crassicaudatus,9942.08,Lateral_cerebellar_nuclei,9.64,Nucleus dentatus cerebelli,24.2
+Pan_paniscus,339766.6667,LGN_Sousa,275.1,Corpus geniculatum laterale,23.1
+Pan_paniscus,339766.6667,Amygdala,,Amygdala,22.2
+Pan_paniscus,339766.6667,Pallidum,,Pallidum,21.9
+Pan_paniscus,339766.6667,NeoW_Frahm,,Neocortex white,12.3
+Pan_paniscus,339766.6667,Total_insula_volume_L,1690,Insular cortex (grey),30.3
+Pan_paniscus,339766.6667,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pan_paniscus,339766.6667,Capsula_interna,,Capsula interna,25.5
+Pan_paniscus,339766.6667,Striatum,,Striatum,36.2663366336634
+Pan_paniscus,339766.6667,ASG_Sousa,11606.5,Area striata grey,35.8
+Pan_paniscus,339766.6667,NeoG_Frahm,,Neocortex grey,33.5
+Pan_paniscus,339766.6667,Mesencephalon,,Mesencephalon,25.2727272727273
+Pan_paniscus,339766.6667,Cerebellum,,Cerebellum,29.7507692307692
+Pan_paniscus,339766.6667,Hippocampus,,Hippocampus,25.7
+Pan_paniscus,339766.6667,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Pan_troglodytes,330790,LGN_Sousa,250.7,Corpus geniculatum laterale,23.1
+Pan_troglodytes,330790,Amygdala,,Amygdala,22.2
+Pan_troglodytes,330790,Pallidum,1951,Pallidum,21.9
+Pan_troglodytes,330790,NeoW_Frahm,118996,Neocortex white,12.3
+Pan_troglodytes,330790,Total_insula_volume_L,1601,Insular cortex (grey),30.3
+Pan_troglodytes,330790,Nucleus_subthalamicus,127,Nucleus subthalamicus Luysi,25.2
+Pan_troglodytes,330790,Capsula_interna,2510,Capsula interna,25.5
+Pan_troglodytes,330790,Striatum,12246,Striatum,36.2663366336634
+Pan_troglodytes,330790,ASG_Sousa,8268.3,Area striata grey,35.8
+Pan_troglodytes,330790,NeoG_Frahm,172597,Neocortex grey,33.5
+Pan_troglodytes,330790,Mesencephalon,3739,Mesencephalon,25.2727272727273
+Pan_troglodytes,330790,Cerebellum,43663,Cerebellum,29.7507692307692
+Pan_troglodytes,330790,Hippocampus,3779,Hippocampus,25.7
+Pan_troglodytes,330790,Lateral_cerebellar_nuclei,455.83,Nucleus dentatus cerebelli,24.2
+Papio_anubis,194015.44,LGN_Sousa,395,Corpus geniculatum laterale,23.1
+Papio_anubis,194015.44,Amygdala,,Amygdala,22.2
+Papio_anubis,194015.44,Pallidum,1147,Pallidum,21.9
+Papio_anubis,194015.44,NeoW_Frahm,54416,Neocortex white,12.3
+Papio_anubis,194015.44,Total_insula_volume_L,,Insular cortex (grey),30.3
+Papio_anubis,194015.44,Nucleus_subthalamicus,94.7,Nucleus subthalamicus Luysi,25.2
+Papio_anubis,194015.44,Capsula_interna,1257,Capsula interna,25.5
+Papio_anubis,194015.44,Striatum,7182,Striatum,36.2663366336634
+Papio_anubis,194015.44,ASG_Sousa,10001,Area striata grey,35.8
+Papio_anubis,194015.44,NeoG_Frahm,85726,Neocortex grey,33.5
+Papio_anubis,194015.44,Mesencephalon,2711,Mesencephalon,25.2727272727273
+Papio_anubis,194015.44,Cerebellum,18683,Cerebellum,29.7507692307692
+Papio_anubis,194015.44,Hippocampus,3398,Hippocampus,25.7
+Papio_anubis,194015.44,Lateral_cerebellar_nuclei,220.35,Nucleus dentatus cerebelli,24.2
+Perodicticus_potto,11100,LGN_Sousa,24.3,Corpus geniculatum laterale,23.1
+Perodicticus_potto,11100,Amygdala,,Amygdala,22.2
+Perodicticus_potto,11100,Pallidum,107,Pallidum,21.9
+Perodicticus_potto,11100,NeoW_Frahm,,Neocortex white,12.3
+Perodicticus_potto,11100,Total_insula_volume_L,31,Insular cortex (grey),30.3
+Perodicticus_potto,11100,Nucleus_subthalamicus,8.19,Nucleus subthalamicus Luysi,25.2
+Perodicticus_potto,11100,Capsula_interna,107,Capsula interna,25.5
+Perodicticus_potto,11100,Striatum,712,Striatum,36.2663366336634
+Perodicticus_potto,11100,ASG_Sousa,495,Area striata grey,35.8
+Perodicticus_potto,11100,NeoG_Frahm,,Neocortex grey,33.5
+Perodicticus_potto,11100,Mesencephalon,391,Mesencephalon,25.2727272727273
+Perodicticus_potto,11100,Cerebellum,1699,Cerebellum,29.7507692307692
+Perodicticus_potto,11100,Hippocampus,607,Hippocampus,25.7
+Perodicticus_potto,11100,Lateral_cerebellar_nuclei,12.25,Nucleus dentatus cerebelli,24.2
+Piliocolobus_badius,72394,LGN_Sousa,128,Corpus geniculatum laterale,23.1
+Piliocolobus_badius,72394,Amygdala,479,Amygdala,22.2
+Piliocolobus_badius,72394,Pallidum,521,Pallidum,21.9
+Piliocolobus_badius,72394,NeoW_Frahm,14331,Neocortex white,12.3
+Piliocolobus_badius,72394,Total_insula_volume_L,241,Insular cortex (grey),30.3
+Piliocolobus_badius,72394,Nucleus_subthalamicus,31.9,Nucleus subthalamicus Luysi,25.2
+Piliocolobus_badius,72394,Capsula_interna,460,Capsula interna,25.5
+Piliocolobus_badius,72394,Striatum,3217,Striatum,36.2663366336634
+Piliocolobus_badius,72394,ASG_Sousa,3053,Area striata grey,35.8
+Piliocolobus_badius,72394,NeoG_Frahm,36575,Neocortex grey,33.5
+Piliocolobus_badius,72394,Mesencephalon,1333,Mesencephalon,25.2727272727273
+Piliocolobus_badius,72394,Cerebellum,8648,Cerebellum,29.7507692307692
+Piliocolobus_badius,72394,Hippocampus,1671,Hippocampus,25.7
+Piliocolobus_badius,72394,Lateral_cerebellar_nuclei,98.52,Nucleus dentatus cerebelli,24.2
+Pithecia_monachus,33783.78,LGN_Sousa,76.3,Corpus geniculatum laterale,23.1
+Pithecia_monachus,33783.78,Amygdala,,Amygdala,22.2
+Pithecia_monachus,33783.78,Pallidum,,Pallidum,21.9
+Pithecia_monachus,33783.78,NeoW_Frahm,,Neocortex white,12.3
+Pithecia_monachus,33783.78,Total_insula_volume_L,,Insular cortex (grey),30.3
+Pithecia_monachus,33783.78,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pithecia_monachus,33783.78,Capsula_interna,,Capsula interna,25.5
+Pithecia_monachus,33783.78,Striatum,1918,Striatum,36.2663366336634
+Pithecia_monachus,33783.78,ASG_Sousa,1679,Area striata grey,35.8
+Pithecia_monachus,33783.78,NeoG_Frahm,,Neocortex grey,33.5
+Pithecia_monachus,33783.78,Mesencephalon,745,Mesencephalon,25.2727272727273
+Pithecia_monachus,33783.78,Cerebellum,3908,Cerebellum,29.7507692307692
+Pithecia_monachus,33783.78,Hippocampus,834,Hippocampus,25.7
+Pithecia_monachus,33783.78,Lateral_cerebellar_nuclei,53.67,Nucleus dentatus cerebelli,24.2
+Pithecia_pithecia,28958,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Pithecia_pithecia,28958,Amygdala,,Amygdala,22.2
+Pithecia_pithecia,28958,Pallidum,,Pallidum,21.9
+Pithecia_pithecia,28958,NeoW_Frahm,,Neocortex white,12.3
+Pithecia_pithecia,28958,Total_insula_volume_L,279,Insular cortex (grey),30.3
+Pithecia_pithecia,28958,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pithecia_pithecia,28958,Capsula_interna,,Capsula interna,25.5
+Pithecia_pithecia,28958,Striatum,,Striatum,36.2663366336634
+Pithecia_pithecia,28958,ASG_Sousa,,Area striata grey,35.8
+Pithecia_pithecia,28958,NeoG_Frahm,,Neocortex grey,33.5
+Pithecia_pithecia,28958,Mesencephalon,,Mesencephalon,25.2727272727273
+Pithecia_pithecia,28958,Cerebellum,,Cerebellum,29.7507692307692
+Pithecia_pithecia,28958,Hippocampus,,Hippocampus,25.7
+Pithecia_pithecia,28958,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Plecturocebus_moloch,18339.77,LGN_Sousa,54.2,Corpus geniculatum laterale,23.1
+Plecturocebus_moloch,18339.77,Amygdala,,Amygdala,22.2
+Plecturocebus_moloch,18339.77,Pallidum,,Pallidum,21.9
+Plecturocebus_moloch,18339.77,NeoW_Frahm,,Neocortex white,12.3
+Plecturocebus_moloch,18339.77,Total_insula_volume_L,,Insular cortex (grey),30.3
+Plecturocebus_moloch,18339.77,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Plecturocebus_moloch,18339.77,Capsula_interna,,Capsula interna,25.5
+Plecturocebus_moloch,18339.77,Striatum,920,Striatum,36.2663366336634
+Plecturocebus_moloch,18339.77,ASG_Sousa,1201,Area striata grey,35.8
+Plecturocebus_moloch,18339.77,NeoG_Frahm,,Neocortex grey,33.5
+Plecturocebus_moloch,18339.77,Mesencephalon,530,Mesencephalon,25.2727272727273
+Plecturocebus_moloch,18339.77,Cerebellum,1622,Cerebellum,29.7507692307692
+Plecturocebus_moloch,18339.77,Hippocampus,588,Hippocampus,25.7
+Plecturocebus_moloch,18339.77,Lateral_cerebellar_nuclei,21.24,Nucleus dentatus cerebelli,24.2
+Pongo_abelii,333880,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Pongo_abelii,333880,Amygdala,,Amygdala,22.2
+Pongo_abelii,333880,Pallidum,,Pallidum,21.9
+Pongo_abelii,333880,NeoW_Frahm,,Neocortex white,12.3
+Pongo_abelii,333880,Total_insula_volume_L,1158,Insular cortex (grey),30.3
+Pongo_abelii,333880,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pongo_abelii,333880,Capsula_interna,,Capsula interna,25.5
+Pongo_abelii,333880,Striatum,,Striatum,36.2663366336634
+Pongo_abelii,333880,ASG_Sousa,,Area striata grey,35.8
+Pongo_abelii,333880,NeoG_Frahm,,Neocortex grey,33.5
+Pongo_abelii,333880,Mesencephalon,,Mesencephalon,25.2727272727273
+Pongo_abelii,333880,Cerebellum,,Cerebellum,29.7507692307692
+Pongo_abelii,333880,Hippocampus,,Hippocampus,25.7
+Pongo_abelii,333880,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Pongo_pygmaeus,347970,LGN_Sousa,259.1,Corpus geniculatum laterale,23.1
+Pongo_pygmaeus,347970,Amygdala,1400,Amygdala,22.2
+Pongo_pygmaeus,347970,Pallidum,1800,Pallidum,21.9
+Pongo_pygmaeus,347970,NeoW_Frahm,81500,Neocortex white,12.3
+Pongo_pygmaeus,347970,Total_insula_volume_L,1505,Insular cortex (grey),30.3
+Pongo_pygmaeus,347970,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pongo_pygmaeus,347970,Capsula_interna,,Capsula interna,25.5
+Pongo_pygmaeus,347970,Striatum,11500,Striatum,36.2663366336634
+Pongo_pygmaeus,347970,ASG_Sousa,8233.7,Area striata grey,35.8
+Pongo_pygmaeus,347970,NeoG_Frahm,138300,Neocortex grey,33.5
+Pongo_pygmaeus,347970,Mesencephalon,4000,Mesencephalon,25.2727272727273
+Pongo_pygmaeus,347970,Cerebellum,42900,Cerebellum,29.7507692307692
+Pongo_pygmaeus,347970,Hippocampus,2700,Hippocampus,25.7
+Pongo_pygmaeus,347970,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Propithecus_verreauxi,25772.2,LGN_Sousa,64.5,Corpus geniculatum laterale,23.1
+Propithecus_verreauxi,25772.2,Amygdala,251,Amygdala,22.2
+Propithecus_verreauxi,25772.2,Pallidum,263,Pallidum,21.9
+Propithecus_verreauxi,25772.2,NeoW_Frahm,3335,Neocortex white,12.3
+Propithecus_verreauxi,25772.2,Total_insula_volume_L,,Insular cortex (grey),30.3
+Propithecus_verreauxi,25772.2,Nucleus_subthalamicus,20,Nucleus subthalamicus Luysi,25.2
+Propithecus_verreauxi,25772.2,Capsula_interna,324,Capsula interna,25.5
+Propithecus_verreauxi,25772.2,Striatum,1411,Striatum,36.2663366336634
+Propithecus_verreauxi,25772.2,ASG_Sousa,1106,Area striata grey,35.8
+Propithecus_verreauxi,25772.2,NeoG_Frahm,9835,Neocortex grey,33.5
+Propithecus_verreauxi,25772.2,Mesencephalon,780,Mesencephalon,25.2727272727273
+Propithecus_verreauxi,25772.2,Cerebellum,3957,Cerebellum,29.7507692307692
+Propithecus_verreauxi,25772.2,Hippocampus,1043,Hippocampus,25.7
+Propithecus_verreauxi,25772.2,Lateral_cerebellar_nuclei,39.46,Nucleus dentatus cerebelli,24.2
+Pygathrix_nemaeus,72530,LGN_Sousa,115,Corpus geniculatum laterale,23.1
+Pygathrix_nemaeus,72530,Amygdala,,Amygdala,22.2
+Pygathrix_nemaeus,72530,Pallidum,,Pallidum,21.9
+Pygathrix_nemaeus,72530,NeoW_Frahm,,Neocortex white,12.3
+Pygathrix_nemaeus,72530,Total_insula_volume_L,,Insular cortex (grey),30.3
+Pygathrix_nemaeus,72530,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Pygathrix_nemaeus,72530,Capsula_interna,,Capsula interna,25.5
+Pygathrix_nemaeus,72530,Striatum,3166,Striatum,36.2663366336634
+Pygathrix_nemaeus,72530,ASG_Sousa,,Area striata grey,35.8
+Pygathrix_nemaeus,72530,NeoG_Frahm,,Neocortex grey,33.5
+Pygathrix_nemaeus,72530,Mesencephalon,1345,Mesencephalon,25.2727272727273
+Pygathrix_nemaeus,72530,Cerebellum,8063,Cerebellum,29.7507692307692
+Pygathrix_nemaeus,72530,Hippocampus,2295,Hippocampus,25.7
+Pygathrix_nemaeus,72530,Lateral_cerebellar_nuclei,137.05,Nucleus dentatus cerebelli,24.2
+Saguinus_geoffroyi,10135,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Saguinus_geoffroyi,10135,Amygdala,,Amygdala,22.2
+Saguinus_geoffroyi,10135,Pallidum,,Pallidum,21.9
+Saguinus_geoffroyi,10135,NeoW_Frahm,,Neocortex white,12.3
+Saguinus_geoffroyi,10135,Total_insula_volume_L,23,Insular cortex (grey),30.3
+Saguinus_geoffroyi,10135,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Saguinus_geoffroyi,10135,Capsula_interna,,Capsula interna,25.5
+Saguinus_geoffroyi,10135,Striatum,,Striatum,36.2663366336634
+Saguinus_geoffroyi,10135,ASG_Sousa,,Area striata grey,35.8
+Saguinus_geoffroyi,10135,NeoG_Frahm,,Neocortex grey,33.5
+Saguinus_geoffroyi,10135,Mesencephalon,,Mesencephalon,25.2727272727273
+Saguinus_geoffroyi,10135,Cerebellum,,Cerebellum,29.7507692307692
+Saguinus_geoffroyi,10135,Hippocampus,,Hippocampus,25.7
+Saguinus_geoffroyi,10135,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Saguinus_midas,9942.08,LGN_Sousa,36,Corpus geniculatum laterale,23.1
+Saguinus_midas,9942.08,Amygdala,,Amygdala,22.2
+Saguinus_midas,9942.08,Pallidum,,Pallidum,21.9
+Saguinus_midas,9942.08,NeoW_Frahm,,Neocortex white,12.3
+Saguinus_midas,9942.08,Total_insula_volume_L,,Insular cortex (grey),30.3
+Saguinus_midas,9942.08,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Saguinus_midas,9942.08,Capsula_interna,,Capsula interna,25.5
+Saguinus_midas,9942.08,Striatum,471,Striatum,36.2663366336634
+Saguinus_midas,9942.08,ASG_Sousa,841,Area striata grey,35.8
+Saguinus_midas,9942.08,NeoG_Frahm,,Neocortex grey,33.5
+Saguinus_midas,9942.08,Mesencephalon,332,Mesencephalon,25.2727272727273
+Saguinus_midas,9942.08,Cerebellum,1061,Cerebellum,29.7507692307692
+Saguinus_midas,9942.08,Hippocampus,280,Hippocampus,25.7
+Saguinus_midas,9942.08,Lateral_cerebellar_nuclei,7.75,Nucleus dentatus cerebelli,24.2
+Saguinus_oedipus,8938.2,LGN_Sousa,34.2,Corpus geniculatum laterale,23.1
+Saguinus_oedipus,8938.2,Amygdala,,Amygdala,22.2
+Saguinus_oedipus,8938.2,Pallidum,73.2,Pallidum,21.9
+Saguinus_oedipus,8938.2,NeoW_Frahm,,Neocortex white,12.3
+Saguinus_oedipus,8938.2,Total_insula_volume_L,26,Insular cortex (grey),30.3
+Saguinus_oedipus,8938.2,Nucleus_subthalamicus,4.45,Nucleus subthalamicus Luysi,25.2
+Saguinus_oedipus,8938.2,Capsula_interna,62.7,Capsula interna,25.5
+Saguinus_oedipus,8938.2,Striatum,453,Striatum,36.2663366336634
+Saguinus_oedipus,8938.2,ASG_Sousa,807,Area striata grey,35.8
+Saguinus_oedipus,8938.2,NeoG_Frahm,,Neocortex grey,33.5
+Saguinus_oedipus,8938.2,Mesencephalon,333,Mesencephalon,25.2727272727273
+Saguinus_oedipus,8938.2,Cerebellum,984,Cerebellum,29.7507692307692
+Saguinus_oedipus,8938.2,Hippocampus,262,Hippocampus,25.7
+Saguinus_oedipus,8938.2,Lateral_cerebellar_nuclei,8.8,Nucleus dentatus cerebelli,24.2
+Saimiri_sciureus,23166.02,LGN_Sousa,62.9,Corpus geniculatum laterale,23.1
+Saimiri_sciureus,23166.02,Amygdala,227,Amygdala,22.2
+Saimiri_sciureus,23166.02,Pallidum,169,Pallidum,21.9
+Saimiri_sciureus,23166.02,NeoW_Frahm,3710,Neocortex white,12.3
+Saimiri_sciureus,23166.02,Total_insula_volume_L,,Insular cortex (grey),30.3
+Saimiri_sciureus,23166.02,Nucleus_subthalamicus,11.5,Nucleus subthalamicus Luysi,25.2
+Saimiri_sciureus,23166.02,Capsula_interna,132,Capsula interna,25.5
+Saimiri_sciureus,23166.02,Striatum,1042,Striatum,36.2663366336634
+Saimiri_sciureus,23166.02,ASG_Sousa,1884,Area striata grey,35.8
+Saimiri_sciureus,23166.02,NeoG_Frahm,11832,Neocortex grey,33.5
+Saimiri_sciureus,23166.02,Mesencephalon,526,Mesencephalon,25.2727272727273
+Saimiri_sciureus,23166.02,Cerebellum,2260,Cerebellum,29.7507692307692
+Saimiri_sciureus,23166.02,Hippocampus,352,Hippocampus,25.7
+Saimiri_sciureus,23166.02,Lateral_cerebellar_nuclei,27.2,Nucleus dentatus cerebelli,24.2
+Symphalangus_syndactylus,133880,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Symphalangus_syndactylus,133880,Amygdala,,Amygdala,22.2
+Symphalangus_syndactylus,133880,Pallidum,,Pallidum,21.9
+Symphalangus_syndactylus,133880,NeoW_Frahm,,Neocortex white,12.3
+Symphalangus_syndactylus,133880,Total_insula_volume_L,416,Insular cortex (grey),30.3
+Symphalangus_syndactylus,133880,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Symphalangus_syndactylus,133880,Capsula_interna,,Capsula interna,25.5
+Symphalangus_syndactylus,133880,Striatum,,Striatum,36.2663366336634
+Symphalangus_syndactylus,133880,ASG_Sousa,5468.9,Area striata grey,35.8
+Symphalangus_syndactylus,133880,NeoG_Frahm,,Neocortex grey,33.5
+Symphalangus_syndactylus,133880,Mesencephalon,,Mesencephalon,25.2727272727273
+Symphalangus_syndactylus,133880,Cerebellum,,Cerebellum,29.7507692307692
+Symphalangus_syndactylus,133880,Hippocampus,,Hippocampus,25.7
+Symphalangus_syndactylus,133880,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Tarsius_syrichta,3474.9,LGN_Sousa,20.8,Corpus geniculatum laterale,23.1
+Tarsius_syrichta,3474.9,Amygdala,49.8,Amygdala,22.2
+Tarsius_syrichta,3474.9,Pallidum,16.1,Pallidum,21.9
+Tarsius_syrichta,3474.9,NeoW_Frahm,137,Neocortex white,12.3
+Tarsius_syrichta,3474.9,Total_insula_volume_L,,Insular cortex (grey),30.3
+Tarsius_syrichta,3474.9,Nucleus_subthalamicus,1.09,Nucleus subthalamicus Luysi,25.2
+Tarsius_syrichta,3474.9,Capsula_interna,16.7,Capsula interna,25.5
+Tarsius_syrichta,3474.9,Striatum,133,Striatum,36.2663366336634
+Tarsius_syrichta,3474.9,ASG_Sousa,349,Area striata grey,35.8
+Tarsius_syrichta,3474.9,NeoG_Frahm,1631,Neocortex grey,33.5
+Tarsius_syrichta,3474.9,Mesencephalon,197,Mesencephalon,25.2727272727273
+Tarsius_syrichta,3474.9,Cerebellum,428,Cerebellum,29.7507692307692
+Tarsius_syrichta,3474.9,Hippocampus,153,Hippocampus,25.7
+Tarsius_syrichta,3474.9,Lateral_cerebellar_nuclei,3.37,Nucleus dentatus cerebelli,24.2
+Trachypithecus_francoisi,98552,LGN_Sousa,,Corpus geniculatum laterale,23.1
+Trachypithecus_francoisi,98552,Amygdala,,Amygdala,22.2
+Trachypithecus_francoisi,98552,Pallidum,,Pallidum,21.9
+Trachypithecus_francoisi,98552,NeoW_Frahm,,Neocortex white,12.3
+Trachypithecus_francoisi,98552,Total_insula_volume_L,625,Insular cortex (grey),30.3
+Trachypithecus_francoisi,98552,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Trachypithecus_francoisi,98552,Capsula_interna,,Capsula interna,25.5
+Trachypithecus_francoisi,98552,Striatum,,Striatum,36.2663366336634
+Trachypithecus_francoisi,98552,ASG_Sousa,,Area striata grey,35.8
+Trachypithecus_francoisi,98552,NeoG_Frahm,,Neocortex grey,33.5
+Trachypithecus_francoisi,98552,Mesencephalon,,Mesencephalon,25.2727272727273
+Trachypithecus_francoisi,98552,Cerebellum,,Cerebellum,29.7507692307692
+Trachypithecus_francoisi,98552,Hippocampus,,Hippocampus,25.7
+Trachypithecus_francoisi,98552,Lateral_cerebellar_nuclei,,Nucleus dentatus cerebelli,24.2
+Varecia_variegata,30405,LGN_Sousa,68.9,Corpus geniculatum laterale,23.1
+Varecia_variegata,30405,Amygdala,,Amygdala,22.2
+Varecia_variegata,30405,Pallidum,,Pallidum,21.9
+Varecia_variegata,30405,NeoW_Frahm,,Neocortex white,12.3
+Varecia_variegata,30405,Total_insula_volume_L,100,Insular cortex (grey),30.3
+Varecia_variegata,30405,Nucleus_subthalamicus,,Nucleus subthalamicus Luysi,25.2
+Varecia_variegata,30405,Capsula_interna,,Capsula interna,25.5
+Varecia_variegata,30405,Striatum,1591,Striatum,36.2663366336634
+Varecia_variegata,30405,ASG_Sousa,1745,Area striata grey,35.8
+Varecia_variegata,30405,NeoG_Frahm,,Neocortex grey,33.5
+Varecia_variegata,30405,Mesencephalon,1018,Mesencephalon,25.2727272727273
+Varecia_variegata,30405,Cerebellum,4286,Cerebellum,29.7507692307692
+Varecia_variegata,30405,Hippocampus,1404,Hippocampus,25.7
+Varecia_variegata,30405,Lateral_cerebellar_nuclei,37.45,Nucleus dentatus cerebelli,24.2

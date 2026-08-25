@@ -81,6 +81,12 @@ RUN_ORDER <- c(
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
 
+  # Study 3: data prep must precede the PGLS forks -- the prep script writes
+  # the species list the tree-sample script reads, and that writes the 100-tree
+  # sample the PGLS scripts fit across.
+  "s3_prepare_Stephan_primate_data.R",
+  "s3_prepare_tree_sample.R",
+
   # Study 3: evolutionary deviation (PGLS). See KNOWN ISSUE in the header:
   # both forks write the same output dirs; VOLUMES_WIDE_SELECT runs last so
   # its outputs win, matching the last logged run.
