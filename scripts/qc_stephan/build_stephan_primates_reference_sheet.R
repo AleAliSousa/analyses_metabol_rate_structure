@@ -241,7 +241,7 @@ structure_key_variants <- function(col) {
     tibble(Variable = "Ventral_pons_Vol.mm3",
            source_prefix = "Matano_etal_1985_b", key_rule = "Matano ventral pons"),
     tibble(Variable = "Pons_Vol.mm3",
-           source_prefix = "Zilles_Rehkamper_1988", key_rule = "Zilles whole pons"),
+           source_prefix = "Zilles_Rehkämper_1988", key_rule = "Zilles whole pons"),
     tibble(Variable = "Pons_Vol.mm3",
            source_prefix = "Zilles_Rehkämper_1988", key_rule = "Zilles whole pons"),
     tibble(Variable = "Pons_Vol.mm3",
