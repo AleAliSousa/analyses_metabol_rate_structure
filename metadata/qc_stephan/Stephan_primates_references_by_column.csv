@@ -33,7 +33,7 @@ Hypothalamus,Hypothalamus_Vol.mm3,26,26,25,0,1,0,0,0,0,Stephan et al 1981
 Interpositus_cerebellar_nuclei,Interpositus_cerebellar_nuclei_Vol.mm3,44,44,44,0,0,0,0,0,0,NA
 LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,49,47,9,6,32,2,0,0,0,de Sousa et al 2010; de Sousa et al 2013
 Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei_Vol.mm3,44,44,44,0,0,0,0,0,0,NA
-Lobus_piriformis,Lobus_piriformis_Vol.mm3,46,46,45,0,1,0,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
+Lobus_piriformis,Lobus_piriformis_Vol.mm3,46,45,45,0,0,0,0,1,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Medial_cerebellar_nuclei,Medial_cerebellar_nuclei_Vol.mm3,44,44,44,0,0,0,0,0,0,NA
 Medulla_oblongata,Medulla_oblongata_Vol.mm3,46,46,46,0,0,0,0,0,0,Stephan et al 1981; Zilles and Rehkamper 1988
 Meninges_hypophysis_nerves_etc,NA,45,0,0,0,0,0,0,0,45,Stephan et al 1981
