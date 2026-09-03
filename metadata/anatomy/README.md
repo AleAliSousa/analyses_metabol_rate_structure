@@ -41,13 +41,20 @@ central or study map.
 | s1a stereology | Primary Heiss map only | All retained comparison rows use native Heiss labels. |
 | s1b transcriptomics | `s1b_linnarsson_roi_map.csv` | Fine Linnarsson ROIs are explicitly grouped into Heiss regions. Source-specific choices such as FI/Idg/Ig -> insular lobe and TH-TL -> temporal lobe are recorded here. |
 | s2 stress volume | `s2_stress_volume_region_map.csv` | English synonyms are resolved and the whole-thalamus rate is explicitly defined as the unweighted mean of the three Heiss thalamic measurements, rounded to the source precision (26.6). |
-| s1c Johansen SV2A | `s1c_johansen_region_map.csv` | Johansen labels are resolved; the whole-cerebellum -> cerebellar-cortex and aggregate-white-matter -> centrum-semiovale comparisons are marked as proxies. |
+| s1c Johansen synaptic density | `s1c_johansen_region_map.csv` | Johansen labels are resolved; the whole-cerebellum -> cerebellar-cortex and aggregate-white-matter -> centrum-semiovale comparisons are marked as proxies. |
 | s4a Kochiyama | `s4a_kochiyama_region_map.csv` | Kochiyama parcels are allocated to native Heiss lobes/tissues, including the 50/50 sensorimotor split. |
 
 s1c deliberately excludes Johansen's whole-thalamus measurement because Heiss
 reports only selected thalamic nuclei; it also excludes source regions without
 a defensible Heiss counterpart. Those exclusions are analysis scope, not
 alternative mappings.
+
+The local s1c input, `data_raw/Johansen_etal_2024_Table2.csv`, is an exact copy
+of `Evo-M1-Trait-Data/Johansen_etal_2024/Johansen_etal_2024_Table2.csv` and
+retains the paper's uppercase `SV2A_*` source fields. The s1c script translates
+the required fields to `synaptic_density_mean` and `synaptic_density_sd` at the
+import boundary; lowercase `sv2a` is not used as an analysis variable or output
+name.
 
 The s1b mapping-validation script reads
 `s1b_linnarsson_roi_map.csv` directly. The former generated

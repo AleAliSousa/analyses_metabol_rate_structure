@@ -1,0 +1,50 @@
+"Species","Species_Johansen2024","Lobe","Region","is_lobe_total","is_M1","SV2A_total.pmol_mL","SV2A_total_SD","SV2A_total_COV","SV2A_L.pmol_mL","SV2A_L_SD","SV2A_L_COV","SV2A_R.pmol_mL","SV2A_R_SD","SV2A_R_COV","LR_ratio","LR_ratio_SD","LR_ratio_COV"
+"Homo sapiens","Homo sapiens","Cingulate","Caudal anterior cingulate",0,0,526,89,16.92,539,97,18,513,85,16.57,1.05,0.09,8.57
+"Homo sapiens","Homo sapiens","Cingulate","Isthmus cingulate",0,0,484,78,16.12,483,76,15.73,485,82,16.91,1,0.06,6
+"Homo sapiens","Homo sapiens","Cingulate","Posterior cingulate",0,0,577,89,15.42,583,95,16.3,572,85,14.86,1.02,0.06,5.88
+"Homo sapiens","Homo sapiens","Cingulate","Rostral anterior cingulate",0,0,565,86,15.22,572,87,15.21,555,88,15.86,1.03,0.06,5.83
+"Homo sapiens","Homo sapiens","Frontal","Caudal middle frontal",0,0,564,84,14.89,574,87,15.16,554,81,14.62,1.04,0.03,2.88
+"Homo sapiens","Homo sapiens","Frontal","Frontal (total)",1,0,569,83,14.59,573,86,15.01,565,81,14.34,1.01,0.03,2.97
+"Homo sapiens","Homo sapiens","Frontal","Frontal pole",0,0,570,100,17.54,560,107,19.11,578,98,16.96,0.97,0.06,6.19
+"Homo sapiens","Homo sapiens","Frontal","Lateral orbitofrontal",0,0,564,87,15.43,574,93,16.2,555,84,15.14,1.03,0.05,4.85
+"Homo sapiens","Homo sapiens","Frontal","Medial orbitofrontal",0,0,559,86,15.38,558,88,15.77,560,87,15.54,1,0.05,5
+"Homo sapiens","Homo sapiens","Frontal","Paracentral",0,0,534,84,15.73,536,86,16.04,533,83,15.57,1.01,0.04,3.96
+"Homo sapiens","Homo sapiens","Frontal","Pars opercularis",0,0,625,93,14.88,626,99,15.81,624,88,14.1,1,0.05,5
+"Homo sapiens","Homo sapiens","Frontal","Pars orbitalis",0,0,578,88,15.22,568,97,17.08,586,86,14.68,0.97,0.08,8.25
+"Homo sapiens","Homo sapiens","Frontal","Pars triangularis",0,0,594,85,14.31,595,92,15.46,592,83,14.02,1.01,0.06,5.94
+"Homo sapiens","Homo sapiens","Frontal","Precentral",0,1,547,80,14.63,553,83,15.01,541,78,14.42,1.02,0.04,3.92
+"Homo sapiens","Homo sapiens","Frontal","Rostral middle frontal",0,0,580,86,14.83,582,92,15.81,579,83,14.34,1,0.05,5
+"Homo sapiens","Homo sapiens","Frontal","Superior frontal",0,0,569,84,14.76,574,86,14.98,564,83,14.72,1.02,0.02,1.96
+"Homo sapiens","Homo sapiens","Occipital","Cuneus",0,0,572,85,14.86,571,88,15.41,574,84,14.63,0.99,0.04,4.04
+"Homo sapiens","Homo sapiens","Occipital","Lateral occipital",0,0,520,81,15.58,510,87,17.06,530,79,14.91,0.96,0.07,7.29
+"Homo sapiens","Homo sapiens","Occipital","Lingual",0,0,560,82,14.64,563,85,15.1,557,80,14.36,1.01,0.03,2.97
+"Homo sapiens","Homo sapiens","Occipital","Occipital (total)",1,0,546,82,15.02,540,85,15.74,551,80,14.52,0.98,0.04,4.08
+"Homo sapiens","Homo sapiens","Occipital","Pericalcarine",0,0,574,87,15.16,562,85,15.12,584,91,15.58,0.96,0.03,3.12
+"Homo sapiens","Homo sapiens","Parietal","Inferior parietal",0,0,598,84,14.05,587,87,14.82,607,86,14.17,0.97,0.06,6.19
+"Homo sapiens","Homo sapiens","Parietal","Parietal (total)",1,0,577,85,14.73,576,88,15.28,578,83,14.36,1,0.04,4
+"Homo sapiens","Homo sapiens","Parietal","Postcentral",0,0,524,80,15.27,527,86,16.32,521,76,14.59,1.01,0.04,3.96
+"Homo sapiens","Homo sapiens","Parietal","Precuneus",0,0,616,88,14.29,616,90,14.61,615,87,14.15,1,0.02,2
+"Homo sapiens","Homo sapiens","Parietal","Superior parietal",0,0,542,84,15.5,544,85,15.62,541,84,15.53,1.01,0.03,2.97
+"Homo sapiens","Homo sapiens","Parietal","Supramarginal",0,0,613,92,15.01,618,97,15.7,609,90,14.78,1.02,0.06,5.88
+"Homo sapiens","Homo sapiens","Temporal","Banks of the superior temporal sulcus",0,0,631,89,14.1,632,93,14.72,631,91,14.42,1,0.07,7
+"Homo sapiens","Homo sapiens","Temporal","Entorhinal",0,0,491,102,20.77,502,110,21.91,479,96,20.04,1.05,0.1,9.52
+"Homo sapiens","Homo sapiens","Temporal","Fusiform",0,0,577,91,15.77,582,95,16.32,573,88,15.36,1.01,0.04,3.96
+"Homo sapiens","Homo sapiens","Temporal","Inferior temporal",0,0,594,98,16.5,598,106,17.73,590,92,15.59,1.01,0.05,4.95
+"Homo sapiens","Homo sapiens","Temporal","Insula",0,0,566,81,14.31,568,83,14.61,565,82,14.51,1.01,0.05,4.95
+"Homo sapiens","Homo sapiens","Temporal","Middle temporal",0,0,622,90,14.47,618,97,15.7,625,86,13.76,0.99,0.06,6.06
+"Homo sapiens","Homo sapiens","Temporal","Parahippocampal",0,0,541,98,18.11,538,104,19.33,545,98,17.98,0.99,0.09,9.09
+"Homo sapiens","Homo sapiens","Temporal","Superior temporal",0,0,606,89,14.69,603,95,15.75,609,84,13.79,0.99,0.05,5.05
+"Homo sapiens","Homo sapiens","Temporal","Temporal (total)",1,0,595,91,15.29,596,97,16.28,595,87,14.62,1,0.04,4
+"Homo sapiens","Homo sapiens","Temporal","Temporal pole",0,0,529,105,19.85,541,111,20.52,517,106,20.5,1.05,0.1,9.52
+"Homo sapiens","Homo sapiens","Temporal","Transverse temporal",0,0,600,85,14.17,607,91,14.99,591,84,14.21,1.03,0.07,6.8
+"Homo sapiens","Homo sapiens","Subcortical","Accumbens",0,0,598,108,18.06,616,121,19.64,585,103,17.61,1.05,0.09,8.57
+"Homo sapiens","Homo sapiens","Subcortical","Amygdala",0,0,472,84,17.8,471,89,18.9,474,82,17.3,0.99,0.05,5.05
+"Homo sapiens","Homo sapiens","Subcortical","Caudate",0,0,539,81,15.03,548,81,14.78,531,83,15.63,1.04,0.05,4.81
+"Homo sapiens","Homo sapiens","Subcortical","Cerebellum",0,0,341,55,16.13,347,58,16.71,335,54,16.12,1.04,0.04,3.85
+"Homo sapiens","Homo sapiens","Subcortical","Hippocampus",0,0,350,64,18.29,351,67,19.09,348,62,17.82,1.01,0.05,4.95
+"Homo sapiens","Homo sapiens","Subcortical","Pallidum",0,0,304,52,17.11,315,59,18.73,294,51,17.35,1.08,0.12,11.11
+"Homo sapiens","Homo sapiens","Subcortical","Pons",0,0,95,30,31.58,,,,,,,,,
+"Homo sapiens","Homo sapiens","Subcortical","Putamen",0,0,604,88,14.57,618,92,14.89,591,85,14.38,1.05,0.03,2.86
+"Homo sapiens","Homo sapiens","Subcortical","Thalamus",0,0,352,55,15.62,353,55,15.58,351,57,16.24,1.01,0.07,6.93
+"Homo sapiens","Homo sapiens","Subcortical","Ventral dc",0,0,170,37,21.76,173,39,22.54,167,37,22.16,1.04,0.1,9.62
+"Homo sapiens","Homo sapiens","Subcortical","White matter",0,0,12,19,158.33,,,,,,,,,

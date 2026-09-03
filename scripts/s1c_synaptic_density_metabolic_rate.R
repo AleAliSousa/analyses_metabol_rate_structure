@@ -1,12 +1,14 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root
 
 ## ============================================================
-## Study 6 — Synaptic Density (SV2A) vs. rCMRGlc
+## Study s1c — Synaptic density vs. rCMRGlc
 ##
-## Johansen et al. 2024 Table 2: in vivo SV2A Bmax (pmol/mL)
-##   [11C]UCB-J PET atlas, N = 33 healthy adults.
+## Johansen et al. 2024 Table 2: in vivo 3D atlas of synaptic density,
+##   measured using the synaptic marker Synaptic Vesicle glycoprotein 2A
+##   (SV2A; [11C]UCB-J PET Bmax in pmol/mL), N = 33 healthy adults.
 ##   Source: J Neurosci 44(33):e1750232024.
 ##   DOI: 10.1523/JNEUROSCI.1750-23.2024
+##   Local source copy: data_raw/Johansen_etal_2024_Table2.csv
 ##
 ## Heiss et al. 2004 Table 1: regional rCMRGlc (µmol/100g/min)
 ##   18F-FDG HRRT PET, N = 9 healthy adults.
@@ -31,7 +33,36 @@ if (!dir.exists("figs/s1c")) dir.create("figs/s1c", recursive = TRUE)
 ## 1. Load data
 ## ----------------------------------------------------------------
 
-johansen <- read.csv("data_raw/Johansen_2024_Table2.csv", header = TRUE)
+johansen_source <- read.csv(
+  "data_raw/Johansen_etal_2024_Table2.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+# Preserve the paper's uppercase SV2A column names in the raw source. At this
+# import boundary, give the measurements descriptive analysis names so "s" is
+# reserved for project study identifiers such as s1c.
+required_johansen_columns <- c(
+  "Lobe", "Region", "SV2A_total.pmol_mL", "SV2A_total_SD"
+)
+missing_johansen_columns <- setdiff(
+  required_johansen_columns, names(johansen_source)
+)
+if (length(missing_johansen_columns)) {
+  stop(
+    "Johansen source is missing required column(s): ",
+    paste(missing_johansen_columns, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+synaptic_density_atlas <- johansen_source %>%
+  transmute(
+    source_lobe = Lobe,
+    region = Region,
+    synaptic_density_mean = as.numeric(`SV2A_total.pmol_mL`),
+    synaptic_density_sd = as.numeric(SV2A_total_SD)
+  )
 
 ## ----------------------------------------------------------------
 ## 2. Region mapping: Johansen (Desikan-Killiany + FreeSurfer
@@ -49,33 +80,43 @@ region_map <- derive_study_heiss_rates(
   "metadata/anatomy/s1c_johansen_region_map.csv"
 )
 
-## Attach Johansen SV2A data
-johansen_matched <- johansen %>%
+## Attach Johansen synaptic-density data
+synaptic_density_matched <- synaptic_density_atlas %>%
   inner_join(region_map, by = c("region" = "source_region")) %>%
-  select(anatomy_id, anatomy_group, lobe,
-         sv2a_mean = sv2a_bmax_total_mean,
-         sv2a_sd   = sv2a_bmax_total_sd,
+  select(anatomy_id, anatomy_group, source_lobe,
+         synaptic_density_mean, synaptic_density_sd,
          rcmrglc_mean = rcmr_value,
          rcmrglc_sd = rcmr_sd)
 
-plot_df <- johansen_matched
+plot_df <- synaptic_density_matched %>%
+  mutate(
+    compartment = case_when(
+      anatomy_id == "centrum_semiovale" ~ "White matter",
+      source_lobe == "Subcortical" ~ "Subcortical",
+      TRUE ~ "Cortical"
+    )
+  )
 
 ## Sanity check: stop if any region is missing a palette colour.
 check_region_palette(plot_df, region_col = "anatomy_group")
 
 ## ----------------------------------------------------------------
-## 3. Scatter: SV2A Bmax vs. rCMRGlc
+## 3. Scatter: synaptic density vs. rCMRGlc
 ## ----------------------------------------------------------------
 
 p1 <- ggplot(plot_df,
-             aes(x = rcmrglc_mean, y = sv2a_mean, color = anatomy_group)) +
+             aes(x = rcmrglc_mean, y = synaptic_density_mean,
+                 color = anatomy_group)) +
   geom_errorbar(
-    aes(ymin = sv2a_mean - sv2a_sd, ymax = sv2a_mean + sv2a_sd),
+    aes(
+      ymin = synaptic_density_mean - synaptic_density_sd,
+      ymax = synaptic_density_mean + synaptic_density_sd
+    ),
     width = 0, alpha = 0.4, linewidth = 0.5
   ) +
-  geom_errorbarh(
+  geom_errorbar(
     aes(xmin = rcmrglc_mean - rcmrglc_sd, xmax = rcmrglc_mean + rcmrglc_sd),
-    height = 0, alpha = 0.4, linewidth = 0.5
+    orientation = "y", width = 0, alpha = 0.4, linewidth = 0.5
   ) +
   geom_point(size = 3, alpha = 0.9) +
   geom_smooth(
@@ -98,9 +139,9 @@ p1 <- ggplot(plot_df,
   scale_color_manual(values = region_palette, drop = TRUE) +
   labs(
     title    = "Synaptic density vs. glucose metabolic rate across brain regions",
-    subtitle = "Johansen et al. 2024 (SV2A PET) × Heiss et al. 2004 (FDG PET)",
+    subtitle = "Johansen et al. 2024 (synaptic-density atlas) × Heiss et al. 2004 (FDG PET)",
     x        = "rCMRGlc (µmol / 100 g / min)",
-    y        = "SV2A Bₘₐˣ (pmol / mL)",
+    y        = "Synaptic density (SV2A Bmax, pmol / mL)",
     color    = "Region",
     caption  = "Points = region means; error bars = SD."
   ) +
@@ -113,7 +154,7 @@ p1 <- ggplot(plot_df,
 p1
 
 ggsave(
-  filename = "figs/s1c/sv2a_vs_rcmrglc.pdf",
+  filename = "figs/s1c/synaptic_density_vs_rcmrglc.pdf",
   plot     = p1,
   width    = 9,
   height   = 6.5,
@@ -122,7 +163,7 @@ ggsave(
 )
 
 ggsave(
-  filename = "figs/s1c/sv2a_vs_rcmrglc.jpg",
+  filename = "figs/s1c/synaptic_density_vs_rcmrglc.jpg",
   plot     = p1,
   width    = 9,
   height   = 6.5,
@@ -136,25 +177,20 @@ ggsave(
 ## 4. Scatter: cortex-only vs. subcortical highlighted
 ## ----------------------------------------------------------------
 
-plot_df2 <- plot_df %>%
-  mutate(
-    compartment = case_when(
-      lobe == "Subcortical"   ~ "Subcortical",
-      lobe == "White matter"  ~ "White matter",
-      TRUE                    ~ "Cortical"
-    )
-  )
-
-p2 <- ggplot(plot_df2,
-             aes(x = rcmrglc_mean, y = sv2a_mean, color = anatomy_group,
+p2 <- ggplot(plot_df,
+             aes(x = rcmrglc_mean, y = synaptic_density_mean,
+                 color = anatomy_group,
                  shape = compartment)) +
   geom_errorbar(
-    aes(ymin = sv2a_mean - sv2a_sd, ymax = sv2a_mean + sv2a_sd),
+    aes(
+      ymin = synaptic_density_mean - synaptic_density_sd,
+      ymax = synaptic_density_mean + synaptic_density_sd
+    ),
     width = 0, alpha = 0.4, linewidth = 0.5
   ) +
-  geom_errorbarh(
+  geom_errorbar(
     aes(xmin = rcmrglc_mean - rcmrglc_sd, xmax = rcmrglc_mean + rcmrglc_sd),
-    height = 0, alpha = 0.4, linewidth = 0.5
+    orientation = "y", width = 0, alpha = 0.4, linewidth = 0.5
   ) +
   geom_point(size = 3.2, alpha = 0.9) +
   ggrepel::geom_text_repel(
@@ -163,15 +199,27 @@ p2 <- ggplot(plot_df2,
     box.padding = 0.35, show.legend = FALSE
   ) +
   geom_smooth(
-    aes(group = 1),
+    data = plot_df,
+    aes(
+      x = rcmrglc_mean,
+      y = synaptic_density_mean,
+      group = 1
+    ),
+    inherit.aes = FALSE,
     method    = "lm",
     se        = TRUE,
     color     = "steelblue",
     linewidth = 0.8
   ) +
   stat_poly_eq(
-    aes(label = after_stat(paste(rr.label, p.value.label, sep = "*\", \"*")),
-        group = 1),
+    data = plot_df,
+    aes(
+      x = rcmrglc_mean,
+      y = synaptic_density_mean,
+      label = after_stat(paste(rr.label, p.value.label, sep = "*\", \"*")),
+      group = 1
+    ),
+    inherit.aes = FALSE,
     formula    = y ~ x,
     parse      = TRUE,
     label.x    = "right",
@@ -184,10 +232,10 @@ p2 <- ggplot(plot_df2,
     values = c("Cortical" = 16, "Subcortical" = 17, "White matter" = 15)
   ) +
   labs(
-    title    = "Synaptic density vs. glucose metabolic rate — labelled",
-    subtitle = "Johansen et al. 2024 (SV2A PET) × Heiss et al. 2004 (FDG PET)",
+    title    = "Synaptic density vs. glucose metabolic rate: labelled",
+    subtitle = "Johansen et al. 2024 (synaptic-density atlas) × Heiss et al. 2004 (FDG PET)",
     x        = "rCMRGlc (µmol / 100 g / min)",
-    y        = "SV2A Bₘₐˣ (pmol / mL)",
+    y        = "Synaptic density (SV2A Bmax, pmol / mL)",
     color    = "Region",
     shape    = "Compartment"
   ) +
@@ -196,7 +244,7 @@ p2 <- ggplot(plot_df2,
 p2
 
 ggsave(
-  filename = "figs/s1c/sv2a_vs_rcmrglc_labelled.pdf",
+  filename = "figs/s1c/synaptic_density_vs_rcmrglc_labelled.pdf",
   plot     = p2,
   width    = 10,
   height   = 7,
@@ -205,7 +253,7 @@ ggsave(
 )
 
 ggsave(
-  filename = "figs/s1c/sv2a_vs_rcmrglc_labelled.jpg",
+  filename = "figs/s1c/synaptic_density_vs_rcmrglc_labelled.jpg",
   plot     = p2,
   width    = 10,
   height   = 7,
@@ -221,11 +269,14 @@ ggsave(
 
 plot_df %>%
   select(
-    anatomy_id, anatomy_group, lobe,
+    anatomy_id, anatomy_group, source_lobe, compartment,
     rcmrglc_mean, rcmrglc_sd,
-    sv2a_mean, sv2a_sd
+    synaptic_density_mean, synaptic_density_sd
   ) %>%
   arrange(rcmrglc_mean) %>%
-  write.csv("tables/s1c/sv2a_rcmrglc_matched_regions.csv", row.names = FALSE)
+  write.csv(
+    "tables/s1c/synaptic_density_rcmrglc_matched_regions.csv",
+    row.names = FALSE
+  )
 
-message("Study 1c done. Figures in figs/s1c/, merged table in tables/.")
+message("Study s1c done. Figures in figs/s1c/, merged table in tables/s1c/.")

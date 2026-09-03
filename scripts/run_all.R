@@ -73,7 +73,7 @@ RUN_ORDER <- c(
   "s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R",
   "s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R",
   
-  # Study 1c: synaptic density (SV2A) vs rCMRGlc
+  # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)
   "s1c_synaptic_density_metabolic_rate.R",
   
   # Study 2: environmental stress
