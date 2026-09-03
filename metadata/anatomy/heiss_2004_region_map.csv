@@ -1,0 +1,27 @@
+heiss_region,anatomy_id,relationship,mapping_note
+Cerebral cortex (global average),cerebral_cortex,source_measurement,Native Heiss global-average measurement for the cerebral cortex
+Frontal lobe,frontal_lobe,exact,Native Heiss region
+Parietal lobe,parietal_lobe,exact,Native Heiss region
+Temporal lobe,temporal_lobe,exact,Native Heiss region
+Occipital lobe,occipital_lobe,exact,Native Heiss region; no substitution with primary visual cortex is made here
+Insular lobe,insular_lobe,exact,Native Heiss region
+Hippocampus,hippocampus,exact,Native Heiss region
+Caudatum,caudate_nucleus,source_synonym,Latin source label for caudate nucleus
+Putamen,putamen,exact,Native Heiss region
+Nucleus accumbens,nucleus_accumbens,exact,Native Heiss region
+Pallidum,pallidum,exact,Native Heiss region
+Nucleus medial thalami,medial_thalamic_nuclei,source_synonym,Source label retained while using the project preferred label
+Corpus geniculatum laterale,lateral_geniculate_nucleus,source_synonym,Latin source label for lateral geniculate nucleus
+Corpus geniculatum mediale,medial_geniculate_nucleus,source_synonym,Latin source label for medial geniculate nucleus
+Nucleus subthalamicus,subthalamic_nucleus,source_synonym,Latin source label for subthalamic nucleus
+Basal forebrain,basal_forebrain,exact,Native Heiss region
+Corpus amygdaloideum,amygdala,source_synonym,Latin source label for amygdaloid complex
+Colliculus inferior,inferior_colliculus,source_synonym,Latin source label for inferior colliculus
+Colliculus superior,superior_colliculus,source_synonym,Latin source label for superior colliculus
+Substantia nigra,substantia_nigra,exact,Native Heiss region
+Nucleus ruber,red_nucleus,source_synonym,Latin source label for red nucleus
+Cerebellar cortex,cerebellar_cortex,exact,Native Heiss region
+Vermis,vermis,exact,Native Heiss region
+Nucleus dentatus cerebelli,dentate_nucleus,source_synonym,Latin source label for dentate nucleus
+Centrum semiovale,centrum_semiovale,exact,Native Heiss region
+Capsula interna,internal_capsule,source_synonym,Latin source label for internal capsule

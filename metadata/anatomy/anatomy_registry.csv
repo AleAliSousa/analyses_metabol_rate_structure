@@ -1,0 +1,40 @@
+anatomy_id,canonical_label,parent_id,anatomy_level,tissue_class,color_hex,display_order,definition_note
+brain,Whole brain,,organ,mixed,#4D4D4D,10,Project root concept for the whole brain
+cerebral_cortex,Cerebral cortex,brain,gross_region,grey_matter,#000000,20,Cerebral cortical mantle; source-specific measurements may use narrower boundaries
+neocortex_grey_matter,Neocortical grey matter,cerebral_cortex,tissue_compartment,grey_matter,#000000,30,Neocortical grey-matter volume; not automatically equivalent to a whole-cortex metabolic average
+frontal_lobe,Frontal lobe,cerebral_cortex,lobe,grey_matter,#56B4E9,40,Frontal cortical lobe
+parietal_lobe,Parietal lobe,cerebral_cortex,lobe,grey_matter,#D55E00,50,Parietal cortical lobe
+temporal_lobe,Temporal lobe,cerebral_cortex,lobe,grey_matter,#CC79A7,60,Temporal cortical lobe
+occipital_lobe,Occipital lobe,cerebral_cortex,lobe,grey_matter,#0072B2,70,Occipital cortical lobe
+primary_visual_cortex_grey_matter,Primary visual cortex grey matter,occipital_lobe,cortical_area,grey_matter,#0072B2,80,Area striata or V1 grey matter; kept distinct from the entire occipital lobe
+insular_lobe,Insular lobe,cerebral_cortex,lobe,grey_matter,#009E73,90,Insular lobe as a gross anatomical region
+insular_cortex_grey_matter,Insular cortex grey matter,insular_lobe,tissue_compartment,grey_matter,#009E73,100,Insular cortical grey-matter volume; kept distinct from source-specific insular-lobe boundaries
+hippocampus,Hippocampus,brain,structure,grey_matter,#882255,110,Hippocampal formation when a source does not provide a narrower subdivision
+amygdala,Amygdala,brain,structure,grey_matter,#E69F00,120,Amygdaloid complex
+forebrain_nuclei,Forebrain nuclei,brain,region_group,grey_matter,#6A3D9A,130,Grouping term used for forebrain nuclei
+basal_forebrain,Basal forebrain,forebrain_nuclei,structure,grey_matter,#AA4499,140,Basal forebrain region
+striatum,Striatum,forebrain_nuclei,composite_region,grey_matter,#7B3294,150,Composite striatal region; component definitions and weights are study-specific
+caudate_nucleus,Caudate nucleus,striatum,nucleus,grey_matter,#44AA99,160,Caudate nucleus; Heiss uses the label Caudatum
+putamen,Putamen,striatum,nucleus,grey_matter,#117733,170,Putamen
+nucleus_accumbens,Nucleus accumbens,striatum,nucleus,grey_matter,#88CCEE,180,Nucleus accumbens
+pallidum,Pallidum,forebrain_nuclei,structure,grey_matter,#999933,190,Pallidal complex when a source does not provide narrower subdivisions
+subthalamic_nucleus,Subthalamic nucleus,forebrain_nuclei,nucleus,grey_matter,#332288,200,Subthalamic nucleus; also called nucleus subthalamicus or nucleus of Luys
+thalamus,Thalamus,brain,gross_region,grey_matter,#117777,210,Whole thalamus; not automatically equivalent to any individual Heiss thalamic nucleus
+medial_thalamic_nuclei,Medial thalamic nuclei,thalamus,nucleus_group,grey_matter,#DDCC77,220,Medial thalamic nuclei represented by the Heiss medial-thalamic measurement
+lateral_geniculate_nucleus,Lateral geniculate nucleus,thalamus,nucleus,grey_matter,#6699CC,230,Lateral geniculate nucleus
+medial_geniculate_nucleus,Medial geniculate nucleus,thalamus,nucleus,grey_matter,#661100,240,Medial geniculate nucleus
+brainstem_nuclei,Brainstem nuclei,brain,region_group,grey_matter,#B15928,250,Grouping term for measured brainstem nuclei
+midbrain,Midbrain,brain,gross_region,mixed,#B15928,260,Mesencephalon; composite mappings from nuclei are study-specific
+substantia_nigra,Substantia nigra,midbrain,nucleus,grey_matter,#A6761D,270,Substantia nigra
+red_nucleus,Red nucleus,midbrain,nucleus,grey_matter,#E7298A,280,Red nucleus; Heiss uses the label Nucleus ruber
+superior_colliculus,Superior colliculus,midbrain,nucleus,grey_matter,#66A61E,290,Superior colliculus
+inferior_colliculus,Inferior colliculus,midbrain,nucleus,grey_matter,#7570B3,300,Inferior colliculus
+cerebellum,Cerebellum,brain,gross_region,mixed,#1F78B4,310,Whole cerebellum; composite metabolic definitions are study-specific
+cerebellar_cortex,Cerebellar cortex,cerebellum,tissue_compartment,grey_matter,#1B9E77,320,Cerebellar cortex
+vermis,Vermis,cerebellum,structure,mixed,#B2DF8A,330,Cerebellar vermis
+lateral_cerebellar_nuclei,Lateral cerebellar nuclei,cerebellum,nucleus_group,grey_matter,#33A02C,340,Lateral deep cerebellar nuclei; kept distinct from the dentate nucleus
+dentate_nucleus,Dentate nucleus,cerebellum,nucleus,grey_matter,#33A02C,350,Dentate nucleus; Heiss uses the label Nucleus dentatus cerebelli
+white_matter,White matter,brain,tissue_group,white_matter,#969696,360,Grouping term for white-matter structures
+neocortical_white_matter,Neocortical white matter,white_matter,tissue_compartment,white_matter,#878787,370,Neocortical white-matter volume; source boundaries require an explicit crosswalk
+centrum_semiovale,Centrum semiovale,white_matter,structure,white_matter,#BDBDBD,380,Centrum semiovale
+internal_capsule,Internal capsule,white_matter,structure,white_matter,#636363,390,Internal capsule; Heiss uses the label Capsula interna
