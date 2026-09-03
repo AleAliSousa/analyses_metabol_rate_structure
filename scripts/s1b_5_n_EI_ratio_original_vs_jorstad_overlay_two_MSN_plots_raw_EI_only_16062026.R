@@ -1,22 +1,25 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
-# Compare broad all-region E:I ratios with a Jorstad-like cortical E:I ratio.
+# Compare broad all-region E:I ratios with a Jorstad-like neocortical E:I ratio.
 #
 # This version makes two primary overlay plots using the raw E:I ratio on the x-axis:
 #   1. Broad all-region E:I with medium spiny neurons excluded from the I denominator.
 #   2. Broad all-region E:I with medium spiny neurons included in the I denominator.
 #
-# The blue Jorstad-like cortical points/line are unchanged in both plots.
+# The blue Jorstad-like neocortical points/line are unchanged in both plots.
 # Plot captions were removed to keep the figure visually cleaner; key definitions are in titles/subtitles.
 # Main plot outputs:
-#   figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_EI.{pdf,jpg}
-#   figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_cortex_overlay_raw_EI.{pdf,jpg}
+#   figs/s1b/p_EI_original_all_regions_with_jorstad_neocortex_overlay_raw_EI.{pdf,jpg}
+#   figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_neocortex_overlay_raw_EI.{pdf,jpg}
 #   data_analysis/EI_original_no_MSN_with_MSN_vs_jorstad_comparison_table.csv
 #   data_analysis/spearman_EI_original_no_MSN_with_MSN_vs_jorstad_comparison.csv
 #   data_analysis/lm_EI_original_no_MSN_with_MSN_vs_jorstad_comparison.csv
 #   data_analysis/broad_EI_MSN_sensitivity_table.csv
-#   data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv
-#   data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv
+#   data_analysis/jorstad_like_neocortical_EI_ratio_by_region_with_rcmr.csv
+#   data_analysis/siletti_broad_class_cerebral_cortex_EI_ratio_by_region_with_rcmr.csv
+#   data_analysis/siletti_scope_cerebral_cortex_EI_neocortical_class_crosswalk_by_region_with_rcmr.csv
+#   data_analysis/siletti_to_jorstad_like_neocortical_EI_crosswalk.csv
+#   data_analysis/siletti_cluster_subcluster_membership_jorstad_like_neocortical_EI.csv
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -36,7 +39,13 @@ if (!dir.exists("figs/s1b")) dir.create("figs/s1b", recursive = TRUE)
 
 DEF_BROAD_NO_MSN <- "Broad all-region E:I (MSN excluded)"
 DEF_BROAD_WITH_MSN <- "Broad all-region E:I (MSN included)"
-DEF_JORSTAD <- "Jorstad-like cortical E:I"
+DEF_JORSTAD <- "Jorstad-like neocortical E:I"
+DEF_SILETTI_CEREBRAL_NO_MSN <-
+  "Siletti broad-class cerebral-cortex E:I (MSN excluded)"
+DEF_SILETTI_CEREBRAL_WITH_MSN <-
+  "Siletti broad-class cerebral-cortex E:I (MSN included)"
+DEF_SCOPE_EXTRAPOLATION <-
+  "Siletti cerebral-cortex scope with neocortical-class crosswalk"
 
 ############################
 ## Load Siletti obs metadata
@@ -121,19 +130,41 @@ cat("\n================ Recomputed broad cell category counts ================\n
 print(as_tibble(obs %>% count(cell_category_recomputed, sort = TRUE)), n = Inf)
 
 ###################################################################
-# Cortex classification
+# Cerebral-cortex and neocortex scopes
 ###################################################################
-# Prefer dominant ROIGroupCoarse == "Cerebral cortex" when available.
-# Backup text regex protects against local metadata naming differences.
+# The authoritative ROI map defines both scopes explicitly:
+#   cerebral cortex = neocortex plus Corpus amygdaloideum and Hippocampus
+#   neocortex        = Linnarsson "Cerebral cortex" ROIs only
+# Human A25 and A32 remain in neocortex despite agranular cytoarchitecture.
+# Do not infer either scope from free-text dissection descriptions.
 
-cortex_annotation_regex <- "cortex|cortical|neocortex|gyrus|precentral|postcentral|frontal|temporal|parietal|occipital|cingulate|insula"
-
-telencephalon_coarse_groups <- c("Cerebral cortex", "Cerebral nuclei", "Hippocampus")
+scope_conflicts <- obs %>%
+  filter(!is.na(anatomy_id)) %>%
+  distinct(
+    anatomy_id, anatomy_group,
+    is_cerebral_cortex, is_neocortex, is_telencephalon
+  ) %>%
+  count(anatomy_id, anatomy_group, name = "n_scope_definitions") %>%
+  filter(n_scope_definitions != 1L)
+if (nrow(scope_conflicts)) {
+  stop(
+    "The authoritative s1b map gives inconsistent cortical scopes to: ",
+    paste(scope_conflicts$anatomy_group, collapse = ", "),
+    call. = FALSE
+  )
+}
 
 region_classification <- obs %>%
-  filter(anatomy_group != "", anatomy_group != "Unmapped") %>%
-  count(anatomy_group, ROIGroupCoarse, name = "n_cells") %>%
-  group_by(anatomy_group) %>%
+  filter(!is.na(anatomy_id), anatomy_group != "", anatomy_group != "Unmapped") %>%
+  count(
+    anatomy_id, anatomy_group, ROIGroupCoarse,
+    is_cerebral_cortex, is_neocortex, is_telencephalon,
+    name = "n_cells"
+  ) %>%
+  group_by(
+    anatomy_id, anatomy_group,
+    is_cerebral_cortex, is_neocortex, is_telencephalon
+  ) %>%
   mutate(
     n_total = sum(n_cells),
     frac = n_cells / n_total
@@ -141,36 +172,23 @@ region_classification <- obs %>%
   slice_max(n_cells, n = 1, with_ties = FALSE) %>%
   ungroup() %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     dominant_ROIGroupCoarse = ROIGroupCoarse,
     n_cells_dominant = n_cells,
     n_cells_total = n_total,
     dominant_fraction = round(frac, 3),
-    is_cortex_by_dominant_group = dominant_ROIGroupCoarse == "Cerebral cortex",
-    is_telencephalon = dominant_ROIGroupCoarse %in% telencephalon_coarse_groups
-  ) %>%
-  left_join(
-    obs %>%
-      filter(anatomy_group != "", anatomy_group != "Unmapped") %>%
-      group_by(anatomy_group) %>%
-      summarise(
-        any_cortical_text = any(
-          str_detect(
-            str_to_lower(paste(ROIGroup, ROIGroupCoarse, ROIGroupFine, dissection, sep = " ")),
-            cortex_annotation_regex
-          ),
-          na.rm = TRUE
-        ),
-        .groups = "drop"
-      ),
-    by = "anatomy_group"
-  ) %>%
-  mutate(
-    is_cortex = is_cortex_by_dominant_group | any_cortical_text,
-    cortex_call = if_else(is_cortex, "Cortex", "Non-cortex"),
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
+    cerebral_cortex_scope = case_when(
+      is_neocortex ~ "Neocortex",
+      is_cerebral_cortex ~ "Cerebral cortex, non-neocortical",
+      TRUE ~ "Outside cerebral cortex"
+    ),
     division = if_else(is_telencephalon, "Telencephalon", "Non-telencephalon")
   ) %>%
-  arrange(desc(is_cortex), anatomy_group)
+  arrange(desc(is_neocortex), desc(is_cerebral_cortex), anatomy_group)
 
 cat("\n================ Region classification ================\n")
 print(as_tibble(region_classification), n = Inf)
@@ -178,9 +196,11 @@ print(as_tibble(region_classification), n = Inf)
 write.csv(region_classification, "data_analysis/region_classification_for_EI_comparison.csv", row.names = FALSE)
 
 ###################################################################
-# Jorstad-like cortical E:I definition
+# Jorstad-like neocortical E:I definition
 ###################################################################
 # Closest Siletti supercluster-level match to Jorstad et al. neocortical E:I.
+# This is not an exact replication of Jorstad's eight-area sample: the cell
+# subclass crosswalk is applied across all s1b ROIs in the neocortex scope.
 # Jorstad excitatory subclasses: L2/3 IT, L4 IT, L5 IT, L6 IT, L6 IT Car3,
 # L5 ET, L5/6 NP, L6b, L6 CT.
 # Jorstad inhibitory subclasses: LAMP5 LHX6, LAMP5, SNCG, VIP, PAX6,
@@ -199,11 +219,12 @@ siletti_jorstad_crosswalk <- tibble::tribble(
 
 write.csv(
   siletti_jorstad_crosswalk,
-  "data_analysis/siletti_to_jorstad_like_cortical_EI_crosswalk.csv",
+  "data_analysis/siletti_to_jorstad_like_neocortical_EI_crosswalk.csv",
   row.names = FALSE
 )
 
 cluster_membership_check <- obs %>%
+  filter(is_neocortex %in% TRUE) %>%
   inner_join(siletti_jorstad_crosswalk, by = "supercluster_term") %>%
   count(EI_class_jorstad_like, jorstad_equivalent, supercluster_term,
         cluster_id, subcluster_id, sort = TRUE) %>%
@@ -212,7 +233,7 @@ cluster_membership_check <- obs %>%
 
 write.csv(
   cluster_membership_check,
-  "data_analysis/siletti_cluster_subcluster_membership_jorstad_like_cortical_EI.csv",
+  "data_analysis/siletti_cluster_subcluster_membership_jorstad_like_neocortical_EI.csv",
   row.names = FALSE
 )
 
@@ -290,7 +311,7 @@ original_wide <- calculate_region_props(
   value_prefix = "p_original_"
 ) %>%
   join_heiss_rates() %>%
-  left_join(region_classification, by = "anatomy_group") %>%
+  left_join(region_classification, by = c("anatomy_id", "anatomy_group")) %>%
   mutate(
     p_original_Excitatory_projection = coalesce(p_original_Excitatory_projection, 0),
     p_original_Inhibitory_interneuron = coalesce(p_original_Inhibitory_interneuron, 0),
@@ -322,14 +343,19 @@ write.csv(original_wide, "data_analysis/original_broad_EI_ratio_all_regions_with
 
 original_no_msn_long <- original_wide %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     rcmr_value,
     EI_definition = DEF_BROAD_NO_MSN,
+    anatomical_analysis_scope = "All mapped brain regions",
+    comparison_role = "Broad reference",
     EI_ratio = EI_ratio_no_MSN,
     n_donors_EI,
     n_cells_EI_total,
-    cortex_call,
-    is_cortex,
+    cerebral_cortex_scope,
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
     division,
     MSN_included_in_denominator = FALSE,
     p_E = p_original_Excitatory_projection,
@@ -345,14 +371,19 @@ original_no_msn_long <- original_wide %>%
 
 original_with_msn_long <- original_wide %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     rcmr_value,
     EI_definition = DEF_BROAD_WITH_MSN,
+    anatomical_analysis_scope = "All mapped brain regions",
+    comparison_role = "Broad reference",
     EI_ratio = EI_ratio_with_MSN,
     n_donors_EI,
     n_cells_EI_total,
-    cortex_call,
-    is_cortex,
+    cerebral_cortex_scope,
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
     division,
     MSN_included_in_denominator = TRUE,
     p_E = p_original_Excitatory_projection,
@@ -368,10 +399,13 @@ original_with_msn_long <- original_wide %>%
 
 msn_sensitivity_tbl <- original_wide %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     rcmr_value,
-    cortex_call,
-    is_cortex,
+    cerebral_cortex_scope,
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
     division,
     p_E = p_original_Excitatory_projection,
     p_I_interneuron = p_original_Inhibitory_interneuron,
@@ -387,27 +421,60 @@ msn_sensitivity_tbl <- original_wide %>%
 write.csv(msn_sensitivity_tbl, "data_analysis/broad_EI_MSN_sensitivity_table.csv", row.names = FALSE)
 
 ###################################################################
-# Jorstad-like cortex-only E:I
+# Siletti broad-class E:I within the cerebral-cortex scope
 ###################################################################
-obs_jorstad_cortex <- obs %>%
-  inner_join(region_classification %>% filter(is_cortex) %>% select(anatomy_group), by = "anatomy_group") %>%
+# Unlike the Jorstad-aligned definition below, this definition retains the
+# Siletti amygdaloid and hippocampal excitatory superclusters when those
+# structures are added to the anatomical scope.
+siletti_cerebral_wide <- original_wide %>%
+  filter(is_cerebral_cortex)
+
+write.csv(
+  siletti_cerebral_wide,
+  "data_analysis/siletti_broad_class_cerebral_cortex_EI_ratio_by_region_with_rcmr.csv",
+  row.names = FALSE
+)
+
+siletti_cerebral_no_msn_long <- original_no_msn_long %>%
+  filter(is_cerebral_cortex) %>%
+  mutate(
+    EI_definition = DEF_SILETTI_CEREBRAL_NO_MSN,
+    anatomical_analysis_scope =
+      "Cerebral cortex (including amygdala and hippocampus)",
+    comparison_role = "Siletti-derived cerebral-cortex analysis"
+  )
+
+siletti_cerebral_with_msn_long <- original_with_msn_long %>%
+  filter(is_cerebral_cortex) %>%
+  mutate(
+    EI_definition = DEF_SILETTI_CEREBRAL_WITH_MSN,
+    anatomical_analysis_scope =
+      "Cerebral cortex (including amygdala and hippocampus)",
+    comparison_role = "Siletti-derived cerebral-cortex analysis"
+  )
+
+###################################################################
+# Jorstad-like neocortex-only E:I
+###################################################################
+obs_jorstad_neocortex <- obs %>%
+  filter(is_neocortex %in% TRUE) %>%
   inner_join(siletti_jorstad_crosswalk, by = "supercluster_term")
 
-cat("\n================ Jorstad-like cortical E/I cell counts ================\n")
+cat("\n================ Jorstad-like neocortical E/I cell counts ================\n")
 print(
-  as_tibble(obs_jorstad_cortex %>% count(EI_class_jorstad_like, supercluster_term, sort = TRUE)),
+  as_tibble(obs_jorstad_neocortex %>% count(EI_class_jorstad_like, supercluster_term, sort = TRUE)),
   n = Inf
 )
 
-jorstad_wide <- calculate_region_props(
-  obs_in = obs_jorstad_cortex,
+jorstad_neocortex_wide <- calculate_region_props(
+  obs_in = obs_jorstad_neocortex,
   class_col = "EI_class_jorstad_like",
   included_classes = c("E", "I"),
   value_prefix = "p_jorstad_like_"
 ) %>%
   join_heiss_rates() %>%
-  left_join(region_classification, by = "anatomy_group") %>%
-  filter(is_cortex) %>%
+  left_join(region_classification, by = c("anatomy_id", "anatomy_group")) %>%
+  filter(is_neocortex) %>%
   mutate(
     p_jorstad_like_E = coalesce(p_jorstad_like_E, 0),
     p_jorstad_like_I = coalesce(p_jorstad_like_I, 0),
@@ -419,18 +486,92 @@ jorstad_wide <- calculate_region_props(
     EI_definition = DEF_JORSTAD
   )
 
-write.csv(jorstad_wide, "data_analysis/jorstad_like_cortical_EI_ratio_by_region_with_rcmr.csv", row.names = FALSE)
+write.csv(
+  jorstad_neocortex_wide,
+  "data_analysis/jorstad_like_neocortical_EI_ratio_by_region_with_rcmr.csv",
+  row.names = FALSE
+)
 
-jorstad_long <- jorstad_wide %>%
+jorstad_neocortex_long <- jorstad_neocortex_wide %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     rcmr_value,
     EI_definition,
+    anatomical_analysis_scope = "Neocortex",
+    comparison_role = "Primary Jorstad-aligned comparison",
     EI_ratio,
     n_donors_EI,
     n_cells_EI_total,
-    cortex_call,
-    is_cortex,
+    cerebral_cortex_scope,
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
+    division,
+    MSN_included_in_denominator = NA,
+    p_E = p_jorstad_like_E,
+    p_I = p_jorstad_like_I,
+    p_I_interneuron = p_jorstad_like_I,
+    p_I_MSN = NA_real_,
+    p_I_all_with_MSN = NA_real_,
+    EI_ratio_no_MSN = NA_real_,
+    EI_ratio_with_MSN = NA_real_,
+    MSN_fraction_of_broad_I = NA_real_,
+    delta_EI_with_MSN_minus_no_MSN = NA_real_
+  )
+
+###################################################################
+# Cerebral-cortex scope with the neocortical-class crosswalk extrapolated
+###################################################################
+# This deliberately expands the anatomical scope to include the amygdaloid
+# complex and hippocampus. It reproduces the earlier calculation but is neither
+# a Jorstad anatomical definition nor the native Siletti broad-class analysis.
+obs_scope_extrapolation <- obs %>%
+  filter(is_cerebral_cortex %in% TRUE) %>%
+  inner_join(siletti_jorstad_crosswalk, by = "supercluster_term")
+
+scope_extrapolation_wide <- calculate_region_props(
+  obs_in = obs_scope_extrapolation,
+  class_col = "EI_class_jorstad_like",
+  included_classes = c("E", "I"),
+  value_prefix = "p_jorstad_like_"
+) %>%
+  join_heiss_rates() %>%
+  left_join(region_classification, by = c("anatomy_id", "anatomy_group")) %>%
+  filter(is_cerebral_cortex) %>%
+  mutate(
+    p_jorstad_like_E = coalesce(p_jorstad_like_E, 0),
+    p_jorstad_like_I = coalesce(p_jorstad_like_I, 0),
+    EI_ratio = if_else(
+      p_jorstad_like_I > 0,
+      p_jorstad_like_E / p_jorstad_like_I,
+      NA_real_
+    ),
+    EI_definition = DEF_SCOPE_EXTRAPOLATION
+  )
+
+write.csv(
+  scope_extrapolation_wide,
+  "data_analysis/siletti_scope_cerebral_cortex_EI_neocortical_class_crosswalk_by_region_with_rcmr.csv",
+  row.names = FALSE
+)
+
+scope_extrapolation_long <- scope_extrapolation_wide %>%
+  transmute(
+    anatomy_id,
+    anatomy_group,
+    rcmr_value,
+    EI_definition,
+    anatomical_analysis_scope =
+      "Cerebral cortex (including amygdala and hippocampus)",
+    comparison_role = "Exploratory cross-study scope extrapolation",
+    EI_ratio,
+    n_donors_EI,
+    n_cells_EI_total,
+    cerebral_cortex_scope,
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
     division,
     MSN_included_in_denominator = NA,
     p_E = p_jorstad_like_E,
@@ -450,7 +591,10 @@ jorstad_long <- jorstad_wide %>%
 comparison_df <- bind_rows(
   original_no_msn_long,
   original_with_msn_long,
-  jorstad_long
+  siletti_cerebral_no_msn_long,
+  siletti_cerebral_with_msn_long,
+  jorstad_neocortex_long,
+  scope_extrapolation_long
 ) %>%
   filter(is.finite(EI_ratio), is.finite(rcmr_value), !is.na(rcmr_value))
 
@@ -679,7 +823,7 @@ make_overlay_plot <- function(broad_df,
         box.padding = 0.3
       )
   } else {
-    message("Package ggrepel is not installed; skipping cortical region labels on overlay plot.")
+    message("Package ggrepel is not installed; skipping neocortical region labels on overlay plot.")
   }
 
 #   print(p)
@@ -695,8 +839,8 @@ make_overlay_plot <- function(broad_df,
 p_overlay_no_msn <- make_overlay_plot(
   broad_df = plot_df_original_no_msn,
   plot_title = "Regional glucose metabolism vs neuronal E:I ratio",
-  plot_subtitle = "Each cortical region appears twice: grey = broad all-region E:I; blue = Jorstad-like cortical E:I.",
-  output_stem = "figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_EI"
+  plot_subtitle = "Grey = broad E:I in all mapped regions; blue = Jorstad-like E:I in the neocortical subset.",
+  output_stem = "figs/s1b/p_EI_original_all_regions_with_jorstad_neocortex_overlay_raw_EI"
 )
 
 ###################################################################
@@ -705,8 +849,8 @@ p_overlay_no_msn <- make_overlay_plot(
 p_overlay_with_msn <- make_overlay_plot(
   broad_df = plot_df_original_with_msn,
   plot_title = "Regional glucose metabolism vs neuronal E:I ratio",
-  plot_subtitle = "Grey = broad all-region E:I with MSN included; blue = Jorstad-like cortical E:I.",
-  output_stem = "figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_cortex_overlay_raw_EI"
+  plot_subtitle = "Grey = broad E:I with MSNs in all mapped regions; blue = Jorstad-like E:I in the neocortical subset.",
+  output_stem = "figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_neocortex_overlay_raw_EI"
 )
 
 cat("\nDone. Key outputs:\n")
@@ -714,5 +858,5 @@ cat("  data_analysis/EI_original_no_MSN_with_MSN_vs_jorstad_comparison_table.csv
 cat("  data_analysis/broad_EI_MSN_sensitivity_table.csv\n")
 cat("  data_analysis/spearman_EI_original_no_MSN_with_MSN_vs_jorstad_comparison.csv\n")
 cat("  data_analysis/lm_EI_original_no_MSN_with_MSN_vs_jorstad_comparison.csv\n")
-cat("  figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_EI.{pdf,jpg}\n")
-cat("  figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_cortex_overlay_raw_EI.{pdf,jpg}\n")
+cat("  figs/s1b/p_EI_original_all_regions_with_jorstad_neocortex_overlay_raw_EI.{pdf,jpg}\n")
+cat("  figs/s1b/p_EI_original_with_MSN_all_regions_with_jorstad_neocortex_overlay_raw_EI.{pdf,jpg}\n")

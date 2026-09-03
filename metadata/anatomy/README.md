@@ -40,7 +40,7 @@ central or study map.
 | Study | Authoritative map | Reason for a study layer |
 |---|---|---|
 | s1a stereology | Primary Heiss map only | All retained comparison rows use native Heiss labels. |
-| s1b transcriptomics | `s1b_linnarsson_roi_map.csv` | Fine Linnarsson ROIs are explicitly grouped into Heiss regions. Source-specific choices such as FI/Idg/Ig -> insular lobe and TH-TL -> temporal lobe are recorded here. |
+| s1b transcriptomics | `s1b_linnarsson_roi_map.csv` | Fine Linnarsson ROIs are explicitly grouped into Heiss regions. Source-specific choices such as FI/Idg/Ig -> insular lobe and TH-TL -> temporal lobe are recorded here. The same rows carry the two explicit cortical-scope flags described below. |
 | s2 stress volume | `s2_stress_volume_region_map.csv` | English synonyms are resolved and the whole-thalamus rate is explicitly defined as the unweighted mean of the three Heiss thalamic measurements, rounded to the source precision (26.6). |
 | s1c Johansen synaptic density | `s1c_johansen_region_map.csv` | Johansen labels are resolved; the whole-cerebellum -> cerebellar-cortex and aggregate-white-matter -> centrum-semiovale comparisons are marked as proxies. |
 | s4a Kochiyama | `s4a_kochiyama_region_map.csv` | Kochiyama parcels are allocated to native Heiss lobes/tissues, including the 50/50 sensorimotor split. |
@@ -62,6 +62,48 @@ The s1b mapping-validation script reads
 `data_intermediate/rcmr_roi_relationship.csv` is no longer part of the mapping
 system, so there is no second editable s1b map.
 
+### s1b anatomical scopes
+
+The s1b map distinguishes three nested analysis scopes instead of inferring
+an ambiguous bare "cortex" category from free-text dissection descriptions.
+The documentation and active output fields always say `neocortex`, `cerebral
+cortex`, or `cerebellar cortex` explicitly.
+
+- `is_telencephalon` is the broadest scope. It includes the cerebral-cortex
+  scope plus basal forebrain, caudate, nucleus accumbens, pallidum, and
+  putamen. The default s1b_3 scripts analyze all mapped brain regions; their
+  telencephalon counterparts use this flag for the planned sensitivity split.
+  The telencephalon analyses in s1b_4 and s1b_6 consume the same flag.
+- `is_cerebral_cortex` is the project's broad cerebral-cortex scope. It
+  includes neocortical ROIs plus the ROIs mapped to `Corpus amygdaloideum` and
+  `Hippocampus`.
+- `is_neocortex` is the narrower scope used for the Jorstad-like E:I
+  comparison. It includes ROIs whose source `ROIGroupCoarse` is `Cerebral
+  cortex` and excludes the amygdaloid complex and hippocampus.
+
+Human A25 and A32 are explicitly retained in the neocortex scope. Their
+agranular cytoarchitecture does not make them hippocampal or amygdaloid cortex,
+and the s1b validation script protects this decision from accidental removal.
+The Jorstad-like analysis is a cell-subclass crosswalk applied across the
+available s1b neocortical ROIs grouped to Heiss regions; it is not a claim that
+the dataset exactly replicates [Jorstad et al.'s eight-area neocortical
+sampling design](https://doi.org/10.1126/science.adf6812). Retaining anterior
+cingulate cortex follows the interpretation of ACC as a neocortical
+specialization described by [Allman et al.
+2001](https://doi.org/10.1111/j.1749-6632.2001.tb03476.x).
+
+The E:I scope comparison keeps anatomical and cell-class provenance separate:
+
+- **Jorstad-aligned neocortex:** the neocortical scope and neocortical-class
+  crosswalk are used together.
+- **Siletti-derived cerebral cortex:** the expanded cerebral-cortex scope is
+  paired with the broad Siletti neuronal classes, retaining amygdaloid and
+  hippocampal excitatory classes.
+- **Cross-study extrapolation:** a separately labelled diagnostic applies the
+  neocortical-class crosswalk to the expanded cerebral-cortex scope. This
+  reproduces the earlier calculation, but it is attributed to neither
+  Jorstad's anatomical design nor the native Siletti broad-class definition.
+
 ## Study-map schema
 
 Every study map uses these columns:
@@ -74,8 +116,9 @@ Every study map uses these columns:
   `composite_unweighted_mean`.
 - `mapping_note`: the anatomical rationale.
 
-Maps may add study-specific columns. For example, s4a uses
-`allocation_weight` to divide a Kochiyama source parcel between analysis
+Maps may add study-specific columns. s1b uses `is_telencephalon`,
+`is_cerebral_cortex`, and `is_neocortex` for its nested analysis scopes. s4a
+uses `allocation_weight` to divide a Kochiyama source parcel between analysis
 regions. Multiple rows are permitted only when the file explicitly defines a
 composite or split.
 

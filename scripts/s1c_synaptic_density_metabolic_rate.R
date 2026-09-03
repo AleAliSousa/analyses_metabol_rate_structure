@@ -90,10 +90,11 @@ synaptic_density_matched <- synaptic_density_atlas %>%
 
 plot_df <- synaptic_density_matched %>%
   mutate(
-    compartment = case_when(
+    anatomical_scope = case_when(
       anatomy_id == "centrum_semiovale" ~ "White matter",
-      source_lobe == "Subcortical" ~ "Subcortical",
-      TRUE ~ "Cortical"
+      anatomy_id == "cerebellar_cortex" ~ "Cerebellar cortex",
+      source_lobe == "Subcortical" ~ "Subcortical grey matter",
+      TRUE ~ "Cerebral cortex"
     )
   )
 
@@ -174,13 +175,13 @@ ggsave(
 )
 
 ## ----------------------------------------------------------------
-## 4. Scatter: cortex-only vs. subcortical highlighted
+## 4. Scatter with explicit cerebral, cerebellar, subcortical, and white-matter scopes
 ## ----------------------------------------------------------------
 
 p2 <- ggplot(plot_df,
              aes(x = rcmrglc_mean, y = synaptic_density_mean,
                  color = anatomy_group,
-                 shape = compartment)) +
+                 shape = anatomical_scope)) +
   geom_errorbar(
     aes(
       ymin = synaptic_density_mean - synaptic_density_sd,
@@ -229,7 +230,12 @@ p2 <- ggplot(plot_df,
   ) +
   scale_color_manual(values = region_palette, drop = TRUE) +
   scale_shape_manual(
-    values = c("Cortical" = 16, "Subcortical" = 17, "White matter" = 15)
+    values = c(
+      "Cerebral cortex" = 16,
+      "Cerebellar cortex" = 18,
+      "Subcortical grey matter" = 17,
+      "White matter" = 15
+    )
   ) +
   labs(
     title    = "Synaptic density vs. glucose metabolic rate: labelled",
@@ -269,7 +275,7 @@ ggsave(
 
 plot_df %>%
   select(
-    anatomy_id, anatomy_group, source_lobe, compartment,
+    anatomy_id, anatomy_group, source_lobe, anatomical_scope,
     rcmrglc_mean, rcmrglc_sd,
     synaptic_density_mean, synaptic_density_sd
   ) %>%

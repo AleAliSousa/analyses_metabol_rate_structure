@@ -45,12 +45,16 @@ obs <- attach_s1b_anatomy(obs)
 ###################################################################
 # Telencephalon classification
 ###################################################################
-telencephalon_coarse_groups <- c("Cerebral cortex", "Cerebral nuclei", "Hippocampus")
+# The authoritative s1b ROI map supplies is_telencephalon. ROIGroupCoarse is
+# retained below only as provenance; it no longer defines a second local map.
 
 telencephalon_table <- obs %>%
-  filter(anatomy_group != "", anatomy_group != "Unmapped") %>%
-  count(anatomy_group, ROIGroupCoarse, name = "n_cells") %>%
-  group_by(anatomy_group) %>%
+  filter(!is.na(anatomy_id), anatomy_group != "", anatomy_group != "Unmapped") %>%
+  count(
+    anatomy_id, anatomy_group, ROIGroupCoarse, is_telencephalon,
+    name = "n_cells"
+  ) %>%
+  group_by(anatomy_id, anatomy_group, is_telencephalon) %>%
   mutate(
     n_total = sum(n_cells),
     frac = n_cells / n_total
@@ -58,21 +62,16 @@ telencephalon_table <- obs %>%
   slice_max(n_cells, n = 1, with_ties = FALSE) %>%
   ungroup() %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     dominant_ROIGroupCoarse = ROIGroupCoarse,
     n_cells_dominant = n_cells,
     n_cells_total = n_total,
     dominant_fraction = round(frac, 3),
-    is_telencephalon = dominant_ROIGroupCoarse %in% telencephalon_coarse_groups,
+    is_telencephalon,
     division = ifelse(is_telencephalon, "Telencephalon", "Non-telencephalon")
   ) %>%
   arrange(desc(is_telencephalon), anatomy_group)
-
-write.csv(
-  telencephalon_table,
-  "data_analysis/telencephalon_classification_neuronal.csv",
-  row.names = FALSE
-)
 
 ###################################################################
 # Mean participant-level proportions by anatomy_group over ALL
@@ -124,8 +123,9 @@ supercluster_proportion_table <- supercluster_table_long %>%
 analysis_df <- supercluster_proportion_table %>%
   join_heiss_rates() %>%
   left_join(
-    telencephalon_table %>% select(anatomy_group, is_telencephalon, division),
-    by = "anatomy_group"
+    telencephalon_table %>%
+      select(anatomy_id, anatomy_group, is_telencephalon, division),
+    by = c("anatomy_id", "anatomy_group")
   ) %>%
   filter(!is.na(division))
 

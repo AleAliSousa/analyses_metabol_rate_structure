@@ -63,10 +63,11 @@ RUN_ORDER <- c(
   "s1a_1_stereology_cell_types_30052026.R",
   "s1a_2_stereology_proportions_30052026.R",
   
-  # Study 1b: transcriptomic cells (extract -> map -> proportions -> analyses)
+  # Study 1b: transcriptomic cells (extract -> map -> proportions -> analyses).
+  # The unsuffixed s1b_3 scripts use all mapped brain regions; the paired
+  # telencephalon scripts are anatomical-scope sensitivity analyses.
   "s1b_1_extract_transcriptomic_30052026.R",
   "s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R",
-  "s1b_2_check_dissection_roi.R",
   "s1b_3_n_transcriptomic_neuronal_25052026.R",
   "s1b_3_n_transcriptomic_neuronal_telencephalon_25052026.R",
   "s1b_3_nn_transcriptomic_nonneuronal_25052026.R",

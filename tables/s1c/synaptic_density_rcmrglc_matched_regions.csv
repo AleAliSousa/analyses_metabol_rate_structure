@@ -1,14 +1,14 @@
-"anatomy_id","anatomy_group","source_lobe","compartment","rcmrglc_mean","rcmrglc_sd","synaptic_density_mean","synaptic_density_sd"
+"anatomy_id","anatomy_group","source_lobe","anatomical_scope","rcmrglc_mean","rcmrglc_sd","synaptic_density_mean","synaptic_density_sd"
 "centrum_semiovale","Centrum semiovale","Subcortical","White matter",12.3,1.45,12,19
-"pallidum","Pallidum","Subcortical","Subcortical",21.9,2.26,304,52
-"amygdala","Corpus amygdaloideum","Subcortical","Subcortical",22.2,1.74,472,84
-"hippocampus","Hippocampus","Subcortical","Subcortical",25.7,2.11,350,64
-"cerebellar_cortex","Cerebellar cortex","Subcortical","Subcortical",29.8,2.2,341,55
-"insular_lobe","Insular lobe","Temporal","Cortical",30.3,2.55,566,81
-"temporal_lobe","Temporal lobe","Temporal","Cortical",30.5,2.54,595,91
-"nucleus_accumbens","Nucleus accumbens","Subcortical","Subcortical",32.3,2.39,598,108
-"caudate_nucleus","Caudatum","Subcortical","Subcortical",32.6,3.04,539,81
-"frontal_lobe","Frontal lobe","Frontal","Cortical",35.3,3.51,569,83
-"occipital_lobe","Occipital lobe","Occipital","Cortical",35.8,3.12,546,82
-"parietal_lobe","Parietal lobe","Parietal","Cortical",35.8,3.23,577,85
-"putamen","Putamen","Subcortical","Subcortical",40.2,3.5,604,88
+"pallidum","Pallidum","Subcortical","Subcortical grey matter",21.9,2.26,304,52
+"amygdala","Corpus amygdaloideum","Subcortical","Subcortical grey matter",22.2,1.74,472,84
+"hippocampus","Hippocampus","Subcortical","Subcortical grey matter",25.7,2.11,350,64
+"cerebellar_cortex","Cerebellar cortex","Subcortical","Cerebellar cortex",29.8,2.2,341,55
+"insular_lobe","Insular lobe","Temporal","Cerebral cortex",30.3,2.55,566,81
+"temporal_lobe","Temporal lobe","Temporal","Cerebral cortex",30.5,2.54,595,91
+"nucleus_accumbens","Nucleus accumbens","Subcortical","Subcortical grey matter",32.3,2.39,598,108
+"caudate_nucleus","Caudatum","Subcortical","Subcortical grey matter",32.6,3.04,539,81
+"frontal_lobe","Frontal lobe","Frontal","Cerebral cortex",35.3,3.51,569,83
+"occipital_lobe","Occipital lobe","Occipital","Cerebral cortex",35.8,3.12,546,82
+"parietal_lobe","Parietal lobe","Parietal","Cerebral cortex",35.8,3.23,577,85
+"putamen","Putamen","Subcortical","Subcortical grey matter",40.2,3.5,604,88

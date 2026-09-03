@@ -44,6 +44,48 @@ if (anyNA(roi_map$rcmr_value)) {
   stop("Every s1b mapping row must resolve to one Heiss rate.", call. = FALSE)
 }
 
+scope_check <- obs %>%
+  distinct(roi, ROIGroupCoarse) %>%
+  inner_join(
+    as_tibble(roi_map) %>%
+      select(
+        roi, anatomy_id, is_cerebral_cortex, is_neocortex,
+        is_telencephalon
+      ),
+    by = "roi"
+  ) %>%
+  mutate(
+    expected_is_neocortex = ROIGroupCoarse == "Cerebral cortex",
+    expected_is_cerebral_cortex =
+      expected_is_neocortex | anatomy_id %in% c("amygdala", "hippocampus"),
+    expected_is_telencephalon = ROIGroupCoarse %in%
+      c("Cerebral cortex", "Cerebral nuclei", "Hippocampus")
+  )
+
+scope_mismatches <- scope_check %>%
+  filter(
+    is_neocortex != expected_is_neocortex |
+      is_cerebral_cortex != expected_is_cerebral_cortex |
+      is_telencephalon != expected_is_telencephalon
+  )
+if (nrow(scope_mismatches)) {
+  stop(
+    "The s1b cortical-scope flags disagree with the source anatomical ",
+    "annotations for ROI(s): ",
+    paste(unique(scope_mismatches$roi), collapse = ", "),
+    call. = FALSE
+  )
+}
+
+acc_check <- roi_map %>%
+  filter(roi %in% c("Human A25", "Human A32"))
+if (nrow(acc_check) != 2L || any(!acc_check$is_neocortex)) {
+  stop(
+    "Human A25 and Human A32 must both be retained in the s1b neocortex scope.",
+    call. = FALSE
+  )
+}
+
 orphan_map_rows <- setdiff(roi_map$roi, unique(obs$roi))
 if (length(orphan_map_rows)) {
   stop(
@@ -57,7 +99,10 @@ coverage <- obs %>%
   count(obs_dataset, roi, name = "n_obs_rows") %>%
   left_join(
     as_tibble(roi_map) %>%
-      select(roi, anatomy_id, anatomy_group),
+      select(
+        roi, anatomy_id, anatomy_group,
+        is_cerebral_cortex, is_neocortex, is_telencephalon
+      ),
     by = "roi"
   ) %>%
   mutate(mapping_status = if_else(

@@ -36,15 +36,16 @@ obs <- attach_s1b_anatomy(obs)
 # Non-telencephalon: diencephalon (thalamus, hypothalamus, epithalamus),
 # midbrain, pons, medulla (myelencephalon), cerebellum, spinal cord.
 #
-# We classify each anatomy_group by the dominant ROIGroupCoarse of its
-# constituent cells. This is data-driven and robust to label variants.
-
-telencephalon_coarse_groups <- c("Cerebral cortex", "Cerebral nuclei", "Hippocampus")
+# The authoritative s1b ROI map supplies is_telencephalon. ROIGroupCoarse is
+# retained below only as provenance; it no longer defines a second local map.
 
 telencephalon_table <- obs %>%
-  filter(anatomy_group != "", anatomy_group != "Unmapped") %>%
-  count(anatomy_group, ROIGroupCoarse, name = "n_cells") %>%
-  group_by(anatomy_group) %>%
+  filter(!is.na(anatomy_id), anatomy_group != "", anatomy_group != "Unmapped") %>%
+  count(
+    anatomy_id, anatomy_group, ROIGroupCoarse, is_telencephalon,
+    name = "n_cells"
+  ) %>%
+  group_by(anatomy_id, anatomy_group, is_telencephalon) %>%
   mutate(
     n_total = sum(n_cells),
     frac    = n_cells / n_total
@@ -52,12 +53,13 @@ telencephalon_table <- obs %>%
   slice_max(n_cells, n = 1, with_ties = FALSE) %>%
   ungroup() %>%
   transmute(
+    anatomy_id,
     anatomy_group,
     dominant_ROIGroupCoarse = ROIGroupCoarse,
     n_cells_dominant        = n_cells,
     n_cells_total           = n_total,
     dominant_fraction       = round(frac, 3),
-    is_telencephalon        = dominant_ROIGroupCoarse %in% telencephalon_coarse_groups,
+    is_telencephalon,
     division                = ifelse(is_telencephalon, "Telencephalon", "Non-telencephalon")
   ) %>%
   arrange(desc(is_telencephalon), anatomy_group)
@@ -68,7 +70,7 @@ print(telencephalon_table, n = Inf)
 # Persist the classification table
 write.csv(
   telencephalon_table,
-  "data_analysis/telencephalon_classification.csv",
+  "data_analysis/telencephalon_classification_nonneuronal.csv",
   row.names = FALSE
 )
 
@@ -133,8 +135,9 @@ celltype_proportion_table <- celltype_table_long %>%
 analysis_df <- celltype_proportion_table %>%
   join_heiss_rates() %>%
   left_join(
-    telencephalon_table %>% select(anatomy_group, is_telencephalon, division),
-    by = "anatomy_group"
+    telencephalon_table %>%
+      select(anatomy_id, anatomy_group, is_telencephalon, division),
+    by = c("anatomy_id", "anatomy_group")
   )
 
 cat("\n================ Regions in analysis by division ================\n")
@@ -490,7 +493,7 @@ ggsave(
 )
 
 cat("\nDone. Outputs:\n")
-cat("  data_analysis/telencephalon_classification.csv\n")
+cat("  data_analysis/telencephalon_classification_nonneuronal.csv\n")
 cat("  data_analysis/nonneuronal_celltype_proportions_by_region_telencephalon.csv\n")
 cat("  data_analysis/nonneuronal_celltype_proportions_by_region_nontelencephalon.csv\n")
 cat("  data_analysis/spearman_correlations_by_telencephalon.csv\n")

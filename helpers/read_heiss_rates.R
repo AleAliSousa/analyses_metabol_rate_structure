@@ -269,8 +269,63 @@ read_s1b_roi_map <- function(
   path = "metadata/anatomy/s1b_linnarsson_roi_map.csv"
 ) {
   mapping <- read_study_anatomy_map(path)
+  .require_columns(
+    mapping,
+    c("is_cerebral_cortex", "is_neocortex", "is_telencephalon"),
+    path
+  )
+
+  for (column in c(
+    "is_cerebral_cortex", "is_neocortex", "is_telencephalon"
+  )) {
+    value <- toupper(trimws(as.character(mapping[[column]])))
+    if (anyNA(value) || any(!value %in% c("TRUE", "FALSE"))) {
+      stop(
+        path, "$", column, " must contain only TRUE or FALSE.",
+        call. = FALSE
+      )
+    }
+    mapping[[column]] <- value == "TRUE"
+  }
+  if (any(mapping$is_neocortex & !mapping$is_cerebral_cortex)) {
+    stop(
+      path, " cannot classify an ROI as neocortex without also classifying ",
+      "it as cerebral cortex.",
+      call. = FALSE
+    )
+  }
+  if (any(mapping$is_cerebral_cortex & !mapping$is_telencephalon)) {
+    stop(
+      path, " cannot classify an ROI as cerebral cortex without also ",
+      "classifying it as telencephalon.",
+      call. = FALSE
+    )
+  }
+
+  scope_rows <- unique(mapping[c(
+    "analysis_anatomy_id", "is_cerebral_cortex", "is_neocortex",
+    "is_telencephalon"
+  )])
+  inconsistent_ids <- unique(
+    scope_rows$analysis_anatomy_id[
+      duplicated(scope_rows$analysis_anatomy_id) |
+        duplicated(scope_rows$analysis_anatomy_id, fromLast = TRUE)
+    ]
+  )
+  if (length(inconsistent_ids)) {
+    stop(
+      path, " gives inconsistent scope flags within analysis anatomy ID(s): ",
+      paste(inconsistent_ids, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
   .assert_unique(mapping$source_region, paste0(path, "$source_region"))
   resolved <- derive_study_heiss_rates(mapping)
+  idx <- match(resolved$source_region, mapping$source_region)
+  resolved$is_cerebral_cortex <- mapping$is_cerebral_cortex[idx]
+  resolved$is_neocortex <- mapping$is_neocortex[idx]
+  resolved$is_telencephalon <- mapping$is_telencephalon[idx]
   names(resolved)[names(resolved) == "source_region"] <- "roi"
   resolved
 }
@@ -286,6 +341,9 @@ attach_s1b_anatomy <- function(data, roi_col = "roi",
   data[[roi_col]] <- roi
   data$anatomy_id <- mapping$anatomy_id[idx]
   data$anatomy_group <- mapping$anatomy_group[idx]
+  data$is_cerebral_cortex <- mapping$is_cerebral_cortex[idx]
+  data$is_neocortex <- mapping$is_neocortex[idx]
+  data$is_telencephalon <- mapping$is_telencephalon[idx]
   data$anatomy_group[is.na(data$anatomy_group)] <- unmapped_label
   data
 }
