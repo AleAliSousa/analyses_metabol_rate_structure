@@ -52,7 +52,11 @@ cat("Scripts dir  :", SCRIPT_DIR, "\n\n")
 
 # ---- pipeline order --------------------------------------------------
 RUN_ORDER <- c(
-  # 0. raw-data preparation (Stephan volumes + Heiss/Stephan reference table)
+  # 0. source-independent Heiss preparation
+  "0_prepare_heiss_rates.R",
+
+  # Legacy Heiss/comparative-volume integration. Retained temporarily until
+  # its Study 1b and Study 3 consumers are migrated to explicit crosswalks.
   "0_bind_matano_1985a_to_stephan.R",
   "0_Heiss_Stephan_and_table1_30052026.R",
 
