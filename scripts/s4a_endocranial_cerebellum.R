@@ -18,10 +18,8 @@
 #     shape_part    = Fig 3A size-adjusted relative volume for the group
 #     cerebellar_size = (individual cerebellar volume) / (MH cerebellar volume)
 #
-# The three cerebellar parcels (Kochiyama Fig 3A / legend):
-#     Ce A  anterior cerebellar cortex   rate 29.8
-#     Ce P  posterior cerebellar cortex  rate 29.8
-#     Ce V  vermis                       rate 30.1
+# The three cerebellar parcels (Kochiyama Fig 3A / legend) are mapped to
+# Heiss anatomy in metadata/anatomy/s4a_kochiyama_region_map.csv.
 #   Cerebellar cortex = Ce A + Ce P.
 #
 # SHAPE vs SIZE (as in the main script):
@@ -53,6 +51,7 @@ if (!is.null(this_file)) {
   root <- "."
 }
 if (!dir.exists(file.path(root, "data_raw"))) root <- "."   # fall back to cwd
+setwd(root)
 raw_dir   <- file.path(root, "data_raw")
 tab_dir   <- file.path(root, "tables", "s4a")
 fig_dir   <- file.path(root, "figs",   "s4a")
@@ -74,18 +73,50 @@ BRAIN_DENSITY_G_PER_CC <- 1.036
 CEREBELLAR_MH          <- 149      # MH whole-cerebellum mean (cc), n = 1185
 
 ## ---- cerebellar parcels (rate, MH volume, Fig 3A shape) -----------
-# rates: Heiss et al. 2004 TABLE1 (per 100 g/min)
-# MH volumes: Kochiyama Fig 3 legend (cc); shape: Kochiyama Fig 3A
+# Rates come from the central Heiss preparation; MH volumes and shape values
+# come from Kochiyama raw tables; anatomical correspondence comes from the
+# single s4a crosswalk.
+source("helpers/read_heiss_rates.R")
+heiss <- read_heiss_regions()
+s4a_map <- read_study_anatomy_map(
+  "metadata/anatomy/s4a_kochiyama_region_map.csv"
+)
+cerebellar_map <- s4a_map[
+  s4a_map$source_region %in% c("Ce A", "Ce P", "Ce V"),
+  , drop = FALSE
+]
+koch_shape <- read.csv(
+  "data_raw/Kochiyama_etal_2018_Figure3A.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+koch_legend <- read.csv(
+  "data_raw/Kochiyama_etal_2018_Figure3legend.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+shape_index <- match(cerebellar_map$source_region, koch_shape$Region_code)
+legend_index <- match(cerebellar_map$source_region, koch_legend$Region_code)
+heiss_index <- match(cerebellar_map$heiss_anatomy_id, heiss$anatomy_id)
+stopifnot(
+  !anyNA(shape_index), !anyNA(legend_index), !anyNA(heiss_index),
+  nrow(cerebellar_map) == 3L
+)
+
 parcel <- data.frame(
-  code   = c("Ce A", "Ce P", "Ce V"),
-  label  = c("Anterior cerebellar cortex",
-             "Posterior cerebellar cortex",
-             "Vermis"),
-  rate   = c(29.8, 29.8, 30.1),
-  mh_cc  = c(13.86, 114.41, 12.38),
-  NT     = c(0.990, 0.940, 0.965),
-  EH     = c(1.000, 0.995, 1.010),
-  MH     = c(1.000, 1.000, 1.000),
+  code = cerebellar_map$source_region,
+  anatomy_id = cerebellar_map$analysis_anatomy_id,
+  label = ifelse(
+    cerebellar_map$analysis_anatomy_id == "vermis",
+    "Vermis",
+    paste(tools::toTitleCase(koch_shape$Subregion[shape_index]),
+          "cerebellar cortex")
+  ),
+  rate = heiss$rcmrglc_mean_umol_100g_min[heiss_index],
+  mh_cc = koch_legend$MH_mean_Vol.cc[legend_index],
+  NT = koch_shape$NT_rel[shape_index],
+  EH = koch_shape$EH_rel[shape_index],
+  MH = koch_shape$MH_rel[shape_index],
   stringsAsFactors = FALSE
 )
 # per-part MH budget base (umol/min): rate x mass(g)/100
@@ -180,9 +211,9 @@ write.csv(spec[, c("specimen","group","cerebellar_cc",
 ## ================================================================
 ## 3. PARCEL breakdown table (which sub-region carries the effect)
 ## ================================================================
-parcel_out <- parcel[, c("code","label","rate","mh_cc","mass_g",
+parcel_out <- parcel[, c("code","anatomy_id","label","rate","mh_cc","mass_g",
                          "base_umol","NT","EH","MH")]
-names(parcel_out)[7:9] <- paste0("shape_", names(parcel_out)[7:9])
+names(parcel_out)[8:10] <- paste0("shape_", names(parcel_out)[8:10])
 write.csv(parcel_out,
           file.path(tab_dir, "cerebellum_parcel_breakdown.csv"),
           row.names = FALSE)

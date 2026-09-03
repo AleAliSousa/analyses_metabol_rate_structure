@@ -1,0 +1,14 @@
+source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,relationship,mapping_note
+Frontal (total),frontal_lobe,frontal_lobe,1,aggregate_equivalent,Johansen lobe total paired with the Heiss lobe measurement
+Parietal (total),parietal_lobe,parietal_lobe,1,aggregate_equivalent,Johansen lobe total paired with the Heiss lobe measurement
+Temporal (total),temporal_lobe,temporal_lobe,1,aggregate_equivalent,Johansen lobe total paired with the Heiss lobe measurement
+Occipital (total),occipital_lobe,occipital_lobe,1,aggregate_equivalent,Johansen lobe total paired with the Heiss lobe measurement
+Insula,insular_lobe,insular_lobe,1,source_synonym,Johansen insula paired with the Heiss insular lobe
+Hippocampus,hippocampus,hippocampus,1,exact,Direct anatomical match
+Amygdala,amygdala,amygdala,1,source_synonym,English source label for Heiss Corpus amygdaloideum
+Caudate,caudate_nucleus,caudate_nucleus,1,source_synonym,English source label for Heiss Caudatum
+Putamen,putamen,putamen,1,exact,Direct anatomical match
+Accumbens,nucleus_accumbens,nucleus_accumbens,1,source_synonym,Short source label for Heiss Nucleus accumbens
+Pallidum,pallidum,pallidum,1,exact,Direct anatomical match
+Cerebellum,cerebellar_cortex,cerebellar_cortex,1,proxy,Johansen whole-cerebellum SV2A is compared with the Heiss cerebellar-cortex rate
+White matter,centrum_semiovale,centrum_semiovale,1,proxy,Johansen aggregate white matter is compared with the Heiss centrum-semiovale rate

@@ -56,27 +56,13 @@ obs <- obs %>%
 # Read rCMRGlc values from the source-independent Heiss preparation
 ######################################################
 source("helpers/read_heiss_rates.R")
-rcmr <- read_heiss_rcmr()
 
 #####################################
 # Map Siletti ROI to rCMR anatomy terms
 #####################################
-anatomy_rules <- readr::read_csv(
-  "data_intermediate/rcmr_roi_relationship.csv",
-  show_col_types = FALSE
-) %>%
-  transmute(
-    anatomy_group = rcmr_term,
-    roi = rois
-  ) %>%
-  tidyr::separate_rows(roi, sep = "\\s*\\|\\|\\s*") %>%
-  mutate(roi = stringr::str_squish(roi)) %>%
-  distinct(roi, anatomy_group)
-
-obs <- obs %>%
-  select(-any_of("anatomy_group")) %>%
-  left_join(anatomy_rules, by = "roi") %>%
-  mutate(anatomy_group = coalesce(anatomy_group, "Unmapped"))
+# The one authoritative s1b ROI crosswalk is
+# metadata/anatomy/s1b_linnarsson_roi_map.csv.
+obs <- attach_s1b_anatomy(obs)
 
 ###################################################################
 # Broad all-region E:I category definition
@@ -303,7 +289,7 @@ original_wide <- calculate_region_props(
   included_classes = c("Excitatory_projection", "Inhibitory_interneuron", "Inhibitory_projection_MSN"),
   value_prefix = "p_original_"
 ) %>%
-  inner_join(rcmr, by = c("anatomy_group" = "rcmr_term")) %>%
+  join_heiss_rates() %>%
   left_join(region_classification, by = "anatomy_group") %>%
   mutate(
     p_original_Excitatory_projection = coalesce(p_original_Excitatory_projection, 0),
@@ -419,7 +405,7 @@ jorstad_wide <- calculate_region_props(
   included_classes = c("E", "I"),
   value_prefix = "p_jorstad_like_"
 ) %>%
-  inner_join(rcmr, by = c("anatomy_group" = "rcmr_term")) %>%
+  join_heiss_rates() %>%
   left_join(region_classification, by = "anatomy_group") %>%
   filter(is_cortex) %>%
   mutate(

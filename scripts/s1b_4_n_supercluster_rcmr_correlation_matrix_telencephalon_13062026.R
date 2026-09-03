@@ -34,27 +34,13 @@ obs <- obs %>%
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 source("helpers/read_heiss_rates.R")
-rcmr <- read_heiss_rcmr()
 
 #####################################
 # Anatomical grouping of ROIs
 #####################################
-anatomy_rules <- readr::read_csv(
-  "data_intermediate/rcmr_roi_relationship.csv",
-  show_col_types = FALSE
-) %>%
-  transmute(
-    anatomy_group = rcmr_term,
-    roi = rois
-  ) %>%
-  separate_rows(roi, sep = "\\s*\\|\\|\\s*") %>%
-  mutate(roi = stringr::str_squish(roi)) %>%
-  distinct(roi, anatomy_group)
-
-obs <- obs %>%
-  select(-any_of("anatomy_group")) %>%
-  left_join(anatomy_rules, by = "roi") %>%
-  mutate(anatomy_group = coalesce(anatomy_group, "Unmapped"))
+# The one authoritative s1b ROI crosswalk is
+# metadata/anatomy/s1b_linnarsson_roi_map.csv.
+obs <- attach_s1b_anatomy(obs)
 
 ###################################################################
 # Telencephalon classification
@@ -136,7 +122,7 @@ supercluster_proportion_table <- supercluster_table_long %>%
   )
 
 analysis_df <- supercluster_proportion_table %>%
-  inner_join(rcmr, by = c("anatomy_group" = "rcmr_term")) %>%
+  join_heiss_rates() %>%
   left_join(
     telencephalon_table %>% select(anatomy_group, is_telencephalon, division),
     by = "anatomy_group"

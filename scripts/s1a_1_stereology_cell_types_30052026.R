@@ -4,6 +4,7 @@ setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".gi
 library(ggplot2)
 library(ggpmisc)  # for stat_poly_eq
 library(tidyverse)
+source("helpers/read_heiss_rates.R")
 
 # Brain Structure Metabolic Rates (rCMRGlc) compared to Anatomical Variables
 
@@ -11,61 +12,42 @@ library(tidyverse)
 
 ### Load data
 
-######## To do - make a cleaner sheet which can link to references. Calculate ratios and densities in the sheet, so that we can just import the relevant columns here.
-
-RawData <- read.csv("data_raw/stereology.csv")
-
-# Select relevant columns and rename them for clarity
-data <- RawData[, c(
-  "Region",
-  "rCMRGlc",
-  "Volume",
-  "VolumeSD",
-  "Neuron_N",
-  "NeuronSD",
-  "NeurDensity",
-  "Glia_N",
-  "GliaSD",
-  "GliaDensity",
-  "Astro_N",
-  "AstroSD",
-  "AstroDensity",
-  "Oligo_N",
-  "OligoSD",
-  "OligoDensity",
-  "Microglia_N",
-  "MicroSD",
-  "MicroDensity",
-  "GliaNeurDensityRatio"
-)]
-
-# Rename columns for clarity
-names(data) <- c(
-  "anatomy_group",
-  "rcmr_value",
-  "volume",
-  "volume_sd",
-  "neurons_n",
-  "neurons_sd",
-  "neuron_densities",
-  "glia_n",
-  "glia_sd",
-  "glia_densities",
-  "astrocytes_n",
-  "astrocytes_sd",
-  "astrocyte_densities",
-  "oligodendrocytes_n",
-  "oligodendrocytes_sd",
-  "oligodendrocyte_densities",
-  "microglia_n",
-  "microglia_sd",
-  "microglia_densities",
-  "glia_to_neuron_ratio"
+stereology <- read.csv(
+  "data_intermediate/s1a_stereology_comparison.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
 )
+heiss_rates <- read_heiss_rcmr(include_global_average = TRUE)
+
+# Join comparison measurements to authoritative Heiss rates by anatomy_id.
+data <- stereology %>%
+  inner_join(as_tibble(heiss_rates), by = "anatomy_id") %>%
+  transmute(
+    anatomy_id,
+    anatomy_group = rcmr_term,
+    rcmr_value,
+    volume = Volume,
+    volume_sd = VolumeSD,
+    neurons_n = Neuron_N,
+    neurons_sd = NeuronSD,
+    neuron_densities = NeurDensity,
+    glia_n = Glia_N,
+    glia_sd = GliaSD,
+    glia_densities = GliaDensity,
+    astrocytes_n = Astro_N,
+    astrocytes_sd = AstroSD,
+    astrocyte_densities = AstroDensity,
+    oligodendrocytes_n = Oligo_N,
+    oligodendrocytes_sd = OligoSD,
+    oligodendrocyte_densities = OligoDensity,
+    microglia_n = Microglia_N,
+    microglia_sd = MicroSD,
+    microglia_densities = MicroDensity,
+    glia_to_neuron_ratio = GliaNeurDensityRatio
+  )
 
 # Create a new dataframe that omits rows where there is only data for anatomy_group and rcmr_value, but no data for the other variables (i.e. where all the other variables are NA)
 analysis_df <- data[!(is.na(data$neurons_n) & is.na(data$glia_n) & is.na(data$astrocytes_n) & is.na(data$oligodendrocytes_n) & is.na(data$microglia_n) & is.na(data$neuron_densities) & is.na(data$glia_densities) & is.na(data$astrocyte_densities) & is.na(data$oligodendrocyte_densities) & is.na(data$microglia_densities) & is.na(data$glia_to_neuron_ratio)), ]
-analysis_df$anatomy_group <- gsub("_", " ", analysis_df$anatomy_group)
 ##########################################################################
 # Correlations between rCMRGlc and (1) cell counts and (2) cell densities
 ##########################################################################

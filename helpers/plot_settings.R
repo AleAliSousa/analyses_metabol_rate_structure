@@ -72,8 +72,8 @@ region_palette <- c(
 
   # Coarser regions used in Study 2 / Study 3 that have no single fine-grained
   # equivalent above. Given their own stable colors so they are consistent
-  # across those studies' figures. (Regions that DO have a fine equivalent are
-  # handled by region_aliases below rather than duplicated here.)
+  # across those studies' figures. Anatomical equivalences themselves belong
+  # in the version-controlled study maps, not in this palette.
   "Thalamus"                        = "#117777",
   "Striatum"                        = "#7B3294",
   "Neocortex white"                 = "#878787",
@@ -178,34 +178,15 @@ facet_dims <- function(n, ncol = facet_ncol(n),
 }
 
 # -----------------------------
-# Cross-study region label aliases
+# Region-label normalization
 # -----------------------------
-# Different studies label the same brain region differently (Study 1 uses the
-# Heiss/Stephan terms that key region_palette; Studies 2 and 3 use coarser or
-# English names). Map those alternates onto the canonical palette key so a given
-# region gets the SAME colour in every figure. Each entry asserts that the two
-# labels denote the same region -- review before trusting cross-study colours.
-region_aliases <- c(
-  # Study 2 (stress_volume) coarse English labels
-  "Cerebral cortex"             = "Cerebral cortex (global average)",
-  "Caudate"                     = "Caudatum",
-  "Amygdala"                    = "Corpus amygdaloideum",
-  "Accumbens"                   = "Nucleus accumbens",
-  # Study 3 (PGLS) labels
-  "Neocortex grey"              = "Cerebral cortex (global average)",
-  "Insular cortex (grey)"       = "Insular lobe",
-  "Nucleus subthalamicus Luysi" = "Nucleus subthalamicus",
-  "Area striata grey"           = "Occipital lobe"   # area striata = V1 (occipital)
-)
-
-# Normalise region labels: trim whitespace and apply region_aliases so they line
-# up with region_palette / region_order. Base R only (safe before tidyverse is
-# loaded). Vectorised.
+# Anatomical equivalences are intentionally not encoded in this plotting
+# helper. Active studies resolve source terms through their version-controlled
+# metadata/anatomy crosswalk before plotting. In particular, V1 is not silently
+# equated with the Heiss occipital lobe; a future s3 must declare that proxy in
+# its own study map.
 canonical_region <- function(x) {
-  x <- trimws(as.character(x))
-  hit <- !is.na(x) & x %in% names(region_aliases)
-  x[hit] <- region_aliases[x[hit]]
-  x
+  trimws(as.character(x))
 }
 
 # Colour vector for a set of region labels given in display order, for colouring

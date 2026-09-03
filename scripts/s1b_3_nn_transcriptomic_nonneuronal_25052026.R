@@ -17,38 +17,16 @@ obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonn
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
-# Load native Heiss region labels and rates from the source-independent prep.
+# Load shared anatomy readers and the source-independent Heiss preparation.
 source("helpers/read_heiss_rates.R")
-rcmr <- read_heiss_rcmr()
-
-head(rcmr)
 
 #####################################
 # Anatomical grouping of rois
 #####################################
 
-# Read the roi-to-rCMR mapping table directly.
-# Expected columns:
-#   rcmr_term
-#   rois: one or more exact obs$roi strings separated by "||"
-
-anatomy_rules <- readr::read_csv(
-  "data_intermediate/rcmr_roi_relationship.csv",
-  show_col_types = FALSE
-) %>%
-  dplyr::transmute(
-    anatomy_group = rcmr_term,
-    roi = rois
-  ) %>%
-  tidyr::separate_rows(roi, sep = "\\s*\\|\\|\\s*") %>%
-  dplyr::mutate(roi = stringr::str_squish(roi)) %>%
-  dplyr::distinct(roi, anatomy_group)
-
-obs <- obs %>%
-  dplyr::select(-dplyr::any_of("anatomy_group")) %>%
-  dplyr::mutate(roi = stringr::str_squish(roi)) %>%
-  dplyr::left_join(anatomy_rules, by = "roi") %>%
-  dplyr::mutate(anatomy_group = dplyr::coalesce(anatomy_group, "Unmapped"))
+# The one authoritative s1b ROI crosswalk is
+# metadata/anatomy/s1b_linnarsson_roi_map.csv.
+obs <- attach_s1b_anatomy(obs)
 
 ###################################################################
 # Cell type proportion calculations
@@ -115,7 +93,7 @@ write.csv(
 ###################################################################
 
 analysis_df <- celltype_proportion_table %>%
-  inner_join(rcmr, by = c("anatomy_group" = "rcmr_term"))
+  join_heiss_rates()
 
 ###########
 # Analyses

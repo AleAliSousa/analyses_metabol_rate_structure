@@ -1,0 +1,70 @@
+source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,relationship,mapping_note
+Human SEP,basal_forebrain,basal_forebrain,1,contained_within_target,Septal nuclei grouped with the Heiss basal forebrain
+Human SI,basal_forebrain,basal_forebrain,1,contained_within_target,Substantia innominata grouped with the Heiss basal forebrain
+Human CaB,caudate_nucleus,caudate_nucleus,1,contained_within_target,Caudate-body ROI grouped with the Heiss caudate nucleus
+Human CBL,cerebellar_cortex,cerebellar_cortex,1,contained_within_target,Cerebellar ROI grouped with the Heiss cerebellar cortex
+Human IC,inferior_colliculus,inferior_colliculus,1,contained_within_target,Inferior-colliculus ROI
+Human SC,superior_colliculus,superior_colliculus,1,contained_within_target,Superior-colliculus ROI
+Human BL,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human BM,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human BNST,amygdala,amygdala,1,contained_within_target,Extended-amygdala ROI grouped with the Heiss amygdaloid complex
+Human CEN,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human CMN,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human CoA,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human La,amygdala,amygdala,1,contained_within_target,Amygdala subregion grouped with the Heiss amygdaloid complex
+Human LG,lateral_geniculate_nucleus,lateral_geniculate_nucleus,1,contained_within_target,Lateral-geniculate ROI
+Human MG,medial_geniculate_nucleus,medial_geniculate_nucleus,1,contained_within_target,Medial-geniculate ROI
+Human A13,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A14,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A25,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A32,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A44-A45,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A46,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human M1C,frontal_lobe,frontal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human CA1-3,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA1C-CA3C,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA1R-CA2R,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA1R-CA2R-CA3R,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA1U,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA1U-CA2U-CA3U,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA2U-CA3U,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA3R,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human CA4C-DGC,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human DGR-CA4Rpy,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human DGU-CA4Upy,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human Sub,hippocampus,hippocampus,1,contained_within_target,Hippocampal subregion grouped with the Heiss hippocampus
+Human FI,insular_lobe,insular_lobe,1,contained_within_target,Frontal agranular insular cortex is assigned anatomically to the insular lobe
+Human Idg,insular_lobe,insular_lobe,1,contained_within_target,Dysgranular insular cortex is assigned anatomically to the insular lobe
+Human Ig,insular_lobe,insular_lobe,1,contained_within_target,Granular insular cortex is assigned anatomically to the insular lobe
+Human NAC,nucleus_accumbens,nucleus_accumbens,1,contained_within_target,Nucleus-accumbens ROI
+Human CbDN,dentate_nucleus,dentate_nucleus,1,contained_within_target,Cerebellar deep-nuclei ROI grouped with the Heiss dentate nucleus
+Human MD,medial_thalamic_nuclei,medial_thalamic_nuclei,1,contained_within_target,Mediodorsal ROI grouped with the Heiss medial thalamic nuclei
+Human MD-Re,medial_thalamic_nuclei,medial_thalamic_nuclei,1,contained_within_target,Mediodorsal and reuniens ROI grouped with the Heiss medial thalamic nuclei
+Human RN,red_nucleus,red_nucleus,1,contained_within_target,Red-nucleus ROI
+Human STH,subthalamic_nucleus,subthalamic_nucleus,1,contained_within_target,Subthalamic-nucleus ROI
+Human A19,occipital_lobe,occipital_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human Pro,occipital_lobe,occipital_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human V1C,occipital_lobe,occipital_lobe,1,contained_within_target,V1 cortex grouped within the Heiss occipital lobe; this is not a claim that the whole lobe equals V1
+Human V2,occipital_lobe,occipital_lobe,1,contained_within_target,V2 cortex grouped within the Heiss occipital lobe
+Human GPe,pallidum,pallidum,1,contained_within_target,External globus-pallidus ROI
+Human GPi,pallidum,pallidum,1,contained_within_target,Internal globus-pallidus ROI
+Human Gpe,pallidum,pallidum,1,source_spelling_variant,Source spelling variant retained for observations lacking dissection metadata
+Human A40,parietal_lobe,parietal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A43,parietal_lobe,parietal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A5-A7,parietal_lobe,parietal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human S1C,parietal_lobe,parietal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human Pu,putamen,putamen,1,contained_within_target,Putamen ROI
+Human SN,substantia_nigra,substantia_nigra,1,contained_within_target,Substantia-nigra ROI
+Human A1C,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A35-A36,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human A35r,temporal_lobe,temporal_lobe,1,contained_within_target,Perirhinal BA35 ROI grouped with the temporal lobe
+Human A38,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human ITG,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human LEC,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human MEC,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human MTG,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human STG,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human TF,temporal_lobe,temporal_lobe,1,contained_within_target,Cortical ROI grouped by anatomical lobe
+Human TH-TL,temporal_lobe,temporal_lobe,1,contained_within_target,Posterior parahippocampal cortex is assigned anatomically to the temporal lobe
+Human A35-36,temporal_lobe,temporal_lobe,1,source_spelling_variant,Source spelling variant retained for observations lacking dissection metadata
+Human CBV,vermis,vermis,1,contained_within_target,Cerebellar-vermis ROI

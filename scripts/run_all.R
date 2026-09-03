@@ -51,7 +51,7 @@ cat("Scripts dir  :", SCRIPT_DIR, "\n\n")
 
 # ---- pipeline order --------------------------------------------------
 RUN_ORDER <- c(
-  # 0. source-independent Heiss preparation
+  # 0. central Heiss anatomy/rates plus s1a and s2 comparison staging
   "00_prepare_heiss_rates.R",
   
   # Comparative neocortex plot from Evo-M1 volumes_wide.csv (slide 8)

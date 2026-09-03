@@ -1,0 +1,15 @@
+source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,allocation_weight,relationship,mapping_note
+Fr SM,frontal_lobe,frontal_lobe,1,1,parcel_to_lobe,Kochiyama superior and middle frontal parcel
+Fr I,frontal_lobe,frontal_lobe,1,1,parcel_to_lobe,Kochiyama inferior frontal parcel
+Fr O,frontal_lobe,frontal_lobe,1,1,parcel_to_lobe,Kochiyama orbitofrontal parcel
+Sm,frontal_lobe,frontal_lobe,1,0.5,split_parcel,Half of the sensorimotor parcel is allocated to frontal lobe
+Pa SI,parietal_lobe,parietal_lobe,1,1,parcel_to_lobe,Kochiyama superior and inferior parietal parcel
+Pa TP,parietal_lobe,parietal_lobe,1,1,parcel_to_lobe,Kochiyama temporoparietal-junction parcel
+Sm,parietal_lobe,parietal_lobe,1,0.5,split_parcel,Half of the sensorimotor parcel is allocated to parietal lobe
+Te SM,temporal_lobe,temporal_lobe,1,1,parcel_to_lobe,Kochiyama superior and middle temporal parcel
+Te I,temporal_lobe,temporal_lobe,1,1,parcel_to_lobe,Kochiyama inferior and medial temporal parcel
+Oc SM,occipital_lobe,occipital_lobe,1,1,parcel_to_lobe,Kochiyama superior and middle occipital parcel
+Oc I,occipital_lobe,occipital_lobe,1,1,parcel_to_lobe,Kochiyama inferior occipital parcel
+Ce A,cerebellar_cortex,cerebellar_cortex,1,1,parcel_to_tissue,Kochiyama anterior cerebellar parcel uses the Heiss cerebellar-cortex rate
+Ce P,cerebellar_cortex,cerebellar_cortex,1,1,parcel_to_tissue,Kochiyama posterior cerebellar parcel uses the Heiss cerebellar-cortex rate
+Ce V,vermis,vermis,1,1,exact,Direct vermis match

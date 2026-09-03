@@ -47,7 +47,8 @@
 #      regions and take the NT/MH and EH/MH ratios.
 #
 # INPUTS
-#   data_raw/Heiss_etal_2004_TABLE1.csv            (modern-human rCMRGlc)
+#   data_intermediate/heiss_2004_regions.csv        (prepared from Heiss Table 1)
+#   metadata/anatomy/s4a_kochiyama_region_map.csv   (single s4a crosswalk)
 #   data_raw/Kochiyama_etal_2018_Figure3.csv       (NT/EH/MH relative volumes)
 #   data_raw/Kochiyama_etal_2018_Figure3legend.csv (MH absolute sub-region vols)
 #   data_raw/Kochiyama_etal_2018_Figure3B.csv       (DIRECT absolute cerebellar
@@ -76,6 +77,7 @@
 # ============================================================
 
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/read_heiss_rates.R")
 
 # Assumed constants (only affect ABSOLUTE budget units, NOT the species ratios)
 BRAIN_DENSITY_G_PER_CC <- 1.036   # assumed fresh brain-tissue density (~1.03-1.04 g/cc); cancels in the species ratios
@@ -86,8 +88,7 @@ BRAIN_DENSITY_G_PER_CC <- 1.036   # assumed fresh brain-tissue density (~1.03-1.
 # 1. Read inputs
 # -----------------------------
 
-heiss <- read.csv("data_raw/Heiss_etal_2004_TABLE1.csv",
-                  stringsAsFactors = FALSE, check.names = FALSE)
+heiss <- read_heiss_regions()
 
 koch <- read.csv("data_raw/Kochiyama_etal_2018_Figure3A.csv",
                  stringsAsFactors = FALSE, check.names = FALSE)
@@ -99,34 +100,34 @@ leg <- read.csv("data_raw/Kochiyama_etal_2018_Figure3legend.csv",
 koch_rel <- koch[, c("Region_code", "NT_rel", "EH_rel", "MH_rel")]
 mh_vol_cc <- setNames(leg$MH_mean_Vol.cc, leg$Region_code)   # MH sub-region vol (cc)
 
-# rCMRGlc lookup keyed by Heiss region name
-heiss_rcmr <- setNames(heiss$`Both hemispheres Mean`, heiss$Region)
+# rCMRGlc lookup keyed by the stable anatomy ID
+heiss_rcmr <- setNames(
+  heiss$rcmrglc_mean_umol_100g_min,
+  heiss$anatomy_id
+)
 
 # -----------------------------
 # 2. Region crosswalk: Heiss region <- Kochiyama parcels (+ split weight)
 # -----------------------------
 # split_weight = fraction of a Kochiyama parcel assigned to the Heiss region.
 # All are 1 except the sensorimotor parcel "Sm", split 0.5 frontal / 0.5 parietal.
+s4a_map <- read_study_anatomy_map(
+  "metadata/anatomy/s4a_kochiyama_region_map.csv"
+)
+if (!"allocation_weight" %in% names(s4a_map) ||
+    anyNA(s4a_map$allocation_weight) ||
+    any(s4a_map$allocation_weight <= 0)) {
+  stop("The s4a anatomy map requires positive allocation_weight values.")
+}
 
 crosswalk <- data.frame(
-  Heiss_region  = c("Frontal lobe","Frontal lobe","Frontal lobe","Frontal lobe",
-                    "Parietal lobe","Parietal lobe","Parietal lobe",
-                    "Temporal lobe","Temporal lobe",
-                    "Occipital lobe","Occipital lobe",
-                    "Cerebellar cortex","Cerebellar cortex",
-                    "Vermis"),
-  Koch_code     = c("Fr SM","Fr I","Fr O","Sm",
-                    "Pa SI","Pa TP","Sm",
-                    "Te SM","Te I",
-                    "Oc SM","Oc I",
-                    "Ce A","Ce P",
-                    "Ce V"),
-  split_weight  = c(1, 1, 1, 0.5,
-                    1, 1, 0.5,
-                    1, 1,
-                    1, 1,
-                    1, 1,
-                    1),
+  anatomy_id = s4a_map$analysis_anatomy_id,
+  Heiss_region = heiss$heiss_region[
+    match(s4a_map$heiss_anatomy_id, heiss$anatomy_id)
+  ],
+  Koch_code = s4a_map$source_region,
+  split_weight = as.numeric(s4a_map$allocation_weight),
+  mapping_relationship = s4a_map$relationship,
   stringsAsFactors = FALSE
 )
 
@@ -155,25 +156,28 @@ write.csv(crosswalk[order(crosswalk$Heiss_region), ],
 #     (This equals the true summed-volume ratio: because a parcel's species
 #      volume = MH_vol * rel, the lobe ratio = sum(MH_vol*rel)/sum(MH_vol).)
 
-regions <- unique(crosswalk$Heiss_region)
+regions <- unique(crosswalk$anatomy_id)
 
-agg <- data.frame(Heiss_region = regions, stringsAsFactors = FALSE)
+agg <- data.frame(anatomy_id = regions, stringsAsFactors = FALSE)
+agg$Heiss_region <- heiss$heiss_region[
+  match(agg$anatomy_id, heiss$anatomy_id)
+]
 
 wmean <- function(x, w) sum(x * w) / sum(w)
 
 agg$MH_vol_cc <- sapply(regions, function(r) {
-  s <- crosswalk[crosswalk$Heiss_region == r, ]
+  s <- crosswalk[crosswalk$anatomy_id == r, ]
   sum(s$eff_vol_cc)
 })
 for (sp in c("NT_rel","EH_rel","MH_rel")) {
   agg[[sp]] <- sapply(regions, function(r) {
-    s <- crosswalk[crosswalk$Heiss_region == r, ]
+    s <- crosswalk[crosswalk$anatomy_id == r, ]
     wmean(s[[sp]], s$eff_vol_cc)
   })
 }
 
-# Attach modern-human rCMRGlc for each Heiss region
-agg$rCMRGlc <- heiss_rcmr[agg$Heiss_region]
+# Attach modern-human rCMRGlc by stable anatomy ID.
+agg$rCMRGlc <- heiss_rcmr[agg$anatomy_id]
 stopifnot(!any(is.na(agg$rCMRGlc)))   # every matched Heiss region has a rate
 
 # -----------------------------
@@ -190,10 +194,10 @@ agg$budget_NT <- agg$budget_MH_base * agg$NT_rel
 agg$budget_EH <- agg$budget_MH_base * agg$EH_rel
 agg$budget_MH <- agg$budget_MH_base * agg$MH_rel           # == budget_MH_base
 
-region_budgets <- agg[, c("Heiss_region","rCMRGlc","MH_vol_cc",
+region_budgets <- agg[, c("anatomy_id","Heiss_region","rCMRGlc","MH_vol_cc",
                           "NT_rel","EH_rel","MH_rel",
                           "budget_NT","budget_EH","budget_MH")]
-region_budgets[ , -1] <- lapply(region_budgets[ , -1], round, 4)
+region_budgets[ , -(1:2)] <- lapply(region_budgets[ , -(1:2)], round, 4)
 write.csv(region_budgets,
           "data_intermediate/s4a_endocranial_region_budgets.csv", row.names = FALSE)
 

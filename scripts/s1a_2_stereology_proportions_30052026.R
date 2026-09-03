@@ -1,10 +1,11 @@
 options(device = "png")
 library(tidyverse)
+source("helpers/read_heiss_rates.R")
 
 # -----------------------------
 # Paths
 # -----------------------------
-input_file <- "data_raw/stereology.csv"
+input_file <- "data_intermediate/s1a_stereology_comparison.csv"
 outdir <- "figs/s1a/stereology_pies"
 
 dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
@@ -12,7 +13,12 @@ dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
 # -----------------------------
 # Load data
 # -----------------------------
-d <- read.csv(input_file, stringsAsFactors = FALSE)
+d <- read.csv(input_file, stringsAsFactors = FALSE, check.names = FALSE) %>%
+  inner_join(
+    as_tibble(read_heiss_rcmr(include_global_average = TRUE)) %>%
+      select(anatomy_id, rcmr_term),
+    by = "anatomy_id"
+  )
 
 # -----------------------------
 # Standardize region names
@@ -20,13 +26,13 @@ d <- read.csv(input_file, stringsAsFactors = FALSE)
 d <- d %>%
   mutate(
     Region = case_when(
-      Region == "Cerebral cortex (global average)" ~ "Cerebral Cortex",
-      Region == "Frontal lobe" ~ "Frontal",
-      Region == "Parietal lobe" ~ "Parietal",
-      Region == "Temporal lobe" ~ "Temporal",
-      Region == "Occipital lobe" ~ "Occipital",
-      Region == "Corpus amygdaloideum" ~ "Amygdala",
-      TRUE ~ Region
+      rcmr_term == "Cerebral cortex (global average)" ~ "Cerebral Cortex",
+      rcmr_term == "Frontal lobe" ~ "Frontal",
+      rcmr_term == "Parietal lobe" ~ "Parietal",
+      rcmr_term == "Temporal lobe" ~ "Temporal",
+      rcmr_term == "Occipital lobe" ~ "Occipital",
+      rcmr_term == "Corpus amygdaloideum" ~ "Amygdala",
+      TRUE ~ rcmr_term
     )
   )
 

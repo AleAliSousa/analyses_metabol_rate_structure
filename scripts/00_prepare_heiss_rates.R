@@ -1,9 +1,10 @@
 # =====================================================================
 # 0_prepare_heiss_rates.R
 #
-# Prepare the 26 published Heiss et al. (2004) Table 1 region rows.
-# This script deliberately contains no Stephan-derived volume terminology,
-# comparative-volume crosswalks, or calculated composite rates.
+# Prepare the 26 published Heiss et al. (2004) Table 1 region rows, then
+# validate and stage the clean s1a/s2 comparison inputs. Heiss rates always
+# come from Table 1. The one-time split from the old mixed tables is documented
+# in scripts/archive/prepare_legacy_stereology_stress_tables.R.
 # =====================================================================
 
 # Locate the repository from either Rscript or an interactive/source call.
@@ -32,8 +33,22 @@ raw_path <- "data_raw/Heiss_etal_2004_TABLE1.csv"
 registry_path <- "metadata/anatomy/anatomy_registry.csv"
 map_path <- "metadata/anatomy/heiss_2004_region_map.csv"
 output_path <- "data_intermediate/heiss_2004_regions.csv"
+stereology_raw_path <- "data_raw/stereology_comparison.csv"
+stereology_output_path <- "data_intermediate/s1a_stereology_comparison.csv"
+stress_raw_path <- "data_raw/stress_volume_comparison.csv"
+stress_map_path <- "metadata/anatomy/s2_stress_volume_region_map.csv"
+stress_output_path <- "data_intermediate/s2_stress_volume_comparison.csv"
+study_map_paths <- c(
+  "metadata/anatomy/s1b_linnarsson_roi_map.csv",
+  stress_map_path,
+  "metadata/anatomy/s1c_johansen_region_map.csv",
+  "metadata/anatomy/s4a_kochiyama_region_map.csv"
+)
 
-required_files <- c(raw_path, registry_path, map_path)
+required_files <- c(
+  raw_path, registry_path, map_path,
+  stereology_raw_path, stress_raw_path, study_map_paths
+)
 missing_files <- required_files[!file.exists(required_files)]
 if (length(missing_files)) {
   stop(
@@ -240,4 +255,141 @@ write.csv(heiss_prepared, output_path, row.names = FALSE, na = "")
 message(
   "Prepared ", nrow(heiss_prepared),
   " published Heiss region rows: ", output_path
+)
+
+# Validate every active study map centrally after the Heiss preparation exists.
+source("helpers/read_heiss_rates.R")
+invisible(lapply(study_map_paths, read_study_anatomy_map))
+message("Validated ", length(study_map_paths), " active study anatomy maps.")
+
+# ---------------------------------------------------------------------
+# Study 1a: validate and stage the comparison-only stereology input
+# ---------------------------------------------------------------------
+stereology_comparison <- read_project_csv(
+  stereology_raw_path, check.names = FALSE
+)
+require_columns(
+  stereology_comparison,
+  "source_region",
+  stereology_raw_path
+)
+if (any(grepl("rcmr", names(stereology_comparison), ignore.case = TRUE))) {
+  stop(stereology_raw_path, " must not contain an rCMRGlc column.", call. = FALSE)
+}
+stereology_measure_columns <- setdiff(
+  names(stereology_comparison), "source_region"
+)
+if (!length(stereology_measure_columns)) {
+  stop(stereology_raw_path, " has no comparison columns.", call. = FALSE)
+}
+stereology_comparison$source_region <- trimws(
+  stereology_comparison$source_region
+)
+assert_unique_nonmissing(
+  stereology_comparison$source_region,
+  "stereology comparison source_region"
+)
+stereology_map_index <- match(
+  stereology_comparison$source_region, heiss_map$heiss_region
+)
+expected_stereology_id <- heiss_map$anatomy_id[stereology_map_index]
+bad_stereology_id <- is.na(stereology_map_index)
+if (any(bad_stereology_id)) {
+  stop(
+    "Stereology comparison region(s) are absent from the central Heiss map: ",
+    paste(
+      stereology_comparison$source_region[bad_stereology_id],
+      collapse = ", "
+    ),
+    call. = FALSE
+  )
+}
+stereology_comparison <- data.frame(
+  source_region = stereology_comparison$source_region,
+  anatomy_id = expected_stereology_id,
+  stereology_comparison[stereology_measure_columns],
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+write.csv(
+  stereology_comparison,
+  stereology_output_path,
+  row.names = FALSE,
+  na = ""
+)
+message(
+  "Prepared ", nrow(stereology_comparison),
+  " stereology comparison rows without embedded Heiss rates: ",
+  stereology_output_path
+)
+
+# ---------------------------------------------------------------------
+# Study 2: validate and stage the comparison-only stress-volume input
+# ---------------------------------------------------------------------
+stress_comparison <- read_project_csv(stress_raw_path, check.names = FALSE)
+require_columns(
+  stress_comparison, "source_region", stress_raw_path
+)
+if (any(grepl("rcmr", names(stress_comparison), ignore.case = TRUE))) {
+  stop(stress_raw_path, " must not contain an rCMRGlc column.", call. = FALSE)
+}
+stress_comparison$source_region <- trimws(stress_comparison$source_region)
+assert_unique_nonmissing(
+  stress_comparison$source_region,
+  "stress-volume comparison source_region"
+)
+stress_rates <- derive_study_heiss_rates(stress_map_path)
+assert_unique_nonmissing(
+  stress_rates$source_region, "resolved stress-volume source_region"
+)
+unmapped_stress <- setdiff(
+  stress_comparison$source_region, stress_rates$source_region
+)
+orphan_stress_map <- setdiff(
+  stress_rates$source_region, stress_comparison$source_region
+)
+if (length(unmapped_stress) || length(orphan_stress_map)) {
+  stop(
+    paste(
+      c(
+        if (length(unmapped_stress)) {
+          paste0(
+            "Unmapped stress-volume region(s): ",
+            paste(unmapped_stress, collapse = ", ")
+          )
+        },
+        if (length(orphan_stress_map)) {
+          paste0(
+            "Stress-volume mapping row(s) absent from source data: ",
+            paste(orphan_stress_map, collapse = ", ")
+          )
+        }
+      ),
+      collapse = "\n"
+    ),
+    call. = FALSE
+  )
+}
+
+stress_rate_index <- match(
+  stress_comparison$source_region, stress_rates$source_region
+)
+stress_measure_columns <- setdiff(names(stress_comparison), "source_region")
+stress_comparison <- data.frame(
+  source_region = stress_comparison$source_region,
+  anatomy_id = stress_rates$anatomy_id[stress_rate_index],
+  stress_comparison[stress_measure_columns],
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+write.csv(
+  stress_comparison,
+  stress_output_path,
+  row.names = FALSE,
+  na = ""
+)
+message(
+  "Prepared ", nrow(stress_comparison),
+  " stress-volume comparison rows without embedded Heiss rates: ",
+  stress_output_path
 )

@@ -6,6 +6,7 @@ library(ggpmisc)    # for stat_poly_eq
 
 # Shared region colours/order (same palette as Study 1 figures).
 source("helpers/plot_settings.R")
+source("helpers/read_heiss_rates.R")
 
 # Ensure the output folder exists so ggsave() does not error on a fresh checkout.
 if (!dir.exists("figs/s2")) dir.create("figs/s2", recursive = TRUE)
@@ -18,35 +19,21 @@ if (!dir.exists("figs/s2")) dir.create("figs/s2", recursive = TRUE)
 ## Load data
 ## ----------------
 
-data <- read.csv("data_raw/stress_volume.csv", header = TRUE)
-
-# Expected columns (in order): Region, rCMRGlc,
-# norm-vs-(all|english|romanian) %, then mean/sd/lci/uci for english, romanian, normative.
-names(data) <- c(
-  "anatomy_group",
-  "rcmr_value",
-  "norm_all",
-  "norm_english",
-  "norm_romanian",
-  "english_mean",
-  "english_sd",
-  "english_lci",
-  "english_uci",
-  "romanian_mean",
-  "romanian_sd",
-  "romanian_lci",
-  "romanian_uci",
-  "norm_mean",
-  "norm_sd",
-  "norm_lci",
-  "norm_uci"
+data <- read.csv(
+  "data_intermediate/s2_stress_volume_comparison.csv",
+  stringsAsFactors = FALSE,
+  check.names = FALSE
 )
+stress_rates <- derive_study_heiss_rates(
+  "metadata/anatomy/s2_stress_volume_region_map.csv"
+) %>%
+  select(anatomy_id, anatomy_group, rcmr_value) %>%
+  distinct()
 
-# Tidy region labels for display
-data$anatomy_group <- gsub("Accumbens", "Nucleus accumbens", data$anatomy_group)
-data$anatomy_group <- gsub("_", " ", data$anatomy_group)
-# Map onto the shared region palette keys (same colour per region across studies)
-data$anatomy_group <- canonical_region(data$anatomy_group)
+# Join the comparison measurements to direct or explicitly derived Heiss rates
+# by stable anatomy_id. The legacy rcmr_value column in data_raw is not used.
+data <- data %>%
+  left_join(stress_rates, by = "anatomy_id")
 
 ## ----------------
 ## Reshape for plotting
@@ -80,7 +67,7 @@ plot_df <- data %>%
 # Keep only rows with data for this plot and remove Total Brain
 plot_df_clean <- plot_df %>%
   filter(
-    anatomy_group != "Total Brain",
+    anatomy_id != "brain",
     !is.na(rcmr_value),
     !is.na(volume_change)
   ) %>%

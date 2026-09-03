@@ -11,10 +11,11 @@ setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".gi
 ## Heiss et al. 2004 Table 1: regional rCMRGlc (µmol/100g/min)
 ##   18F-FDG HRRT PET, N = 9 healthy adults.
 ##   Source: J Nucl Med 45(11):1811-1815.
-##   Local data: data_raw/Heiss_etal_2004_TABLE1.csv
+##   Authoritative source: data_raw/Heiss_etal_2004_TABLE1.csv
+##   Analysis input: data_intermediate/heiss_2004_regions.csv
 ##
-## Overlap regions are joined by name; the mapping is documented
-## explicitly in region_map below. Only lobe-level / homologous
+## Overlap regions are joined by anatomy_id; the mapping is documented
+## in metadata/anatomy/s1c_johansen_region_map.csv. Only lobe-level / homologous
 ## regions are paired to avoid comparing mismatched anatomy.
 ## ============================================================
 
@@ -22,6 +23,7 @@ library(tidyverse)
 library(ggpmisc)
 
 source("helpers/plot_settings.R")
+source("helpers/read_heiss_rates.R")
 
 if (!dir.exists("figs/s1c")) dir.create("figs/s1c", recursive = TRUE)
 
@@ -31,17 +33,9 @@ if (!dir.exists("figs/s1c")) dir.create("figs/s1c", recursive = TRUE)
 
 johansen <- read.csv("data_raw/Johansen_2024_Table2.csv", header = TRUE)
 
-heiss_raw <- read.csv("data_raw/Heiss_etal_2004_TABLE1.csv", header = TRUE)
-names(heiss_raw) <- c(
-  "category", "heiss_region",
-  "rcmrglc_mean", "rcmrglc_sd",
-  "lr_diff_mean", "lr_diff_sd", "lr_pval",
-  "heiss1991_mean"
-)
-
 ## ----------------------------------------------------------------
 ## 2. Region mapping: Johansen (Desikan-Killiany + FreeSurfer
-##    subcortical) -> canonical Heiss region name
+##    subcortical) -> stable project anatomy_id -> Heiss rate
 ##
 ## Rules:
 ##  - Use lobe totals for cortical lobes (Johansen provides them).
@@ -51,43 +45,20 @@ names(heiss_raw) <- c(
 ##    gyri that Heiss aggregates into lobes).
 ## ----------------------------------------------------------------
 
-region_map <- tribble(
-  ~johansen_region,          ~heiss_region,
-  "Frontal (total)",         "Frontal lobe",
-  "Parietal (total)",        "Parietal lobe",
-  "Temporal (total)",        "Temporal lobe",
-  "Occipital (total)",       "Occipital lobe",
-  "Insula",                  "Insular lobe",
-  "Hippocampus",             "Hippocampus",
-  "Amygdala",                "Corpus amygdaloideum",
-  "Caudate",                 "Caudatum",
-  "Putamen",                 "Putamen",
-  "Accumbens",               "Nucleus accumbens",
-  "Pallidum",                "Pallidum",
-  # Thalamus excluded: Johansen measures the whole thalamus (FreeSurfer ROI)
-  # but Heiss only sampled Nucleus medial thalami + geniculate bodies — no
-  # composite spanning the full thalamus exists, consistent with s3 and s4a.
-  "Cerebellum",              "Cerebellar cortex",
-  "White matter",            "Centrum semiovale"
+region_map <- derive_study_heiss_rates(
+  "metadata/anatomy/s1c_johansen_region_map.csv"
 )
 
 ## Attach Johansen SV2A data
 johansen_matched <- johansen %>%
-  inner_join(region_map, by = c("region" = "johansen_region")) %>%
-  select(heiss_region, lobe,
+  inner_join(region_map, by = c("region" = "source_region")) %>%
+  select(anatomy_id, anatomy_group, lobe,
          sv2a_mean = sv2a_bmax_total_mean,
-         sv2a_sd   = sv2a_bmax_total_sd)
+         sv2a_sd   = sv2a_bmax_total_sd,
+         rcmrglc_mean = rcmr_value,
+         rcmrglc_sd = rcmr_sd)
 
-## Attach Heiss rCMRGlc data
-heiss_matched <- heiss_raw %>%
-  select(heiss_region, rcmrglc_mean, rcmrglc_sd)
-
-## Join on heiss_region
-plot_df <- johansen_matched %>%
-  inner_join(heiss_matched, by = "heiss_region") %>%
-  mutate(
-    anatomy_group = canonical_region(heiss_region)
-  )
+plot_df <- johansen_matched
 
 ## Sanity check: stop if any region is missing a palette colour.
 check_region_palette(plot_df, region_col = "anatomy_group")
@@ -250,7 +221,7 @@ ggsave(
 
 plot_df %>%
   select(
-    anatomy_group, lobe,
+    anatomy_id, anatomy_group, lobe,
     rcmrglc_mean, rcmrglc_sd,
     sv2a_mean, sv2a_sd
   ) %>%
