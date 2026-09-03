@@ -59,8 +59,8 @@
 #     volumes; same 13-region content as Figure3.csv). *** THE SINGLE SHAPE
 #     SOURCE for every budget: species averages AND specimens use Fig3A shape,
 #     scaled to absolute size via the Fig3-legend MH volumes. ***
-#     -- Kochiyama files copied from
-#        Evo-M1-Trait-Data/Kochiyama_etal_2018/ on 2026-07-07.
+#     -- Kochiyama inputs are refreshed from
+#        Evo-M1-Trait-Data/Kochiyama_etal_2018/ by the startup synchronizer.
 #
 # VOLUME BASIS (CSF)
 #   The Fig3-legend MH volumes are PARCELLATED BRAIN-TISSUE region volumes

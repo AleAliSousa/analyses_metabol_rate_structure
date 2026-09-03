@@ -7,8 +7,9 @@ analysis tables that have already aggregated rows under a display label.
 
 ## Authoritative layers
 
-1. `data_raw/Heiss_etal_2004_TABLE1.csv` is the authoritative Heiss measurement
-   source. It is never edited or supplemented with calculated regions.
+1. `data_raw/Heiss_etal_2004_TABLE1.csv` is the authoritative local Heiss
+   measurement snapshot. The pipeline refreshes it from the matching source in
+   Evo-M1-Trait-Data; it is never edited or supplemented with calculated rows.
 2. `anatomy_registry.csv` defines stable project anatomy IDs, hierarchy,
    preferred labels, plotting colours, and display order.
 3. `heiss_2004_region_map.csv` is the single primary map for all 26 native

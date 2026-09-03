@@ -6,27 +6,14 @@
 # Set working directory
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
-# Load the current Evo-M1 comparative-volume merge. An environment variable
-# keeps the script portable; the project-local and standard macOS locations are
-# fallbacks. The old Stephan_primates.csv input is intentionally not supported.
-evo_m1_root <- Sys.getenv("EVO_M1_TRAIT_DATA", unset = "")
-volume_candidates <- c(
-  if (nzchar(evo_m1_root)) {
-    file.path(evo_m1_root, "__merging_volumes", "volumes_wide.csv")
-  },
-  "data_raw/volumes_wide.csv",
-  path.expand(paste0(
-    "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/",
-    "Evo-M1-Trait-Data/__merging_volumes/volumes_wide.csv"
-  ))
-)
-volume_candidates <- unique(volume_candidates[nzchar(volume_candidates)])
-volume_path <- volume_candidates[file.exists(volume_candidates)][1]
-
-if (is.na(volume_path)) {
+# The pipeline startup synchronizer manages the Evo-M1 root and refreshes this
+# versioned local snapshot. Keeping that dependency logic out of this analysis
+# ensures interactive and pipeline runs read the same file.
+volume_path <- "data_raw/volumes_wide.csv"
+if (!file.exists(volume_path)) {
   stop(
-    "Could not find Evo-M1 volumes_wide.csv. Set EVO_M1_TRAIT_DATA to the ",
-    "Evo-M1-Trait-Data directory or place volumes_wide.csv in data_raw/.",
+    "Missing synchronized Evo-M1 input: ", volume_path,
+    ". Run scripts/00_sync_evo_m1_inputs.R first.",
     call. = FALSE
   )
 }
@@ -92,7 +79,7 @@ if (nrow(dG) < 3L || nrow(dW) < 3L) {
 }
 
 message(
-  "Neocortex traits source: ", normalizePath(volume_path),
+  "Neocortex traits snapshot: ", normalizePath(volume_path),
   "; grey n = ", nrow(dG), ", white n = ", nrow(dW)
 )
 
