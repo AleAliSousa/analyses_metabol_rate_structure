@@ -13,7 +13,7 @@
 #   output_stem       path without extension, relative to project root
 #   formats           pipe-separated extensions expected, e.g. "png|pdf"
 #   kind, study       descriptive
-#   producing_script  script in scripts/ that writes it
+#   producing_script  path relative to scripts/ for the script that writes it
 #   consumer          where it is used (deck slide / MS figure)
 #   check             file        -> assert every <stem>.<fmt> exists
 #                     script_only -> assert producing_script exists (used when
@@ -41,7 +41,13 @@ find_repo_root <- function(start) {
 .start <- local({
   a <- commandArgs(FALSE)
   f <- sub("^--file=", "", a[grep("^--file=", a)])
-  if (length(f)) dirname(normalizePath(f)) else getwd()
+  if (length(f)) {
+    # Rscript can encode spaces as "~+~" in commandArgs() on macOS.
+    f <- gsub("~+~", " ", f[1], fixed = TRUE)
+    dirname(normalizePath(f))
+  } else {
+    getwd()
+  }
 })
 ROOT <- find_repo_root(.start)
 setwd(ROOT)
@@ -85,7 +91,7 @@ for (i in seq_len(nrow(man))) {
 }
 
 # ---- also flag manifest rows whose producing_script is missing ------
-have_scripts <- list.files("scripts", pattern = "\\.R$")
+have_scripts <- list.files("scripts", pattern = "\\.R$", recursive = TRUE)
 bad_prod <- man$producing_script[nzchar(man$producing_script) &
                                  !(man$producing_script %in% have_scripts)]
 bad_prod <- unique(bad_prod)

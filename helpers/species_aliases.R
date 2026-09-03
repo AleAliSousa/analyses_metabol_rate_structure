@@ -2,8 +2,8 @@
 # species_aliases.R -- the ONE species-label alias table for this repo.
 #
 # WHY THIS FILE EXISTS
-#   The same handful of synonyms used to be redeclared in four places, in two
-#   opposite directions, and they disagreed:
+#   The same handful of synonyms were historically redeclared in several
+#   comparative-volume scripts, in opposite directions, and they disagreed:
 #     compare_stephan_vs_volumes_wide_merged_v3.R  taxon_synonyms  (merge -> modern)
 #     build_stephan_primates_reference_sheet.R     sp_xwalk        (Stephan -> merge)
 #     0_bind_matano_1985a_to_stephan.R             manual_name_map + an inline
@@ -15,8 +15,8 @@
 #   Not "the modern name" -- the tree tip. This repo is downstream: it does not
 #   decide taxonomy, it consumes a fixed tip set. Anything that does not reduce
 #   to a tip cannot be modelled, so the tip labels ARE the scope. As of this
-#   writing data_raw/Stephan_primates.csv matches the 59 tips exactly, which is
-#   the invariant compare_stephan.R checks on every run.
+#   writing, the project tree contains 59 tips. Comparative datasets such as
+#   Evo-M1 volumes_wide.csv are standardized to this fixed namespace.
 #
 #   Consequence worth stating plainly: some tip labels are NOT the currently
 #   accepted binomial. Callithrix_pygmaea is a tip; the accepted name for the
@@ -32,7 +32,8 @@
 #   merge_label  space form, what Evo-M1-Trait-Data uses   e.g. "Callicebus moloch"
 #   Both directions are derived from the single table, so they cannot drift.
 #
-# Sourced by scripts/qc_stephan/compare_stephan.R.
+# Sourced by scripts/02_traits_neocortex_grey_white.R and available to other
+# comparative-volume analyses.
 # =============================================================================
 
 ## --- the table --------------------------------------------------------------
@@ -62,9 +63,9 @@ species_alias_table <- data.frame(
 ## --- extra inbound labels ---------------------------------------------------
 ## Labels that are neither a tip nor a merge label but have turned up in a file
 ## and must still land on a tip. Left side is matched in SPACE form.
-## Cebuella pygmaea is here because the archived Matano bind script used to
-## rewrite that name into Stephan_primates.csv, which silently knocked the row
-## off the tree and out of its own join. Cheap insurance against a repeat.
+## Cebuella pygmaea is here because an archived data-bind script once rewrote
+## that name in a comparative source file, silently knocking the row off the
+## project tree and out of its own join. Cheap insurance against a repeat.
 species_extra_aliases <- c(
   "Cebuella pygmaea"     = "Callithrix_pygmaea",
   "Gorilla sp"           = "Gorilla_gorilla",
@@ -79,8 +80,8 @@ species_extra_aliases <- c(
 pongo_pairs <- data.frame(
   merge_label = c("Pongo sp.", "Pongo sp."),
   tree_label  = c("Pongo_abelii", "Pongo_pygmaeus"),
-  note        = c("merge row is a sensu lato mean; Stephan row is Sumatran",
-                  "merge row is a sensu lato mean; Stephan row is Bornean"),
+  note        = c("merge row is a sensu lato mean; paired tree tip is Sumatran",
+                  "merge row is a sensu lato mean; paired tree tip is Bornean"),
   stringsAsFactors = FALSE
 )
 

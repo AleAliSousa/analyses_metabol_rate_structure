@@ -61,15 +61,14 @@ pipeline.
 **Five categories** (the current repo mixes these under flat `scripts/`):
 
 1. **Shared data-prep** — builds inputs consumed by **more than one** study
-   (e.g. `Heiss_Stephan_data.csv`, the transcriptomic `.rds` extracts). These are
+   (e.g. `heiss_2004_regions.csv`, the transcriptomic `.rds` extracts). These are
    NOT owned by any single study, so they must not carry a study prefix.
    *Convention:* `prep_*` (or numeric `00_*`), outputs only to
-   `data_intermediate/`. Example: `prep_heiss_stephan_reference.R`,
+   `data_intermediate/`. Example: `00_prepare_heiss_rates.R`,
    `prep_transcriptomic_extract_neuronal.R`.
-   *Fix to flag:* today `Heiss_Stephan_data.csv` is written by `0_Heiss...` **and**
-   appended by `s1b_2`/`s1b_3` — shared ownership across study scripts blurs the
-   boundary. Decide on one owner (a `prep_` script) or split into clearly-named
-   layers.
+   *Resolved:* `00_prepare_heiss_rates.R` solely owns the source-independent
+   `heiss_2004_regions.csv`; study scripts read it without mutating it. The obsolete
+   mixed Heiss/Stephan intermediate was removed.
 
 2. **Per-study analysis** — produces that study's figs/tables. Keep the working
    `s1a_ / s1b_ / s2_ / s3_ / s4a_` prefixes plus a step number for run order.

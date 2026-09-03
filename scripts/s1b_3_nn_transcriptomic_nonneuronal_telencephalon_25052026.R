@@ -17,21 +17,9 @@ obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_nonn
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
-# Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
-
-# Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
-rcmr <- heiss_stephan_tbl %>%
-  transmute(
-    rcmr_term = str_trim(as.character(term_3)),     # term_3 is the original list from Heiss
-    rcmr_value = round(as.numeric(rCMRGlc_mean_both_hemispheres), 1)
-  ) %>%
-  filter(
-    !is.na(rcmr_term),
-    rcmr_term != "",
-    !str_detect(str_to_lower(rcmr_term), "average"),     # Drop rows where the term contains "average"
-    !is.na(rcmr_value)
-  )
+# Load native Heiss region labels and rates from the source-independent prep.
+source("helpers/read_heiss_rates.R")
+rcmr <- read_heiss_rcmr()
 
 head(rcmr)
 
@@ -346,7 +334,7 @@ make_plot_subset <- function(df, predictors, label, file_slug) {
     ) +
     facet_wrap(~ predictor, scales = "free_x", ncol = facet_ncol(length(predictors))) +
     labs(
-      title = paste0("Nonneuronal cell-type proportions vs rCMRGlc \u2014 ", label),
+      title = paste0("Nonneuronal cell-type proportions vs rCMRGlc - ", label),
       subtitle = paste0("n = ", nrow(df), " regions; ", length(predictors), " predictors"),
       x = "Nonneuronal Cell-type proportion",
       y = "rCMRGlc (\u00b5mol/100 g/min.)",

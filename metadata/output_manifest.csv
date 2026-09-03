@@ -1,5 +1,5 @@
 output_stem,formats,kind,study,producing_script,consumer,check,status,notes
-figs/traits/neocortex_gray_white,png|pdf,figure,intro,traits_neocortex_grey_white.R,slide 8,file,ok,grey vs white matter neocortex scaling
+figs/traits/neocortex_gray_white,png|pdf,figure,intro,02_traits_neocortex_grey_white.R,slide 8,file,ok,grey vs white matter neocortex scaling from Evo-M1 volumes_wide.csv
 figs/s1a/p_densities,jpg|pdf,figure,s1a,s1a_1_stereology_cell_types_30052026.R,slide 18,file,ok,stereology cell densities
 figs/s1a/p_counts,jpg|pdf,figure,s1a,s1a_1_stereology_cell_types_30052026.R,slide 58,file,ok,stereology cell counts
 figs/s1b/scatter_rcmr_supercluster_all_regions,png|pdf,figure,s1b,s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R,slide 57,file,ok,supercluster vs rCMRglc all regions
@@ -16,4 +16,4 @@ figs/s4a/budget_significance,png|pdf,figure,s4a,s4a_endocranial_cerebellum.R,sli
 figs/s4a/budget_residual_vs_volume,png,figure,s4a,,slide 69,none,MISSING_PRODUCER,no producing script in repo or history - needs original code or residual definition
 figs/s1b/p_EI_original_all_regions_with_jorstad_cortex_overlay_raw_ratio,jpg|pdf,figure,s1b,s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R,slides 24-25,script_only,render_differs,deck shows an earlier E:I render than current file
 figs/s1b/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay,jpg|pdf,figure,s1b,s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R,slides 21-22,script_only,render_differs,deck shows an earlier astrocyte render than current file
-figs/s3/all/plot_human_brain_mosaicism,png|pdf,figure,s3,s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_VOLUMES_WIDE_SELECT.R,slides 37-38,script_only,render_differs,Study 3 observed vs predicted - deck shows an earlier render; both s3 forks write figs/s3/all (last run wins)
+figs/s3/all/plot_human_brain_mosaicism,png|pdf,figure,s3,,slides 37-38,none,MISSING_PRODUCER_PENDING_REPLACEMENT,Study 3 observed vs predicted - prior producer removed; replacement awaits the new anatomy crosswalk

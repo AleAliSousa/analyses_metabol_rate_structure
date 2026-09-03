@@ -114,9 +114,9 @@ drivers, not run standalone.
      per-config drivers — the two current `s3_predicValuesPGLS_*` forks are
      near-duplicates that both write to `figs/s3/all` (last run wins).
    - Drop dated/`PATCHED` suffixes → one canonical name per analysis.
-   - Resolve shared ownership: `data_intermediate/Heiss_Stephan_data.csv` is written
-     by `0_Heiss…` AND appended by `s1b_2`/`s1b_3` — give a single `prep_` script
-     ownership.
+   - Shared Heiss ownership is resolved: `00_prepare_heiss_rates.R` solely writes
+     `data_intermediate/heiss_2004_regions.csv`; the obsolete mixed Heiss/Stephan
+     intermediate has been removed.
 6. **`Stephan_primates` naming/versioning decision (pending).** Recommendation:
    keep the name (or rename once to a source-neutral name with a per-row `source`
    column) and track provenance via a column + log, not the filename.

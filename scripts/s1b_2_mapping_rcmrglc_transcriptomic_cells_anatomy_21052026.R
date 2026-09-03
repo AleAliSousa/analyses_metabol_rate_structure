@@ -44,21 +44,9 @@ colnames(obs)
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
-# Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
-
-# Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
-rcmr <- heiss_stephan_tbl %>%
-  transmute(
-    rcmr_term = str_trim(as.character(term_3)),     # term_3 is the original list from Heiss
-    rcmr_value = round(as.numeric(rCMRGlc_mean_both_hemispheres), 1)
-  ) %>%
-  filter(
-    !is.na(rcmr_term),
-    rcmr_term != "",
-    !str_detect(str_to_lower(rcmr_term), "average"),     # Drop rows where the term contains "average"
-    !is.na(rcmr_value)
-  )
+# Load native Heiss region labels and rates from the source-independent prep.
+source("helpers/read_heiss_rates.R")
+rcmr <- read_heiss_rcmr()
 
 head(rcmr)
 
@@ -430,7 +418,7 @@ dissection_hit_cases <- dissection_rule_hits %>%
   ) %>%
   arrange(rcmr_term, dissection, roi, tissue)
 
-View(dissection_hit_cases)
+if (interactive()) View(dissection_hit_cases)
 
 # Rows whose dissection matched more than one rCMR term.
 multi_rcmr_dissection_hits <- dissection_hit_cases %>%
@@ -440,7 +428,7 @@ multi_rcmr_dissection_hits <- dissection_hit_cases %>%
   ungroup()
 
 print(multi_rcmr_dissection_hits, n = Inf)
-View(multi_rcmr_dissection_hits)
+if (interactive()) View(multi_rcmr_dissection_hits)
 
 # Master dissection-only matched/unmatched table.
 dissection_match_status <- obs_key %>%
@@ -473,7 +461,7 @@ unmatched_dissection_cases <- dissection_match_status %>%
   ) %>%
   arrange(dissection_match_status, dissection, roi, tissue)
 
-View(unmatched_dissection_cases)
+if (interactive()) View(unmatched_dissection_cases)
 
 dissection_match_status %>%
   count(dissection_match_status) %>%
@@ -496,7 +484,7 @@ rcmr_roi_relationship_raw <- dissection_rule_hits %>%
     .groups = "drop"
   ) %>%
   arrange(rcmr_term)
-View(rcmr_roi_relationship_raw)
+if (interactive()) View(rcmr_roi_relationship_raw)
 
 ######### ------ ------ ######### 
 # Check missing-dissection ROIs that occur only in missing_dissection cases
@@ -517,7 +505,7 @@ missing_dissection_only_rois_strict <- dissection_match_status %>%
   arrange(roi)
 
 print(missing_dissection_only_rois_strict, n = Inf)
-View(missing_dissection_only_rois_strict)
+if (interactive()) View(missing_dissection_only_rois_strict)
 
 # Manually append ROI spelling/name variants before saving
 rcmr_roi_relationship <- rcmr_roi_relationship_raw %>%

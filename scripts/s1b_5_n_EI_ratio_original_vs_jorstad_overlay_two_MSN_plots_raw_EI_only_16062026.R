@@ -53,21 +53,10 @@ obs <- obs %>%
   )
 
 ######################################################
-# Read rCMRGlc values from Heiss/Stephan table
+# Read rCMRGlc values from the source-independent Heiss preparation
 ######################################################
-heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
-
-rcmr <- heiss_stephan_tbl %>%
-  transmute(
-    rcmr_term = str_trim(as.character(term_3)),
-    rcmr_value = round(as.numeric(rCMRGlc_mean_both_hemispheres), 1)
-  ) %>%
-  filter(
-    !is.na(rcmr_term),
-    rcmr_term != "",
-    !str_detect(str_to_lower(rcmr_term), "average"),
-    !is.na(rcmr_value)
-  )
+source("helpers/read_heiss_rates.R")
+rcmr <- read_heiss_rcmr()
 
 #####################################
 # Map Siletti ROI to rCMR anatomy terms

@@ -21,21 +21,9 @@ obs_neuron <- obs %>%
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
 
-# Read Table with rCMRGlc values
-heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
-
-# Keep only the relevant columns and no average columns; ensure rcmr_value is numeric and rounded to 1 decimal place
-rcmr <- heiss_stephan_tbl %>%
-  transmute(
-    rcmr_term = str_trim(as.character(term_3)),     # term_3 is the original list from Heiss
-    rcmr_value = round(as.numeric(rCMRGlc_mean_both_hemispheres), 1)
-  ) %>%
-  filter(
-    !is.na(rcmr_term),
-    rcmr_term != "",
-    !str_detect(str_to_lower(rcmr_term), "average"),     # Drop rows where the term contains "average"
-    !is.na(rcmr_value)
-  )
+# Load native Heiss region labels and rates from the source-independent prep.
+source("helpers/read_heiss_rates.R")
+rcmr <- read_heiss_rcmr()
 
 head(rcmr)
 

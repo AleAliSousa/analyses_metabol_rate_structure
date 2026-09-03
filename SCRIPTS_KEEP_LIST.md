@@ -58,11 +58,11 @@ pixel-match the current file. Keep them — they are core content.
 
 | Script | Produces / does | Feeds |
 |---|---|---|
-| `0_Heiss_Stephan_and_table1_30052026.R` | `data_intermediate/Heiss_Stephan_data.csv` (shared rCMRglc × volume reference) | s1b_4/5/6, s3 |
+| `00_prepare_heiss_rates.R` | `data_intermediate/heiss_2004_regions.csv` (source-independent Heiss rCMRglc reference) | s1b_3/4/5/6, s2 |
 | `0_bind_matano_1985a_to_stephan.R` | augments `Stephan_primates` volumes | s3, s4a |
 | `s1b_1_extract_transcriptomic_30052026.R` | `..._neuronal.rds` + `..._nonneuronal.rds` | s1b_4, s1b_5, s1b_6 |
-| `s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R` | maps cells → anatomy → `Heiss_Stephan_data.csv` | s1b_4/5/6 |
-| `s1b_3_*` transcriptomic (neuronal/nonneuronal ± telencephalon) | add proportion columns to `Heiss_Stephan_data.csv` | s1b_4/5/6 |
+| `s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R` | maps transcriptomic ROIs to the anatomy registry | s1b_3/4/5/6 |
+| `s1b_3_*` transcriptomic (neuronal/nonneuronal ± telencephalon) | computes cell proportions using the anatomy map and source-independent Heiss rates | s1b_4/5/6 |
 | `R/plot_settings.R` | shared ggplot theme | sourced by most s1b/s3 scripts |
 
 ---

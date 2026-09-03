@@ -33,19 +33,8 @@ obs <- obs %>%
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004
 ######################################################
-heiss_stephan_tbl <- read.csv("data_intermediate/Heiss_Stephan_data.csv")
-
-rcmr <- heiss_stephan_tbl %>%
-  transmute(
-    rcmr_term = str_trim(as.character(term_3)),
-    rcmr_value = round(as.numeric(rCMRGlc_mean_both_hemispheres), 1)
-  ) %>%
-  filter(
-    !is.na(rcmr_term),
-    rcmr_term != "",
-    !str_detect(str_to_lower(rcmr_term), "average"),
-    !is.na(rcmr_value)
-  )
+source("helpers/read_heiss_rates.R")
+rcmr <- read_heiss_rcmr()
 
 #####################################
 # Anatomical grouping of ROIs
@@ -354,8 +343,8 @@ make_labels <- function(stats_df) {
     transmute(
       supercluster_term = factor(supercluster_term, levels = supercluster_levels),
       label = ifelse(is.na(rho),
-                     "\u03C1 = NA",
-                     paste0("\u03C1 = ", formatC(rho, digits = 2, format = "f"),
+                     "rho = NA",
+                     paste0("rho = ", formatC(rho, digits = 2, format = "f"),
                             ", ", fmt_p(p_value)))
     )
 }

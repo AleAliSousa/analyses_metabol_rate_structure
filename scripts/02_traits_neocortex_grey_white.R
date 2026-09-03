@@ -6,17 +6,95 @@
 # Set working directory
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 
-# Load data
-df <- read.csv("data_raw/Stephan_primates.csv", stringsAsFactors = FALSE)
+# Load the current Evo-M1 comparative-volume merge. An environment variable
+# keeps the script portable; the project-local and standard macOS locations are
+# fallbacks. The old Stephan_primates.csv input is intentionally not supported.
+evo_m1_root <- Sys.getenv("EVO_M1_TRAIT_DATA", unset = "")
+volume_candidates <- c(
+  if (nzchar(evo_m1_root)) {
+    file.path(evo_m1_root, "__merging_volumes", "volumes_wide.csv")
+  },
+  "data_raw/volumes_wide.csv",
+  path.expand(paste0(
+    "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/",
+    "Evo-M1-Trait-Data/__merging_volumes/volumes_wide.csv"
+  ))
+)
+volume_candidates <- unique(volume_candidates[nzchar(volume_candidates)])
+volume_path <- volume_candidates[file.exists(volume_candidates)][1]
+
+if (is.na(volume_path)) {
+  stop(
+    "Could not find Evo-M1 volumes_wide.csv. Set EVO_M1_TRAIT_DATA to the ",
+    "Evo-M1-Trait-Data directory or place volumes_wide.csv in data_raw/.",
+    call. = FALSE
+  )
+}
+
+df <- read.csv(volume_path, stringsAsFactors = FALSE, check.names = FALSE)
+
+required_columns <- c(
+  "Species",
+  "Neocortex_Vol.mm3",
+  "Neocortex_grey_matter_Vol.mm3",
+  "Neocortex_white_matter_Vol.mm3"
+)
+missing_columns <- setdiff(required_columns, names(df))
+if (length(missing_columns)) {
+  stop(
+    "volumes_wide.csv is missing required column(s): ",
+    paste(missing_columns, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+# Keep the primate scope defined by the project's phylogeny. The alias helper
+# only standardizes species labels; it does not supply anatomical measurements.
+if (!requireNamespace("ape", quietly = TRUE)) {
+  stop("Package 'ape' is required to read data_raw/species.nwk.", call. = FALSE)
+}
+source("helpers/species_aliases.R")
+tree <- ape::read.tree("data_raw/species.nwk")
+df$tree_label <- canon_species(df$Species)
+df <- df[df$tree_label %in% tree$tip.label, , drop = FALSE]
 
 # ---- Prepare variables ----
-df$logNeo   <- log10(df$NeoWG)
-df$logGray  <- log10(df$NeoG_Frahm)
-df$logWhite <- log10(df$NeoW_Frahm)
+df$logNeo   <- log10(df$Neocortex_Vol.mm3)
+df$logGray  <- log10(df$Neocortex_grey_matter_Vol.mm3)
+df$logWhite <- log10(df$Neocortex_white_matter_Vol.mm3)
 
-# Subset complete cases
-dG <- subset(df, !is.na(logNeo) & !is.na(logGray))
-dW <- subset(df, !is.na(logNeo) & !is.na(logWhite))
+# Use a common finite, positive species set for a directly comparable pair of
+# regressions. Duplicate taxon aliases with no measurements disappear here;
+# multiple complete rows for one tree tip remain a hard error.
+df <- subset(
+  df,
+  is.finite(logNeo) & is.finite(logGray) & is.finite(logWhite)
+)
+
+if (anyDuplicated(df$tree_label)) {
+  duplicated_species <- unique(df$tree_label[duplicated(df$tree_label)])
+  stop(
+    "volumes_wide.csv has multiple complete rows resolving to tree tip(s): ",
+    paste(duplicated_species, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+dG <- df
+dW <- df
+
+if (nrow(dG) < 3L || nrow(dW) < 3L) {
+  stop(
+    "Too few complete positive primate observations for the neocortex plot ",
+    "(grey n = ", nrow(dG), ", white n = ", nrow(dW), ").",
+    call. = FALSE
+  )
+}
+
+message(
+  "Neocortex traits source: ", normalizePath(volume_path),
+  "; grey n = ", nrow(dG), ", white n = ", nrow(dW)
+)
 
 # ---- Fit regressions ----
 fitG <- lm(logGray ~ logNeo, data = dG)

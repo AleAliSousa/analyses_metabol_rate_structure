@@ -11,9 +11,9 @@
 #       source("scripts/run_all.R")
 #
 # What it does
-#   * Runs the scripts in the order the pipeline needs (raw-data prep ->
-#     Study 1 cells -> Study 2 stress -> Study 3 evolution -> Study 4a fossils
-#     -> Study 4b arterial canal -> QC checks).
+#   * Runs the active scripts in dependency order (raw-data prep -> Study 1
+#     cells -> Study 2 stress -> Study 4a fossils -> Study 4b arterial canal ->
+#     QC checks). Study 3 is archived while its Evo-M1 crosswalk is rebuilt.
 #   * Each script runs in its OWN environment so leftover objects from one
 #     script cannot silently feed the next.
 #   * A failing script is caught, logged, and the run CONTINUES; a summary
@@ -24,11 +24,6 @@
 # Notes
 #   * s4a_endocranial.R must run before s4a_endocranial_cerebellum.R (the
 #     cerebellum script reads the whole-brain budget table the main one writes).
-#   * KNOWN ISSUE (Study 3): the two s3_predicValuesPGLS_* scripts are forks
-#     that BOTH write to figs/s3/all, tables/s3/all and checks/s3/all, so the
-#     later one (VOLUMES_WIDE_SELECT) overwrites the earlier one's outputs.
-#     A single engine + per-config drivers is the planned fix; until then the
-#     order below preserves the outputs produced by the last logged run.
 #   * The working directory is reset to the project root before every script,
 #     because the scripts use paths relative to the project root
 #     (e.g. "data_raw/...", "figs/s4a/...", "helpers/plot_settings.R").
@@ -38,7 +33,11 @@
 .this_file <- local({
   a <- commandArgs(FALSE)
   f <- sub("^--file=", "", a[grep("^--file=", a)])
-  if (length(f)) return(normalizePath(f))
+  if (length(f)) {
+    # Rscript encodes spaces as "~+~" in --file on some macOS installs.
+    f <- gsub("~+~", " ", f[1], fixed = TRUE)
+    return(normalizePath(f))
+  }
   # sourced interactively: fall back to ofile, else guess from getwd()
   of <- tryCatch(sys.frame(1)$ofile, error = function(e) NULL)
   if (!is.null(of)) return(normalizePath(of))
@@ -53,20 +52,15 @@ cat("Scripts dir  :", SCRIPT_DIR, "\n\n")
 # ---- pipeline order --------------------------------------------------
 RUN_ORDER <- c(
   # 0. source-independent Heiss preparation
-  "0_prepare_heiss_rates.R",
-
-  # Legacy Heiss/comparative-volume integration. Retained temporarily until
-  # its Study 1b and Study 3 consumers are migrated to explicit crosswalks.
-  "0_bind_matano_1985a_to_stephan.R",
-  "0_Heiss_Stephan_and_table1_30052026.R",
-
-  # background comparative plot (slide 8)
-  "traits_neocortex_grey_white.R",
-
+  "00_prepare_heiss_rates.R",
+  
+  # Comparative neocortex plot from Evo-M1 volumes_wide.csv (slide 8)
+  "02_traits_neocortex_grey_white.R",
+  
   # Study 1a: stereology
   "s1a_1_stereology_cell_types_30052026.R",
   "s1a_2_stereology_proportions_30052026.R",
-
+  
   # Study 1b: transcriptomic cells (extract -> map -> proportions -> analyses)
   "s1b_1_extract_transcriptomic_30052026.R",
   "s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R",
@@ -78,40 +72,25 @@ RUN_ORDER <- c(
   "s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R",
   "s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R",
   "s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R",
-
+  
   # Study 1c: synaptic density (SV2A) vs rCMRGlc
   "s1c_synaptic_density_metabolic_rate.R",
-
+  
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
-
-  # Study 3: data prep must precede the PGLS forks -- the prep script writes
-  # the species list the tree-sample script reads, and that writes the 100-tree
-  # sample the PGLS scripts fit across.
-  "s3_prepare_Stephan_primate_data.R",
-  "s3_prepare_tree_sample.R",
-
-  # Study 3: evolutionary deviation (PGLS). See KNOWN ISSUE in the header:
-  # both forks write the same output dirs; VOLUMES_WIDE_SELECT runs last so
-  # its outputs win, matching the last logged run.
-  "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_UPDATED_MU_PLOTS_1_PATCHED.R",
-  "s3_predicValuesPGLS_16062026_2deg_neocortex_cerebellum_blue_square_VOLUMES_WIDE_SELECT.R",
-
+  
+  # Study 3 is intentionally absent. Its last volumes-wide producer is under
+  # scripts/archive/ pending the new anatomy crosswalk and active replacement.
+  
   # Study 4a: fossil endocranial budgets (main before cerebellum sibling)
   "s4a_endocranial.R",
   "s4a_endocranial_cerebellum.R",
-
+  
   # Study 4b: arterial-canal metabolic estimates
   "s4b_arterial_canal.R",
-
+  
   # QC / robustness checks (no deliverable outputs)
-  "network_residual_autocorrelation_analysis.R",
-
-  # QC: Stephan reference sheet + raw/model comparison against
-  # volumes_wide_select. The compare script's "model" mode reads
-  # checks/*_data_used.csv written by the s3 scripts, so it runs after them.
-  "qc_stephan/build_stephan_primates_reference_sheet.R",
-  "qc_stephan/compare_stephan_vs_volumes_wide_merged_v3.R"
+  "01_network_residual_autocorrelation_analysis.R"
 )
 
 # Scripts that live in scripts/ but are NOT run here
@@ -163,8 +142,8 @@ for (i in seq_along(RUN_ORDER)) {
   if (res == "FAILED") cat("   >>> FAILED:", msg, "\n")
   cat(sprintf("   [%s] %.1f s\n", res, secs))
   status <- rbind(status, data.frame(step = i, script = scr, result = res,
-                                      seconds = secs, message = msg,
-                                      stringsAsFactors = FALSE))
+                                     seconds = secs, message = msg,
+                                     stringsAsFactors = FALSE))
 }
 
 # ---- summary --------------------------------------------------------
