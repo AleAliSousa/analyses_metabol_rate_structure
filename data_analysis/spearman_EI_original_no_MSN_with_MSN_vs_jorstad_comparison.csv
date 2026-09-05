@@ -1,7 +1,7 @@
 "EI_definition","variable","n_regions","rho","p_value","status","p_adj_BH"
-"Broad all-region E:I (MSN excluded)","EI_ratio",23,-0.0064245121803157,0.97679054828888,"tested",0.97679054828888
-"Broad all-region E:I (MSN included)","EI_ratio",23,-0.0222386960087851,0.919774768738396,"tested",0.97679054828888
-"Jorstad-like neocortical E:I","EI_ratio",5,0.153896752812773,0.804828816608063,"tested",0.97679054828888
-"Siletti broad-class cerebral-cortex E:I (MSN excluded)","EI_ratio",7,-0.450468731347779,0.310429301851323,"tested",0.931287905553968
-"Siletti broad-class cerebral-cortex E:I (MSN included)","EI_ratio",7,0.162168743285201,0.728299563082022,"tested",0.97679054828888
+"Broad all-region E:I (MSN excluded)","EI_ratio",23,0,1,"tested",1
+"Broad all-region E:I (MSN included)","EI_ratio",23,-0.0222386960087851,0.919774768738396,"tested",1
+"Jorstad-like neocortical E:I","EI_ratio",5,0.153896752812773,0.804828816608063,"tested",1
 "Siletti cerebral-cortex scope with neocortical-class crosswalk","EI_ratio",7,0.666693722394714,0.101920460246182,"tested",0.611522761477094
+"Siletti cerebral-cortex-class E:I (off-scope classes and MSN excluded)","EI_ratio",7,-0.360374985078224,0.427148808560906,"tested",1
+"Siletti cerebral-cortex-class E:I (off-scope classes excluded; MSN included)","EI_ratio",7,0.162168743285201,0.728299563082022,"tested",1

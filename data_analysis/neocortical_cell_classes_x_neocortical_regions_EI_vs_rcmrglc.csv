@@ -1,0 +1,6 @@
+"anatomy_group","p_E","p_I","n_donors","n_cells_EI","anatomy_id","rcmr_value","is_neocortex","is_cerebral_cortex","is_telencephalon","EI_ratio","cell_class_definition","anatomical_analysis_scope","interpretation"
+"Frontal lobe",0.664002366814641,0.335997633185359,4,275060,"frontal_lobe",35.3,TRUE,TRUE,TRUE,1.97621144089527,"Neocortical E:I cell-class crosswalk","Neocortex","Jorstad-aligned anatomical scope"
+"Insular lobe",0.679400972459424,0.320599027540576,3,103312,"insular_lobe",30.3,TRUE,TRUE,TRUE,2.11916105195745,"Neocortical E:I cell-class crosswalk","Neocortex","Jorstad-aligned anatomical scope"
+"Occipital lobe",0.730423847250162,0.269576152749839,3,112058,"occipital_lobe",35.8,TRUE,TRUE,TRUE,2.70952693626421,"Neocortical E:I cell-class crosswalk","Neocortex","Jorstad-aligned anatomical scope"
+"Parietal lobe",0.649600284195028,0.350399715804972,3,142687,"parietal_lobe",35.8,TRUE,TRUE,TRUE,1.85388359320641,"Neocortical E:I cell-class crosswalk","Neocortex","Jorstad-aligned anatomical scope"
+"Temporal lobe",0.619476243344741,0.380523756655259,3,328032,"temporal_lobe",30.5,TRUE,TRUE,TRUE,1.62795681612585,"Neocortical E:I cell-class crosswalk","Neocortex","Jorstad-aligned anatomical scope"

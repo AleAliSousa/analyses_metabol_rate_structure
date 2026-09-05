@@ -1,0 +1,22 @@
+"supercluster_term","all_region_cells","cerebral_cortex_region_cells","s1b_5b_neocortical_crosswalk_EI","jorstad_equivalent","s1b_5c_cerebral_cortex_primary_EI","s1b_5c_MSN_sensitivity_EI","classification_note"
+"Amygdala excitatory",109452,96075,"Neither",NA,"E","E",NA
+"CGE interneuron",227671,190944,"I","Lamp5 + Pax6 + Sncg + Vip","I","I",NA
+"Cerebellar inhibitory",14411,12,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"Deep-layer corticothalamic and 6b",78396,66847,"E","L6 CT + L6b","E","E",NA
+"Deep-layer intratelencephalic",228467,190819,"E","L5 IT + L6 IT + L6 IT Car3","E","E",NA
+"Deep-layer near-projecting",18856,15560,"E","L5/6 NP","E","E",NA
+"Eccentric medium spiny neuron",40144,19222,"Neither",NA,"Neither","I","Excluded from the primary definition; included as I only in the MSN sensitivity"
+"Hippocampal CA1-3",74979,74893,"Neither",NA,"E","E",NA
+"Hippocampal CA4",10654,10566,"Neither",NA,"E","E",NA
+"Hippocampal dentate gyrus",67533,66857,"Neither",NA,"E","E",NA
+"LAMP5-LHX6 and Chandelier",45118,37733,"I","Lamp5 Lhx6 + Chandelier","I","I",NA
+"Lower rhombic lip",52650,20,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"MGE interneuron",222434,189277,"I","Pvalb + Sst + Sst Chodl","I","I",NA
+"Mammillary body",16602,9,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"Medium spiny neuron",152189,22831,"Neither",NA,"Neither","I","Excluded from the primary definition; included as I only in the MSN sensitivity"
+"Midbrain-derived inhibitory",126782,169,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"Miscellaneous",21318,17573,"Partial E","L5 ET clusters 113/114/117/118 only","Partial E","Partial E","Only L5ET clusters 113/114/117/118 are E; all remaining Miscellaneous cells are excluded"
+"Splatter",291833,21018,"Neither",NA,"Neither","Neither","Excluded from both E and I"
+"Thalamic excitatory",85546,564,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"Upper rhombic lip",137162,153,"Neither",NA,"Neither","Neither","Excluded as outside the cerebral-cortex cell-class scope"
+"Upper-layer intratelencephalic",455006,403255,"E","L2/3 IT + L4 IT","E","E",NA

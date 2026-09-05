@@ -41,9 +41,9 @@ DEF_BROAD_NO_MSN <- "Broad all-region E:I (MSN excluded)"
 DEF_BROAD_WITH_MSN <- "Broad all-region E:I (MSN included)"
 DEF_JORSTAD <- "Jorstad-like neocortical E:I"
 DEF_SILETTI_CEREBRAL_NO_MSN <-
-  "Siletti broad-class cerebral-cortex E:I (MSN excluded)"
+  "Siletti cerebral-cortex-class E:I (off-scope classes and MSN excluded)"
 DEF_SILETTI_CEREBRAL_WITH_MSN <-
-  "Siletti broad-class cerebral-cortex E:I (MSN included)"
+  "Siletti cerebral-cortex-class E:I (off-scope classes excluded; MSN included)"
 DEF_SCOPE_EXTRAPOLATION <-
   "Siletti cerebral-cortex scope with neocortical-class crosswalk"
 
@@ -65,6 +65,7 @@ obs <- obs %>%
 # Read rCMRGlc values from the source-independent Heiss preparation
 ######################################################
 source("helpers/read_heiss_rates.R")
+source("helpers/s1b_EI.R")
 
 #####################################
 # Map Siletti ROI to rCMR anatomy terms
@@ -77,7 +78,8 @@ obs <- attach_s1b_anatomy(obs)
 # Broad all-region E:I category definition
 ###################################################################
 # Broad E numerator:
-#   all Excitatory_projection superclusters listed below.
+#   all Excitatory_projection superclusters listed below plus the Siletti
+#   L5ET clusters nested inside the mixed Miscellaneous supercluster.
 # Broad I denominator, no-MSN version:
 #   all Inhibitory_interneuron superclusters listed below.
 # Broad I denominator, MSN-included version:
@@ -86,37 +88,16 @@ obs <- attach_s1b_anatomy(obs)
 # The two broad definitions are kept side by side so that the effect of
 # including MSNs can be inspected directly.
 
-broad_E_terms <- c(
-  "Amygdala excitatory",
-  "Deep-layer corticothalamic and 6b",
-  "Deep-layer intratelencephalic",
-  "Deep-layer near-projecting",
-  "Upper-layer intratelencephalic",
-  "Thalamic excitatory",
-  "Hippocampal CA1-3",
-  "Hippocampal CA4",
-  "Hippocampal dentate gyrus",
-  "Mammillary body",
-  "Lower rhombic lip",
-  "Upper rhombic lip"
-)
-
-broad_I_interneuron_terms <- c(
-  "CGE interneuron",
-  "MGE interneuron",
-  "LAMP5-LHX6 and Chandelier",
-  "Cerebellar inhibitory",
-  "Midbrain-derived inhibitory"
-)
-
-broad_I_MSN_terms <- c(
-  "Medium spiny neuron",
-  "Eccentric medium spiny neuron"
-)
+broad_E_terms <- s1b_siletti_broad_e_terms()
+broad_I_interneuron_terms <- s1b_siletti_broad_i_interneuron_terms()
+broad_I_MSN_terms <- s1b_siletti_broad_i_msn_terms()
 
 obs <- obs %>%
   mutate(
     cell_category_recomputed = case_when(
+      supercluster_term == "Miscellaneous" &
+        as.character(cluster_id) %in% s1b_siletti_l5et_cluster_ids() ~
+        "Excitatory_projection",
       supercluster_term %in% broad_E_terms ~ "Excitatory_projection",
       supercluster_term %in% broad_I_interneuron_terms ~ "Inhibitory_interneuron",
       supercluster_term %in% broad_I_MSN_terms ~ "Inhibitory_projection_MSN",
@@ -206,16 +187,11 @@ write.csv(region_classification, "data_analysis/region_classification_for_EI_com
 # Jorstad inhibitory subclasses: LAMP5 LHX6, LAMP5, SNCG, VIP, PAX6,
 # Chandelier, PVALB, SST, SST CHODL.
 
-siletti_jorstad_crosswalk <- tibble::tribble(
-  ~supercluster_term,                         ~EI_class_jorstad_like, ~jorstad_equivalent,
-  "Upper-layer intratelencephalic",           "E",                    "L2/3 IT + L4 IT",
-  "Deep-layer intratelencephalic",            "E",                    "L5 IT + L6 IT + L6 IT Car3",
-  "Deep-layer corticothalamic and 6b",        "E",                    "L6 CT + L6b",
-  "Deep-layer near-projecting",               "E",                    "L5/6 NP",
-  "CGE interneuron",                          "I",                    "LAMP5 + SNCG + VIP + PAX6",
-  "MGE interneuron",                          "I",                    "PVALB + SST + SST CHODL",
-  "LAMP5-LHX6 and Chandelier",                "I",                    "LAMP5 LHX6 + Chandelier"
-)
+siletti_jorstad_crosswalk <- s1b_neocortical_ei_crosswalk() %>%
+  rename(
+    EI_class_jorstad_like = EI_class,
+    jorstad_equivalent = class_equivalent
+  )
 
 write.csv(
   siletti_jorstad_crosswalk,
@@ -225,7 +201,11 @@ write.csv(
 
 cluster_membership_check <- obs %>%
   filter(is_neocortex %in% TRUE) %>%
-  inner_join(siletti_jorstad_crosswalk, by = "supercluster_term") %>%
+  attach_s1b_jorstad_ei_class() %>%
+  rename(
+    EI_class_jorstad_like = EI_class,
+    jorstad_equivalent = class_equivalent
+  ) %>%
   count(EI_class_jorstad_like, jorstad_equivalent, supercluster_term,
         cluster_id, subcluster_id, sort = TRUE) %>%
   arrange(EI_class_jorstad_like, jorstad_equivalent, supercluster_term,
@@ -421,13 +401,15 @@ msn_sensitivity_tbl <- original_wide %>%
 write.csv(msn_sensitivity_tbl, "data_analysis/broad_EI_MSN_sensitivity_table.csv", row.names = FALSE)
 
 ###################################################################
-# Siletti broad-class E:I within the cerebral-cortex scope
+# Siletti cerebral-cortex-class E:I within the cerebral-cortex scope
 ###################################################################
-# Unlike the Jorstad-aligned definition below, this definition retains the
-# Siletti amygdaloid and hippocampal excitatory superclusters when those
-# structures are added to the anatomical scope.
-siletti_cerebral_wide <- original_wide %>%
-  filter(is_cerebral_cortex)
+# Unlike the Jorstad-aligned definition below, this definition retains
+# amygdaloid and hippocampal excitatory superclusters. It explicitly excludes
+# thalamic, hypothalamic, midbrain, hindbrain, and cerebellar superclusters;
+# the old implementation inherited those classes from the all-region list.
+siletti_cerebral_data <- calculate_s1b_cerebral_cortex_class_ei()
+siletti_cerebral_wide <- siletti_cerebral_data %>%
+  filter(!MSN_included_in_denominator)
 
 write.csv(
   siletti_cerebral_wide,
@@ -435,22 +417,80 @@ write.csv(
   row.names = FALSE
 )
 
-siletti_cerebral_no_msn_long <- original_no_msn_long %>%
-  filter(is_cerebral_cortex) %>%
-  mutate(
+siletti_cerebral_no_msn_long <- siletti_cerebral_data %>%
+  filter(!MSN_included_in_denominator) %>%
+  transmute(
+    anatomy_id,
+    anatomy_group,
+    rcmr_value,
     EI_definition = DEF_SILETTI_CEREBRAL_NO_MSN,
     anatomical_analysis_scope =
       "Cerebral cortex (including amygdala and hippocampus)",
-    comparison_role = "Siletti-derived cerebral-cortex analysis"
+    comparison_role = "Siletti-derived cerebral-cortex analysis",
+    EI_ratio,
+    n_donors_EI = n_donors,
+    n_cells_EI_total = n_cells_EI,
+    cerebral_cortex_scope = if_else(
+      is_neocortex,
+      "Neocortex",
+      "Cerebral cortex, non-neocortical"
+    ),
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
+    division = if_else(is_telencephalon, "Telencephalon", "Non-telencephalon"),
+    MSN_included_in_denominator,
+    p_E,
+    p_I,
+    p_I_interneuron,
+    p_I_MSN,
+    p_I_all_with_MSN = p_I_with_MSN,
+    EI_ratio_no_MSN,
+    EI_ratio_with_MSN,
+    MSN_fraction_of_broad_I = if_else(
+      p_I_with_MSN > 0,
+      p_I_MSN / p_I_with_MSN,
+      NA_real_
+    ),
+    delta_EI_with_MSN_minus_no_MSN = EI_ratio_with_MSN - EI_ratio_no_MSN
   )
 
-siletti_cerebral_with_msn_long <- original_with_msn_long %>%
-  filter(is_cerebral_cortex) %>%
-  mutate(
+siletti_cerebral_with_msn_long <- siletti_cerebral_data %>%
+  filter(MSN_included_in_denominator) %>%
+  transmute(
+    anatomy_id,
+    anatomy_group,
+    rcmr_value,
     EI_definition = DEF_SILETTI_CEREBRAL_WITH_MSN,
     anatomical_analysis_scope =
       "Cerebral cortex (including amygdala and hippocampus)",
-    comparison_role = "Siletti-derived cerebral-cortex analysis"
+    comparison_role = "Siletti-derived cerebral-cortex analysis",
+    EI_ratio,
+    n_donors_EI = n_donors,
+    n_cells_EI_total = n_cells_EI,
+    cerebral_cortex_scope = if_else(
+      is_neocortex,
+      "Neocortex",
+      "Cerebral cortex, non-neocortical"
+    ),
+    is_cerebral_cortex,
+    is_neocortex,
+    is_telencephalon,
+    division = if_else(is_telencephalon, "Telencephalon", "Non-telencephalon"),
+    MSN_included_in_denominator,
+    p_E,
+    p_I,
+    p_I_interneuron,
+    p_I_MSN,
+    p_I_all_with_MSN = p_I_with_MSN,
+    EI_ratio_no_MSN,
+    EI_ratio_with_MSN,
+    MSN_fraction_of_broad_I = if_else(
+      p_I_with_MSN > 0,
+      p_I_MSN / p_I_with_MSN,
+      NA_real_
+    ),
+    delta_EI_with_MSN_minus_no_MSN = EI_ratio_with_MSN - EI_ratio_no_MSN
   )
 
 ###################################################################
@@ -458,7 +498,11 @@ siletti_cerebral_with_msn_long <- original_with_msn_long %>%
 ###################################################################
 obs_jorstad_neocortex <- obs %>%
   filter(is_neocortex %in% TRUE) %>%
-  inner_join(siletti_jorstad_crosswalk, by = "supercluster_term")
+  attach_s1b_jorstad_ei_class() %>%
+  rename(
+    EI_class_jorstad_like = EI_class,
+    jorstad_equivalent = class_equivalent
+  )
 
 cat("\n================ Jorstad-like neocortical E/I cell counts ================\n")
 print(
@@ -528,7 +572,11 @@ jorstad_neocortex_long <- jorstad_neocortex_wide %>%
 # a Jorstad anatomical definition nor the native Siletti broad-class analysis.
 obs_scope_extrapolation <- obs %>%
   filter(is_cerebral_cortex %in% TRUE) %>%
-  inner_join(siletti_jorstad_crosswalk, by = "supercluster_term")
+  attach_s1b_jorstad_ei_class() %>%
+  rename(
+    EI_class_jorstad_like = EI_class,
+    jorstad_equivalent = class_equivalent
+  )
 
 scope_extrapolation_wide <- calculate_region_props(
   obs_in = obs_scope_extrapolation,

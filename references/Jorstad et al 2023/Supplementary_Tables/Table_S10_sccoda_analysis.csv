@@ -1,0 +1,1225 @@
+Cell group,Covariate,Cell Type,Effect Size
+Neurons,ACC,L5/6 NP_4,0
+Neurons,ACC,L5/6 NP_2,0
+Neurons,ACC,L5/6 NP_3,0
+Neurons,ACC,L5/6 NP_6,0
+Neurons,ACC,L5/6 NP_1,0.569727604
+Neurons,ACC,L5/6 NP_5,0
+Neurons,ACC,L6 IT Car3_1,0
+Neurons,ACC,L6 IT Car3_2,-0.474696962
+Neurons,ACC,L5 ET_4,0
+Neurons,ACC,L5 ET_3,0
+Neurons,ACC,L5 ET_1,0
+Neurons,ACC,L5 ET_2,2.055278545
+Neurons,ACC,L6b_4,0
+Neurons,ACC,L6b_3,0
+Neurons,ACC,L6b_6,1.363562351
+Neurons,ACC,L6b_2,0
+Neurons,ACC,L6b_1,0
+Neurons,ACC,L6b_5,0
+Neurons,ACC,L6 CT_2,0
+Neurons,ACC,L6 CT_1,0
+Neurons,ACC,L6 CT_3,0.749687803
+Neurons,ACC,L6 IT_1,0
+Neurons,ACC,L6 IT_2,0.484597243
+Neurons,ACC,L2/3 IT_6,0
+Neurons,ACC,L2/3 IT_3,0
+Neurons,ACC,L2/3 IT_4,0
+Neurons,ACC,L2/3 IT_2,0
+Neurons,ACC,L2/3 IT_1,-1.365798891
+Neurons,ACC,L2/3 IT_5,0
+Neurons,ACC,L4 IT_5,1.143367645
+Neurons,ACC,L4 IT_1,-1.803529737
+Neurons,ACC,L5 IT_6,0
+Neurons,ACC,L5 IT_4,0
+Neurons,ACC,L5 IT_5,0
+Neurons,ACC,L5 IT_1,0
+Neurons,ACC,L5 IT_2,0
+Neurons,ACC,L5 IT_3,-1.54058223
+Neurons,ACC,L4 IT_2,0
+Neurons,ACC,L4 IT_6,0
+Neurons,ACC,L4 IT_3,0
+Neurons,ACC,L4 IT_4,0
+Neurons,ACC,Chandelier_1,0
+Neurons,ACC,Pvalb_7,0
+Neurons,ACC,Pvalb_9,0
+Neurons,ACC,Pvalb_8,0
+Neurons,ACC,Pvalb_4,0.958335385
+Neurons,ACC,Pvalb_6,0
+Neurons,ACC,Pvalb_1,0.545725774
+Neurons,ACC,Pvalb_5,0
+Neurons,ACC,Pvalb_3,0
+Neurons,ACC,Sst_31,0
+Neurons,ACC,Sst_24,0
+Neurons,ACC,Pvalb_2,0
+Neurons,ACC,Sst_36,0.909460251
+Neurons,ACC,Sst_16,0
+Neurons,ACC,Sst_19,0.710746702
+Neurons,ACC,Sst_37,1.641358821
+Neurons,ACC,Sst_4,1.54451567
+Neurons,ACC,Sst_10,0
+Neurons,ACC,Sst_7,-1.321834325
+Neurons,ACC,Sst_26,0.802638513
+Neurons,ACC,Sst_30,0
+Neurons,ACC,Sst_17,0
+Neurons,ACC,Sst_21,0
+Neurons,ACC,Sst_35,0
+Neurons,ACC,Sst_5,0
+Neurons,ACC,Sst_33,0
+Neurons,ACC,Sst_12,0
+Neurons,ACC,Sst_25,-1.503205103
+Neurons,ACC,Sst_32,0
+Neurons,ACC,Sst_14,0
+Neurons,ACC,Sst_6,0
+Neurons,ACC,Sst_20,0
+Neurons,ACC,Sst_34,0
+Neurons,ACC,Sst_3,0
+Neurons,ACC,Sst_13,0
+Neurons,ACC,Sst_23,0
+Neurons,ACC,Sst_28,0
+Neurons,ACC,Sst_15,-0.715905282
+Neurons,ACC,Sst_2,0
+Neurons,ACC,Sst_11,0
+Neurons,ACC,Sst_8,0
+Neurons,ACC,Sst_1,0.530970848
+Neurons,ACC,Sst_22,0
+Neurons,ACC,Sst_18,0.525609971
+Neurons,ACC,Sst_29,0
+Neurons,ACC,Sst_27,0
+Neurons,ACC,Sst_9,0
+Neurons,ACC,Sst Chodl_1,0
+Neurons,ACC,Lamp5 Lhx6_1,0.414022826
+Neurons,ACC,Lamp5_2,0.806180177
+Neurons,ACC,Lamp5_3,0
+Neurons,ACC,Lamp5_4,0
+Neurons,ACC,Lamp5_1,0
+Neurons,ACC,Lamp5_7,0
+Neurons,ACC,Lamp5_5,0
+Neurons,ACC,Lamp5_6,0
+Neurons,ACC,Pax6_2,0
+Neurons,ACC,Pax6_4,0
+Neurons,ACC,Pax6_1,0.598414433
+Neurons,ACC,Pax6_3,0.627946607
+Neurons,ACC,Sncg_4,0.50365677
+Neurons,ACC,Sncg_7,0.524854483
+Neurons,ACC,Sncg_1,-0.61244276
+Neurons,ACC,Sncg_2,0.644967039
+Neurons,ACC,Sncg_5,0
+Neurons,ACC,Sncg_3,0
+Neurons,ACC,Sncg_6,0
+Neurons,ACC,Sncg_8,0
+Neurons,ACC,Vip_28,1.194620111
+Neurons,ACC,Vip_5,-0.728864473
+Neurons,ACC,Vip_25,0
+Neurons,ACC,Vip_26,0
+Neurons,ACC,Vip_29,0
+Neurons,ACC,Vip_16,0
+Neurons,ACC,Vip_7,0
+Neurons,ACC,Vip_27,0
+Neurons,ACC,Vip_8,0
+Neurons,ACC,Vip_17,0
+Neurons,ACC,Vip_21,0
+Neurons,ACC,Vip_15,0
+Neurons,ACC,Vip_23,0
+Neurons,ACC,Vip_12,-1.054370109
+Neurons,ACC,Vip_24,0
+Neurons,ACC,Vip_3,0
+Neurons,ACC,Vip_22,0
+Neurons,ACC,Vip_9,0
+Neurons,ACC,Vip_18,0
+Neurons,ACC,Vip_4,0
+Neurons,ACC,Vip_14,0
+Neurons,ACC,Vip_6,0.645085876
+Neurons,ACC,Vip_10,0
+Neurons,ACC,Vip_11,0
+Neurons,ACC,Vip_20,0
+Neurons,ACC,Vip_13,0
+Neurons,ACC,Vip_2,0
+Neurons,ACC,Vip_1,0
+Neurons,ACC,Vip_19,0
+Neurons,DLPFC,L5/6 NP_4,0
+Neurons,DLPFC,L5/6 NP_2,0
+Neurons,DLPFC,L5/6 NP_3,0
+Neurons,DLPFC,L5/6 NP_6,0
+Neurons,DLPFC,L5/6 NP_1,0
+Neurons,DLPFC,L5/6 NP_5,0
+Neurons,DLPFC,L6 IT Car3_1,0
+Neurons,DLPFC,L6 IT Car3_2,0
+Neurons,DLPFC,L5 ET_4,0
+Neurons,DLPFC,L5 ET_3,0
+Neurons,DLPFC,L5 ET_1,0
+Neurons,DLPFC,L5 ET_2,0.540698331
+Neurons,DLPFC,L6b_4,0
+Neurons,DLPFC,L6b_3,0
+Neurons,DLPFC,L6b_6,0
+Neurons,DLPFC,L6b_2,0
+Neurons,DLPFC,L6b_1,0
+Neurons,DLPFC,L6b_5,0
+Neurons,DLPFC,L6 CT_2,0
+Neurons,DLPFC,L6 CT_1,-0.972515752
+Neurons,DLPFC,L6 CT_3,0
+Neurons,DLPFC,L6 IT_1,0
+Neurons,DLPFC,L6 IT_2,0
+Neurons,DLPFC,L2/3 IT_6,0.400101255
+Neurons,DLPFC,L2/3 IT_3,0
+Neurons,DLPFC,L2/3 IT_4,0.598662769
+Neurons,DLPFC,L2/3 IT_2,0
+Neurons,DLPFC,L2/3 IT_1,0
+Neurons,DLPFC,L2/3 IT_5,0
+Neurons,DLPFC,L4 IT_5,0
+Neurons,DLPFC,L4 IT_1,0.235358132
+Neurons,DLPFC,L5 IT_6,0
+Neurons,DLPFC,L5 IT_4,0
+Neurons,DLPFC,L5 IT_5,0
+Neurons,DLPFC,L5 IT_1,0
+Neurons,DLPFC,L5 IT_2,0
+Neurons,DLPFC,L5 IT_3,-0.908437767
+Neurons,DLPFC,L4 IT_2,0
+Neurons,DLPFC,L4 IT_6,0
+Neurons,DLPFC,L4 IT_3,0
+Neurons,DLPFC,L4 IT_4,0
+Neurons,DLPFC,Chandelier_1,0.526879611
+Neurons,DLPFC,Pvalb_7,0
+Neurons,DLPFC,Pvalb_9,0
+Neurons,DLPFC,Pvalb_8,0
+Neurons,DLPFC,Pvalb_4,0
+Neurons,DLPFC,Pvalb_6,0.615133984
+Neurons,DLPFC,Pvalb_1,0
+Neurons,DLPFC,Pvalb_5,0
+Neurons,DLPFC,Pvalb_3,0
+Neurons,DLPFC,Sst_31,0
+Neurons,DLPFC,Sst_24,0.742249961
+Neurons,DLPFC,Pvalb_2,0
+Neurons,DLPFC,Sst_36,0
+Neurons,DLPFC,Sst_16,0
+Neurons,DLPFC,Sst_19,0
+Neurons,DLPFC,Sst_37,0
+Neurons,DLPFC,Sst_4,0
+Neurons,DLPFC,Sst_10,0
+Neurons,DLPFC,Sst_7,0
+Neurons,DLPFC,Sst_26,0
+Neurons,DLPFC,Sst_30,0.763947008
+Neurons,DLPFC,Sst_17,0.677747059
+Neurons,DLPFC,Sst_21,0.479501275
+Neurons,DLPFC,Sst_35,0
+Neurons,DLPFC,Sst_5,0
+Neurons,DLPFC,Sst_33,0
+Neurons,DLPFC,Sst_12,0
+Neurons,DLPFC,Sst_25,0
+Neurons,DLPFC,Sst_32,0
+Neurons,DLPFC,Sst_14,0
+Neurons,DLPFC,Sst_6,0
+Neurons,DLPFC,Sst_20,0
+Neurons,DLPFC,Sst_34,0
+Neurons,DLPFC,Sst_3,0
+Neurons,DLPFC,Sst_13,0
+Neurons,DLPFC,Sst_23,0
+Neurons,DLPFC,Sst_28,0
+Neurons,DLPFC,Sst_15,0
+Neurons,DLPFC,Sst_2,0
+Neurons,DLPFC,Sst_11,0
+Neurons,DLPFC,Sst_8,0
+Neurons,DLPFC,Sst_1,0
+Neurons,DLPFC,Sst_22,0
+Neurons,DLPFC,Sst_18,0
+Neurons,DLPFC,Sst_29,0
+Neurons,DLPFC,Sst_27,0
+Neurons,DLPFC,Sst_9,0
+Neurons,DLPFC,Sst Chodl_1,0
+Neurons,DLPFC,Lamp5 Lhx6_1,0
+Neurons,DLPFC,Lamp5_2,0.677783782
+Neurons,DLPFC,Lamp5_3,-0.624818752
+Neurons,DLPFC,Lamp5_4,0.422033525
+Neurons,DLPFC,Lamp5_1,0
+Neurons,DLPFC,Lamp5_7,0
+Neurons,DLPFC,Lamp5_5,0.553188722
+Neurons,DLPFC,Lamp5_6,0
+Neurons,DLPFC,Pax6_2,0
+Neurons,DLPFC,Pax6_4,0
+Neurons,DLPFC,Pax6_1,0
+Neurons,DLPFC,Pax6_3,0
+Neurons,DLPFC,Sncg_4,0
+Neurons,DLPFC,Sncg_7,0
+Neurons,DLPFC,Sncg_1,0
+Neurons,DLPFC,Sncg_2,0.722735855
+Neurons,DLPFC,Sncg_5,0.526185156
+Neurons,DLPFC,Sncg_3,0
+Neurons,DLPFC,Sncg_6,0
+Neurons,DLPFC,Sncg_8,0
+Neurons,DLPFC,Vip_28,0
+Neurons,DLPFC,Vip_5,0
+Neurons,DLPFC,Vip_25,0
+Neurons,DLPFC,Vip_26,0
+Neurons,DLPFC,Vip_29,0
+Neurons,DLPFC,Vip_16,0
+Neurons,DLPFC,Vip_7,0
+Neurons,DLPFC,Vip_27,0
+Neurons,DLPFC,Vip_8,0
+Neurons,DLPFC,Vip_17,0
+Neurons,DLPFC,Vip_21,0
+Neurons,DLPFC,Vip_15,0
+Neurons,DLPFC,Vip_23,0
+Neurons,DLPFC,Vip_12,0
+Neurons,DLPFC,Vip_24,0
+Neurons,DLPFC,Vip_3,0
+Neurons,DLPFC,Vip_22,0
+Neurons,DLPFC,Vip_9,0
+Neurons,DLPFC,Vip_18,0
+Neurons,DLPFC,Vip_4,0
+Neurons,DLPFC,Vip_14,0
+Neurons,DLPFC,Vip_6,0
+Neurons,DLPFC,Vip_10,0
+Neurons,DLPFC,Vip_11,0
+Neurons,DLPFC,Vip_20,0
+Neurons,DLPFC,Vip_13,0
+Neurons,DLPFC,Vip_2,0
+Neurons,DLPFC,Vip_1,0
+Neurons,DLPFC,Vip_19,0
+Neurons,M1,L5/6 NP_4,0
+Neurons,M1,L5/6 NP_2,0
+Neurons,M1,L5/6 NP_3,1.476170538
+Neurons,M1,L5/6 NP_6,1.790263508
+Neurons,M1,L5/6 NP_1,0
+Neurons,M1,L5/6 NP_5,0
+Neurons,M1,L6 IT Car3_1,0
+Neurons,M1,L6 IT Car3_2,0
+Neurons,M1,L5 ET_4,0
+Neurons,M1,L5 ET_3,0
+Neurons,M1,L5 ET_1,2.407258157
+Neurons,M1,L5 ET_2,0.690841868
+Neurons,M1,L6b_4,0
+Neurons,M1,L6b_3,0
+Neurons,M1,L6b_6,-0.851613981
+Neurons,M1,L6b_2,0
+Neurons,M1,L6b_1,0
+Neurons,M1,L6b_5,0
+Neurons,M1,L6 CT_2,0
+Neurons,M1,L6 CT_1,0.697120688
+Neurons,M1,L6 CT_3,0.526112447
+Neurons,M1,L6 IT_1,0
+Neurons,M1,L6 IT_2,0.495453216
+Neurons,M1,L2/3 IT_6,0
+Neurons,M1,L2/3 IT_3,3.095726165
+Neurons,M1,L2/3 IT_4,3.087601455
+Neurons,M1,L2/3 IT_2,0
+Neurons,M1,L2/3 IT_1,0
+Neurons,M1,L2/3 IT_5,1.657863756
+Neurons,M1,L4 IT_5,0.85710234
+Neurons,M1,L4 IT_1,-0.977434583
+Neurons,M1,L5 IT_6,-0.864756185
+Neurons,M1,L5 IT_4,0
+Neurons,M1,L5 IT_5,0
+Neurons,M1,L5 IT_1,0
+Neurons,M1,L5 IT_2,0
+Neurons,M1,L5 IT_3,0
+Neurons,M1,L4 IT_2,0
+Neurons,M1,L4 IT_6,0
+Neurons,M1,L4 IT_3,0
+Neurons,M1,L4 IT_4,0
+Neurons,M1,Chandelier_1,0
+Neurons,M1,Pvalb_7,0
+Neurons,M1,Pvalb_9,0
+Neurons,M1,Pvalb_8,0
+Neurons,M1,Pvalb_4,0
+Neurons,M1,Pvalb_6,0.494746035
+Neurons,M1,Pvalb_1,0
+Neurons,M1,Pvalb_5,0
+Neurons,M1,Pvalb_3,0
+Neurons,M1,Sst_31,0
+Neurons,M1,Sst_24,0
+Neurons,M1,Pvalb_2,0
+Neurons,M1,Sst_36,0
+Neurons,M1,Sst_16,0
+Neurons,M1,Sst_19,0
+Neurons,M1,Sst_37,0
+Neurons,M1,Sst_4,0
+Neurons,M1,Sst_10,0
+Neurons,M1,Sst_7,0
+Neurons,M1,Sst_26,0
+Neurons,M1,Sst_30,0
+Neurons,M1,Sst_17,0
+Neurons,M1,Sst_21,0
+Neurons,M1,Sst_35,0
+Neurons,M1,Sst_5,0
+Neurons,M1,Sst_33,0
+Neurons,M1,Sst_12,0
+Neurons,M1,Sst_25,0
+Neurons,M1,Sst_32,0
+Neurons,M1,Sst_14,0
+Neurons,M1,Sst_6,0
+Neurons,M1,Sst_20,0
+Neurons,M1,Sst_34,0
+Neurons,M1,Sst_3,0
+Neurons,M1,Sst_13,0
+Neurons,M1,Sst_23,0
+Neurons,M1,Sst_28,0
+Neurons,M1,Sst_15,0
+Neurons,M1,Sst_2,0
+Neurons,M1,Sst_11,0
+Neurons,M1,Sst_8,-0.689566732
+Neurons,M1,Sst_1,0
+Neurons,M1,Sst_22,0
+Neurons,M1,Sst_18,0
+Neurons,M1,Sst_29,0
+Neurons,M1,Sst_27,0
+Neurons,M1,Sst_9,0
+Neurons,M1,Sst Chodl_1,0
+Neurons,M1,Lamp5 Lhx6_1,0
+Neurons,M1,Lamp5_2,0
+Neurons,M1,Lamp5_3,0
+Neurons,M1,Lamp5_4,0
+Neurons,M1,Lamp5_1,0
+Neurons,M1,Lamp5_7,0
+Neurons,M1,Lamp5_5,0
+Neurons,M1,Lamp5_6,0
+Neurons,M1,Pax6_2,0
+Neurons,M1,Pax6_4,0
+Neurons,M1,Pax6_1,0
+Neurons,M1,Pax6_3,0
+Neurons,M1,Sncg_4,0
+Neurons,M1,Sncg_7,0
+Neurons,M1,Sncg_1,0
+Neurons,M1,Sncg_2,0
+Neurons,M1,Sncg_5,0
+Neurons,M1,Sncg_3,0
+Neurons,M1,Sncg_6,0
+Neurons,M1,Sncg_8,0
+Neurons,M1,Vip_28,0
+Neurons,M1,Vip_5,0
+Neurons,M1,Vip_25,0
+Neurons,M1,Vip_26,0.71816758
+Neurons,M1,Vip_29,0
+Neurons,M1,Vip_16,0
+Neurons,M1,Vip_7,0
+Neurons,M1,Vip_27,0
+Neurons,M1,Vip_8,0
+Neurons,M1,Vip_17,0
+Neurons,M1,Vip_21,0
+Neurons,M1,Vip_15,0
+Neurons,M1,Vip_23,0
+Neurons,M1,Vip_12,0
+Neurons,M1,Vip_24,0
+Neurons,M1,Vip_3,0
+Neurons,M1,Vip_22,0
+Neurons,M1,Vip_9,0
+Neurons,M1,Vip_18,0
+Neurons,M1,Vip_4,0
+Neurons,M1,Vip_14,0
+Neurons,M1,Vip_6,0
+Neurons,M1,Vip_10,0
+Neurons,M1,Vip_11,0
+Neurons,M1,Vip_20,0
+Neurons,M1,Vip_13,0
+Neurons,M1,Vip_2,0
+Neurons,M1,Vip_1,0
+Neurons,M1,Vip_19,0
+Neurons,S1,L5/6 NP_4,0
+Neurons,S1,L5/6 NP_2,0
+Neurons,S1,L5/6 NP_3,1.26533139
+Neurons,S1,L5/6 NP_6,0
+Neurons,S1,L5/6 NP_1,0
+Neurons,S1,L5/6 NP_5,-0.890132119
+Neurons,S1,L6 IT Car3_1,0
+Neurons,S1,L6 IT Car3_2,0
+Neurons,S1,L5 ET_4,0
+Neurons,S1,L5 ET_3,0
+Neurons,S1,L5 ET_1,1.363321172
+Neurons,S1,L5 ET_2,0
+Neurons,S1,L6b_4,0
+Neurons,S1,L6b_3,0
+Neurons,S1,L6b_6,0
+Neurons,S1,L6b_2,0
+Neurons,S1,L6b_1,0
+Neurons,S1,L6b_5,0
+Neurons,S1,L6 CT_2,0
+Neurons,S1,L6 CT_1,0
+Neurons,S1,L6 CT_3,0
+Neurons,S1,L6 IT_1,0
+Neurons,S1,L6 IT_2,0
+Neurons,S1,L2/3 IT_6,0
+Neurons,S1,L2/3 IT_3,1.931712926
+Neurons,S1,L2/3 IT_4,2.007396157
+Neurons,S1,L2/3 IT_2,0
+Neurons,S1,L2/3 IT_1,0.3080968
+Neurons,S1,L2/3 IT_5,0.828508954
+Neurons,S1,L4 IT_5,0
+Neurons,S1,L4 IT_1,-0.205811163
+Neurons,S1,L5 IT_6,-0.545297939
+Neurons,S1,L5 IT_4,0
+Neurons,S1,L5 IT_5,0
+Neurons,S1,L5 IT_1,0
+Neurons,S1,L5 IT_2,0.064467202
+Neurons,S1,L5 IT_3,0
+Neurons,S1,L4 IT_2,0
+Neurons,S1,L4 IT_6,0
+Neurons,S1,L4 IT_3,0
+Neurons,S1,L4 IT_4,0
+Neurons,S1,Chandelier_1,0.392441914
+Neurons,S1,Pvalb_7,0
+Neurons,S1,Pvalb_9,0
+Neurons,S1,Pvalb_8,0
+Neurons,S1,Pvalb_4,0
+Neurons,S1,Pvalb_6,0
+Neurons,S1,Pvalb_1,0
+Neurons,S1,Pvalb_5,0
+Neurons,S1,Pvalb_3,0
+Neurons,S1,Sst_31,0
+Neurons,S1,Sst_24,0
+Neurons,S1,Pvalb_2,0
+Neurons,S1,Sst_36,0
+Neurons,S1,Sst_16,0
+Neurons,S1,Sst_19,0
+Neurons,S1,Sst_37,0
+Neurons,S1,Sst_4,0
+Neurons,S1,Sst_10,0
+Neurons,S1,Sst_7,0
+Neurons,S1,Sst_26,0
+Neurons,S1,Sst_30,0
+Neurons,S1,Sst_17,0
+Neurons,S1,Sst_21,0
+Neurons,S1,Sst_35,0
+Neurons,S1,Sst_5,0
+Neurons,S1,Sst_33,0
+Neurons,S1,Sst_12,0
+Neurons,S1,Sst_25,0
+Neurons,S1,Sst_32,0
+Neurons,S1,Sst_14,0
+Neurons,S1,Sst_6,0
+Neurons,S1,Sst_20,0
+Neurons,S1,Sst_34,0
+Neurons,S1,Sst_3,0
+Neurons,S1,Sst_13,0
+Neurons,S1,Sst_23,0
+Neurons,S1,Sst_28,0
+Neurons,S1,Sst_15,0
+Neurons,S1,Sst_2,0
+Neurons,S1,Sst_11,0
+Neurons,S1,Sst_8,0
+Neurons,S1,Sst_1,0
+Neurons,S1,Sst_22,0
+Neurons,S1,Sst_18,0
+Neurons,S1,Sst_29,0
+Neurons,S1,Sst_27,0
+Neurons,S1,Sst_9,0
+Neurons,S1,Sst Chodl_1,0
+Neurons,S1,Lamp5 Lhx6_1,0
+Neurons,S1,Lamp5_2,0
+Neurons,S1,Lamp5_3,0
+Neurons,S1,Lamp5_4,0
+Neurons,S1,Lamp5_1,0
+Neurons,S1,Lamp5_7,0
+Neurons,S1,Lamp5_5,0
+Neurons,S1,Lamp5_6,0
+Neurons,S1,Pax6_2,0
+Neurons,S1,Pax6_4,0
+Neurons,S1,Pax6_1,0
+Neurons,S1,Pax6_3,0
+Neurons,S1,Sncg_4,0
+Neurons,S1,Sncg_7,0
+Neurons,S1,Sncg_1,0
+Neurons,S1,Sncg_2,0
+Neurons,S1,Sncg_5,0
+Neurons,S1,Sncg_3,0
+Neurons,S1,Sncg_6,0
+Neurons,S1,Sncg_8,0
+Neurons,S1,Vip_28,0
+Neurons,S1,Vip_5,0
+Neurons,S1,Vip_25,0
+Neurons,S1,Vip_26,0
+Neurons,S1,Vip_29,0
+Neurons,S1,Vip_16,0
+Neurons,S1,Vip_7,0
+Neurons,S1,Vip_27,0
+Neurons,S1,Vip_8,0
+Neurons,S1,Vip_17,0
+Neurons,S1,Vip_21,0
+Neurons,S1,Vip_15,0
+Neurons,S1,Vip_23,0
+Neurons,S1,Vip_12,0
+Neurons,S1,Vip_24,0
+Neurons,S1,Vip_3,0
+Neurons,S1,Vip_22,0
+Neurons,S1,Vip_9,0
+Neurons,S1,Vip_18,0
+Neurons,S1,Vip_4,0
+Neurons,S1,Vip_14,0
+Neurons,S1,Vip_6,0
+Neurons,S1,Vip_10,0
+Neurons,S1,Vip_11,0
+Neurons,S1,Vip_20,0
+Neurons,S1,Vip_13,0
+Neurons,S1,Vip_2,0
+Neurons,S1,Vip_1,0
+Neurons,S1,Vip_19,0
+Neurons,MTG,L5/6 NP_4,0.723537264
+Neurons,MTG,L5/6 NP_2,0
+Neurons,MTG,L5/6 NP_3,0
+Neurons,MTG,L5/6 NP_6,0
+Neurons,MTG,L5/6 NP_1,0
+Neurons,MTG,L5/6 NP_5,0.839123849
+Neurons,MTG,L6 IT Car3_1,0
+Neurons,MTG,L6 IT Car3_2,0
+Neurons,MTG,L5 ET_4,0
+Neurons,MTG,L5 ET_3,0.888468391
+Neurons,MTG,L5 ET_1,0
+Neurons,MTG,L5 ET_2,0
+Neurons,MTG,L6b_4,0
+Neurons,MTG,L6b_3,1.142533173
+Neurons,MTG,L6b_6,0
+Neurons,MTG,L6b_2,0
+Neurons,MTG,L6b_1,0
+Neurons,MTG,L6b_5,0
+Neurons,MTG,L6 CT_2,0
+Neurons,MTG,L6 CT_1,0
+Neurons,MTG,L6 CT_3,0
+Neurons,MTG,L6 IT_1,0
+Neurons,MTG,L6 IT_2,0
+Neurons,MTG,L2/3 IT_6,0.417663495
+Neurons,MTG,L2/3 IT_3,0
+Neurons,MTG,L2/3 IT_4,0
+Neurons,MTG,L2/3 IT_2,0
+Neurons,MTG,L2/3 IT_1,0
+Neurons,MTG,L2/3 IT_5,0
+Neurons,MTG,L4 IT_5,0
+Neurons,MTG,L4 IT_1,1.734332496
+Neurons,MTG,L5 IT_6,0
+Neurons,MTG,L5 IT_4,0
+Neurons,MTG,L5 IT_5,0
+Neurons,MTG,L5 IT_1,0
+Neurons,MTG,L5 IT_2,1.003355857
+Neurons,MTG,L5 IT_3,0
+Neurons,MTG,L4 IT_2,0
+Neurons,MTG,L4 IT_6,0
+Neurons,MTG,L4 IT_3,0
+Neurons,MTG,L4 IT_4,0
+Neurons,MTG,Chandelier_1,0
+Neurons,MTG,Pvalb_7,0
+Neurons,MTG,Pvalb_9,0
+Neurons,MTG,Pvalb_8,0
+Neurons,MTG,Pvalb_4,0.757108873
+Neurons,MTG,Pvalb_6,0
+Neurons,MTG,Pvalb_1,0
+Neurons,MTG,Pvalb_5,0
+Neurons,MTG,Pvalb_3,0.61457777
+Neurons,MTG,Sst_31,0
+Neurons,MTG,Sst_24,0
+Neurons,MTG,Pvalb_2,0
+Neurons,MTG,Sst_36,0
+Neurons,MTG,Sst_16,0
+Neurons,MTG,Sst_19,0
+Neurons,MTG,Sst_37,0
+Neurons,MTG,Sst_4,0
+Neurons,MTG,Sst_10,0
+Neurons,MTG,Sst_7,0
+Neurons,MTG,Sst_26,0
+Neurons,MTG,Sst_30,0
+Neurons,MTG,Sst_17,0
+Neurons,MTG,Sst_21,0
+Neurons,MTG,Sst_35,0
+Neurons,MTG,Sst_5,0
+Neurons,MTG,Sst_33,0
+Neurons,MTG,Sst_12,0
+Neurons,MTG,Sst_25,0.751786954
+Neurons,MTG,Sst_32,0.567303499
+Neurons,MTG,Sst_14,0
+Neurons,MTG,Sst_6,0
+Neurons,MTG,Sst_20,0
+Neurons,MTG,Sst_34,0
+Neurons,MTG,Sst_3,0
+Neurons,MTG,Sst_13,0
+Neurons,MTG,Sst_23,0
+Neurons,MTG,Sst_28,0
+Neurons,MTG,Sst_15,0
+Neurons,MTG,Sst_2,0
+Neurons,MTG,Sst_11,0
+Neurons,MTG,Sst_8,0
+Neurons,MTG,Sst_1,0
+Neurons,MTG,Sst_22,0
+Neurons,MTG,Sst_18,0
+Neurons,MTG,Sst_29,0
+Neurons,MTG,Sst_27,0
+Neurons,MTG,Sst_9,0
+Neurons,MTG,Sst Chodl_1,0
+Neurons,MTG,Lamp5 Lhx6_1,0
+Neurons,MTG,Lamp5_2,0
+Neurons,MTG,Lamp5_3,0
+Neurons,MTG,Lamp5_4,0
+Neurons,MTG,Lamp5_1,0
+Neurons,MTG,Lamp5_7,0
+Neurons,MTG,Lamp5_5,0
+Neurons,MTG,Lamp5_6,0
+Neurons,MTG,Pax6_2,0
+Neurons,MTG,Pax6_4,0
+Neurons,MTG,Pax6_1,0
+Neurons,MTG,Pax6_3,0
+Neurons,MTG,Sncg_4,0
+Neurons,MTG,Sncg_7,0
+Neurons,MTG,Sncg_1,0
+Neurons,MTG,Sncg_2,0
+Neurons,MTG,Sncg_5,0
+Neurons,MTG,Sncg_3,0
+Neurons,MTG,Sncg_6,0
+Neurons,MTG,Sncg_8,0
+Neurons,MTG,Vip_28,0
+Neurons,MTG,Vip_5,0
+Neurons,MTG,Vip_25,0
+Neurons,MTG,Vip_26,0
+Neurons,MTG,Vip_29,0
+Neurons,MTG,Vip_16,0
+Neurons,MTG,Vip_7,0
+Neurons,MTG,Vip_27,0
+Neurons,MTG,Vip_8,0
+Neurons,MTG,Vip_17,0
+Neurons,MTG,Vip_21,0
+Neurons,MTG,Vip_15,0
+Neurons,MTG,Vip_23,0.465767905
+Neurons,MTG,Vip_12,0.534485347
+Neurons,MTG,Vip_24,0.516356123
+Neurons,MTG,Vip_3,0
+Neurons,MTG,Vip_22,0
+Neurons,MTG,Vip_9,0.745082601
+Neurons,MTG,Vip_18,0
+Neurons,MTG,Vip_4,0
+Neurons,MTG,Vip_14,0
+Neurons,MTG,Vip_6,0
+Neurons,MTG,Vip_10,0
+Neurons,MTG,Vip_11,0
+Neurons,MTG,Vip_20,0
+Neurons,MTG,Vip_13,0
+Neurons,MTG,Vip_2,0.61881779
+Neurons,MTG,Vip_1,0.495561793
+Neurons,MTG,Vip_19,0
+Neurons,A1,L5/6 NP_4,0
+Neurons,A1,L5/6 NP_2,0
+Neurons,A1,L5/6 NP_3,0
+Neurons,A1,L5/6 NP_6,0
+Neurons,A1,L5/6 NP_1,0
+Neurons,A1,L5/6 NP_5,0
+Neurons,A1,L6 IT Car3_1,0
+Neurons,A1,L6 IT Car3_2,0
+Neurons,A1,L5 ET_4,0
+Neurons,A1,L5 ET_3,0.680069098
+Neurons,A1,L5 ET_1,0
+Neurons,A1,L5 ET_2,0
+Neurons,A1,L6b_4,0
+Neurons,A1,L6b_3,0.66098083
+Neurons,A1,L6b_6,0
+Neurons,A1,L6b_2,-0.205317376
+Neurons,A1,L6b_1,0
+Neurons,A1,L6b_5,0
+Neurons,A1,L6 CT_2,0
+Neurons,A1,L6 CT_1,0
+Neurons,A1,L6 CT_3,0
+Neurons,A1,L6 IT_1,0
+Neurons,A1,L6 IT_2,0
+Neurons,A1,L2/3 IT_6,0
+Neurons,A1,L2/3 IT_3,0
+Neurons,A1,L2/3 IT_4,0
+Neurons,A1,L2/3 IT_2,0
+Neurons,A1,L2/3 IT_1,0.758355733
+Neurons,A1,L2/3 IT_5,0.871792374
+Neurons,A1,L4 IT_5,0
+Neurons,A1,L4 IT_1,0.691393158
+Neurons,A1,L5 IT_6,0
+Neurons,A1,L5 IT_4,0
+Neurons,A1,L5 IT_5,0
+Neurons,A1,L5 IT_1,0.877899891
+Neurons,A1,L5 IT_2,0
+Neurons,A1,L5 IT_3,0
+Neurons,A1,L4 IT_2,0
+Neurons,A1,L4 IT_6,0
+Neurons,A1,L4 IT_3,0
+Neurons,A1,L4 IT_4,0
+Neurons,A1,Chandelier_1,0
+Neurons,A1,Pvalb_7,0
+Neurons,A1,Pvalb_9,0
+Neurons,A1,Pvalb_8,0
+Neurons,A1,Pvalb_4,0
+Neurons,A1,Pvalb_6,0
+Neurons,A1,Pvalb_1,0
+Neurons,A1,Pvalb_5,0
+Neurons,A1,Pvalb_3,0
+Neurons,A1,Sst_31,0
+Neurons,A1,Sst_24,0
+Neurons,A1,Pvalb_2,0
+Neurons,A1,Sst_36,0
+Neurons,A1,Sst_16,0
+Neurons,A1,Sst_19,0
+Neurons,A1,Sst_37,0
+Neurons,A1,Sst_4,0
+Neurons,A1,Sst_10,0
+Neurons,A1,Sst_7,0
+Neurons,A1,Sst_26,0
+Neurons,A1,Sst_30,0
+Neurons,A1,Sst_17,0
+Neurons,A1,Sst_21,0
+Neurons,A1,Sst_35,0
+Neurons,A1,Sst_5,0
+Neurons,A1,Sst_33,0
+Neurons,A1,Sst_12,0
+Neurons,A1,Sst_25,0.770037954
+Neurons,A1,Sst_32,0.518967332
+Neurons,A1,Sst_14,0
+Neurons,A1,Sst_6,0
+Neurons,A1,Sst_20,0
+Neurons,A1,Sst_34,0
+Neurons,A1,Sst_3,0
+Neurons,A1,Sst_13,0
+Neurons,A1,Sst_23,0
+Neurons,A1,Sst_28,0
+Neurons,A1,Sst_15,0
+Neurons,A1,Sst_2,0
+Neurons,A1,Sst_11,0
+Neurons,A1,Sst_8,0.541977821
+Neurons,A1,Sst_1,0
+Neurons,A1,Sst_22,0
+Neurons,A1,Sst_18,0
+Neurons,A1,Sst_29,0
+Neurons,A1,Sst_27,0
+Neurons,A1,Sst_9,0
+Neurons,A1,Sst Chodl_1,0
+Neurons,A1,Lamp5 Lhx6_1,0
+Neurons,A1,Lamp5_2,0
+Neurons,A1,Lamp5_3,0
+Neurons,A1,Lamp5_4,0
+Neurons,A1,Lamp5_1,0
+Neurons,A1,Lamp5_7,0
+Neurons,A1,Lamp5_5,0
+Neurons,A1,Lamp5_6,0
+Neurons,A1,Pax6_2,0
+Neurons,A1,Pax6_4,0
+Neurons,A1,Pax6_1,0
+Neurons,A1,Pax6_3,0
+Neurons,A1,Sncg_4,0
+Neurons,A1,Sncg_7,0
+Neurons,A1,Sncg_1,0
+Neurons,A1,Sncg_2,0
+Neurons,A1,Sncg_5,0
+Neurons,A1,Sncg_3,0
+Neurons,A1,Sncg_6,0
+Neurons,A1,Sncg_8,0
+Neurons,A1,Vip_28,0
+Neurons,A1,Vip_5,0
+Neurons,A1,Vip_25,0
+Neurons,A1,Vip_26,0
+Neurons,A1,Vip_29,0
+Neurons,A1,Vip_16,0
+Neurons,A1,Vip_7,0
+Neurons,A1,Vip_27,0
+Neurons,A1,Vip_8,0
+Neurons,A1,Vip_17,0
+Neurons,A1,Vip_21,0
+Neurons,A1,Vip_15,0
+Neurons,A1,Vip_23,0
+Neurons,A1,Vip_12,0
+Neurons,A1,Vip_24,0.456896069
+Neurons,A1,Vip_3,0
+Neurons,A1,Vip_22,0
+Neurons,A1,Vip_9,0
+Neurons,A1,Vip_18,0
+Neurons,A1,Vip_4,0
+Neurons,A1,Vip_14,0
+Neurons,A1,Vip_6,0
+Neurons,A1,Vip_10,0
+Neurons,A1,Vip_11,0
+Neurons,A1,Vip_20,0
+Neurons,A1,Vip_13,0
+Neurons,A1,Vip_2,0
+Neurons,A1,Vip_1,0
+Neurons,A1,Vip_19,0
+Neurons,ANG,L5/6 NP_4,0
+Neurons,ANG,L5/6 NP_2,0
+Neurons,ANG,L5/6 NP_3,0
+Neurons,ANG,L5/6 NP_6,0
+Neurons,ANG,L5/6 NP_1,0
+Neurons,ANG,L5/6 NP_5,0
+Neurons,ANG,L6 IT Car3_1,0
+Neurons,ANG,L6 IT Car3_2,0.479593038
+Neurons,ANG,L5 ET_4,0
+Neurons,ANG,L5 ET_3,0
+Neurons,ANG,L5 ET_1,0
+Neurons,ANG,L5 ET_2,0
+Neurons,ANG,L6b_4,0
+Neurons,ANG,L6b_3,0
+Neurons,ANG,L6b_6,0
+Neurons,ANG,L6b_2,0
+Neurons,ANG,L6b_1,0
+Neurons,ANG,L6b_5,0
+Neurons,ANG,L6 CT_2,0
+Neurons,ANG,L6 CT_1,0
+Neurons,ANG,L6 CT_3,0
+Neurons,ANG,L6 IT_1,0
+Neurons,ANG,L6 IT_2,0
+Neurons,ANG,L2/3 IT_6,0
+Neurons,ANG,L2/3 IT_3,0
+Neurons,ANG,L2/3 IT_4,0
+Neurons,ANG,L2/3 IT_2,0
+Neurons,ANG,L2/3 IT_1,0
+Neurons,ANG,L2/3 IT_5,0
+Neurons,ANG,L4 IT_5,0
+Neurons,ANG,L4 IT_1,1.629421805
+Neurons,ANG,L5 IT_6,0
+Neurons,ANG,L5 IT_4,0
+Neurons,ANG,L5 IT_5,0
+Neurons,ANG,L5 IT_1,0
+Neurons,ANG,L5 IT_2,0.777562359
+Neurons,ANG,L5 IT_3,0
+Neurons,ANG,L4 IT_2,0
+Neurons,ANG,L4 IT_6,0
+Neurons,ANG,L4 IT_3,0
+Neurons,ANG,L4 IT_4,0
+Neurons,ANG,Chandelier_1,0
+Neurons,ANG,Pvalb_7,0
+Neurons,ANG,Pvalb_9,0
+Neurons,ANG,Pvalb_8,0
+Neurons,ANG,Pvalb_4,0
+Neurons,ANG,Pvalb_6,0
+Neurons,ANG,Pvalb_1,0
+Neurons,ANG,Pvalb_5,0
+Neurons,ANG,Pvalb_3,0
+Neurons,ANG,Sst_31,0.603480682
+Neurons,ANG,Sst_24,0
+Neurons,ANG,Pvalb_2,0
+Neurons,ANG,Sst_36,0
+Neurons,ANG,Sst_16,0
+Neurons,ANG,Sst_19,0
+Neurons,ANG,Sst_37,0
+Neurons,ANG,Sst_4,0
+Neurons,ANG,Sst_10,0
+Neurons,ANG,Sst_7,0
+Neurons,ANG,Sst_26,0
+Neurons,ANG,Sst_30,0
+Neurons,ANG,Sst_17,0
+Neurons,ANG,Sst_21,0
+Neurons,ANG,Sst_35,0
+Neurons,ANG,Sst_5,0
+Neurons,ANG,Sst_33,0.541835575
+Neurons,ANG,Sst_12,0
+Neurons,ANG,Sst_25,0.826077209
+Neurons,ANG,Sst_32,0
+Neurons,ANG,Sst_14,0
+Neurons,ANG,Sst_6,0
+Neurons,ANG,Sst_20,0
+Neurons,ANG,Sst_34,0
+Neurons,ANG,Sst_3,0
+Neurons,ANG,Sst_13,0
+Neurons,ANG,Sst_23,0
+Neurons,ANG,Sst_28,0
+Neurons,ANG,Sst_15,0
+Neurons,ANG,Sst_2,0
+Neurons,ANG,Sst_11,0
+Neurons,ANG,Sst_8,0.730246501
+Neurons,ANG,Sst_1,0
+Neurons,ANG,Sst_22,0
+Neurons,ANG,Sst_18,0
+Neurons,ANG,Sst_29,0
+Neurons,ANG,Sst_27,0
+Neurons,ANG,Sst_9,0.6766223
+Neurons,ANG,Sst Chodl_1,0
+Neurons,ANG,Lamp5 Lhx6_1,0
+Neurons,ANG,Lamp5_2,0
+Neurons,ANG,Lamp5_3,0
+Neurons,ANG,Lamp5_4,0
+Neurons,ANG,Lamp5_1,0
+Neurons,ANG,Lamp5_7,0
+Neurons,ANG,Lamp5_5,0
+Neurons,ANG,Lamp5_6,0
+Neurons,ANG,Pax6_2,0
+Neurons,ANG,Pax6_4,0
+Neurons,ANG,Pax6_1,0
+Neurons,ANG,Pax6_3,0
+Neurons,ANG,Sncg_4,0
+Neurons,ANG,Sncg_7,0
+Neurons,ANG,Sncg_1,0
+Neurons,ANG,Sncg_2,0
+Neurons,ANG,Sncg_5,0
+Neurons,ANG,Sncg_3,0
+Neurons,ANG,Sncg_6,0
+Neurons,ANG,Sncg_8,0
+Neurons,ANG,Vip_28,0
+Neurons,ANG,Vip_5,0
+Neurons,ANG,Vip_25,0
+Neurons,ANG,Vip_26,0
+Neurons,ANG,Vip_29,0
+Neurons,ANG,Vip_16,0
+Neurons,ANG,Vip_7,0
+Neurons,ANG,Vip_27,0
+Neurons,ANG,Vip_8,0
+Neurons,ANG,Vip_17,0
+Neurons,ANG,Vip_21,0
+Neurons,ANG,Vip_15,0
+Neurons,ANG,Vip_23,0
+Neurons,ANG,Vip_12,0
+Neurons,ANG,Vip_24,0
+Neurons,ANG,Vip_3,0
+Neurons,ANG,Vip_22,0
+Neurons,ANG,Vip_9,0.661275598
+Neurons,ANG,Vip_18,0
+Neurons,ANG,Vip_4,0
+Neurons,ANG,Vip_14,0
+Neurons,ANG,Vip_6,0
+Neurons,ANG,Vip_10,0
+Neurons,ANG,Vip_11,0
+Neurons,ANG,Vip_20,0
+Neurons,ANG,Vip_13,0
+Neurons,ANG,Vip_2,0
+Neurons,ANG,Vip_1,0.479019287
+Neurons,ANG,Vip_19,0
+Neurons,V1,L5/6 NP_4,0
+Neurons,V1,L5/6 NP_2,0
+Neurons,V1,L5/6 NP_3,0
+Neurons,V1,L5/6 NP_6,0
+Neurons,V1,L5/6 NP_1,-0.991449979
+Neurons,V1,L5/6 NP_5,-1.102678941
+Neurons,V1,L6 IT Car3_1,1.581379738
+Neurons,V1,L6 IT Car3_2,0
+Neurons,V1,L5 ET_4,0.793446006
+Neurons,V1,L5 ET_3,0
+Neurons,V1,L5 ET_1,0
+Neurons,V1,L5 ET_2,-2.021547187
+Neurons,V1,L6b_4,0
+Neurons,V1,L6b_3,0
+Neurons,V1,L6b_6,0
+Neurons,V1,L6b_2,-1.642597752
+Neurons,V1,L6b_1,1.893569658
+Neurons,V1,L6b_5,0
+Neurons,V1,L6 CT_2,3.825413566
+Neurons,V1,L6 CT_1,0
+Neurons,V1,L6 CT_3,-1.218451908
+Neurons,V1,L6 IT_1,2.549365254
+Neurons,V1,L6 IT_2,-0.656428214
+Neurons,V1,L2/3 IT_6,-0.679317611
+Neurons,V1,L2/3 IT_3,0
+Neurons,V1,L2/3 IT_4,0
+Neurons,V1,L2/3 IT_2,5.675497895
+Neurons,V1,L2/3 IT_1,-2.172799308
+Neurons,V1,L2/3 IT_5,-1.155256674
+Neurons,V1,L4 IT_5,-3.578871001
+Neurons,V1,L4 IT_1,-1.198899189
+Neurons,V1,L5 IT_6,0
+Neurons,V1,L5 IT_4,3.505094595
+Neurons,V1,L5 IT_5,2.175414196
+Neurons,V1,L5 IT_1,0
+Neurons,V1,L5 IT_2,-3.286154338
+Neurons,V1,L5 IT_3,1.02498051
+Neurons,V1,L4 IT_2,3.239688311
+Neurons,V1,L4 IT_6,4.305163295
+Neurons,V1,L4 IT_3,5.104636697
+Neurons,V1,L4 IT_4,3.147689661
+Neurons,V1,Chandelier_1,0
+Neurons,V1,Pvalb_7,3.038407496
+Neurons,V1,Pvalb_9,1.325833538
+Neurons,V1,Pvalb_8,0
+Neurons,V1,Pvalb_4,0
+Neurons,V1,Pvalb_6,-0.580719668
+Neurons,V1,Pvalb_1,-1.318387855
+Neurons,V1,Pvalb_5,-1.471785144
+Neurons,V1,Pvalb_3,-0.834961612
+Neurons,V1,Sst_31,0
+Neurons,V1,Sst_24,-1.175958073
+Neurons,V1,Pvalb_2,-0.887874426
+Neurons,V1,Sst_36,-0.85505812
+Neurons,V1,Sst_16,0
+Neurons,V1,Sst_19,-0.857272055
+Neurons,V1,Sst_37,0
+Neurons,V1,Sst_4,0
+Neurons,V1,Sst_10,-1.084407623
+Neurons,V1,Sst_7,0
+Neurons,V1,Sst_26,-0.688412539
+Neurons,V1,Sst_30,-1.61093462
+Neurons,V1,Sst_17,-1.025077063
+Neurons,V1,Sst_21,-0.988137667
+Neurons,V1,Sst_35,-1.184077314
+Neurons,V1,Sst_5,0
+Neurons,V1,Sst_33,-1.27009062
+Neurons,V1,Sst_12,0
+Neurons,V1,Sst_25,0
+Neurons,V1,Sst_32,-0.931560185
+Neurons,V1,Sst_14,2.523367353
+Neurons,V1,Sst_6,1.145655034
+Neurons,V1,Sst_20,2.135201589
+Neurons,V1,Sst_34,1.411806068
+Neurons,V1,Sst_3,0.809826104
+Neurons,V1,Sst_13,-0.872578025
+Neurons,V1,Sst_23,-0.79856042
+Neurons,V1,Sst_28,-0.765451667
+Neurons,V1,Sst_15,1.05307341
+Neurons,V1,Sst_2,-1.21220561
+Neurons,V1,Sst_11,-1.283596539
+Neurons,V1,Sst_8,-1.024601117
+Neurons,V1,Sst_1,0
+Neurons,V1,Sst_22,-1.399607042
+Neurons,V1,Sst_18,0
+Neurons,V1,Sst_29,-1.240197556
+Neurons,V1,Sst_27,0
+Neurons,V1,Sst_9,-1.50420997
+Neurons,V1,Sst Chodl_1,-0.698135843
+Neurons,V1,Lamp5 Lhx6_1,-1.062417327
+Neurons,V1,Lamp5_2,-1.061225639
+Neurons,V1,Lamp5_3,0
+Neurons,V1,Lamp5_4,-0.831120103
+Neurons,V1,Lamp5_1,-0.795172238
+Neurons,V1,Lamp5_7,0
+Neurons,V1,Lamp5_5,-0.812801058
+Neurons,V1,Lamp5_6,0
+Neurons,V1,Pax6_2,-1.071486099
+Neurons,V1,Pax6_4,-0.695783237
+Neurons,V1,Pax6_1,-1.014293185
+Neurons,V1,Pax6_3,-1.003503945
+Neurons,V1,Sncg_4,-0.744876595
+Neurons,V1,Sncg_7,-0.91664605
+Neurons,V1,Sncg_1,0
+Neurons,V1,Sncg_2,-1.359550919
+Neurons,V1,Sncg_5,-1.385879975
+Neurons,V1,Sncg_3,0
+Neurons,V1,Sncg_6,-0.908961133
+Neurons,V1,Sncg_8,0
+Neurons,V1,Vip_28,0
+Neurons,V1,Vip_5,-0.798771983
+Neurons,V1,Vip_25,-1.045562445
+Neurons,V1,Vip_26,0
+Neurons,V1,Vip_29,0
+Neurons,V1,Vip_16,-1.301291786
+Neurons,V1,Vip_7,-0.890893237
+Neurons,V1,Vip_27,0
+Neurons,V1,Vip_8,-0.905545719
+Neurons,V1,Vip_17,0
+Neurons,V1,Vip_21,-0.737700775
+Neurons,V1,Vip_15,0
+Neurons,V1,Vip_23,-0.853656457
+Neurons,V1,Vip_12,0
+Neurons,V1,Vip_24,0
+Neurons,V1,Vip_3,-1.168440548
+Neurons,V1,Vip_22,2.156419413
+Neurons,V1,Vip_9,-1.276642738
+Neurons,V1,Vip_18,-0.911828709
+Neurons,V1,Vip_4,-0.63186874
+Neurons,V1,Vip_14,-0.802849938
+Neurons,V1,Vip_6,-0.721938928
+Neurons,V1,Vip_10,0
+Neurons,V1,Vip_11,-0.671627383
+Neurons,V1,Vip_20,-1.032945234
+Neurons,V1,Vip_13,-0.87132166
+Neurons,V1,Vip_2,-0.959591588
+Neurons,V1,Vip_1,0
+Neurons,V1,Vip_19,-1.122378203
+Non-neurons,ACC,OPC_1,0
+Non-neurons,ACC,Oligo_1,0
+Non-neurons,ACC,Oligo_2,-0.816553542
+Non-neurons,ACC,Oligo_3,0
+Non-neurons,ACC,Oligo_4,-0.628568177
+Non-neurons,ACC,Astro_5,0
+Non-neurons,ACC,Astro_2,0
+Non-neurons,ACC,Astro_3,0
+Non-neurons,ACC,Astro_1,0
+Non-neurons,ACC,Astro_4,0
+Non-neurons,ACC,Endo_1,0
+Non-neurons,ACC,Endo_2,0
+Non-neurons,ACC,VLMC_1,0
+Non-neurons,ACC,VLMC_2,0
+Non-neurons,ACC,Micro/PVM_1,0
+Non-neurons,DLPFC,OPC_1,0.442960312
+Non-neurons,DLPFC,Oligo_1,0
+Non-neurons,DLPFC,Oligo_2,0
+Non-neurons,DLPFC,Oligo_3,0
+Non-neurons,DLPFC,Oligo_4,0
+Non-neurons,DLPFC,Astro_5,0
+Non-neurons,DLPFC,Astro_2,0.7861713
+Non-neurons,DLPFC,Astro_3,0
+Non-neurons,DLPFC,Astro_1,0
+Non-neurons,DLPFC,Astro_4,0
+Non-neurons,DLPFC,Endo_1,0
+Non-neurons,DLPFC,Endo_2,0
+Non-neurons,DLPFC,VLMC_1,0
+Non-neurons,DLPFC,VLMC_2,0
+Non-neurons,DLPFC,Micro/PVM_1,0
+Non-neurons,M1,OPC_1,-0.528191034
+Non-neurons,M1,Oligo_1,0
+Non-neurons,M1,Oligo_2,0
+Non-neurons,M1,Oligo_3,0
+Non-neurons,M1,Oligo_4,0
+Non-neurons,M1,Astro_5,-0.593959365
+Non-neurons,M1,Astro_2,0
+Non-neurons,M1,Astro_3,0
+Non-neurons,M1,Astro_1,0
+Non-neurons,M1,Astro_4,0
+Non-neurons,M1,Endo_1,0
+Non-neurons,M1,Endo_2,0
+Non-neurons,M1,VLMC_1,0
+Non-neurons,M1,VLMC_2,0
+Non-neurons,M1,Micro/PVM_1,-0.558857723
+Non-neurons,S1,OPC_1,0
+Non-neurons,S1,Oligo_1,0
+Non-neurons,S1,Oligo_2,0.945884775
+Non-neurons,S1,Oligo_3,0
+Non-neurons,S1,Oligo_4,0
+Non-neurons,S1,Astro_5,0
+Non-neurons,S1,Astro_2,0
+Non-neurons,S1,Astro_3,0
+Non-neurons,S1,Astro_1,0
+Non-neurons,S1,Astro_4,0
+Non-neurons,S1,Endo_1,0
+Non-neurons,S1,Endo_2,0
+Non-neurons,S1,VLMC_1,0
+Non-neurons,S1,VLMC_2,0
+Non-neurons,S1,Micro/PVM_1,0
+Non-neurons,MTG,OPC_1,0
+Non-neurons,MTG,Oligo_1,0
+Non-neurons,MTG,Oligo_2,0
+Non-neurons,MTG,Oligo_3,0
+Non-neurons,MTG,Oligo_4,0.476324204
+Non-neurons,MTG,Astro_5,0
+Non-neurons,MTG,Astro_2,0
+Non-neurons,MTG,Astro_3,0
+Non-neurons,MTG,Astro_1,0
+Non-neurons,MTG,Astro_4,0
+Non-neurons,MTG,Endo_1,0
+Non-neurons,MTG,Endo_2,0
+Non-neurons,MTG,VLMC_1,0
+Non-neurons,MTG,VLMC_2,0
+Non-neurons,MTG,Micro/PVM_1,0
+Non-neurons,A1,OPC_1,0
+Non-neurons,A1,Oligo_1,0
+Non-neurons,A1,Oligo_2,0
+Non-neurons,A1,Oligo_3,0
+Non-neurons,A1,Oligo_4,0
+Non-neurons,A1,Astro_5,0
+Non-neurons,A1,Astro_2,0
+Non-neurons,A1,Astro_3,0
+Non-neurons,A1,Astro_1,0
+Non-neurons,A1,Astro_4,0
+Non-neurons,A1,Endo_1,0
+Non-neurons,A1,Endo_2,0
+Non-neurons,A1,VLMC_1,0
+Non-neurons,A1,VLMC_2,0
+Non-neurons,A1,Micro/PVM_1,0
+Non-neurons,ANG,OPC_1,0
+Non-neurons,ANG,Oligo_1,0
+Non-neurons,ANG,Oligo_2,0
+Non-neurons,ANG,Oligo_3,-0.596816479
+Non-neurons,ANG,Oligo_4,0
+Non-neurons,ANG,Astro_5,0
+Non-neurons,ANG,Astro_2,0
+Non-neurons,ANG,Astro_3,0
+Non-neurons,ANG,Astro_1,0
+Non-neurons,ANG,Astro_4,0
+Non-neurons,ANG,Endo_1,0
+Non-neurons,ANG,Endo_2,0
+Non-neurons,ANG,VLMC_1,0
+Non-neurons,ANG,VLMC_2,0
+Non-neurons,ANG,Micro/PVM_1,0
+Non-neurons,V1,OPC_1,0
+Non-neurons,V1,Oligo_1,0
+Non-neurons,V1,Oligo_2,0
+Non-neurons,V1,Oligo_3,0
+Non-neurons,V1,Oligo_4,0
+Non-neurons,V1,Astro_5,0.60836827
+Non-neurons,V1,Astro_2,0
+Non-neurons,V1,Astro_3,0
+Non-neurons,V1,Astro_1,0.443746637
+Non-neurons,V1,Astro_4,0
+Non-neurons,V1,Endo_1,0
+Non-neurons,V1,Endo_2,0
+Non-neurons,V1,VLMC_1,0
+Non-neurons,V1,VLMC_2,0
+Non-neurons,V1,Micro/PVM_1,0

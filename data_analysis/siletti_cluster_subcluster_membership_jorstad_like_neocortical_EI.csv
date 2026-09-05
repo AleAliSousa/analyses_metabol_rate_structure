@@ -138,6 +138,28 @@
 "E","L2/3 IT + L4 IT","Upper-layer intratelencephalic","138","2777",11601
 "E","L2/3 IT + L4 IT","Upper-layer intratelencephalic","138","2778",24013
 "E","L2/3 IT + L4 IT","Upper-layer intratelencephalic","138","2779",3242
+"E","L5 ET","Miscellaneous","113","2545",120
+"E","L5 ET","Miscellaneous","113","2546",126
+"E","L5 ET","Miscellaneous","113","2547",191
+"E","L5 ET","Miscellaneous","113","2548",127
+"E","L5 ET","Miscellaneous","113","2550",64
+"E","L5 ET","Miscellaneous","114","2532",101
+"E","L5 ET","Miscellaneous","114","2533",104
+"E","L5 ET","Miscellaneous","114","2534",99
+"E","L5 ET","Miscellaneous","114","2535",70
+"E","L5 ET","Miscellaneous","114","2536",146
+"E","L5 ET","Miscellaneous","114","2537",37
+"E","L5 ET","Miscellaneous","114","2540",196
+"E","L5 ET","Miscellaneous","117","2518",46
+"E","L5 ET","Miscellaneous","117","2519",162
+"E","L5 ET","Miscellaneous","117","2520",8
+"E","L5 ET","Miscellaneous","117","2521",193
+"E","L5 ET","Miscellaneous","117","2522",442
+"E","L5 ET","Miscellaneous","117","2523",56
+"E","L5 ET","Miscellaneous","117","2524",202
+"E","L5 ET","Miscellaneous","117","2525",61
+"E","L5 ET","Miscellaneous","118","2516",5
+"E","L5 ET","Miscellaneous","118","2517",24
 "E","L5 IT + L6 IT + L6 IT Car3","Deep-layer intratelencephalic","136","2744",3
 "E","L5 IT + L6 IT + L6 IT Car3","Deep-layer intratelencephalic","136","2745",1
 "E","L5 IT + L6 IT + L6 IT Car3","Deep-layer intratelencephalic","137","2746",958
@@ -453,442 +475,442 @@
 "E","L6 CT + L6b","Deep-layer corticothalamic and 6b","112","2905",2622
 "E","L6 CT + L6b","Deep-layer corticothalamic and 6b","112","2906",1369
 "E","L6 CT + L6b","Deep-layer corticothalamic and 6b","112","2907",137
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","479",7
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","480",49
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","481",2
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","622",2
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","623",3
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","624",3
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","625",2
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","626",2
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","627",12
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","628",31
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","629",25
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","276","630",12
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","632",161
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","633",118
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","634",223
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","635",198
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","636",346
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","637",76
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","277","645",5
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","638",185
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","639",665
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","640",1967
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","641",708
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","642",810
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","643",428
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","278","644",44
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","594",3
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","595",216
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","596",5
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","611",186
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","612",171
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","613",197
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","614",533
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","615",371
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","616",372
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","617",111
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","618",40
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","619",523
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","279","620",512
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","580",230
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","581",300
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","582",300
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","583",286
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","584",408
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","585",634
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","586",418
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","280","587",424
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","281","589",140
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","281","590",345
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","281","591",417
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","281","592",197
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","281","593",166
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","563",119
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","564",5
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","565",825
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","566",1762
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","567",1101
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","568",1143
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","569",1362
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","570",352
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","282","571",514
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","283","558",1218
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","283","559",486
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","283","560",390
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","283","561",4395
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","283","562",887
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","545",234
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","546",436
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","547",220
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","548",675
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","549",317
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","550",544
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","551",828
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","552",895
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","553",838
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","554",210
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","284","555",640
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","588",92
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","600",14
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","601",344
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","602",168
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","603",210
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","604",445
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","605",53
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","606",111
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","607",272
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","608",283
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","609",349
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","610",192
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","285","631",18
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","425",597
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","426",3572
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","427",1573
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","428",619
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","556",791
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","286","557",2325
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","287","431",2875
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","287","432",113
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","287","433",4291
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","287","434",1262
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","287","435",23
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","288","429",10198
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","288","430",2274
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","288","436",128
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","288","437",1497
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","288","438",1333
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","496",307
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","522",992
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","523",1514
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","524",706
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","525",686
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","526",1007
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","527",1514
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","528",1492
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","529",1922
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","289","530",162
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","514",2951
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","515",1548
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","532",507
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","533",1306
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","534",2945
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","535",1398
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","536",2910
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","537",337
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","290","538",1342
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","531",2089
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","539",626
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","540",1177
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","541",1671
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","542",1253
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","543",944
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","291","544",272
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","572",561
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","573",1439
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","574",1328
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","575",1099
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","576",1627
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","577",585
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","578",1425
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","292","579",1356
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","505",2427
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","507",527
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","508",1191
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","516",1411
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","517",1733
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","518",735
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","519",2352
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","520",1379
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","521",337
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","293","598",62
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","501",897
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","502",927
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","503",1071
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","504",973
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","506",675
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","509",497
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","510",753
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","511",484
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","512",620
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","513",449
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","599",24
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","294","621",270
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","491",4
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","492",136
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","493",185
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","494",334
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","495",580
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","497",256
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","498",667
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","499",395
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","295","500",262
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","483",1221
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","484",265
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","485",589
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","486",751
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","487",773
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","488",882
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","489",494
-"I","LAMP5 + SNCG + VIP + PAX6","CGE interneuron","296","490",1097
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","264","374",3229
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","264","375",887
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","264","376",593
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","264","377",201
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","265","379",1240
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","265","380",391
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","265","382",190
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","265","383",808
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","378",63
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","381",53
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","384",86
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","385",203
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","386",188
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","387",3
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","266","388",1
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","472",13
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","473",2
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","474",1
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","475",7
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","476",4
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","477",72
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","267","478",12
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","268","444",15
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","268","459",2
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","268","460",55
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","268","468",3
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","268","469",7
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","457",4
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","463",334
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","464",290
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","465",258
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","466",47
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","269","467",135
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","270","439",46
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","270","440",2278
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","270","441",425
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","270","442",887
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","271","443",592
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","271","446",453
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","271","461",432
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","271","462",686
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","272","445",1088
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","273","447",614
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","273","470",90
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","273","471",89
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","274","448",842
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","274","449",357
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","274","450",3641
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","451",133
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","452",373
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","453",218
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","454",195
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","455",191
-"I","LAMP5 LHX6 + Chandelier","LAMP5-LHX6 and Chandelier","275","456",173
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","328",30
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","329",195
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","330",113
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","331",57
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","392",6
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","395",125
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","396",5
-"I","PVALB + SST + SST CHODL","MGE interneuron","236","397",3
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","319",523
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","345",274
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","346",374
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","347",905
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","348",492
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","349",463
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","350",510
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","351",601
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","352",422
-"I","PVALB + SST + SST CHODL","MGE interneuron","239","353",528
-"I","PVALB + SST + SST CHODL","MGE interneuron","240","324",158
-"I","PVALB + SST + SST CHODL","MGE interneuron","240","325",425
-"I","PVALB + SST + SST CHODL","MGE interneuron","240","326",514
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","315",672
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","316",550
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","317",608
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","320",573
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","321",437
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","322",1172
-"I","PVALB + SST + SST CHODL","MGE interneuron","241","323",450
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","299",637
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","308",802
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","309",1935
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","310",2819
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","311",1371
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","312",1196
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","313",1176
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","314",1478
-"I","PVALB + SST + SST CHODL","MGE interneuron","242","318",665
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","300",66
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","301",2295
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","302",1121
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","303",1938
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","304",1596
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","305",2818
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","306",1645
-"I","PVALB + SST + SST CHODL","MGE interneuron","243","307",2459
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","286",72
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","287",137
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","288",116
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","289",177
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","290",85
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","291",54
-"I","PVALB + SST + SST CHODL","MGE interneuron","244","292",113
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","187",4
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","188",53
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","189",14
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","190",1
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","294",38
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","295",23
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","296",51
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","297",5
-"I","PVALB + SST + SST CHODL","MGE interneuron","245","298",156
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","230",45
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","231",39
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","232",120
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","233",2
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","234",3
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","235",9
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","237",16
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","239",3
-"I","PVALB + SST + SST CHODL","MGE interneuron","246","389",1
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","240",2
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","241",6
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","242",1
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","243",20
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","245",3
-"I","PVALB + SST + SST CHODL","MGE interneuron","247","246",1
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","247",142
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","248",307
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","249",136
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","251",67
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","252",173
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","253",168
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","254",2
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","255",208
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","256",292
-"I","PVALB + SST + SST CHODL","MGE interneuron","248","285",324
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","222",15
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","250",256
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","258",249
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","259",396
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","260",420
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","261",414
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","262",129
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","263",422
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","264",196
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","265",131
-"I","PVALB + SST + SST CHODL","MGE interneuron","249","267",376
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","266",1070
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","268",838
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","269",1215
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","270",1424
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","271",857
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","272",2194
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","273",2050
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","274",942
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","275",1744
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","276",487
-"I","PVALB + SST + SST CHODL","MGE interneuron","250","283",768
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","277",424
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","278",843
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","279",1501
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","280",5585
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","281",2209
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","282",1031
-"I","PVALB + SST + SST CHODL","MGE interneuron","251","284",1943
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","215",108
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","218",738
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","221",42
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","223",1362
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","224",1322
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","225",1361
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","226",1222
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","227",1126
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","228",1808
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","229",1347
-"I","PVALB + SST + SST CHODL","MGE interneuron","252","257",1545
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","210",435
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","211",574
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","212",489
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","213",422
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","214",551
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","216",484
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","217",497
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","219",244
-"I","PVALB + SST + SST CHODL","MGE interneuron","253","373",247
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","201",324
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","202",420
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","203",511
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","204",46
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","205",747
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","206",905
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","207",633
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","208",642
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","209",390
-"I","PVALB + SST + SST CHODL","MGE interneuron","254","220",457
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","365",22
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","366",281
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","367",791
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","368",317
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","369",162
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","370",240
-"I","PVALB + SST + SST CHODL","MGE interneuron","255","371",46
-"I","PVALB + SST + SST CHODL","MGE interneuron","256","360",145
-"I","PVALB + SST + SST CHODL","MGE interneuron","256","361",263
-"I","PVALB + SST + SST CHODL","MGE interneuron","256","362",1999
-"I","PVALB + SST + SST CHODL","MGE interneuron","256","363",869
-"I","PVALB + SST + SST CHODL","MGE interneuron","256","364",37
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","393",332
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","394",392
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","398",1087
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","399",1040
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","403",1028
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","404",1857
-"I","PVALB + SST + SST CHODL","MGE interneuron","257","409",2136
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","354",371
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","355",823
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","356",616
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","357",790
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","358",661
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","359",1780
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","372",659
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","400",765
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","401",1566
-"I","PVALB + SST + SST CHODL","MGE interneuron","258","402",735
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","337",1244
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","338",1535
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","339",1179
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","340",1076
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","341",3155
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","342",1119
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","343",859
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","344",1565
-"I","PVALB + SST + SST CHODL","MGE interneuron","259","412",2074
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","332",234
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","333",259
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","334",254
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","335",774
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","336",635
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","421",1561
-"I","PVALB + SST + SST CHODL","MGE interneuron","260","422",614
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","410",1248
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","411",2562
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","413",3358
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","414",1502
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","415",2251
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","416",1433
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","417",1645
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","418",2529
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","419",1168
-"I","PVALB + SST + SST CHODL","MGE interneuron","261","420",456
-"I","PVALB + SST + SST CHODL","MGE interneuron","262","405",1099
-"I","PVALB + SST + SST CHODL","MGE interneuron","262","406",568
-"I","PVALB + SST + SST CHODL","MGE interneuron","262","407",947
-"I","PVALB + SST + SST CHODL","MGE interneuron","262","408",5734
-"I","PVALB + SST + SST CHODL","MGE interneuron","263","423",782
-"I","PVALB + SST + SST CHODL","MGE interneuron","263","424",4746
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","479",7
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","480",49
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","481",2
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","622",2
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","623",3
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","624",3
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","625",2
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","626",2
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","627",12
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","628",31
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","629",25
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","276","630",12
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","632",161
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","633",118
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","634",223
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","635",198
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","636",346
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","637",76
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","277","645",5
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","638",185
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","639",665
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","640",1967
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","641",708
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","642",810
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","643",428
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","278","644",44
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","594",3
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","595",216
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","596",5
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","611",186
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","612",171
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","613",197
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","614",533
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","615",371
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","616",372
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","617",111
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","618",40
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","619",523
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","279","620",512
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","580",230
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","581",300
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","582",300
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","583",286
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","584",408
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","585",634
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","586",418
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","280","587",424
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","281","589",140
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","281","590",345
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","281","591",417
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","281","592",197
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","281","593",166
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","563",119
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","564",5
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","565",825
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","566",1762
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","567",1101
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","568",1143
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","569",1362
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","570",352
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","282","571",514
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","283","558",1218
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","283","559",486
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","283","560",390
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","283","561",4395
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","283","562",887
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","545",234
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","546",436
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","547",220
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","548",675
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","549",317
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","550",544
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","551",828
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","552",895
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","553",838
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","554",210
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","284","555",640
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","588",92
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","600",14
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","601",344
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","602",168
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","603",210
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","604",445
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","605",53
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","606",111
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","607",272
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","608",283
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","609",349
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","610",192
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","285","631",18
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","425",597
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","426",3572
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","427",1573
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","428",619
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","556",791
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","286","557",2325
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","287","431",2875
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","287","432",113
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","287","433",4291
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","287","434",1262
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","287","435",23
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","288","429",10198
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","288","430",2274
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","288","436",128
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","288","437",1497
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","288","438",1333
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","496",307
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","522",992
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","523",1514
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","524",706
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","525",686
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","526",1007
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","527",1514
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","528",1492
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","529",1922
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","289","530",162
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","514",2951
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","515",1548
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","532",507
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","533",1306
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","534",2945
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","535",1398
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","536",2910
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","537",337
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","290","538",1342
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","531",2089
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","539",626
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","540",1177
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","541",1671
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","542",1253
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","543",944
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","291","544",272
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","572",561
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","573",1439
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","574",1328
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","575",1099
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","576",1627
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","577",585
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","578",1425
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","292","579",1356
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","505",2427
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","507",527
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","508",1191
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","516",1411
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","517",1733
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","518",735
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","519",2352
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","520",1379
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","521",337
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","293","598",62
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","501",897
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","502",927
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","503",1071
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","504",973
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","506",675
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","509",497
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","510",753
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","511",484
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","512",620
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","513",449
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","599",24
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","294","621",270
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","491",4
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","492",136
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","493",185
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","494",334
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","495",580
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","497",256
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","498",667
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","499",395
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","295","500",262
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","483",1221
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","484",265
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","485",589
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","486",751
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","487",773
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","488",882
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","489",494
+"I","Lamp5 + Pax6 + Sncg + Vip","CGE interneuron","296","490",1097
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","264","374",3229
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","264","375",887
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","264","376",593
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","264","377",201
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","265","379",1240
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","265","380",391
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","265","382",190
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","265","383",808
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","378",63
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","381",53
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","384",86
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","385",203
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","386",188
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","387",3
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","266","388",1
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","472",13
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","473",2
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","474",1
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","475",7
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","476",4
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","477",72
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","267","478",12
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","268","444",15
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","268","459",2
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","268","460",55
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","268","468",3
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","268","469",7
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","457",4
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","463",334
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","464",290
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","465",258
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","466",47
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","269","467",135
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","270","439",46
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","270","440",2278
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","270","441",425
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","270","442",887
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","271","443",592
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","271","446",453
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","271","461",432
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","271","462",686
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","272","445",1088
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","273","447",614
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","273","470",90
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","273","471",89
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","274","448",842
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","274","449",357
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","274","450",3641
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","451",133
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","452",373
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","453",218
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","454",195
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","455",191
+"I","Lamp5 Lhx6 + Chandelier","LAMP5-LHX6 and Chandelier","275","456",173
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","328",30
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","329",195
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","330",113
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","331",57
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","392",6
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","395",125
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","396",5
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","236","397",3
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","319",523
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","345",274
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","346",374
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","347",905
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","348",492
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","349",463
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","350",510
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","351",601
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","352",422
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","239","353",528
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","240","324",158
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","240","325",425
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","240","326",514
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","315",672
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","316",550
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","317",608
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","320",573
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","321",437
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","322",1172
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","241","323",450
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","299",637
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","308",802
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","309",1935
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","310",2819
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","311",1371
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","312",1196
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","313",1176
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","314",1478
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","242","318",665
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","300",66
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","301",2295
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","302",1121
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","303",1938
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","304",1596
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","305",2818
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","306",1645
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","243","307",2459
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","286",72
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","287",137
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","288",116
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","289",177
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","290",85
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","291",54
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","244","292",113
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","187",4
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","188",53
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","189",14
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","190",1
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","294",38
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","295",23
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","296",51
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","297",5
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","245","298",156
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","230",45
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","231",39
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","232",120
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","233",2
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","234",3
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","235",9
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","237",16
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","239",3
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","246","389",1
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","240",2
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","241",6
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","242",1
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","243",20
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","245",3
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","247","246",1
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","247",142
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","248",307
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","249",136
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","251",67
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","252",173
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","253",168
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","254",2
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","255",208
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","256",292
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","248","285",324
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","222",15
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","250",256
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","258",249
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","259",396
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","260",420
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","261",414
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","262",129
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","263",422
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","264",196
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","265",131
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","249","267",376
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","266",1070
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","268",838
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","269",1215
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","270",1424
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","271",857
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","272",2194
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","273",2050
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","274",942
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","275",1744
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","276",487
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","250","283",768
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","277",424
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","278",843
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","279",1501
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","280",5585
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","281",2209
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","282",1031
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","251","284",1943
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","215",108
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","218",738
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","221",42
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","223",1362
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","224",1322
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","225",1361
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","226",1222
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","227",1126
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","228",1808
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","229",1347
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","252","257",1545
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","210",435
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","211",574
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","212",489
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","213",422
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","214",551
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","216",484
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","217",497
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","219",244
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","253","373",247
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","201",324
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","202",420
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","203",511
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","204",46
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","205",747
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","206",905
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","207",633
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","208",642
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","209",390
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","254","220",457
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","365",22
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","366",281
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","367",791
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","368",317
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","369",162
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","370",240
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","255","371",46
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","256","360",145
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","256","361",263
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","256","362",1999
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","256","363",869
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","256","364",37
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","393",332
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","394",392
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","398",1087
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","399",1040
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","403",1028
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","404",1857
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","257","409",2136
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","354",371
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","355",823
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","356",616
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","357",790
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","358",661
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","359",1780
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","372",659
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","400",765
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","401",1566
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","258","402",735
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","337",1244
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","338",1535
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","339",1179
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","340",1076
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","341",3155
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","342",1119
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","343",859
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","344",1565
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","259","412",2074
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","332",234
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","333",259
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","334",254
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","335",774
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","336",635
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","421",1561
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","260","422",614
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","410",1248
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","411",2562
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","413",3358
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","414",1502
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","415",2251
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","416",1433
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","417",1645
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","418",2529
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","419",1168
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","261","420",456
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","262","405",1099
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","262","406",568
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","262","407",947
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","262","408",5734
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","263","423",782
+"I","Pvalb + Sst + Sst Chodl","MGE interneuron","263","424",4746

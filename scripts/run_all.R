@@ -74,6 +74,10 @@ RUN_ORDER <- c(
   "s1b_3_nn_transcriptomic_nonneuronal_telencephalon_25052026.R",
   "s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R",
   "s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R",
+  "s1b_5a_neocortical_cell_classes_x_neocortical_regions.R",
+  "s1b_5b_neocortical_cell_classes_x_cerebral_cortex_regions.R",
+  "s1b_5c_cerebral_cortex_cell_classes_x_cerebral_cortex_regions.R",
+  "s1b_5d_EI_cell_class_x_anatomical_scope_definition_table.R",
   "s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R",
   
   # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)

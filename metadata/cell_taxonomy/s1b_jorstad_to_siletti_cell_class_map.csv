@@ -1,0 +1,19 @@
+jorstad_class,jorstad_neighborhood,jorstad_subclass,jorstad_description,EI_class,siletti_supercluster_term,siletti_cluster_ids,mapping_level,mapping_status,mapping_note
+Glutamatergic,IT,L2/3 IT,Layer 2/3 intratelencephalic-projecting,E,Upper-layer intratelencephalic,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,IT,L4 IT,Layer 4 intratelencephalic-projecting,E,Upper-layer intratelencephalic,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,IT,L5 IT,Layer 5 intratelencephalic-projecting,E,Deep-layer intratelencephalic,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,IT,L6 IT,Layer 6 intratelencephalic-projecting,E,Deep-layer intratelencephalic,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,IT,L6 IT Car3,Layer 6 intratelencephalic-projecting (Car3-like),E,Deep-layer intratelencephalic,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,Non-IT,L5 ET,Layer 5 extratelencephalic-projecting,E,Miscellaneous,113;114;117;118,cluster,cluster_specific_match,Siletti L5ET clusters must be selected within the mixed Miscellaneous supercluster
+Glutamatergic,Non-IT,L5/6 NP,Layer 5/6 near-projecting,E,Deep-layer near-projecting,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,Non-IT,L6 CT,Layer 6 corticothalamic-projecting,E,Deep-layer corticothalamic and 6b,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+Glutamatergic,Non-IT,L6b,Layer 6b,E,Deep-layer corticothalamic and 6b,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,CGE,Lamp5,LAMP5-expressing interneuron,I,CGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,CGE,Lamp5 Lhx6,LAMP5- and LHX6-expressing interneuron,I,LAMP5-LHX6 and Chandelier,,supercluster,mixed_neighborhood_siletti_group,Siletti combines this CGE-associated subclass with Chandelier
+GABAergic,CGE,Pax6,PAX6-expressing interneuron,I,CGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,CGE,Sncg,SNCG-like interneuron,I,CGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,CGE,Vip,VIP-expressing interneuron,I,CGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,MGE,Chandelier,Chandelier parvalbumin-expressing interneuron,I,LAMP5-LHX6 and Chandelier,,supercluster,mixed_neighborhood_siletti_group,Siletti combines this MGE-associated subclass with LAMP5-LHX6
+GABAergic,MGE,Pvalb,Parvalbumin-expressing interneuron,I,MGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,MGE,Sst,Somatostatin-expressing interneuron,I,MGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster
+GABAergic,MGE,Sst Chodl,Somatostatin- and Chodl-expressing interneuron,I,MGE interneuron,,supercluster,broader_siletti_group,Jorstad subclass is contained in this Siletti supercluster

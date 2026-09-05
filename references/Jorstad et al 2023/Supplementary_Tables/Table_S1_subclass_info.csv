@@ -1,0 +1,25 @@
+﻿Class,Neighborhood,Subclass,Description
+GABAergic,CGE,Lamp5,LAMP5-expressing interneuron
+GABAergic,CGE,Lamp5 Lhx6,LAMP5- and LHX6-expressing interneuron
+GABAergic,CGE,Pax6,PAX6-expressing interneuron
+GABAergic,CGE,Sncg,SNCG-like interneuron
+GABAergic,CGE,Vip,VIP-expressing interneuron
+GABAergic,MGE,Chandelier,Chandelier parvalbumin-expressing interneuron
+GABAergic,MGE,Pvalb,Parvalbumin-expressing interneuron
+GABAergic,MGE,Sst,Somatostatin-expressing interneuron
+GABAergic,MGE,Sst Chodl,Somatostatin- and Chodl-expressing interneuron
+Glutamatergic,IT,L2/3 IT,Layer 2/3 intratelencephalic-projecting
+Glutamatergic,IT,L4 IT,Layer 4 intratelencephalic-projecting
+Glutamatergic,IT,L5 IT,Layer 5 intratelencephalic-projecting
+Glutamatergic,IT,L6 IT,Layer 6 intratelencephalic-projecting
+Glutamatergic,IT,L6 IT Car3,Layer 6 intratelencephalic-projecting (Car3-like)
+Glutamatergic,Non-IT,L5 ET,Layer 5 extratelencephalic-projecting
+Glutamatergic,Non-IT,L5/6 NP,Layer 5/6 near-projecting
+Glutamatergic,Non-IT,L6 CT,Layer 6 corticothalamic-projecting
+Glutamatergic,Non-IT,L6b,Layer 6b
+Non-neuronal,NN,Astrocyte,Astrocyte
+Non-neuronal,NN,Endothelial,Endothelial cell
+Non-neuronal,NN,Micro/PVM,Microglia/Perivascular macrophage
+Non-neuronal,NN,Oligo,Oligodendrocyte
+Non-neuronal,NN,OPC,Oligodendrocyte precursor cell
+Non-neuronal,NN,VLMC,Vascular leptomeningeal cell
