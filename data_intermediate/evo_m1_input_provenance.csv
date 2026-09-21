@@ -9,4 +9,4 @@
 "heiss_metabolic_rates","shared","Heiss_etal_2004/Heiss_etal_2004_TABLE1.csv","data_raw/Heiss_etal_2004_TABLE1.csv","985a0ea004632d38e465317e6f573748"
 "boyer_harrington_table1","s4b","__merging_fossil_brain_glucose/inputs/Boyer_Harrington_2018_Table1.csv","data_raw/Boyer_Harrington_2018_Table1.csv","52221a5f1d498d9df31b609f75d88b18"
 "boyer_harrington_table2","s4b","__merging_fossil_brain_glucose/inputs/Boyer_Harrington_2018_Table2.csv","data_raw/Boyer_Harrington_2018_Table2.csv","10ba20efed0abf6745cba1bf1141f3e2"
-"comparative_volumes","traits","__merging_volumes/volumes_wide.csv","data_raw/volumes_wide.csv","ec3c7c23c535741ea4821cfac5d61b7a"
+"comparative_volumes","traits","__merging_volumes/volumes_wide.csv","data_raw/volumes_wide.csv","6a29df110880fdc73326c40ece2a0ad3"
