@@ -1,14 +1,16 @@
 # =====================================================================
-# Synchronize publication inputs derived from Evo-M1-Trait-Data.
+# 00_sync_evo_m1_inputs-restricted.R
 #
-# EVO_M1_TRAIT_DATA is the single configurable upstream project root.
+# OPT-IN provenance layer. Pulls the RESTRICTED raw source files (author /
+# ERA-team workbooks) that the public group-mean inputs were derived from,
+# into a GITIGNORED data_restricted/ area, so that
+# 00_derive_from_restricted.R can regenerate and verify the public derived
+# files for peer review. This is NOT part of the default public pipeline and
+# only runs when Evo-M1-Trait-Data-restricted is available.
+#
+# EVO_M1_TRAIT_DATA_RESTRICTED is the single configurable upstream root.
 # Every source/destination pair is declared in:
-#   metadata/evo_m1_input_manifest.csv
-#
-# If the upstream repository is available, changed files are refreshed in
-# data_raw/. If it is unavailable, existing local snapshots are used so the
-# publication project remains self-contained. Missing local and upstream files
-# are fatal. All upstream paths are validated before any local file is changed.
+#   metadata/evo_m1_input_manifest-restricted.csv
 # =====================================================================
 
 # Locate the repository from either Rscript or an interactive/source call.
@@ -32,13 +34,11 @@ if (!file.exists(file.path(.repo_root, ".git"))) {
 }
 setwd(.repo_root)
 
-# Might need to create a new manifest_path or add one for the restricted data
-
-manifest_path <- "metadata/evo_m1_input_manifest.csv"
-provenance_path <- "data_intermediate/evo_m1_input_provenance.csv"
+manifest_path <- "metadata/evo_m1_input_manifest-restricted.csv"
+provenance_path <- "data_intermediate/evo_m1_input_provenance-restricted.csv"
 
 if (!file.exists(manifest_path)) {
-  stop("Evo-M1 input manifest not found: ", manifest_path, call. = FALSE)
+  stop("Restricted input manifest not found: ", manifest_path, call. = FALSE)
 }
 
 manifest <- read.csv(
@@ -74,49 +74,47 @@ if (anyDuplicated(manifest$local_path)) {
        call. = FALSE)
 }
 
+# Restricted raw files must land in the gitignored data_restricted/ area so
+# they are never committed to this public analysis repository.
 unsafe_source <- grepl("^(/|[A-Za-z]:)", manifest$source_relative_path) |
   grepl("(^|/)\\.\\.(/|$)", manifest$source_relative_path)
-unsafe_local <- !startsWith(manifest$local_path, "data_raw/") |
+unsafe_local <- !startsWith(manifest$local_path, "data_restricted/") |
   grepl("(^|/)\\.\\.(/|$)", manifest$local_path)
 if (any(unsafe_source) || any(unsafe_local)) {
   stop(
-    "Manifest paths must be safe relative source paths and data_raw/ targets.",
+    "Manifest paths must be safe relative source paths and data_restricted/ targets.",
     call. = FALSE
   )
 }
 
-configured_root <- trimws(Sys.getenv("EVO_M1_TRAIT_DATA", unset = ""))
+configured_root <- trimws(Sys.getenv("EVO_M1_TRAIT_DATA_RESTRICTED", unset = ""))
 standard_root <- path.expand(paste0(
-  "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/",
-  "Evo-M1-Trait-Data"
+  "~/Library/CloudStorage/OneDrive-AllenInstitute/",
+  "Evo-M1-Trait-Data-restricted"
 ))
 
 if (nzchar(configured_root)) {
   if (!dir.exists(configured_root)) {
     stop(
-      "EVO_M1_TRAIT_DATA does not identify an existing directory: ",
+      "EVO_M1_TRAIT_DATA_RESTRICTED does not identify an existing directory: ",
       configured_root,
       call. = FALSE
     )
   }
   evo_m1_root <- normalizePath(configured_root)
-  root_source <- "EVO_M1_TRAIT_DATA"
+  root_source <- "EVO_M1_TRAIT_DATA_RESTRICTED"
 } else if (dir.exists(standard_root)) {
   evo_m1_root <- normalizePath(standard_root)
   root_source <- "standard macOS location"
 } else {
   evo_m1_root <- NA_character_
-  root_source <- "local snapshots"
+  root_source <- NA_character_
 }
 
 md5_file <- function(path) {
   unname(as.character(tools::md5sum(path)))
 }
 
-# Replace one file only after a same-directory temporary copy has been
-# checksum-verified. Moving within a directory makes the final replacement
-# atomic on supported local filesystems; the previous file is restored if the
-# move fails.
 atomic_copy <- function(source, destination) {
   dir.create(dirname(destination), recursive = TRUE, showWarnings = FALSE)
   temporary <- tempfile(
@@ -129,7 +127,7 @@ atomic_copy <- function(source, destination) {
     source, temporary,
     overwrite = TRUE, copy.mode = TRUE, copy.date = TRUE
   )) {
-    stop("Could not stage Evo-M1 input: ", source, call. = FALSE)
+    stop("Could not stage restricted input: ", source, call. = FALSE)
   }
   if (!identical(md5_file(source), md5_file(temporary))) {
     stop("Checksum mismatch while staging: ", source, call. = FALSE)
@@ -151,7 +149,7 @@ atomic_copy <- function(source, destination) {
     if (!is.na(backup) && file.exists(backup)) {
       file.rename(backup, destination)
     }
-    stop("Could not install refreshed Evo-M1 input: ", destination,
+    stop("Could not install refreshed restricted input: ", destination,
          call. = FALSE)
   }
   if (!is.na(backup) && file.exists(backup)) unlink(backup)
@@ -159,52 +157,47 @@ atomic_copy <- function(source, destination) {
 }
 
 if (is.na(evo_m1_root)) {
-  missing_local <- manifest$local_path[!file.exists(manifest$local_path)]
-  if (length(missing_local)) {
-    stop(
-      "Evo-M1-Trait-Data is unavailable and local snapshot(s) are missing: ",
-      paste(missing_local, collapse = ", "),
-      ". Set EVO_M1_TRAIT_DATA to the upstream repository root.",
-      call. = FALSE
-    )
-  }
-  hashes <- vapply(manifest$local_path, md5_file, character(1))
-  message(
-    "Evo-M1-Trait-Data not found; using ", nrow(manifest),
-    " versioned data_raw snapshots."
-  )
-} else {
-  source_paths <- file.path(evo_m1_root, manifest$source_relative_path)
-  missing_upstream <- manifest$source_relative_path[!file.exists(source_paths)]
-  if (length(missing_upstream)) {
-    stop(
-      "No files were changed. Evo-M1 source file(s) are missing: ",
-      paste(missing_upstream, collapse = ", "),
-      call. = FALSE
-    )
-  }
-
-  source_hashes <- vapply(source_paths, md5_file, character(1))
-  local_hashes <- vapply(manifest$local_path, function(path) {
-    if (file.exists(path)) md5_file(path) else NA_character_
-  }, character(1))
-  changed <- is.na(local_hashes) | source_hashes != local_hashes
-
-  for (i in which(changed)) {
-    atomic_copy(source_paths[i], manifest$local_path[i])
-  }
-
-  hashes <- vapply(manifest$local_path, md5_file, character(1))
-  if (!identical(unname(source_hashes), unname(hashes))) {
-    stop("One or more refreshed local inputs failed checksum validation.",
-         call. = FALSE)
-  }
-  message(
-    "Evo-M1 input root (", root_source, "): ", evo_m1_root,
-    "\nRefreshed ", sum(changed), " file(s); ", sum(!changed),
-    " already current."
+  # This is expected on any machine without the private repo. The restricted
+  # provenance layer is optional; the default public pipeline does not need it.
+  stop(
+    "Evo-M1-Trait-Data-restricted is not available, so restricted raw sources ",
+    "cannot be synced. This is expected outside peer-review reproduction. ",
+    "Set EVO_M1_TRAIT_DATA_RESTRICTED to the private repository root to run ",
+    "the provenance layer.",
+    call. = FALSE
   )
 }
+
+source_paths <- file.path(evo_m1_root, manifest$source_relative_path)
+missing_upstream <- manifest$source_relative_path[!file.exists(source_paths)]
+if (length(missing_upstream)) {
+  stop(
+    "No files were changed. Restricted source file(s) are missing: ",
+    paste(missing_upstream, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+source_hashes <- vapply(source_paths, md5_file, character(1))
+local_hashes <- vapply(manifest$local_path, function(path) {
+  if (file.exists(path)) md5_file(path) else NA_character_
+}, character(1))
+changed <- is.na(local_hashes) | source_hashes != local_hashes
+
+for (i in which(changed)) {
+  atomic_copy(source_paths[i], manifest$local_path[i])
+}
+
+hashes <- vapply(manifest$local_path, md5_file, character(1))
+if (!identical(unname(source_hashes), unname(hashes))) {
+  stop("One or more refreshed restricted inputs failed checksum validation.",
+       call. = FALSE)
+}
+message(
+  "Restricted root (", root_source, "): ", evo_m1_root,
+  "\nRefreshed ", sum(changed), " restricted raw file(s); ", sum(!changed),
+  " already current (in gitignored data_restricted/)."
+)
 
 provenance <- data.frame(
   dependency_id = manifest$dependency_id,
@@ -216,4 +209,4 @@ provenance <- data.frame(
 )
 dir.create(dirname(provenance_path), recursive = TRUE, showWarnings = FALSE)
 write.csv(provenance, provenance_path, row.names = FALSE, na = "")
-message("Wrote dependency provenance: ", provenance_path)
+message("Wrote restricted dependency provenance: ", provenance_path)
