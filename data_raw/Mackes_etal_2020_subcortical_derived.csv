@@ -1,0 +1,15 @@
+"Region","Group","n","taxon","Volume_per_hemisphere.cm3","SD.cm3"
+"Thalamus","UK",21,"Homo sapiens",7.1919,0.7691
+"Caudate","UK",21,"Homo sapiens",3.6643,0.4812
+"Putamen","UK",21,"Homo sapiens",5.1343,0.4621
+"Pallidum","UK",21,"Homo sapiens",1.9529,0.2732
+"Hippocampus","UK",21,"Homo sapiens",3.6145,0.2932
+"Amygdala","UK",21,"Homo sapiens",1.8311,0.1758
+"Nucleus Accumbens","UK",21,"Homo sapiens",0.6981,0.1108
+"Thalamus","Romanian",67,"Homo sapiens",6.3604,0.6502
+"Caudate","Romanian",67,"Homo sapiens",3.4142,0.4655
+"Putamen","Romanian",67,"Homo sapiens",4.9633,0.6273
+"Pallidum","Romanian",67,"Homo sapiens",1.7836,0.2308
+"Hippocampus","Romanian",67,"Homo sapiens",3.3905,0.3287
+"Amygdala","Romanian",67,"Homo sapiens",1.7453,0.1819
+"Nucleus Accumbens","Romanian",67,"Homo sapiens",0.6207,0.0955

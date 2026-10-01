@@ -1,0 +1,19 @@
+"Region","Group","Volume.cm3","Surface.cm2","Thickness.mm"
+"Frontal","Control",157,596,2.62
+"Frontal","DS",87.6,363,2.4
+"Temporal","Control",105,433,2.44
+"Temporal","DS",57.1,240,2.38
+"Parietal","Control",91.8,336,2.76
+"Parietal","DS",50,203,2.47
+"Occipital","Control",48.5,207,2.35
+"Occipital","DS",35.7,143,2.57
+"Total neocortex","Control",403,1572,2.56
+"Total neocortex","DS",230,950,2.43
+"Allocortex","Control",33.2,NA,NA
+"Allocortex","DS",19.7,NA,NA
+"Central gray nuclei","Control",37.9,NA,NA
+"Central gray nuclei","DS",23,NA,NA
+"White matter","Control",416,NA,NA
+"White matter","DS",207,NA,NA
+"Ventricles","Control",20.5,NA,NA
+"Ventricles","DS",70,NA,NA

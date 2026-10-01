@@ -1,0 +1,9 @@
+"Region","Region_code","Group","n","taxon","Neuron_density.per.mm3","Neuron_density.per.mm3.SD","Glia_density.per.mm3","Glia_density.per.mm3.SD","Glia_Neuron_ratio","Glia_Neuron_ratio.SD","Soma_area.um2","Soma_area.um2.SD"
+"Caudate nucleus (dorsal)","dC","TD",5,"Homo sapiens",21061,776,47156,2482,2.24,0.1,154,4
+"Caudate nucleus (dorsal)","dC","WS",5,"Homo sapiens",19496,1471,58304,3595,2.92,0.21,128,8
+"Caudate nucleus (medial)","mC","TD",5,"Homo sapiens",24931,1210,55046,4213,2.18,0.08,158,8
+"Caudate nucleus (medial)","mC","WS",5,"Homo sapiens",22935,843,65990,4266,2.81,0.01,121,12
+"Putamen (associative)","aP","TD",5,"Homo sapiens",26509,1129,59100,4754,2.22,0.12,132,11
+"Putamen (associative)","aP","WS",5,"Homo sapiens",26629,2610,73106,8075,2.7,0.19,101,11
+"Nucleus Accumbens","NA","TD",5,"Homo sapiens",28734,3455,58750,7743,2.03,0.04,143,12
+"Nucleus Accumbens","NA","WS",5,"Homo sapiens",27736,2632,60597,4502,2.23,0.18,112,11

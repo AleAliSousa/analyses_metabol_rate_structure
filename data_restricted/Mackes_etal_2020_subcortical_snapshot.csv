@@ -1,0 +1,8 @@
+Region,UK_mean.cm3,UK_SD.cm3,Romanian_mean.cm3,Romanian_SD.cm3,n_UK,n_Romanian
+Thalamus,7.1919,0.7691,6.3604,0.6502,21,67
+Caudate,3.6643,0.4812,3.4142,0.4655,21,67
+Putamen,5.1343,0.4621,4.9633,0.6273,21,67
+Pallidum,1.9529,0.2732,1.7836,0.2308,21,67
+Hippocampus,3.6145,0.2932,3.3905,0.3287,21,67
+Amygdala,1.8311,0.1758,1.7453,0.1819,21,67
+Nucleus Accumbens,0.6981,0.1108,0.6207,0.0955,21,67

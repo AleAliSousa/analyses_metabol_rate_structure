@@ -1,0 +1,10 @@
+"subset","metric","metric_label","n","slope","slope_se","slope_p","r_squared","adj_r_squared"
+"All regions","opc_frac_lineage_mean","OPC / (OPC + Oligo)  [primary]",23,22.2092696127914,9.77613151097333,0.0337332782574323,0.197278618745062,0.159053791066255
+"All regions","opc_cop_frac_lineage_mean","(OPC + COP) / (OPC + COP + Oligo)",23,21.7021122181024,9.76418517140122,0.0373562799147878,0.190441267322162,0.15189085148036
+"All regions","p_cells_OPC_nonneuronal_mean","OPC / all nonneuronal  [s1b_3_nn comparator]",23,44.694699901627,22.9163033520493,0.064609140672973,0.153357104391281,0.113040776028961
+"Telencephalon","opc_frac_lineage_mean","OPC / (OPC + Oligo)  [primary]",12,35.1274701457957,20.7967092404314,0.122087977744072,0.221972611792482,0.14416987297173
+"Telencephalon","opc_cop_frac_lineage_mean","(OPC + COP) / (OPC + COP + Oligo)",12,33.6906717576145,20.8760002314016,0.137635254127994,0.206632700270553,0.127295970297608
+"Telencephalon","p_cells_OPC_nonneuronal_mean","OPC / all nonneuronal  [s1b_3_nn comparator]",12,52.8276246154589,47.4662958653729,0.291767257104609,0.11021406460829,0.0212354710691193
+"Non-telencephalon","opc_frac_lineage_mean","OPC / (OPC + Oligo)  [primary]",11,13.4054098536413,11.1181346051972,0.258664879003183,0.139066751105448,0.043407501228275
+"Non-telencephalon","opc_cop_frac_lineage_mean","(OPC + COP) / (OPC + COP + Oligo)",11,13.171121039236,11.126274714527,0.266820454288979,0.13472751741512,0.0385861304612447
+"Non-telencephalon","p_cells_OPC_nonneuronal_mean","OPC / all nonneuronal  [s1b_3_nn comparator]",11,32.3714847429477,25.3911929060399,0.23426892837044,0.152972698417216,0.0588585537969061

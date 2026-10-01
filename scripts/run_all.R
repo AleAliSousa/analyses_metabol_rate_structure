@@ -79,6 +79,7 @@ RUN_ORDER <- c(
   "s1b_5c_cerebral_cortex_cell_classes_x_cerebral_cortex_regions.R",
   "s1b_5d_EI_cell_class_x_anatomical_scope_definition_table.R",
   "s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R",
+  "s1b_7_nn_opc_oligodendrocyte_lineage_composition_rcmr.R",
   
   # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)
   "s1c_synaptic_density_metabolic_rate.R",
