@@ -33,8 +33,8 @@
 "UK","lh_temporalpole","temporalpole","L",21,2363.524,427.745,93.342
 "UK","lh_transversetemporal","transversetemporal","L",21,1280.19,255.799,55.82
 "UK","lh_insula","insula","L",21,7114.524,678.975,148.165
-"UK","BrainSegVolNotVent.x","BrainSegVolNotVent.x",NA,21,1177242.095,109776.588,23955.215
-"UK","eTIV.x","eTIV.x",NA,21,1475979.872,134821.505,29420.464
+"UK","BrainSegVolNotVent.x","BrainSegVolNotVent.x",,21,1177242.095,109776.588,23955.215
+"UK","eTIV.x","eTIV.x",,21,1475979.872,134821.505,29420.464
 "UK","rh_bankssts","bankssts","R",21,2301.571,436.322,95.213
 "UK","rh_caudalanteriorcingulate","caudalanteriorcingulate","R",21,2125.143,478.683,104.457
 "UK","rh_caudalmiddlefrontal","caudalmiddlefrontal","R",21,6217.762,1246.243,271.953
@@ -103,8 +103,8 @@
 "Romanian","lh_temporalpole","temporalpole","L",67,2383.552,421.139,51.45
 "Romanian","lh_transversetemporal","transversetemporal","L",67,1033.597,207.659,25.37
 "Romanian","lh_insula","insula","L",67,6587.507,803.517,98.165
-"Romanian","BrainSegVolNotVent.x","BrainSegVolNotVent.x",NA,67,1062345.254,104579.455,12776.414
-"Romanian","eTIV.x","eTIV.x",NA,67,1348043.166,133464.803,16305.321
+"Romanian","BrainSegVolNotVent.x","BrainSegVolNotVent.x",,67,1062345.254,104579.455,12776.414
+"Romanian","eTIV.x","eTIV.x",,67,1348043.166,133464.803,16305.321
 "Romanian","rh_bankssts","bankssts","R",67,2039.791,327.283,39.984
 "Romanian","rh_caudalanteriorcingulate","caudalanteriorcingulate","R",67,1829.866,362.293,44.261
 "Romanian","rh_caudalmiddlefrontal","caudalmiddlefrontal","R",67,5744.657,982.998,120.092
