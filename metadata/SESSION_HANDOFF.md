@@ -170,3 +170,10 @@ drivers, not run standalone.
 - Side effect of the sync: `data_raw/Mackes_etal_2020_ERABIS_derived.csv` and
   `data_raw/volumes_wide.csv` were refreshed from upstream (s2 / traits
   inputs) — review the diff before committing.
+- **Study 1 synthesis** added: `scripts/s1_synthesis_cross_study.R` reads the
+  region-level tables of s1a-s1d, recomputes Spearman rho vs rCMRGlc for all
+  36 predictors (BH within study x block, plus a global BH), checks the
+  recomputed values against the Spearman tables s1b_6, s1b_7 and s1d_1 write
+  (stops on mismatch), and writes `tables/s1_synthesis/` +
+  `figs/s1_synthesis/` (rho forest, region-coverage heatmap). Only the four
+  neocortical lobes are covered by all four studies.

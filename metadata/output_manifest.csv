@@ -21,3 +21,5 @@ figs/s1d/p_tissue_concentration,jpg|pdf,figure,s1d,s1d_1_neuroglial_proteins_met
 figs/s1d/p_protein_normalized,jpg|pdf,figure,s1d,s1d_1_neuroglial_proteins_metabolic_rate.R,not yet in deck,file,ok,Sjölin protein-normalized concentrations (µg/mg total protein) vs rCMRGlc; s1a_1 densities analogue
 figs/s1d/protein_composition_pies_all_five,png|pdf,figure,s1d,s1d_2_neuroglial_protein_proportions.R,not yet in deck,file,ok,per-region composition pies of the five proteins; s1a_2 analogue
 figs/s1d/protein_composition_pies_excl_mbp,png|pdf,figure,s1d,s1d_2_neuroglial_protein_proportions.R,not yet in deck,file,ok,per-region composition pies excluding MBP
+figs/s1_synthesis/s1_cross_study_rho_forest,png|pdf,figure,s1_synthesis,s1_synthesis_cross_study.R,not yet in deck,file,ok,Spearman rho vs rCMRGlc for every s1a-s1d predictor; recomputed uniformly and self-checked against study tables
+figs/s1_synthesis/s1_cross_study_region_coverage,png|pdf,figure,s1_synthesis,s1_synthesis_cross_study.R,not yet in deck,file,ok,which Heiss regions each Study 1 comparison pairs

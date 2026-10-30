@@ -89,6 +89,10 @@ RUN_ORDER <- c(
   "s1d_1_neuroglial_proteins_metabolic_rate.R",
   "s1d_2_neuroglial_protein_proportions.R",
   
+  # Study 1 synthesis: uniform Spearman view across s1a-s1d (reads the
+  # region-level tables the four studies write; must run after all of them)
+  "s1_synthesis_cross_study.R",
+  
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
   

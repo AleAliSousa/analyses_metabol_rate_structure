@@ -1,0 +1,29 @@
+"anatomy_id","region","rcmr_value","s1a","s1b","s1c","s1d","n_studies"
+"temporal_lobe","Temporal lobe",30.5,TRUE,TRUE,TRUE,TRUE,4
+"frontal_lobe","Frontal lobe",35.3,TRUE,TRUE,TRUE,TRUE,4
+"occipital_lobe","Occipital lobe",35.8,TRUE,TRUE,TRUE,TRUE,4
+"parietal_lobe","Parietal lobe",35.8,TRUE,TRUE,TRUE,TRUE,4
+"amygdala","Corpus amygdaloideum",22.2,TRUE,TRUE,TRUE,FALSE,3
+"hippocampus","Hippocampus",25.7,FALSE,TRUE,TRUE,TRUE,3
+"cerebellar_cortex","Cerebellar cortex",29.8,FALSE,TRUE,TRUE,TRUE,3
+"nucleus_accumbens","Nucleus accumbens",32.3,TRUE,TRUE,TRUE,FALSE,3
+"caudate_nucleus","Caudatum",32.6,FALSE,TRUE,TRUE,TRUE,3
+"centrum_semiovale","Centrum semiovale",12.3,FALSE,FALSE,TRUE,TRUE,2
+"pallidum","Pallidum",21.9,FALSE,TRUE,TRUE,FALSE,2
+"insular_lobe","Insular lobe",30.3,FALSE,TRUE,TRUE,FALSE,2
+"putamen","Putamen",40.2,FALSE,TRUE,TRUE,FALSE,2
+"medial_geniculate_nucleus","Corpus geniculatum mediale",20.2,FALSE,TRUE,FALSE,FALSE,1
+"basal_forebrain","Basal forebrain",21.4,FALSE,TRUE,FALSE,FALSE,1
+"substantia_nigra","Substantia nigra",22.8,FALSE,TRUE,FALSE,FALSE,1
+"lateral_geniculate_nucleus","Corpus geniculatum laterale",23.1,FALSE,TRUE,FALSE,FALSE,1
+"dentate_nucleus","Nucleus dentatus cerebelli",24.2,FALSE,TRUE,FALSE,FALSE,1
+"superior_colliculus","Colliculus superior",24.4,FALSE,TRUE,FALSE,FALSE,1
+"subthalamic_nucleus","Nucleus subthalamicus",25.2,FALSE,TRUE,FALSE,FALSE,1
+"internal_capsule","Capsula interna",25.5,FALSE,FALSE,FALSE,TRUE,1
+"thalamus","Thalamus (composite)",26.6,FALSE,FALSE,FALSE,TRUE,1
+"midbrain","Midbrain (composite)",27.4,FALSE,FALSE,FALSE,TRUE,1
+"vermis","Vermis",30.1,FALSE,TRUE,FALSE,FALSE,1
+"red_nucleus","Nucleus ruber",31,FALSE,TRUE,FALSE,FALSE,1
+"inferior_colliculus","Colliculus inferior",31.4,FALSE,TRUE,FALSE,FALSE,1
+"cerebral_cortex","Cerebral cortex (global average)",33.5,TRUE,FALSE,FALSE,FALSE,1
+"medial_thalamic_nuclei","Nucleus medial thalami",36.6,FALSE,TRUE,FALSE,FALSE,1
