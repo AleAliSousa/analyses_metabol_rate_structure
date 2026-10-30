@@ -38,3 +38,6 @@ white_matter,White matter,brain,tissue_group,white_matter,#969696,360,Grouping t
 neocortical_white_matter,Neocortical white matter,white_matter,tissue_compartment,white_matter,#878787,370,Neocortical white-matter volume; source boundaries require an explicit crosswalk
 centrum_semiovale,Centrum semiovale,white_matter,structure,white_matter,#BDBDBD,380,Centrum semiovale
 internal_capsule,Internal capsule,white_matter,structure,white_matter,#636363,390,Internal capsule; Heiss uses the label Capsula interna
+pons,Pons,brain,gross_region,mixed,#8C510A,400,Pons; no Heiss rCMRGlc measurement exists so it is retained only for source-region composition figures (s1d)
+medulla_oblongata,Medulla oblongata,brain,gross_region,mixed,#DFC27D,410,Medulla oblongata; no Heiss rCMRGlc measurement exists so it is retained only for source-region composition figures (s1d)
+cervical_spinal_cord,Cervical spinal cord,,gross_region,mixed,#80CDC1,420,Cervical spinal cord; outside the brain and without a Heiss rCMRGlc measurement; retained only for source-region composition figures (s1d)

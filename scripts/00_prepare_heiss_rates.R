@@ -42,6 +42,7 @@ study_map_paths <- c(
   "metadata/anatomy/s1b_linnarsson_roi_map.csv",
   stress_map_path,
   "metadata/anatomy/s1c_johansen_region_map.csv",
+  "metadata/anatomy/s1d_sjolin_region_map.csv",
   "metadata/anatomy/s4a_kochiyama_region_map.csv"
 )
 

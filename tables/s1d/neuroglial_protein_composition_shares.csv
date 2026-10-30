@@ -1,0 +1,127 @@
+"variant","anatomy_id","anatomy_group","rcmr_value","protein","ug_per_g","share"
+"AllFive","centrum_semiovale","Centrum semiovale",12.3,"GFAP",9.60302110964904,0.00049365845675036
+"AllFive","centrum_semiovale","Centrum semiovale",12.3,"MBP",19253.7186049979,0.989767793356057
+"AllFive","centrum_semiovale","Centrum semiovale",12.3,"NFL",19.4645627309255,0.00100060656842818
+"AllFive","centrum_semiovale","Centrum semiovale",12.3,"Tau",66.5680255506515,0.00342203441885948
+"AllFive","centrum_semiovale","Centrum semiovale",12.3,"UCHL1",103.409084478503,0.00531590719990525
+"AllFive","internal_capsule","Capsula interna",25.5,"GFAP",5.88516914510422,0.000528039121395728
+"AllFive","internal_capsule","Capsula interna",25.5,"MBP",10838.4975150929,0.972470045296903
+"AllFive","internal_capsule","Capsula interna",25.5,"NFL",26.8625709619151,0.00241020912388897
+"AllFive","internal_capsule","Capsula interna",25.5,"Tau",121.174265132436,0.0108722028065298
+"AllFive","internal_capsule","Capsula interna",25.5,"UCHL1",152.908366640054,0.0137195036512821
+"AllFive","hippocampus","Hippocampus",25.7,"GFAP",90.5503781508884,0.0112999316504324
+"AllFive","hippocampus","Hippocampus",25.7,"MBP",7579.79684567723,0.94589540131562
+"AllFive","hippocampus","Hippocampus",25.7,"NFL",47.0397195028185,0.00587016449949685
+"AllFive","hippocampus","Hippocampus",25.7,"Tau",107.929838307029,0.0134687432655374
+"AllFive","hippocampus","Hippocampus",25.7,"UCHL1",188.039489187221,0.0234657592689133
+"AllFive","thalamus","Thalamus",26.6,"GFAP",7.60359390936925,0.000583299887724293
+"AllFive","thalamus","Thalamus",26.6,"MBP",12757.0811974618,0.978643009985055
+"AllFive","thalamus","Thalamus",26.6,"NFL",37.8740629171273,0.0029054598273589
+"AllFive","thalamus","Thalamus",26.6,"Tau",83.3533028713762,0.00639434099004321
+"AllFive","thalamus","Thalamus",26.6,"UCHL1",149.567652435672,0.0114738893098186
+"AllFive","midbrain","Midbrain",27.4,"GFAP",45.5056157517005,0.00345171952139853
+"AllFive","midbrain","Midbrain",27.4,"MBP",12911.2475776082,0.97935176951373
+"AllFive","midbrain","Midbrain",27.4,"NFL",33.2917712678208,0.00252526759365469
+"AllFive","midbrain","Midbrain",27.4,"Tau",61.8337182153198,0.00469024863676303
+"AllFive","midbrain","Midbrain",27.4,"UCHL1",131.584072341362,0.0099809947344537
+"AllFive","cerebellar_cortex","Cerebellar cortex",29.8,"GFAP",18.9892369581746,0.00897787282854648
+"AllFive","cerebellar_cortex","Cerebellar cortex",29.8,"MBP",1967.57213063592,0.930243400972315
+"AllFive","cerebellar_cortex","Cerebellar cortex",29.8,"NFL",7.26654159741451,0.00343552963758485
+"AllFive","cerebellar_cortex","Cerebellar cortex",29.8,"Tau",49.130308684467,0.02322819312687
+"AllFive","cerebellar_cortex","Cerebellar cortex",29.8,"UCHL1",72.1571686770063,0.0341150034346832
+"AllFive","temporal_lobe","Temporal lobe",30.5,"GFAP",5.4427792365992,0.00259336176548084
+"AllFive","temporal_lobe","Temporal lobe",30.5,"MBP",1723.52662772748,0.821221633991788
+"AllFive","temporal_lobe","Temporal lobe",30.5,"NFL",12.3416656202343,0.00588052580318571
+"AllFive","temporal_lobe","Temporal lobe",30.5,"Tau",202.015006808773,0.0962556025032846
+"AllFive","temporal_lobe","Temporal lobe",30.5,"UCHL1",155.408971399199,0.0740488759362603
+"AllFive","caudate_nucleus","Caudatum",32.6,"GFAP",30.5620354454202,0.00858077139423381
+"AllFive","caudate_nucleus","Caudatum",32.6,"MBP",3219.94375473897,0.904049774794902
+"AllFive","caudate_nucleus","Caudatum",32.6,"NFL",12.951142306556,0.00363623658591759
+"AllFive","caudate_nucleus","Caudatum",32.6,"Tau",162.402701627518,0.0455971088365621
+"AllFive","caudate_nucleus","Caudatum",32.6,"UCHL1",135.82894156805,0.038136108388384
+"AllFive","frontal_lobe","Frontal lobe",35.3,"GFAP",4.75575459968848,0.00207482357306611
+"AllFive","frontal_lobe","Frontal lobe",35.3,"MBP",1927.17214662723,0.840779757525866
+"AllFive","frontal_lobe","Frontal lobe",35.3,"NFL",11.9541485387487,0.00521531308317597
+"AllFive","frontal_lobe","Frontal lobe",35.3,"Tau",188.563777770307,0.0822659291902615
+"AllFive","frontal_lobe","Frontal lobe",35.3,"UCHL1",159.678988002228,0.0696641766276304
+"AllFive","occipital_lobe","Occipital lobe",35.8,"GFAP",4.58282765988718,0.00174812793032302
+"AllFive","occipital_lobe","Occipital lobe",35.8,"MBP",2290.40234414119,0.873678132065979
+"AllFive","occipital_lobe","Occipital lobe",35.8,"NFL",12.6256908914683,0.00481609271066153
+"AllFive","occipital_lobe","Occipital lobe",35.8,"Tau",188.791351104229,0.0720148036020292
+"AllFive","occipital_lobe","Occipital lobe",35.8,"UCHL1",125.160876863508,0.0477428436910073
+"AllFive","parietal_lobe","Parietal lobe",35.8,"GFAP",5.16204987186796,0.00205326282586505
+"AllFive","parietal_lobe","Parietal lobe",35.8,"MBP",2131.32130323907,0.847756784715345
+"AllFive","parietal_lobe","Parietal lobe",35.8,"NFL",13.6142526137403,0.00541522059793926
+"AllFive","parietal_lobe","Parietal lobe",35.8,"Tau",211.760760974624,0.0842302010400282
+"AllFive","parietal_lobe","Parietal lobe",35.8,"UCHL1",152.213288834205,0.0605445308208226
+"AllFive","cervical_spinal_cord","Cervical spinal cord",,"GFAP",113.671505914375,0.0052745827844607
+"AllFive","cervical_spinal_cord","Cervical spinal cord",,"MBP",21251.1301362146,0.986094485730187
+"AllFive","cervical_spinal_cord","Cervical spinal cord",,"NFL",29.6644706291245,0.00137649013120652
+"AllFive","cervical_spinal_cord","Cervical spinal cord",,"Tau",17.4571747430707,0.000810047448781784
+"AllFive","cervical_spinal_cord","Cervical spinal cord",,"UCHL1",138.88187746076,0.00644439390536364
+"AllFive","medulla_oblongata","Medulla oblongata",,"GFAP",103.290038709491,0.0055967505139146
+"AllFive","medulla_oblongata","Medulla oblongata",,"MBP",18160.6475405675,0.984031129483482
+"AllFive","medulla_oblongata","Medulla oblongata",,"NFL",16.5700965520755,0.000897847435746208
+"AllFive","medulla_oblongata","Medulla oblongata",,"Tau",42.4184660553277,0.00229843627382443
+"AllFive","medulla_oblongata","Medulla oblongata",,"UCHL1",132.432633299904,0.00717583629303254
+"AllFive","pons","Pons",,"GFAP",24.9655368871922,0.0012693383853874
+"AllFive","pons","Pons",,"MBP",19397.1122947236,0.986219495803985
+"AllFive","pons","Pons",,"NFL",25.8605652368145,0.00131484487080043
+"AllFive","pons","Pons",,"Tau",61.6204853075255,0.00313300882254085
+"AllFive","pons","Pons",,"UCHL1",158.590426646256,0.00806331211728638
+"ExclMBP","centrum_semiovale","Centrum semiovale",12.3,"GFAP",9.60302110964904,0.0482455519057144
+"ExclMBP","centrum_semiovale","Centrum semiovale",12.3,"NFL",19.4645627309255,0.0977899101578899
+"ExclMBP","centrum_semiovale","Centrum semiovale",12.3,"Tau",66.5680255506515,0.334437579100797
+"ExclMBP","centrum_semiovale","Centrum semiovale",12.3,"UCHL1",103.409084478503,0.519526958835598
+"ExclMBP","internal_capsule","Capsula interna",25.5,"GFAP",5.88516914510422,0.0191805299750942
+"ExclMBP","internal_capsule","Capsula interna",25.5,"NFL",26.8625709619151,0.087548604779138
+"ExclMBP","internal_capsule","Capsula interna",25.5,"Tau",121.174265132436,0.394922655114535
+"ExclMBP","internal_capsule","Capsula interna",25.5,"UCHL1",152.908366640054,0.498348210131233
+"ExclMBP","hippocampus","Hippocampus",25.7,"GFAP",90.5503781508884,0.208853441762884
+"ExclMBP","hippocampus","Hippocampus",25.7,"NFL",47.0397195028185,0.108496590719405
+"ExclMBP","hippocampus","Hippocampus",25.7,"Tau",107.929838307029,0.248938973637113
+"ExclMBP","hippocampus","Hippocampus",25.7,"UCHL1",188.039489187221,0.433710993880598
+"ExclMBP","thalamus","Thalamus",26.6,"GFAP",7.60359390936925,0.0273118958858958
+"ExclMBP","thalamus","Thalamus",26.6,"NFL",37.8740629171273,0.136042570855057
+"ExclMBP","thalamus","Thalamus",26.6,"Tau",83.3533028713762,0.299402724146457
+"ExclMBP","thalamus","Thalamus",26.6,"UCHL1",149.567652435672,0.53724280911259
+"ExclMBP","midbrain","Midbrain",27.4,"GFAP",45.5056157517005,0.167167812452198
+"ExclMBP","midbrain","Midbrain",27.4,"NFL",33.2917712678208,0.122299467517755
+"ExclMBP","midbrain","Midbrain",27.4,"Tau",61.8337182153198,0.227150149252829
+"ExclMBP","midbrain","Midbrain",27.4,"UCHL1",131.584072341362,0.483382570777218
+"ExclMBP","cerebellar_cortex","Cerebellar cortex",29.8,"GFAP",18.9892369581746,0.128702846091785
+"ExclMBP","cerebellar_cortex","Cerebellar cortex",29.8,"NFL",7.26654159741451,0.0492502456466001
+"ExclMBP","cerebellar_cortex","Cerebellar cortex",29.8,"Tau",49.130308684467,0.332989185978682
+"ExclMBP","cerebellar_cortex","Cerebellar cortex",29.8,"UCHL1",72.1571686770063,0.489057722282932
+"ExclMBP","temporal_lobe","Temporal lobe",30.5,"GFAP",5.4427792365992,0.014506015595655
+"ExclMBP","temporal_lobe","Temporal lobe",30.5,"NFL",12.3416656202343,0.0328928266573127
+"ExclMBP","temporal_lobe","Temporal lobe",30.5,"Tau",202.015006808773,0.53840744074629
+"ExclMBP","temporal_lobe","Temporal lobe",30.5,"UCHL1",155.408971399199,0.414193717000743
+"ExclMBP","caudate_nucleus","Caudatum",32.6,"GFAP",30.5620354454202,0.0894294033796383
+"ExclMBP","caudate_nucleus","Caudatum",32.6,"NFL",12.951142306556,0.0378971136143243
+"ExclMBP","caudate_nucleus","Caudatum",32.6,"Tau",162.402701627518,0.475216277388578
+"ExclMBP","caudate_nucleus","Caudatum",32.6,"UCHL1",135.82894156805,0.39745720561746
+"ExclMBP","frontal_lobe","Frontal lobe",35.3,"GFAP",4.75575459968848,0.0130311544614258
+"ExclMBP","frontal_lobe","Frontal lobe",35.3,"NFL",11.9541485387487,0.0327553394099574
+"ExclMBP","frontal_lobe","Frontal lobe",35.3,"Tau",188.563777770307,0.516680089867505
+"ExclMBP","frontal_lobe","Frontal lobe",35.3,"UCHL1",159.678988002228,0.437533416261112
+"ExclMBP","occipital_lobe","Occipital lobe",35.8,"GFAP",4.58282765988718,0.0138386801819308
+"ExclMBP","occipital_lobe","Occipital lobe",35.8,"NFL",12.6256908914683,0.0381255659802071
+"ExclMBP","occipital_lobe","Occipital lobe",35.8,"Tau",188.791351104229,0.57008976181102
+"ExclMBP","occipital_lobe","Occipital lobe",35.8,"UCHL1",125.160876863508,0.377945992026842
+"ExclMBP","parietal_lobe","Parietal lobe",35.8,"GFAP",5.16204987186796,0.0134867279440071
+"ExclMBP","parietal_lobe","Parietal lobe",35.8,"NFL",13.6142526137403,0.0355695364671208
+"ExclMBP","parietal_lobe","Parietal lobe",35.8,"Tau",211.760760974624,0.553260786581128
+"ExclMBP","parietal_lobe","Parietal lobe",35.8,"UCHL1",152.213288834205,0.397682949007745
+"ExclMBP","cervical_spinal_cord","Cervical spinal cord",,"GFAP",113.671505914375,0.379315908934864
+"ExclMBP","cervical_spinal_cord","Cervical spinal cord",,"NFL",29.6644706291245,0.0989887971417731
+"ExclMBP","cervical_spinal_cord","Cervical spinal cord",,"Tau",17.4571747430707,0.058253685053584
+"ExclMBP","cervical_spinal_cord","Cervical spinal cord",,"UCHL1",138.88187746076,0.463441608869779
+"ExclMBP","medulla_oblongata","Medulla oblongata",,"GFAP",103.290038709491,0.350478796113067
+"ExclMBP","medulla_oblongata","Medulla oblongata",,"NFL",16.5700965520755,0.0562248554033611
+"ExclMBP","medulla_oblongata","Medulla oblongata",,"Tau",42.4184660553277,0.1439323007502
+"ExclMBP","medulla_oblongata","Medulla oblongata",,"UCHL1",132.432633299904,0.449364047733372
+"ExclMBP","pons","Pons",,"GFAP",24.9655368871922,0.0921111715023065
+"ExclMBP","pons","Pons",,"NFL",25.8605652368145,0.0954134081088735
+"ExclMBP","pons","Pons",,"Tau",61.6204853075255,0.22735081227629
+"ExclMBP","pons","Pons",,"UCHL1",158.590426646256,0.58512460811253

@@ -43,12 +43,23 @@ central or study map.
 | s1b transcriptomics | `s1b_linnarsson_roi_map.csv` | Fine Linnarsson ROIs are explicitly grouped into Heiss regions. Source-specific choices such as FI/Idg/Ig -> insular lobe and TH-TL -> temporal lobe are recorded here. The same rows carry the two explicit cortical-scope flags described below. |
 | s2 stress volume | `s2_stress_volume_region_map.csv` | English synonyms are resolved and the whole-thalamus rate is explicitly defined as the unweighted mean of the three Heiss thalamic measurements, rounded to the source precision (26.6). |
 | s1c Johansen synaptic density | `s1c_johansen_region_map.csv` | Johansen labels are resolved; the whole-cerebellum -> cerebellar-cortex and aggregate-white-matter -> centrum-semiovale comparisons are marked as proxies. |
+| s1d Sjölin neuroglial proteins | `s1d_sjolin_region_map.csv` | Sjölin's 17 CNS sampling regions are resolved; the four lobar white-matter samples are pooled onto the Heiss centrum-semiovale rate (proxy), the whole cerebellum -> cerebellar cortex proxy follows s1c, the whole thalamus reuses the s2 three-nucleus composite, and the mesencephalon is an unweighted composite of the four Heiss midbrain nuclei. Pons, medulla and cervical spinal cord carry `no_heiss_rate` and new registry IDs. |
 | s4a Kochiyama | `s4a_kochiyama_region_map.csv` | Kochiyama parcels are allocated to native Heiss lobes/tissues, including the 50/50 sensorimotor split. |
 
 s1c deliberately excludes Johansen's whole-thalamus measurement because Heiss
 reports only selected thalamic nuclei; it also excludes source regions without
 a defensible Heiss counterpart. Those exclusions are analysis scope, not
 alternative mappings.
+
+s1d pairs single cortical dissection samples with the Heiss lobe rates as
+`source_synonym` (the Heiss lobe ROIs are cortical grey matter). Its midbrain
+composite is a judgement call recorded only in the s1d map: the Sjölin
+mesencephalon block includes tegmental and peduncular white matter that Heiss
+did not measure, so the s1d script also reports a direct-match-only and a
+grey-matter-only sensitivity table. The three unrated regions (`pons`,
+`medulla_oblongata`, `cervical_spinal_cord`) were added to the registry so the
+composition figures (s1d_2) can show every Sjölin region; they are excluded
+from every metabolic analysis.
 
 The local s1c input, `data_raw/Johansen_etal_2024_Table2.csv`, is an exact copy
 of `Evo-M1-Trait-Data/Johansen_etal_2024/Johansen_etal_2024_Table2.csv` and

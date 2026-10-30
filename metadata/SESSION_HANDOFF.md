@@ -143,3 +143,30 @@ drivers, not run standalone.
 - R is not installed in the Cowork sandbox; scripts were checked statically only.
 - The repo is Dropbox-synced; deleting files required elevated permission and git
   index locking was flaky — prefer running git yourself.
+
+## 2026-10-30 — Study s1d added (neuroglial proteins vs rCMRGlc)
+
+- New study **s1d** replicates the s1a_1 / s1a_2 design with Sjölin et al. 2022
+  (Mol Brain 15:52) regional ELISA concentrations of GFAP, MBP, NFL, tau and
+  UCHL1 in place of stereological cell counts/densities.
+  - `scripts/s1d_1_neuroglial_proteins_metabolic_rate.R` — Spearman loop + BH,
+    multivariate lm (caution: 11 regions), faceted scatter with per-panel lm;
+    two measure families (µg/g wet tissue; µg/mg total protein) plus GFAP:NFL
+    ratio. Sensitivity tables: direct matches only, grey matter only,
+    within-donor correlations. Writes
+    `data_intermediate/s1d_neuroglial_protein_regional_summary.csv`.
+  - `scripts/s1d_2_neuroglial_protein_proportions.R` — per-region composition
+    pies (all five / excluding MBP) and combined facet figures.
+  - `metadata/anatomy/s1d_sjolin_region_map.csv` (validated by
+    `00_prepare_heiss_rates.R`); registry gained `pons`, `medulla_oblongata`,
+    `cervical_spinal_cord` (no Heiss rate).
+  - Manifest row `sjolin_neuroglial_proteins` ->
+    `data_raw/Sjolin_etal_2022_SupplementaryData.csv`; four rows added to
+    `metadata/output_manifest.csv`; both scripts in `run_all.R` after s1c.
+- Pipeline fix: upstream renamed `Hanson_etal_2018_Table2_derived.csv` to
+  `Hanson_etal_2018_Table2.csv` (identical MD5 fa09ef00…); the manifest
+  `source_relative_path` was repointed, local path unchanged. Without this the
+  sync step refused to run.
+- Side effect of the sync: `data_raw/Mackes_etal_2020_ERABIS_derived.csv` and
+  `data_raw/volumes_wide.csv` were refreshed from upstream (s2 / traits
+  inputs) — review the diff before committing.

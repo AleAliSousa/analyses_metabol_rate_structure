@@ -1,0 +1,23 @@
+source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,relationship,mapping_note
+Frontal lobe cortex,frontal_lobe,frontal_lobe,1,source_synonym,Sjolin cortical grey-matter sample from the frontal lobe paired with the Heiss frontal-lobe cortical rate
+Parietal lobe cortex,parietal_lobe,parietal_lobe,1,source_synonym,Sjolin cortical grey-matter sample from the parietal lobe paired with the Heiss parietal-lobe cortical rate
+Temporal lobe cortex,temporal_lobe,temporal_lobe,1,source_synonym,Sjolin cortical grey-matter sample from the temporal lobe paired with the Heiss temporal-lobe cortical rate
+Occipital lobe cortex,occipital_lobe,occipital_lobe,1,source_synonym,Sjolin cortical grey-matter sample from the occipital lobe paired with the Heiss occipital-lobe cortical rate
+Frontal lobe white matter,centrum_semiovale,centrum_semiovale,1,proxy,Lobar deep white matter compared with the Heiss centrum-semiovale rate; the four lobar white-matter samples share one Heiss rate and are pooled into one analysis region
+Parietal lobe white matter,centrum_semiovale,centrum_semiovale,1,proxy,Lobar deep white matter compared with the Heiss centrum-semiovale rate; the four lobar white-matter samples share one Heiss rate and are pooled into one analysis region
+Temporal lobe white matter,centrum_semiovale,centrum_semiovale,1,proxy,Lobar deep white matter compared with the Heiss centrum-semiovale rate; the four lobar white-matter samples share one Heiss rate and are pooled into one analysis region
+Occipital lobe white matter,centrum_semiovale,centrum_semiovale,1,proxy,Lobar deep white matter compared with the Heiss centrum-semiovale rate; the four lobar white-matter samples share one Heiss rate and are pooled into one analysis region
+Caudate nucleus,caudate_nucleus,caudate_nucleus,1,source_synonym,English source label for Heiss Caudatum
+Internal capsule,internal_capsule,internal_capsule,1,source_synonym,English source label for Heiss Capsula interna
+Hippocampus,hippocampus,hippocampus,1,exact,Direct anatomical match
+Thalamus,thalamus,medial_thalamic_nuclei,1,composite_unweighted_mean,Whole-thalamus sample uses an unweighted mean of the three Heiss thalamic measurements (same definition as the s2 map)
+Thalamus,thalamus,lateral_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus sample uses an unweighted mean of the three Heiss thalamic measurements (same definition as the s2 map)
+Thalamus,thalamus,medial_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus sample uses an unweighted mean of the three Heiss thalamic measurements (same definition as the s2 map)
+Mesencephalon,midbrain,substantia_nigra,1,composite_unweighted_mean,Whole-midbrain sample uses an unweighted mean of the four Heiss midbrain nuclei (substantia nigra; red nucleus; superior and inferior colliculi); the sample also contains tegmental and peduncular white matter that Heiss did not measure
+Mesencephalon,midbrain,red_nucleus,1,composite_unweighted_mean,Whole-midbrain sample uses an unweighted mean of the four Heiss midbrain nuclei (substantia nigra; red nucleus; superior and inferior colliculi); the sample also contains tegmental and peduncular white matter that Heiss did not measure
+Mesencephalon,midbrain,superior_colliculus,1,composite_unweighted_mean,Whole-midbrain sample uses an unweighted mean of the four Heiss midbrain nuclei (substantia nigra; red nucleus; superior and inferior colliculi); the sample also contains tegmental and peduncular white matter that Heiss did not measure
+Mesencephalon,midbrain,inferior_colliculus,1,composite_unweighted_mean,Whole-midbrain sample uses an unweighted mean of the four Heiss midbrain nuclei (substantia nigra; red nucleus; superior and inferior colliculi); the sample also contains tegmental and peduncular white matter that Heiss did not measure
+Cerebellum,cerebellar_cortex,cerebellar_cortex,1,proxy,Sjolin whole-cerebellum sample is compared with the Heiss cerebellar-cortex rate (same proxy as the s1c map)
+Pons,pons,,,no_heiss_rate,Heiss did not measure the pons; retained for composition figures and excluded from metabolic analyses
+Medulla oblongata,medulla_oblongata,,,no_heiss_rate,Heiss did not measure the medulla; retained for composition figures and excluded from metabolic analyses
+Cervical spinal cord,cervical_spinal_cord,,,no_heiss_rate,Outside the brain and not measured by Heiss; retained for composition figures and excluded from metabolic analyses

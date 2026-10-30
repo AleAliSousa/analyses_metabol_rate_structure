@@ -84,6 +84,11 @@ RUN_ORDER <- c(
   # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)
   "s1c_synaptic_density_metabolic_rate.R",
   
+  # Study s1d: neuroglial protein concentrations vs rCMRGlc (Sjölin ELISA);
+  # s1d_1 writes the regional summary that s1d_2 reads.
+  "s1d_1_neuroglial_proteins_metabolic_rate.R",
+  "s1d_2_neuroglial_protein_proportions.R",
+  
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
   

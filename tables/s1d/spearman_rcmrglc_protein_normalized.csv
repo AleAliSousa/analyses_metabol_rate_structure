@@ -1,0 +1,7 @@
+"variable","label","rho","p_value","n","p_adj_BH"
+"tau_ug_per_mg_protein","Tau (µg/mg protein)",0.697040532794654,0.0171330348452198,11,0.0725344674662246
+"mbp_ug_per_mg_protein","MBP (µg/mg protein)",-0.669705609939962,0.0241781558220749,11,0.0725344674662246
+"gfap_ug_per_mg_protein","GFAP (µg/mg protein)",-0.551254277569628,0.0787892842336128,11,0.137011568144884
+"nfl_ug_per_mg_protein","NFL (µg/mg protein)",-0.5330309956665,0.0913410454299228,11,0.137011568144884
+"uchl1_ug_per_mg_protein","UCHL1 (µg/mg protein)",-0.123007152846115,0.718611975240987,11,0.841760251396407
+"gfap_to_nfl_ratio","GFAP : NFL ratio",-0.0683373071367308,0.841760251396407,11,0.841760251396407
