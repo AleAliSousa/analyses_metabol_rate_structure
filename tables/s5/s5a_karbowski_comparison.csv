@@ -1,0 +1,5 @@
+"statistic","value","interpretation"
+"Within-brain SMA slope, log10 budget ~ log10 volume (all regions)","1.002 [0.935, 1.074], n = 18","Across regions within one brain: slope > 1 means larger regions use disproportionately more glucose per unit volume."
+"Within-brain OLS slope, log10 rCMRGlc ~ log10 volume (all regions)","-0.007 [-0.076, 0.063], n = 18","Equivalent to (budget slope - 1) under OLS; the within-brain analogue of Karbowski's exponent, but the predictor is regional volume, not species brain mass."
+"Coto 2026 cross-species SMA slope, brain MR ~ brain mass","0.87 +/- 0.07 (r2 0.99, n = 8 incl. ant)","Across species: larger brains have lower mass-specific metabolic rate (hypometric)."
+"Karbowski 2007 regional CMRgl exponents on brain mass (median; range)","-0.15; -0.24 to 0.05 (n = 23 structures)","Across species: mass-specific regional CMRgl falls with brain mass to about the -0.15 power for nearly every structure."

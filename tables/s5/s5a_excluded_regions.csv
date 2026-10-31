@@ -1,0 +1,11 @@
+"heiss_region","anatomy_id","rcmrglc_mean_umol_100g_min","reason","represented_as_composite"
+"Frontal lobe","frontal_lobe",35.3,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
+"Parietal lobe","parietal_lobe",35.8,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
+"Temporal lobe","temporal_lobe",30.5,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
+"Basal forebrain","basal_forebrain",21.4,"No defensible human volume (Stephan septum is only a partial proxy).",FALSE
+"Nucleus medial thalami","medial_thalamic_nuclei",36.6,"Carried inside composite 'Thalamus (excluding LGN)' (no separate human volume)",TRUE
+"Corpus geniculatum mediale","medial_geniculate_nucleus",20.2,"Carried inside composite 'Thalamus (excluding LGN)' (no separate human volume)",TRUE
+"Colliculus inferior","inferior_colliculus",31.4,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
+"Colliculus superior","superior_colliculus",24.4,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
+"Substantia nigra","substantia_nigra",22.8,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
+"Nucleus ruber","red_nucleus",31,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE

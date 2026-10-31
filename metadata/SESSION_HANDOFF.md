@@ -177,3 +177,31 @@ drivers, not run standalone.
   (stops on mismatch), and writes `tables/s1_synthesis/` +
   `figs/s1_synthesis/` (rho forest, region-coverage heatmap). Only the four
   neocortical lobes are covered by all four studies.
+
+## 2026-10-31 — Study s5 added (Coto-style analyses on Heiss 2004; humans–mice–ants project)
+
+- New study **s5** does on the Heiss 2004 regions what Coto et al. 2026 (PNAS, *Tetramorium
+  immigrans*) did on ants. Scripts (run in order; conda env `evom1-r`, from anywhere in the repo:
+  `Rscript scripts/s5a_regional_neurometabolic_scaling.R` …):
+  - `scripts/s5a_regional_neurometabolic_scaling.R` — regional glucose use = rCMRGlc × volume;
+    SMA/OLS log–log scaling on regional volume (all / excl. white matter / grey-only / Kochiyama
+    sensitivity). New map `metadata/anatomy/s5_heiss_region_volume_map.csv` (Table 1 pairings +
+    s4a Kochiyama lobes; extra columns volume_set, volume_source_*, allocation_weight,
+    volume_basis). Tables `tables/s5/s5a_*`, figs `figs/s5/s5a_*`.
+  - `scripts/s5b_relative_brain_metabolism.R` — volume-weighted whole-brain rCMRGlc, brain W,
+    relative brain mass / relative brain MR (glucose and O2 routes) with mouse and ant rows;
+    reads the nonhuman repo `data_intermediate/species_brain_body_metabolism.csv`.
+  - `scripts/s5c_stress_budget_preservation.R` — s2 inputs: summed budget vs summed volume change
+    (normative → English / Romanian adoptees) with parametric bootstrap CIs; s2 regression in
+    standardised form.
+  - `scripts/s5d_cross_species_brain_mr_scaling.R` — Coto Fig. 7 replication (Coto table and
+    Evo-M1 species table) with prediction-band checks for human, mouse, ant.
+  - `scripts/s5e_export_comparison_inputs.R` — writes `human_comparison_rows.csv`,
+    `human_regional_change_vs_rate.csv`, `human_scaling_fits.csv` to
+    `../analyses_metabol_rate_structure_nonhuman/comparison/inputs/`.
+  - `helpers/s5_helpers.R` — annotate_lm / save_png_pdf / make_region_palette / fit_sma_ols and
+    the energy constants (mirrors the nonhuman repo helpers; ggpmisc not available).
+  - Methods and all decisions: `tables/s5/METHODS_NOTE_s5.md`. Logs in `logs/s5*.log`.
+- Not yet done: s5 is not in `run_all.R`, `metadata/output_manifest.csv` or `verify_outputs.R`
+  (left untouched by design this session); add when the study is accepted. No existing file was
+  modified.

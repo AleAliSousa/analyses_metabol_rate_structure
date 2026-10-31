@@ -1,0 +1,7 @@
+"quantity","value","units"
+"Volume-weighted whole-brain rCMRGlc (s5a primary set)",25.426536273253,"umol/100 g/min"
+"Volume-weighted rCMRGlc, non-white-matter regions only",32.4890234684227,"umol/100 g/min"
+"Heiss cortex global average",33.5,"umol/100 g/min"
+"Clarke & Sokoloff 1994 whole-brain CMRgl (Evo-M1 Karbowski S2)",31,"umol/100 g/min"
+"Evo-M1 merge whole-brain CMRgl, human (primary-only mean)",28.855,"umol/100 g/min"
+"Fraction of total brain volume covered by the s5a primary set",0.965448545856901,"fraction"

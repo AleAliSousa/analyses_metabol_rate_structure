@@ -1,0 +1,25 @@
+"source_region","anatomy_id","anatomy_group","rcmr_value","group","mean","sd","n","budget_umol_min","budget_W"
+"Cerebral cortex","cerebral_cortex","Cerebral cortex (global average)",33.5,"english",252.1742875,5.09352728808963,21,84.4783863125,4.04088281194792
+"Thalamus","thalamus","Thalamus",26.6,"english",7.1919,0.7691,21,1.9130454,0.0915073383
+"Putamen","putamen","Putamen",40.2,"english",5.1343,0.4621,21,2.0639886,0.0987274547
+"Caudate","caudate_nucleus","Caudatum",32.6,"english",3.6643,0.4812,21,1.1945618,0.0571398727666667
+"Hippocampus","hippocampus","Hippocampus",25.7,"english",3.6145,0.2932,21,0.9289265,0.0444336509166667
+"Pallidum","pallidum","Pallidum",21.9,"english",1.9529,0.2732,21,0.4276851,0.02045760395
+"Amygdala","amygdala","Corpus amygdaloideum",22.2,"english",1.8311,0.1758,21,0.4065042,0.0194444509
+"Accumbens","nucleus_accumbens","Nucleus accumbens",32.3,"english",0.6981,0.1108,21,0.2254863,0.01078576135
+"Cerebral cortex","cerebral_cortex","Cerebral cortex (global average)",33.5,"norm",258.713,33.3425,262,86.668855,4.14566023083333
+"Thalamus","thalamus","Thalamus",26.6,"norm",7.001,0.759,262,1.862266,0.0890783903333334
+"Putamen","putamen","Putamen",40.2,"norm",6.2535,0.7,262,2.513907,0.1202485515
+"Hippocampus","hippocampus","Hippocampus",25.7,"norm",4.107,0.4445,262,1.055499,0.0504880355
+"Caudate","caudate_nucleus","Caudatum",32.6,"norm",3.924,0.4905,262,1.279224,0.061189548
+"Pallidum","pallidum","Pallidum",21.9,"norm",1.819,0.226,262,0.398361,0.0190549345
+"Amygdala","amygdala","Corpus amygdaloideum",22.2,"norm",1.77,0.2295,262,0.39294,0.01879563
+"Accumbens","nucleus_accumbens","Nucleus accumbens",32.3,"norm",0.746,0.133,262,0.240958,0.0115258243333333
+"Cerebral cortex","cerebral_cortex","Cerebral cortex (global average)",33.5,"romanian",229.2984475,4.69065540422402,67,76.8149799125,3.67431653914792
+"Thalamus","thalamus","Thalamus",26.6,"romanian",6.3604,0.6502,67,1.6918664,0.0809276094666667
+"Putamen","putamen","Putamen",40.2,"romanian",4.9633,0.6273,67,1.9952466,0.0954392957
+"Caudate","caudate_nucleus","Caudatum",32.6,"romanian",3.4142,0.4655,67,1.1130292,0.0532398967333333
+"Hippocampus","hippocampus","Hippocampus",25.7,"romanian",3.3905,0.3287,67,0.8713585,0.0416799815833333
+"Pallidum","pallidum","Pallidum",21.9,"romanian",1.7836,0.2308,67,0.3906084,0.0186841018
+"Amygdala","amygdala","Corpus amygdaloideum",22.2,"romanian",1.7453,0.1819,67,0.3874566,0.0185333407
+"Accumbens","nucleus_accumbens","Nucleus accumbens",32.3,"romanian",0.6207,0.0955,67,0.2004861,0.00958991845
