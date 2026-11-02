@@ -32,7 +32,6 @@ if (!file.exists(file.path(.repo_root, ".git"))) {
 }
 setwd(.repo_root)
 
-# Might need to create a new manifest_path or add one for the restricted data
 
 manifest_path <- "metadata/evo_m1_input_manifest.csv"
 provenance_path <- "data_intermediate/evo_m1_input_provenance.csv"

@@ -35,6 +35,15 @@ rates. The clean comparison inputs retain source labels but deliberately do not
 store `anatomy_id`; the active preparation attaches IDs from the authoritative
 central or study map.
 
+`scripts/00_assemble_comparison_inputs.R` actively rebuilds
+`data_raw/stereology_comparison.csv` and `data_raw/stress_volume_comparison.csv`
+from the per-paper Evo-M1 tables after every public sync. The archived
+`scripts/archive/prepare_legacy_stereology_stress_tables.R` documents the original
+one-time separation from the old mixed tables only. No active preparation or
+analysis reads the legacy embedded rates. The clean comparison inputs retain
+source labels but deliberately do not store `anatomy_id`; the active preparation
+attaches IDs from the authoritative central or study map.
+
 ## Active comparison maps
 
 | Study | Authoritative map | Reason for a study layer |

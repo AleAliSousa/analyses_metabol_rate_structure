@@ -12,7 +12,7 @@
 #
 # What it does
 #   * Runs the active scripts in dependency order (Evo-M1 input refresh ->
-#     raw-data prep -> Study 1 cells -> Study 2 stress -> Study 4a fossils ->
+#     Study 1a/2 source assembly -> Heiss/anatomy prep -> Study 1 cells -> Study 2 stress -> Study 4a fossils ->
 #     Study 4b arterial canal -> QC checks). Study 3 is archived while its
 #     Evo-M1 crosswalk is rebuilt.
 #   * Each script runs in its OWN environment so leftover objects from one
@@ -52,8 +52,10 @@ cat("Scripts dir  :", SCRIPT_DIR, "\n\n")
 
 # ---- pipeline order --------------------------------------------------
 RUN_ORDER <- c(
-  # 0. refresh the versioned Evo-M1 snapshots, then prepare central Heiss data
+  # 0. refresh per-paper Evo-M1 tables, assemble Study 1a/2 comparison inputs,
+  #    then attach the independent Heiss anatomy/rCMRGlc mapping.
   "00_sync_evo_m1_inputs.R",
+  "00_assemble_comparison_inputs.R",
   "00_prepare_heiss_rates.R",
   
   # Comparative neocortex plot from Evo-M1 volumes_wide.csv (slide 8)

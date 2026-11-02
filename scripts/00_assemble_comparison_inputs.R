@@ -57,13 +57,13 @@ ci_half <- function(sd, n) stats::qt(0.975, n - 1) * sd / sqrt(n)
 # =====================================================================
 # STUDY 1a: stereology_comparison.csv
 # =====================================================================
-au <- rd("data_raw/Karlsen_Pakkenberg_2011_authordata_groupmeans.csv")
+au <- rd("data_raw/Karlsen_Pakkenberg_2011_authordata.csv")
 au <- au[au$Group == "Control", ]
-t2 <- rd("data_raw/Karlsen_Pakkenberg_2011_Table2_derived.csv")
+t2 <- rd("data_raw/Karlsen_Pakkenberg_2011_Table2.csv")
 t2 <- t2[t2$Group == "Control", ]
-mo <- rd("data_raw/Morgan_etal_2014_DataS1_derived.csv")
+mo <- rd("data_raw/Morgan_etal_2014_DataS1.csv")
 moC <- mo[mo$Diagnosis == "Control", ]
-ha <- rd("data_raw/Hanson_etal_2018_Table2_derived.csv")
+ha <- rd("data_raw/Hanson_etal_2018_Table2.csv")
 
 stereo_cols <- c(
   "source_region", "Volume", "VolumeSD",
@@ -150,9 +150,9 @@ message("Assembled data_raw/stereology_comparison.csv (",
 # =====================================================================
 # STUDY 2: stress_volume_comparison.csv
 # =====================================================================
-wa <- rd("data_raw/Walhovd_etal_2011_derived.csv")
-sc <- rd("data_raw/Mackes_etal_2020_subcortical_derived.csv")
-er <- rd("data_raw/Mackes_etal_2020_ERABIS_derived.csv")
+wa <- rd("data_raw/Walhovd_etal_2011_normative.csv")
+sc <- rd("data_raw/Mackes_etal_2020_subcortical.csv")
+er <- rd("data_raw/Mackes_etal_2020_ERABIS.csv")
 er_parcels <- er[!is.na(er$Hemisphere) & er$Hemisphere %in% c("L", "R"), ]
 
 N_NORM <- 262; N_UK <- 21; N_ROM <- 67

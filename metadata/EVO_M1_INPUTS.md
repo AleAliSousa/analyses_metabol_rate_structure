@@ -38,3 +38,29 @@ comparative-volume merge.
 `data_raw/species.nwk` is not in the refresh manifest. It is the fixed,
 project-specific 59-species primate tree used to delimit the taxonomic scope of
 the traits plot, rather than a direct copy of a current Evo-M1 file.
+
+
+## Study 1a and Study 2 assembly
+
+Study 1a/2 now use the same public synchronization path as every other analysis
+input. The manifest pulls the canonical per-paper analysis-ready tables (standard
+`<Paper>_<Item>.csv` names; no `_derived` layer) into `data_raw/`.
+
+`scripts/00_assemble_comparison_inputs.R` then rebuilds:
+
+- `data_raw/stereology_comparison.csv` from Morgan, Hanson, and Karlsen & Pakkenberg;
+- `data_raw/stress_volume_comparison.csv` from Walhovd and Mackes/ERA.
+
+`scripts/run_all.R` runs the sequence:
+
+```text
+00_sync_evo_m1_inputs.R
+  -> 00_assemble_comparison_inputs.R
+  -> 00_prepare_heiss_rates.R
+  -> Study 1a / Study 2 analyses
+```
+
+The independent Heiss Table 1 source remains separate and is joined only during
+`00_prepare_heiss_rates.R`. Author-provided source snapshots are built and documented
+in `Evo-M1-Trait-Data`; this analysis repository does not duplicate those raw sources
+or maintain a second restricted manifest.
