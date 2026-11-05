@@ -14,6 +14,7 @@
 #         figs/s5/s5d_cross_species_brain_mr_scaling.{png,pdf}
 # ============================================================
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s5")  # model diagnostics -> figs/s5/diagnostics/
 suppressPackageStartupMessages({ library(tidyverse); library(smatr); library(ggrepel) })
 source("helpers/plot_settings.R"); source("helpers/s5_helpers.R")
 
@@ -82,6 +83,7 @@ write.csv(checks, "tables/s5/s5d_prediction_band_checks.csv", row.names = FALSE)
 band_df <- bind_rows(lapply(split(pts, pts$dataset), function(d) {
   tr <- d %>% filter(!is_ant)
   m <- lm(log10(brain_MR_uW) ~ log10(brain_mass_g), data = tr)
+  diag_lm(m, paste("brain MR ~ brain mass (mammals, OLS) -", d$dataset[1]), labels = tr$species)
   grid <- tibble(brain_mass_g = 10^seq(log10(min(d$brain_mass_g)) - 0.3, log10(max(d$brain_mass_g)) + 0.3, length.out = 100))
   pr <- predict(m, newdata = grid, interval = "prediction", level = 0.95)
   grid %>% mutate(dataset = d$dataset[1], fit = 10^pr[, "fit"], lwr = 10^pr[, "lwr"], upr = 10^pr[, "upr"])

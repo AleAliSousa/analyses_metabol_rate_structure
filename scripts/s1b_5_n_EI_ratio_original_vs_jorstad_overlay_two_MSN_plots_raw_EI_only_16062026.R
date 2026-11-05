@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s1b")  # model diagnostics -> figs/s1b/diagnostics/
 
 # Compare broad all-region E:I ratios with a Jorstad-like neocortical E:I ratio.
 #
@@ -724,6 +725,7 @@ lm_summary_one <- function(df, variable = "EI_ratio") {
   }
   fit <- lm(reformulate(variable, response = "rcmr_value"), data = df2)
   sm <- summary(fit)
+  diag_lm(fit, paste0("EI ", variable, " n", nrow(df2), " s", signif(sum(df2[[variable]]), 4)), labels = if ("anatomy_group" %in% names(df2)) df2$anatomy_group else NULL)
   coef_tbl <- coef(sm)
   tibble(
     variable = variable,

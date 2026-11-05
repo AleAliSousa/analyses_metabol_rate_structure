@@ -18,6 +18,7 @@
 #         figs/s5/s5b_relative_mass_vs_relative_MR.{png,pdf}
 # ============================================================
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s5")  # model diagnostics -> figs/s5/diagnostics/
 suppressPackageStartupMessages({ library(tidyverse); library(ggrepel) })
 source("helpers/plot_settings.R"); source("helpers/read_heiss_rates.R"); source("helpers/s5_helpers.R")
 
@@ -123,6 +124,7 @@ mouse_pt <- tibble(species = "Mus musculus (Evo-M1 74.8)", relative_brain_mass =
                    label = "Mus musculus (CMRgl 74.8)", highlight = "Mouse")
 plot_df <- bind_rows(all_sp, heiss_pt, mouse_pt)
 write.csv(plot_df, "tables/s5/s5b_figure_points.csv", row.names = FALSE)
+local({ dd <- plot_df %>% filter(highlight != "Ant (Coto treatment)", is.finite(relative_brain_mass), is.finite(relative_brain_MR)); diag_lm(lm(relative_brain_MR ~ relative_brain_mass, data = dd), "relative brain MR ~ relative brain mass", labels = dd$species) })
 lab <- annotate_lm(plot_df %>% filter(highlight != "Ant (Coto treatment)"), "relative_brain_mass", "relative_brain_MR")
 
 p <- ggplot(plot_df, aes(x = relative_brain_mass, y = relative_brain_MR)) +

@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root
+source("helpers/model_diagnostics.R"); diag_stage("s1d")  # model diagnostics -> figs/s1d/diagnostics/
 
 ## ============================================================
 ## Study s1d_1 — Neuroglial protein concentrations vs. rCMRGlc
@@ -249,12 +250,14 @@ fit_tissue <- lm(
   data = analysis_df
 )
 print(summary(fit_tissue))
+diag_lm(fit_tissue, "multivariate tissue concentration", labels = analysis_df$anatomy_group[complete.cases(analysis_df[, c("rcmr_value", five_proteins_tissue)])])
 
 fit_normalized <- lm(
   reformulate(five_proteins_normalized, response = "rcmr_value"),
   data = analysis_df
 )
 print(summary(fit_normalized))
+diag_lm(fit_normalized, "multivariate protein normalized", labels = analysis_df$anatomy_group[complete.cases(analysis_df[, c("rcmr_value", five_proteins_normalized)])])
 
 lm_table <- function(fit, model_label) {
   co <- summary(fit)$coefficients
@@ -435,6 +438,7 @@ make_facet_plot <- function(variables, x_label, title, subtitle) {
       anatomy_group = factor(anatomy_group, levels = region_levels)
     )
 
+  diag_facets(plot_df, "measure", tag = "protein facet")
   # One lm per facet; BH-adjusted asterisks (as in s1a_1).
   model_results <- plot_df %>%
     dplyr::filter(!is.na(prop), !is.na(rcmr_value)) %>%

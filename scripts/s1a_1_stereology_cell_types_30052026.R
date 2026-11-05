@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s1a")  # model diagnostics -> figs/s1a/diagnostics/
 
 ## Install and Load up packages
 library(ggplot2)
@@ -80,12 +81,14 @@ fit_counts <- lm(
   data = analysis_df
 )
 summary(fit_counts)
+diag_lm(fit_counts, "multivariate counts", labels = analysis_df$anatomy_group[complete.cases(analysis_df[, c("rcmr_value", cell_counts)])])
 
 fit_densities <- lm(
   reformulate(cell_densities, response = "rcmr_value"),
   data = analysis_df
 )
 summary(fit_densities)
+diag_lm(fit_densities, "multivariate densities", labels = analysis_df$anatomy_group[complete.cases(analysis_df[, c("rcmr_value", cell_densities)])])
 
 ###########################
 ## CORRELATIONS (LOOP)
@@ -154,6 +157,7 @@ plot_df_counts <- analysis_df %>%
   dplyr::mutate(
     cell_counts = gsub("_", " ", cell_counts)  # remove underscores in facet labels
   )
+diag_facets(plot_df_counts, "cell_counts", tag = "counts")
 # Fit one model per facet and make significance labels
 model_results_counts <- plot_df_counts %>%
   dplyr::filter(!is.na(prop), !is.na(rcmr_value)) %>%
@@ -265,6 +269,7 @@ pal <- grDevices::colorRampPalette(base_cols)(length(regions))
 names(pal) <- regions
 
 # Plot with regression line and equation
+diag_facets(plot_df_densities, "cell_densities", tag = "densities")
 p_densities<-ggplot(plot_df_densities, aes(x = prop, y = rcmr_value, color = anatomy_group)) +
   geom_point(size = 2.8, alpha = 0.85) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, color = "steelblue") +

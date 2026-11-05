@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s1b")  # model diagnostics -> figs/s1b/diagnostics/
 
 source("helpers/plot_settings.R")
 
@@ -204,6 +205,7 @@ fit <- lm(
   data = analysis_df
 )
 summary(fit)
+diag_lm(fit, "multivariate neuronal superclusters", labels = analysis_df$anatomy_group[complete.cases(analysis_df[, c("rcmr_value", predictors)])])
 
 ###########################
 ## CORRELATIONS (LOOP)

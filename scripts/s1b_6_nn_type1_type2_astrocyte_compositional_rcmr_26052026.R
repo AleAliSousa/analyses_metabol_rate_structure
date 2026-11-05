@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s1b")  # model diagnostics -> figs/s1b/diagnostics/
 
 source("helpers/plot_settings.R")
 
@@ -278,6 +279,7 @@ run_lm_subset <- function(df, predictors, label) {
     data = df
   )
   print(summary(fit))
+  diag_lm(fit, paste("astrocyte type1/2 multivariate", label), labels = if ("anatomy_group" %in% names(df)) df$anatomy_group else NULL)
   invisible(fit)
 }
 

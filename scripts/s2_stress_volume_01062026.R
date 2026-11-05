@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s2")  # model diagnostics -> figs/s2/diagnostics/
 
 ## Install and Load up packages
 library(tidyverse)  # loads ggplot2, dplyr, tidyr, etc.
@@ -75,6 +76,8 @@ plot_df_clean <- plot_df %>%
 
 # Stop early if a plotted region label is not in the shared palette.
 check_region_palette(plot_df_clean, region_col = "anatomy_group")
+
+diag_facets(plot_df_clean, "group", y = "volume_change", x = "rcmr_value", tag = "volume change ~ rCMRGlc")
 
 p1 <- ggplot(plot_df_clean, aes(x = rcmr_value, y = volume_change, color = anatomy_group)) +
   geom_point(size = 2.8, alpha = 0.85) +

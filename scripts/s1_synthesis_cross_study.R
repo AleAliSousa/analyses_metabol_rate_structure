@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root
+source("helpers/model_diagnostics.R"); diag_stage("s1_synthesis")  # model diagnostics -> figs/s1_synthesis/diagnostics/
 
 ## ============================================================
 ## Study 1 synthesis — one view across s1a, s1b, s1c and s1d
@@ -180,7 +181,7 @@ add_block(
 ## 2. Uniform statistics per predictor
 ## ----------------------------------------------------------------
 
-stat_one <- function(df, v) {
+stat_one <- function(df, v, tag = "") {
   ok <- complete.cases(df$rcmr_value, df[[v]]) & is.finite(df[[v]])
   x <- df[[v]][ok]; y <- df$rcmr_value[ok]
   if (length(x) < 4) {
@@ -190,6 +191,7 @@ stat_one <- function(df, v) {
   }
   ct <- suppressWarnings(cor.test(y, x, method = "spearman", exact = FALSE))
   fit <- lm(y ~ x)
+  diag_lm(fit, paste(tag, v))
   data.frame(
     n = length(x),
     rho = unname(ct$estimate),
@@ -206,7 +208,7 @@ results <- bind_rows(lapply(blocks, function(b) {
     cbind(
       data.frame(study = b$study, block = b$block, predictor = v,
                  label = b$labels[i], stringsAsFactors = FALSE),
-      stat_one(b$data, v)
+      stat_one(b$data, v, tag = paste(b$study, b$block))
     )
   })) %>%
     mutate(p_adj_BH_within_block = p.adjust(p_spearman, method = "BH"))

@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s1b")  # model diagnostics -> figs/s1b/diagnostics/
 
 ###################################################################
 # Study 1b (s1b_7): OPC share of the oligodendrocyte lineage vs rCMRGlc
@@ -341,6 +342,7 @@ lm_one <- function(df, var, subset_label) {
   if (nrow(df) < 5) return(NULL)
   fit <- lm(reformulate(var, response = "rcmr_value"), data = df)
   s   <- summary(fit)
+  diag_lm(fit, paste(subset_label, var), labels = if ("anatomy_group" %in% names(df)) df$anatomy_group else NULL)
   data.frame(subset = subset_label, metric = var, metric_label = metric_labels[[var]],
              n = nrow(df),
              slope = coef(fit)[[2]], slope_se = s$coefficients[2, 2],

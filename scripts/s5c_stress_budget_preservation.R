@@ -27,6 +27,7 @@
 #         figs/s5/s5c_budget_vs_volume_change.{png,pdf}
 # ============================================================
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s5")  # model diagnostics -> figs/s5/diagnostics/
 suppressPackageStartupMessages({ library(tidyverse) })
 source("helpers/plot_settings.R"); source("helpers/read_heiss_rates.R"); source("helpers/s5_helpers.R")
 set.seed(20261031)
@@ -100,6 +101,7 @@ reg_df <- data %>% filter(anatomy_id != "brain", !is.na(rcmr_value)) %>%
   pivot_longer(c(english, romanian, all), names_to = "group", values_to = "pct_change_volume")
 reg <- reg_df %>% group_by(group) %>% group_modify(function(d, k) {
   m <- lm(pct_change_volume ~ rcmr_value, data = d); s <- summary(m); ci <- confint(m)
+  diag_lm(m, paste("pct volume change ~ rCMRGlc,", k$group), labels = d$anatomy_group)
   sp <- suppressWarnings(cor.test(d$rcmr_value, d$pct_change_volume, method = "spearman", exact = FALSE))
   tibble(contrast = paste0("normative -> ", k$group, " adoptees"), n_regions = nrow(d),
          lm_slope = coef(m)[[2]], lm_ci_low = ci[2, 1], lm_ci_high = ci[2, 2], lm_intercept = coef(m)[[1]],

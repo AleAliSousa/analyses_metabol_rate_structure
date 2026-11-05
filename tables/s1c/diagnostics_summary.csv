@@ -1,0 +1,2 @@
+"label","formula","n","n_params","df_resid","r_squared","adj_r_squared","resid_sigma","shapiro_p","breusch_pagan_p","max_cooks_d","n_cooks_gt_4_over_n","max_leverage","n_leverage_gt_2p_over_n","max_abs_stud_resid","most_influential","figure"
+"synaptic density ~ rCMRGlc","synaptic_density_mean ~ rcmrglc_mean",13,2,11,0.757378290054459,0.735321770968501,89.0129903530342,0.821221152169996,0.156942132347068,1.65060437586163,2,0.524624488357469,1,2.18746196312205,"Centrum semiovale","figs/s1c/diagnostics/synaptic_density_rCMRGlc.jpg"

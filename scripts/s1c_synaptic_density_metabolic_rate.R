@@ -1,4 +1,5 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root
+source("helpers/model_diagnostics.R"); diag_stage("s1c")  # model diagnostics -> figs/s1c/diagnostics/
 
 ## ============================================================
 ## Study s1c — Synaptic density vs. rCMRGlc
@@ -104,6 +105,8 @@ check_region_palette(plot_df, region_col = "anatomy_group")
 ## ----------------------------------------------------------------
 ## 3. Scatter: synaptic density vs. rCMRGlc
 ## ----------------------------------------------------------------
+
+diag_lm(lm(synaptic_density_mean ~ rcmrglc_mean, data = plot_df), "synaptic density ~ rCMRGlc", labels = plot_df$anatomy_group)
 
 p1 <- ggplot(plot_df,
              aes(x = rcmrglc_mean, y = synaptic_density_mean,

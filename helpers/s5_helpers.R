@@ -69,6 +69,7 @@ fit_sma_ols <- function(df, x, y, species, dataset, response, predictor, subset,
                    n = n, note = paste0(note, " SMA p = correlation test; slope test vs ", test_slope,
                                         ": p = ", signif(sm$slopetest[[1]]$p, 3)))
   m <- lm(ly ~ lx); ci <- confint(m); s <- summary(m)
+  if (exists("diag_lm")) diag_lm(m, paste("OLS", dataset, subset, response, "~", predictor), labels = if ("species" %in% names(d)) d$species else if ("source_region" %in% names(d)) d$source_region else NULL)
   ols_row <- cbind(base, method = "OLS", slope = coef(m)[[2]], ci_low = ci[2, 1], ci_high = ci[2, 2],
                    intercept = coef(m)[[1]], r2 = s$r.squared, p = s$coefficients[2, 4], n = n,
                    note = paste0(note, " OLS p = slope != 0; slope vs ", test_slope, ": t-test p = ",

@@ -131,6 +131,7 @@ suppressPackageStartupMessages({
 setwd(local({ d <- normalizePath(getwd())
               while (!file.exists(file.path(d, ".git")) &&
                      dirname(d) != d) d <- dirname(d); d }))  # repo root
+source("helpers/model_diagnostics.R"); diag_stage("s4b")  # model diagnostics -> figs/s4b/diagnostics/
 
 dir.create("tables/s4b",         showWarnings = FALSE, recursive = TRUE)
 dir.create("data_intermediate", showWarnings = FALSE, recursive = TRUE)
@@ -162,6 +163,9 @@ fit_ecv  <- lm(lnBGU ~ lnECV,          data = cal)   # ECV only
 
 # Duan (1983) smearing factor: mean(exp(residuals)) corrects the bias from
 # predicting on the log scale and exponentiating back to umol/min.
+diag_lm(fit_full, "Boyer BGU ~ ACA + ECV", labels = cal$Taxon)
+diag_lm(fit_aca, "Boyer BGU ~ ACA", labels = cal$Taxon)
+diag_lm(fit_ecv, "Boyer BGU ~ ECV", labels = cal$Taxon)
 smear <- function(m) mean(exp(residuals(m)))
 smear_full <- smear(fit_full)
 
@@ -208,6 +212,8 @@ t1 <- t1[is.finite(t1$ACA_mm2) & is.finite(t1$ECV_cc), ]
 catarrhine <- t1[t1$Taxonomic_group %in% c("Hominoidea", "Cercopithecoidea"), ]
 fit_aca_ecv_cat <- lm(log(ACA_mm2) ~ log(ECV_cc), data = catarrhine)
 fit_aca_ecv_all <- lm(log(ACA_mm2) ~ log(ECV_cc), data = t1)
+diag_lm(fit_aca_ecv_cat, "ACA ~ ECV catarrhine")
+diag_lm(fit_aca_ecv_all, "ACA ~ ECV all euarchontans")
 smear_cat <- mean(exp(residuals(fit_aca_ecv_cat)))
 
 cat("=== ACA ~ ECV allometry (for ECV-predicted-ACA bound) ===\n")

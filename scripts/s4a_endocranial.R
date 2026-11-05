@@ -77,6 +77,7 @@
 # ============================================================
 
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s4a")  # model diagnostics -> figs/s4a/diagnostics/
 source("helpers/read_heiss_rates.R")
 
 # Assumed constants (only affect ABSOLUTE budget units, NOT the species ratios)
@@ -1114,6 +1115,7 @@ corr_stats <- do.call(rbind, lapply(c("NT","EH"), function(sp) {
   ct <- cor.test(x, y)                          # Pearson (+ 95% CI on r)
   sr <- suppressWarnings(cor.test(x, y, method = "spearman"))
   fit <- lm(y ~ x); sm <- summary(fit)
+  diag_lm(fit, paste0("Fig3A deviation ", sp, " vs MH on rCMRGlc"), labels = corr_df$Heiss_region)
   data.frame(
     contrast    = paste0(sp, " / MH"),
     n           = length(x),

@@ -21,6 +21,7 @@
 #          figs/s5/s5a_budget_vs_volume.{png,pdf}, s5a_rate_vs_volume.{png,pdf}
 # ============================================================
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
+source("helpers/model_diagnostics.R"); diag_stage("s5")  # model diagnostics -> figs/s5/diagnostics/
 
 suppressPackageStartupMessages({ library(tidyverse); library(smatr); library(ggrepel) })
 source("helpers/plot_settings.R")
