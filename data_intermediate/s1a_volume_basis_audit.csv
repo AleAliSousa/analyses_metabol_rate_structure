@@ -1,0 +1,6 @@
+"source_region","source","volume_basis","volume_cm3","previous_corrected_volume_cm3","density_multiplier_vs_previous","estimator"
+"Cerebral cortex (global average)","Karlsen_Pakkenberg_2011_authordata","bilateral uncorrected (2 x hemisphere mean)",218.2156,403,1.84679738753783,"ratio of group means (N / V); not mean individual density"
+"Frontal lobe","Karlsen_Pakkenberg_2011_authordata","bilateral uncorrected (2 x hemisphere mean)",86.2428,157,1.82044182238981,"ratio of group means (N / V); not mean individual density"
+"Parietal lobe","Karlsen_Pakkenberg_2011_authordata","bilateral uncorrected (2 x hemisphere mean)",48.3532,91.8,1.8985299835378,"ratio of group means (N / V); not mean individual density"
+"Temporal lobe","Karlsen_Pakkenberg_2011_authordata","bilateral uncorrected (2 x hemisphere mean)",55.2738,105,1.89963418473128,"ratio of group means (N / V); not mean individual density"
+"Occipital lobe","Karlsen_Pakkenberg_2011_authordata","bilateral uncorrected (2 x hemisphere mean)",28.3456,48.5,1.71102393316776,"ratio of group means (N / V); not mean individual density"

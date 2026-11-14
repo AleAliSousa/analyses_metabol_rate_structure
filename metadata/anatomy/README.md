@@ -1,3 +1,5 @@
+> Current policy: [PRIMARY_MATCH_POLICY.md](PRIMARY_MATCH_POLICY.md) supersedes the legacy proxy descriptions below. All crosswalks carry explicit primary inclusion decisions; rejected rates resolve to NA.
+
 # Anatomical mapping architecture
 
 The project uses `anatomy_id` as its stable anatomical key. Source labels and
@@ -14,8 +16,9 @@ analysis tables that have already aggregated rows under a display label.
    preferred labels, plotting colours, and display order.
 3. `heiss_2004_region_map.csv` is the single primary map for all 26 native
    Heiss rows. It maps each published source label to one registry ID.
-4. A comparison paper gets one additional map only when its source terms do
-   not map directly through the primary Heiss map.
+4. Each active regional comparison has an explicit study map, including s1a
+   even when labels already match: source anatomy and primary eligibility are
+   separate decisions from label normalization.
 
 `scripts/00_prepare_heiss_rates.R` validates these layers and writes
 `data_intermediate/heiss_2004_regions.csv`. The same preparation step validates

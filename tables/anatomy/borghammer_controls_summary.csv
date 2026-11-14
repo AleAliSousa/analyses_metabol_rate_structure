@@ -1,0 +1,31 @@
+"structure","normalization","normalized_rate","n_printed_sides","hemisphere_summary","n_controls"
+"Caudate","GM",1,2,"equal mean of published L/R means",11
+"Cerebellum","GM",0.75,1,"single published row",11
+"CM","GM",1.145,2,"equal mean of published L/R means",11
+"GPe","GM",0.925,2,"equal mean of published L/R means",11
+"GPi","GM",0.785,2,"equal mean of published L/R means",11
+"Pons","GM",0.78,1,"single published row",11
+"Putamen","GM",1.225,2,"equal mean of published L/R means",11
+"STN","GM",0.905,2,"equal mean of published L/R means",11
+"VA","GM",1.125,2,"equal mean of published L/R means",11
+"VL","GM",1.21,2,"equal mean of published L/R means",11
+"Caudate","Reference cluster",1.11,2,"equal mean of published L/R means",11
+"Cerebellum","Reference cluster",0.82,1,"single published row",11
+"CM","Reference cluster",1.28,2,"equal mean of published L/R means",11
+"GPe","Reference cluster",1.035,2,"equal mean of published L/R means",11
+"GPi","Reference cluster",0.88,2,"equal mean of published L/R means",11
+"Pons","Reference cluster",0.86,1,"single published row",11
+"Putamen","Reference cluster",1.38,2,"equal mean of published L/R means",11
+"STN","Reference cluster",1.01,2,"equal mean of published L/R means",11
+"VA","Reference cluster",1.25,2,"equal mean of published L/R means",11
+"VL","Reference cluster",1.34,2,"equal mean of published L/R means",11
+"Caudate","WM",1.785,2,"equal mean of published L/R means",11
+"Cerebellum","WM",0.99,1,"single published row",11
+"CM","WM",2.05,2,"equal mean of published L/R means",11
+"GPe","WM",1.68,2,"equal mean of published L/R means",11
+"GPi","WM",1.415,2,"equal mean of published L/R means",11
+"Pons","WM",1.04,1,"single published row",11
+"Putamen","WM",2.22,2,"equal mean of published L/R means",11
+"STN","WM",1.62,2,"equal mean of published L/R means",11
+"VA","WM",2.01,2,"equal mean of published L/R means",11
+"VL","WM",2.165,2,"equal mean of published L/R means",11

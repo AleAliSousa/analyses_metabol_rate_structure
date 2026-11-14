@@ -1,0 +1,1835 @@
+{
+  "as_of": "2026-11-12",
+  "legend": {
+    "A": "Regional mean available; named atlas ROI or cortical aggregate. Boundaries still require pairwise matching.",
+    "S": "Regional mean available; selected spatial sample, not a complete structure mask.",
+    "U": "Regional mean available; anatomical label or tissue boundary needs clarification.",
+    "P": "Regional means published, but native table not yet transcribed into a checked machine-readable input.",
+    "T": "Region reported in statistical tests only; no regional mean in the audited table.",
+    "-": "No separately reported measurement in the audited tables. Not evidence of biological absence."
+  },
+  "regions": [
+    {
+      "region": "Cerebral cortex (global)",
+      "family": "Cortex"
+    },
+    {
+      "region": "Frontal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Frontomesial cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Frontolateral cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Orbital cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Inferior frontal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Superior frontal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Premotor cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Sensorimotor cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Parietal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Inferior parietal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Superior parietal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Medial temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Lateral temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Inferior temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Middle temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Superior temporal cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Occipital cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Primary visual cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Visual association cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Insular cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Cingulate gyrus (unsplit)",
+      "family": "Cortex"
+    },
+    {
+      "region": "Anterior cingulate cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Posterior cingulate cortex",
+      "family": "Cortex"
+    },
+    {
+      "region": "Hippocampus",
+      "family": "Limbic / forebrain"
+    },
+    {
+      "region": "Hippocampal structures (broader)",
+      "family": "Limbic / forebrain"
+    },
+    {
+      "region": "Amygdala",
+      "family": "Limbic / forebrain"
+    },
+    {
+      "region": "Inferior limbic structures (unspecified)",
+      "family": "Limbic / forebrain"
+    },
+    {
+      "region": "Basal forebrain",
+      "family": "Limbic / forebrain"
+    },
+    {
+      "region": "Caudate",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Putamen",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Nucleus accumbens",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Striatum (aggregate)",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Lentiform nucleus (composite)",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Pallidum (unsplit)",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "External pallidum (GPe)",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Internal pallidum (GPi)",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Subthalamic nucleus",
+      "family": "Basal ganglia"
+    },
+    {
+      "region": "Thalamus (whole atlas ROI)",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Thalamus (broad sampled ROI)",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Medial thalamic region",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Lateral geniculate nucleus",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Medial geniculate nucleus",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Ventral anterior nucleus (VA)",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Ventral lateral nucleus (VL)",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Centromedian nucleus (CM)",
+      "family": "Thalamus"
+    },
+    {
+      "region": "Substantia nigra",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Red nucleus",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Inferior colliculus",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Superior colliculus",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Midbrain (mixed)",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Brainstem (unsplit)",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Pons (mixed sampled ROI)",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Pons (selected WM reference ROI)",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Cerebral peduncle",
+      "family": "Brainstem"
+    },
+    {
+      "region": "Cerebellar cortex",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Cerebellar gray matter (unspecified)",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Cerebellum (atlas ROI; tissue uncertain)",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Cerebellar vermis (tissue uncertain)",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Dentate nucleus",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Central cerebellar white matter",
+      "family": "Cerebellum"
+    },
+    {
+      "region": "Centrum semiovale / oval center",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Internal capsule",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Frontal white matter",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Temporal white matter",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Occipital white matter",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Frontal basal white matter",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Occipitoparietal white matter",
+      "family": "Cerebral white matter"
+    },
+    {
+      "region": "Whole brain (weighted sampled regions)",
+      "family": "Whole brain"
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "Heiss_2004",
+      "label": "Heiss 2004",
+      "cohort_id": "Heiss2004_HC9",
+      "n": 9,
+      "population": "Healthy awake controls",
+      "measure": "Absolute rCMRGlc",
+      "units": "umol/100 g/min",
+      "variants": "One primary table",
+      "independence": "Overlap with older Heiss cohorts and Borghammer controls not established.",
+      "method": "HRRT ~2.2 mm. Cortical gray-matter lobar aggregation; small structures sampled with MRI-guided spheres.",
+      "role": "Primary metabolic reference",
+      "source": "Heiss_etal_2004_TABLE1.csv; Heiss_etal_2004.pdf, Methods and Table 1",
+      "caution": "Older comparison column is Heiss 1984, not another independent dataset. Do not inherit the 2004 nuclear labels for those older values.",
+      "reported_territories": 26,
+      "means_available_territories": 26
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "label": "Heiss 1984",
+      "cohort_id": "Heiss1984_HC7",
+      "n": 7,
+      "population": "Healthy awake men, 28–38 years",
+      "measure": "Absolute CMRGlc, kinetic and autoradiographic",
+      "units": "umol/100 g/min",
+      "variants": "Two estimators in the same seven people",
+      "independence": "Overlap with Heiss 1985 unknown. Re-tabulation in 2004 reuses these data.",
+      "method": "CT-guided sampled ROIs. ~8 mm FWHM, 11 mm slices.",
+      "role": "Candidate historical convergence; native table extraction pending",
+      "source": "Heiss 1984 Table 3, p.220; https://doi.org/10.1038/jcbfm.1984.30",
+      "caution": "22 bilateral/midline territories from 43 side-specific sites. Broad thalamus, mixed midbrain and lentiform are not individual nuclei. Native rates must remain separate from 2004 re-scaled comparisons.",
+      "reported_territories": 22,
+      "means_available_territories": 0
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "label": "Heiss 1985",
+      "cohort_id": "Heiss1985_HC4",
+      "n": 4,
+      "population": "Four men after ~28 hours on duty with little/no sleep",
+      "measure": "Awake absolute CMRGlc; asleep percentage change",
+      "units": "umol/100 g/min; % change from awake",
+      "variants": "Three nondreamers and one dreamer, kept separate; awake/asleep repeated",
+      "independence": "States are repeated measurements; subgroups are 3 + 1, not two four-person cohorts. Overlap with 1984 unknown.",
+      "method": "~8 mm FWHM, 11 mm slices. Regional procedure refers to Heiss 1984.",
+      "role": "State-sensitivity comparison",
+      "source": "Heiss_etal_1985_TABLEI.csv; heiss_etal_1985.pdf, pp.362–363",
+      "caution": "Awake is sleep-deprived waking, not a rested normative reference. Whole-brain row is a weighted aggregate of sampled regions.",
+      "reported_territories": 24,
+      "means_available_territories": 24
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "label": "Borghammer 2012",
+      "cohort_id": "Borghammer2012_HC11",
+      "n": 11,
+      "population": "Controls only: 8 Aarhus + 3 Cologne",
+      "measure": "Normalized regional CMRGlc",
+      "units": "Dimensionless reference ratios",
+      "variants": "WM; global mean (GM); reference cluster. Same subjects.",
+      "independence": "Some participants reused from Eggers 2009; overlap of the control subset requires verification. Overlap with Heiss 2004 unknown.",
+      "method": "HRRT ~2 mm. Histological atlas warped to individual MRI for eight subcortical structures. Two WM reference VOIs.",
+      "role": "Separate relative-metabolism convergence",
+      "source": "Borghammer_etal_2012_Table2.csv; article Methods, Fig.2 and Table 2; https://doi.org/10.1111/j.1600-0404.2011.01556.x",
+      "caution": "GM means global mean. Cerebellum is central cerebellar WM. Pooled absolute regional rates cannot be recovered from group ratios. PD rows excluded.",
+      "reported_territories": 10,
+      "means_available_territories": 10
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "label": "Andersen 2022",
+      "cohort_id": "Andersen2022_HC26",
+      "n": 26,
+      "population": "11 young + 15 older controls, kept separate",
+      "measure": "Paired FDG and UCB-J regional normalized uptake",
+      "units": "Dimensionless gray-matter-normalized values in S1",
+      "variants": "Two tracers in the same subjects; two age groups. S2 contains age-comparison tests.",
+      "independence": "Paired tracers, normalization variants and S2 are not independent cohort replications. Cross-paper overlap unverified.",
+      "method": "Bilateral Hammers N30R83-derived atlas ROIs. Geometric-transfer-matrix partial-volume correction in S1.",
+      "role": "Paired metabolic–synaptic convergence; additional source, not selected by Heiss authorship",
+      "source": "Andersen_etal_2022_TableS1.csv; TableS2.csv; reference_tables/region_labels and errata; article Methods",
+      "caution": "S1: 13 regions with means. HIP occurs only in S2 statistical tests. SN expansion is uncertain. Young CBL row has an unresolved published mean/relative-difference inconsistency.",
+      "reported_territories": 14,
+      "means_available_territories": 13
+    }
+  ],
+  "evidence": [
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Cerebral cortex (global)",
+      "source_label": "Cerebral cortex (global average)",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Frontal cortex",
+      "source_label": "Frontal lobe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Parietal cortex",
+      "source_label": "Parietal lobe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Temporal cortex",
+      "source_label": "Temporal lobe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Occipital cortex",
+      "source_label": "Occipital lobe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cortex",
+      "region": "Insular cortex",
+      "source_label": "Insular lobe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "cortical_aggregate",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Limbic / forebrain",
+      "region": "Hippocampus",
+      "source_label": "Hippocampus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Basal ganglia",
+      "region": "Caudate",
+      "source_label": "Caudatum",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Basal ganglia",
+      "region": "Putamen",
+      "source_label": "Putamen",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Basal ganglia",
+      "region": "Nucleus accumbens",
+      "source_label": "Nucleus accumbens",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Basal ganglia",
+      "region": "Pallidum (unsplit)",
+      "source_label": "Pallidum",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Pallidal sample without separate GPe/GPi estimates; do not assign it to either segment.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Thalamus",
+      "region": "Medial thalamic region",
+      "source_label": "Nucleus medial thalami",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Nucleus medial thalami is not whole thalamus; identity with mediodorsal nucleus has not been established.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Thalamus",
+      "region": "Lateral geniculate nucleus",
+      "source_label": "Corpus geniculatum laterale",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Thalamus",
+      "region": "Medial geniculate nucleus",
+      "source_label": "Corpus geniculatum mediale",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Basal ganglia",
+      "region": "Subthalamic nucleus",
+      "source_label": "Nucleus subthalamicus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Limbic / forebrain",
+      "region": "Basal forebrain",
+      "source_label": "Basal forebrain",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Limbic / forebrain",
+      "region": "Amygdala",
+      "source_label": "Corpus amygdaloideum",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Brainstem",
+      "region": "Inferior colliculus",
+      "source_label": "Colliculus inferior",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Brainstem",
+      "region": "Superior colliculus",
+      "source_label": "Colliculus superior",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Brainstem",
+      "region": "Substantia nigra",
+      "source_label": "Substantia nigra",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Brainstem",
+      "region": "Red nucleus",
+      "source_label": "Nucleus ruber",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cerebellum",
+      "region": "Cerebellar cortex",
+      "source_label": "Cerebellar cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cerebellum",
+      "region": "Cerebellar vermis (tissue uncertain)",
+      "source_label": "Vermis",
+      "coverage": "U",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Vermis reported separately; complete vermis gray/white-matter extent is not established.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cerebellum",
+      "region": "Dentate nucleus",
+      "source_label": "Nucleus dentatus cerebelli",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cerebral white matter",
+      "region": "Centrum semiovale / oval center",
+      "source_label": "Centrum semiovale",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_2004",
+      "family": "Cerebral white matter",
+      "region": "Internal capsule",
+      "source_label": "Capsula interna",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Shared region name does not establish identical boundaries across papers.",
+      "source": "Heiss 2004 Table 1"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebellum",
+      "region": "Cerebellar cortex",
+      "source_label": "Cerebellar cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebellum",
+      "region": "Dentate nucleus",
+      "source_label": "Dentate nucleus",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebellum",
+      "region": "Cerebellar vermis (tissue uncertain)",
+      "source_label": "Vermis",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Brainstem",
+      "region": "Pons (mixed sampled ROI)",
+      "source_label": "Pons",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Brainstem",
+      "region": "Midbrain (mixed)",
+      "source_label": "Midbrain",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Brainstem",
+      "region": "Cerebral peduncle",
+      "source_label": "Cerebral peduncle",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Thalamus",
+      "region": "Thalamus (broad sampled ROI)",
+      "source_label": "Thalamus",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage. Sampled thalamic volume ~4.0 cm3, not a complete whole-thalamus mask.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Basal ganglia",
+      "region": "Lentiform nucleus (composite)",
+      "source_label": "Lentiform nucleus",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage. Composite territory; cannot relabel as isolated putamen.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Basal ganglia",
+      "region": "Caudate",
+      "source_label": "Caudate nucleus",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebral white matter",
+      "region": "Frontal white matter",
+      "source_label": "Frontal white matter",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebral white matter",
+      "region": "Temporal white matter",
+      "source_label": "Temporal white matter",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebral white matter",
+      "region": "Occipital white matter",
+      "source_label": "Occipital white matter",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cerebral white matter",
+      "region": "Centrum semiovale / oval center",
+      "source_label": "Oval center",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Cingulate gyrus (unsplit)",
+      "source_label": "Cingulate gyrus",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Limbic / forebrain",
+      "region": "Hippocampal structures (broader)",
+      "source_label": "Hippocampal structures",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Frontomesial cortex",
+      "source_label": "Frontomesial cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Frontolateral cortex",
+      "source_label": "Frontolateral cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Insular cortex",
+      "source_label": "Insular cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Temporal cortex",
+      "source_label": "Temporal cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Parietal cortex",
+      "source_label": "Parietal cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Occipital cortex",
+      "source_label": "Occipital cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "family": "Cortex",
+      "region": "Primary visual cortex",
+      "source_label": "Primary visual cortex",
+      "coverage": "P",
+      "mean_availability": "published_not_transcribed",
+      "anatomical_scope": "spatial_sample",
+      "notes": "Native Table 3 means await transcription; the 2004 comparison column does not expand coverage.",
+      "source": "Heiss 1984 Table 3, p.220; DOI 10.1038/jcbfm.1984.30"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Orbital cortex",
+      "source_label": "Orbital cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Inferior frontal cortex",
+      "source_label": "Inf. front. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Superior frontal cortex",
+      "source_label": "Sup. front. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Premotor cortex",
+      "source_label": "Premotor cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Sensorimotor cortex",
+      "source_label": "Sensorimot. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Insular cortex",
+      "source_label": "Insular cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Inferior temporal cortex",
+      "source_label": "Inf. temp. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Middle temporal cortex",
+      "source_label": "Middle temp. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Superior temporal cortex",
+      "source_label": "Sup. temp. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Inferior parietal cortex",
+      "source_label": "Inf. par. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Superior parietal cortex",
+      "source_label": "Sup. par. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Visual association cortex",
+      "source_label": "Vis. assoc. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Primary visual cortex",
+      "source_label": "Prim. vis. cortex",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Limbic / forebrain",
+      "region": "Inferior limbic structures (unspecified)",
+      "source_label": "Inf. limbic struct.",
+      "coverage": "U",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "boundary_uncertain",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Limbic / forebrain",
+      "region": "Hippocampus",
+      "source_label": "Hippocampus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cortex",
+      "region": "Cingulate gyrus (unsplit)",
+      "source_label": "Cingulate gyrus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cerebral white matter",
+      "region": "Frontal basal white matter",
+      "source_label": "Front. bas. white matter",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cerebral white matter",
+      "region": "Occipitoparietal white matter",
+      "source_label": "Occ. par. white matter",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Basal ganglia",
+      "region": "Caudate",
+      "source_label": "Caudate nucleus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Basal ganglia",
+      "region": "Lentiform nucleus (composite)",
+      "source_label": "Lentiform nucleus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Thalamus",
+      "region": "Thalamus (broad sampled ROI)",
+      "source_label": "Thalamus",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Brainstem",
+      "region": "Brainstem (unsplit)",
+      "source_label": "Brainstem",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Cerebellum",
+      "region": "Cerebellar gray matter (unspecified)",
+      "source_label": "Cerebellar gray matter",
+      "coverage": "U",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "boundary_uncertain",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "family": "Whole brain",
+      "region": "Whole brain (weighted sampled regions)",
+      "source_label": "Whole brain (all regions weighted according to size)",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "spatial_sample_or_sample_aggregate",
+      "notes": "Regional boundaries refer to 1984 methods. Retain n=3 nondreamers and n=1 dreamer separately; sleep values are percent changes.",
+      "source": "Heiss 1985 Table I"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Basal ganglia",
+      "region": "Putamen",
+      "source_label": "Putamen",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Basal ganglia",
+      "region": "Caudate",
+      "source_label": "Caudate",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Basal ganglia",
+      "region": "External pallidum (GPe)",
+      "source_label": "GPe",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Basal ganglia",
+      "region": "Internal pallidum (GPi)",
+      "source_label": "GPi",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Thalamus",
+      "region": "Ventral anterior nucleus (VA)",
+      "source_label": "VA",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Thalamus",
+      "region": "Ventral lateral nucleus (VL)",
+      "source_label": "VL",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Thalamus",
+      "region": "Centromedian nucleus (CM)",
+      "source_label": "CM",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Basal ganglia",
+      "region": "Subthalamic nucleus",
+      "source_label": "STN",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Separate left/right means and three normalizations in the same controls. No complete thalamus or unsplit pallidum rate.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Brainstem",
+      "region": "Pons (selected WM reference ROI)",
+      "source_label": "Pons",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "selected_white_matter_sample",
+      "notes": "Selected white-matter reference VOI, not the complete gross structure.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "family": "Cerebellum",
+      "region": "Central cerebellar white matter",
+      "source_label": "Cerebellum",
+      "coverage": "S",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "selected_white_matter_sample",
+      "notes": "Selected white-matter reference VOI, not the complete gross structure.",
+      "source": "Borghammer 2012 Table 2; Methods and Fig.2"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Frontal cortex",
+      "source_label": "FCX",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Limbic / forebrain",
+      "region": "Amygdala",
+      "source_label": "Amg",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Medial temporal cortex",
+      "source_label": "MTCx",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Lateral temporal cortex",
+      "source_label": "LTCx",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Parietal cortex",
+      "source_label": "PCX",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Occipital cortex",
+      "source_label": "OCX",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Basal ganglia",
+      "region": "Striatum (aggregate)",
+      "source_label": "STR",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Brainstem",
+      "region": "Substantia nigra",
+      "source_label": "SN",
+      "coverage": "U",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "boundary_or_label_uncertain",
+      "notes": "Source label SN has no explicit definition in paper/supplement; substantia nigra is a conventional interpretation only.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Insular cortex",
+      "source_label": "ICX",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Anterior cingulate cortex",
+      "source_label": "ACC",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cortex",
+      "region": "Posterior cingulate cortex",
+      "source_label": "PCCx",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Cerebellum",
+      "region": "Cerebellum (atlas ROI; tissue uncertain)",
+      "source_label": "CBL",
+      "coverage": "U",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "boundary_or_label_uncertain",
+      "notes": "Atlas cerebellum tissue composition not resolved here; do not equate to cortex or central WM. Young CBL printed means/relative difference have an unresolved inconsistency.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Thalamus",
+      "region": "Thalamus (whole atlas ROI)",
+      "source_label": "Thal",
+      "coverage": "A",
+      "mean_availability": "mean_available",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Paired tracers use the same bilateral atlas ROI. Cross-paper boundary equivalence requires checking.",
+      "source": "Andersen 2022 Table S1; region-label reference and errata"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "family": "Limbic / forebrain",
+      "region": "Hippocampus",
+      "source_label": "HIP",
+      "coverage": "T",
+      "mean_availability": "tests_only",
+      "anatomical_scope": "atlas_roi",
+      "notes": "Age-comparison p-values only; no HIP regional mean in S1. Do not count as an available metabolic rate.",
+      "source": "Andersen 2022 Table S2"
+    }
+  ],
+  "sources": [
+    {
+      "source_file": "heiss_2004_regions.csv",
+      "sha256": "4ace6d1c74370ed163011fd50c163b20309c07f7676efaced25786fcd91817db"
+    },
+    {
+      "source_file": "Heiss_etal_1985_TABLEI.csv",
+      "sha256": "8e737e6ff477ae103075e31fe442035e5848c1ae217afdee4a0c218de8381a65"
+    },
+    {
+      "source_file": "Borghammer_etal_2012_Table2.csv",
+      "sha256": "e8dd4044a03333af48342b5b598777a7639f0691bbcf2c0e187f35cf62cc342c"
+    },
+    {
+      "source_file": "Andersen_etal_2022_TableS1.csv",
+      "sha256": "67791f680d3dfe8c66d98b467a2e52544121224836dbf2d59667f5aa67b33511"
+    },
+    {
+      "source_file": "Andersen_etal_2022_TableS2.csv",
+      "sha256": "499cb58ad1c0161adb397402742c27fee1c8eacb0edcb1afe82fd7fba6aa91a3"
+    },
+    {
+      "source_file": "Andersen_etal_2022_region_labels.csv",
+      "sha256": "e8117a924ac63fa4c51eb6b2b71cf6f0ba56a4e6c9663a6dfafe0d14e10a33c3"
+    },
+    {
+      "source_file": "Andersen_etal_2022_errata.csv",
+      "sha256": "7543d1d408a9e65ec728657f2f278f0d5455cab3c50f60e8e2a2d8d6796493c9"
+    }
+  ],
+  "matrix": [
+    {
+      "dataset_id": "Heiss_2004",
+      "Cerebral cortex (global)": "A",
+      "Frontal cortex": "A",
+      "Frontomesial cortex": "-",
+      "Frontolateral cortex": "-",
+      "Orbital cortex": "-",
+      "Inferior frontal cortex": "-",
+      "Superior frontal cortex": "-",
+      "Premotor cortex": "-",
+      "Sensorimotor cortex": "-",
+      "Parietal cortex": "A",
+      "Inferior parietal cortex": "-",
+      "Superior parietal cortex": "-",
+      "Temporal cortex": "A",
+      "Medial temporal cortex": "-",
+      "Lateral temporal cortex": "-",
+      "Inferior temporal cortex": "-",
+      "Middle temporal cortex": "-",
+      "Superior temporal cortex": "-",
+      "Occipital cortex": "A",
+      "Primary visual cortex": "-",
+      "Visual association cortex": "-",
+      "Insular cortex": "A",
+      "Cingulate gyrus (unsplit)": "-",
+      "Anterior cingulate cortex": "-",
+      "Posterior cingulate cortex": "-",
+      "Hippocampus": "S",
+      "Hippocampal structures (broader)": "-",
+      "Amygdala": "S",
+      "Inferior limbic structures (unspecified)": "-",
+      "Basal forebrain": "S",
+      "Caudate": "S",
+      "Putamen": "S",
+      "Nucleus accumbens": "S",
+      "Striatum (aggregate)": "-",
+      "Lentiform nucleus (composite)": "-",
+      "Pallidum (unsplit)": "S",
+      "External pallidum (GPe)": "-",
+      "Internal pallidum (GPi)": "-",
+      "Subthalamic nucleus": "S",
+      "Thalamus (whole atlas ROI)": "-",
+      "Thalamus (broad sampled ROI)": "-",
+      "Medial thalamic region": "S",
+      "Lateral geniculate nucleus": "S",
+      "Medial geniculate nucleus": "S",
+      "Ventral anterior nucleus (VA)": "-",
+      "Ventral lateral nucleus (VL)": "-",
+      "Centromedian nucleus (CM)": "-",
+      "Substantia nigra": "S",
+      "Red nucleus": "S",
+      "Inferior colliculus": "S",
+      "Superior colliculus": "S",
+      "Midbrain (mixed)": "-",
+      "Brainstem (unsplit)": "-",
+      "Pons (mixed sampled ROI)": "-",
+      "Pons (selected WM reference ROI)": "-",
+      "Cerebral peduncle": "-",
+      "Cerebellar cortex": "S",
+      "Cerebellar gray matter (unspecified)": "-",
+      "Cerebellum (atlas ROI; tissue uncertain)": "-",
+      "Cerebellar vermis (tissue uncertain)": "U",
+      "Dentate nucleus": "S",
+      "Central cerebellar white matter": "-",
+      "Centrum semiovale / oval center": "S",
+      "Internal capsule": "S",
+      "Frontal white matter": "-",
+      "Temporal white matter": "-",
+      "Occipital white matter": "-",
+      "Frontal basal white matter": "-",
+      "Occipitoparietal white matter": "-",
+      "Whole brain (weighted sampled regions)": "-"
+    },
+    {
+      "dataset_id": "Heiss_1984",
+      "Cerebral cortex (global)": "-",
+      "Frontal cortex": "-",
+      "Frontomesial cortex": "P",
+      "Frontolateral cortex": "P",
+      "Orbital cortex": "-",
+      "Inferior frontal cortex": "-",
+      "Superior frontal cortex": "-",
+      "Premotor cortex": "-",
+      "Sensorimotor cortex": "-",
+      "Parietal cortex": "P",
+      "Inferior parietal cortex": "-",
+      "Superior parietal cortex": "-",
+      "Temporal cortex": "P",
+      "Medial temporal cortex": "-",
+      "Lateral temporal cortex": "-",
+      "Inferior temporal cortex": "-",
+      "Middle temporal cortex": "-",
+      "Superior temporal cortex": "-",
+      "Occipital cortex": "P",
+      "Primary visual cortex": "P",
+      "Visual association cortex": "-",
+      "Insular cortex": "P",
+      "Cingulate gyrus (unsplit)": "P",
+      "Anterior cingulate cortex": "-",
+      "Posterior cingulate cortex": "-",
+      "Hippocampus": "-",
+      "Hippocampal structures (broader)": "P",
+      "Amygdala": "-",
+      "Inferior limbic structures (unspecified)": "-",
+      "Basal forebrain": "-",
+      "Caudate": "P",
+      "Putamen": "-",
+      "Nucleus accumbens": "-",
+      "Striatum (aggregate)": "-",
+      "Lentiform nucleus (composite)": "P",
+      "Pallidum (unsplit)": "-",
+      "External pallidum (GPe)": "-",
+      "Internal pallidum (GPi)": "-",
+      "Subthalamic nucleus": "-",
+      "Thalamus (whole atlas ROI)": "-",
+      "Thalamus (broad sampled ROI)": "P",
+      "Medial thalamic region": "-",
+      "Lateral geniculate nucleus": "-",
+      "Medial geniculate nucleus": "-",
+      "Ventral anterior nucleus (VA)": "-",
+      "Ventral lateral nucleus (VL)": "-",
+      "Centromedian nucleus (CM)": "-",
+      "Substantia nigra": "-",
+      "Red nucleus": "-",
+      "Inferior colliculus": "-",
+      "Superior colliculus": "-",
+      "Midbrain (mixed)": "P",
+      "Brainstem (unsplit)": "-",
+      "Pons (mixed sampled ROI)": "P",
+      "Pons (selected WM reference ROI)": "-",
+      "Cerebral peduncle": "P",
+      "Cerebellar cortex": "P",
+      "Cerebellar gray matter (unspecified)": "-",
+      "Cerebellum (atlas ROI; tissue uncertain)": "-",
+      "Cerebellar vermis (tissue uncertain)": "P",
+      "Dentate nucleus": "P",
+      "Central cerebellar white matter": "-",
+      "Centrum semiovale / oval center": "P",
+      "Internal capsule": "-",
+      "Frontal white matter": "P",
+      "Temporal white matter": "P",
+      "Occipital white matter": "P",
+      "Frontal basal white matter": "-",
+      "Occipitoparietal white matter": "-",
+      "Whole brain (weighted sampled regions)": "-"
+    },
+    {
+      "dataset_id": "Heiss_1985",
+      "Cerebral cortex (global)": "-",
+      "Frontal cortex": "-",
+      "Frontomesial cortex": "-",
+      "Frontolateral cortex": "-",
+      "Orbital cortex": "S",
+      "Inferior frontal cortex": "S",
+      "Superior frontal cortex": "S",
+      "Premotor cortex": "S",
+      "Sensorimotor cortex": "S",
+      "Parietal cortex": "-",
+      "Inferior parietal cortex": "S",
+      "Superior parietal cortex": "S",
+      "Temporal cortex": "-",
+      "Medial temporal cortex": "-",
+      "Lateral temporal cortex": "-",
+      "Inferior temporal cortex": "S",
+      "Middle temporal cortex": "S",
+      "Superior temporal cortex": "S",
+      "Occipital cortex": "-",
+      "Primary visual cortex": "S",
+      "Visual association cortex": "S",
+      "Insular cortex": "S",
+      "Cingulate gyrus (unsplit)": "S",
+      "Anterior cingulate cortex": "-",
+      "Posterior cingulate cortex": "-",
+      "Hippocampus": "S",
+      "Hippocampal structures (broader)": "-",
+      "Amygdala": "-",
+      "Inferior limbic structures (unspecified)": "U",
+      "Basal forebrain": "-",
+      "Caudate": "S",
+      "Putamen": "-",
+      "Nucleus accumbens": "-",
+      "Striatum (aggregate)": "-",
+      "Lentiform nucleus (composite)": "S",
+      "Pallidum (unsplit)": "-",
+      "External pallidum (GPe)": "-",
+      "Internal pallidum (GPi)": "-",
+      "Subthalamic nucleus": "-",
+      "Thalamus (whole atlas ROI)": "-",
+      "Thalamus (broad sampled ROI)": "S",
+      "Medial thalamic region": "-",
+      "Lateral geniculate nucleus": "-",
+      "Medial geniculate nucleus": "-",
+      "Ventral anterior nucleus (VA)": "-",
+      "Ventral lateral nucleus (VL)": "-",
+      "Centromedian nucleus (CM)": "-",
+      "Substantia nigra": "-",
+      "Red nucleus": "-",
+      "Inferior colliculus": "-",
+      "Superior colliculus": "-",
+      "Midbrain (mixed)": "-",
+      "Brainstem (unsplit)": "S",
+      "Pons (mixed sampled ROI)": "-",
+      "Pons (selected WM reference ROI)": "-",
+      "Cerebral peduncle": "-",
+      "Cerebellar cortex": "-",
+      "Cerebellar gray matter (unspecified)": "U",
+      "Cerebellum (atlas ROI; tissue uncertain)": "-",
+      "Cerebellar vermis (tissue uncertain)": "-",
+      "Dentate nucleus": "-",
+      "Central cerebellar white matter": "-",
+      "Centrum semiovale / oval center": "-",
+      "Internal capsule": "-",
+      "Frontal white matter": "-",
+      "Temporal white matter": "-",
+      "Occipital white matter": "-",
+      "Frontal basal white matter": "S",
+      "Occipitoparietal white matter": "S",
+      "Whole brain (weighted sampled regions)": "S"
+    },
+    {
+      "dataset_id": "Borghammer_2012",
+      "Cerebral cortex (global)": "-",
+      "Frontal cortex": "-",
+      "Frontomesial cortex": "-",
+      "Frontolateral cortex": "-",
+      "Orbital cortex": "-",
+      "Inferior frontal cortex": "-",
+      "Superior frontal cortex": "-",
+      "Premotor cortex": "-",
+      "Sensorimotor cortex": "-",
+      "Parietal cortex": "-",
+      "Inferior parietal cortex": "-",
+      "Superior parietal cortex": "-",
+      "Temporal cortex": "-",
+      "Medial temporal cortex": "-",
+      "Lateral temporal cortex": "-",
+      "Inferior temporal cortex": "-",
+      "Middle temporal cortex": "-",
+      "Superior temporal cortex": "-",
+      "Occipital cortex": "-",
+      "Primary visual cortex": "-",
+      "Visual association cortex": "-",
+      "Insular cortex": "-",
+      "Cingulate gyrus (unsplit)": "-",
+      "Anterior cingulate cortex": "-",
+      "Posterior cingulate cortex": "-",
+      "Hippocampus": "-",
+      "Hippocampal structures (broader)": "-",
+      "Amygdala": "-",
+      "Inferior limbic structures (unspecified)": "-",
+      "Basal forebrain": "-",
+      "Caudate": "A",
+      "Putamen": "A",
+      "Nucleus accumbens": "-",
+      "Striatum (aggregate)": "-",
+      "Lentiform nucleus (composite)": "-",
+      "Pallidum (unsplit)": "-",
+      "External pallidum (GPe)": "A",
+      "Internal pallidum (GPi)": "A",
+      "Subthalamic nucleus": "A",
+      "Thalamus (whole atlas ROI)": "-",
+      "Thalamus (broad sampled ROI)": "-",
+      "Medial thalamic region": "-",
+      "Lateral geniculate nucleus": "-",
+      "Medial geniculate nucleus": "-",
+      "Ventral anterior nucleus (VA)": "A",
+      "Ventral lateral nucleus (VL)": "A",
+      "Centromedian nucleus (CM)": "A",
+      "Substantia nigra": "-",
+      "Red nucleus": "-",
+      "Inferior colliculus": "-",
+      "Superior colliculus": "-",
+      "Midbrain (mixed)": "-",
+      "Brainstem (unsplit)": "-",
+      "Pons (mixed sampled ROI)": "-",
+      "Pons (selected WM reference ROI)": "S",
+      "Cerebral peduncle": "-",
+      "Cerebellar cortex": "-",
+      "Cerebellar gray matter (unspecified)": "-",
+      "Cerebellum (atlas ROI; tissue uncertain)": "-",
+      "Cerebellar vermis (tissue uncertain)": "-",
+      "Dentate nucleus": "-",
+      "Central cerebellar white matter": "S",
+      "Centrum semiovale / oval center": "-",
+      "Internal capsule": "-",
+      "Frontal white matter": "-",
+      "Temporal white matter": "-",
+      "Occipital white matter": "-",
+      "Frontal basal white matter": "-",
+      "Occipitoparietal white matter": "-",
+      "Whole brain (weighted sampled regions)": "-"
+    },
+    {
+      "dataset_id": "Andersen_2022",
+      "Cerebral cortex (global)": "-",
+      "Frontal cortex": "A",
+      "Frontomesial cortex": "-",
+      "Frontolateral cortex": "-",
+      "Orbital cortex": "-",
+      "Inferior frontal cortex": "-",
+      "Superior frontal cortex": "-",
+      "Premotor cortex": "-",
+      "Sensorimotor cortex": "-",
+      "Parietal cortex": "A",
+      "Inferior parietal cortex": "-",
+      "Superior parietal cortex": "-",
+      "Temporal cortex": "-",
+      "Medial temporal cortex": "A",
+      "Lateral temporal cortex": "A",
+      "Inferior temporal cortex": "-",
+      "Middle temporal cortex": "-",
+      "Superior temporal cortex": "-",
+      "Occipital cortex": "A",
+      "Primary visual cortex": "-",
+      "Visual association cortex": "-",
+      "Insular cortex": "A",
+      "Cingulate gyrus (unsplit)": "-",
+      "Anterior cingulate cortex": "A",
+      "Posterior cingulate cortex": "A",
+      "Hippocampus": "T",
+      "Hippocampal structures (broader)": "-",
+      "Amygdala": "A",
+      "Inferior limbic structures (unspecified)": "-",
+      "Basal forebrain": "-",
+      "Caudate": "-",
+      "Putamen": "-",
+      "Nucleus accumbens": "-",
+      "Striatum (aggregate)": "A",
+      "Lentiform nucleus (composite)": "-",
+      "Pallidum (unsplit)": "-",
+      "External pallidum (GPe)": "-",
+      "Internal pallidum (GPi)": "-",
+      "Subthalamic nucleus": "-",
+      "Thalamus (whole atlas ROI)": "A",
+      "Thalamus (broad sampled ROI)": "-",
+      "Medial thalamic region": "-",
+      "Lateral geniculate nucleus": "-",
+      "Medial geniculate nucleus": "-",
+      "Ventral anterior nucleus (VA)": "-",
+      "Ventral lateral nucleus (VL)": "-",
+      "Centromedian nucleus (CM)": "-",
+      "Substantia nigra": "U",
+      "Red nucleus": "-",
+      "Inferior colliculus": "-",
+      "Superior colliculus": "-",
+      "Midbrain (mixed)": "-",
+      "Brainstem (unsplit)": "-",
+      "Pons (mixed sampled ROI)": "-",
+      "Pons (selected WM reference ROI)": "-",
+      "Cerebral peduncle": "-",
+      "Cerebellar cortex": "-",
+      "Cerebellar gray matter (unspecified)": "-",
+      "Cerebellum (atlas ROI; tissue uncertain)": "U",
+      "Cerebellar vermis (tissue uncertain)": "-",
+      "Dentate nucleus": "-",
+      "Central cerebellar white matter": "-",
+      "Centrum semiovale / oval center": "-",
+      "Internal capsule": "-",
+      "Frontal white matter": "-",
+      "Temporal white matter": "-",
+      "Occipital white matter": "-",
+      "Frontal basal white matter": "-",
+      "Occipitoparietal white matter": "-",
+      "Whole brain (weighted sampled regions)": "-"
+    }
+  ]
+}

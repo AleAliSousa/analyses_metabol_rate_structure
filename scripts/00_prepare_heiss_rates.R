@@ -39,9 +39,13 @@ stress_raw_path <- "data_raw/stress_volume_comparison.csv"
 stress_map_path <- "metadata/anatomy/s2_stress_volume_region_map.csv"
 stress_output_path <- "data_intermediate/s2_stress_volume_comparison.csv"
 study_map_paths <- c(
+  "metadata/anatomy/s1a_stereology_region_map.csv",
+  "metadata/anatomy/s5_heiss_region_volume_map.csv",
   "metadata/anatomy/s1b_linnarsson_roi_map.csv",
   stress_map_path,
   "metadata/anatomy/s1c_johansen_region_map.csv",
+  "metadata/anatomy/s1c_holmes_region_map.csv",
+  "metadata/anatomy/s2_beip_region_map.csv",
   "metadata/anatomy/s1d_sjolin_region_map.csv",
   "metadata/anatomy/s4a_kochiyama_region_map.csv"
 )
@@ -226,7 +230,7 @@ heiss_prepared <- data.frame(
     heiss_raw[["Left minus right hemisphere SD"]]
   ),
   left_minus_right_p_value = as.numeric(heiss_raw[["P"]]),
-  heiss_1991_mean_umol_100g_min = as.numeric(
+  heiss_1984_mean_umol_100g_min = as.numeric(
     heiss_raw[["Data of Heiss et al. (21)"]]
   ),
   color_hex = registry$color_hex[registry_index],

@@ -1,0 +1,6 @@
+"comparison","scope","n_shared_regions","region_ids","status"
+"Johansen / Proteins","shared_regions",6,"caudate_nucleus | frontal_lobe | hippocampus | occipital_lobe | parietal_lobe | temporal_lobe","fits reported"
+"Johansen / Holmes","shared_regions",8,"amygdala | caudate_nucleus | frontal_lobe | occipital_lobe | pallidum | parietal_lobe | putamen | temporal_lobe","fits reported"
+"ERA / BEIP age 8-10 EIG vs NIG","shared_regions",7,"amygdala | caudate_nucleus | cerebral_cortex | hippocampus | nucleus_accumbens | pallidum | putamen","fits reported"
+"ERA / BEIP age 16 CAUG vs NIG","shared_regions",6,"amygdala | caudate_nucleus | cerebral_cortex | hippocampus | pallidum | putamen","fits reported"
+"ERA / BEIP age 16 FCG vs NIG","shared_regions",6,"amygdala | caudate_nucleus | cerebral_cortex | hippocampus | pallidum | putamen","fits reported"

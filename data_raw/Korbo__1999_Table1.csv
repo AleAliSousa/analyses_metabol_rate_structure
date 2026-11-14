@@ -1,0 +1,13 @@
+"printed_row","subregion_as_printed","is_total","group_as_printed","is_healthy_control","n_subjects","sex","hemisphere","species_as_published","cell_type","value_as_printed","N_neurons.1e6","N_neurons","CV"
+1,"Granule",0,"Controls",1,5,"male","left","human","neurons","18.0 (0.19)",18,18000000,0.19
+1,"Granule",0,"Alcoholics",0,5,"male","left","human","neurons","16.5 (0.24)",16.5,16500000,0.24
+2,"Hilus",0,"Controls",1,5,"male","left","human","neurons","1.7 (0.19)",1.7,1700000,0.19
+2,"Hilus",0,"Alcoholics",0,5,"male","left","human","neurons","1.5 (0.18)",1.5,1500000,0.18
+3,"CA3/2",0,"Controls",1,5,"male","left","human","neurons","2.8 (0.24)",2.8,2800000,0.24
+3,"CA3/2",0,"Alcoholics",0,5,"male","left","human","neurons","2.4 (0.32)",2.4,2400000,0.32
+4,"CA1",0,"Controls",1,5,"male","left","human","neurons","13.0 (0.19)",13,13000000,0.19
+4,"CA1",0,"Alcoholics",0,5,"male","left","human","neurons","13.7 (0.28)",13.7,13700000,0.28
+5,"Subiculum",0,"Controls",1,5,"male","left","human","neurons","4.8 (0.20)",4.8,4800000,0.2
+5,"Subiculum",0,"Alcoholics",0,5,"male","left","human","neurons","3.9 (0.18)",3.9,3900000,0.18
+6,"Total hippocampus",1,"Controls",1,5,"male","left","human","neurons","40.2 (0.14)",40.2,40200000,0.14
+6,"Total hippocampus",1,"Alcoholics",0,5,"male","left","human","neurons","38.0 (0.18)",38,38000000,0.18

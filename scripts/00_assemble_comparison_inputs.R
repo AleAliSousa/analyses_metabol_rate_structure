@@ -21,7 +21,8 @@
 #   [minor] Nucleus accumbens glia:neuron ratio uses Hanson's published value
 #       (2.03) rather than the recomputed 2.04.
 #
-# All numeric outputs otherwise reproduce the previous files within rounding.
+# [2026-11-12] KP densities now use bilateral uncorrected author-workbook
+# volumes, matching the tissue basis of the counts (not corrected Table 2).
 # =====================================================================
 
 # ---- locate repo root (portable: Rscript or interactive) ------------
@@ -80,7 +81,10 @@ new_stereo_row <- function() {
   r
 }
 
-# KP Control cortex + lobes: cell numbers (authordata) / volume (Table2).
+# KP Control cortex + lobes: ratio of group-mean bilateral count to
+# group-mean bilateral uncorrected volume, both from authordata.
+# This is not the mean of individual densities reported in authordata.
+# Keep the corrected Table 2 volume in the provenance audit only.
 kp_rows <- list(
   "Cerebral cortex (global average)" = c(au = "Neocortex total", t2 = "Total neocortex"),
   "Frontal lobe"  = c(au = "Frontal",   t2 = "Frontal"),
@@ -89,10 +93,22 @@ kp_rows <- list(
   "Occipital lobe"= c(au = "Occipital", t2 = "Occipital")
 )
 stereo_list <- list()
+volume_basis_audit <- list()
 for (lbl in names(kp_rows)) {
   a <- au[au$Region == kp_rows[[lbl]][["au"]], ]
   v <- t2[t2$Region == kp_rows[[lbl]][["t2"]], ]
-  vol <- v$Volume.cm3
+  if (nrow(a) != 1L || nrow(v) != 1L ||
+      !is.finite(a$Volume_hemisphere.cm3) || a$Volume_hemisphere.cm3 <= 0) {
+    stop("Expected one KP control row with positive volume for ", lbl)
+  }
+  vol <- 2 * a$Volume_hemisphere.cm3
+  volume_basis_audit[[lbl]] <- data.frame(
+    source_region = lbl, source = "Karlsen_Pakkenberg_2011_authordata",
+    volume_basis = "bilateral uncorrected (2 x hemisphere mean)",
+    volume_cm3 = vol, previous_corrected_volume_cm3 = v$Volume.cm3,
+    density_multiplier_vs_previous = v$Volume.cm3 / vol,
+    estimator = "ratio of group means (N / V); not mean individual density"
+  )
   nN  <- a$`Neuron_N.x10.9`        * 1e9
   gN  <- a$`Glia_N.x10.9`          * 1e9
   asN <- a$`Astrocyte_N.x10.9`     * 1e9
@@ -111,15 +127,44 @@ for (lbl in names(kp_rows)) {
                                       check.names = FALSE)
 }
 
+# Hanson 2018 densities are published per mm3; all other s1a densities are
+# N / volume in cm3, so convert (x 1000 mm3 per cm3) to cells per cm3.
+MM3_PER_CM3 <- 1000
+
 # Nucleus accumbens: Hanson (typically-developing group).
 hn <- ha[ha$Region == "Nucleus Accumbens" & ha$Group == "TD", ]
 r <- new_stereo_row()
 r$source_region <- "Nucleus accumbens"
-r$NeurDensity <- hn$`Neuron_density.per.mm3`
-r$GliaDensity <- hn$`Glia_density.per.mm3`
+r$NeurDensity <- hn$`Neuron_density.per.mm3` * MM3_PER_CM3
+r$GliaDensity <- hn$`Glia_density.per.mm3`   * MM3_PER_CM3
 r$GliaNeurDensityRatio <- hn$Glia_Neuron_ratio   # Hanson published (2.03)
 stereo_list[["Nucleus accumbens"]] <- as.data.frame(r, stringsAsFactors = FALSE,
                                                     check.names = FALSE)
+
+# Caudatum and Putamen: Hanson 2018 Table 2, same paper, estimator and
+# typically-developing (TD) controls (n = 5) as the accumbens row above.
+# Hanson samples two caudate subregions (dorsal dC, medial mC); the Heiss
+# caudate spheres have unspecified subregional coverage. Here we use the unweighted mean of the
+# two subregion means (same 5 brains). Putamen is the associative subregion
+# (aP) only -- the only putamen subregion Hanson reports. Densities only
+# (no total numbers, astrocyte/oligodendrocyte/microglia split or volume).
+hanson_rows <- list(
+  "Caudatum" = c("Caudate nucleus (dorsal)", "Caudate nucleus (medial)"),
+  "Putamen"  = c("Putamen (associative)")
+)
+for (lbl in names(hanson_rows)) {
+  hs <- ha[ha$Region %in% hanson_rows[[lbl]] & ha$Group == "TD", ]
+  if (nrow(hs) != length(hanson_rows[[lbl]])) {
+    stop("Hanson 2018 TD rows not found for ", lbl, call. = FALSE)
+  }
+  r <- new_stereo_row()
+  r$source_region <- lbl
+  r$NeurDensity <- mean(hs$`Neuron_density.per.mm3`) * MM3_PER_CM3
+  r$GliaDensity <- mean(hs$`Glia_density.per.mm3`)   * MM3_PER_CM3
+  r$GliaNeurDensityRatio <- mean(hs$Glia_Neuron_ratio)  # Hanson published ratio(s)
+  stereo_list[[lbl]] <- as.data.frame(r, stringsAsFactors = FALSE,
+                                      check.names = FALSE)
+}
 
 # Corpus amygdaloideum: Morgan Control-group mean x2 (bilateral).
 volA <- mean(moC$`Amyg Volume`, na.rm = TRUE) * 2 / 1000  # mm3 -> cm3
@@ -141,6 +186,9 @@ stereo_list[["Corpus amygdaloideum"]] <- as.data.frame(r, stringsAsFactors = FAL
                                                        check.names = FALSE)
 
 stereology <- do.call(rbind, stereo_list)[, stereo_cols]
+dir.create("data_intermediate", showWarnings = FALSE)
+write.csv(do.call(rbind, volume_basis_audit),
+          "data_intermediate/s1a_volume_basis_audit.csv", row.names = FALSE)
 dir.create("data_raw", showWarnings = FALSE)
 write.csv(stereology, "data_raw/stereology_comparison.csv",
           row.names = FALSE, na = "")

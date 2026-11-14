@@ -9,7 +9,8 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 suppressPackageStartupMessages({ library(tidyverse) })
 source("helpers/read_heiss_rates.R"); source("helpers/s5_helpers.R")
-OUT <- normalizePath(file.path("..", "analyses_metabol_rate_structure_nonhuman", "comparison", "inputs"), mustWork = FALSE)
+OUT <- Sys.getenv("HUMAN_COMPARISON_EXPORT_DIR",
+  normalizePath(file.path("..", "analyses_metabol_rate_structure_nonhuman", "comparison", "inputs"), mustWork = FALSE))
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 SP <- "Homo sapiens"
 
@@ -22,9 +23,9 @@ s5d_fits <- read.csv("tables/s5/s5d_scaling_fits.csv", stringsAsFactors = FALSE)
 s2 <- read.csv("data_intermediate/s2_stress_volume_comparison.csv", stringsAsFactors = FALSE, check.names = FALSE)
 
 # ---- (a) comparison rows
-hs <- s5b[s5b$group == "Heiss 2004 (volume-weighted) + Karbowski O2", ]
+hs <- s5b[s5b$group == "Clarke & Sokoloff whole-brain glucose + Karbowski O2", ]
 wb <- tibble(
-  species = SP, dataset = "Heiss 2004 + Evo-M1 (Karbowski 2007; body_ecology)", stressor = "none", stress_timing = NA,
+  species = SP, dataset = "Clarke & Sokoloff whole-brain glucose + Evo-M1 (Karbowski 2007; body_ecology)", stressor = "none", stress_timing = NA,
   level = c("brain_vs_body", "brain_vs_body", "brain_vs_body", "whole_brain", "whole_brain", "whole_brain", "whole_brain"),
   variable = c("relative_brain_mass", "relative_brain_MR_glucose", "relative_brain_MR_O2",
                "brain_MR_W_glucose", "brain_MR_W_O2", "wholebrain_CMRgl_umol_100g_min", "brain_mass_specific_MR_mlO2_min_g"),
@@ -34,11 +35,11 @@ wb <- tibble(
   units = c("g/g", "W/W", "W/W", "W", "W", "umol/100 g/min", "ml O2/min/g"),
   statistic_type = "point estimate", statistic = NA, p_value = NA, n_control = NA, n_stressed = NA,
   note = c("brain 1300.4 g / body 61535 g (Evo-M1)",
-           "Heiss volume-weighted rCMRGlc x brain mass x 2.87 J/umol over BMR 12925 ml O2/h x 20.1 J/ml",
+           "Published whole-brain CMRgl x brain mass x 2.87 J/umol over BMR 12925 ml O2/h x 20.1 J/ml",
            "Karbowski S1 48.6 ml O2/min x 20.1 J/ml over BMR",
-           "glucose route (Heiss regions weighted by s5a volumes, 96.5% of brain volume)",
+           "glucose route (Clarke & Sokoloff 1994 whole-brain CMRgl)",
            "O2 route (Karbowski 2007 S1)",
-           "volume-weighted mean of 18 Heiss regions (incl. white matter); cortex global average 33.5; Clarke & Sokoloff 31",
+           "Published whole-brain glucose rate; sparse matched regional volumes are not extrapolated",
            "48.6 ml O2/min / 1300.4 g; Coto quotes ~0.035"))
 reg_rows <- s5c %>% transmute(
   species = SP, dataset = "Mackes 2020 adoptees vs Walhovd 2011 normative (s2 inputs) x Heiss 2004",
@@ -48,7 +49,7 @@ reg_rows <- s5c %>% transmute(
   statistic_type = "95% CI of % change (parametric bootstrap, 2000 draws)",
   statistic = sprintf("[%.2f, %.2f]", ci_low, ci_high), p_value = boot_p_two_sided,
   n_control, n_stressed,
-  note = paste0(contrast, "; 8 regions with a Heiss rate (Total Brain excluded); per hemisphere"))
+  note = paste0(contrast, "; anatomically matched regions only (Total Brain excluded); per hemisphere"))
 # per-region rows (volume per hemisphere), English and Romanian
 per_region <- s2 %>% filter(anatomy_id != "brain") %>%
   pivot_longer(c(english_mean, romanian_mean), names_to = "group", values_to = "stressed_value") %>%
@@ -88,7 +89,7 @@ rcr <- s2 %>% left_join(rates, by = "anatomy_id") %>%
          pct_change_budget = 100 * (stressed_budget - control_budget) / control_budget,
          included_in_regression = !is.na(rcmr_value) & anatomy_id != "brain",
          note = ifelse(anatomy_id == "brain", "Total Brain: no Heiss rate; volume only",
-                       ifelse(anatomy_id == "thalamus", "rate = unweighted mean of 3 Heiss thalamic terms (s2 rule); budget = umol/min per hemisphere (volume cm3 at 1 g/cm3)",
+                       ifelse(anatomy_id == "thalamus", "Whole-thalamus volume: no anatomically compatible Heiss-2004 rate; excluded from metabolic regression and budget",
                               "budget = umol glucose/min per hemisphere (rCMRGlc x volume cm3 at 1 g/cm3 / 100)"))) %>%
   select(species, contrast, region_label, analysis_anatomy_id, metabolic_rate_umol_100g_min, control_volume, stressed_volume,
          pct_change_volume, control_budget, stressed_budget, pct_change_budget, included_in_regression, note)

@@ -5,8 +5,8 @@
 # (brain MR / whole-body MR) for humans, with mouse and the three Coto 2026
 # ant treatment groups side by side (Coto Fig. 2 / Table S1 analogue).
 #
-# Human brain MR, glucose route: volume-weighted whole-brain rCMRGlc from the
-#   Heiss 2004 regions (s5a primary volume set), scaled to total brain mass.
+# Human brain MR, glucose route: published whole-brain Clarke & Sokoloff rate.
+#   The sparse s5a matched regions are never extrapolated to whole brain.
 #   Cross-checks: Heiss cortex global average (33.5); Clarke & Sokoloff 1994
 #   whole-brain CMRgl (0.31 umol/g/min) from the Evo-M1 species table.
 # Human brain MR, O2 route: Karbowski 2007 S1 whole-brain O2 (ml/min).
@@ -24,7 +24,7 @@ source("helpers/plot_settings.R"); source("helpers/read_heiss_rates.R"); source(
 
 NONHUMAN <- normalizePath(file.path("..", "analyses_metabol_rate_structure_nonhuman"), mustWork = TRUE)
 sp <- read.csv(file.path(NONHUMAN, "data_intermediate", "species_brain_body_metabolism.csv"), stringsAsFactors = FALSE)
-bud <- read.csv("tables/s5/s5a_region_budgets.csv", stringsAsFactors = FALSE) %>% filter(volume_set == "primary")
+bud <- read.csv("tables/s5/s5a_region_budgets.csv", stringsAsFactors = FALSE) %>% filter(volume_set == "primary", primary_included, is.finite(rcmr_value))
 heiss <- read_heiss_regions()
 vw <- read.csv("data_raw/volumes_wide.csv", check.names = FALSE, stringsAsFactors = FALSE)
 TOTAL_BRAIN_MM3 <- as.numeric(vw[vw$Species == "Homo sapiens", "Total_brain_net_volume_Vol.mm3"])
@@ -36,7 +36,7 @@ cortex_avg <- heiss$rcmrglc_mean_umol_100g_min[heiss$anatomy_id == "cerebral_cor
 grey_rate_weighted <- with(bud %>% filter(volume_basis != "white"), sum(rcmr_value * volume_mm3) / sum(volume_mm3))
 hs <- sp[sp$species == "Homo sapiens", ]
 checks <- tibble(
-  quantity = c("Volume-weighted whole-brain rCMRGlc (s5a primary set)",
+  quantity = c("Volume-weighted rCMRGlc of matched regions ONLY (not whole brain)",
                "Volume-weighted rCMRGlc, non-white-matter regions only",
                "Heiss cortex global average",
                "Clarke & Sokoloff 1994 whole-brain CMRgl (Evo-M1 Karbowski S2)",
@@ -71,10 +71,10 @@ row_from <- function(species, group, brain_g, body_g, bmr_ml_h, cmrgl_100g = NA,
          rate_source, note)
 }
 tab <- bind_rows(
-  row_from("Homo sapiens", "Heiss 2004 (volume-weighted) + Karbowski O2", hs$brain_mass_g, hs$body_mass_g, hs$BMR_mlO2_h,
-           cmrgl_100g = wb_rate_weighted, o2_ml_min = hs$brain_O2_ml_min,
-           rate_source = "glucose: Heiss 2004 regions weighted by s5a volumes; O2: Karbowski 2007 S1",
-           note = sprintf("volume coverage %.3f of brain; brain mass %.1f g (Evo-M1 brain_mass merge)", coverage, hs$brain_mass_g)),
+  row_from("Homo sapiens", "Clarke & Sokoloff whole-brain glucose + Karbowski O2", hs$brain_mass_g, hs$body_mass_g, hs$BMR_mlO2_h,
+           cmrgl_100g = hs$brain_CMRgl_umol_g_min * 100, o2_ml_min = hs$brain_O2_ml_min,
+           rate_source = "glucose: Clarke & Sokoloff 1994 whole-brain CMRgl via Karbowski S2; O2: Karbowski 2007 S1",
+           note = sprintf("Matched-region coverage %.3f is not extrapolated; actual whole-brain rate used. Brain mass %.1f g", coverage, hs$brain_mass_g)),
   row_from("Homo sapiens", "Clarke & Sokoloff whole-brain CMRgl (check)", hs$brain_mass_g, hs$body_mass_g, hs$BMR_mlO2_h,
            cmrgl_100g = hs$brain_CMRgl_umol_g_min * 100, o2_ml_min = hs$brain_O2_ml_min,
            rate_source = "glucose: Karbowski 2007 S2 (Clarke & Sokoloff 1994); O2: Karbowski S1",
@@ -98,7 +98,7 @@ tab <- tab %>% mutate(
   ratio_to_human_mass_specific_O2 = brain_mass_specific_MR_mlO2_min_g_37C / brain_mass_specific_MR_mlO2_min_g[1])
 # Reference values carried in the shared species table (ant rows there are Coto's per-worker-mean ratios,
 # which match the published 24% / 45% / 30%; the rows above are ratios of treatment means).
-ref_key <- c("Heiss 2004 (volume-weighted) + Karbowski O2" = "Homo sapiens", "Clarke & Sokoloff whole-brain CMRgl (check)" = "Homo sapiens",
+ref_key <- c("Clarke & Sokoloff whole-brain glucose + Karbowski O2" = "Homo sapiens", "Clarke & Sokoloff whole-brain CMRgl (check)" = "Homo sapiens",
              "Evo-M1 whole-brain CMRgl" = "Mus musculus", Control = "Tetramorium immigrans (Control)",
              "Food Deprived" = "Tetramorium immigrans (Food Deprived)", Queenright = "Tetramorium immigrans (Queenright)")
 tab$relative_brain_MR_O2_species_table <- sp$relative_brain_MR_O2[match(ref_key[tab$group], sp$species)]
@@ -116,9 +116,9 @@ all_sp <- sp %>% transmute(species, relative_brain_mass,
                                species == "Homo sapiens" ~ "Human", species == "Mus musculus" ~ "Mouse",
                                TRUE ~ "Other mammal"))
 # replace the human glucose-route point by the Heiss-derived one as an extra point
-heiss_pt <- tibble(species = "Homo sapiens (Heiss glucose route)", relative_brain_mass = tab$relative_brain_mass[1],
+heiss_pt <- tibble(species = "Homo sapiens (whole-brain glucose route)", relative_brain_mass = tab$relative_brain_mass[1],
                    relative_brain_MR = tab$relative_brain_MR_glucose[1], route = "glucose",
-                   label = "Homo sapiens (Heiss glucose)", highlight = "Human")
+                   label = "Homo sapiens (whole-brain glucose)", highlight = "Human")
 mouse_pt <- tibble(species = "Mus musculus (Evo-M1 74.8)", relative_brain_mass = tab$relative_brain_mass[3],
                    relative_brain_MR = tab$relative_brain_MR_glucose[3], route = "glucose",
                    label = "Mus musculus (CMRgl 74.8)", highlight = "Mouse")

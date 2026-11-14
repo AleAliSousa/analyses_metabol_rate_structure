@@ -7,13 +7,13 @@ figs/s1b/scatter_rcmr_supercluster_telencephalon,png|pdf,figure,s1b,s1b_4_n_supe
 figs/s1b/scatter_rcmr_supercluster_non_telencephalon,png|pdf,figure,s1b,s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R,slide 61,file,ok,supercluster non-telencephalon
 figs/s2/mean_brain_region_volumes_boxplot,jpg|pdf,figure,s2,s2_stress_volume_01062026.R,slide 30,file,ok,environmental stress volume boxplot
 figs/s2/rCMRGlc_volume_change,jpg|pdf,figure,s2,s2_stress_volume_01062026.R,slide 31,file,ok,volume change vs rCMRglc
-figs/s4a/endocranial_region_budgets,png|pdf,figure,s4a,s4a_endocranial.R,slide 65,file,ok,regional glucose budgets barplot
-figs/s4a/endocranial_region_cost_pie_3species_volctx,png|pdf,figure,s4a,s4a_endocranial.R,slide 45,file,ok,regional cost pie three species
-figs/s4a/rcmrglc_vs_fig3a_deviation,png|pdf,figure,s4a,s4a_endocranial.R,slide 43,file,ok,rCMRglc vs Fig3A deviation
-figs/s4a/volume_timeline_logage_flipped,png|pdf,figure,s4a,s4a_endocranial.R,slide 46,file,ok,brain volume timeline log age
-figs/s4a/cerebellum_volume_timeline_logage,png|pdf,figure,s4a,s4a_endocranial_cerebellum.R,slide 68,file,ok,cerebellum budget timeline log age
-figs/s4a/budget_significance,png|pdf,figure,s4a,s4a_endocranial_cerebellum.R,slide 69,file,reconstructed,rebuilt 2026-07-13 from whole-brain and cerebellum group budgets
-figs/s4a/budget_residual_vs_volume,png,figure,s4a,,slide 69,none,MISSING_PRODUCER,no producing script in repo or history - needs original code or residual definition
+figs/s4a_proxy_sensitivity/endocranial_region_budgets,png|pdf,figure,s4a,s4a_endocranial_proxy_sensitivity.R,slide 65,file,ok,PROXY SENSITIVITY ONLY: regional glucose budgets barplot
+figs/s4a_proxy_sensitivity/endocranial_region_cost_pie_3species_volctx,png|pdf,figure,s4a,s4a_endocranial_proxy_sensitivity.R,slide 45,file,ok,PROXY SENSITIVITY ONLY: regional cost pie three species
+figs/s4a_proxy_sensitivity/rcmrglc_vs_fig3a_deviation,png|pdf,figure,s4a,s4a_endocranial_proxy_sensitivity.R,slide 43,file,ok,PROXY SENSITIVITY ONLY: rCMRglc vs Fig3A deviation
+figs/s4a_proxy_sensitivity/volume_timeline_logage_flipped,png|pdf,figure,s4a,s4a_endocranial_proxy_sensitivity.R,slide 46,file,ok,PROXY SENSITIVITY ONLY: brain volume timeline log age
+figs/s4a_proxy_sensitivity/cerebellum_volume_timeline_logage,png|pdf,figure,s4a,s4a_endocranial_cerebellum_proxy_sensitivity.R,slide 68,file,ok,PROXY SENSITIVITY ONLY: cerebellum budget timeline log age
+figs/s4a_proxy_sensitivity/budget_significance,png|pdf,figure,s4a,s4a_endocranial_cerebellum_proxy_sensitivity.R,slide 69,file,reconstructed,PROXY SENSITIVITY ONLY: rebuilt 2026-07-13 from whole-brain and cerebellum group budgets
+figs/s4a_proxy_sensitivity/budget_residual_vs_volume,png,figure,s4a,,slide 69,none,MISSING_PRODUCER,PROXY SENSITIVITY ONLY: no producing script in repo or history - needs original code or residual definition
 figs/s1b/p_EI_original_all_regions_with_jorstad_neocortex_overlay_raw_EI,jpg|pdf,figure,s1b,s1b_5_n_EI_ratio_original_vs_jorstad_overlay_two_MSN_plots_raw_EI_only_16062026.R,slides 24-25,script_only,render_differs,deck shows an earlier E:I render than current file
 figs/s1b/p_type1_type2_astrocyte_composition_stacked_with_rcmr_overlay,jpg|pdf,figure,s1b,s1b_6_nn_type1_type2_astrocyte_compositional_rcmr_26052026.R,slides 21-22,script_only,render_differs,deck shows an earlier astrocyte render than current file
 figs/s3/all/plot_human_brain_mosaicism,png|pdf,figure,s3,,slides 37-38,none,MISSING_PRODUCER_PENDING_REPLACEMENT,Study 3 observed vs predicted - prior producer removed; replacement awaits the new anatomy crosswalk
@@ -23,3 +23,24 @@ figs/s1d/protein_composition_pies_all_five,png|pdf,figure,s1d,s1d_2_neuroglial_p
 figs/s1d/protein_composition_pies_excl_mbp,png|pdf,figure,s1d,s1d_2_neuroglial_protein_proportions.R,not yet in deck,file,ok,per-region composition pies excluding MBP
 figs/s1_synthesis/s1_cross_study_rho_forest,png|pdf,figure,s1_synthesis,s1_synthesis_cross_study.R,not yet in deck,file,ok,Spearman rho vs rCMRGlc for every s1a-s1d predictor; recomputed uniformly and self-checked against study tables
 figs/s1_synthesis/s1_cross_study_region_coverage,png|pdf,figure,s1_synthesis,s1_synthesis_cross_study.R,not yet in deck,file,ok,which Heiss regions each Study 1 comparison pairs
+figs/s1c/holmes_replication,png|pdf,figure,s1c,s1c_holmes_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1c/holmes_rcmrglc_matched_regions,csv,table,s1c,s1c_holmes_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1c/holmes_replication_fits,csv,table,s1c,s1c_holmes_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1c/holmes_unmatched_regions,csv,table,s1c,s1c_holmes_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1c/synaptic_density_region_audit,csv,table,s1c,s1c_synaptic_density_metabolic_rate.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+figs/s2/beip_replication,png|pdf,figure,s2,s2_beip_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s2/beip_volume_contrasts,csv,table,s2,s2_beip_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s2/beip_replication_fits,csv,table,s2,s2_beip_replication.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+data_intermediate/s1a_volume_basis_audit,csv,table,s1a,00_assemble_comparison_inputs.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1_synthesis/regional_comparison_coverage,csv,table,s1_synthesis,s1_s2_regional_sensitivity.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1_synthesis/shared_region_counts,csv,table,s1_synthesis,s1_s2_regional_sensitivity.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1_synthesis/regional_sensitivity_fits,csv,table,s1_synthesis,s1_s2_regional_sensitivity.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1_synthesis/heiss1984_matched_inputs,csv,table,s1_synthesis,s1_heiss1984_sensitivity.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/s1_synthesis/heiss1984_sensitivity_fits,csv,table,s1_synthesis,s1_heiss1984_sensitivity.R,analysis expansion 12 Nov,file,ok,Separate replication or sensitivity; exploratory inference
+tables/anatomy/primary_mapping_decisions,csv,table,anatomy,00_anatomical_match_audit.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+tables/anatomy/primary_mapping_counts,csv,table,anatomy,00_anatomical_match_audit.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+tables/anatomy/s4a_primary_status,csv,table,anatomy,00_anatomical_match_audit.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+tables/s1c/andersen_paired_regions,csv,table,s1c,s1c_andersen_paired_replication.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+tables/s1c/andersen_paired_fits,csv,table,s1c,s1c_andersen_paired_replication.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+figs/s1c/andersen_paired_replication,png|pdf,figure,s1c,s1c_andersen_paired_replication.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
+tables/anatomy/analysis_region_counts,csv,table,anatomy,00_anatomical_match_audit.R,strict anatomy 12 Nov,file,ok,Before-after regional counts; participants unchanged

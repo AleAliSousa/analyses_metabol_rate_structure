@@ -1,0 +1,43 @@
+"printed_row","brain_no_as_printed","observation_level","n_brains","species_as_published","structure","cell_type_as_printed","cell_class","reference_space","value_as_printed","N_cells.1e6","N_cells","dispersion","dispersion_type","note"
+1,"1","individual",1,"human","cerebellar cortex","Granule","neuron","granular layer","80,900 (0.12)",80900,80900000000,0.12,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","cerebellar cortex","Purkinje","neuron","granular layer","24.6 (0.13)",24.6,24600000,0.13,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","cerebellar cortex","Golgi/g","neuron","granular layer","56.3 (0.15)",56.3,56300000,0.15,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","cerebellar cortex","Glial/g","glia","granular layer","1,130 (0.16)",1130,1130000000,0.16,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","cerebellar cortex","Glial/m","glia","molecular layer","1,160 (0.06)",1160,1160000000,0.06,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","1,270 (0.14)",1270,1270000000,0.14,"CE (SEM/mean) of the individual estimate",NA
+1,"1","individual",1,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","5.24 (0.08)",5.24,5240000,0.08,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Granule","neuron","granular layer","97,400 (0.09)",97400,97400000000,0.09,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Purkinje","neuron","granular layer","34.2 (0.21)",34.2,34200000,0.21,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Golgi/g","neuron","granular layer","115.3 (0.16)",115.3,115300000,0.16,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Glial/g","glia","granular layer","1,170 (0.18)",1170,1170000000,0.18,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Glial/m","glia","molecular layer","900 (0.08)",900,900000000,0.08,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","1,320 (0.07)",1320,1320000000,0.07,"CE (SEM/mean) of the individual estimate",NA
+2,"2","individual",1,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","6.87 (0.04)",6.87,6870000,0.04,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Granule","neuron","granular layer","108,700 (0.10)",108700,108700000000,0.1,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Purkinje","neuron","granular layer","31.2 (0.18)",31.2,31200000,0.18,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Golgi/g","neuron","granular layer","80.6 (0.27)",80.6,80600000,0.27,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Glial/g","glia","granular layer","1,260 (0.12)",1260,1260000000,0.12,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Glial/m","glia","molecular layer","1,020 (0.06)",1020,1020000000,0.06,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","1,460 (0.07)",1460,1460000000,0.07,"CE (SEM/mean) of the individual estimate",NA
+3,"3","individual",1,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","3.98 (0.05)",3.98,3980000,0.05,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Granule","neuron","granular layer","102,700 (0.12)",102700,102700000000,0.12,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Purkinje","neuron","granular layer","33.4 (0.30)",33.4,33400000,0.3,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Golgi/g","neuron","granular layer","86.3 (0.11)",86.3,86300000,0.11,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Glial/g","glia","granular layer","1,750 (0.11)",1750,1750000000,0.11,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Glial/m","glia","molecular layer","540 (0.25)",540,540000000,0.25,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","2,090 (0.10)",2090,2090000000,0.1,"CE (SEM/mean) of the individual estimate",NA
+4,"4","individual",1,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","—",NA,NA,NA,"CE (SEM/mean) of the individual estimate","Printed as a dash: no dentate estimate for brain 4; the Mean is over the other 4 brains."
+5,"5","individual",1,"human","cerebellar cortex","Granule","neuron","granular layer","116,100 (0.21)",116100,116100000000,0.21,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","cerebellar cortex","Purkinje","neuron","granular layer","29.1 (0.08)",29.1,29100000,0.08,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","cerebellar cortex","Golgi/g","neuron","granular layer","68.1 (0.10)",68.1,68100000,0.1,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","cerebellar cortex","Glial/g","glia","granular layer","1,330 (0.19)",1330,1330000000,0.19,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","cerebellar cortex","Glial/m","glia","molecular layer","1,540 (0.11)",1540,1540000000,0.11,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","2,020 (0.20)",2020,2020000000,0.2,"CE (SEM/mean) of the individual estimate",NA
+5,"5","individual",1,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","3.94 (0.08)",3.94,3940000,0.08,"CE (SEM/mean) of the individual estimate",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Granule","neuron","granular layer","101,100 (0.13)",101100,101100000000,0.13,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Purkinje","neuron","granular layer","30.5 (0.13)",30.5,30500000,0.13,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Golgi/g","neuron","granular layer","81.3 (0.27)",81.3,81300000,0.27,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Glial/g","glia","granular layer","1,330 (0.19)",1330,1330000000,0.19,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Glial/m","glia","molecular layer","1,030 (0.36)",1030,1030000000,0.36,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",5,"human","cerebellar cortex","Neurons/m","neuron","molecular layer","1,630 (0.24)",1630,1630000000,0.24,"CV (SD/mean) between cerebella",NA
+6,"Mean","group mean",4,"human","dentate nuclei","Dentate nuclei","neuron","dentate nuclei","5.01 (0.28)",5.01,5010000,0.28,"CV (SD/mean) between cerebella",NA

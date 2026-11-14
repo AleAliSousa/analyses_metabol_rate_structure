@@ -23,11 +23,11 @@
 #     checks the deliverable manifest and exits non-zero on failure.
 #
 # Notes
-#   * s4a_endocranial.R must run before s4a_endocranial_cerebellum.R (the
+#   * s4a_endocranial_proxy_sensitivity.R must run before s4a_endocranial_cerebellum_proxy_sensitivity.R (the
 #     cerebellum script reads the whole-brain budget table the main one writes).
 #   * The working directory is reset to the project root before every script,
 #     because the scripts use paths relative to the project root
-#     (e.g. "data_raw/...", "figs/s4a/...", "helpers/plot_settings.R").
+#     (e.g. "data_raw/...", "figs/s4a_proxy_sensitivity/...", "helpers/plot_settings.R").
 # =====================================================================
 
 # ---- locate the project root (parent of this scripts/ folder) -------
@@ -57,6 +57,7 @@ RUN_ORDER <- c(
   "00_sync_evo_m1_inputs.R",
   "00_assemble_comparison_inputs.R",
   "00_prepare_heiss_rates.R",
+  "00_anatomical_match_audit.R",
   
   # Comparative neocortex plot from Evo-M1 volumes_wide.csv (slide 8)
   "02_traits_neocortex_grey_white.R",
@@ -68,7 +69,7 @@ RUN_ORDER <- c(
   # Study 1b: transcriptomic cells (extract -> map -> proportions -> analyses).
   # The unsuffixed s1b_3 scripts use all mapped brain regions; the paired
   # telencephalon scripts are anatomical-scope sensitivity analyses.
-  "s1b_1_extract_transcriptomic_30052026.R",
+  "s1b_1_extract_transcriptomic_05112026.R",
   "s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R",
   "s1b_3_n_transcriptomic_neuronal_25052026.R",
   "s1b_3_n_transcriptomic_neuronal_telencephalon_25052026.R",
@@ -85,6 +86,8 @@ RUN_ORDER <- c(
   
   # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)
   "s1c_synaptic_density_metabolic_rate.R",
+  "s1c_holmes_replication.R",
+  "s1c_andersen_paired_replication.R",
   
   # Study s1d: neuroglial protein concentrations vs rCMRGlc (Sjölin ELISA);
   # s1d_1 writes the regional summary that s1d_2 reads.
@@ -97,23 +100,24 @@ RUN_ORDER <- c(
   
   # Study 2: environmental stress
   "s2_stress_volume_01062026.R",
+  "s2_beip_replication.R",
+  "s1_s2_regional_sensitivity.R",
+  "s1_heiss1984_sensitivity.R",
   
   # Study 3 is intentionally absent. Its last volumes-wide producer is under
   # scripts/archive/ pending the new anatomy crosswalk and active replacement.
   
   # Study 4a: fossil endocranial budgets (main before cerebellum sibling)
-  "s4a_endocranial.R",
-  "s4a_endocranial_cerebellum.R",
+  "s4a_endocranial_proxy_sensitivity.R",
+  "s4a_endocranial_cerebellum_proxy_sensitivity.R",
   
   # Study 4b: arterial-canal metabolic estimates
-  "s4b_arterial_canal.R",
-  
-  # QC / robustness checks (no deliverable outputs)
-  "01_network_residual_autocorrelation_analysis.R"
+  "s4b_arterial_canal.R"
 )
 
 # Scripts that live in scripts/ but are NOT run here
 DO_NOT_RUN <- c(
+  "01_network_residual_autocorrelation_analysis.R", # depends on archived s3 anatomy; not a current primary analysis
   "run_all.R",          # this file
   "verify_outputs.R"    # sourced as a gate after the run, below
 )

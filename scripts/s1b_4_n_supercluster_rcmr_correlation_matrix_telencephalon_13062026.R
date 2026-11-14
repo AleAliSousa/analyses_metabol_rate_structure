@@ -14,6 +14,7 @@ dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 source("helpers/plot_settings.R")
 
 library(readxl)
+source("helpers/siletti_cell_types.R")  # is_siletti_neuron(): revised Siletti cell_type labels
 library(tidyverse)
 
 ############################
@@ -23,7 +24,7 @@ obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neur
 
 # neurons only
 obs <- obs %>%
-  filter(cell_type == "neuron") %>%
+  filter(is_siletti_neuron(cell_type)) %>%
   mutate(
     roi = stringr::str_squish(roi),
     supercluster_term = stringr::str_squish(as.character(supercluster_term))

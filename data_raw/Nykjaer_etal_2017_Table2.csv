@@ -1,0 +1,9 @@
+"printed_row","cell_type_as_printed","cell_class","group_as_printed","is_healthy_control","n_subjects","species_as_published","structure","value_as_printed","N_cells.1e9","N_cells","CV","P_value_as_printed","P_value"
+1,"Neurons","neuron","Control",1,11,"human","cerebral white matter (bilateral)","1.1 × 10^9",1.1,1100000000,0.41,".001**",0.001
+1,"Neurons","neuron","MSA",0,10,"human","cerebral white matter (bilateral)","0.5 × 10^9",0.5,500000000,0.37,".001**",0.001
+2,"Oligodendrocytes","glia","Control",1,11,"human","cerebral white matter (bilateral)","38.7 × 10^9",38.7,38700000000,0.19,".08",0.08
+2,"Oligodendrocytes","glia","MSA",0,10,"human","cerebral white matter (bilateral)","43.7 × 10^9",43.7,43700000000,0.11,".08",0.08
+3,"Astrocytes","glia","Control",1,11,"human","cerebral white matter (bilateral)","3.2 × 10^9",3.2,3200000000,0.33,".31",0.31
+3,"Astrocytes","glia","MSA",0,10,"human","cerebral white matter (bilateral)","3.6 × 10^9",3.6,3600000000,0.23,".31",0.31
+4,"Microglia","glia","Control",1,11,"human","cerebral white matter (bilateral)","0.7 × 10^9",0.7,700000000,0.39,".003**",0.003
+4,"Microglia","glia","MSA",0,10,"human","cerebral white matter (bilateral)","1.5 × 10^9",1.5,1500000000,0.47,".003**",0.003

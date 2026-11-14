@@ -35,6 +35,7 @@ source("helpers/model_diagnostics.R"); diag_stage("s1_synthesis")  # model diagn
 library(tidyverse)
 source("helpers/plot_settings.R")
 source("helpers/read_heiss_rates.R")
+source("helpers/regional_robustness.R")
 
 for (d in c("figs/s1_synthesis", "tables/s1_synthesis")) {
   if (!dir.exists(d)) dir.create(d, recursive = TRUE)
@@ -78,6 +79,7 @@ add_block <- function(study, block, source_file, data, predictors, labels,
 ## --- s1a stereology (same join as s1a_1) -------------------------------
 s1a_file <- "data_intermediate/s1a_stereology_comparison.csv"
 s1a <- read_required(s1a_file) %>%
+  primary_region_rows("metadata/anatomy/s1a_stereology_region_map.csv") %>%
   inner_join(as_tibble(heiss), by = "anatomy_id")
 add_block(
   "s1a", "Cell numbers", s1a_file, s1a,

@@ -5,6 +5,7 @@ source("helpers/plot_settings.R")
 
 ## Install and Load up packages
 library(ggplot2)
+source("helpers/siletti_cell_types.R")  # is_siletti_neuron(): revised Siletti cell_type labels
 library(ggpmisc)
 library(readxl)
 library(tidyverse)
@@ -16,7 +17,7 @@ obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neur
 
 # filter to neurons only
 obs_neuron <- obs %>%
-  filter(cell_type == "neuron")
+  filter(is_siletti_neuron(cell_type))
 
 ######################################################
 # Read rCMRGlc values from Heiss et al. 2004

@@ -1,5 +1,4 @@
 "anatomy_id","anatomy_group","source_lobe","anatomical_scope","rcmrglc_mean","rcmrglc_sd","synaptic_density_mean","synaptic_density_sd"
-"centrum_semiovale","Centrum semiovale","Subcortical","White matter",12.3,1.45,12,19
 "pallidum","Pallidum","Subcortical","Subcortical grey matter",21.9,2.26,304,52
 "amygdala","Corpus amygdaloideum","Subcortical","Subcortical grey matter",22.2,1.74,472,84
 "hippocampus","Hippocampus","Subcortical","Subcortical grey matter",25.7,2.11,350,64

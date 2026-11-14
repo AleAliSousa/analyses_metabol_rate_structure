@@ -1,4 +1,4 @@
-"source_row","source_dataset","heiss_category","heiss_region","anatomy_id","canonical_label","parent_id","mapping_relationship","rcmrglc_mean_umol_100g_min","rcmrglc_sd_umol_100g_min","left_minus_right_mean","left_minus_right_sd","left_minus_right_p_value","heiss_1991_mean_umol_100g_min","color_hex","display_order"
+"source_row","source_dataset","heiss_category","heiss_region","anatomy_id","canonical_label","parent_id","mapping_relationship","rcmrglc_mean_umol_100g_min","rcmrglc_sd_umol_100g_min","left_minus_right_mean","left_minus_right_sd","left_minus_right_p_value","heiss_1984_mean_umol_100g_min","color_hex","display_order"
 1,"Heiss et al. 2004 Table 1","Cerebral cortex","Cerebral cortex (global average)","cerebral_cortex","Cerebral cortex","brain","source_measurement",33.5,2.98,,,,,"#000000",20
 2,"Heiss et al. 2004 Table 1","Cerebral cortex","Frontal lobe","frontal_lobe","Frontal lobe","cerebral_cortex","exact",35.3,3.51,0.29,0.6,,32.1,"#56B4E9",40
 3,"Heiss et al. 2004 Table 1","Cerebral cortex","Parietal lobe","parietal_lobe","Parietal lobe","cerebral_cortex","exact",35.8,3.23,1.17,0.75,0.00165,29.2,"#D55E00",50

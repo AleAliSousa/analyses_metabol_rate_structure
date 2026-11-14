@@ -1,0 +1,18 @@
+"printed_row","section_as_printed","structure_as_printed","parent_as_printed","species_as_published","observation_level","n_brains","measure","value_as_printed","value.printed_unit","unit_as_printed","CV","Vol.mm3"
+1,"Pial surface (cm^2)","Pial surface (cm^2)",NA,"human","group mean",5,"pial surface area","1,160 (0.29)",1160,"cm^2",0.29,NA
+3,"Cerebellar volume (cm^3)","Total",NA,"human","group mean",5,"volume","125 (0.19)",125,"cm^3",0.19,125000
+4,"Cerebellar volume (cm^3)","Cortex",NA,"human","group mean",5,"volume","90.4 (0.22)",90.4,"cm^3",0.22,90400
+5,"Cerebellar volume (cm^3)","Pars anterior","Cortex","human","group mean",5,"volume","8.5 (0.27)",8.5,"cm^3",0.27,8500
+6,"Cerebellar volume (cm^3)","Pars posterior","Cortex","human","group mean",5,"volume","73.0 (0.23)",73,"cm^3",0.23,73000
+7,"Cerebellar volume (cm^3)","Vermis","Cortex","human","group mean",5,"volume","8.2 (0.28)",8.2,"cm^3",0.28,8200
+8,"Cerebellar volume (cm^3)","Flocculonodular lobe","Cortex","human","group mean",5,"volume","0.62 (0.24)",0.62,"cm^3",0.24,620
+9,"Cerebellar volume (cm^3)","Dentate nuclei",NA,"human","group mean",5,"volume","0.96 (0.25)",0.96,"cm^3",0.25,960
+10,"Cerebellar volume (cm^3)","White matter",NA,"human","group mean",5,"volume","33.1 (0.15)",33.1,"cm^3",0.15,33100
+12,"Average thickness of molecular layer (µm)","Pars anterior",NA,"human","group mean",5,"average thickness of molecular layer","473 (0.16)",473,"µm",0.16,NA
+13,"Average thickness of molecular layer (µm)","Pars posterior",NA,"human","group mean",5,"average thickness of molecular layer","471 (0.26)",471,"µm",0.26,NA
+14,"Average thickness of molecular layer (µm)","Vermis",NA,"human","group mean",5,"average thickness of molecular layer","460 (0.09)",460,"µm",0.09,NA
+15,"Average thickness of molecular layer (µm)","Flocculonodular lobe",NA,"human","group mean",5,"average thickness of molecular layer","742 (0.10)",742,"µm",0.1,NA
+17,"Average thickness of granular layer (µm)","Pars anterior",NA,"human","group mean",5,"average thickness of granular layer","367 (0.17)",367,"µm",0.17,NA
+18,"Average thickness of granular layer (µm)","Pars posterior",NA,"human","group mean",5,"average thickness of granular layer","336 (0.21)",336,"µm",0.21,NA
+19,"Average thickness of granular layer (µm)","Vermis",NA,"human","group mean",5,"average thickness of granular layer","400 (0.09)",400,"µm",0.09,NA
+20,"Average thickness of granular layer (µm)","Flocculonodular lobe",NA,"human","group mean",5,"average thickness of granular layer","715 (0.12)",715,"µm",0.12,NA

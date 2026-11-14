@@ -8,6 +8,7 @@ library(ggpmisc)    # for stat_poly_eq
 # Shared region colours/order (same palette as Study 1 figures).
 source("helpers/plot_settings.R")
 source("helpers/read_heiss_rates.R")
+source("helpers/regional_robustness.R")
 
 # Ensure the output folder exists so ggsave() does not error on a fresh checkout.
 if (!dir.exists("figs/s2")) dir.create("figs/s2", recursive = TRUE)
@@ -67,6 +68,7 @@ plot_df <- data %>%
 
 # Keep only rows with data for this plot and remove Total Brain
 plot_df_clean <- plot_df %>%
+  primary_region_rows() %>%
   filter(
     anatomy_id != "brain",
     !is.na(rcmr_value),

@@ -1,0 +1,28 @@
+printed_row,region_as_published,species_group_as_published,species_as_published,n,specific_binding_printed,specific_binding_mean.kBq_mm2,specific_binding_range_min.kBq_mm2,specific_binding_range_max.kBq_mm2,ratio_to_white_matter_printed,ratio_to_white_matter_mean,ratio_to_white_matter_range_min,ratio_to_white_matter_range_max,is_white_matter_reference
+1,Frontal cortex,Non-human primate,Macaca Fascicularis,5,636 (584–665),636,584,665,26 (23–31),26,23,31,0
+1,Frontal cortex,Human,Human,3,716 (619–781),716,619,781,16 (9.1–22),16,9.1,22,0
+2,Temporal cortex,Non-human primate,Macaca Fascicularis,5,688 (606–831),688,606,831,28 (26–33),28,26,33,0
+2,Temporal cortex,Human,Human,3,706 (681–738),706,681,738,15 (10–21),15,10,21,0
+3,Insular cortex,Non-human primate,Macaca Fascicularis,5,690 (639–731),690,639,731,28 (25–33),28,25,33,0
+3,Insular cortex,Human,Human,3,677 (569–796),677,569,796,15 (8.4–23),15,8.4,23,0
+4,Occipital cortex,Human,Human,1,585,585,,,8.6,8.6,,,0
+5,Caudate nucleus,Non-human primate,Macaca Fascicularis,5,702 (681–723),702,681,723,29 (27–35),29,27,35,0
+5,Caudate nucleus,Human,Human,3,762 (588–887),762,588,887,17 (8.7–26),17,8.7,26,0
+6,Putamen,Non-human primate,Macaca Fascicularis,5,579 (541–626),579,541,626,24 (21–28),24,21,28,0
+6,Putamen,Human,Human,3,570 (505–651),570,505,651,13 (7.4–19),13,7.4,19,0
+7,Globus pallidus,Non-human primate,Macaca Fascicularis,5,343 (273–382),343,273,382,14 (11–17),14,11,17,0
+7,Globus pallidus,Human,Human,2,385 (356–414),385,356,414,9.8 (7.6–12),9.8,7.6,12,0
+8,Hippocampus,Non-human primate,Macaca Fascicularis,5,569 (508–627),569,508,627,23 (20–26),23,20,26,0
+8,Hippocampus,Human,Human,3,771 (564–943),771,564,943,18 (8.3–27),18,8.3,27,0
+9,Amygdala,Non-human primate,Macaca Fascicularis,4,608 (518–720),608,518,720,24 (20–28),24,20,28,0
+9,Amygdala,Human,Human,2,611 (520–703),611,520,703,11 (10–11),11,10,11,0
+10,Thalamus,Non-human primate,Macaca Fascicularis,5,528 (493–564),528,493,564,22 (19–27),22,19,27,0
+10,Thalamus,Human,Human,3,541 (482–599),541,482,599,12 (7.1–17),12,7.1,17,0
+11,Cerebellum,Non-human primate,Macaca Fascicularis,1,517,517,,,25,25,,,0
+11,Cerebellum,Human,Human,2,596 (492–700),596,492,700,14 (7.2–20),14,7.2,20,0
+12,Substantia nigra,Non-human primate,Macaca Fascicularis,1,572,572,,,28,28,,,0
+12,Substantia nigra,Human,Human,2,592 (544–640),592,544,640,15 (12–18),15,12,18,0
+13,Pons,Non-human primate,Macaca Fascicularis,1,212,212,,,10,10,,,0
+13,Pons,Human,Human,2,194 (158–230),194,158,230,4.5 (2.3–6.6),4.5,2.3,6.6,0
+14,White matter,Non-human primate,Macaca Fascicularis,5,24 (21–26),24,21,26,,,,,1
+14,White matter,Human,Human,3,50 (35–68),50,35,68,,,,,1

@@ -1,0 +1,14 @@
+"record","derived","group_as_printed","group_role","species_as_published","region","cell_type_as_printed","measure","value_as_printed","value","unit_as_printed","N_cells","qualifier_as_printed","printed_page","derivation"
+"T01",0,"control group","healthy control","human","hippocampus (left)","glial cells","total number","256",256,"million",256000000,"","166",NA
+"T02",0,"control group","healthy control","human","hippocampus (left)","astrocytes","percent of total glia","56",56,"%",NA,"","166",NA
+"T03",0,"control group","healthy control","human","hippocampus (left)","oligodendrocytes","percent of total glia","32",32,"%",NA,"","166",NA
+"T04",0,"control group","healthy control","human","hippocampus (left)","microglia","percent of total glia","12",12,"%",NA,"","166",NA
+"T05",0,"","healthy control (paragraph context)","human","hippocampus (left)","glial cells per neuron","glia/neuron ratio","11.5",11.5,"glial cells per neuron",NA,"Apart from a lower ratio found in the granule cell layer","166",NA
+"T06",0,"alcoholic brains compared with controls","alcoholic vs control","human","hippocampus (left)","glial cells","relative reduction vs controls","37",37,"%",NA,"p < 0.05","165",NA
+"T07",0,"alcoholic group","alcoholic","human","hippocampus (left)","astrocytes","relative reduction vs controls","42",42,"%",NA,"p < 0.025","166",NA
+"T08",0,"alcoholic group","alcoholic","human","hippocampus (left)","oligodendrocytes","relative reduction vs controls","39",39,"%",NA,"","166",NA
+"T09",0,"alcoholic group","alcoholic","human","hippocampus (left)","microglial cells","relative reduction vs controls","14",14,"%",NA,"","166",NA
+"T10",0,"alcoholics, compared with controls","alcoholic vs control","human","hippocampus (left)","glial cells per neuron","relative reduction vs controls","33",33,"%",NA,"p < 0.01","166",NA
+"D01",1,"control group","healthy control","human","hippocampus (left)","astrocytes","total number (derived)",NA,143.36,"million",143360000,NA,"166","T01 x T02 / 100 (256 million x printed %); not printed by the paper"
+"D02",1,"control group","healthy control","human","hippocampus (left)","oligodendrocytes","total number (derived)",NA,81.92,"million",81920000,NA,"166","T01 x T03 / 100 (256 million x printed %); not printed by the paper"
+"D03",1,"control group","healthy control","human","hippocampus (left)","microglia","total number (derived)",NA,30.72,"million",30720000,NA,"166","T01 x T04 / 100 (256 million x printed %); not printed by the paper"

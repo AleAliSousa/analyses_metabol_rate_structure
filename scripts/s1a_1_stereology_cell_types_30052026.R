@@ -6,6 +6,7 @@ library(ggplot2)
 library(ggpmisc)  # for stat_poly_eq
 library(tidyverse)
 source("helpers/read_heiss_rates.R")
+source("helpers/regional_robustness.R")
 
 # Brain Structure Metabolic Rates (rCMRGlc) compared to Anatomical Variables
 
@@ -19,6 +20,7 @@ stereology <- read.csv(
   check.names = FALSE
 )
 heiss_rates <- read_heiss_rcmr(include_global_average = TRUE)
+stereology <- primary_region_rows(stereology, "metadata/anatomy/s1a_stereology_region_map.csv")
 
 # Join comparison measurements to authoritative Heiss rates by anatomy_id.
 data <- stereology %>%

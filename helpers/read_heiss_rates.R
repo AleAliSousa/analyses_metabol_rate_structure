@@ -129,6 +129,11 @@ read_study_anatomy_map <- function(path) {
   mapping$analysis_anatomy_id <- trimws(mapping$analysis_anatomy_id)
   mapping$heiss_anatomy_id <- trimws(mapping$heiss_anatomy_id)
   mapping$component_weight <- as.numeric(mapping$component_weight)
+  .require_columns(mapping, c("primary_included", "primary_match_note"), path)
+  policy <- toupper(as.character(mapping$primary_included))
+  if (anyNA(policy) || any(!policy %in% c("TRUE", "FALSE")))
+    stop(path, ": primary_included must be TRUE/FALSE")
+  mapping$primary_included <- policy == "TRUE"
   required_text <- c(
     "source_region", "analysis_anatomy_id", "relationship", "mapping_note"
   )
@@ -192,7 +197,8 @@ read_study_anatomy_map <- function(path) {
 # Resolve a comparison map to one rate per source-region/analysis-ID pair.
 # Component weights are normalized within each pair. A single direct target is
 # displayed with its native Heiss label; composites use the registry label.
-derive_study_heiss_rates <- function(mapping_or_path) {
+derive_study_heiss_rates <- function(mapping_or_path, policy = c("primary", "legacy_proxy")) {
+  policy <- match.arg(policy)
   mapping <- if (is.character(mapping_or_path) && length(mapping_or_path) == 1L) {
     read_study_anatomy_map(mapping_or_path)
   } else {
@@ -202,7 +208,7 @@ derive_study_heiss_rates <- function(mapping_or_path) {
     mapping,
     c(
       "source_region", "analysis_anatomy_id", "heiss_anatomy_id",
-      "component_weight"
+      "component_weight", "primary_included", "primary_match_note"
     ),
     "study anatomy mapping"
   )
@@ -261,6 +267,16 @@ derive_study_heiss_rates <- function(mapping_or_path) {
   })
 
   out <- do.call(rbind, resolved)
+  out$primary_included <- vapply(pair_levels, function(key)
+    all(mapping$primary_included[pair_key == key]), logical(1))
+  out$primary_match_note <- vapply(pair_levels, function(key)
+    paste(unique(mapping$primary_match_note[pair_key == key]), collapse = " | "), character(1))
+  # Retain source rows for descriptive outputs, but never silently assign a
+  # rejected rate. Legacy estimates require an explicit opt-in and label.
+  if (policy == "primary") {
+    out$rcmr_value[!out$primary_included] <- NA_real_
+    out$rcmr_sd[!out$primary_included] <- NA_real_
+  }
   rownames(out) <- NULL
   out
 }
@@ -269,6 +285,7 @@ read_s1b_roi_map <- function(
   path = "metadata/anatomy/s1b_linnarsson_roi_map.csv"
 ) {
   mapping <- read_study_anatomy_map(path)
+  mapping <- mapping[mapping$primary_included, , drop = FALSE]
   .require_columns(
     mapping,
     c("is_cerebral_cortex", "is_neocortex", "is_telencephalon"),

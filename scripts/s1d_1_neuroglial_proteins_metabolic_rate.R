@@ -50,6 +50,7 @@ library(ggpmisc)
 
 source("helpers/plot_settings.R")
 source("helpers/read_heiss_rates.R")
+source("helpers/regional_robustness.R")
 
 for (d in c("figs/s1d", "tables/s1d", "data_intermediate")) {
   if (!dir.exists(d)) dir.create(d, recursive = TRUE)
@@ -188,7 +189,7 @@ write.csv(
 
 # Analysis set: regions with a Heiss rate (as in s1a_1, rows lacking the
 # comparison variables are dropped; here the rows lacking a rate).
-analysis_df <- regional_means %>% filter(!is.na(rcmr_value))
+analysis_df <- regional_means %>% primary_region_rows() %>% filter(!is.na(rcmr_value))
 
 message("s1d_1: ", nrow(analysis_df), " analysis regions with a Heiss rate; ",
         sum(is.na(regional_means$rcmr_value)), " source regions without one.")
@@ -362,6 +363,7 @@ bind_rows(
 ## correlated with rCMRGlc (lobar white-matter samples averaged within the
 ## donor first), and the distribution of per-donor rho is summarised.
 donor_region <- samples_matched %>%
+  primary_region_rows() %>%
   filter(!is.na(rcmr_value)) %>%
   group_by(donor, anatomy_id, rcmr_value) %>%
   summarise(across(all_of(measure_columns), geo_mean), .groups = "drop")

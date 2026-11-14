@@ -13,7 +13,7 @@
 # Uncertainty: parametric bootstrap of the group means from the reported
 # mean / SD / n per region (2000 draws).  n: normative 262 (Walhovd 2011
 # Overall_N262), English adoptees 21, Romanian adoptees 67 (Mackes 2020
-# source files data_raw/Mackes_etal_2020_*_derived.csv).
+# source files data_raw/Mackes_etal_2020_subcortical.csv).
 #
 # CAVEAT  The stressor (early institutional deprivation measured in adulthood,
 #         volume outcome) differs from acute food deprivation in ants
@@ -39,12 +39,12 @@ rates <- derive_study_heiss_rates("metadata/anatomy/s2_stress_volume_region_map.
 data <- data %>% left_join(rates, by = "anatomy_id")
 
 # group sample sizes from the source files
-mack <- read.csv("data_raw/Mackes_etal_2020_subcortical_derived.csv", stringsAsFactors = FALSE)
+mack <- read.csv("data_raw/Mackes_etal_2020_subcortical.csv", stringsAsFactors = FALSE)
 n_group <- c(norm = 262L,
              english = unique(mack$n[mack$Group == "UK"]),
              romanian = unique(mack$n[mack$Group == "Romanian"]))
 stopifnot(length(n_group) == 3, all(is.finite(n_group)))
-walh <- read.csv("data_raw/Walhovd_etal_2011_derived.csv", stringsAsFactors = FALSE)
+walh <- read.csv("data_raw/Walhovd_etal_2011_normative.csv", stringsAsFactors = FALSE)
 stopifnot(grepl("N262", names(walh)[2]))
 
 long <- data %>% filter(anatomy_id != "brain", !is.na(rcmr_value)) %>%
@@ -120,7 +120,7 @@ p <- ggplot(fig_df, aes(x = group, y = pct_change, fill = quantity)) +
   geom_hline(yintercept = 0) +
   scale_fill_manual(values = c("% change in summed volume" = "#999999", "% change in summed energy budget" = "#D55E00"), name = NULL) +
   labs(x = NULL, y = "% change, normative -> adoptees",
-       subtitle = "Summed over the 8 regions with a Heiss rate; budget = rCMRGlc x volume",
+       subtitle = sprintf("Summed over %d anatomically matched regions; budget = rCMRGlc x volume", nrow(wide)),
        caption = sprintf("Whiskers: 95%% CI from %d parametric bootstrap draws of the group means.", N_BOOT)) +
   theme_classic(base_size = 14) + theme(legend.position = "bottom")
 save_png_pdf(p, "figs/s5/s5c_budget_vs_volume_change", width = 8, height = 6)

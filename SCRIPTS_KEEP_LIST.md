@@ -7,7 +7,7 @@
 > `s3_predicValuesPGLS_..._UPDATED_MU_PLOTS_1_PATCHED.R` and
 > `..._VOLUMES_WIDE_SELECT.R` (both write to `figs/s3/all` — last run wins).
 > The `s1b_1_n`/`s1b_1_nn` extract pair was merged into
-> `s1b_1_extract_transcriptomic_30052026.R`; the duplicate
+> `s1b_1_extract_transcriptomic_05112026.R`; the duplicate
 > `s1b_x_check_dissection_roi.R` was merged into `s1b_2_check_dissection_roi.R`;
 > superseded `s1b_5_n_EI_ratio_telencephalon_26052026.R` moved to
 > `scripts/archive/`.
@@ -38,8 +38,8 @@ below is driven entirely by the presentation.
 | `s1a_1_stereology_cell_types_30052026.R` | `figs/s1a/p_counts.jpg`, `figs/s1a/p_densities.jpg` | 58, 18 |
 | `s1b_4_n_supercluster_rcmr_correlation_matrix_telencephalon_13062026.R` | `figs/s1b/scatter_rcmr_supercluster_{all_regions,telencephalon,non_telencephalon}.png` | 57, 60, 61 |
 | `s2_stress_volume_01062026.R` | `figs/s2/mean_brain_region_volumes_boxplot.jpg`, `figs/s2/rCMRGlc_volume_change.jpg` | 30, 31 |
-| `s4a_endocranial.R` | `figs/s4a/endocranial_region_budgets.png` (65), `endocranial_region_cost_pie_3species_volctx.png` (45), `rcmrglc_vs_fig3a_deviation.png` (43), `volume_timeline_logage_flipped.png` (46) | 43, 45, 46, 65 |
-| `s4a_endocranial_cerebellum.R` | `figs/s4a/cerebellum_volume_timeline_logage.png` | 68 |
+| `s4a_endocranial_proxy_sensitivity.R` | `figs/s4a_proxy_sensitivity/endocranial_region_budgets.png` (65), `endocranial_region_cost_pie_3species_volctx.png` (45), `rcmrglc_vs_fig3a_deviation.png` (43), `volume_timeline_logage_flipped.png` (46) | 43, 45, 46, 65 |
+| `s4a_endocranial_cerebellum_proxy_sensitivity.R` | `figs/s4a_proxy_sensitivity/cerebellum_volume_timeline_logage.png` | 68 |
 
 ## Tier B — Keep: analysis + plot are in the deck, but the embedded image is an earlier render
 
@@ -60,7 +60,7 @@ pixel-match the current file. Keep them — they are core content.
 |---|---|---|
 | `00_prepare_heiss_rates.R` | `data_intermediate/heiss_2004_regions.csv` (source-independent Heiss rCMRglc reference) | s1b_3/4/5/6, s2 |
 | `0_bind_matano_1985a_to_stephan.R` | augments `Stephan_primates` volumes | s3, s4a |
-| `s1b_1_extract_transcriptomic_30052026.R` | `..._neuronal.rds` + `..._nonneuronal.rds` | s1b_4, s1b_5, s1b_6 |
+| `s1b_1_extract_transcriptomic_05112026.R` | `..._neuronal.rds` + `..._nonneuronal.rds` | s1b_4, s1b_5, s1b_6 |
 | `s1b_2_mapping_rcmrglc_transcriptomic_cells_anatomy_21052026.R` | maps transcriptomic ROIs to the anatomy registry | s1b_3/4/5/6 |
 | `s1b_3_*` transcriptomic (neuronal/nonneuronal ± telencephalon) | computes cell proportions using the anatomy map and source-independent Heiss rates | s1b_4/5/6 |
 | `R/plot_settings.R` | shared ggplot theme | sourced by most s1b/s3 scripts |
@@ -85,13 +85,13 @@ and a vector PDF:
 - `neocortex_grey_white.R` — was an interactive `dev.new()` + `dev.copy(png)`
   snapshot (PNG only, broke head-less). Now builds the plot in a reusable
   function and writes `neocortex_gray_white.png` + `.pdf`.
-- `s4a_endocranial.R` — `endocranial_region_budgets`, `endocranial_region_cost_pie_3species_volctx`,
+- `s4a_endocranial_proxy_sensitivity.R` — `endocranial_region_budgets`, `endocranial_region_cost_pie_3species_volctx`,
   `volume_timeline_logage_flipped` now export PNG **and** PDF (via a
   `save_png_pdf()` helper).
-- `s4a_endocranial_cerebellum.R` — `cerebellum_volume_timeline_logage` now exports
+- `s4a_endocranial_cerebellum_proxy_sensitivity.R` — `cerebellum_volume_timeline_logage` now exports
   PNG + PDF.
-- `figs/s4a/budget_significance.png` (deck slide 69) had **no source anywhere**.
-  Reconstructed as a new block in `s4a_endocranial_cerebellum.R`: whole-brain
+- `figs/s4a_proxy_sensitivity/budget_significance.png` (deck slide 69) had **no source anywhere**.
+  Reconstructed as a new block in `s4a_endocranial_cerebellum_proxy_sensitivity.R`: whole-brain
   (from `species_absolute_budgets.csv`) + cerebellum group budgets, mean +/- 95%
   CI vs MH = 1.0, with a two-sided one-sample t-test p-value. Writes
   `budget_significance.png` + `.pdf` + `budget_significance.csv`. Current-data
@@ -101,7 +101,7 @@ and a vector PDF:
 
 ## Still to resolve
 
-- **`figs/s4a/budget_residual_vs_volume.png` (slide 69) could not be
+- **`figs/s4a_proxy_sensitivity/budget_residual_vs_volume.png` (slide 69) could not be
   reconstructed.** No plotting code exists in the repo or R history, and none of
   the natural definitions of "the part not explained by brain size" reproduce
   its values (±0.09 to ±0.26): in the current model the budget is almost
@@ -110,7 +110,7 @@ and a vector PDF:
   **Needs the original code or a definition of the residual to regenerate.**
 - The edited scripts pass static checks (brace/paren/bracket balance, device
   open/close pairing) but could **not be executed here** (R is not installed in
-  this environment). Run `s4a_endocranial.R` then `s4a_endocranial_cerebellum.R`
+  this environment). Run `s4a_endocranial_proxy_sensitivity.R` then `s4a_endocranial_cerebellum_proxy_sensitivity.R`
   once to confirm the new PNG/PDF pairs render.
 - Tier B figures were matched by topic, not pixels, because the deck predates the
   current renders. If you re-export those slides from current scripts, the images

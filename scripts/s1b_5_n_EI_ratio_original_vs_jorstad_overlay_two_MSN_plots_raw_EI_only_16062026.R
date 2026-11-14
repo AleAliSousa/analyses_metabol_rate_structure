@@ -1,5 +1,6 @@
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 source("helpers/model_diagnostics.R"); diag_stage("s1b")  # model diagnostics -> figs/s1b/diagnostics/
+source("helpers/siletti_cell_types.R")  # is_siletti_neuron(): revised Siletti cell_type labels
 
 # Compare broad all-region E:I ratios with a Jorstad-like neocortical E:I ratio.
 #
@@ -54,7 +55,7 @@ DEF_SCOPE_EXTRAPOLATION <-
 obs <- readRDS("data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds")
 
 obs <- obs %>%
-  filter(cell_type == "neuron") %>%
+  filter(is_siletti_neuron(cell_type)) %>%
   mutate(
     across(
       any_of(c("roi", "supercluster_term", "ROIGroup", "ROIGroupCoarse", "ROIGroupFine", "dissection", "donor_id")),

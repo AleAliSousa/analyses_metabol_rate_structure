@@ -8,6 +8,7 @@ setwd(local({
 # distinct s1b_5 comparisons plus the MSN-included sensitivity definition.
 
 suppressPackageStartupMessages(library(tidyverse))
+source("helpers/siletti_cell_types.R")  # is_siletti_neuron(): revised Siletti cell_type labels
 source("helpers/read_heiss_rates.R")
 source("helpers/s1b_EI.R")
 
@@ -79,7 +80,7 @@ write.csv(
 obs <- readRDS(
   "data_intermediate/linnarsson_adult_human_brain_obs_metadata_neuronal.rds"
 ) %>%
-  filter(cell_type == "neuron") %>%
+  filter(is_siletti_neuron(cell_type)) %>%
   mutate(
     roi = stringr::str_squish(as.character(roi)),
     supercluster_term = stringr::str_squish(as.character(supercluster_term)),

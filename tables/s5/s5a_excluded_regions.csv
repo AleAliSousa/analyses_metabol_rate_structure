@@ -1,11 +1,17 @@
-"heiss_region","anatomy_id","rcmrglc_mean_umol_100g_min","reason","represented_as_composite"
-"Frontal lobe","frontal_lobe",35.3,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
-"Parietal lobe","parietal_lobe",35.8,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
-"Temporal lobe","temporal_lobe",30.5,"No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",FALSE
-"Basal forebrain","basal_forebrain",21.4,"No defensible human volume (Stephan septum is only a partial proxy).",FALSE
-"Nucleus medial thalami","medial_thalamic_nuclei",36.6,"Carried inside composite 'Thalamus (excluding LGN)' (no separate human volume)",TRUE
-"Corpus geniculatum mediale","medial_geniculate_nucleus",20.2,"Carried inside composite 'Thalamus (excluding LGN)' (no separate human volume)",TRUE
-"Colliculus inferior","inferior_colliculus",31.4,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
-"Colliculus superior","superior_colliculus",24.4,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
-"Substantia nigra","substantia_nigra",22.8,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
-"Nucleus ruber","red_nucleus",31,"Carried inside composite 'Mesencephalon' (no separate human volume)",TRUE
+"source_region","analysis_anatomy_id","volume_basis","primary_match_note"
+"Frontal lobe (Kochiyama)","frontal_lobe","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Parietal lobe (Kochiyama)","parietal_lobe","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Temporal lobe (Kochiyama)","temporal_lobe","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Occipital lobe (Kochiyama)","occipital_lobe","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Cerebellar cortex (Kochiyama)","cerebellar_cortex","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Vermis (Kochiyama)","vermis","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Neocortex grey (remaining)","neocortex_grey_matter","grey","Table 1 pairs the Heiss cerebral-cortex global average with neocortex grey (Frahm 1982); area striata grey and insula are subtracted so the occipital (V1) and insular points do not double count"
+"Neocortex white","centrum_semiovale","white","Table 1 pairing: centrum semiovale rate applied to all neocortical white matter"
+"Cerebellar hemispheres","cerebellar_cortex","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Thalamus (excluding LGN)","thalamus","grey","Whole thalamus minus LGN (LGN is its own point); rate is the unweighted mean of the two remaining Heiss thalamic measurements (adaptation of the s2 three-component thalamus rule)"
+"Area striata grey","occipital_lobe","grey","Table 1 pairing: occipital lobe approximated by V1 (area striata) grey matter only; extrastriate cortex is left in the remaining neocortex"
+"Striatum","putamen","grey","Striatum volume split 0.45 caudate / 0.49 putamen / 0.07 accumbens (de Jong et al. 2012 proportions as used in the Table 1 note; normalised to sum 1)"
+"Striatum","caudate_nucleus","grey","Striatum volume split 0.45 caudate / 0.49 putamen / 0.07 accumbens (de Jong et al. 2012 proportions as used in the Table 1 note; normalised to sum 1)"
+"Cerebellar vermis","vermis","grey_white","Gross grey-plus-white volume is not the sampled PET grey-matter compartment."
+"Mesencephalon","midbrain","mixed","Table 1 brain-stem-nuclei composite (weights 0.08/0.11/0.53/0.16 after Eapen 2011 and Garcia-Gomar 2019; the 0.12 'other' share carries no Heiss rate)"
+"Striatum","nucleus_accumbens","grey","Striatum volume split 0.45 caudate / 0.49 putamen / 0.07 accumbens (de Jong et al. 2012 proportions as used in the Table 1 note; normalised to sum 1)"

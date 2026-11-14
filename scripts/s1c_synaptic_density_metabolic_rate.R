@@ -27,6 +27,7 @@ library(ggpmisc)
 
 source("helpers/plot_settings.R")
 source("helpers/read_heiss_rates.R")
+source("helpers/regional_robustness.R")
 
 if (!dir.exists("figs/s1c")) dir.create("figs/s1c", recursive = TRUE)
 
@@ -98,6 +99,10 @@ plot_df <- synaptic_density_matched %>%
       TRUE ~ "Cerebral cortex"
     )
   )
+
+write_analysis_csv(plot_df,
+  "tables/s1c/synaptic_density_region_audit.csv")
+plot_df <- primary_region_rows(plot_df)
 
 ## Sanity check: stop if any region is missing a palette colour.
 check_region_palette(plot_df, region_col = "anatomy_group")

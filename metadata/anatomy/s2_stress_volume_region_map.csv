@@ -1,12 +1,12 @@
-source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,relationship,mapping_note
-Cerebral cortex,cerebral_cortex,cerebral_cortex,1,source_synonym,Stress-volume cerebral cortex is paired with the Heiss cerebral-cortex global average
-Thalamus,thalamus,medial_thalamic_nuclei,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
-Thalamus,thalamus,lateral_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
-Thalamus,thalamus,medial_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
-Caudate,caudate_nucleus,caudate_nucleus,1,source_synonym,English source label for Heiss Caudatum
-Putamen,putamen,putamen,1,exact,Direct anatomical match
-Pallidum,pallidum,pallidum,1,exact,Direct anatomical match
-Hippocampus,hippocampus,hippocampus,1,exact,Direct anatomical match
-Amygdala,amygdala,amygdala,1,source_synonym,English source label for Heiss Corpus amygdaloideum
-Accumbens,nucleus_accumbens,nucleus_accumbens,1,source_synonym,Short source label for Heiss Nucleus accumbens
-Total Brain,brain,,,no_heiss_rate,Comparison summary row retained for volume plots but excluded from metabolic analyses
+source_region,analysis_anatomy_id,heiss_anatomy_id,component_weight,relationship,mapping_note,primary_included,primary_match_note
+Cerebral cortex,cerebral_cortex,cerebral_cortex,1,source_synonym,Stress-volume cerebral cortex is paired with the Heiss cerebral-cortex global average,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Thalamus,thalamus,medial_thalamic_nuclei,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements,FALSE,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
+Thalamus,thalamus,lateral_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements,FALSE,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
+Thalamus,thalamus,medial_geniculate_nucleus,1,composite_unweighted_mean,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements,FALSE,Whole-thalamus comparison uses an unweighted mean of the three Heiss thalamic measurements
+Caudate,caudate_nucleus,caudate_nucleus,1,source_synonym,English source label for Heiss Caudatum,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Putamen,putamen,putamen,1,exact,Direct anatomical match,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Pallidum,pallidum,pallidum,1,exact,Direct anatomical match,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Hippocampus,hippocampus,hippocampus,1,exact,Direct anatomical match,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Amygdala,amygdala,amygdala,1,source_synonym,English source label for Heiss Corpus amygdaloideum,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Accumbens,nucleus_accumbens,nucleus_accumbens,1,source_synonym,Short source label for Heiss Nucleus accumbens,TRUE,Named structure and tissue class agree; sampling boundaries may differ between studies.
+Total Brain,brain,,,no_heiss_rate,Comparison summary row retained for volume plots but excluded from metabolic analyses,FALSE,Comparison summary row retained for volume plots but excluded from metabolic analyses

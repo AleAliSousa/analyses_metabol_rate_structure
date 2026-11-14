@@ -13,7 +13,7 @@
 #   metadata/anatomy/s5_heiss_region_volume_map.csv   (volume term per Heiss region;
 #        reuses the Table 1 pairings and the s4a Kochiyama lobe volumes)
 #   data_raw/volumes_wide.csv (Homo sapiens row; Stephan/Zilles-collection volumes, mm3,
-#        both hemispheres) and data_intermediate/s4a_endocranial_region_budgets.csv
+#        both hemispheres) and data_intermediate/s4a_proxy_sensitivity_endocranial_region_budgets.csv
 #   Evo-M1 Karbowski__2007/Karbowski__2007_Table1.csv (published regional exponents)
 #
 # OUTPUTS  tables/s5/s5a_region_budgets.csv, s5a_scaling_fits.csv,
@@ -40,7 +40,7 @@ stopifnot(all(map$volume_set %in% c("primary", "kochiyama_lobes")))
 
 # Resolve one rate per (volume term, analysis id); composites follow the map weights.
 rates <- derive_study_heiss_rates(map) %>%
-  select(source_region, anatomy_id, anatomy_group, rcmr_value, rcmr_sd, n_heiss_components) %>%
+  select(source_region, anatomy_id, anatomy_group, rcmr_value, rcmr_sd, n_heiss_components, primary_included, primary_match_note) %>%
   # display labels follow the shared palette (helpers/plot_settings.R)
   mutate(anatomy_group = recode(anatomy_group,
                                 "Midbrain" = "Mesencephalon",
@@ -52,7 +52,7 @@ rates <- derive_study_heiss_rates(map) %>%
 vw   <- read.csv("data_raw/volumes_wide.csv", check.names = FALSE, stringsAsFactors = FALSE)
 homo <- vw[vw$Species == "Homo sapiens", , drop = FALSE]
 stopifnot(nrow(homo) == 1)
-s4a  <- read.csv("data_intermediate/s4a_endocranial_region_budgets.csv", stringsAsFactors = FALSE)
+s4a  <- read.csv("data_intermediate/s4a_proxy_sensitivity_endocranial_region_budgets.csv", stringsAsFactors = FALSE)
 TOTAL_BRAIN_MM3 <- as.numeric(homo[["Total_brain_net_volume_Vol.mm3"]])
 
 lookup_volume <- function(file, column, subtract, anatomy_id) {
@@ -62,7 +62,7 @@ lookup_volume <- function(file, column, subtract, anatomy_id) {
       for (s in strsplit(subtract, ";")[[1]]) v <- v - as.numeric(homo[[trimws(s)]])
     }
     v
-  } else if (file == "data_intermediate/s4a_endocranial_region_budgets.csv") {
+  } else if (file == "data_intermediate/s4a_proxy_sensitivity_endocranial_region_budgets.csv") {
     as.numeric(s4a[[column]][s4a$anatomy_id == anatomy_id]) * 1000  # cc -> mm3
   } else stop("unknown volume source: ", file)
 }
@@ -91,48 +91,23 @@ budgets <- vol_rows %>%
 
 check_region_palette(budgets, region_col = "anatomy_group")
 write.csv(budgets %>% select(volume_set, source_region, analysis_anatomy_id, anatomy_group, relationship,
-                             n_heiss_components, rcmr_value, rcmr_sd, parent_volume_mm3, allocation_weight_norm,
+                             n_heiss_components, primary_included, primary_match_note, rcmr_value, rcmr_sd, parent_volume_mm3, allocation_weight_norm,
                              volume_mm3, volume_basis, mass_g, glucose_umol_min, energy_W,
                              fraction_of_brain_volume, volume_source_citation),
           "tables/s5/s5a_region_budgets.csv", row.names = FALSE)
 
-# Heiss regions that have no volume in the primary set
-primary_ids <- unique(map$heiss_anatomy_id[map$volume_set == "primary"])
-excluded <- heiss %>% filter(!anatomy_id %in% primary_ids) %>%
-  transmute(heiss_region, anatomy_id, rcmrglc_mean_umol_100g_min,
-            reason = case_when(
-              anatomy_id %in% c("frontal_lobe", "parietal_lobe", "temporal_lobe") ~
-                "No non-overlapping Stephan-basis lobe volume; covered inside 'Neocortex grey (remaining)'. Kochiyama grey+white lobe volumes used only in the kochiyama_lobes sensitivity set.",
-              anatomy_id == "basal_forebrain" ~ "No defensible human volume (Stephan septum is only a partial proxy).",
-              TRUE ~ "No volume term in Table 1 / volumes_wide."))
-# composite members are represented, not excluded
-members <- map %>% filter(volume_set == "primary", n_distinct(heiss_anatomy_id) > 0) %>%
-  group_by(source_region, analysis_anatomy_id) %>% filter(n() > 1) %>% ungroup()
-excluded <- excluded %>% mutate(
-  represented_as_composite = anatomy_id %in% members$heiss_anatomy_id)
-# add rows for Heiss regions carried only inside a composite
-composite_only <- heiss %>% filter(anatomy_id %in% members$heiss_anatomy_id) %>%
-  transmute(heiss_region, anatomy_id, rcmrglc_mean_umol_100g_min,
-            reason = paste0("Carried inside composite '", members$source_region[match(anatomy_id, members$heiss_anatomy_id)],
-                            "' (no separate human volume)"), represented_as_composite = TRUE)
-write.csv(bind_rows(excluded, composite_only), "tables/s5/s5a_excluded_regions.csv", row.names = FALSE)
+# Exclusions remain explicit even where legacy maps supplied a numerical proxy.
+write.csv(budgets %>% filter(!primary_included) %>%
+            select(source_region, analysis_anatomy_id, volume_basis, primary_match_note),
+          "tables/s5/s5a_excluded_regions.csv", row.names = FALSE)
 
 # ------------------------------------------------------------
 # 3. Scaling fits: log10(budget) ~ log10(volume) and log10(rate) ~ log10(volume)
 # ------------------------------------------------------------
-prim <- budgets %>% filter(volume_set == "primary")
-koch_ids <- unique(budgets$analysis_anatomy_id[budgets$volume_set == "kochiyama_lobes"])
-# Kochiyama lobe volumes are grey + white, so the Stephan neocortical white matter
-# (centrum semiovale row) is dropped from this set to avoid double counting.
-sens <- bind_rows(
-  prim %>% filter(!analysis_anatomy_id %in% c(koch_ids, "neocortex_grey_matter", "centrum_semiovale")),
-  budgets %>% filter(volume_set == "kochiyama_lobes"))
-
-subsets <- list(
-  all                = prim,
-  excl_white_matter  = prim %>% filter(!is_white_matter),
-  grey_only_volumes  = prim %>% filter(grey_only_volume),
-  kochiyama_lobes    = sens)
+prim <- budgets %>% filter(volume_set == "primary", primary_included, is.finite(rcmr_value))
+subsets <- list(all = prim,
+                excl_white_matter = prim %>% filter(!is_white_matter),
+                grey_only_volumes = prim %>% filter(grey_only_volume))
 
 fits <- bind_rows(lapply(names(subsets), function(nm) {
   d <- subsets[[nm]]
@@ -178,10 +153,9 @@ write.csv(comparison, "tables/s5/s5a_karbowski_comparison.csv", row.names = FALS
 # ------------------------------------------------------------
 # 5. Figures
 # ------------------------------------------------------------
-plot_df <- bind_rows(prim %>% mutate(panel = "Primary set (Table 1 volume terms)"),
-                     sens %>% mutate(panel = "Sensitivity: Kochiyama lobes (s4a)"))
+plot_df <- prim %>% mutate(panel = "Primary: named structure and tissue matched")
 labs_df <- bind_rows(
-  fits %>% filter(subset == "all", method == "OLS", grepl("glucose", response)) %>% mutate(panel = "Primary set (Table 1 volume terms)"),
+  fits %>% filter(subset == "all", method == "OLS", grepl("glucose", response)) %>% mutate(panel = "Primary: named structure and tissue matched"),
   fits %>% filter(subset == "kochiyama_lobes", method == "OLS", grepl("glucose", response)) %>% mutate(panel = "Sensitivity: Kochiyama lobes (s4a)")) %>%
   mutate(label = sprintf("italic(R)^2~'='~'%.2f'*','~italic(p)~'='~'%s'*','~SMA~slope~'='~'%.2f'", r2, fmt_p(p),
                          fits$slope[fits$subset == subset & fits$method == "SMA" & grepl("glucose", fits$response)]))
@@ -205,13 +179,13 @@ p1 <- ggplot(plot_df, aes(x = volume_mm3, y = glucose_umol_min)) +
 save_png_pdf(p1, "figs/s5/s5a_budget_vs_volume", width = 13, height = 7)
 
 labs2 <- fits %>% filter(subset %in% c("all", "kochiyama_lobes"), method == "OLS", grepl("rCMRGlc", response)) %>%
-  mutate(panel = ifelse(subset == "all", "Primary set (Table 1 volume terms)", "Sensitivity: Kochiyama lobes (s4a)"),
+  mutate(panel = ifelse(subset == "all", "Primary: named structure and tissue matched", "Sensitivity: Kochiyama lobes (s4a)"),
          label = sprintf("slope~'='~'%.3f'*','~italic(R)^2~'='~'%.2f'*','~italic(p)~'='~'%s'", slope, r2, fmt_p(p)))
 p2 <- ggplot(plot_df, aes(x = volume_mm3, y = rcmr_value)) +
   geom_smooth(method = "lm", se = TRUE, colour = "steelblue", fill = "steelblue", alpha = 0.15, formula = y ~ x) +
   geom_point(aes(colour = anatomy_group, shape = volume_basis), size = 3) +
   geom_text_repel(aes(label = anatomy_group), size = 3, max.overlaps = 30, show.legend = FALSE) +
-  geom_text(data = labs2, aes(x = Inf, y = Inf, label = label), inherit.aes = FALSE, hjust = 1.05, vjust = 1.4, parse = TRUE, size = 3.6) +
+  geom_text(data = labs2, aes(x = min(plot_df$volume_mm3), y = Inf, label = label), inherit.aes = FALSE, hjust = 0, vjust = 1.4, parse = TRUE, size = 3.6) +
   scale_x_log10() + scale_y_log10() +
   scale_colour_manual(values = pal, guide = "none") +
   scale_shape_manual(values = c(grey = 16, grey_white = 17, mixed = 15, white = 1), name = "Volume basis") +

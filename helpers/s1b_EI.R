@@ -1,3 +1,4 @@
+source("helpers/siletti_cell_types.R")  # is_siletti_neuron(): revised Siletti cell_type labels
 # Shared calculation and plotting functions for the s1b E:I analyses.
 # Anatomical scope and cell-class definition remain separate and explicit.
 
@@ -197,7 +198,7 @@ calculate_s1b_neocortical_class_ei <- function(
   }
 
   obs <- readRDS(obs_path) %>%
-    dplyr::filter(cell_type == "neuron") %>%
+    dplyr::filter(is_siletti_neuron(cell_type)) %>%
     dplyr::mutate(
       roi = stringr::str_squish(as.character(roi)),
       supercluster_term = stringr::str_squish(as.character(supercluster_term)),
@@ -297,7 +298,7 @@ calculate_s1b_cerebral_cortex_class_ei <- function(
   }
 
   obs <- readRDS(obs_path) %>%
-    dplyr::filter(cell_type == "neuron") %>%
+    dplyr::filter(is_siletti_neuron(cell_type)) %>%
     dplyr::mutate(
       roi = stringr::str_squish(as.character(roi)),
       supercluster_term = stringr::str_squish(as.character(supercluster_term)),

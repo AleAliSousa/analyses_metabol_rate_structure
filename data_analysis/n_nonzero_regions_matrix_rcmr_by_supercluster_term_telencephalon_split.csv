@@ -1,22 +1,22 @@
 "supercluster_term","Non-telencephalon","Telencephalon"
-"Amygdala excitatory",4,10
-"CGE interneuron",8,12
-"Cerebellar inhibitory",9,6
-"Deep-layer corticothalamic and 6b",6,11
-"Deep-layer intratelencephalic",6,12
-"Deep-layer near-projecting",1,9
-"Eccentric medium spiny neuron",3,11
-"Hippocampal CA1-3",4,5
-"Hippocampal CA4",1,4
+"Amygdala excitatory",3,9
+"CGE interneuron",7,11
+"Cerebellar inhibitory",6,4
+"Deep-layer corticothalamic and 6b",6,10
+"Deep-layer intratelencephalic",4,11
+"Deep-layer near-projecting",1,8
+"Eccentric medium spiny neuron",2,10
+"Hippocampal CA1-3",4,4
+"Hippocampal CA4",1,2
 "Hippocampal dentate gyrus",4,3
-"LAMP5-LHX6 and Chandelier",7,12
-"Lower rhombic lip",3,4
-"MGE interneuron",9,12
+"LAMP5-LHX6 and Chandelier",6,11
+"Lower rhombic lip",2,3
+"MGE interneuron",7,11
 "Mammillary body",3,1
-"Medium spiny neuron",3,10
-"Midbrain-derived inhibitory",9,5
-"Miscellaneous",7,9
-"Splatter",11,12
-"Thalamic excitatory",7,5
-"Upper rhombic lip",10,8
-"Upper-layer intratelencephalic",8,12
+"Medium spiny neuron",2,9
+"Midbrain-derived inhibitory",7,4
+"Miscellaneous",6,8
+"Splatter",8,11
+"Thalamic excitatory",6,4
+"Upper rhombic lip",7,7
+"Upper-layer intratelencephalic",7,11

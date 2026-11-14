@@ -1,0 +1,13 @@
+"printed_row","Group","is_healthy_control","row_type","subject_in_group","sex","age.years","height_as_printed","height.cm","hemisphere_weight.g","country_as_printed","cause_of_death_as_printed","cause_of_death_footnote","PMD_as_printed","PMD.h","braak_score","species_as_published","Species","note"
+3,"Controls",1,"individual",1,"female",75,"159",159,575,"DK","AMI","**","24:00",24,NA,"human","Homo sapiens",NA
+4,"Controls",1,"individual",2,"female",74,"160",160,469,"DK","AMI",NA,"48:00",48,NA,"human","Homo sapiens",NA
+5,"Controls",1,"individual",3,"female",64,"154",154,621,"DK","AMI",NA,"24:00",24,NA,"human","Homo sapiens",NA
+6,"Controls",1,"individual",4,"female",60,"161",161,377,"DK","AMI",NA,"48:00",48,NA,"human","Homo sapiens",NA
+7,"Controls",1,"individual",5,"female",75,"172",172,389,"DK","CHF","***","36:00",36,NA,"human","Homo sapiens",NA
+8,"Controls",1,"individual",6,"female",70,"169",169,482,"DK","AMI",NA,"04:00",4,NA,"human","Homo sapiens",NA
+9,"Controls",1,"printed_mean",NA,"female",69.7,"162.5",162.5,485.5,"","",NA,"",NA,NA,"human","Homo sapiens","Printed group mean row, not a subject; filter row_type == 'individual' for subject-level use."
+11,"DS",0,"individual",1,"female",61,"-",NA,244,"NED","Pneumonia",NA,"05:30",5.5,6,"human","Homo sapiens",NA
+12,"DS",0,"individual",2,"female",80,"-",NA,395,"NED","AMI / pneumonia",NA,"04:00",4,5,"human","Homo sapiens","PMD differs from the same DS brain in Karlsen & Pakkenberg 2011 Table 1 (the DS PMD column appears shifted by one row); see errata Karlsen_etal_2014-E003 to -E005."
+13,"DS",0,"individual",3,"female",64,"148",148,231,"NED","Pneumonia",NA,"09:00",9,5,"human","Homo sapiens","PMD differs from the same DS brain in Karlsen & Pakkenberg 2011 Table 1 (the DS PMD column appears shifted by one row); see errata Karlsen_etal_2014-E003 to -E005."
+14,"DS",0,"individual",4,"female",70,"162",162,245,"NED","Ileus",NA,"06:00",6,6,"human","Homo sapiens","PMD differs from the same DS brain in Karlsen & Pakkenberg 2011 Table 1 (the DS PMD column appears shifted by one row); see errata Karlsen_etal_2014-E003 to -E005."
+15,"DS",0,"printed_mean",NA,"female",68.8,"159.7",159.7,252.5,"","",NA,"",NA,NA,"human","Homo sapiens","Printed group mean row, not a subject; filter row_type == 'individual' for subject-level use. Height and Hemisphere means do not match the printed DS individuals; they equal the DS Mean row of Karlsen & Pakkenberg 2011 Table 1 (errata Karlsen_etal_2014-E001, -E002)."
