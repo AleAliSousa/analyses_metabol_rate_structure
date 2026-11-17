@@ -479,3 +479,54 @@ See `metadata/anatomy/DATASET_REGION_COVERAGE.md`, reproducible builders
 `checks/build_metabolic_coverage_workbook.mjs`, three CSVs under
 `tables/anatomy/metabolic_dataset_*`, and the workbook under
 `outputs/01a1d166-5e50-7ef2-a6aa-ee24c6b4b692/`.
+
+
+## 14 November 2026 — Tüshaus, Johansen sampling, BEIP
+
+Completed the requested three arms; detailed methods and reproduction commands
+are in `metadata/anatomy/NOV14_PROTEOMICS_ATLAS.md`.
+
+- Added `scripts/s1d_2a_extract_tushaus_proteomics.R` and
+  `scripts/s1d_2b_tushaus_protein_metabolic_analysis.R`. Downloaded publisher
+  Dataset EV1 and extracted 608,986 measurements from 38 tissue samples across
+  13 regions in one donor. The strict shared anatomy map retains seven regions.
+  Complete seven-region screens cover 6,810 LFQ and 6,797 iBAQ protein IDs.
+  Published log scales are retained; regional enrichment classes are not cell
+  types or cell fractions. Preserved and flagged duplicate SN replicate labels.
+  No six-marker panel association survives BH correction. Protein screening is
+  exploratory and cannot support donor-population inference.
+- Added `scripts/s1c_sample_johansen_atlas.R` and
+  `helpers/sample_johansen_atlas.py`. Sampled ten missing territories with public
+  MASSP2/AAL3/Diedrichsen masks; alternative AAL3/CIT168 masks and ±1-mm shifts
+  quantify sensitivity. Eight new nuclei carry small-nucleus flags. Vermis is
+  descriptive only. Global cortex, medial thalamic nuclei, basal forebrain and
+  centrum semiovale remain unresolved. All new estimates are excluded from
+  primary analyses pending template validation.
+- Critical atlas check: five overlapping atlas-derived regional means are
+  30–65% below Table 2. Source smoothing/method differences and MNI template
+  correspondence need review; no causal explanation is established. Final
+  outputs compare 12 published regions and nine new atlas regions separately.
+  No pooled 21-region regression is retained. The 21-row inventory explicitly
+  forbids pooling for inference. Existing Johansen primary analysis is unchanged.
+- BEIP was already implemented on Nov 12. Reran
+  `scripts/s2_beip_replication.R`: separate childhood EIG–NIG (7 regions) and
+  adolescent CAUG–NIG / FCG–NIG (6 each). OLS p = 0.580 / 0.241 / 0.251.
+  These share a longitudinal cohort and adolescent controls; remain separate
+  from ERA. No whole-thalamus proxy enters the fits.
+
+All additions are ordered in `scripts/run_all.R` and registered in
+`metadata/output_manifest.csv`. Inputs have download URLs and SHA-256 checksums
+in `metadata/nov14_source_downloads.csv`; `checks/fetch_nov14_inputs.R` verifies
+all 13 cached inputs or downloads missing ones. Python dependencies are isolated
+in ignored `.venv-atlas`; requirements are in `helpers/requirements-atlas.txt`.
+New source-folder READMEs document anatomical restrictions and atlas attribution.
+
+Validation: extraction, protein analysis, atlas sampler, BEIP, and shared anatomy
+audit executed successfully. `checks/test_nov14_proteomics_atlas.R`,
+`checks/test_strict_anatomical_matching.R`, and
+`checks/test_nov12_analysis_expansion.R` passed. Manifest validation: 64 OK, no
+missing files/scripts; two pre-existing gaps remain (s4a budget residual and
+archived s3 mosaicism). New protein, atlas, and BEIP figures were visually
+inspected. Logs are under `logs/nov14_*`. No full pipeline rerun was needed.
+No sibling-project exports changed in this session; earlier working-tree
+changes were preserved. No commit or push performed.

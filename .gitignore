@@ -18,3 +18,4 @@ logs/
 .Rproj.user
 .Rapp.history
 .__captest/
+.venv-atlas/

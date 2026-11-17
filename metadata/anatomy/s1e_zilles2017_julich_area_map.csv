@@ -1,0 +1,45 @@
+zilles_area,lobe,heiss_lobe_anatomy_id,julich_regions,n_julich_regions,match_relationship,note
+1,parietal,parietal_lobe,Area 1 (PostCG),1,exact,"Primary somatosensory area 1 (Geyer et al. 1999, 2000); same Julich cytoarchitectonic entity."
+2,parietal,parietal_lobe,Area 2 (PostCS),1,exact,Somatosensory area 2 (Grefkes et al. 2001).
+3a,parietal,parietal_lobe,Area 3a (PostCG),1,exact,"Geyer et al. 1999, 2000."
+3b,parietal,parietal_lobe,Area 3b (PostCG),1,exact,"Geyer et al. 1999, 2000."
+V1,occipital,occipital_lobe,"Area hOc1 (V1, 17, CalcS)",1,exact,hOc1 = Brodmann 17 = V1 (Amunts et al. 2000).
+V2d,occipital,occipital_lobe,"Area hOc2 (V2, 18)",1,part_of,Julich hOc2 (Amunts et al. 2000) is not split into dorsal/ventral parts; V2d is the dorsal (cuneal) half. Using the whole hOc2 pools V2d and V2v; no vertex-level split attempted.
+V2v,occipital,occipital_lobe,"Area hOc2 (V2, 18)",1,part_of,Ventral (lingual) half of hOc2; see V2d. Pooled with V2d in any Julich-based extraction.
+V3d,occipital,occipital_lobe,Area hOc3d (Cuneus),1,exact,"hOc3d is the Julich cytoarchitectonic area whose functional correlate is proposed to be V3d (Kujovic et al. 2013); nomenclature differs, entity identical in the Julich/Zilles lab usage."
+V3A,occipital,occipital_lobe,Area hOc4d (Cuneus),1,approximate,"Kujovic et al. 2013 proposed hOc4d as the probable correlate of V3A; this is a proposed, not established, identity."
+V3v,occipital,occipital_lobe,Area hOc3v (LingG),1,exact,hOc3v = putative V3v/VP (Rottschy et al. 2007); same Julich entity as used by the Zilles lab.
+V4v,occipital,occipital_lobe,Area hOc4v (LingG),1,exact,hOc4v = putative V4v (Rottschy et al. 2007); same Julich entity as used by the Zilles lab.
+FG1,temporal,temporal_lobe,Area FG1 (FusG),1,exact,"Caspers et al. 2013. Posterior fusiform (ventral occipitotemporal); lobe assignment ambiguous, kept with temporal for the Heiss check."
+FG2,temporal,temporal_lobe,Area FG2 (FusG),1,exact,"Caspers et al. 2013. Posterior fusiform (ventral occipitotemporal); lobe assignment ambiguous, kept with temporal for the Heiss check."
+37B,temporal,temporal_lobe,Area FG3 (FusG);Area FG4 (FusG),2,approximate,Zilles 2017 'basal area 37' is a Brodmann-style region. FG3/FG4 (Lorenz et al. 2017) occupy the mid-fusiform gyrus within the territory usually labelled BA37; boundaries are not identical and the Zilles sample location within 37 is not specified here.
+37L,temporal,temporal_lobe,,0,none,Lateral area 37 (posterior ITG/MTG). No Julich v3.1 cytoarchitectonic area; the territory is covered by GapMap-Temporal-to-Parietal.
+37M,temporal,temporal_lobe,,0,none,Medial area 37 (medial fusiform/lingual boundary). No Julich v3.1 area equated with it; CoS1 and Ph1-Ph3 are neighbours but not established equivalents.
+41,temporal,temporal_lobe,Area Te 1.0 (HESCHL);Area Te 1.1 (HESCHL);Area Te 1.2 (HESCHL),3,union,"Te1 = primary auditory cortex on Heschl's gyrus, equated with BA41 (Morosan et al. 2001); Te1.0/1.1/1.2 are its subdivisions."
+42,temporal,temporal_lobe,Area Te 2.1 (STG);Area Te 2.2 (STG),2,approximate,"Te2 (planum temporale, lateral/posterior to Te1) is commonly equated with BA42 (Morosan et al. 2005; Zachlod et al. 2020) but boundaries differ."
+20,temporal,temporal_lobe,,0,none,Inferior temporal gyrus BA20. No Julich v3.1 cytoarchitectonic area; GapMap-Frontal-to-Temporal-II / GapMap-Temporal-to-Parietal cover it.
+21,temporal,temporal_lobe,,0,none,Middle temporal gyrus BA21. No Julich v3.1 area; covered by GapMap-Temporal-to-Parietal.
+22,temporal,temporal_lobe,Area Te 3 (STG),1,approximate,"Te3 on the lateral STG corresponds to part of BA22 (Morosan et al. 2005); BA22 also includes posterior STG territory (TPJ, Te 2) not included here."
+36,temporal,temporal_lobe,,0,none,"Ectorhinal/perirhinal BA36. No Julich v3.1 area 35/36; EC and the parahippocampal Ph1-Ph3 / CoS1 areas are neighbours, not equivalents."
+38,temporal,temporal_lobe,,0,none,Temporal pole BA38. No Julich v3.1 area; covered by GapMap-Frontal-to-Temporal-I.
+5L,parietal,parietal_lobe,Area 5L (SPL),1,exact,Scheperjans et al. 2008.
+5M,parietal,parietal_lobe,Area 5M (SPL),1,exact,Scheperjans et al. 2008.
+PGa,parietal,parietal_lobe,Area PGa (IPL),1,exact,Caspers et al. 2006.
+PGp,parietal,parietal_lobe,Area PGp (IPL),1,exact,Caspers et al. 2006.
+PFt,parietal,parietal_lobe,Area PFt (IPL),1,exact,Caspers et al. 2006.
+PFm,parietal,parietal_lobe,Area PFm (IPL),1,exact,Caspers et al. 2006.
+24,cingulate,,Area s24 (sACC);Area p24ab (pACC);Area p24c (pACC),3,union,Palomero-Gallagher et al. 2009 subdivisions of subgenual/pregenual area 24; area 33 excluded; midcingulate 24' is not in Julich v3.1. The Zilles 2017 sampling site within 24 is not specified here. Cingulate is not a Heiss lobe; excluded from the lobe check.
+32,cingulate,,Area s32 (sACC);Area p32 (pACC),2,union,Palomero-Gallagher et al. 2009 subgenual/pregenual area 32; posterior 32' not in Julich v3.1. Cingulate excluded from the lobe check.
+23,cingulate,,,0,none,Posterior cingulate BA23: no Julich v3.1 area.
+31,cingulate,,,0,none,"Posterior cingulate/precuneal BA31: no Julich v3.1 area; 7M (SPL) is a precuneal neighbour, not an equivalent."
+4,frontal,frontal_lobe,Area 4a (PreCG);Area 4p (PreCG),2,union,Geyer et al. 1996 anterior/posterior subdivisions of BA4.
+6,frontal,frontal_lobe,"Area 6d1 (PreCG);Area 6d2 (PreCG);Area 6d3 (SFS);Area 6v1 (PreCG);Area 6v2 (PreCG);Area 6v3 (PreCG);Area 6r1 (PreCG);Area 6ma (preSMA, mesial SFG);Area 6mp (SMA, mesial SFG)",9,union,Julich v3.1 premotor subdivisions (Sigl et al.; Ruan et al. 2018 for 6ma/6mp). Whether they exhaust BA6 is not verified; the Zilles 2017 sample location within 6 is not specified here.
+8,frontal,frontal_lobe,Area 8d1 (SFG);Area 8d2 (SFG);Area 8v1 (MFG);Area 8v2 (MFG),4,union,Julich dorsal/ventral subdivisions of BA8 (SFG/MFG). Medial BA8 is not included.
+9,frontal,frontal_lobe,,0,none,Dorsolateral prefrontal BA9. Julich v3.1 SFG2-SFG4 / MFG4-MFG5 are new areas not defined as BA9 equivalents; GapMap-Frontal-I covers the remainder.
+10L,frontal,frontal_lobe,Area Fp1 (FPole),1,approximate,Bludau et al. 2014: Fp1 = lateral frontopolar area. Plausible but not a Brodmann-10 equivalent.
+10M,frontal,frontal_lobe,Area Fp2 (FPole),1,approximate,Bludau et al. 2014: Fp2 = medial frontopolar area. Plausible but not a Brodmann-10 equivalent.
+11,frontal,frontal_lobe,Area Fo1 (OFC);Area Fo2 (OFC);Area Fo3 (OFC),3,approximate,Henssen et al. 2016 medial orbitofrontal areas (gyrus rectus / medial orbital gyrus) overlap the BA11 territory; boundaries differ.
+44,frontal,frontal_lobe,Area 44 (IFG),1,exact,Amunts et al. 1999.
+45,frontal,frontal_lobe,Area 45 (IFG),1,exact,Amunts et al. 1999.
+46,frontal,frontal_lobe,,0,none,Mid-dorsolateral prefrontal BA46 (MFG). Julich MFG1/MFG2 are posterior MFG areas not equated with BA46; GapMap-Frontal-I covers the remainder.
+47,frontal,frontal_lobe,Area Fo4 (OFC);Area Fo5 (OFC);Area Fo6 (OFC);Area Fo7 (OFC),4,approximate,Wojtasik et al. 2020 lateral orbitofrontal areas lie within the BA47/12 territory; boundaries differ and the pars orbitalis of the IFG is not included.

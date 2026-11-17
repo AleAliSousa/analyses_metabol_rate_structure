@@ -1,0 +1,10 @@
+annotation,file,bytes,sha256,source,downloaded
+castrillon2023-cmrglc-MNI152-3mm,source-castrillon2023_desc-cmrglc_space-MNI152_res-3mm_feature.nii.gz,467546,20c43e719f5030b16df1f1d35a5a6358781ced6cc31cb55f11e0e76d4c1e6db5,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cbf-fsLR-164k,source-raichle_desc-cbf_space-fsLR_den-164k_hemi-L_feature.func.gii,669164,0874314bc4ba0642ad38fbef16b95be1074276b60f6d1d5203ccc332f7d51529,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cbf-fsLR-164k,source-raichle_desc-cbf_space-fsLR_den-164k_hemi-R_feature.func.gii,668717,55afe79ad968ab39ec5ee5ba400ab725bdd1dffa05688278b6ba8a14c7264f42,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cbv-fsLR-164k,source-raichle_desc-cbv_space-fsLR_den-164k_hemi-L_feature.func.gii,690128,a8aaa188d46ca0d4acf876f555d0fc143b84b395a7f58afbfdfa60ef8659a090,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cbv-fsLR-164k,source-raichle_desc-cbv_space-fsLR_den-164k_hemi-R_feature.func.gii,689333,1feeda25beaaf6ffb1d6aa4b37c883d6b43e5467fc5e331fc7127a047154307e,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cmr02-fsLR-164k,source-raichle_desc-cmr02_space-fsLR_den-164k_hemi-L_feature.func.gii,667428,9923d16fbde2a06945097808ecb22b24ca74eff5266013dbb31b9d7233e8b445,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cmr02-fsLR-164k,source-raichle_desc-cmr02_space-fsLR_den-164k_hemi-R_feature.func.gii,667617,33d5a7ced94ef2f3f03d413e206d854568a217e303ef92aba791dd7d1a3fd654,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cmrglc-fsLR-164k,source-raichle_desc-cmrglc_space-fsLR_den-164k_hemi-L_feature.func.gii,673302,c36b6feb7ee6da127925e8cda44b55af888c05eb1ad1f131781347cc3e207a63,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15
+raichle-cmrglc-fsLR-164k,source-raichle_desc-cmrglc_space-fsLR_den-164k_hemi-R_feature.func.gii,671671,af3ea29bc19f159c2273e36723e97c82e4ebdfc70ed02f6600c44b7c7ef4dfdc,neuromaps 0.0.7 fetch_annotation (OSF project 4mw3a),2026-11-15

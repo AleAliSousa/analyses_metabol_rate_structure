@@ -44,3 +44,24 @@ tables/s1c/andersen_paired_regions,csv,table,s1c,s1c_andersen_paired_replication
 tables/s1c/andersen_paired_fits,csv,table,s1c,s1c_andersen_paired_replication.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
 figs/s1c/andersen_paired_replication,png|pdf,figure,s1c,s1c_andersen_paired_replication.R,strict anatomy 12 Nov,file,ok,Anatomical audit or separate native-scale convergence
 tables/anatomy/analysis_region_counts,csv,table,anatomy,00_anatomical_match_audit.R,strict anatomy 12 Nov,file,ok,Before-after regional counts; participants unchanged
+tables/s1d/tushaus_sample_inventory,csv,table,s1d,s1d_2a_extract_tushaus_proteomics.R,Nov 14 requested expansion,file,ok,One donor; explicit source and anatomical coverage
+tables/s1d/tushaus_region_coverage,csv,table,s1d,s1d_2a_extract_tushaus_proteomics.R,Nov 14 requested expansion,file,ok,One donor; explicit source and anatomical coverage
+tables/s1d/tushaus_input_provenance,csv,table,s1d,s1d_2a_extract_tushaus_proteomics.R,Nov 14 requested expansion,file,ok,One donor; explicit source and anatomical coverage
+data_intermediate/tushaus_2023_protein_sample_long,rds,data,s1d,s1d_2a_extract_tushaus_proteomics.R,Nov 14 requested expansion,file,ok,Published log intensity; not cell fractions
+data_intermediate/tushaus_2023_protein_regional_summary,rds,data,s1d,s1d_2a_extract_tushaus_proteomics.R,Nov 14 requested expansion,file,ok,Published log intensity; not cell fractions
+tables/s1d/tushaus_protein_coverage,csv,table,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Seven-region exploratory protein analysis; one donor
+tables/s1d/tushaus_proteome_screen,csv,table,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Seven-region exploratory protein analysis; one donor
+tables/s1d/tushaus_marker_regional_summary,csv,table,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Seven-region exploratory protein analysis; one donor
+tables/s1d/tushaus_marker_fits,csv,table,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Seven-region exploratory protein analysis; one donor
+tables/s1d/tushaus_marker_regional_profiles,csv,table,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Seven-region exploratory protein analysis; one donor
+figs/s1d/tushaus_marker_metabolism,png|pdf,figure,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Protein abundance; not composition fractions
+figs/s1d/tushaus_marker_profiles,png|pdf,figure,s1d,s1d_2b_tushaus_protein_metabolic_analysis.R,Nov 14 requested expansion,file,ok,Protein abundance; not composition fractions
+tables/s1c/johansen_atlas_samples,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_coverage_audit,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_exploratory_expansion,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_sensitivity_fits,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_table_overlap_check,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_mask_sensitivity,csv,table,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Exploratory unvalidated atlas extraction; no table-map pooling
+tables/s1c/johansen_atlas_geometry,json,data,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Source affine geometry and SHA-256
+figs/s1c/johansen_atlas_mask_qc,png,figure,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Overlays do not establish template registration
+figs/s1c/johansen_atlas_extension,png|pdf,figure,s1c,s1c_sample_johansen_atlas.R,Nov 14 requested expansion,file,ok,Published table and atlas extraction shown separately

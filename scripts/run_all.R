@@ -86,6 +86,7 @@ RUN_ORDER <- c(
   
   # Study s1c: synaptic density vs rCMRGlc (SV2A PET marker)
   "s1c_synaptic_density_metabolic_rate.R",
+  "s1c_sample_johansen_atlas.R",
   "s1c_holmes_replication.R",
   "s1c_andersen_paired_replication.R",
   
@@ -93,6 +94,8 @@ RUN_ORDER <- c(
   # s1d_1 writes the regional summary that s1d_2 reads.
   "s1d_1_neuroglial_proteins_metabolic_rate.R",
   "s1d_2_neuroglial_protein_proportions.R",
+  "s1d_2a_extract_tushaus_proteomics.R",
+  "s1d_2b_tushaus_protein_metabolic_analysis.R",
   
   # Study 1 synthesis: uniform Spearman view across s1a-s1d (reads the
   # region-level tables the four studies write; must run after all of them)

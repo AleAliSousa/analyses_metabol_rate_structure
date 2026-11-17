@@ -1,0 +1,97 @@
+"printed_row","structure_order","section_as_published","structure_as_published","group_as_published","column_as_published","arm_id","n","cell_as_printed","mean_printed","dispersion_printed","dispersion_type","footnote_marks","measure","unit_as_printed","value_numeric","dispersion_numeric","CMRglc.umol_100g_min","species_as_published","note"
+5,1,NA,"Orbital cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"42.1 ± 1.85","42.1","1.85","SD",NA,"CMRglc","µmol/100 g/min",42.1,1.85,42.1,"normal human subjects",NA
+5,1,NA,"Orbital cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-20.5 ± 8.65","-20.5","8.65","SD",NA,"CMRglc_pct_change_asleep","% of awake",-20.5,8.65,NA,"normal human subjects",NA
+5,1,NA,"Orbital cortex","Dreamer","Awake","dreamer_awake",1,"36.3","36.3",NA,NA,NA,"CMRglc","µmol/100 g/min",36.3,NA,36.3,"normal human subjects",NA
+5,1,NA,"Orbital cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 7.4","+ 7.4",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",7.4,NA,NA,"normal human subjects",NA
+6,2,NA,"Inf. front. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"44.6 ± 2.35","44.6","2.35","SD",NA,"CMRglc","µmol/100 g/min",44.6,2.35,44.6,"normal human subjects",NA
+6,2,NA,"Inf. front. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-14.5 ± 3.97","-14.5","3.97","SD",NA,"CMRglc_pct_change_asleep","% of awake",-14.5,3.97,NA,"normal human subjects",NA
+6,2,NA,"Inf. front. cortex","Dreamer","Awake","dreamer_awake",1,"39.4","39.4",NA,NA,NA,"CMRglc","µmol/100 g/min",39.4,NA,39.4,"normal human subjects",NA
+6,2,NA,"Inf. front. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 4.3","+ 4.3",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",4.3,NA,NA,"normal human subjects",NA
+7,3,NA,"Sup. front. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"41.4 ± 1.99","41.4","1.99","SD",NA,"CMRglc","µmol/100 g/min",41.4,1.99,41.4,"normal human subjects",NA
+7,3,NA,"Sup. front. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.7 ± 6.92","-11.7","6.92","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.7,6.92,NA,"normal human subjects",NA
+7,3,NA,"Sup. front. cortex","Dreamer","Awake","dreamer_awake",1,"30.0","30.0",NA,NA,NA,"CMRglc","µmol/100 g/min",30,NA,30,"normal human subjects",NA
+7,3,NA,"Sup. front. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+30.0","+30.0",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",30,NA,NA,"normal human subjects",NA
+8,4,NA,"Premotor cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"42.6 ± 1.83","42.6","1.83","SD",NA,"CMRglc","µmol/100 g/min",42.6,1.83,42.6,"normal human subjects",NA
+8,4,NA,"Premotor cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-13.9 ± 4.81","-13.9","4.81","SD",NA,"CMRglc_pct_change_asleep","% of awake",-13.9,4.81,NA,"normal human subjects",NA
+8,4,NA,"Premotor cortex","Dreamer","Awake","dreamer_awake",1,"38.4","38.4",NA,NA,NA,"CMRglc","µmol/100 g/min",38.4,NA,38.4,"normal human subjects",NA
+8,4,NA,"Premotor cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+11.5","+11.5",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",11.5,NA,NA,"normal human subjects",NA
+9,5,NA,"Sensorimot. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"44.2 ± 3.07","44.2","3.07","SD",NA,"CMRglc","µmol/100 g/min",44.2,3.07,44.2,"normal human subjects",NA
+9,5,NA,"Sensorimot. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-14.2 ± 4.21","-14.2","4.21","SD",NA,"CMRglc_pct_change_asleep","% of awake",-14.2,4.21,NA,"normal human subjects",NA
+9,5,NA,"Sensorimot. cortex","Dreamer","Awake","dreamer_awake",1,"37.0","37.0",NA,NA,NA,"CMRglc","µmol/100 g/min",37,NA,37,"normal human subjects",NA
+9,5,NA,"Sensorimot. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+16.2","+16.2",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",16.2,NA,NA,"normal human subjects",NA
+10,6,NA,"Insular cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"39.7 ± 1.39","39.7","1.39","SD",NA,"CMRglc","µmol/100 g/min",39.7,1.39,39.7,"normal human subjects",NA
+10,6,NA,"Insular cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-12.3 ± 3.36","-12.3","3.36","SD",NA,"CMRglc_pct_change_asleep","% of awake",-12.3,3.36,NA,"normal human subjects",NA
+10,6,NA,"Insular cortex","Dreamer","Awake","dreamer_awake",1,"30.8","30.8",NA,NA,NA,"CMRglc","µmol/100 g/min",30.8,NA,30.8,"normal human subjects",NA
+10,6,NA,"Insular cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+26.0","+26.0",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",26,NA,NA,"normal human subjects",NA
+11,7,NA,"Inf. temp. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"35.4 ± 2.92","35.4","2.92","SD",NA,"CMRglc","µmol/100 g/min",35.4,2.92,35.4,"normal human subjects",NA
+11,7,NA,"Inf. temp. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-10.6 ± 5.20","-10.6","5.20","SD",NA,"CMRglc_pct_change_asleep","% of awake",-10.6,5.2,NA,"normal human subjects",NA
+11,7,NA,"Inf. temp. cortex","Dreamer","Awake","dreamer_awake",1,"31.9","31.9",NA,NA,NA,"CMRglc","µmol/100 g/min",31.9,NA,31.9,"normal human subjects",NA
+11,7,NA,"Inf. temp. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+11.6","+11.6",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",11.6,NA,NA,"normal human subjects",NA
+12,8,NA,"Middle temp. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"38.8 ± 3.00","38.8","3.00","SD",NA,"CMRglc","µmol/100 g/min",38.8,3,38.8,"normal human subjects",NA
+12,8,NA,"Middle temp. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.8 ± 7.71","-11.8","7.71","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.8,7.71,NA,"normal human subjects",NA
+12,8,NA,"Middle temp. cortex","Dreamer","Awake","dreamer_awake",1,"34.0","34.0",NA,NA,NA,"CMRglc","µmol/100 g/min",34,NA,34,"normal human subjects",NA
+12,8,NA,"Middle temp. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 8.8","+ 8.8",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",8.8,NA,NA,"normal human subjects",NA
+13,9,NA,"Sup. temp. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"41.3 ± 2.11","41.3","2.11","SD",NA,"CMRglc","µmol/100 g/min",41.3,2.11,41.3,"normal human subjects",NA
+13,9,NA,"Sup. temp. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-10.9 ± 6.97","-10.9","6.97","SD",NA,"CMRglc_pct_change_asleep","% of awake",-10.9,6.97,NA,"normal human subjects",NA
+13,9,NA,"Sup. temp. cortex","Dreamer","Awake","dreamer_awake",1,"36.8","36.8",NA,NA,NA,"CMRglc","µmol/100 g/min",36.8,NA,36.8,"normal human subjects",NA
+13,9,NA,"Sup. temp. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 5.7","+ 5.7",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",5.7,NA,NA,"normal human subjects",NA
+14,10,NA,"Inf. par. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"38.2 ± 2.68","38.2","2.68","SD",NA,"CMRglc","µmol/100 g/min",38.2,2.68,38.2,"normal human subjects",NA
+14,10,NA,"Inf. par. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.5 ± 5.40","-11.5","5.40","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.5,5.4,NA,"normal human subjects",NA
+14,10,NA,"Inf. par. cortex","Dreamer","Awake","dreamer_awake",1,"31.0","31.0",NA,NA,NA,"CMRglc","µmol/100 g/min",31,NA,31,"normal human subjects",NA
+14,10,NA,"Inf. par. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+25.2","+25.2",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",25.2,NA,NA,"normal human subjects",NA
+15,11,NA,"Sup. par. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"38.8 ± 1.75","38.8","1.75","SD",NA,"CMRglc","µmol/100 g/min",38.8,1.75,38.8,"normal human subjects",NA
+15,11,NA,"Sup. par. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.6 ± 4.57","-11.6","4.57","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.6,4.57,NA,"normal human subjects",NA
+15,11,NA,"Sup. par. cortex","Dreamer","Awake","dreamer_awake",1,"33.7","33.7",NA,NA,NA,"CMRglc","µmol/100 g/min",33.7,NA,33.7,"normal human subjects",NA
+15,11,NA,"Sup. par. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+13.9","+13.9",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",13.9,NA,NA,"normal human subjects",NA
+16,12,NA,"Vis. assoc. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"36.1 ± 3.07","36.1","3.07","SD",NA,"CMRglc","µmol/100 g/min",36.1,3.07,36.1,"normal human subjects",NA
+16,12,NA,"Vis. assoc. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-12.3 ± 4.98","-12.3","4.98","SD",NA,"CMRglc_pct_change_asleep","% of awake",-12.3,4.98,NA,"normal human subjects",NA
+16,12,NA,"Vis. assoc. cortex","Dreamer","Awake","dreamer_awake",1,"29.1","29.1",NA,NA,NA,"CMRglc","µmol/100 g/min",29.1,NA,29.1,"normal human subjects",NA
+16,12,NA,"Vis. assoc. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+22.3","+22.3",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",22.3,NA,NA,"normal human subjects",NA
+17,13,NA,"Prim. vis. cortex","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"40.1 ± 4.09","40.1","4.09","SD",NA,"CMRglc","µmol/100 g/min",40.1,4.09,40.1,"normal human subjects",NA
+17,13,NA,"Prim. vis. cortex","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 9.2 ± 9.84","- 9.2","9.84","SD",NA,"CMRglc_pct_change_asleep","% of awake",-9.2,9.84,NA,"normal human subjects",NA
+17,13,NA,"Prim. vis. cortex","Dreamer","Awake","dreamer_awake",1,"35.5","35.5",NA,NA,NA,"CMRglc","µmol/100 g/min",35.5,NA,35.5,"normal human subjects",NA
+17,13,NA,"Prim. vis. cortex","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+20.0","+20.0",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",20,NA,NA,"normal human subjects",NA
+19,14,NA,"Inf. limbic struct.","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"32.3 ± 2.50","32.3","2.50","SD",NA,"CMRglc","µmol/100 g/min",32.3,2.5,32.3,"normal human subjects",NA
+19,14,NA,"Inf. limbic struct.","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 9.9 ± 4.76","- 9.9","4.76","SD",NA,"CMRglc_pct_change_asleep","% of awake",-9.9,4.76,NA,"normal human subjects",NA
+19,14,NA,"Inf. limbic struct.","Dreamer","Awake","dreamer_awake",1,"27.9","27.9",NA,NA,NA,"CMRglc","µmol/100 g/min",27.9,NA,27.9,"normal human subjects",NA
+19,14,NA,"Inf. limbic struct.","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+14.0","+14.0",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",14,NA,NA,"normal human subjects",NA
+20,15,NA,"Hippocampus","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"38.3 ± 5.17","38.3","5.17","SD",NA,"CMRglc","µmol/100 g/min",38.3,5.17,38.3,"normal human subjects",NA
+20,15,NA,"Hippocampus","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 9.4 ± 9.33","- 9.4","9.33","SD",NA,"CMRglc_pct_change_asleep","% of awake",-9.4,9.33,NA,"normal human subjects",NA
+20,15,NA,"Hippocampus","Dreamer","Awake","dreamer_awake",1,"31.6","31.6",NA,NA,NA,"CMRglc","µmol/100 g/min",31.6,NA,31.6,"normal human subjects",NA
+20,15,NA,"Hippocampus","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+23.4","+23.4",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",23.4,NA,NA,"normal human subjects",NA
+21,16,NA,"Cingulate gyrus","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"44.6 ± 2.86","44.6","2.86","SD",NA,"CMRglc","µmol/100 g/min",44.6,2.86,44.6,"normal human subjects",NA
+21,16,NA,"Cingulate gyrus","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.9 ± 7.62","-11.9","7.62","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.9,7.62,NA,"normal human subjects",NA
+21,16,NA,"Cingulate gyrus","Dreamer","Awake","dreamer_awake",1,"41.0","41.0",NA,NA,NA,"CMRglc","µmol/100 g/min",41,NA,41,"normal human subjects",NA
+21,16,NA,"Cingulate gyrus","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+11.2","+11.2",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",11.2,NA,NA,"normal human subjects",NA
+23,17,NA,"Front. bas. white matter","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"21.6 ± 0.83","21.6","0.83","SD",NA,"CMRglc","µmol/100 g/min",21.6,0.83,21.6,"normal human subjects",NA
+23,17,NA,"Front. bas. white matter","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-13.4 ± 5.14","-13.4","5.14","SD",NA,"CMRglc_pct_change_asleep","% of awake",-13.4,5.14,NA,"normal human subjects",NA
+23,17,NA,"Front. bas. white matter","Dreamer","Awake","dreamer_awake",1,"18.6","18.6",NA,NA,NA,"CMRglc","µmol/100 g/min",18.6,NA,18.6,"normal human subjects",NA
+23,17,NA,"Front. bas. white matter","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+11.8","+11.8",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",11.8,NA,NA,"normal human subjects",NA
+24,18,NA,"Occ. par. white matter","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"20.8 ± 1.72","20.8","1.72","SD",NA,"CMRglc","µmol/100 g/min",20.8,1.72,20.8,"normal human subjects",NA
+24,18,NA,"Occ. par. white matter","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-14.8 ± 1.88","-14.8","1.88","SD",NA,"CMRglc_pct_change_asleep","% of awake",-14.8,1.88,NA,"normal human subjects",NA
+24,18,NA,"Occ. par. white matter","Dreamer","Awake","dreamer_awake",1,"17.0","17.0",NA,NA,NA,"CMRglc","µmol/100 g/min",17,NA,17,"normal human subjects",NA
+24,18,NA,"Occ. par. white matter","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 8.2","+ 8.2",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",8.2,NA,NA,"normal human subjects",NA
+26,19,NA,"Caudate nucleus","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"40.5 ± 3.52","40.5","3.52","SD",NA,"CMRglc","µmol/100 g/min",40.5,3.52,40.5,"normal human subjects",NA
+26,19,NA,"Caudate nucleus","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-11.6 ± 6.57","-11.6","6.57","SD",NA,"CMRglc_pct_change_asleep","% of awake",-11.6,6.57,NA,"normal human subjects",NA
+26,19,NA,"Caudate nucleus","Dreamer","Awake","dreamer_awake",1,"34.0","34.0",NA,NA,NA,"CMRglc","µmol/100 g/min",34,NA,34,"normal human subjects",NA
+26,19,NA,"Caudate nucleus","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 7.9","+ 7.9",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",7.9,NA,NA,"normal human subjects",NA
+27,20,NA,"Lentiform nucleus","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"41.6 ± 6.35","41.6","6.35","SD",NA,"CMRglc","µmol/100 g/min",41.6,6.35,41.6,"normal human subjects",NA
+27,20,NA,"Lentiform nucleus","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 9.6 ± 8.85","- 9.6","8.85","SD",NA,"CMRglc_pct_change_asleep","% of awake",-9.6,8.85,NA,"normal human subjects",NA
+27,20,NA,"Lentiform nucleus","Dreamer","Awake","dreamer_awake",1,"38.3","38.3",NA,NA,NA,"CMRglc","µmol/100 g/min",38.3,NA,38.3,"normal human subjects",NA
+27,20,NA,"Lentiform nucleus","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 2.1","+ 2.1",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",2.1,NA,NA,"normal human subjects",NA
+28,21,NA,"Thalamus","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"38.4 ± 3.21","38.4","3.21","SD",NA,"CMRglc","µmol/100 g/min",38.4,3.21,38.4,"normal human subjects",NA
+28,21,NA,"Thalamus","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-17.5 ± 7.22","-17.5","7.22","SD",NA,"CMRglc_pct_change_asleep","% of awake",-17.5,7.22,NA,"normal human subjects",NA
+28,21,NA,"Thalamus","Dreamer","Awake","dreamer_awake",1,"31.0","31.0",NA,NA,NA,"CMRglc","µmol/100 g/min",31,NA,31,"normal human subjects",NA
+28,21,NA,"Thalamus","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+14.5","+14.5",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",14.5,NA,NA,"normal human subjects",NA
+30,22,NA,"Brainstem","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"27.9 ± 4.85","27.9","4.85","SD",NA,"CMRglc","µmol/100 g/min",27.9,4.85,27.9,"normal human subjects",NA
+30,22,NA,"Brainstem","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 6.8 ± 12.10","- 6.8","12.10","SD",NA,"CMRglc_pct_change_asleep","% of awake",-6.8,12.1,NA,"normal human subjects",NA
+30,22,NA,"Brainstem","Dreamer","Awake","dreamer_awake",1,"24.6","24.6",NA,NA,NA,"CMRglc","µmol/100 g/min",24.6,NA,24.6,"normal human subjects",NA
+30,22,NA,"Brainstem","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+17.1","+17.1",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",17.1,NA,NA,"normal human subjects",NA
+31,23,NA,"Cerebellar gray matter","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"32.9 ± 5.96","32.9","5.96","SD",NA,"CMRglc","µmol/100 g/min",32.9,5.96,32.9,"normal human subjects",NA
+31,23,NA,"Cerebellar gray matter","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"- 9.5 ± 4.00","- 9.5","4.00","SD",NA,"CMRglc_pct_change_asleep","% of awake",-9.5,4,NA,"normal human subjects",NA
+31,23,NA,"Cerebellar gray matter","Dreamer","Awake","dreamer_awake",1,"31.1","31.1",NA,NA,NA,"CMRglc","µmol/100 g/min",31.1,NA,31.1,"normal human subjects",NA
+31,23,NA,"Cerebellar gray matter","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+ 9.3","+ 9.3",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",9.3,NA,NA,"normal human subjects",NA
+33,24,NA,"Whole brain (all regions weighted according to size)","Non-dreamers (n = 3)","Awake (mean ± S.D.)","nondreamers_awake",3,"36.2 ± 2.38","36.2","2.38","SD",NA,"CMRglc","µmol/100 g/min",36.2,2.38,36.2,"normal human subjects","Whole brain: all regions weighted according to size (printed row label)."
+33,24,NA,"Whole brain (all regions weighted according to size)","Non-dreamers (n = 3)","% Change asleep (mean ± S.D.)","nondreamers_pct_change_asleep",3,"-12.6 ± 4.73","-12.6","4.73","SD",NA,"CMRglc_pct_change_asleep","% of awake",-12.6,4.73,NA,"normal human subjects","Whole brain: all regions weighted according to size (printed row label)."
+33,24,NA,"Whole brain (all regions weighted according to size)","Dreamer","Awake","dreamer_awake",1,"30.3","30.3",NA,NA,NA,"CMRglc","µmol/100 g/min",30.3,NA,30.3,"normal human subjects","Whole brain: all regions weighted according to size (printed row label)."
+33,24,NA,"Whole brain (all regions weighted according to size)","Dreamer","% Change asleep","dreamer_pct_change_asleep",1,"+16.4","+16.4",NA,NA,NA,"CMRglc_pct_change_asleep","% of awake",16.4,NA,NA,"normal human subjects","Whole brain: all regions weighted according to size (printed row label)."

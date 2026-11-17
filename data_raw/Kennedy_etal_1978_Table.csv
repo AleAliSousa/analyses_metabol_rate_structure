@@ -1,0 +1,40 @@
+"printed_row","structure_order","section_as_published","structure_as_published","group_as_published","column_as_published","arm_id","n","cell_as_printed","mean_printed","dispersion_printed","dispersion_type","footnote_marks","measure","unit_as_printed","value_numeric","dispersion_numeric","CMRglc.umol_100g_min","species_as_published","note"
+4,1,"Gray matter","Visual cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"59 ± 2","59","2","SEM",NA,"CMRglc","µmoles/100 gm/min",59,2,59,"rhesus monkey",NA
+5,2,"Gray matter","Auditory cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"79 ± 4","79","4","SEM",NA,"CMRglc","µmoles/100 gm/min",79,4,79,"rhesus monkey",NA
+6,3,"Gray matter","Parietal cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"47 ± 4","47","4","SEM",NA,"CMRglc","µmoles/100 gm/min",47,4,47,"rhesus monkey",NA
+7,4,"Gray matter","Motor cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"44 ± 3","44","3","SEM",NA,"CMRglc","µmoles/100 gm/min",44,3,44,"rhesus monkey",NA
+8,5,"Gray matter","Frontal cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"50 ± 2","50","2","SEM",NA,"CMRglc","µmoles/100 gm/min",50,2,50,"rhesus monkey",NA
+10,6,"Gray matter","Thalamus: dorsomedial nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"54 ± 2","54","2","SEM",NA,"CMRglc","µmoles/100 gm/min",54,2,54,"rhesus monkey",NA
+11,7,"Gray matter","Thalamus: ventral posterolateral nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"43 ± 2","43","2","SEM",NA,"CMRglc","µmoles/100 gm/min",43,2,43,"rhesus monkey",NA
+12,8,"Gray matter","Medial geniculate body",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"65 ± 3","65","3","SEM",NA,"CMRglc","µmoles/100 gm/min",65,3,65,"rhesus monkey",NA
+13,9,"Gray matter","Lateral geniculate body",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"39 ± 1","39","1","SEM",NA,"CMRglc","µmoles/100 gm/min",39,1,39,"rhesus monkey",NA
+14,10,"Gray matter","Hypothalamus: ventromedial nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"25 ± 1","25","1","SEM",NA,"CMRglc","µmoles/100 gm/min",25,1,25,"rhesus monkey",NA
+15,11,"Gray matter","Mamillary body",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"57 ± 3","57","3","SEM",NA,"CMRglc","µmoles/100 gm/min",57,3,57,"rhesus monkey",NA
+16,12,"Gray matter","Hippocampal gyrus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"39 ± 2","39","2","SEM",NA,"CMRglc","µmoles/100 gm/min",39,2,39,"rhesus monkey",NA
+17,13,"Gray matter","Amygdala: anterior nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"25 ± 2","25","2","SEM",NA,"CMRglc","µmoles/100 gm/min",25,2,25,"rhesus monkey",NA
+18,14,"Gray matter","Septal nucleus: medial",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"26 ± 2","26","2","SEM",NA,"CMRglc","µmoles/100 gm/min",26,2,26,"rhesus monkey",NA
+19,15,"Gray matter","Caudate nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"52 ± 3","52","3","SEM",NA,"CMRglc","µmoles/100 gm/min",52,3,52,"rhesus monkey",NA
+20,16,"Gray matter","Nucleus accumbens",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"36 ± 2","36","2","SEM",NA,"CMRglc","µmoles/100 gm/min",36,2,36,"rhesus monkey",NA
+21,17,"Gray matter","Putamen",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"53 ± 3","53","3","SEM",NA,"CMRglc","µmoles/100 gm/min",53,3,53,"rhesus monkey",NA
+22,18,"Gray matter","Globus pallidus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"26 ± 2","26","2","SEM",NA,"CMRglc","µmoles/100 gm/min",26,2,26,"rhesus monkey",NA
+23,19,"Gray matter","Subthalamic nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"51 ± 2","51","2","SEM",NA,"CMRglc","µmoles/100 gm/min",51,2,51,"rhesus monkey",NA
+24,20,"Gray matter","Substantia nigra: zona diffusa",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"29 ± 2","29","2","SEM",NA,"CMRglc","µmoles/100 gm/min",29,2,29,"rhesus monkey",NA
+26,21,"Gray matter","Vestibular nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"66 ± 3","66","3","SEM",NA,"CMRglc","µmoles/100 gm/min",66,3,66,"rhesus monkey",NA
+27,22,"Gray matter","Cochlear nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"51 ± 3","51","3","SEM",NA,"CMRglc","µmoles/100 gm/min",51,3,51,"rhesus monkey",NA
+28,23,"Gray matter","Superior olivary nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"63 ± 4","63","4","SEM",NA,"CMRglc","µmoles/100 gm/min",63,4,63,"rhesus monkey",NA
+29,24,"Gray matter","Inferior colliculus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"103 ± 6","103","6","SEM",NA,"CMRglc","µmoles/100 gm/min",103,6,103,"rhesus monkey",NA
+30,25,"Gray matter","Superior colliculus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"55 ± 4","55","4","SEM",NA,"CMRglc","µmoles/100 gm/min",55,4,55,"rhesus monkey",NA
+31,26,"Gray matter","Pontine reticular nucleus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"28 ± 1","28","1","SEM",NA,"CMRglc","µmoles/100 gm/min",28,1,28,"rhesus monkey",NA
+33,27,"Gray matter","Vermis",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"32 ± 2","32","2","SEM",NA,"CMRglc","µmoles/100 gm/min",32,2,32,"rhesus monkey",NA
+34,28,"Gray matter","Flocculus",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"50 ± 3","50","3","SEM",NA,"CMRglc","µmoles/100 gm/min",50,3,50,"rhesus monkey",NA
+35,29,"Gray matter","Cerebellar cortex",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"31 ± 2","31","2","SEM",NA,"CMRglc","µmoles/100 gm/min",31,2,31,"rhesus monkey",NA
+36,30,"Gray matter","Cerebellar nuclei",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"45 ± 2","45","2","SEM",NA,"CMRglc","µmoles/100 gm/min",45,2,45,"rhesus monkey",NA
+38,31,"Gray matter","Spinal gray matter: cervical",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",6,"21 ± 2","21","2","SEM","a","CMRglc","µmoles/100 gm/min",21,2,21,"rhesus monkey","Footnote a: value from 6 animals (all other rows 7)."
+41,32,"White matter","Optic chiasm",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",6,"23 ± 2","23","2","SEM","a","CMRglc","µmoles/100 gm/min",23,2,23,"rhesus monkey","Footnote a: value from 6 animals (all other rows 7)."
+42,33,"White matter","Optic tract",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"18 ± 1","18","1","SEM",NA,"CMRglc","µmoles/100 gm/min",18,1,18,"rhesus monkey",NA
+44,34,"White matter","Corona radiata",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"11 ± 1","11","1","SEM",NA,"CMRglc","µmoles/100 gm/min",11,1,11,"rhesus monkey",NA
+45,35,"White matter","Corpus callosum",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"11 ± 0","11","0","SEM",NA,"CMRglc","µmoles/100 gm/min",11,0,11,"rhesus monkey",NA
+46,36,"White matter","Internal capsule",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"13 ± 1","13","1","SEM",NA,"CMRglc","µmoles/100 gm/min",13,1,13,"rhesus monkey",NA
+47,37,"White matter","Pyramids",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"13 ± 1","13","1","SEM",NA,"CMRglc","µmoles/100 gm/min",13,1,13,"rhesus monkey",NA
+49,38,"White matter","Cerebellar white matter",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",7,"12 ± 1","12","1","SEM",NA,"CMRglc","µmoles/100 gm/min",12,1,12,"rhesus monkey",NA
+51,39,"White matter","Spinal white matter",NA,"Value (µmoles/ 100 gm/min)","conscious_normal",6,"7 ± 1","7","1","SEM","a","CMRglc","µmoles/100 gm/min",7,1,7,"rhesus monkey","Footnote a: value from 6 animals (all other rows 7)."

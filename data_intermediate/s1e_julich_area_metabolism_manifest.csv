@@ -1,0 +1,46 @@
+role,path,bytes,sha256
+fsLR no-medial-wall ROI L,data_raw/neuromaps_metabolic/templates/atlases/fsLR/tpl-fsLR_den-164k_hemi-L_desc-nomedialwall_dparc.label.gii,4606,723bfac9caa8ca68f3381de89a2e9a4606a37f7ce5c89f12f5a8e38457af7a96
+fsaverage no-medial-wall ROI L,data_raw/neuromaps_metabolic/templates/atlases/fsaverage/tpl-fsaverage_den-164k_hemi-L_desc-nomedialwall_dparc.label.gii,4553,8fb7963a2c6a73741a8dc05f33eef82086ad08152ac09a51b22361e233173363
+template sphere fsLR deformed to fsaverage L,data_raw/neuromaps_metabolic/templates/atlases/fsLR/tpl-fsLR_space-fsaverage_den-164k_hemi-L_sphere.surf.gii,3616474,1f3b09b813fe32c934a565264dccc357629834259fa34f39de5c8c00dc0fec92
+template sphere fsaverage L,data_raw/neuromaps_metabolic/templates/atlases/fsaverage/tpl-fsaverage_den-164k_hemi-L_sphere.surf.gii,3511289,2dec67a92f9aec1efe412b27e6c14bae93adfdfd8ae54c0ec6f1b46397f4a3f2
+raichle cmrglc fsLR-164k L,data_raw/neuromaps_metabolic/source-raichle_desc-cmrglc_space-fsLR_den-164k_hemi-L_feature.func.gii,673302,c36b6feb7ee6da127925e8cda44b55af888c05eb1ad1f131781347cc3e207a63
+raichle cmr02 fsLR-164k L,data_raw/neuromaps_metabolic/source-raichle_desc-cmr02_space-fsLR_den-164k_hemi-L_feature.func.gii,667428,9923d16fbde2a06945097808ecb22b24ca74eff5266013dbb31b9d7233e8b445
+raichle cbf fsLR-164k L,data_raw/neuromaps_metabolic/source-raichle_desc-cbf_space-fsLR_den-164k_hemi-L_feature.func.gii,669164,0874314bc4ba0642ad38fbef16b95be1074276b60f6d1d5203ccc332f7d51529
+raichle cbv fsLR-164k L,data_raw/neuromaps_metabolic/source-raichle_desc-cbv_space-fsLR_den-164k_hemi-L_feature.func.gii,690128,a8aaa188d46ca0d4acf876f555d0fc143b84b395a7f58afbfdfa60ef8659a090
+fsLR no-medial-wall ROI R,data_raw/neuromaps_metabolic/templates/atlases/fsLR/tpl-fsLR_den-164k_hemi-R_desc-nomedialwall_dparc.label.gii,4667,24188f85c2f1235e04435fdb36560d568ad6c4acd1aad2bf7b30b0b97aaa758b
+fsaverage no-medial-wall ROI R,data_raw/neuromaps_metabolic/templates/atlases/fsaverage/tpl-fsaverage_den-164k_hemi-R_desc-nomedialwall_dparc.label.gii,4593,c331658edbcf3e5f2abda9e9877085653a2fd056f9508580a5b8e5578357fea2
+template sphere fsLR deformed to fsaverage R,data_raw/neuromaps_metabolic/templates/atlases/fsLR/tpl-fsLR_space-fsaverage_den-164k_hemi-R_sphere.surf.gii,3495547,f024337147073263dc11e56603afcb9dae2c48cf8869809388d5985eb95a585a
+template sphere fsaverage R,data_raw/neuromaps_metabolic/templates/atlases/fsaverage/tpl-fsaverage_den-164k_hemi-R_sphere.surf.gii,3511290,508947cb125da2a5a164a5dfb655069a96700eb9fd167cb0c0fb0784b80e1791
+raichle cmrglc fsLR-164k R,data_raw/neuromaps_metabolic/source-raichle_desc-cmrglc_space-fsLR_den-164k_hemi-R_feature.func.gii,671671,af3ea29bc19f159c2273e36723e97c82e4ebdfc70ed02f6600c44b7c7ef4dfdc
+raichle cmr02 fsLR-164k R,data_raw/neuromaps_metabolic/source-raichle_desc-cmr02_space-fsLR_den-164k_hemi-R_feature.func.gii,667617,33d5a7ced94ef2f3f03d413e206d854568a217e303ef92aba791dd7d1a3fd654
+raichle cbf fsLR-164k R,data_raw/neuromaps_metabolic/source-raichle_desc-cbf_space-fsLR_den-164k_hemi-R_feature.func.gii,668717,55afe79ad968ab39ec5ee5ba400ab725bdd1dffa05688278b6ba8a14c7264f42
+raichle cbv fsLR-164k R,data_raw/neuromaps_metabolic/source-raichle_desc-cbv_space-fsLR_den-164k_hemi-R_feature.func.gii,689333,1feeda25beaaf6ffb1d6aa4b37c883d6b43e5467fc5e331fc7127a047154307e
+Julich v3.1 fsaverage labels left,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_fsaverage_labelled_left_hemisphere.label.gii,69913,e4a854225e5269b807d995bba6ecfd7068f4ef729fd44e3c6f3ea06dfe1afda4
+Julich v3.1 fsaverage labels right,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_fsaverage_labelled_right_hemisphere.label.gii,69549,88e44264e41bf36075e610c2d45c42fde9a54dfc478e6b835197207adc68a9ac
+castrillon2023 cmrglc MNI152 3mm,data_raw/neuromaps_metabolic/source-castrillon2023_desc-cmrglc_space-MNI152_res-3mm_feature.nii.gz,467546,20c43e719f5030b16df1f1d35a5a6358781ced6cc31cb55f11e0e76d4c1e6db5
+Julich v3.1 MNI152 LUT,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_MNI152_labelled_lut.csv,21431,b4b9cc2711086ba5cb38ec293bd5dc7f21354feca7b826406d325737e7b6868e
+Julich v3.1 MNI152 labels left,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_MNI152_labelled_left_hemisphere.nii.gz,227681,aebdc207071084e212195dcfa779f54a4710b757891286e4ee048f074d362e3c
+Julich v3.1 MNI152 labels right,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_MNI152_labelled_right_hemisphere.nii.gz,229767,e99314c6e1ecde6e2b36e454eca1218da961cfcf2e04aab62836c83e68854271
+Julich v3.1 MNI152 labels merged,data_raw/anatomical_atlases/JulichBrain_v31/JulichBrain_v31_MNI152_labelled_merged.nii.gz,405100,8285f9474f2738eed4a6668df070a6cef423532aa06833d40c06c07b577e6dcf
+output,data_intermediate/s1e_julich_area_metabolism.csv,101607,2ec274cd211a3a31c2e463a81a8e998d65cb6f73035db3c30f7be06ccc220189
+output,data_intermediate/s1e_fsaverage164k_metabolic_maps.npz,5199731,7419abd88c4b2b30ab950a4a1daff62d004c71a21c9c90d9c0fe6a3351d754d2
+software,python,,3.11.18
+software,numpy,,2.4.6
+software,scipy,,1.17.1
+software,pandas,,3.1.1
+software,nibabel,,5.5.0
+software,neuromaps,,0.0.7
+software,wb_command,,not found
+method,fslr_to_fsaverage,,"pure-Python barycentric interpolation on neuromaps template spheres (tpl-fsLR_space-fsaverage_den-164k -> tpl-fsaverage_den-164k), fsLR medial-wall ROI weights, fsaverage medial wall masked; wb_command not available"
+method,gi_proxy,,"gi_proxy = cmrglc - (-77.0675 + 1.258205 * cmr02); OLS over 296832 valid vertices, both hemispheres pooled, r(cmr02, cmrglc) = 0.8466; zero where either input is invalid"
+method,surface_parcellation,,mean over vertices with finite non-zero data per Julich label and hemisphere; labels 0/147/148 excluded; bilateral row = valid-vertex-weighted mean of L and R
+method,volume_parcellation,,"Julich MNI152 (ICBM 2009c asym, 1 mm) labels nearest-neighbour resampled to the Castrillon 3 mm grid via affines (voxel 27.0 mm3); mean over voxels with finite non-zero data; no template re-registration"
+run,date,,2026-11-15
+run,platform,,macOS-26.7.1-arm64-arm-64bit
+method,resampler_fallback_L,,0 of 163842 fsaverage vertices used nearest-neighbour fallback
+method,resampler_fallback_R,,0 of 163842 fsaverage vertices used nearest-neighbour fallback
+units,cmrglc,,"vertex/voxel-weighted cortical mean (Julich labels 1-146, bilateral) = 6463; NOT absolute umol/100 g/min; treat as neuromaps-distributed normalised/arbitrary units"
+units,cmr02,,"vertex/voxel-weighted cortical mean (Julich labels 1-146, bilateral) = 5198; units as distributed by neuromaps (not checked against a reference)"
+units,cbf,,"vertex/voxel-weighted cortical mean (Julich labels 1-146, bilateral) = 5995; units as distributed by neuromaps (not checked against a reference)"
+units,cbv,,"vertex/voxel-weighted cortical mean (Julich labels 1-146, bilateral) = 4770; units as distributed by neuromaps (not checked against a reference)"
+units,castrillon_cmrglc,,"vertex/voxel-weighted cortical mean (Julich labels 1-146, bilateral) = 25.87; order of magnitude consistent with absolute umol/100 g/min (Heiss 2004 cortex 33.5; group-map cortical mean is lower, partial-volume and cohort differences expected)"

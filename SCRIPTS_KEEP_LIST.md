@@ -115,3 +115,19 @@ and a vector PDF:
 - Tier B figures were matched by topic, not pixels, because the deck predates the
   current renders. If you re-export those slides from current scripts, the images
   will change slightly.
+
+
+## Active additions — 14 November 2026
+
+- `scripts/s1d_2a_extract_tushaus_proteomics.R`: EV1 source extraction and strict
+  anatomical mapping; precedes `s1d_2b_tushaus_protein_metabolic_analysis.R`.
+- `scripts/s1d_2b_tushaus_protein_metabolic_analysis.R`: complete seven-region
+  protein screen and marker-panel comparisons, one donor.
+- `scripts/s1c_sample_johansen_atlas.R`: invokes the Python NIfTI sampler after
+  the primary Johansen table producer; unvalidated atlas estimates stay separate.
+- `scripts/s2_beip_replication.R`: existing independent s2 arm retained and rerun.
+
+These scripts are in `run_all.R`; outputs are registered in the manifest.
+All were executed locally with R in this session. The historical execution
+limitations above do not apply to these additions. See
+`metadata/anatomy/NOV14_PROTEOMICS_ATLAS.md` for methods and limitations.

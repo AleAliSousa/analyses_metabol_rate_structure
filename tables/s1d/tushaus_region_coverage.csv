@@ -1,0 +1,27 @@
+"source_region","region_label","measure","primary_included","match_note","n_proteins","n_proteins_at_least_two_samples"
+"CBM","Cerebellar gray matter","LFQ",TRUE,"Gray-matter cubes separated from cerebellar white matter; compare with cerebellar cortex rate",9010,8366
+"CBM","Cerebellar gray matter","iBAQ",TRUE,"Gray-matter cubes separated from cerebellar white matter; compare with cerebellar cortex rate",9349,8424
+"CBw","Cerebellar white matter","LFQ",FALSE,"No matching Heiss white-matter cerebellar rate",8214,7457
+"CBw","Cerebellar white matter","iBAQ",FALSE,"No matching Heiss white-matter cerebellar rate",8342,7450
+"CC","Cerebral cortical gray matter","LFQ",FALSE,"Unspecified cortical sampling location cannot represent global cerebral cortex",9024,8531
+"CC","Cerebral cortical gray matter","iBAQ",FALSE,"Unspecified cortical sampling location cannot represent global cerebral cortex",9276,8577
+"CCw","Cerebral white matter","LFQ",FALSE,"Unspecified white-matter sampling location is not established centrum semiovale",8633,7887
+"CCw","Cerebral white matter","iBAQ",FALSE,"Unspecified white-matter sampling location is not established centrum semiovale",8817,7898
+"CL","Claustrum","LFQ",FALSE,"No Heiss claustrum measurement",8745,8070
+"CL","Claustrum","iBAQ",FALSE,"No Heiss claustrum measurement",8897,8086
+"CN","Caudate nucleus","LFQ",TRUE,"Named nucleus agrees; sampled tissue not a whole-structure mask",8793,8131
+"CN","Caudate nucleus","iBAQ",TRUE,"Named nucleus agrees; sampled tissue not a whole-structure mask",9009,8170
+"HPC","Hippocampus","LFQ",TRUE,"Named structure agrees; subfield mixture not specified",9061,8400
+"HPC","Hippocampus","iBAQ",TRUE,"Named structure agrees; subfield mixture not specified",9364,8449
+"NAC","Nucleus accumbens","LFQ",TRUE,"Named nucleus agrees; core-shell mixture not specified",8627,7904
+"NAC","Nucleus accumbens","iBAQ",TRUE,"Named nucleus agrees; core-shell mixture not specified",8811,7923
+"NR","Red nucleus","LFQ",TRUE,"Named nucleus agrees; small-nucleus sampling limitation",8621,7913
+"NR","Red nucleus","iBAQ",TRUE,"Named nucleus agrees; small-nucleus sampling limitation",8780,7934
+"OB","Olives","LFQ",FALSE,"No Heiss olive measurement",8586,7743
+"OB","Olives","iBAQ",FALSE,"No Heiss olive measurement",8800,7737
+"PUT","Putamen","LFQ",TRUE,"Named structure agrees; sampled tissue not a whole-structure mask",8627,7820
+"PUT","Putamen","iBAQ",TRUE,"Named structure agrees; sampled tissue not a whole-structure mask",8787,7832
+"SN","Substantia nigra","LFQ",TRUE,"Named nucleus agrees; pars compacta-reticulata mixture not specified",8640,8012
+"SN","Substantia nigra","iBAQ",TRUE,"Named nucleus agrees; pars compacta-reticulata mixture not specified",8826,8020
+"THL","Thalamus","LFQ",FALSE,"Unspecified thalamic tissue cannot be assigned to an individual Heiss nucleus",8266,7520
+"THL","Thalamus","iBAQ",FALSE,"Unspecified thalamic tissue cannot be assigned to an individual Heiss nucleus",8402,7531

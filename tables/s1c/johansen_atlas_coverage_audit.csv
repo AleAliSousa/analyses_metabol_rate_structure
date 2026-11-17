@@ -1,0 +1,27 @@
+anatomy_id,region,status,reason,small_nucleus,primary_atlas_included
+cerebral_cortex,Cerebral cortex,not_sampled_anatomy_unresolved,Global cortical aggregate: volumetric cortical map is visualization-only; no replacement from arbitrarily averaged surface parcels.,,False
+frontal_lobe,Frontal lobe,published_table_match_retained,Existing strict Table 2 match.,,False
+parietal_lobe,Parietal lobe,published_table_match_retained,Existing strict Table 2 match.,,False
+temporal_lobe,Temporal lobe,published_table_match_retained,Existing strict Table 2 match.,,False
+occipital_lobe,Occipital lobe,published_table_match_retained,Existing strict Table 2 match.,,False
+insular_lobe,Insular lobe,published_table_match_retained,Existing strict Table 2 match.,,False
+hippocampus,Hippocampus,published_table_match_retained,Existing strict Table 2 match.,,False
+caudate_nucleus,Caudate nucleus,published_table_match_retained,Existing strict Table 2 match.,,False
+putamen,Putamen,published_table_match_retained,Existing strict Table 2 match.,,False
+nucleus_accumbens,Nucleus accumbens,published_table_match_retained,Existing strict Table 2 match.,,False
+pallidum,Pallidum,published_table_match_retained,Existing strict Table 2 match.,,False
+medial_thalamic_nuclei,Medial thalamic nuclei,not_sampled_anatomy_unresolved,Heiss medial-thalamic identity is unresolved. Do not substitute mediodorsal or whole thalamus.,,False
+lateral_geniculate_nucleus,Lateral geniculate nucleus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+medial_geniculate_nucleus,Medial geniculate nucleus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+subthalamic_nucleus,Subthalamic nucleus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+basal_forebrain,Basal forebrain,not_sampled_anatomy_unresolved,Heiss sampled territory is not specified well enough to substitute a cholinergic forebrain mask.,,False
+amygdala,Amygdala,published_table_match_retained,Existing strict Table 2 match.,,False
+inferior_colliculus,Inferior colliculus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+superior_colliculus,Superior colliculus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+substantia_nigra,Substantia nigra,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+red_nucleus,Red nucleus,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,True,False
+cerebellar_cortex,Cerebellar cortex,published_table_match_retained,Existing strict Table 2 match.,,False
+vermis,Vermis,sampled_exploratory,Lobular vermis union. Tissue extent does not establish identity with the Heiss vermis sample; descriptive only.,False,False
+dentate_nucleus,Dentate nucleus,sampled_exploratory,"Dentate nucleus only, not dentate gyrus or other deep cerebellar nuclei.",True,False
+centrum_semiovale,Centrum semiovale,not_sampled_anatomy_unresolved,No source-matched centrum-semiovale mask; whole white matter and internal capsule are different territories.,,False
+internal_capsule,Internal capsule,sampled_exploratory,Bilateral union of named masks. MNI2009b-to-Johansen template correspondence is not independently validated.,False,False

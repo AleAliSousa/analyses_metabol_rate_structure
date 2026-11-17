@@ -36,3 +36,21 @@ See `metadata/CORRECTIONS_LOG.md` for the full log.
   Corrected to `37388` in `data_raw/Stephan_primates.csv` and in all 11 archived
   copies. Also removed a stray empty column from `data_raw/Stephan_primates.csv`
   (now 60 × 69). Re-run derivation scripts so downstream files pick up the fix.
+
+## 14 November 2026 additions
+
+- `scripts/s1d_2a_extract_tushaus_proteomics.R` extracts Tüshaus Dataset EV1;
+  `scripts/s1d_2b_tushaus_protein_metabolic_analysis.R` analyzes the same seven
+  matched regions across proteins. These are protein abundances from one donor.
+- `scripts/s1c_sample_johansen_atlas.R` samples ten missing territories and flags
+  small nuclei. Nine have named anatomical matches; vermis remains descriptive.
+  New estimates remain exploratory: template correspondence is unvalidated and
+  five overlap regions differ by 30–65% from Table 2. Table/map values are not pooled.
+- `scripts/s2_beip_replication.R` supplies the separate BEIP arm (7/6/6 regional
+  points), rerun and checked against the strict anatomical policy.
+
+See [methods, limitations, and reproduction commands](metadata/anatomy/NOV14_PROTEOMICS_ATLAS.md).
+New raw inputs have URLs and SHA-256 checksums in
+`metadata/nov14_source_downloads.csv`; `checks/fetch_nov14_inputs.R` acquires or
+verifies them. Atlas sampling requires the Python packages in
+`helpers/requirements-atlas.txt` (local `.venv-atlas` supported).

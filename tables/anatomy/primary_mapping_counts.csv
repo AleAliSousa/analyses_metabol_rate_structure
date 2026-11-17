@@ -4,6 +4,7 @@
 "s1c_holmes_region_map.csv",13,11,4,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
 "s1c_johansen_region_map.csv",14,12,4,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
 "s1d_sjolin_region_map.csv",11,7,15,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
+"s1d_tushaus_region_map.csv",7,7,6,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
 "s2_beip_region_map.csv",10,7,5,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
 "s2_stress_volume_region_map.csv",8,7,4,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."
 "s4a_kochiyama_region_map.csv",6,0,14,"Mapping coverage ceiling; actual n depends on source and outcome completeness. BEIP map spans two waves; s5 spans volume sets."

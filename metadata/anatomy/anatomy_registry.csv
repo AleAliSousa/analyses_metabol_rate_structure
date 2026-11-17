@@ -41,3 +41,7 @@ internal_capsule,Internal capsule,white_matter,structure,white_matter,#636363,39
 pons,Pons,brain,gross_region,mixed,#8C510A,400,Pons; no Heiss rCMRGlc measurement exists so it is retained only for source-region composition figures (s1d)
 medulla_oblongata,Medulla oblongata,brain,gross_region,mixed,#DFC27D,410,Medulla oblongata; no Heiss rCMRGlc measurement exists so it is retained only for source-region composition figures (s1d)
 cervical_spinal_cord,Cervical spinal cord,,gross_region,mixed,#80CDC1,420,Cervical spinal cord; outside the brain and without a Heiss rCMRGlc measurement; retained only for source-region composition figures (s1d)
+cerebellar_white_matter,Cerebellar white matter,cerebellum,tissue_compartment,white_matter,#9ECAE1,430,Cerebellar white matter separated from cerebellar cortex; no Heiss rate
+cerebral_white_matter,Cerebral white matter,white_matter,tissue_compartment,white_matter,#878787,440,Unspecified cerebral white matter; not automatically centrum semiovale
+claustrum,Claustrum,forebrain_nuclei,structure,grey_matter,#AA4499,450,Claustrum; no Heiss rate
+inferior_olive,Inferior olive,medulla_oblongata,nucleus_group,grey_matter,#DFC27D,460,Olive tissue represented in Tushaus EV1; no Heiss rate

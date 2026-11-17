@@ -1,0 +1,293 @@
+region,fragment,label
+Area 45 (IFG) left,left hemisphere,1
+Area 44 (IFG) left,left hemisphere,2
+Area Fo1 (OFC) left,left hemisphere,3
+Area Fo2 (OFC) left,left hemisphere,4
+Area Fo3 (OFC) left,left hemisphere,5
+Area hOc5 (LOC) left,left hemisphere,6
+"Area hOc2 (V2, 18) left",left hemisphere,7
+"Area hOc1 (V1, 17, CalcS) left",left hemisphere,8
+Area hOc4v (LingG) left,left hemisphere,9
+Area hOc3v (LingG) left,left hemisphere,10
+Area Te 1.0 (HESCHL) left,left hemisphere,11
+Area Te 2.1 (STG) left,left hemisphere,12
+"Area TPJ (STG, SMG) left",left hemisphere,13
+Area Te 1.2 (HESCHL) left,left hemisphere,14
+Area Te 3 (STG) left,left hemisphere,15
+Area Te 1.1 (HESCHL) left,left hemisphere,16
+Area Te 2.2 (STG) left,left hemisphere,17
+Area 33 (ACC) left,left hemisphere,18
+Area s32 (sACC) left,left hemisphere,19
+Area p32 (pACC) left,left hemisphere,20
+Area Id2 (Insula) left,left hemisphere,21
+Area Id3 (Insula) left,left hemisphere,22
+CA2 (Hippocampus) left,left hemisphere,23
+CA3 (Hippocampus) left,left hemisphere,24
+"Area EC (Hippocampal Region, Entorhinal Cortex) left",left hemisphere,25
+DG (Hippocampus) left,left hemisphere,26
+CA1 (Hippocampus) left,left hemisphere,27
+Area Op4 (POperc) left,left hemisphere,28
+Area Op1 (POperc) left,left hemisphere,29
+Area Op2 (POperc) left,left hemisphere,30
+Area Op3 (POperc) left,left hemisphere,31
+Area FG2 (FusG) left,left hemisphere,32
+Area FG1 (FusG) left,left hemisphere,33
+Area PGp (IPL) left,left hemisphere,34
+Area PFt (IPL) left,left hemisphere,35
+Area PGa (IPL) left,left hemisphere,36
+Area PFop (IPL) left,left hemisphere,37
+Area PFm (IPL) left,left hemisphere,38
+Area PFcm (IPL) left,left hemisphere,39
+Area Ig2 (Insula) left,left hemisphere,40
+Area Ig1 (Insula) left,left hemisphere,41
+Area Id1 (Insula) left,left hemisphere,42
+Area hOc4lp (LOC) left,left hemisphere,43
+Area hOc4la (LOC) left,left hemisphere,44
+Area hOc4d (Cuneus) left,left hemisphere,45
+Area hOc3d (Cuneus) left,left hemisphere,46
+Area 4p (PreCG) left,left hemisphere,47
+Area 4a (PreCG) left,left hemisphere,48
+Area 1 (PostCG) left,left hemisphere,49
+Area 3a (PostCG) left,left hemisphere,50
+Area 3b (PostCG) left,left hemisphere,51
+Area hIP1 (IPS) left,left hemisphere,52
+Area hIP2 (IPS) left,left hemisphere,53
+Area 5L (SPL) left,left hemisphere,54
+Area 5M (SPL) left,left hemisphere,55
+Area 7PC (SPL) left,left hemisphere,56
+Area hIP3 (IPS) left,left hemisphere,57
+Area 7A (SPL) left,left hemisphere,58
+Area 7M (SPL) left,left hemisphere,59
+Area 5Ci (SPL) left,left hemisphere,60
+Area Id7 (Insula) left,left hemisphere,61
+Area s24 (sACC) left,left hemisphere,62
+Area 25 (sACC) left,left hemisphere,63
+"Subc (Hippocampus, Subicular complex) left",left hemisphere,64
+Area PF (IPL) left,left hemisphere,65
+Area 7P (SPL) left,left hemisphere,66
+Area Fp2 (FPole) left,left hemisphere,67
+Area Fp1 (FPole) left,left hemisphere,68
+Area p24ab (pACC) left,left hemisphere,69
+Area p24c (pACC) left,left hemisphere,70
+Area FG4 (FusG) left,left hemisphere,71
+Area FG3 (FusG) left,left hemisphere,72
+Area TeI (STG) left,left hemisphere,73
+Area TI (STG) left,left hemisphere,74
+Area IFS1 (IFS) left,left hemisphere,75
+Area IFS2 (IFS) left,left hemisphere,76
+Area IFS3 (IFS) left,left hemisphere,77
+Area IFS4 (IFS) left,left hemisphere,78
+"Area IFJ1 (IFS, PreCS) left",left hemisphere,79
+"Area IFJ2 (IFS, PreCS) left",left hemisphere,80
+Area 2 (PostCS) left,left hemisphere,81
+Area STS1 (STS) left,left hemisphere,82
+Area STS2 (STS) left,left hemisphere,83
+Area Op8 (Frontal Operculum) left,left hemisphere,84
+Area Op9 (Frontal Operculum) left,left hemisphere,85
+Area 6d1 (PreCG) left,left hemisphere,86
+Area 6d2 (PreCG) left,left hemisphere,87
+Area 6d3 (SFS) left,left hemisphere,88
+Area hOc6 (POS) left,left hemisphere,89
+Area hIP6 (IPS) left,left hemisphere,90
+Area hIP8 (IPS) left,left hemisphere,91
+Area hIP4 (IPS) left,left hemisphere,92
+Area hIP5 (IPS) left,left hemisphere,93
+Area hIP7 (IPS) left,left hemisphere,94
+Area hPO1 (POS) left,left hemisphere,95
+"Area 6mp (SMA, mesial SFG) left",left hemisphere,96
+"Area 6ma (preSMA, mesial SFG) left",left hemisphere,97
+"TrS (Hippocampus, Transsubiculum) left",left hemisphere,98
+Area Fo4 (OFC) left,left hemisphere,99
+Area Fo5 (OFC) left,left hemisphere,100
+Area Fo6 (OFC) left,left hemisphere,101
+Area Fo7 (OFC) left,left hemisphere,102
+Area 8d1 (SFG) left,left hemisphere,103
+Area 8d2 (SFG) left,left hemisphere,104
+Area 8v2 (MFG) left,left hemisphere,105
+Area 8v1 (MFG) left,left hemisphere,106
+Area Ig3 (Insula) left,left hemisphere,107
+Area Id4 (Insula) left,left hemisphere,108
+Area Id5 (Insula) left,left hemisphere,109
+Area Ia1 (Insula) left,left hemisphere,110
+Area Id6 (Insula) left,left hemisphere,111
+Area SFS1 (SFS) left,left hemisphere,112
+Area SFS2 (SFS) left,left hemisphere,113
+Area MFG1 (MFG) left,left hemisphere,114
+Area MFG2 (MFG) left,left hemisphere,115
+Area 6v2 (PreCG) left,left hemisphere,116
+Area 6v1 (PreCG) left,left hemisphere,117
+Area 6r1 (PreCG) left,left hemisphere,118
+Area Op5 (Frontal Operculum) left,left hemisphere,119
+Area Op6 (Frontal Operculum) left,left hemisphere,120
+Area Op7 (Frontal Operculum) left,left hemisphere,121
+Area Ph1 (PhG) left,left hemisphere,122
+Area Ph2 (PhG) left,left hemisphere,123
+Area Ph3 (PhG) left,left hemisphere,124
+Area CoS1 (CoS) left,left hemisphere,125
+Area SFG2 (SFG) left,left hemisphere,126
+Area Id9 (Insula) left,left hemisphere,127
+Area Ia3 (Insula) left,left hemisphere,128
+Area Ia2 (Insula) left,left hemisphere,129
+Area Id8 (Insula) left,left hemisphere,130
+Area Id10 (Insula) left,left hemisphere,131
+Area Op10 (Frontal Operculum) left,left hemisphere,132
+Area FG5 (FusG) left,left hemisphere,133
+Area OTS1 (OTS) left,left hemisphere,134
+Frontal-II (GapMap) left,left hemisphere,135
+Temporal-to-Parietal (GapMap) left,left hemisphere,136
+Frontal-to-Occipital (GapMap) left,left hemisphere,137
+Frontal-to-Temporal-I (GapMap) left,left hemisphere,138
+Frontal-to-Temporal-II (GapMap) left,left hemisphere,139
+Frontal-I.1 (GapMap) left,left hemisphere,140
+Frontal-I.2 (GapMap) left,left hemisphere,141
+Area SFG3 (SFG) left,left hemisphere,142
+Area SFG4 (SFG) left,left hemisphere,143
+Area MFG4 (MFG) left,left hemisphere,144
+"Area MFG5 (MFG, IFG) left",left hemisphere,145
+Area 6v3 (PreCG) left,left hemisphere,146
+Area 45 (IFG) right,right hemisphere,1
+Area 44 (IFG) right,right hemisphere,2
+Area Fo1 (OFC) right,right hemisphere,3
+Area Fo2 (OFC) right,right hemisphere,4
+Area Fo3 (OFC) right,right hemisphere,5
+Area hOc5 (LOC) right,right hemisphere,6
+"Area hOc2 (V2, 18) right",right hemisphere,7
+"Area hOc1 (V1, 17, CalcS) right",right hemisphere,8
+Area hOc4v (LingG) right,right hemisphere,9
+Area hOc3v (LingG) right,right hemisphere,10
+Area Te 1.0 (HESCHL) right,right hemisphere,11
+Area Te 2.1 (STG) right,right hemisphere,12
+"Area TPJ (STG, SMG) right",right hemisphere,13
+Area Te 1.2 (HESCHL) right,right hemisphere,14
+Area Te 3 (STG) right,right hemisphere,15
+Area Te 1.1 (HESCHL) right,right hemisphere,16
+Area Te 2.2 (STG) right,right hemisphere,17
+Area 33 (ACC) right,right hemisphere,18
+Area s32 (sACC) right,right hemisphere,19
+Area p32 (pACC) right,right hemisphere,20
+Area Id2 (Insula) right,right hemisphere,21
+Area Id3 (Insula) right,right hemisphere,22
+CA2 (Hippocampus) right,right hemisphere,23
+CA3 (Hippocampus) right,right hemisphere,24
+"Area EC (Hippocampal Region, Entorhinal Cortex) right",right hemisphere,25
+DG (Hippocampus) right,right hemisphere,26
+CA1 (Hippocampus) right,right hemisphere,27
+Area Op4 (POperc) right,right hemisphere,28
+Area Op1 (POperc) right,right hemisphere,29
+Area Op2 (POperc) right,right hemisphere,30
+Area Op3 (POperc) right,right hemisphere,31
+Area FG2 (FusG) right,right hemisphere,32
+Area FG1 (FusG) right,right hemisphere,33
+Area PGp (IPL) right,right hemisphere,34
+Area PFt (IPL) right,right hemisphere,35
+Area PGa (IPL) right,right hemisphere,36
+Area PFop (IPL) right,right hemisphere,37
+Area PFm (IPL) right,right hemisphere,38
+Area PFcm (IPL) right,right hemisphere,39
+Area Ig2 (Insula) right,right hemisphere,40
+Area Ig1 (Insula) right,right hemisphere,41
+Area Id1 (Insula) right,right hemisphere,42
+Area hOc4lp (LOC) right,right hemisphere,43
+Area hOc4la (LOC) right,right hemisphere,44
+Area hOc4d (Cuneus) right,right hemisphere,45
+Area hOc3d (Cuneus) right,right hemisphere,46
+Area 4p (PreCG) right,right hemisphere,47
+Area 4a (PreCG) right,right hemisphere,48
+Area 1 (PostCG) right,right hemisphere,49
+Area 3a (PostCG) right,right hemisphere,50
+Area 3b (PostCG) right,right hemisphere,51
+Area hIP1 (IPS) right,right hemisphere,52
+Area hIP2 (IPS) right,right hemisphere,53
+Area 5L (SPL) right,right hemisphere,54
+Area 5M (SPL) right,right hemisphere,55
+Area 7PC (SPL) right,right hemisphere,56
+Area hIP3 (IPS) right,right hemisphere,57
+Area 7A (SPL) right,right hemisphere,58
+Area 7M (SPL) right,right hemisphere,59
+Area 5Ci (SPL) right,right hemisphere,60
+Area Id7 (Insula) right,right hemisphere,61
+Area s24 (sACC) right,right hemisphere,62
+Area 25 (sACC) right,right hemisphere,63
+"Subc (Hippocampus, Subicular complex) right",right hemisphere,64
+Area PF (IPL) right,right hemisphere,65
+Area 7P (SPL) right,right hemisphere,66
+Area Fp2 (FPole) right,right hemisphere,67
+Area Fp1 (FPole) right,right hemisphere,68
+Area p24ab (pACC) right,right hemisphere,69
+Area p24c (pACC) right,right hemisphere,70
+Area FG4 (FusG) right,right hemisphere,71
+Area FG3 (FusG) right,right hemisphere,72
+Area TeI (STG) right,right hemisphere,73
+Area TI (STG) right,right hemisphere,74
+Area IFS1 (IFS) right,right hemisphere,75
+Area IFS2 (IFS) right,right hemisphere,76
+Area IFS3 (IFS) right,right hemisphere,77
+Area IFS4 (IFS) right,right hemisphere,78
+"Area IFJ1 (IFS, PreCS) right",right hemisphere,79
+"Area IFJ2 (IFS, PreCS) right",right hemisphere,80
+Area 2 (PostCS) right,right hemisphere,81
+Area STS1 (STS) right,right hemisphere,82
+Area STS2 (STS) right,right hemisphere,83
+Area Op8 (Frontal Operculum) right,right hemisphere,84
+Area Op9 (Frontal Operculum) right,right hemisphere,85
+Area 6d1 (PreCG) right,right hemisphere,86
+Area 6d2 (PreCG) right,right hemisphere,87
+Area 6d3 (SFS) right,right hemisphere,88
+Area hOc6 (POS) right,right hemisphere,89
+Area hIP6 (IPS) right,right hemisphere,90
+Area hIP8 (IPS) right,right hemisphere,91
+Area hIP4 (IPS) right,right hemisphere,92
+Area hIP5 (IPS) right,right hemisphere,93
+Area hIP7 (IPS) right,right hemisphere,94
+Area hPO1 (POS) right,right hemisphere,95
+"Area 6mp (SMA, mesial SFG) right",right hemisphere,96
+"Area 6ma (preSMA, mesial SFG) right",right hemisphere,97
+"TrS (Hippocampus, Transsubiculum) right",right hemisphere,98
+Area Fo4 (OFC) right,right hemisphere,99
+Area Fo5 (OFC) right,right hemisphere,100
+Area Fo6 (OFC) right,right hemisphere,101
+Area Fo7 (OFC) right,right hemisphere,102
+Area 8d1 (SFG) right,right hemisphere,103
+Area 8d2 (SFG) right,right hemisphere,104
+Area 8v2 (MFG) right,right hemisphere,105
+Area 8v1 (MFG) right,right hemisphere,106
+Area Ig3 (Insula) right,right hemisphere,107
+Area Id4 (Insula) right,right hemisphere,108
+Area Id5 (Insula) right,right hemisphere,109
+Area Ia1 (Insula) right,right hemisphere,110
+Area Id6 (Insula) right,right hemisphere,111
+Area SFS1 (SFS) right,right hemisphere,112
+Area SFS2 (SFS) right,right hemisphere,113
+Area MFG1 (MFG) right,right hemisphere,114
+Area MFG2 (MFG) right,right hemisphere,115
+Area 6v2 (PreCG) right,right hemisphere,116
+Area 6v1 (PreCG) right,right hemisphere,117
+Area 6r1 (PreCG) right,right hemisphere,118
+Area Op5 (Frontal Operculum) right,right hemisphere,119
+Area Op6 (Frontal Operculum) right,right hemisphere,120
+Area Op7 (Frontal Operculum) right,right hemisphere,121
+Area Ph1 (PhG) right,right hemisphere,122
+Area Ph2 (PhG) right,right hemisphere,123
+Area Ph3 (PhG) right,right hemisphere,124
+Area CoS1 (CoS) right,right hemisphere,125
+Area SFG2 (SFG) right,right hemisphere,126
+Area Id9 (Insula) right,right hemisphere,127
+Area Ia3 (Insula) right,right hemisphere,128
+Area Ia2 (Insula) right,right hemisphere,129
+Area Id8 (Insula) right,right hemisphere,130
+Area Id10 (Insula) right,right hemisphere,131
+Area Op10 (Frontal Operculum) right,right hemisphere,132
+Area FG5 (FusG) right,right hemisphere,133
+Area OTS1 (OTS) right,right hemisphere,134
+Frontal-II (GapMap) right,right hemisphere,135
+Temporal-to-Parietal (GapMap) right,right hemisphere,136
+Frontal-to-Occipital (GapMap) right,right hemisphere,137
+Frontal-to-Temporal-I (GapMap) right,right hemisphere,138
+Frontal-to-Temporal-II (GapMap) right,right hemisphere,139
+Frontal-I.1 (GapMap) right,right hemisphere,140
+Frontal-I.2 (GapMap) right,right hemisphere,141
+Area SFG3 (SFG) right,right hemisphere,142
+Area SFG4 (SFG) right,right hemisphere,143
+Area MFG4 (MFG) right,right hemisphere,144
+"Area MFG5 (MFG, IFG) right",right hemisphere,145
+Area 6v3 (PreCG) right,right hemisphere,146

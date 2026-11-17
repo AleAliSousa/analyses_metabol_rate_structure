@@ -1,0 +1,11 @@
+region,iGlu,GABA,ACh3,monoamineGPCR,EI,total14,heiss2004_anatomy_id,rcmrglc_heiss2004,source_item
+CA1,2084.0,,1270.0,2488.0,,8854.0,hippocampus,25.7,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+CA2,1751.0,,961.0,1371.0,,6356.0,hippocampus,25.7,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+CA3,2050.0,,1115.0,1767.0,,7471.0,hippocampus,25.7,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+DG,2112.0,,1144.0,2578.0,,9097.0,hippocampus,25.7,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+Globus Pallidus,652.0,765.0,324.0,538.0,0.852,2296.0,pallidum,21.9,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+Putamen,2833.0,3039.0,2249.0,1666.0,0.932,9963.0,putamen,40.2,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+Thalamus anterior nucleus,1626.0,3634.0,1113.0,1588.0,0.447,8153.0,,,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+Thalamus mediodorsal nucleus,1564.0,3394.0,1059.0,1316.0,0.461,7477.0,medial_thalamic_nuclei,36.6,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+"Hippocampus (mean CA1-3, DG)",1999.25,,1122.5,2051.0,,7944.5,hippocampus,25.7,PalomeroGallagher_etal_2018 series (n_brains 2-3)
+"Cerebral cortex (mean of 44 areas, Zilles 2017)",2285.114,6493.091,1486.409,1418.023,0.352,11733.091,cerebral_cortex,33.5,Zilles_PalomeroGallagher_2017_SupplementaryTable2
