@@ -1,0 +1,109 @@
+panel_set,cells,variable,n,rho,p_uncorrected
+primary,all area x stratum cells,class_iGlu,18,0.5541795665634676,0.017009913077973195
+primary,excluding agranular area 4 granular cell,class_iGlu,17,0.482843137254902,0.04962158964225828
+primary,within stratum: supragranular (across areas),class_iGlu,6,0.8285714285714285,0.04156268221574345
+primary,within stratum: granular (across areas),class_iGlu,6,0.5428571428571428,0.2657026239067054
+primary,within stratum: infragranular (across areas),class_iGlu,6,-0.08571428571428572,0.8717434402332366
+primary,"within area (3 strata), mean of per-area rho",class_iGlu,6,0.5833333333333334,
+primary,all area x stratum cells,class_GABA,18,0.5025799793601652,0.03353054708616267
+primary,excluding agranular area 4 granular cell,class_GABA,17,0.46323529411764713,0.06111337130203486
+primary,within stratum: supragranular (across areas),class_GABA,6,0.8857142857142858,0.01884548104956266
+primary,within stratum: granular (across areas),class_GABA,6,0.8285714285714285,0.04156268221574345
+primary,within stratum: infragranular (across areas),class_GABA,6,0.028571428571428574,0.9571545189504373
+primary,"within area (3 strata), mean of per-area rho",class_GABA,6,0.5833333333333334,
+primary,all area x stratum cells,class_ACh3,18,0.44272445820433437,0.06578236404039449
+primary,excluding agranular area 4 granular cell,class_ACh3,17,0.357843137254902,0.1584639899823689
+primary,within stratum: supragranular (across areas),class_ACh3,6,0.6571428571428571,0.15617492711370246
+primary,within stratum: granular (across areas),class_ACh3,6,0.4857142857142857,0.3287230320699709
+primary,within stratum: infragranular (across areas),class_ACh3,6,0.028571428571428574,0.9571545189504373
+primary,"within area (3 strata), mean of per-area rho",class_ACh3,6,0.5833333333333334,
+primary,all area x stratum cells,class_monoamineGPCR,18,0.4262125902992776,0.07778293683965698
+primary,excluding agranular area 4 granular cell,class_monoamineGPCR,17,0.3308823529411765,0.19454252826661278
+primary,within stratum: supragranular (across areas),class_monoamineGPCR,6,0.7714285714285715,0.07239650145772589
+primary,within stratum: granular (across areas),class_monoamineGPCR,6,0.7714285714285715,0.07239650145772589
+primary,within stratum: infragranular (across areas),class_monoamineGPCR,6,0.31428571428571433,0.5440932944606414
+primary,"within area (3 strata), mean of per-area rho",class_monoamineGPCR,6,0.41666666666666663,
+primary,all area x stratum cells,total_15,18,0.5087719298245614,0.031068538407296176
+primary,excluding agranular area 4 granular cell,total_15,17,0.465686274509804,0.059578242108117775
+primary,within stratum: supragranular (across areas),total_15,6,0.9428571428571428,0.0048046647230320675
+primary,within stratum: granular (across areas),total_15,6,0.8285714285714285,0.04156268221574345
+primary,within stratum: infragranular (across areas),total_15,6,0.028571428571428574,0.9571545189504373
+primary,"within area (3 strata), mean of per-area rho",total_15,6,0.5833333333333334,
+primary,all area x stratum cells,EI_receptor_index,18,-0.24251805985552116,0.3322310909053102
+primary,excluding agranular area 4 granular cell,EI_receptor_index,17,-0.29656862745098045,0.24772866621670087
+primary,within stratum: supragranular (across areas),EI_receptor_index,6,0.08571428571428572,0.871743440233236
+primary,within stratum: granular (across areas),EI_receptor_index,6,-0.4857142857142857,0.3287230320699709
+primary,within stratum: infragranular (across areas),EI_receptor_index,6,0.14285714285714285,0.7871720116618075
+primary,"within area (3 strata), mean of per-area rho",EI_receptor_index,6,-0.5833333333333334,
+sensitivity_incl_approximate,all area x stratum cells,class_iGlu,27,0.40109890109890106,0.038123089138693
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,class_iGlu,26,0.3326495726495726,0.09682596949469528
+sensitivity_incl_approximate,within stratum: supragranular (across areas),class_iGlu,9,0.6333333333333333,0.06708578689234561
+sensitivity_incl_approximate,within stratum: granular (across areas),class_iGlu,9,0.26666666666666666,0.48792227483870076
+sensitivity_incl_approximate,within stratum: infragranular (across areas),class_iGlu,9,-0.1,0.7979716952348505
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",class_iGlu,9,0.4444444444444444,
+sensitivity_incl_approximate,all area x stratum cells,class_GABA,27,0.43833943833943834,0.02219408566641601
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,class_GABA,26,0.39829059829059826,0.043876228990695876
+sensitivity_incl_approximate,within stratum: supragranular (across areas),class_GABA,9,0.7333333333333333,0.02455415007146971
+sensitivity_incl_approximate,within stratum: granular (across areas),class_GABA,9,0.7333333333333333,0.02455415007146971
+sensitivity_incl_approximate,within stratum: infragranular (across areas),class_GABA,9,0.06666666666666667,0.8646897846262037
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",class_GABA,9,0.4444444444444444,
+sensitivity_incl_approximate,all area x stratum cells,class_ACh3,27,0.35347985347985345,0.07049378131585057
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,class_ACh3,26,0.28410256410256407,0.159552551843845
+sensitivity_incl_approximate,within stratum: supragranular (across areas),class_ACh3,9,0.6166666666666667,0.07692880993776298
+sensitivity_incl_approximate,within stratum: granular (across areas),class_ACh3,9,0.31666666666666665,0.4063970144863861
+sensitivity_incl_approximate,within stratum: infragranular (across areas),class_ACh3,9,-0.03333333333333333,0.9321567355405038
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",class_ACh3,9,0.4444444444444444,
+sensitivity_incl_approximate,all area x stratum cells,class_monoamineGPCR,27,0.246031746031746,0.2160692334769976
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,class_monoamineGPCR,26,0.15897435897435896,0.437926701828534
+sensitivity_incl_approximate,within stratum: supragranular (across areas),class_monoamineGPCR,9,0.6166666666666667,0.07692880993776298
+sensitivity_incl_approximate,within stratum: granular (across areas),class_monoamineGPCR,9,0.7166666666666667,0.02981803569584527
+sensitivity_incl_approximate,within stratum: infragranular (across areas),class_monoamineGPCR,9,0.25,0.5164895523012263
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",class_monoamineGPCR,9,0.2222222222222222,
+sensitivity_incl_approximate,all area x stratum cells,total_15,27,0.4206349206349206,0.028906471842639253
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,total_15,26,0.3736752136752136,0.06004806966797323
+sensitivity_incl_approximate,within stratum: supragranular (across areas),total_15,9,0.7,0.035769574970261654
+sensitivity_incl_approximate,within stratum: granular (across areas),total_15,9,0.7333333333333333,0.02455415007146971
+sensitivity_incl_approximate,within stratum: infragranular (across areas),total_15,9,0.05,0.89835280435063
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",total_15,9,0.4444444444444444,
+sensitivity_incl_approximate,all area x stratum cells,EI_receptor_index,27,-0.24358974358974358,0.2208077812861435
+sensitivity_incl_approximate,excluding agranular area 4 granular cell,EI_receptor_index,26,-0.3128205128205128,0.1197136999705165
+sensitivity_incl_approximate,within stratum: supragranular (across areas),EI_receptor_index,9,-0.15,0.7000942309691425
+sensitivity_incl_approximate,within stratum: granular (across areas),EI_receptor_index,9,-0.5,0.1704706607870538
+sensitivity_incl_approximate,within stratum: infragranular (across areas),EI_receptor_index,9,-0.08333333333333333,0.8312140977103081
+sensitivity_incl_approximate,"within area (3 strata), mean of per-area rho",EI_receptor_index,9,-0.4444444444444444,
+unpooled_V2,all area x stratum cells,class_iGlu,21,0.537536817071215,0.011966992152387583
+unpooled_V2,excluding agranular area 4 granular cell,class_iGlu,20,0.4734666171930725,0.034975240599152545
+unpooled_V2,within stratum: supragranular (across areas),class_iGlu,7,0.7748062179181806,0.04076946252042039
+unpooled_V2,within stratum: granular (across areas),class_iGlu,7,0.4504687313477794,0.3104293018513229
+unpooled_V2,within stratum: infragranular (across areas),class_iGlu,7,-0.19820624179302293,0.6700850339168265
+unpooled_V2,"within area (3 strata), mean of per-area rho",class_iGlu,7,0.5714285714285714,
+unpooled_V2,all area x stratum cells,class_GABA,21,0.5362368489525421,0.012214927334207178
+unpooled_V2,excluding agranular area 4 granular cell,class_GABA,20,0.5005648655538842,0.02458133514560035
+unpooled_V2,within stratum: supragranular (across areas),class_GABA,7,0.8468812149338253,0.016197127467871695
+unpooled_V2,within stratum: granular (across areas),class_GABA,7,0.7748062179181806,0.04076946252042039
+unpooled_V2,within stratum: infragranular (across areas),class_GABA,7,0.05405624776173353,0.9083652825239952
+unpooled_V2,"within area (3 strata), mean of per-area rho",class_GABA,7,0.5714285714285714,
+unpooled_V2,all area x stratum cells,class_ACh3,21,0.41793975015331464,0.05938812301096672
+unpooled_V2,excluding agranular area 4 granular cell,class_ACh3,20,0.33948083363128084,0.14309845954581862
+unpooled_V2,within stratum: supragranular (across areas),class_ACh3,7,0.6306562238868911,0.12888769568495795
+unpooled_V2,within stratum: granular (across areas),class_ACh3,7,0.27028123880866767,0.5577307488053698
+unpooled_V2,within stratum: infragranular (across areas),class_ACh3,7,-0.10811249552346706,0.8175332656241181
+unpooled_V2,"within area (3 strata), mean of per-area rho",class_ACh3,7,0.5714285714285714,
+unpooled_V2,all area x stratum cells,class_monoamineGPCR,21,0.4237896066873424,0.05555892895104326
+unpooled_V2,excluding agranular area 4 granular cell,class_monoamineGPCR,20,0.34023356275241456,0.14215709539284674
+unpooled_V2,within stratum: supragranular (across areas),class_monoamineGPCR,7,0.6666937223947136,0.10192046024618232
+unpooled_V2,within stratum: granular (across areas),class_monoamineGPCR,7,0.7387687194103583,0.05785849689569288
+unpooled_V2,within stratum: infragranular (across areas),class_monoamineGPCR,7,0.30631873731649,0.5040270086665882
+unpooled_V2,"within area (3 strata), mean of per-area rho",class_monoamineGPCR,7,0.42857142857142855,
+unpooled_V2,all area x stratum cells,total_15,21,0.517387311231786,0.016303663407698652
+unpooled_V2,excluding agranular area 4 granular cell,total_15,20,0.47723026279874076,0.03335605296803307
+unpooled_V2,within stratum: supragranular (across areas),total_15,7,0.8829187134416476,0.0084503423818966545
+unpooled_V2,within stratum: granular (across areas),total_15,7,0.7748062179181806,0.04076946252042039
+unpooled_V2,within stratum: infragranular (across areas),total_15,7,-0.036037498507822355,0.9388605613942138
+unpooled_V2,"within area (3 strata), mean of per-area rho",total_15,7,0.5714285714285714,
+unpooled_V2,all area x stratum cells,EI_receptor_index,21,-0.3399416630329449,0.13162160733081293
+unpooled_V2,excluding agranular area 4 granular cell,EI_receptor_index,20,-0.38012820617249854,0.09827700986765577
+unpooled_V2,within stratum: supragranular (across areas),EI_receptor_index,7,0.0900937462695559,0.8476720796198264
+unpooled_V2,within stratum: granular (across areas),EI_receptor_index,7,-0.5765999761251577,0.17538182452245665
+unpooled_V2,within stratum: infragranular (across areas),EI_receptor_index,7,0,1
+unpooled_V2,"within area (3 strata), mean of per-area rho",EI_receptor_index,7,-0.6428571428571429,

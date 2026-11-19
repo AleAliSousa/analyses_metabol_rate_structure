@@ -1,0 +1,15 @@
+source,area,rank_order,n,n_species_with_granular,share
+PalomeroGallagher_Zilles_2018_TableS3,44,gran > supra > infra,3,7,0.42857142857142855
+PalomeroGallagher_Zilles_2018_TableS3,44,supra > gran > infra,3,7,0.42857142857142855
+PalomeroGallagher_Zilles_2018_TableS3,44,gran > infra > supra,1,7,0.14285714285714285
+PalomeroGallagher_Zilles_2018_TableS3,45,supra > gran > infra,3,7,0.42857142857142855
+PalomeroGallagher_Zilles_2018_TableS3,45,gran > infra > supra,2,7,0.2857142857142857
+PalomeroGallagher_Zilles_2018_TableS3,45,gran > supra > infra,2,7,0.2857142857142857
+Zilles_etal_1986_Table2,23,gran > infra > supra,6,17,0.35294117647058826
+Zilles_etal_1986_Table2,23,infra > gran > supra,6,17,0.35294117647058826
+Zilles_etal_1986_Table2,23,gran > supra > infra,3,17,0.17647058823529413
+Zilles_etal_1986_Table2,23,infra > supra > gran,1,17,0.058823529411764705
+Zilles_etal_1986_Table2,23,supra > gran > infra,1,17,0.058823529411764705
+Zilles_etal_1986_Table2,31,gran > infra > supra,10,17,0.5882352941176471
+Zilles_etal_1986_Table2,31,infra > gran > supra,4,17,0.23529411764705882
+Zilles_etal_1986_Table2,31,gran > supra > infra,3,17,0.17647058823529413

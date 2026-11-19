@@ -1,0 +1,24 @@
+Species,species_as_published,specimen_as_published,area_as_published,n_specimens,GLI_pct_mean_all_layers,GLI_pct_mean_supragranular,GLI_pct_mean_granular,GLI_pct_mean_infragranular,source_location,data_role
+Homo sapiens,human,human_B01,area44,1,14.5684,14.233,15.273,15.106,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B06,area44,1,14.0964,15.817,15.089,13.477,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B07,area44,1,13.1033,14.063,17.148,13.21,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B10,area44,1,12.8458,13.584,14.684,12.842,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pan paniscus,bonobo,bonobo,area44,1,11.6512,11.316,13.528,12.252,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pan troglodytes,chimpanzee,chimpanzee,area44,1,13.3518,14.379,14.477,13.675,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Gorilla gorilla,gorilla,gorilla,area44,1,10.7266,12.352,11.142,10.171,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pongo pygmaeus,orangutan,orangutan,area44,1,11.7599,13.284,12.597,12.138,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Hylobates lar,gibbon,gibbon,area44,1,9.974,10.798,12.461,9.801,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Macaca fascicularis,macaque,macaque 1,area44,1,10.8221,12.773,11.987,9.775,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Macaca fascicularis,macaque,macaque 3,area44,1,10.4574,12.255,12.954,11.81,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B01,area45,1,13.6406,13.219,15.11,14.223,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B06,area45,1,13.8853,14.233,14.895,14.285,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B07,area45,1,16.0507,17.224,19.788,16.169,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Homo sapiens,human,human_B10,area45,1,12.755,12.275,13.995,13.216,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pan paniscus,bonobo,bonobo,area45,1,11.8088,11.418,13.748,12.526,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pan troglodytes,chimpanzee,chimpanzee,area45,1,12.9307,13.355,14.025,13.059,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Gorilla gorilla,gorilla,gorilla,area45,1,10.7239,12.886,12.729,9.857,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Pongo pygmaeus,orangutan,orangutan,area45,1,10.9554,13.562,11.024,10.006,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Hylobates lar,gibbon,gibbon,area45,1,10.7986,12.91,13.007,8.453,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Macaca fascicularis,macaque,macaque 1,area45,1,9.4545,11.889,11.984,8.294,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Macaca fascicularis,macaque,macaque 2,area45,1,10.7222,11.737,12.061,10.306,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary
+Macaca fascicularis,macaque,macaque 3,area45,1,11.5819,12.526,11.022,11.769,"Supplementary Table S3 (mmc1.xlsx, sheet 'Table S3'); values pertain Fig. 12",primary

@@ -1,0 +1,15 @@
+source,area,stratum_a,stratum_b,n_species,rho,p_uncorrected
+PalomeroGallagher_Zilles_2018_TableS3,44,supragranular,granular,7,0.7142857142857142,0.07134356146753777
+PalomeroGallagher_Zilles_2018_TableS3,44,supragranular,infragranular,7,0.7499999999999998,0.052181400457057964
+PalomeroGallagher_Zilles_2018_TableS3,44,granular,infragranular,7,0.9285714285714283,0.0025194724037947355
+PalomeroGallagher_Zilles_2018_TableS3,45,supragranular,granular,7,0.24999999999999994,0.5887244480896832
+PalomeroGallagher_Zilles_2018_TableS3,45,supragranular,infragranular,7,0.28571428571428564,0.5345092286010409
+PalomeroGallagher_Zilles_2018_TableS3,45,granular,infragranular,7,0.6785714285714284,0.09375025395983154
+Zilles_etal_1986_Table2,23,supragranular,granular,17,0.9196813500538947,1.7734277113129365e-7
+Zilles_etal_1986_Table2,23,supragranular,infragranular,17,0.9362745098039217,3.2834187890278636e-8
+Zilles_etal_1986_Table2,23,granular,infragranular,17,0.9797671982574159,6.831316563891049e-12
+Zilles_etal_1986_Table2,31,supragranular,granular,17,0.9276073619631903,8.328847316489232e-8
+Zilles_etal_1986_Table2,31,supragranular,infragranular,17,0.9276073619631903,8.328847316489232e-8
+Zilles_etal_1986_Table2,31,granular,infragranular,17,0.9595092024539879,1.171418194413741e-9
+Zilles_etal_1986_Table2,29,supragranular,infragranular,17,0.8112745098039217,7.738036180608988e-5
+Zilles_etal_1986_Table2,30,supragranular,infragranular,17,0.9276080602268879,8.328261996293798e-8

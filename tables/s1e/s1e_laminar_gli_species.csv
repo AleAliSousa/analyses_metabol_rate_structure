@@ -1,0 +1,83 @@
+source,region,area,Species,n_brains,supragranular,granular,infragranular,all_layers,granular_over_supra,infra_over_supra
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Gorilla gorilla,1,12.352,11.142,10.171,10.7266,0.9020401554404145,0.8234294041450777
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Homo sapiens,4,14.42425,15.5485,13.658750000000001,13.653475,1.0779416607449261,0.9469296497218227
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Hylobates lar,1,10.798,12.461,9.801,9.974,1.1540100018521948,0.907668086682719
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Macaca fascicularis,2,12.514,12.470500000000001,10.7925,10.63975,0.9965238932395718,0.8624340738373023
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Pan paniscus,1,11.316,13.528,12.252,11.6512,1.1954754330151998,1.08271474019088
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Pan troglodytes,1,14.379,14.477,13.675,13.3518,1.006815494818833,0.9510397106891996
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),44,Pongo pygmaeus,1,13.284,12.597,12.138,11.7599,0.9482836495031616,0.9137308039747064
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Gorilla gorilla,1,12.886,12.729,9.857,10.7239,0.9878162346732888,0.7649386931553624
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Homo sapiens,4,14.23775,15.947,14.47325,14.0829,1.1200505697880634,1.0165405348457446
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Hylobates lar,1,12.91,13.007,8.453,10.7986,1.0075135553834236,0.6547637490317583
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Macaca fascicularis,3,12.050666666666666,11.689,10.123,10.5862,0.9699878291657447,0.840036512502766
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Pan paniscus,1,11.418,13.748,12.526,11.8088,1.2040637589770538,1.0970397617796461
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Pan troglodytes,1,13.355,14.025,13.059,12.9307,1.0501684762261325,0.9778360164732309
+PalomeroGallagher_Zilles_2018_TableS3,ventrolateral prefrontal (Broca),45,Pongo pygmaeus,1,13.562,11.024,10.006,10.9554,0.8128594602565993,0.7377967851349359
+Zilles_etal_1986_Table2,posterior cingulate,29,Lemur catta,,29.2,,15.7,,,0.5376712328767124
+Zilles_etal_1986_Table2,posterior cingulate,30,Lemur catta,,24.4,,17.9,,,0.7336065573770492
+Zilles_etal_1986_Table2,posterior cingulate,23,Lemur catta,,21.7,23.5,19.5,,1.0829493087557605,0.8986175115207373
+Zilles_etal_1986_Table2,posterior cingulate,31,Lemur catta,,21.5,24.3,19.9,,1.130232558139535,0.9255813953488371
+Zilles_etal_1986_Table2,posterior cingulate,29,Loris tardigradus,,28.4,,22.3,,,0.7852112676056339
+Zilles_etal_1986_Table2,posterior cingulate,30,Loris tardigradus,,24.1,,23.5,,,0.975103734439834
+Zilles_etal_1986_Table2,posterior cingulate,23,Loris tardigradus,,26.9,28.3,27.9,,1.0520446096654277,1.037174721189591
+Zilles_etal_1986_Table2,posterior cingulate,31,Loris tardigradus,,24.8,29.6,29.4,,1.1935483870967742,1.1854838709677418
+Zilles_etal_1986_Table2,posterior cingulate,29,Perodicticus potto,,27,,19.4,,,0.7185185185185184
+Zilles_etal_1986_Table2,posterior cingulate,30,Perodicticus potto,,17.3,,17.4,,,1.005780346820809
+Zilles_etal_1986_Table2,posterior cingulate,23,Perodicticus potto,,15,17,18.6,,1.1333333333333333,1.24
+Zilles_etal_1986_Table2,posterior cingulate,31,Perodicticus potto,,14.9,16.4,18.6,,1.1006711409395973,1.2483221476510067
+Zilles_etal_1986_Table2,posterior cingulate,29,Nycticebus coucang,,20.5,,15.1,,,0.7365853658536585
+Zilles_etal_1986_Table2,posterior cingulate,30,Nycticebus coucang,,14,,13.9,,,0.9928571428571429
+Zilles_etal_1986_Table2,posterior cingulate,23,Nycticebus coucang,,12.5,13.4,16.3,,1.072,1.304
+Zilles_etal_1986_Table2,posterior cingulate,31,Nycticebus coucang,,13.4,13.7,17.2,,1.0223880597014925,1.2835820895522387
+Zilles_etal_1986_Table2,posterior cingulate,29,Tarsius syrichta,,40.1,,30.5,,,0.7605985037406483
+Zilles_etal_1986_Table2,posterior cingulate,30,Tarsius syrichta,,28.8,,29.1,,,1.0104166666666667
+Zilles_etal_1986_Table2,posterior cingulate,23,Tarsius syrichta,,26.7,29.8,30.1,,1.1161048689138577,1.1273408239700375
+Zilles_etal_1986_Table2,posterior cingulate,31,Tarsius syrichta,,22.8,27.2,26.8,,1.1929824561403508,1.1754385964912282
+Zilles_etal_1986_Table2,posterior cingulate,29,Callithrix jacchus,,30,,24.3,,,0.81
+Zilles_etal_1986_Table2,posterior cingulate,30,Callithrix jacchus,,25.6,,24.6,,,0.9609375
+Zilles_etal_1986_Table2,posterior cingulate,23,Callithrix jacchus,,25.7,29.4,27.4,,1.1439688715953307,1.066147859922179
+Zilles_etal_1986_Table2,posterior cingulate,31,Callithrix jacchus,,26.6,30.2,26.6,,1.1353383458646615,1
+Zilles_etal_1986_Table2,posterior cingulate,29,Aotus trivirgatus,,27.5,,21,,,0.7636363636363637
+Zilles_etal_1986_Table2,posterior cingulate,30,Aotus trivirgatus,,17.9,,22.9,,,1.2793296089385475
+Zilles_etal_1986_Table2,posterior cingulate,23,Aotus trivirgatus,,16.2,25.3,21.9,,1.5617283950617284,1.3518518518518519
+Zilles_etal_1986_Table2,posterior cingulate,31,Aotus trivirgatus,,12.5,24,18.8,,1.92,1.504
+Zilles_etal_1986_Table2,posterior cingulate,29,Alouatta seniculus,,14.1,,16.9,,,1.1985815602836878
+Zilles_etal_1986_Table2,posterior cingulate,30,Alouatta seniculus,,12.7,,13.8,,,1.0866141732283465
+Zilles_etal_1986_Table2,posterior cingulate,23,Alouatta seniculus,,9.6,9.3,11.4,,0.9687500000000001,1.1875
+Zilles_etal_1986_Table2,posterior cingulate,31,Alouatta seniculus,,8.5,10.9,13.7,,1.2823529411764707,1.6117647058823528
+Zilles_etal_1986_Table2,posterior cingulate,29,Saimiri sciureus,,34.4,,25.4,,,0.7383720930232558
+Zilles_etal_1986_Table2,posterior cingulate,30,Saimiri sciureus,,26.5,,34.3,,,1.2943396226415094
+Zilles_etal_1986_Table2,posterior cingulate,23,Saimiri sciureus,,25.5,39.8,37.7,,1.56078431372549,1.4784313725490197
+Zilles_etal_1986_Table2,posterior cingulate,31,Saimiri sciureus,,25.7,42.1,32.9,,1.6381322957198445,1.2801556420233462
+Zilles_etal_1986_Table2,posterior cingulate,29,Cebus albifrons,,20.8,,20,,,0.9615384615384615
+Zilles_etal_1986_Table2,posterior cingulate,30,Cebus albifrons,,17.9,,23,,,1.2849162011173185
+Zilles_etal_1986_Table2,posterior cingulate,23,Cebus albifrons,,19.5,27.1,26.5,,1.38974358974359,1.358974358974359
+Zilles_etal_1986_Table2,posterior cingulate,31,Cebus albifrons,,18.1,24.5,21.6,,1.3535911602209945,1.1933701657458564
+Zilles_etal_1986_Table2,posterior cingulate,29,Cercopithecus mitis,,24.4,,18.2,,,0.7459016393442623
+Zilles_etal_1986_Table2,posterior cingulate,30,Cercopithecus mitis,,22.8,,20,,,0.8771929824561403
+Zilles_etal_1986_Table2,posterior cingulate,23,Cercopithecus mitis,,22.9,27.1,22.6,,1.183406113537118,0.9868995633187774
+Zilles_etal_1986_Table2,posterior cingulate,31,Cercopithecus mitis,,23.6,30.2,24,,1.2796610169491525,1.0169491525423728
+Zilles_etal_1986_Table2,posterior cingulate,29,Erythrocebus patas,,18.9,,13.7,,,0.7248677248677249
+Zilles_etal_1986_Table2,posterior cingulate,30,Erythrocebus patas,,16.5,,15.5,,,0.9393939393939394
+Zilles_etal_1986_Table2,posterior cingulate,23,Erythrocebus patas,,11.6,20.2,17.3,,1.7413793103448276,1.4913793103448276
+Zilles_etal_1986_Table2,posterior cingulate,31,Erythrocebus patas,,14.3,25.4,21.6,,1.776223776223776,1.5104895104895104
+Zilles_etal_1986_Table2,posterior cingulate,29,Macaca mulatta,,22.4,,16.1,,,0.7187500000000001
+Zilles_etal_1986_Table2,posterior cingulate,30,Macaca mulatta,,18.3,,15.8,,,0.8633879781420765
+Zilles_etal_1986_Table2,posterior cingulate,23,Macaca mulatta,,18.7,19.6,19.9,,1.0481283422459895,1.0641711229946524
+Zilles_etal_1986_Table2,posterior cingulate,31,Macaca mulatta,,14.9,17.5,17.8,,1.174496644295302,1.1946308724832215
+Zilles_etal_1986_Table2,posterior cingulate,29,Cercocebus albigena,,16.3,,16.8,,,1.030674846625767
+Zilles_etal_1986_Table2,posterior cingulate,30,Cercocebus albigena,,14.3,,14.9,,,1.0419580419580419
+Zilles_etal_1986_Table2,posterior cingulate,23,Cercocebus albigena,,8.9,11.8,13.5,,1.3258426966292136,1.5168539325842696
+Zilles_etal_1986_Table2,posterior cingulate,31,Cercocebus albigena,,9.5,14.6,13.5,,1.5368421052631578,1.4210526315789473
+Zilles_etal_1986_Table2,posterior cingulate,29,Papio sp.,,17.9,,14,,,0.782122905027933
+Zilles_etal_1986_Table2,posterior cingulate,30,Papio sp.,,14.3,,12.9,,,0.9020979020979021
+Zilles_etal_1986_Table2,posterior cingulate,23,Papio sp.,,12.2,14.9,15,,1.2213114754098362,1.2295081967213115
+Zilles_etal_1986_Table2,posterior cingulate,31,Papio sp.,,11.1,15.6,15.6,,1.4054054054054055,1.4054054054054055
+Zilles_etal_1986_Table2,posterior cingulate,29,Pan troglodytes,,9,,9,,,1
+Zilles_etal_1986_Table2,posterior cingulate,30,Pan troglodytes,,8.8,,8.9,,,1.0113636363636362
+Zilles_etal_1986_Table2,posterior cingulate,23,Pan troglodytes,,9,8.8,8.1,,0.9777777777777779,0.8999999999999999
+Zilles_etal_1986_Table2,posterior cingulate,31,Pan troglodytes,,6.4,8.4,7.9,,1.3125,1.234375
+Zilles_etal_1986_Table2,posterior cingulate,29,Homo sapiens,,10,,6.9,,,0.6900000000000001
+Zilles_etal_1986_Table2,posterior cingulate,30,Homo sapiens,,9.8,,8.2,,,0.8367346938775508
+Zilles_etal_1986_Table2,posterior cingulate,23,Homo sapiens,,9.7,11,9.4,,1.1340206185567012,0.9690721649484537
+Zilles_etal_1986_Table2,posterior cingulate,31,Homo sapiens,,10.1,12.4,10.1,,1.2277227722772277,1

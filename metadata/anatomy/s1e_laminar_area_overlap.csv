@@ -1,0 +1,21 @@
+zilles2017_area,bigbrain_dickscheid_area,bigbrain_match,profile_area_PalomeroGallagher_etal_2018,profile_match,gli_item,gli_area,gli_match,in_strata_panel,note
+44,Area44,exact,dorsalpartofArea44v1.0 (44d),part_of,PalomeroGallagher_Zilles_2018_TableS3,area44,exact,primary,"Zilles 2017 area 44 = Amunts 1999 area 44 (undivided); BigBrain item Area 44 (IFG); the EBRAINS profile dataset is the dorsal part 44d only. GLI: 7 primate species (human n=4 brains, macaque n=2 for 44)."
+45,,none,Area45v1.0,exact,PalomeroGallagher_Zilles_2018_TableS3,area45,exact,gli_only,"No BigBrain layer item for area 45 among the 12 Dickscheid items. GLI: 7 species (human n=4, macaque n=3)."
+V1,AreahOc1,exact,AreahOc1v1.0,exact,,,none,primary,hOc1 = BA17 = V1 (Amunts et al. 2000). BigBrain hOc1 layer IV is a single layer (IVa/IVb/IVc not subdivided).
+V2d,AreahOc2,part_of,,none,,,none,primary_pooled,Julich hOc2 is not split dorsal/ventral; V2d and V2v receptor densities are averaged (unweighted) to one hOc2 cell in the primary panel and kept separate in the unpooled sensitivity panel.
+V2v,AreahOc2,part_of,,none,,,none,primary_pooled,See V2d.
+V3d,AreahOc3d,exact,,none,,,none,primary,hOc3d (Kujovic et al. 2013) = V3d in Zilles-lab usage.
+V3A,AreahOc4d,approximate,,none,,,none,sensitivity,hOc4d proposed (not established) correlate of V3A (Kujovic et al. 2013).
+FG1,AreaFG1,exact,,none,,,none,primary,Caspers et al. 2013.
+4,Area4a,part_of,Area4pv1.0 (4p),part_of,,,none,primary_agranular,"Zilles 2017 area 4 is undivided BA4; BigBrain item is 4a (anterior), the profile dataset is 4p (posterior). Agranular: Zilles 2017 defined layer IV of areas 4 and 6 as a 3 % depth stripe below the layer III border; the BigBrain 4a layer IV is 45 um = 1.2 % of cortical depth."
+3b,,none,Area3bv1.0,exact,,,none,profile_only,Geyer et al. 1999/2000. No BigBrain layer item. 3b M3 profile on EBRAINS is byte-identical to the M2 file (upload duplicate) and is treated as missing.
+47,,none,Area47v1.0,exact_lab_usage,,,none,profile_only,Zilles-lab area 47 (pars orbitalis); same lab entity as the EBRAINS dataset; not a Julich v3.1 Fo-area.
+PFm,,none,AreaPFmv1.0,exact,,,none,profile_only,Caspers et al. 2006.
+37B,AreaFG3;AreaFG4,approximate,,none,,,none,sensitivity,Basal area 37 vs mid-fusiform FG3/FG4 (Lorenz et al. 2017); boundaries differ. FG3 and FG4 layer values are averaged (thickness-weighted) in the sensitivity panel.
+10L,AreaFp1,approximate,,none,,,none,sensitivity,"Fp1 = lateral frontopolar area (Bludau et al. 2014); plausible, not a BA10 equivalent."
+23,,none,,none,Zilles_etal_1986_Table2,area23,exact,gli_only,"Posterior cingulate BA23; GLI by sublayer (outer main = II-III, granular = IV, inner main = V-VI) in 17 primate species; no BigBrain item, no profile."
+31,,none,,none,Zilles_etal_1986_Table2,area31,exact,gli_only,As area 23.
+,Area7P,none,,none,,,none,unmatched,BigBrain only: Zilles 2017 has no area 7 (5L/5M are different SPL areas).
+,AreahOc5,none,,none,,,none,unmatched,BigBrain only: V5/MT not among the 44 Zilles 2017 areas.
+,,none,Area7Av1.0,none,,,none,unmatched,Profile only: Zilles 2017 has no area 7A.
+,,none,,none,Zilles_etal_1986_Table2,area29;area30,none,unmatched,GLI only: retrosplenial areas 29/30 (no granular sublayer printed) have no Zilles 2017 partner.
