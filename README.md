@@ -1,3 +1,36 @@
+# analyses_metabol_rate_structure
+
+## Folder scopes agreed 2026-11-19
+
+| Folder | Primary purpose |
+|---|---|
+| `analyses_metabol_rate_structure` | Human analyses across brain structures, anchored primarily to Heiss et al. 2004: composition, stress-related volume changes (s2), and regional energy budgets. |
+| `analyses_metabol_rate_structure_nonhuman` | Nonhuman analyses parallel to the human structure studies. Barbeito-Andrés and Coto treatment/deprivation studies belong here, including whole-brain/body preservation comparisons parallel to s2. |
+| `analyses_metabol_rate_species` | Relationships between two or more variables across species, with species as the comparative observations (e.g. brain mass versus brain metabolic rate). Coto Figure 7 belongs here together with its associated worker-data substudies. |
+| `analyses_metabol_rate_cortical` | Relationships across cortical areas or layers, using Heiss et al. 1985 and related cortical datasets, including Chugani and cortical metabolic maps. |
+
+Coto stays with the nonhuman parallel studies except for the Figure 7 analysis
+bundle, including its worker-data scaling substudies. Shared Coto source data
+should have one authoritative location, referenced by both analysis folders.
+Simply presenting regional or treatment results from several species side by side
+does not make an analysis a species-level regression. Supporting within-species
+analyses may stay with the species comparison they support, as explicitly agreed
+for the Figure 7 worker analyses.
+
+Keep the four folder names. Heiss 2004 and Heiss 1985 define the main reference
+frameworks, while complementary datasets and sensitivity analyses remain useful.
+Castrillon's similar species plot is context only; no additional study of it is planned.
+
+**Migration status (2026-11-19):** Coto Figure 7, its associated worker-scaling
+substudies, and the s5d extension now live in `analyses_metabol_rate_species`.
+Other proposed moves remain pending. See the
+[species migration record](../analyses_metabol_rate_species/README.md#coto-figure-7-migration-and-remaining-proposals).
+
+The human regional s1/s2 and regional budget analyses remain here. Species-level scaling currently embedded here is listed for migration in the linked plan.
+
+## Current layout
+
+```text
 analyses_metabol_rate_structure/
 ├── README.md
 ├── .gitignore
@@ -14,6 +47,8 @@ analyses_metabol_rate_structure/
 ├── figs/               # deliverable figures, one subfolder per study
 ├── network_residual_autocorrelation/  # outputs of the network QC script
 └── logs/               # pipeline run logs (git-ignored)
+
+```
 
 ## Running the pipeline
 

@@ -13,7 +13,7 @@
 # Body MR: Evo-M1 body_ecology BMR (ml O2/h) via species_brain_body_metabolism.csv.
 #
 # INPUTS  tables/s5/s5a_region_budgets.csv, data_intermediate/heiss_2004_regions.csv,
-#         ../analyses_metabol_rate_structure_nonhuman/data_intermediate/species_brain_body_metabolism.csv
+#         ../analyses_metabol_rate_species/data_intermediate/species_brain_body_metabolism.csv
 # OUTPUTS tables/s5/s5b_relative_brain_metabolism.csv, tables/s5/s5b_human_wholebrain_rate_checks.csv
 #         figs/s5/s5b_relative_mass_vs_relative_MR.{png,pdf}
 # ============================================================
@@ -22,8 +22,8 @@ source("helpers/model_diagnostics.R"); diag_stage("s5")  # model diagnostics -> 
 suppressPackageStartupMessages({ library(tidyverse); library(ggrepel) })
 source("helpers/plot_settings.R"); source("helpers/read_heiss_rates.R"); source("helpers/s5_helpers.R")
 
-NONHUMAN <- normalizePath(file.path("..", "analyses_metabol_rate_structure_nonhuman"), mustWork = TRUE)
-sp <- read.csv(file.path(NONHUMAN, "data_intermediate", "species_brain_body_metabolism.csv"), stringsAsFactors = FALSE)
+SPECIES_REPO <- normalizePath(file.path("..", "analyses_metabol_rate_species"), mustWork = TRUE)
+sp <- read.csv(file.path(SPECIES_REPO, "data_intermediate", "species_brain_body_metabolism.csv"), stringsAsFactors = FALSE)
 bud <- read.csv("tables/s5/s5a_region_budgets.csv", stringsAsFactors = FALSE) %>% filter(volume_set == "primary", primary_included, is.finite(rcmr_value))
 heiss <- read_heiss_regions()
 vw <- read.csv("data_raw/volumes_wide.csv", check.names = FALSE, stringsAsFactors = FALSE)

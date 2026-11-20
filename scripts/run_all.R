@@ -118,6 +118,9 @@ RUN_ORDER <- c(
   "s4b_arterial_canal.R"
 )
 
+# Species Coto inputs/s5d are prerequisites of the automatically discovered s5b/s5e.
+# Run their dedicated pipeline explicitly before this human pipeline:
+#   (cd ../analyses_metabol_rate_species && Rscript scripts/run_coto_fig7.R)
 # Scripts that live in scripts/ but are NOT run here
 DO_NOT_RUN <- c(
   "01_network_residual_autocorrelation_analysis.R", # depends on archived s3 anatomy; not a current primary analysis

@@ -4,7 +4,7 @@
 # (Phase 3) from the s5 tables:
 #   ../analyses_metabol_rate_structure_nonhuman/comparison/inputs/
 #       human_comparison_rows.csv, human_regional_change_vs_rate.csv, human_scaling_fits.csv
-# Run after s5a-s5d.
+# Run after human s5a-s5c and species s5d (Coto Figure 7).
 # ============================================================
 setwd(local({ d <- normalizePath(getwd()); while (!file.exists(file.path(d, ".git")) && dirname(d) != d) d <- dirname(d); d }))  # repo root (portable; replaces hardcoded path -- see helpers/project_root.R)
 suppressPackageStartupMessages({ library(tidyverse) })
@@ -19,7 +19,7 @@ s5c <- read.csv("tables/s5/s5c_budget_vs_volume_change.csv", stringsAsFactors = 
 s5c_reg <- read.csv("tables/s5/s5c_regression_volume_change_vs_rate.csv", stringsAsFactors = FALSE)
 s5c_bud <- read.csv("tables/s5/s5c_region_budgets_by_group.csv", stringsAsFactors = FALSE)
 s5a_fits <- read.csv("tables/s5/s5a_scaling_fits.csv", stringsAsFactors = FALSE)
-s5d_fits <- read.csv("tables/s5/s5d_scaling_fits.csv", stringsAsFactors = FALSE)
+s5d_fits <- read.csv("../analyses_metabol_rate_species/tables/coto_fig7/s5d_scaling_fits.csv", stringsAsFactors = FALSE)
 s2 <- read.csv("data_intermediate/s2_stress_volume_comparison.csv", stringsAsFactors = FALSE, check.names = FALSE)
 
 # ---- (a) comparison rows

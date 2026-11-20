@@ -1,3 +1,10 @@
+> 2026-11-19 organization update: Coto Figure 7/s5d now lives in
+> `../analyses_metabol_rate_species/scripts/s5d_cross_species_brain_mr_scaling.R`,
+> with outputs in that project's `tables/coto_fig7/` and `figs/coto_fig7/`.
+> Historical paths below describe the original run. Human s5b/s5e now read the
+> relocated species inputs/results. Run the species `scripts/run_coto_fig7.R`
+> before refreshing downstream comparisons.
+
 # Study s5 — Coto-style analyses on the Heiss et al. 2004 human dataset
 
 _Methods note, 2026-10-31. Scripts `scripts/s5a_*.R` … `s5e_*.R`; helper `helpers/s5_helpers.R`;
