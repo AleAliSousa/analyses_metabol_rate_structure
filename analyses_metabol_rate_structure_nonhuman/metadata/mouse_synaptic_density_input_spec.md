@@ -2,9 +2,11 @@
 
 `mouse_s1c_synaptic_density_vs_rcmr.R` reads
 `data_raw/mouse_synaptic_density_by_region.csv` (override with env var
-`MOUSE_SYNAPSE_CSV`). The file is **not** in the repo yet: no mouse regional
-synaptic-density table exists in Evo-M1-Trait-Data, and the candidate sources
-below could not be reached from the cloud container (hosts blocked).
+`MOUSE_SYNAPSE_CSV`). It is produced by `mouse_s1c_0_prepare_sv2a_synaptome.R` from the
+SV2A Mouse Synaptome Atlas download. Optional extra columns: `analysis_set` (one fit per
+set), `primary_included`, `nested_in_other_region` (nested pools such as Neocortex are not fitted).
+No mouse regional synaptic-density table exists in Evo-M1-Trait-Data yet, and the web
+sources could not be reached from the cloud container (hosts blocked).
 
 | column | required | meaning |
 |---|---|---|

@@ -37,17 +37,23 @@ Densities are cells per mm^3 of CCF volume: a relative measure, use ranks only.
 17 CMRgl regions are matched (`primary_all`); grey-matter-only and with-partial-region
 sensitivity sets are also written.
 
-**s1c is not runnable yet:** no mouse regional synaptic-density table exists in
-Evo-M1-Trait-Data and the candidate sources (SV2A Mouse Synaptome Atlas, Edinburgh)
-were unreachable from the cloud container. The script is tested (missing-input stop and a
-synthetic dry run) and waits for `data_raw/mouse_synaptic_density_by_region.csv`; the
-contract and candidate sources are in `metadata/mouse_synaptic_density_input_spec.md`.
+**s1c** uses the SV2A Mouse Synaptome Atlas (Grant lab, Univ. Edinburgh): per-mouse,
+per-region SV2A synapse measurements for 33 mice (both sexes; 6W, 6M, 18M) and 140
+regions, downloaded by the user (`data_raw/SV2A_Mouse_Synaptome_Atlas_Data.xlsx`).
+`mouse_s1c_0_prepare_sv2a_synaptome.R` maps atlas regions to CMRgl regions
+(`metadata/mouse_sv2a_region_to_cmrgl_region_map.csv`; layers/lobules -> area -> region at
+equal weight) and writes `data_raw/mouse_synaptic_density_by_region.csv`;
+`mouse_s1c_synaptic_density_vs_rcmr.R` fits each age x measure set on 8 primary regions
+(and 12 with partial matches). Input contract: `metadata/mouse_synaptic_density_input_spec.md`.
+**The meaning/units of the two value columns (`count_for_stats`, `mean`) are unconfirmed**
+and must be checked against the atlas documentation before interpretation.
 
 Crosswalks (all decisions live here, scripts only validate them):
 `metadata/mouse_roi_to_cmrgl_region_map.csv`,
 `metadata/mouse_class_to_s1b_category_map.csv`,
 `metadata/mouse_subclass_to_nonneuronal_category_map.csv`,
-`metadata/mouse_ccf_structure_to_cmrgl_region_map.csv` (s1a).
+`metadata/mouse_ccf_structure_to_cmrgl_region_map.csv` (s1a),
+`metadata/mouse_sv2a_region_to_cmrgl_region_map.csv` (s1c).
 
 ## Caveats to review
 1. **Data are whole-cell 10x scRNA-seq (Yao 2023), not snRNA-seq.** No Allen

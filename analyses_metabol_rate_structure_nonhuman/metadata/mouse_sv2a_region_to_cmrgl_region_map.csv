@@ -1,0 +1,121 @@
+sv2a_region,area,cmrgl_region,primary_included,nested_in_other_region,mapping_note
+SS1,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SS23,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SS4,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SS5,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SS6a,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SS6b,SS,Sensorimotor_cortex,TRUE,FALSE,S1 layers (somatosensory); averaged with M1 at equal area weight because Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+MO1,MO,Sensorimotor_cortex,TRUE,FALSE,Motor cortex layers
+MO23,MO,Sensorimotor_cortex,TRUE,FALSE,Motor cortex layers
+MO5,MO,Sensorimotor_cortex,TRUE,FALSE,Motor cortex layers
+MO6a,MO,Sensorimotor_cortex,TRUE,FALSE,Motor cortex layers
+MO6b,MO,Sensorimotor_cortex,TRUE,FALSE,Motor cortex layers
+FRP1,FRP,Frontal_cortex,FALSE,FALSE,"Frontal pole only (no secondary motor); partial, sensitivity only"
+FRP23,FRP,Frontal_cortex,FALSE,FALSE,"Frontal pole only (no secondary motor); partial, sensitivity only"
+ORB1,ORB,Prefrontal_cortex,FALSE,FALSE,"Orbital areas only (no prelimbic/infralimbic); partial, sensitivity only"
+ORB23,ORB,Prefrontal_cortex,FALSE,FALSE,"Orbital areas only (no prelimbic/infralimbic); partial, sensitivity only"
+ORB5,ORB,Prefrontal_cortex,FALSE,FALSE,"Orbital areas only (no prelimbic/infralimbic); partial, sensitivity only"
+ORB6a,ORB,Prefrontal_cortex,FALSE,FALSE,"Orbital areas only (no prelimbic/infralimbic); partial, sensitivity only"
+ORB6b,ORB,Prefrontal_cortex,FALSE,FALSE,"Orbital areas only (no prelimbic/infralimbic); partial, sensitivity only"
+VIS1,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+VIS23,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+VIS4,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+VIS5,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+VIS6a,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+VIS6b,VIS,Occipital_cortex,TRUE,FALSE,Visual cortex layers
+PTLp1,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+PTLp23,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+PTLp4,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+PTLp5,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+PTLp6a,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+PTLp6b,PTLp,Parietal_cortex,FALSE,FALSE,"Posterior parietal association; classical rodent parietal cortex in 2-DG studies is often primary somatosensory, so sensitivity only"
+CA1slm,CA1,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA1so,CA1,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA1sp,CA1,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA1sr,CA1,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA2slm,CA2,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA2slu,CA2,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA2so,CA2,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA2sp,CA2,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA2sr,CA2,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA3slm,CA3,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA3slu,CA3,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA3so,CA3,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA3sp,CA3,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+CA3sr,CA3,Hippocampus,TRUE,FALSE,"Ammon horn layers; CA1, CA2, CA3 and dentate at equal area weight"
+DGmo,DG,Hippocampus,TRUE,FALSE,Dentate layers
+DGpo,DG,Hippocampus,TRUE,FALSE,Dentate layers
+DGsg,DG,Hippocampus,TRUE,FALSE,Dentate layers
+LD,LD,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+LP,LP,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+PO,PO,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+RT,RT,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+VPL,VPL,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+VPM,VPM,Thalamus,TRUE,FALSE,"Six thalamic nuclei sampled (relay, association, reticular); not the whole thalamus"
+LHA,LHA,Hypothalamus,FALSE,FALSE,"Two hypothalamic structures only; partial, sensitivity only"
+ZI,ZI,Hypothalamus,FALSE,FALSE,"Two hypothalamic structures only; partial, sensitivity only"
+ANcr1gr,ANcr1,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+ANcr1mo,ANcr1,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+ANcr2gr,ANcr2,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+ANcr2mo,ANcr2,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+CENT2gr,CENT2,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+CENT2mo,CENT2,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+CENT3gr,CENT3,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+CENT3mo,CENT3,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+COPYgr,COPY,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+COPYmo,COPY,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+"CUL4,5gr","CUL4,5",Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+"CUL4,5mo","CUL4,5",Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+NODgr,NOD,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+NODmo,NOD,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+PRMgr,PRM,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+PRMmo,PRM,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+SIMgr,SIM,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+SIMmo,SIM,Cerebellum,TRUE,FALSE,Cerebellar cortex granule and molecular layers; lobules equal weight
+IP,IP,Cerebellum,TRUE,FALSE,Interposed nucleus
+CP,CP,Caudate_nucleus,TRUE,FALSE,Mouse caudoputamen
+CP,CP,Basal_ganglia,FALSE,TRUE,"Striatum plus internal pallidum; partial, sensitivity only"
+GPi,GPi,Basal_ganglia,FALSE,TRUE,"Striatum plus internal pallidum; partial, sensitivity only"
+SNc,SNc,Substantia_nigra,TRUE,FALSE,
+SNr,SNr,Substantia_nigra,TRUE,FALSE,
+SCm,SCm,Colliculus_superior,TRUE,FALSE,Superior colliculus sensory and motor layers
+SCs,SCs,Colliculus_superior,TRUE,FALSE,Superior colliculus sensory and motor layers
+MO1,MO,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+MO23,MO,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+MO5,MO,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+MO6a,MO,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+MO6b,MO,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS1,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS23,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS4,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS5,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS6a,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+SS6b,SS,Neocortex,TRUE,TRUE,"Isocortex pool: area-weighted mean over SS, MO, VIS, PTLp, FRP, ORB, RSP"
+VIS1,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+VIS23,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+VIS4,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+VIS5,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+VIS6a,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+VIS6b,VIS,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp1,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp23,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp4,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp5,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp6a,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+PTLp6b,PTLp,Neocortex,TRUE,TRUE,Isocortex pool
+RSPd1,RSPd,Neocortex,TRUE,TRUE,Isocortex pool
+RSPd23,RSPd,Neocortex,TRUE,TRUE,Isocortex pool
+RSPd5,RSPd,Neocortex,TRUE,TRUE,Isocortex pool
+RSPd6a,RSPd,Neocortex,TRUE,TRUE,Isocortex pool
+RSPd6b,RSPd,Neocortex,TRUE,TRUE,Isocortex pool
+RSPv1,RSPv,Neocortex,TRUE,TRUE,Isocortex pool
+RSPv23,RSPv,Neocortex,TRUE,TRUE,Isocortex pool
+RSPv5,RSPv,Neocortex,TRUE,TRUE,Isocortex pool
+RSPv6a,RSPv,Neocortex,TRUE,TRUE,Isocortex pool
+FRP1,FRP,Neocortex,TRUE,TRUE,Isocortex pool
+FRP23,FRP,Neocortex,TRUE,TRUE,Isocortex pool
+ORB1,ORB,Neocortex,TRUE,TRUE,Isocortex pool
+ORB23,ORB,Neocortex,TRUE,TRUE,Isocortex pool
+ORB5,ORB,Neocortex,TRUE,TRUE,Isocortex pool
+ORB6a,ORB,Neocortex,TRUE,TRUE,Isocortex pool
+ORB6b,ORB,Neocortex,TRUE,TRUE,Isocortex pool
