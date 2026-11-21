@@ -1,0 +1,214 @@
+ccf_structure,ccf_division,cmrgl_region,primary_included,nested_in_other_region,relationship,mapping_note
+SSp-bfd,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-ll,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-m,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-n,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-tr,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-ul,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+SSp-un,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+MOp,Isocortex,Sensorimotor_cortex,TRUE,FALSE,contained_within_target,S1 (SSp-*) plus M1 (MOp); Evo-M1 Sensorimotor_cortex pools S1 and M1 sources
+MOs,Isocortex,Frontal_cortex,TRUE,FALSE,contained_within_target,Secondary motor plus frontal pole
+FRP,Isocortex,Frontal_cortex,TRUE,FALSE,contained_within_target,Secondary motor plus frontal pole
+PL,Isocortex,Prefrontal_cortex,TRUE,FALSE,contained_within_target,Medial prefrontal plus orbital
+ILA,Isocortex,Prefrontal_cortex,TRUE,FALSE,contained_within_target,Medial prefrontal plus orbital
+ORBl,Isocortex,Prefrontal_cortex,TRUE,FALSE,contained_within_target,Medial prefrontal plus orbital
+ORBm,Isocortex,Prefrontal_cortex,TRUE,FALSE,contained_within_target,Medial prefrontal plus orbital
+ORBvl,Isocortex,Prefrontal_cortex,TRUE,FALSE,contained_within_target,Medial prefrontal plus orbital
+ACAd,Isocortex,Cingulate_cortex,TRUE,FALSE,exact,Anterior cingulate
+ACAv,Isocortex,Cingulate_cortex,TRUE,FALSE,exact,Anterior cingulate
+VISal,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISam,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISl,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISli,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISp,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISpl,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISpm,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISpor,Isocortex,Occipital_cortex,TRUE,FALSE,exact,Mouse visual areas treated as occipital cortex; VISa/VISrl (posterior parietal) go to Parietal_cortex
+VISa,Isocortex,Parietal_cortex,FALSE,FALSE,partial,Anterior/rostrolateral visual = posterior parietal association; sensitivity only
+VISrl,Isocortex,Parietal_cortex,FALSE,FALSE,partial,Anterior/rostrolateral visual = posterior parietal association; sensitivity only
+AUDp,Isocortex,Auditory_cortex,TRUE,FALSE,exact,
+AUDd,Isocortex,Auditory_cortex,TRUE,FALSE,exact,
+AUDv,Isocortex,Auditory_cortex,TRUE,FALSE,exact,
+AUDpo,Isocortex,Auditory_cortex,TRUE,FALSE,exact,
+ACAd,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+ACAv,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AId,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AIp,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AIv,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AUDd,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AUDp,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AUDpo,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+AUDv,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+FRP,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+GU,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+ILA,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+MOp,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+MOs,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+ORBl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+ORBm,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+ORBvl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+PL,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+RSPagl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+RSPd,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+RSPv,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-bfd,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-ll,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-m,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-n,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-tr,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-ul,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSp-un,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+SSs,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+TEa,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISC,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISa,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISal,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISam,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISli,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISp,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISpl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISpm,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISpor,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+VISrl,Isocortex,Neocortex,TRUE,TRUE,pool,"All isocortex except PERI and ECT (proisocortex); nested pool, not an areal predictor row"
+CA1,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+CA2,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+CA3,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+DG,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+FC,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+IG,HPF,Hippocampus,TRUE,FALSE,exact,Hippocampal formation proper; excludes retrohippocampal and entorhinal
+AD,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+AM,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+AV,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+CL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+CM,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+Eth,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+IAD,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+IAM,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+IGL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+IMD,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+IntG,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+LD,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+LGd,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+LGv,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+LH,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+LP,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+MD,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+MG,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+MH,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PCN,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PF,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PIL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PO,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+POL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PP,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PR,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PT,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PVT,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+PoT,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+RE,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+RH,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+RT,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SGN,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SMT,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SPA,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SPFm,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SPFp,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+SubG,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+TH-unassigned,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VAL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VM,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VPL,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VPLpc,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VPM,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+VPMpc,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+Xi,TH,Thalamus,TRUE,FALSE,exact,All thalamic structures
+ADP,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+AHN,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+ARH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+ASO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+AVP,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+AVPV,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+DMH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+LHA,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+LM,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+LPO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+ME,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+MEPO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+MPN,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+MPO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+OV,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PD,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PMd,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PMv,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PS,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PST,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PSTN,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVHd,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVa,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVi,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVp,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PVpo,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+PeF,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+RCH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+SBPV,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+SCH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+SFO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+SO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+STN,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+SUM,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+TMd,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+TMv,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+TU,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+VLPO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+VMH,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+VMPO,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+ZI,HY,Hypothalamus,TRUE,FALSE,exact,Hypothalamus without mammillary body (mapped separately)
+MM,HY,Mammillary_body,TRUE,FALSE,exact,
+AN,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+CENT,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+COPY,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+CUL,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+DEC,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+DN,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+FL,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+FN,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+FOTU,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+IP,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+LING,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+NOD,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+PFL,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+PRM,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+PYR,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+SIM,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+UVU,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+VeCB,CB,Cerebellum,TRUE,FALSE,exact,Cortex plus nuclei
+CP,STR,Caudate_nucleus,TRUE,FALSE,exact,Mouse caudoputamen
+CP,STR,Basal_ganglia,FALSE,TRUE,partial,Striatum plus pallidum segments; sensitivity only
+GPe,PAL,Basal_ganglia,FALSE,TRUE,partial,Striatum plus pallidum segments; sensitivity only
+GPi,PAL,Basal_ganglia,FALSE,TRUE,partial,Striatum plus pallidum segments; sensitivity only
+LSr,STR,Septum,TRUE,FALSE,contained_within_target,Lateral septum (medial septum sits in PAL)
+LSv,STR,Septum,TRUE,FALSE,contained_within_target,Lateral septum (medial septum sits in PAL)
+LSc,STR,Septum,TRUE,FALSE,contained_within_target,Lateral septum (medial septum sits in PAL)
+BLA,CTXsp,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+BMA,CTXsp,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+LA,CTXsp,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+PA,CTXsp,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+CEA,STR,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+MEA,STR,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+AAA,STR,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+IA,STR,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+BA,STR,Amygdala,TRUE,FALSE,exact,CCF amygdalar nuclei (excludes cortical amygdala in OLF)
+SNr,MB,Substantia_nigra,TRUE,FALSE,exact,
+SNc,MB,Substantia_nigra,TRUE,FALSE,exact,
+SCs,MB,Colliculus_superior,TRUE,FALSE,exact,Superior colliculus sensory plus motor layers
+SCm,MB,Colliculus_superior,TRUE,FALSE,exact,Superior colliculus sensory plus motor layers
+cc,lfbs,Corpus_callosum,TRUE,FALSE,exact,Corpus callosum
+cc,lfbs,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
+cst,lfbs,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
+lfbst,lfbs,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
+mfbc,mfbs,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
+mfsbshy,mfbs,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
+scwm-unassigned,scwm,White_matter,FALSE,TRUE,partial,Lateral/medial forebrain bundle systems plus subcortical white matter; definition varies across rate sources; sensitivity only
