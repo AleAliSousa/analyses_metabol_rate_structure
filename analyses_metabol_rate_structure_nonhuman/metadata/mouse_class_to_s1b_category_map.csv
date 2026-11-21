@@ -1,0 +1,30 @@
+allen_class,s1b_category,ei_class,note
+01 IT-ET Glut,Excitatory_projection,E,Cortical intratelencephalic and extratelencephalic neurons
+02 NP-CT-L6b Glut,Excitatory_projection,E,Near-projecting/corticothalamic/L6b
+03 OB-CR Glut,Excitatory_projection,E,
+04 DG-IMN Glut,Excitatory_projection,E,Dentate gyrus granule and immature neurons
+13 CNU-HYa Glut,Excitatory_projection,E,
+14 HY Glut,Excitatory_projection,E,
+15 HY Gnrh1 Glut,Excitatory_projection,E,
+16 HY MM Glut,Excitatory_projection,E,Mammillary body
+17 MH-LH Glut,Excitatory_projection,E,Habenula
+18 TH Glut,Excitatory_projection,E,
+19 MB Glut,Excitatory_projection,E,
+23 P Glut,Excitatory_projection,E,
+24 MY Glut,Excitatory_projection,E,
+25 Pineal Glut,Excitatory_projection,E,
+29 CB Glut,Excitatory_projection,E,Cerebellar granule cells and unipolar brush cells
+05 OB-IMN GABA,Inhibitory_interneuron,I,Olfactory bulb immature neurons
+06 CTX-CGE GABA,Inhibitory_interneuron,I,Lamp5/Vip/Sncg/Pax6 cortical interneurons
+07 CTX-MGE GABA,Inhibitory_interneuron,I,Pvalb/Sst/Chodl cortical interneurons
+28 CB GABA,Inhibitory_interneuron,I,Includes Purkinje cells; human s1b also placed cerebellar inhibitory in this group
+20 MB GABA,Inhibitory_interneuron,I,Mirrors human 'Midbrain-derived inhibitory'
+26 P GABA,Inhibitory_interneuron,I,
+27 MY GABA,Inhibitory_interneuron,I,
+08 CNU-MGE GABA,Inhibitory_subcortical_other,I,Pallidal neurons and striatal interneurons
+10 LSX GABA,Inhibitory_subcortical_other,I,
+11 CNU-HYa GABA,Inhibitory_subcortical_other,I,
+12 HY GABA,Inhibitory_subcortical_other,I,
+09 CNU-LGE GABA,Inhibitory_projection_MSN,I,Striatal medium spiny neurons (D1/D2) - excluded from primary predictors like human MSN
+21 MB Dopa,Neuromodulatory,Neither,
+22 MB-HB Sero,Neuromodulatory,Neither,

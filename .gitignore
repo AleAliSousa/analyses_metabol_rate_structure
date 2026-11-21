@@ -19,3 +19,7 @@ logs/
 .Rapp.history
 .__captest/
 .venv-atlas/
+
+# Allen ABC Atlas bulk downloads (re-fetched by mouse_s1b_1; ~0.9 GB)
+data_raw/allen_abc_mouse/
+analyses_metabol_rate_structure_nonhuman/data_raw/allen_abc_mouse/

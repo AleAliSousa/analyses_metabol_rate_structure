@@ -1,0 +1,7 @@
+cmrgl_region,EI_ratio,E_frac,n_donors,rois,rcmr_value,n_rate_studies,rate_references
+Auditory_cortex,7.918164521104023,0.8818696011214295,4,AUD,87,3,jay_1985; nowaczyk_1981; yamaguchi_1992b
+Cingulate_cortex,5.239697682685818,0.8340156339112168,9,ACA,96,1,jay_1985
+Frontal_cortex,4.860050784819298,0.8250221761853826,6,MO-FRP,88.367,3,bouilleret_2000; jay_1985; yamaguchi_1992b
+Occipital_cortex,6.473662795231907,0.8559642178837746,10,VIS,70.8,3,jay_1985; nowaczyk_1981; yamaguchi_1992b
+Prefrontal_cortex,4.436203850760565,0.8130731156275611,7,PL-ILA-ORB,121.5,1,bouilleret_2000
+Sensorimotor_cortex,13.147313130902395,0.8961182632319902,12,MOp+SSp,96.867,3,bouilleret_2000; jay_1985; yamaguchi_1992b

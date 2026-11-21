@@ -1,0 +1,30 @@
+roi,n_cells,n_donors,nonneuronal_frac,allen_roi_name,cmrgl_region,is_isocortex,primary_included,relationship,mapping_note,rcmr_value,n_rate_studies,rate_references
+AUD,70564,4,NA,Auditory areas,Auditory_cortex,TRUE,TRUE,exact,NA,87,3,jay_1985; nowaczyk_1981; yamaguchi_1992b
+STRd,55626,5,NA,Striatum dorsal region,Caudate_nucleus,FALSE,TRUE,exact,Mouse caudoputamen,124.5,1,bouilleret_2000
+CB,182004,21,NA,Cerebellum,Cerebellum,FALSE,TRUE,exact,NA,89,2,ito_1994; jay_1985
+ACA,102794,9,NA,Anterior cingulate area,Cingulate_cortex,TRUE,TRUE,exact,NA,96,1,jay_1985
+MO-FRP,71399,6,NA,Somatomotor - Frontal pole,Frontal_cortex,TRUE,TRUE,contained_within_target,Secondary motor plus frontal pole dissection,88.367,3,bouilleret_2000; jay_1985; yamaguchi_1992b
+HIP,176122,14,NA,Hippocampal region,Hippocampus,FALSE,TRUE,exact,Hippocampal formation proper (excludes retrohippocampal RHP and entorhinal ENT),60.467,3,bouilleret_2000; jay_1985; yamaguchi_1992b
+HY,262175,27,NA,Hypothalamus,Hypothalamus,FALSE,TRUE,exact,NA,59,1,bouilleret_2000
+VIS,321908,10,NA,Visual areas,Occipital_cortex,TRUE,TRUE,exact,Mouse visual areas treated as occipital cortex,70.8,3,jay_1985; nowaczyk_1981; yamaguchi_1992b
+PL-ILA-ORB,106122,7,NA,Prelimbic/infralimbic/orbital areas,Prefrontal_cortex,TRUE,TRUE,contained_within_target,Medial prefrontal plus orbital,121.5,1,bouilleret_2000
+MOp,247660,9,NA,Primary motor area,Sensorimotor_cortex,TRUE,TRUE,contained_within_target,M1; see SSp,96.867,3,bouilleret_2000; jay_1985; yamaguchi_1992b
+SSp,75852,3,NA,Primary somatosensory area,Sensorimotor_cortex,TRUE,TRUE,contained_within_target,S1; Evo-M1 Sensorimotor_cortex pools S1 and M1 sources so SSp and MOp are averaged with equal ROI weight,96.867,3,bouilleret_2000; jay_1985; yamaguchi_1992b
+LSX,53819,8,NA,Lateral septal complex,Septum,FALSE,TRUE,contained_within_target,Lateral septum dominates the Evo-M1 Septum measurements' dissection; medial septum sits in PAL,67,1,bouilleret_2000
+TH,261009,29,NA,Thalamus,Thalamus,FALSE,TRUE,exact,NA,90.075,4,bouilleret_2000; ito_1994; jay_1985; yamaguchi_1992a
+CTXsp,122208,11,NA,Cortical subplate,Amygdala,FALSE,FALSE,partial,Contains basolateral amygdala but also claustrum and endopiriform; sensitivity only,58,1,bouilleret_2000
+sAMY,120764,8,NA,Striatum-like amygdalar nuclei,Amygdala,FALSE,FALSE,partial,Central/medial amygdala; sensitivity only,58,1,bouilleret_2000
+PAL,108046,10,NA,Pallidum,Basal_ganglia,FALSE,FALSE,partial,Evo-M1 Basal_ganglia is striatum plus pallidum; sensitivity only,60.6,2,jay_1985; yamaguchi_1992b
+VIS-PTLp,54625,8,NA,Visual/posterior parietal areas,Parietal_cortex,TRUE,FALSE,partial,Dissection mixes posterior parietal association and visual cortex; sensitivity only,71,1,yamaguchi_1992b
+AI,99046,12,NA,Agranular insular area,NA,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only,NA,NA,NA
+AUD-TEa-PERI-ECT,26920,4,NA,Auditory/temporal/perirhinal/ectorhinal areas,NA,FALSE,FALSE,excluded,Mixed isocortex and perirhinal dissection; excluded from Neocortex pool,NA,NA,NA
+ENT,110210,7,NA,Entorhinal area,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+MB,367029,54,NA,Midbrain,NA,FALSE,FALSE,contains_target,Contains substantia nigra and superior colliculus rates but is far larger; not mapped,NA,NA,NA
+MY,192533,46,NA,Medulla,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+OLF,280744,29,NA,Olfactory areas,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+P,143616,31,NA,Pons,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+RHP,102008,7,NA,Retrohippocampal region,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+RSP,112248,8,NA,Retrosplenial area,NA,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only,NA,NA,NA
+SS-GU-VISC,103192,6,NA,Somatosensory/gustatory/visceral areas,NA,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only,NA,NA,NA
+STRv,53573,7,NA,Striatum ventral region,NA,FALSE,FALSE,no_rate_region,NA,NA,NA,NA
+TEa-PERI-ECT,59160,7,NA,Temporal/perirhinal/ectorhinal areas,NA,FALSE,FALSE,excluded,Mixed isocortex and perirhinal dissection; excluded from Neocortex pool,NA,NA,NA

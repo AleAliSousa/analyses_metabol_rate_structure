@@ -1,0 +1,30 @@
+allen_roi,allen_roi_name,cmrgl_region,is_isocortex,primary_included,relationship,mapping_note
+SSp,Primary somatosensory area,Sensorimotor_cortex,TRUE,TRUE,contained_within_target,S1; Evo-M1 Sensorimotor_cortex pools S1 and M1 sources so SSp and MOp are averaged with equal ROI weight
+MOp,Primary motor area,Sensorimotor_cortex,TRUE,TRUE,contained_within_target,M1; see SSp
+MO-FRP,Somatomotor - Frontal pole,Frontal_cortex,TRUE,TRUE,contained_within_target,Secondary motor plus frontal pole dissection
+PL-ILA-ORB,Prelimbic/infralimbic/orbital areas,Prefrontal_cortex,TRUE,TRUE,contained_within_target,Medial prefrontal plus orbital
+ACA,Anterior cingulate area,Cingulate_cortex,TRUE,TRUE,exact,
+VIS,Visual areas,Occipital_cortex,TRUE,TRUE,exact,Mouse visual areas treated as occipital cortex
+AUD,Auditory areas,Auditory_cortex,TRUE,TRUE,exact,
+VIS-PTLp,Visual/posterior parietal areas,Parietal_cortex,TRUE,FALSE,partial,Dissection mixes posterior parietal association and visual cortex; sensitivity only
+SS-GU-VISC,Somatosensory/gustatory/visceral areas,,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only
+RSP,Retrosplenial area,,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only
+AI,Agranular insular area,,TRUE,FALSE,no_rate_region,Isocortex; contributes to pooled Neocortex only
+AUD-TEa-PERI-ECT,Auditory/temporal/perirhinal/ectorhinal areas,,FALSE,FALSE,excluded,Mixed isocortex and perirhinal dissection; excluded from Neocortex pool
+TEa-PERI-ECT,Temporal/perirhinal/ectorhinal areas,,FALSE,FALSE,excluded,Mixed isocortex and perirhinal dissection; excluded from Neocortex pool
+HIP,Hippocampal region,Hippocampus,FALSE,TRUE,exact,Hippocampal formation proper (excludes retrohippocampal RHP and entorhinal ENT)
+RHP,Retrohippocampal region,,FALSE,FALSE,no_rate_region,
+ENT,Entorhinal area,,FALSE,FALSE,no_rate_region,
+TH,Thalamus,Thalamus,FALSE,TRUE,exact,
+HY,Hypothalamus,Hypothalamus,FALSE,TRUE,exact,
+CB,Cerebellum,Cerebellum,FALSE,TRUE,exact,
+STRd,Striatum dorsal region,Caudate_nucleus,FALSE,TRUE,exact,Mouse caudoputamen
+LSX,Lateral septal complex,Septum,FALSE,TRUE,contained_within_target,Lateral septum dominates the Evo-M1 Septum measurements' dissection; medial septum sits in PAL
+PAL,Pallidum,Basal_ganglia,FALSE,FALSE,partial,Evo-M1 Basal_ganglia is striatum plus pallidum; sensitivity only
+CTXsp,Cortical subplate,Amygdala,FALSE,FALSE,partial,Contains basolateral amygdala but also claustrum and endopiriform; sensitivity only
+sAMY,Striatum-like amygdalar nuclei,Amygdala,FALSE,FALSE,partial,Central/medial amygdala; sensitivity only
+STRv,Striatum ventral region,,FALSE,FALSE,no_rate_region,
+OLF,Olfactory areas,,FALSE,FALSE,no_rate_region,
+MB,Midbrain,,FALSE,FALSE,contains_target,Contains substantia nigra and superior colliculus rates but is far larger; not mapped
+P,Pons,,FALSE,FALSE,no_rate_region,
+MY,Medulla,,FALSE,FALSE,no_rate_region,
